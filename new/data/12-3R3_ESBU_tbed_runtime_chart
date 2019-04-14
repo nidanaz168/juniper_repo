@@ -1,0 +1,21 @@
+<chart caption='Testbed Usage' xAxisName='Test Beds' yAxisName='Hours' showValues='1' numberPrefix='' useRoundEdges='1' legendBorderAlpha='100' showBorder='0' bgColor='FFFFFF,FFFFFF' ><categories><category label='atlas8-irtb' /><category label='optimization1-rtb' /><category label='asp2-irtb' /><category label='sg1-rtb' /><category label='atlas5-irtb' /><category label='hcl-atlas2-irtb' /><category label='pm1-rtb' /><category label='cypher-rtb' /><category label='eol-asp1' /><category label='atlas5-ixia-irtb' /><category label='optimization2-rtb' /><category label='services-blr-sg' /><category label='esbu-sparks' /><category label='asp-rtb' /><category label='services-taz-irtb' /><category label='services-blr-smoke' /><category label='spiff-rtb' /><category label='eabu-agave' /><category label='irtb7' /><category label='oceanus-rtb' /></categories><dataset seriesName='Usgae Hours'><set label='atlas8-irtb' value='111.35'  />
+<set label='optimization1-rtb' value='91.56'  />
+<set label='asp2-irtb' value='77.21'  />
+<set label='sg1-rtb' value='73.59'  />
+<set label='atlas5-irtb' value='73.24'  />
+<set label='hcl-atlas2-irtb' value='65.37'  />
+<set label='pm1-rtb' value='65.05'  />
+<set label='cypher-rtb' value='58.31'  />
+<set label='eol-asp1' value='58.27'  />
+<set label='atlas5-ixia-irtb' value='52.02'  />
+<set label='optimization2-rtb' value='37.16'  />
+<set label='services-blr-sg' value='32.07'  />
+<set label='esbu-sparks' value='19.57'  />
+<set label='asp-rtb' value='11.94'  />
+<set label='services-taz-irtb' value='4.43'  />
+<set label='services-blr-smoke' value='3.74'  />
+<set label='spiff-rtb' value='2.22'  />
+<set label='eabu-agave' value='1.58'  />
+<set label='irtb7' value='1.12'  />
+<set label='oceanus-rtb' value='0'  />
+</dataset></chart>

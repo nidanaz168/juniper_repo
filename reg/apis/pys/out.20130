@@ -1,0 +1,1038 @@
+<html>
+<head>
+ <title>TL9K Summary Report</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <meta name="Pragma" CONTENT="no-cache">
+ <meta name="robots" content="noindex, follow">
+ <link href="/ti/webapp/dr/shared/mainstyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<!-- START STYLESHEET INCLUDE -->
+<script language="javascript">
+ if (navigator.platform.indexOf ("Win32") !=-1) {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ie.css" type="text/css">');
+ } else {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ns.css" type="text/css">');
+ }
+</script>
+
+<body class="td-white-background"  topmargin="5" leftmargin="6" marginwidth="6" marginheight="5" >
+
+</script>
+<!-- END STYLESHEET INCLUDE -->
+
+
+<script type="text/javascript">                                                                                                                                                  
+function displaySpan(theSpan) {
+    if (theSpan.style.display == "none") {
+        theSpan.style.display = "";
+    }
+    else if (theSpan.style.display == "") {
+        theSpan.style.display = "none";
+    } else {
+        theSpan.style.display = "none";
+    }
+}
+</script>
+
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+     <tr  class="bluefield">
+      <td rowspan="2"  height="70">&nbsp; &nbsp;
+       <a href="http://www-int.juniper.net/">
+       <img src="/images/juniperLogo.gif" height="33" width="90" border="0"></a></td>
+      <td id=td15> Summarized Regression Test Report </td> </tr>
+
+ <tr> <td> Result Id's: 203061  </td> </tr></table><hr><a href=/ti/webapp/dr/debug_dr/view/gen_tl9k_report_summary.mhtml?result_id=203061&trans=remove >Click here to Exclude Transition Scripts</a><!-- 
+/*
+ * Function to get reg report info
+ *
+ */
+-->
+
+no_tei :  <br><br>
+        
+
+<!-- 
+/*
+ * Function to get all the manual info.
+ *
+ */
+
+-->
+
+<br>
+
+<!-- 
+/*
+ * Function to get the pr info
+ */
+
+-->
+
+<br>
+
+Result Summary for <font color=red></font> ( Result_id: 203061 ) <br>-Project Lead        : <font color=blue></font> <br>-Regression Tracking : PR<br>
+<p id=td16_1><pre>
+<font color=blue>1</font> Automated Tests:
+Total Number of Automated Scripts = 501
+Total Number of Pass (Regression+Debug) = 353
+Total Number of Debug Failures = 0
+PASS % = 70 %
+
+Unique Script count = 501
+Unique (latest respin) Pass count = 353
+Unique (latest respin) Failure count (including pending) = 148
+ACTUAL PASS% = 70 %
+
+
+Total Number of Testcases count = 1775
+Total Number of Testcases Pass (Regression+Debug) = 1500 
+Total Number of Testcases Fail (PR Attached) = 0
+Total Number of Testcases Pending Analysis = 275
+PASS % = 85 %
+
+
+<font color=blue>2</font> Manual Tests:
+Total Number of Manual Tests = 0
+Total Number of Pass = 0
+Total Number of Failures = 0
+PASS % = 0 %
+
+</pre></p>
+
+<!--7.0 END OF SUMMARY TABLE -->
+
+
+
+
+
+<li><a href="javascript:displaySpan(span_203061)"><b>Click here to see list of Failed/Undebugged Scripts</b></a>
+<span id="span_203061" style="display:none;">
+<br><br><table border=1> <tr><td><font size=2>Engineer</td><td><font size=2>Script Name</td><td><font size=2>Result</td><td><font size=2>PRs</td></tr>
+<tr><td rowspan=95><font size=2> (95)</td><td><font size=2>151_RCCA_PR1186409_reboot.robot</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>151_RCCA_PR1207844_Qfx10k_platform.robot</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>172_Elit_RLI_26692_Inline_Ipv6_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI20650_QFX10K_MPLS_FILTER_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI20650_QFX10K_MPLS_MISC.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI20650_QFX10K_MPLS_detour_computation.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI20650_QFX10K_MPLS_l3vpn_bgp_multi_isis.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI20650_QFX10K_MPLS_ldp_basic_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22270_QFX10K_evpnL2_Op_ESI.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22270_QFX10K_evpnL2_sanity.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22289_QFX10K_stoli_consistencychk_03_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_Analyzer_ext.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_Analyzer_ext_4.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_BGP_tc1thru4_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_BGP_tc5.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_BGP_tc6and7_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_Chassis_Routermodel_SNMP.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_ELIT_L2_learning_aging_part1_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_ELIT_L2_learning_aging_part1_3.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_ERSPAN_Analyzer_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_Elit_BC.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_Elit_L3_Unicast_Failover.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_Elit_MCLAG_L3.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_Elit_MC_LAG_FeIn_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_Elit_gre_1_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_Elit_gre_part1_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_Elit_gre_part1_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_IGMPv3_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_J113_14596_LA_ospf_area_range_irb.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_L2NG_mstp_topo_change_2_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_L2NG_rstp_4.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_L2NG_stp_3.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_L2_Unicast_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_LAG_as_access_port_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_Mix_Speed_LAG_as_trunk_port_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_Mojito_ospf_policy_metrictype_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_Mojito_rip_lag_3.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_OSPF_GR_4.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_OSPF_GR_5.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_Opus_J121_14596_LA_ospf_area_range_vlan.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_Opus_jnx-event_mib.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_RFC_2863a.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_SC_L2NG_10G_11.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_SC_L2NG_10G_12.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_SC_L2NG_10G_14.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_SC_L2NG_10G_part1_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_SNMP_FRAMEWORK_MIB.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_bfd_sanity.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_bfd_sanity_irb.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_bfd_sanity_ospf_isis.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_bfd_sanity_vlan.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_bgp_community_6.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_bgp_confederations_ipv6.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_bgp_gr_extended_3.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_bgp_multias_irb.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_isis_new_metric.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_isis_prefix_export_limit_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_isis_tag_multi_inst.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_jnx-bfd_bgp_mib.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_l2circuits_basic_new.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_la_policy_tag.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_la_rip_poisoned_routes_pr.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_lacp_ge_4.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_lagsan_mix_speed_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_lldp_mib_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_mac_move.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_ospf3_bgp.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_ospf_active_backbone_abr_default_announce_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_ospf_active_backbone_abr_loses_bb_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_ospf_active_backbone_multiple_abrs_vlan_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_ospf_active_backbone_vl.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_ospf_lag_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_ospf_path_sel_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_ospf_policy_export_irb.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_ospf_sanity_vlan_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_ospf_virtual_links_vlan.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_rfc1213-system-mib.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_tracert_mib.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_v6_native_3.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI24712_QFX10K_QinQ_part1_3.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI24712_QFX10K_mapping_swap_egress_lag_lacp_5.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI24712_QFX10K_port_mode_change_lacp_port_part1_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI24712_QFX10K_port_mode_change_lacp_port_part1_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI28003_QFX10K_STATIC_XE_mc_test_13_17.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI28747_QFX10K_hold_up_timer_fast_periodic_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI28747_QFX10K_hold_up_timer_fast_periodic_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI28747_QFX10k_hold_up_timer_slow_periodic_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J171_RLI26377_QFX10K_gre4_decap_ipv4.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J171_RLI28861_Elit_l3vpn_cbf.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J171_RLI30199_QFX10K_802_3_ah_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J171_RLI30199_QFX10K_802_3_ah_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J171_RLI30199_QFX10K_802_3_ah_3.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>bfd_sanity_pim1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>erspan_port_mirroring_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>static_routes_over_nonp2p_ifs_1_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><tr><td rowspan=9><font size=2>abduls (9)</td><td><font size=2>172_QFX_RLI_26644_DualVlanTag_AE.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>172_RLI_28206_YANG_PUBLISH_QFX.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>172_RLI_31849_Elit_fxpInNonDefaultInst2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>172_RLI_33700_elit_exInNonDefaultInst1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J172_25838_Elit_ipv6_ecmp_ae1_2x4_tc1to3.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J172_25838_Elit_mpls_ae_lb_hash_key1_2x4.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J172_RLI32092_QFX10K2_Elit_sflow_extRtrData1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J172_RLI32092_QFX10K2_Elit_sflow_extRtrData2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>linecard_load_balancing_en_25838_mpls_ecmp_ae_nh.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><tr><td rowspan=6><font size=2>athilaga (6)</td><td><font size=2>174R1_Elit_RLI23020_rate_limiter_03.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>174R1_Elit_RLI23020_rate_limiter_la_06_lag.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI20643_QFX10K_ECN_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10k_OVSDB_Basic_Part1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J172_QFX10k2_RLI_27599_jvision_grpc_oc_lsp_event.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J172_QFX10k2_RLI_27599_jvision_grpc_oc_lsp_event_regex.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><tr><td rowspan=5><font size=2>brksubra (5)</td><td><font size=2>J172_QFX10k2_RLI_32490_JVISION_IFL_BASIC.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J172_QFX10k2_RLI_32490_JVISION_IFL_EVENTS.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J172_QFX10k2_RLI_32490_JVISION_IFL_GRPC_BASIC.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J172_QFX10k2_RLI_32492_JVISION_IFD_BASIC.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J172_QFX10k2_RLI_32492_JVISION_IFD_EXTN_GRPC.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><tr><td rowspan=1><font size=2>cgiridhar (1)</td><td><font size=2>J151_TPI39649_QFX10K2_Elit_sflow_extRtrData.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><tr><td rowspan=4><font size=2>dbai (4)</td><td><font size=2>173R1_RLI_34494_QFX10K_PTPoIPv4_stc.robot</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>173R1_RLI_34494_QFX10K_PTPoIPv4_stc_4gm.robot</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>173R1_RLI_34494_QFX10K_PTPoIPv4_stc_scaling.robot</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>173R1_RLI_34494_QFX10K_PTPoIPv4_stc_tc.robot</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><tr><td rowspan=3><font size=2>hemants (3)</td><td><font size=2>173_RLI_26688_Elit_ets.robot</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>173_RLI_32816_QFX10k_PRBS.robot</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>173_RLI_35026_chash_test_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><tr><td rowspan=4><font size=2>kalain (4)</td><td><font size=2>172_RLI_33700_elit_exInNonDefaultInst1_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>174_QFX10k_RLI26690_MPLS_IPV6_part2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>174_QFX10k_RLI26690_MPLS_IPV6_part3.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>mpls_ipv6_part1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><tr><td rowspan=3><font size=2>kalpanan (3)</td><td><font size=2>172_RLI33530_jvision_bgp_peer_QFX10002.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>172_RLI33530_jvision_bgp_peer_scale_QFX10002.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>172_RLI33531_jvision_rsvp_interface_stat_QFX10002.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><tr><td rowspan=4><font size=2>karthir (4)</td><td><font size=2>151_QFX5k_RLI36120_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>151_QFX5k_RLI36120_3.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J151_RLI22426_QFX10K_lsp_metric_to_ospf_basic_4_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J161_PR1174966_QFX10K_PPoE_RCCA.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><tr><td rowspan=5><font size=2>kgadiraju (5)</td><td><font size=2>172_Elit_RLI_26692_Inline_Ipv4v6_IPFIX.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>172_Elit_RLI_26692_Inline_Ipv4v6_IPFIX_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>172_Elit_RLI_26692_Inline_Ipv4v6_IPFIX_NEG.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J172_QFX10k2_RLI_32490_32492_JVISION_Internal_Interface_Stats.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J172_QFX10k2_RLI_32490_32492_JVISION_Internal_Interface_Stats1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><tr><td rowspan=1><font size=2>malleshmg (1)</td><td><font size=2>173_RLI_30642_QFX10K_EVPN_Basic.robot</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><tr><td rowspan=3><font size=2>pramodpb (3)</td><td><font size=2>J172_QFX10k2_RLI_32490_JVISION_IFL_EVENTS1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J172_QFX10k2_RLI_32492_JVISION_IFD_EVENTS.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J172_QFX10k2_RLI_32492_JVISION_IFD_EVENTS1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><tr><td rowspan=2><font size=2>saurabs (2)</td><td><font size=2>172_RLI32500_lacp_telemetry_4_QFX10002.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>172_RLI33597_OC_MPLS_CONFIG.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><tr><td rowspan=3><font size=2>wirotl (3)</td><td><font size=2>J172_QFX10k2_RLI_32491_JVISION_GRPC_FWD_FILTER.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J172_QFX10k2_RLI_32491_JVISION_GRPC_FWD_POLICER.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>J172_QFX_RLI_32497_JVISION_OPTICS.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr></table>
+<br><br>
+<table>
+<tr><td>
+<b>Scripts failed Due to PRs - </b>0
+</td></tr>
+<tr><td>
+<b>Scripts pending debugging - </b>148
+</td></tr>
+<tr><td>
+<b>PRs Existing till now - </b></td></tr>
+</table><table border=1>
+<tr><td><font size=2 style="font-weight:bold">PR</td>
+               <td><font size=2 style="font-weight:bold"># Scripts Hit</td>
+               <td><font size=2 style="font-weight:bold">Planned_Release</td>
+               <td><font size=2 style="font-weight:bold">State</td>
+               <td><font size=2 style="font-weight:bold">Category</td>
+               <td><font size=2 style="font-weight:bold">Customer_Risk</td>
+               <td><font size=2 style="font-weight:bold">Problem_level</td>
+               <td><font size=2 style="font-weight:bold">Synopsis</td>
+               <td><font size=2 style="font-weight:bold">Found</td>
+               <td><font size=2 style="font-weight:bold">Reg</td>
+               <td><font size=2 style="font-weight:bold">Blocker</td> 
+            </tr></table>
+</span></li>
+</br><hr> <b>Combined pass rate (actual) for Automated scripts: 70.46 % </b>
+<br />
+<hr noshade size="1" width="100%" />
+ 
+</body>
+</html>
+
+
+
+

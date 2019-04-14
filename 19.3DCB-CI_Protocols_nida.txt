@@ -1,0 +1,13 @@
+BD=
+select result_id from er_regression_result where name in ('PROTOCOLS_PHYSICAL_CI_193DCB_20190327','RPT_REG_SERVICES_19.3-DCB-ZPR','CI_DCB_201903291127.0','Ultimat_19.3DCB_CI_Mar22','Ultimat_19.3DCB_ZPR_Mar22','Macallan_19.3DCB_CI_Mar29','Opus_19.3DCB_ZPR_Mar29',' RPT_REG_ACX_19.3DCB_ZPR','19_3_DCB') and parent_result_id='0'2019-03-24 
+select result_id from er_regression_result where (name= 'PROTOCOLS_PHYSICAL_CI_193DCB_20190327' and parent_result_id='0')
+213669 
+213669 
+wget -o log -O out.23468 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=5:7:0&result_id=213669" 
+fullfile
+
+hit = wget -o log -O prs.23468 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=0:1:0&result_id=213669" 
+wget -o log -O out.23468 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" http://www-systest.juniper.net/ti/webapp/dr/debug_dr/view/gen_tl9000_report.mhtml?result_id=213669&trans=remove
+delete from script_pr where release='19.3DCB-CI' and function='Protocols'prstr is  
+/var/www/html/CI_Report/data/19-3DCB-CI_table
+Done

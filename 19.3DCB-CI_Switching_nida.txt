@@ -1,0 +1,40 @@
+BD=
+select result_id from er_regression_result where name in ('RPT_REG_SERVICES_19.3-DCB-ZPR','PROTOCOLS_PHYSICAL_CI_193DCB_20190327','CI_DCB_201903291127.0','Ultimat_19.3DCB_CI_Mar22','Ultimat_19.3DCB_ZPR_Mar22','Macallan_19.3DCB_CI_Mar29','Opus_19.3DCB_ZPR_Mar29',' RPT_REG_ACX_19.3DCB_ZPR','19_3_DCB') and parent_result_id='0'2019-03-24 
+select result_id from er_regression_result where (name= 'Ultimat_19.3DCB_CI_Mar22' and parent_result_id='0')
+select result_id from er_regression_result where (name= 'Ultimat_19.3DCB_ZPR_Mar22' and parent_result_id='0')
+select result_id from er_regression_result where (name= 'Macallan_19.3DCB_CI_Mar29' and parent_result_id='0')
+select result_id from er_regression_result where (name= 'Opus_19.3DCB_ZPR_Mar29' and parent_result_id='0')
+212588 212587 213718 213713 
+212588 
+wget -o log -O out.23726 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=5:7:0&result_id=212588" 
+fullfile
+
+hit = wget -o log -O prs.23726 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=0:1:0&result_id=212588" 
+wget -o log -O out.23726 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" http://www-systest.juniper.net/ti/webapp/dr/debug_dr/view/gen_tl9000_report.mhtml?result_id=212588&trans=remove
+212587 
+wget -o log -O out.23726 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=5:7:0&result_id=212587" 
+fullfile
+
+hit = wget -o log -O prs.23726 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=0:1:0&result_id=212587" 
+wget -o log -O out.23726 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" http://www-systest.juniper.net/ti/webapp/dr/debug_dr/view/gen_tl9000_report.mhtml?result_id=212587&trans=remove
+213718 
+wget -o log -O out.23726 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=5:7:0&result_id=213718" 
+fullfile
+
+hit = wget -o log -O prs.23726 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=0:1:0&result_id=213718" 
+wget -o log -O out.23726 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" http://www-systest.juniper.net/ti/webapp/dr/debug_dr/view/gen_tl9000_report.mhtml?result_id=213718&trans=remove
+213713 
+wget -o log -O out.23726 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=5:7:0&result_id=213713" 
+fullfile
+
+hit = wget -o log -O prs.23726 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=0:1:0&result_id=213713" 
+wget -o log -O out.23726 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" http://www-systest.juniper.net/ti/webapp/dr/debug_dr/view/gen_tl9000_report.mhtml?result_id=213713&trans=remove
+delete from script_pr where release='19.3DCB-CI' and function='Switching'prstr is 1351906 1386531 1396808 1402100 1409165 1418929 1419996 1421446 1422085 1422850 1422871 1423173 1423527 1426111 1426469 1426693 1426863 1426896 1426941 1427170 1427787 1428081 1395472 1428692 1430165 1430199 1430218  
+insert into reg_openblocker_details(release,function,prnumber,arrival_date,synopsis,reported_in,class,state,pl,category,blocker,dev_owner,resp,originator,hit) values('19.3DCB-CI','Switching','1418929-2','2019-02-20','JDI-RCT:M/Mx: rpd core @ krt_schedule_unicast_nexthop_internal, krt_generic_nh_s','','bug','ready-to-commit','4-IL2','sw-routing-infra-krt','TEG','ashishkumar','ashishkumar','auto-created','1  ');
+insert into reg_openblocker_details(release,function,prnumber,arrival_date,synopsis,reported_in,class,state,pl,category,blocker,dev_owner,resp,originator,hit) values('19.3DCB-CI','Switching','1422085-4','2019-03-06','                     CI_PR:Traffic Not passing via sub interface interface ae1.0','19.3DCB','bug','assigned','4-IL2','ex-sw-mojito-pfe','Test','kkartheek','kkartheek','krbharath','1  ');
+insert into reg_openblocker_details(release,function,prnumber,arrival_date,synopsis,reported_in,class,state,pl,category,blocker,dev_owner,resp,originator,hit) values('19.3DCB-CI','Switching','1427170-1','2019-03-28','                               CI-PR :- dscp/dot1p rewrite is not working on IRB','19.3DCB','bug','under-review','4-IL2','ex-sw-mojito-royale-cos','Test','sivanraj','sivanraj','krbharath','2  ');
+insert into reg_openblocker_details(release,function,prnumber,arrival_date,synopsis,reported_in,class,state,pl,category,blocker,dev_owner,resp,originator,hit) values('19.3DCB-CI','Switching','1428081-2','2019-04-02','                CI-PR: Traffic loss is seen after configuring mpls explicit-null','19.3DCB','bug','open','4-IL2','qfx-sw-pfe-mpls','Test','','ssingara','lajadas','1  ');
+insert into reg_openblocker_details(release,function,prnumber,arrival_date,synopsis,reported_in,class,state,pl,category,blocker,dev_owner,resp,originator,hit) values('19.3DCB-CI','Switching','1428692-2','2019-04-04','CI-PR: VGD core found @ ovsdb_idl_row_is_synthetic ovsdb_idl_txn_delete vgd_ovs_','19.3DCB','bug','need-setup','4-IL2','sw-ovsdb','PendingBlocker','ganeshmh','rakshatk','rakshatk','1  ');
+insert into reg_openblocker_details(release,function,prnumber,arrival_date,synopsis,reported_in,class,state,pl,category,blocker,dev_owner,resp,originator,hit) values('19.3DCB-CI','Switching','1430199-1','2019-04-12','             CI-PR : Multicast: PIM joints are not formed after restarting ESWD.','19.3DCB','bug','open','4-IL2','sw-pim','Test','','mc-category-owner','krbharath','2  ');
+/var/www/html/CI_Report/data/19-3DCB-CI_table
+Done

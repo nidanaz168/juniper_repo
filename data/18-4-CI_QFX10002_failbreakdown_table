@@ -1,0 +1,1 @@
+<center><table class='table table-bordered table-striped'><thead><tr><th>Exit Code</th><th>Count of scripts </th></tr></thead><tbody><tr><th>ABORT</th><td>2</td></tr><tr><th>CORE_PASS</th><td>1</td></tr><tr><th>FAIL</th><td>7</td></tr><tr><th>SPIRENT_CONNECT_ERROR</th><td>1</td></tr><tr><th>TOTAL</th><td>11</td></tr></thead></tbody></table>

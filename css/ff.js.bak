@@ -1,0 +1,11 @@
+function false_failure_init()
+{
+create_angular_gauge('ffgaugep1',0,550,550);
+create_angular_gauge('ffgauge',0,585,92);
+create_angular_gauge('fpass',0,100,78);
+create_line_graph('ffgraph','/homes/rod/public_html/EABU-MMX-TEST-GOALS1/data/ff.xml',1);
+create_line_graph('exgraph','/homes/rod/public_html/EABU-MMX-TEST-GOALS1/data/exec.xml',1);
+$("table").tablesorter({
+sortList: [[0,1]]
+});            
+}

@@ -1,0 +1,1466 @@
+
+
+<html>
+<head>
+ <title>DEBUG PAGE</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <meta name="PROGRAMMER" content=Ganesh Raman, Durga Prasad Velamuri">
+ <meta name="Pragma" CONTENT="no-cache">
+ <meta name="robots" content="noindex, follow">
+ <meta name="DATABASE" value="ext_ft_dr_gui_rw@systest_live on ttpgdb.juniper.net">
+ <link href="/ti/webapp/dr/shared/mainstyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<!-- START STYLESHEET INCLUDE -->
+<script language="javascript">
+ if (navigator.platform.indexOf ("Win32") !=-1) {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ie.css" type="text/css">');
+ } else {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ns.css" type="text/css">');
+ }
+</script>
+
+<body class="td-white-background"  topmargin="5" leftmargin="6" marginwidth="6" marginheight="5">
+
+</script>
+<!-- END STYLESHEET INCLUDE -->
+
+
+
+<!-- 1st ROW START-->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left" width="65%">
+      <table  width="100% border="0 cellspacing="0" cellpadding="0">
+        <tr>
+          <td><a href="http://www-int.juniper.net/"><img src="/images/juniperLogo.gif" alt="Juniper Networks Logo" width="154" height="40" border="0" /></a></td>
+          <td><img src="/image/pixel.gif"  alt="" height="10" /></td>
+          <td> <font color=blue size=4>Regression the Heartbeat Of Testing</font></td>
+          <td>  <font size=2> < sooraj > </font> </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- 1st ROW END-->
+
+
+
+<!-- 2nd ROW END-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr class="tr-table-header-dark">
+    <td width="47%" colspan="2">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+        <tr>
+         <td width="50%" class="tr-table-header-dark"><img src="/image/pixel.gif"  alt="" width="438" height="1" /></td>
+         <td rowspan="2"  valign="bottom" class="tr-table-header-dark"><img src="/ti/webapp/dr/image/hdr_global_slantline_l.gif" width="25" height="49" alt="divider" /></td>
+        </tr>
+        <tr>
+         <td width="438" height="49" class="darkest-bgcolor"> &nbsp;&nbsp;&nbsp;&nbsp;<span class="header-label">Regression Debugging</span> </td>
+         <td><div align="center"><font size=4>13.3_IBFRS1_MMX_RBU</font></div> </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- 2nd ROW END-->
+
+
+
+
+
+
+<table width="100%" cellspacing="0" cellpadding="0"><tr><td></td></tr></table>
+
+
+<!-- 3rd ROW START-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+
+
+
+
+
+    <td width="5" valign="top" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant5b.GIF"></td>
+    <td>
+      <div align="center">
+        <a href="index.mhtml?mode=0:2:0&result_id=29595" class="gnavsm">Reg Debug</a>
+      </div>
+    </td>
+    <td width="11" valign="top" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant5a.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=1:1:0&result_id=29595" class="gnavsm">Manual</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=2:0:0&result_id=29595" class="gnavsm">Status</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=3:1:0&result_id=29595" class="gnavsm">Reg Pass</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=4:1:0&result_id=29595" class="gnavsm">Edit</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=5:0:0&result_id=29595" class="gnavsm">Views</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=6:0:0&result_id=29595" class="gnavsm">Cores</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=7:0:0&result_id=29595" class="gnavsm">PR Verifications</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+  </tr>
+</table>
+<!-- 3rd ROW END-->
+
+
+<!-- 4rd ROW STARTS-->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+
+<!-- LEFT WINDOW STARTS -->
+
+    <td width="160 pixels" valign="top" rowspan="8"> 
+<!-- $VAR1 = 0;
+ -->
+
+      <!--
+ Debug page left frame. 
+Page: /httpd/htdocs/ti/webapp/dr/debug_dr/reg_debug/leftframe.mhtml
+-->
+
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+
+
+<table width="120" border="0" cellspacing="0" cellpadding="0">
+	  
+  <tr align="left" valign="top"> 
+
+    <td width="1" bgcolor="#999999"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td width="5">&nbsp;</td>
+    <td background="/ti/webapp/dr/image/gra_home_verdot_sm.jpg" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td colspan="3"> 
+
+    <table width="120" border="0" cellspacing="0" cellpadding="0">
+
+      <tr align="left"> 
+        <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Loop through the titles in Left Frame -->
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:0:0&result_id=29595" class="nav"> All Debug </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md_1.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:1:0&result_id=29595" class="nav"> All PR </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:2:0&result_id=29595" class="nav"> My Pending </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:3:0&result_id=29595" class="nav"> My Completed </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:4:0&result_id=29595" class="nav"> My PR </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+      <tr align="left"> 
+        <td width="1" valign="top" class="home-left-nav-dark"></td>
+
+<form name="new_owner_debug_page" type=post action="/ti/webapp/dr/debug_dr/index.mhtml">
+        
+        <td valign="center" class="home-left-nav-dark">
+          <select name=owner size="1" >
+                   <option value="ALL">debug-owner
+                   <option value=ALL selected>ALL
+                   <option value=None>None
+                   <option value=akbarss>akbarss
+                   <option value=amaravathi>amaravathi
+                   <option value=amkumar>amkumar
+                   <option value=amundewadi>amundewadi
+                   <option value=anpatel>anpatel
+                   <option value=arprasad>arprasad
+                   <option value=arunachalam>arunachalam
+                   <option value=ashker>ashker
+                   <option value=asubbaiyan>asubbaiyan
+                   <option value=bgaurav>bgaurav
+                   <option value=bharaths>bharaths
+                   <option value=brijesh>brijesh
+                   <option value=chaitrm>chaitrm
+                   <option value=chandraa>chandraa
+                   <option value=deepaknr>deepaknr
+                   <option value=dlakshmi>dlakshmi
+                   <option value=dpriyanka>dpriyanka
+                   <option value=drangu>drangu
+                   <option value=eabu>eabu
+                   <option value=eabu-reg>eabu-reg
+                   <option value=gkvishwa>gkvishwa
+                   <option value=hagarwal>hagarwal
+                   <option value=harib>harib
+                   <option value=hemants>hemants
+                   <option value=ichunikhin>ichunikhin
+                   <option value=jayanths>jayanths
+                   <option value=jnavaneeth>jnavaneeth
+                   <option value=kganesan>kganesan
+                   <option value=kgayathri>kgayathri
+                   <option value=khari>khari
+                   <option value=kmeehan>kmeehan
+                   <option value=ksenthil>ksenthil
+                   <option value=ksubramani>ksubramani
+                   <option value=manipc>manipc
+                   <option value=manishkr>manishkr
+                   <option value=manonmani>manonmani
+                   <option value=mmustafa>mmustafa
+                   <option value=mohanas>mohanas
+                   <option value=mpandey>mpandey
+                   <option value=nagarajr>nagarajr
+                   <option value=nambi>nambi
+                   <option value=nashadar>nashadar
+                   <option value=nhosalli>nhosalli
+                   <option value=nithyaks>nithyaks
+                   <option value=nkappala>nkappala
+                   <option value=nnarayan>nnarayan
+                   <option value=phreddy>phreddy
+                   <option value=plat_jayanths>plat_jayanths
+                   <option value=plat_mmustafa>plat_mmustafa
+                   <option value=plat_muralipm>plat_muralipm
+                   <option value=pprabhakar>pprabhakar
+                   <option value=pradk>pradk
+                   <option value=prot_gkvishwa>prot_gkvishwa
+                   <option value=psivam>psivam
+                   <option value=rameshbp>rameshbp
+                   <option value=rmarulappa>rmarulappa
+                   <option value=rnagpure>rnagpure
+                   <option value=roomen>roomen
+                   <option value=rumapathy>rumapathy
+                   <option value=sanukriti>sanukriti
+                   <option value=satyarp>satyarp
+                   <option value=scherian>scherian
+                   <option value=scheruku>scheruku
+                   <option value=services_dadimarta>services_dadimarta
+                   <option value=shaseen>shaseen
+                   <option value=shivas>shivas
+                   <option value=shivpatil>shivpatil
+                   <option value=shobiya>shobiya
+                   <option value=skundam>skundam
+                   <option value=sprakash>sprakash
+                   <option value=tgrenier>tgrenier
+                   <option value=vchitturi>vchitturi
+                   <option value=venkatt>venkatt
+                   <option value=vinothj>vinothj
+                   <option value=ztan>ztan
+          </select>
+        </td>
+
+
+        <td valign="center" class="home-left-nav-dark">
+          <input type=hidden name=mode value="0:5:0">
+          <input type=hidden name=result_id value="29595">
+          <input type=image border="0" name="submit" 
+            src="/ti/webapp/dr/image/btn_global_goarrow_sm1.GIF" width="18" height="26"/>
+        </td>
+</form>
+      </tr>
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td colspan="3" valign="top" class="td-white-background" ><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+      <tr align="left"> 
+        <td colspan="3" valign="top" class="td-white-background" ><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+    </table>
+
+    </td>
+
+    <td background="/ti/webapp/dr/image/gra_home_verdot_sm.jpg" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td width="13">&nbsp;</td>
+    <td bgcolor="#999999" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+  </tr>
+
+
+  <tr align="left" valign="top"> 
+    <td width="1" bgcolor="#999999"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td colspan="7" bgcolor="#999999"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td bgcolor="#999999" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+  </tr>
+
+</table>
+
+
+
+
+
+   
+
+<p id=p1 align=center><a href="/ti/webapp/dr/main_dr/index.mhtml">DR Main Page </a></p>
+<p id=p1 align=center><a href="http://systest.juniper.net/twiki/bin/view/Main/WebHome" target="_blank">Systest Home </a></p>
+<p id=p1 align=center><a href="http://systest.juniper.net/twiki/bin/view/Main/TI" target="_blank">TI Home </a> </p>
+
+    </td>
+<!-- LEFT WINDOW ENDS-->
+
+
+<!-- RIGHT WINDOW STARTS-->
+    <td valign="top">
+        
+
+<table width="120" border="0" cellspacing="0" cellpadding="0">
+
+    
+
+<!-- 3rd ROW START-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td></td></tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+
+
+
+    <td width="5" valign="top" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant5b.GIF"></td>
+    <td>
+      <div align="center">
+        <a href="index.mhtml?mode=0:1:0&owner=sooraj&result_id=29595" class="gnavsm">PR List</a>
+      </div>
+    </td>
+    <td width="11" valign="top" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant5a.gif"></td>
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=0:1:1&owner=sooraj&result_id=29595" class="gnavsm">Script</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=0:1:2&owner=sooraj&result_id=29595" class="gnavsm">Edit</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=0:1:3&owner=sooraj&result_id=29595" class="gnavsm">Reschedule</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+  </tr>
+</table>
+
+
+<!-- 3rd ROW END-->
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <script type="text/javascript" src="/ti/webapp/dr/debug_dr/reg_debug/reg_debug_pr.js"></script> 
+
+
+
+
+    <!-- DISPLAY pr-->
+    <script type="text/javascript" src="/ti/webapp/dr/debug_dr/reg_debug/reg_debug_pr.js"></script> 
+
+<!-- 
+/*
+ * Function to get the pr info
+ */
+
+-->
+
+
+
+
+<p id=p3>Debug view: <font color=blue>ALL</font></p>
+
+
+
+
+
+
+
+<!--        PR_LIST START       -->
+
+<p id=p10>Note: Please Sync up PRs to get the correct Customer Risk and Problem Level data.</p>
+<p id=p5>PR List  </p>
+
+<p id=p3>Click <a href="/ti/webapp/dr/debug_dr/index.mhtml?mode=0:1:0&result_id=29595&blocker=1" target="_blank"> here </a> to display only Blockers..</p>
+<p id=p3>Click <a href="/ti/webapp/dr/debug_dr/index.mhtml?mode=0:1:0&result_id=29595&sync_pr_dr=1"> here </a> to Sync/Update the PR's..</p>
+<br/>
+<table id=table1 width=95% border=1 cellpadding=1 cellspacing=0 >
+ <tr> 
+  <td id=td5>PR</td>
+  <td id=td5>STATE</td>
+  <td id=td5>CATEGORY</td>
+  <td id=td5>CUSTOMER RISK</td>
+  <td id=td5>PROBLEM LEVEL</td>
+  <td id=td5>SYNOPSIS</td>
+  <td id=td5>FOUND</td>
+  <td id=td5>REG</td>
+  <td id=td5>HIT</td>
+  <td id=td5>BLOCKER</td>
+ </tr>
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=790485 target=DISPLAY_PR>790485</a></td>
+  <td id=td1>closed
+</td>
+  <td id=td1>sw-os-tcpipv4</td>
+  <td id=td1>major</td>
+  <td id=td1>4-CL3</td>
+  <td id=td1>EABU MMX REGRESSIONS: Kernel Panic: rnh_index_alloc: nhindex 594 could not be allocated err=17 in rnh_index_alloc () at bsd/sys/net/rnh.c</td>
+  <td id=td1>OLD</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>2  </td>
+  <td id=td1></td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=799438 target=DISPLAY_PR>799438</a></td>
+  <td id=td1>closed
+</td>
+  <td id=td1>sw-atlas-irb</td>
+  <td id=td1>major</td>
+  <td id=td1>3-IL1</td>
+  <td id=td1>EABU MMX Regressions: OSPF adjacencies not coming up on certain IFLs with  IRB attached to vpls</td>
+  <td id=td1>OLD</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>8  </td>
+  <td id=td1>FRS</td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=802686 target=DISPLAY_PR>802686</a></td>
+  <td id=td1>open
+</td>
+  <td id=td1>sw-bfd</td>
+  <td id=td1>minor</td>
+  <td id=td1>4-IL2</td>
+  <td id=td1>Max time is very high on some MX960 thread</td>
+  <td id=td1>OLD</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>1  </td>
+  <td id=td1></td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=832888 target=DISPLAY_PR>832888</a></td>
+  <td id=td1>closed
+</td>
+  <td id=td1>sw-dcd</td>
+  <td id=td1>major</td>
+  <td id=td1>4-IL2</td>
+  <td id=td1>EABU MMX Regressions: dcd core @ db_delete,db_flush_entry,db_ih_walk,db_flush_non_dax_db</td>
+  <td id=td1>OLD</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>4  </td>
+  <td id=td1>Beta</td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=834571 target=DISPLAY_PR>834571</a></td>
+  <td id=td1>closed
+</td>
+  <td id=td1>sw-trinity-pfe</td>
+  <td id=td1>major</td>
+  <td id=td1>4-IL2</td>
+  <td id=td1>Altius : Feb crashed @ /src/pfe/common/drivers/luchip/luchip_trinity.c:1284  during overnight soak with scaled configurations , test was performing offline/online on siena & pisa</td>
+  <td id=td1>OLD</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>0  </td>
+  <td id=td1></td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=840317 target=DISPLAY_PR>840317</a></td>
+  <td id=td1>open</td>
+  <td id=td1>sw-routing-infra-table</td>
+  <td id=td1>major</td>
+  <td id=td1>4-IL2</td>
+  <td id=td1>RLI 9009 : ospf, cnh, 502 remote PEs for bgp multipath, local intf down, losing much of traffic</td>
+  <td id=td1>OLD</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>1  </td>
+  <td id=td1></td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=842336 target=DISPLAY_PR>842336</a></td>
+  <td id=td1>closed
+</td>
+  <td id=td1>sw-intf-lsq</td>
+  <td id=td1>major</td>
+  <td id=td1>4-IL2</td>
+  <td id=td1>EABU MMX REGRESSION: Shaping tests for DLCIs on FRF.16 bundles is not working as expected.</td>
+  <td id=td1>OLD</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>13  </td>
+  <td id=td1>IBRG</td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=849706 target=DISPLAY_PR>849706</a></td>
+  <td id=td1>open
+</td>
+  <td id=td1>sw-m-pfe</td>
+  <td id=td1>minor</td>
+  <td id=td1>6-IL4</td>
+  <td id=td1>SSBR0 core after FPC trigger - nh_walk_ids_all (nh=0x4482ed30, walk_func=0x408bc9c4 <nh_comp_mcast_walk_func></td>
+  <td id=td1>OLD</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>1  </td>
+  <td id=td1></td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=852191 target=DISPLAY_PR>852191</a></td>
+  <td id=td1>closed
+</td>
+  <td id=td1>sw-cos</td>
+  <td id=td1>major</td>
+  <td id=td1>4-IL2</td>
+  <td id=td1>EABU MMX REGRESSIONS:NEO:Ping is failing after enabled ingress-and-egress traffic-manager mode</td>
+  <td id=td1>OLD</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>1  </td>
+  <td id=td1>Test</td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=855046 target=DISPLAY_PR>855046</a></td>
+  <td id=td1>closed
+</td>
+  <td id=td1>sw-dfw</td>
+  <td id=td1>major</td>
+  <td id=td1>4-IL2</td>
+  <td id=td1>EABU RCT: cfmd core seen at junos_dfw_session_reply_get</td>
+  <td id=td1>OLD</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>3  </td>
+  <td id=td1></td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=865888 target=DISPLAY_PR>865888</a></td>
+  <td id=td1>open
+</td>
+  <td id=td1>sw-chassisd-mx</td>
+  <td id=td1>major</td>
+  <td id=td1>4-IL2</td>
+  <td id=td1>Windsurf: chassisd crash @ fpc_atlas_error_set (fpc=0x8ce0000, msg=<value optimized out>) at ../../../../src/junos/usr.sbin/chasd/fpc/fpc_atlas.c:3358 on changing COS config</td>
+  <td id=td1>OLD</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>3  </td>
+  <td id=td1>FCC</td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=868398 target=DISPLAY_PR>868398</a></td>
+  <td id=td1>open
+</td>
+  <td id=td1>sw-mx-synce</td>
+  <td id=td1>major</td>
+  <td id=td1>4-IL2</td>
+  <td id=td1>RBU MMX REGRESSIONS: clksyncd.core at ../../../../src/bsd/lib/libthr/thread/thr_syscalls.c:357</td>
+  <td id=td1>OLD</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>1  </td>
+  <td id=td1></td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=868441 target=DISPLAY_PR>868441</a></td>
+  <td id=td1>closed
+</td>
+  <td id=td1>sw-dcd</td>
+  <td id=td1>major</td>
+  <td id=td1>4-IL2</td>
+  <td id=td1>RBU MMX REGRESSIONS:Commit is failing for chassis level hash key configuration</td>
+  <td id=td1>OLD</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>4  </td>
+  <td id=td1>Test</td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=868709 target=DISPLAY_PR>868709</a></td>
+  <td id=td1>monitored
+</td>
+  <td id=td1>sw-intf-qpic-wan</td>
+  <td id=td1>major</td>
+  <td id=td1>4-IL2</td>
+  <td id=td1>RBU-MMX-REGRESSIONS:IPv4 ping test fails after configuring multiple IFL s</td>
+  <td id=td1>OLD</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>1  </td>
+  <td id=td1></td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=869656 target=DISPLAY_PR>869656</a></td>
+  <td id=td1>closed
+</td>
+  <td id=td1>sw-bgp</td>
+  <td id=td1>major</td>
+  <td id=td1>4-IL2</td>
+  <td id=td1>RBU MMX REGRESSIONS:rpd core seen @ rt_flowdep_resolution_job, rt_flowdep_subtree_resolve,rt_flowdep_dep_change,rt_flowdep_client_cb</td>
+  <td id=td1>OLD</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>1  </td>
+  <td id=td1>Beta</td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=870607 target=DISPLAY_PR>870607</a></td>
+  <td id=td1>feedback
+</td>
+  <td id=td1>sw-dfw</td>
+  <td id=td1>major</td>
+  <td id=td1>3-IL1</td>
+  <td id=td1>RBU MMX REGRESSIONS: verification failed on match-terms for L3 headers after configuring VPLS L3 filter.</td>
+  <td id=td1>OLD</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>2  </td>
+  <td id=td1>IBRG</td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=870645 target=DISPLAY_PR>870645</a></td>
+  <td id=td1>closed
+</td>
+  <td id=td1>sw-snmp</td>
+  <td id=td1>major</td>
+  <td id=td1>4-IL2</td>
+  <td id=td1>RBU MMX REGRESSIONS:Bridge-instance specific snmp query returns insufficient data</td>
+  <td id=td1>OLD</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>2  </td>
+  <td id=td1></td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=870674 target=DISPLAY_PR>870674</a></td>
+  <td id=td1>open
+</td>
+  <td id=td1>sw-eoam</td>
+  <td id=td1>critical</td>
+  <td id=td1>3-IL1</td>
+  <td id=td1>RBU MMX Regressions:CFM remote meps are not up for few of the interfaces in l2 circuit</td>
+  <td id=td1>OLD</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>19  </td>
+  <td id=td1></td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=870707 target=DISPLAY_PR>870707</a></td>
+  <td id=td1>open
+</td>
+  <td id=td1>sw-eoam</td>
+  <td id=td1>major</td>
+  <td id=td1>4-IL2</td>
+  <td id=td1>RBU MMX REGRESSIONS:Remote mep state is not in "ok" state and stuck at "start" state</td>
+  <td id=td1>OLD</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>1  </td>
+  <td id=td1></td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=871147 target=DISPLAY_PR>871147</a></td>
+  <td id=td1>analyzed</td>
+  <td id=td1>sw-tornado-mic</td>
+  <td id=td1>major</td>
+  <td id=td1>4-IL2</td>
+  <td id=td1>tornado on tiny: PLL alarm raised when clocking set to external and remote configured with LOS</td>
+  <td id=td1>OLD</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>1  </td>
+  <td id=td1></td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=871754 target=DISPLAY_PR>871754</a></td>
+  <td id=td1>closed
+</td>
+  <td id=td1>sw-issu-platform</td>
+  <td id=td1>major</td>
+  <td id=td1>4-IL2</td>
+  <td id=td1>ISSU AS host path window is more than expected limit.</td>
+  <td id=td1>OLD</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>4  </td>
+  <td id=td1>MR</td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=871905 target=DISPLAY_PR>871905</a></td>
+  <td id=td1>open</td>
+  <td id=td1>sw-chianti-mic</td>
+  <td id=td1>major</td>
+  <td id=td1>4-IL2</td>
+  <td id=td1>RBU MMX REGRESSIONS:SIENA: Changing the speed from coc3 to coc12 is not happening, change speed command is not working on this build.</td>
+  <td id=td1>NEW</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>3  </td>
+  <td id=td1> Test </td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=872248 target=DISPLAY_PR>872248</a></td>
+  <td id=td1>closed
+</td>
+  <td id=td1>sw-issu-infra</td>
+  <td id=td1>major</td>
+  <td id=td1>4-IL2</td>
+  <td id=td1>RBU MMX REGRESSIONS:Outage time during ISSU is taking more time than the expected</td>
+  <td id=td1>NEW</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>5  </td>
+  <td id=td1></td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=872405 target=DISPLAY_PR>872405</a></td>
+  <td id=td1>feedback
+</td>
+  <td id=td1>sw-dcd</td>
+  <td id=td1>critical</td>
+  <td id=td1>3-IL1</td>
+  <td id=td1>DCD core in ib_13_3_psd(0x080d49ba in dcd_handle_single_ri (dwd=0xffefbce8, riop=0xd00e9ea4,action=2, pData=0xffefc4b4) at ./../../../src/junos/sbin/dcd/parser/ddl_config.c:3510)</td>
+  <td id=td1>OLD</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>2  </td>
+  <td id=td1>Toxic</td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=874359 target=DISPLAY_PR>874359</a></td>
+  <td id=td1>closed
+</td>
+  <td id=td1>sw-cos</td>
+  <td id=td1>major</td>
+  <td id=td1>4-IL2</td>
+  <td id=td1>RBU MMX REGRESSIONS :TINY: Verification of RW counters is failing while testing mixed classification and re-write on different IFLS with same IRB interface</td>
+  <td id=td1>OLD</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>5  </td>
+  <td id=td1>MR</td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=874807 target=DISPLAY_PR>874807</a></td>
+  <td id=td1>feedback
+</td>
+  <td id=td1>sw-trinity-pfe-vpls</td>
+  <td id=td1>major</td>
+  <td id=td1>3-IL1</td>
+  <td id=td1>RBU MMX Regressions : CE-CE ping is failing due to Packets drop observed at PE(Mx80) under VPLS environment.</td>
+  <td id=td1>OLD</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>2  </td>
+  <td id=td1>MR</td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=875421 target=DISPLAY_PR>875421</a></td>
+  <td id=td1>open
+</td>
+  <td id=td1>sw-eoam</td>
+  <td id=td1>major</td>
+  <td id=td1>4-IL2</td>
+  <td id=td1>RBU MMX REGRESSIONS:NPC core@0x402a7a1c in ppmd_cfm_iterator_lookup (conn=0x4803e0b8, id=0, entry=0x47c12bd0) at ../../../../../../src/pfe-shared/toolkits/jnx/ppm/ppm_cfm_proc.c</td>
+  <td id=td1>NEW</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>3  </td>
+  <td id=td1>IBRG</td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=875949 target=DISPLAY_PR>875949</a></td>
+  <td id=td1>closed
+</td>
+  <td id=td1>sw-eoam</td>
+  <td id=td1>critical</td>
+  <td id=td1>3-IL1</td>
+  <td id=td1>RBU MMX Regressions:ping and traceroute failure in case of bridge with MHF and Meps are getting dropped with vpls as transit path</td>
+  <td id=td1>NEW</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>5  </td>
+  <td id=td1>MR</td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=876294 target=DISPLAY_PR>876294</a></td>
+  <td id=td1>open</td>
+  <td id=td1>sw-intf-lsq</td>
+  <td id=td1>critical</td>
+  <td id=td1>3-IL1</td>
+  <td id=td1>Commit error is thrown when deactivating the lsq / rlsq interface : Need fix for this</td>
+  <td id=td1>OLD</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>2  </td>
+  <td id=td1> IBRG </td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=876622 target=DISPLAY_PR>876622</a></td>
+  <td id=td1>open
+</td>
+  <td id=td1>sw-routing-infra-ha</td>
+  <td id=td1>major</td>
+  <td id=td1>4-IL2</td>
+  <td id=td1>METIS-ISSU: RPD crash on doing issu upgrade from jinstall-13.1R2-domestic-signed.tgz to jinstall-13.2-20130422_ib_13_3_psd.0-domestic-signed.tgz</td>
+  <td id=td1>OLD</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>1  </td>
+  <td id=td1></td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=877025 target=DISPLAY_PR>877025</a></td>
+  <td id=td1>open
+</td>
+  <td id=td1>sw-ospf</td>
+  <td id=td1>major</td>
+  <td id=td1>4-IL2</td>
+  <td id=td1>RBU MMX REGRESSIONS:PINOT:Not all OSPF adjacency coming UP between PE routers where logical system is configured.</td>
+  <td id=td1>NEW</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>2  </td>
+  <td id=td1>Test</td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=877450 target=DISPLAY_PR>877450</a></td>
+  <td id=td1>info
+</td>
+  <td id=td1>sw-multicast-snooping</td>
+  <td id=td1>major</td>
+  <td id=td1>4-IL2</td>
+  <td id=td1>Mcsnoopd cores in rt_mcnh_nh_add_del_mbr_snoopd() in ib_13_3_psd</td>
+  <td id=td1>OLD</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>3  </td>
+  <td id=td1></td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=877555 target=DISPLAY_PR>877555</a></td>
+  <td id=td1>open
+</td>
+  <td id=td1>sw-intf-iq2</td>
+  <td id=td1>major</td>
+  <td id=td1>4-IL2</td>
+  <td id=td1>RBU MMX REGRESSIONS: After loading image 13.2-20130426_ib_13_3_psd.2 IQ2 pic is going to offline.</td>
+  <td id=td1>NEW</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>4  </td>
+  <td id=td1></td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=877767 target=DISPLAY_PR>877767</a></td>
+  <td id=td1>open
+</td>
+  <td id=td1>sw-issu-platform</td>
+  <td id=td1>major</td>
+  <td id=td1>4-IL2</td>
+  <td id=td1>RBU MMX REGRESSIONS:RFPC3.core@in pfeman_session_end (session=0x4181b0e8,cmd=<value optimized out>)</td>
+  <td id=td1>NEW</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>2  </td>
+  <td id=td1>IBRG</td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=878413 target=DISPLAY_PR>878413</a></td>
+  <td id=td1>open</td>
+  <td id=td1>sw-issu-platform</td>
+  <td id=td1>major</td>
+  <td id=td1>4-IL2</td>
+  <td id=td1>RBU MMX Regressions: While doing ISSU from 13.1R2.1 to 13.2-20130426_ib_13_3_psd.2  getting ERROR as jinstall fails requirements check</td>
+  <td id=td1>NEW</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>10  </td>
+  <td id=td1></td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=878425 target=DISPLAY_PR>878425</a></td>
+  <td id=td1>open</td>
+  <td id=td1>sw-services</td>
+  <td id=td1>major</td>
+  <td id=td1>4-IL2</td>
+  <td id=td1>RBU MMX REGRESSIONS: After loading image 13.2-20130430_ib_13_3_psd.1 Adaptive Services-II pic is flapping.</td>
+  <td id=td1>NEW</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>12  </td>
+  <td id=td1></td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=878696 target=DISPLAY_PR>878696</a></td>
+  <td id=td1>open</td>
+  <td id=td1>sw-chassisd-mx</td>
+  <td id=td1>major</td>
+  <td id=td1>4-IL2</td>
+  <td id=td1>RBU MMX REGRESSIONS: "Mx240" Show chassis routing engine throws error "the chassis-control subsystem is not running" on 13.2-20130502_ib_13_3_psd.0 build and chassisd core seen @ 0x88dff500 in fabric_mx_event_plane_online</td>
+  <td id=td1>NEW</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>1  </td>
+  <td id=td1> IBRG </td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=879006 target=DISPLAY_PR>879006</a></td>
+  <td id=td1>open</td>
+  <td id=td1>sw-chassisd-mx</td>
+  <td id=td1>critical</td>
+  <td id=td1>3-IL1</td>
+  <td id=td1>CE-SMOKE-DHCP-IP-DEMUX-VLAN-DEMUX:multiple chassisd cores running DHCP-IP-DEMUX smoke</td>
+  <td id=td1>NEW</td>
+  <td id=td1>13.3_IB_PSD_FULL_MMX_RBU</td>
+  <td id=td1>1  </td>
+  <td id=td1> Test </td>
+ </tr>
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td1><a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=879191 target=DISPLAY_PR>879191</a></td>
+  <td id=td1>open</td>
+  <td id=td1>sw-l2ckt</td>
+  <td id=td1>major</td>
+  <td id=td1>3-IL1</td>
+  <td id=td1>rpd core @l2ckt_intf_adv_rt_add during soak with l2ckt/l2vpn/vpls</td>
+  <td id=td1>NEW</td>
+  <td id=td1>13.3_IB_PSD_PENDING_MMX_RBU</td>
+  <td id=td1>2  </td>
+  <td id=td1> Test </td>
+ </tr>
+
+
+
+ 
+</table>
+
+<p id=p1> 
+ PR Count (NEW / OLD): 
+    <font color=black>12 / 27</font> 
+</p>
+<p id=p1> 
+ Blocker PR Count : 
+    <font color=black>21</font> 
+</p><br>
+
+
+
+
+<p id=p1>
+ Total PR Count (NEW / OLD / TOTAL):
+    <font color=black>12 / 27 / 39</font>
+</p><br>
+
+
+<!--     PR_LIST  END     -->
+
+
+
+
+<br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+</table> 
+<br><br><br><br><br><br><br><br>
+
+
+
+
+ 
+
+
+</table>
+
+
+
+
+
+
+    </td>
+<!-- RIGHT WINDOW ENDS-->
+
+
+
+  </tr>
+</table>
+
+<!-- 4rd ROW ENDS-->
+
+
+
+
+
+
+
+
+
+
+
+<br />
+<hr noshade size="1" width="100%" />
+ 
+</body>
+</html>
+
+
+
+
+
+
+

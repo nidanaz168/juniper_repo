@@ -1,0 +1,43 @@
+table.data
+{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 10px;
+    top:10px;
+    text-align: center;
+    border-collapse: collapse;
+}
+table.data th
+{
+    padding: 8px;
+    font-weight: normal;
+    font-size: 10px;
+    color: #039;
+    background: #D3D3D3;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+table.data td
+{
+    padding: 8px;
+    background: #e8edff;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    color: #000;
+}              
+.data .odd
+{
+    background: #C5D9F1;
+    color: #000;
+    font-size: 11px;
+}
+.data .even
+{
+    background: #ECF2FA;
+    color: #000;
+    font-size: 11px;
+}                       
+	

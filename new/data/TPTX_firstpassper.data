@@ -1,0 +1,9 @@
+<center><h1>First Pass Percentage</h1>
+<table class='firstpass' style='width:50%'>
+<thead><tr><th>Release</th><th>IBFRS1</th><th>IBFRS2</th><th>B1</th><th>R1</th><th>R2</th><th>R3</th><th>R4</th></tr></thead>
+<tr><td>12.3</td><td>0 %</td><td>0 %</td><td>0 %</td><td>0 %</td><td>0 %</td><td>0 %</td><td>0 %</td></tr>
+<tr><td>13.2</td><td>0 %</td><td>0 %</td><td>0 %</td><td>0 %</td><td>0 %</td><td>0 %</td><td>0 %</td></tr>
+<tr><td>13.2</td><td>0 %</td><td>0 %</td><td>0 %</td><td>0 %</td><td>0 %</td><td>0 %</td><td>0 %</td></tr>
+<tr><td>13.3</td><td>0 %</td><td>0 %</td><td>0 %</td><td>0 %</td><td>0 %</td><td>0 %</td><td>0 %</td></tr>
+<tr><td>14.1</td><td>0 %</td><td>0 %</td><td>0 %</td><td>0 %</td><td>0 %</td><td>0 %</td><td>0 %</td></tr>
+</table></center>

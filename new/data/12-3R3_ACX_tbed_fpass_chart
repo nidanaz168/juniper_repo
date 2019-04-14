@@ -1,0 +1,7 @@
+<chart caption='First Pass' xAxisName='Test Beds' yAxisName='Pass %' showValues='1' numberPrefix='' useRoundEdges='1' legendBorderAlpha='100' showBorder='0' bgColor='FFFFFF,FFFFFF' ><categories><category label='(d)-eabu-reg-acx-dt2' /><category label='(d)-eabu-reg-acx-dt1' /><category label='eabu-scale1-irtb' /></categories><dataset seriesName='First Pass %'><set label='(d)-eabu-reg-acx-dt2' value='91.18'  />
+<set label='(d)-eabu-reg-acx-dt1' value='80.39'  />
+<set label='eabu-scale1-irtb' value='77.78'  />
+</dataset><dataset seriesName='Actual Pass %'><set label='(d)-eabu-reg-acx-dt2' value='95.10'  />
+<set label='(d)-eabu-reg-acx-dt1' value='100.00'  />
+<set label='eabu-scale1-irtb' value='100.00'  />
+</dataset></chart>

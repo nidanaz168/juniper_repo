@@ -1,0 +1,11 @@
+BD=
+select result_id from er_regression_result where name in ('17.1R3_Ultimat','17.1R3_targetted_Elite','17.1R3_ELIT_P1','17.1R3_Ridge','RPT_REG_TPTX_17_1R3','JDI_REG_RPD_17.1R3','JDI_REG_RPD_17.1R3_Virtual','JDI_REG_RPD_17.1R3.1','17.1R3_Mojito','RPT_REG_MMX_R3_171','B54_17.1R3','Rodnik_17.1R3','V44_17.1R3','17.1R3_Targetted_Opus','RPT_REG_BBE_17.1R3_ZPR','RPT_REG_BBE_17.1R3','RPT_REG_SERVICES_R3_17.1','RPT_REG_SERVICES_R3.3_17.1-ZPR','RPT_REG_KM_17.1_R3','RPT_REG_KM_ZPR_R3_17.1','RPT_REG_ACX_17.1R3','RPT_REG_ACX_17.1R3.3_ZPR') and parent_result_id='0'2019-01-05 
+select result_id from er_regression_result where (name= '17.1R3_Targetted_Opus' and parent_result_id='0')
+201624 
+201624 
+wget -o log -O out.29137 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=5:7:0&result_id=201624" 
+hit = wget -o log -O prs.29137 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=0:1:0&result_id=201624" 
+wget -o log -O out.29137 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" http://www-systest.juniper.net/ti/webapp/dr/debug_dr/view/gen_tl9000_report.mhtml?result_id=201624&trans=remove
+delete from script_pr where release='17.1R3-TARGETED' and function='QFX-OPUS'prstr is 1333823  
+/homes/rod/public_html/Regression/report/data/17-1R3-TARGETED_table
+Done

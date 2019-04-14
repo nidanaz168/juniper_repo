@@ -1,0 +1,14 @@
+BD=2019-04-19
+select result_id from er_regression_result where (name= 'PROTOCOLS_PHYSICAL_CI_18.4Th_20190328' and parent_result_id='0')
+213673 
+213673 
+wget -o log -O out.21819 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=5:7:0&result_id=213673" 
+fullfile
+
+hit = wget -o log -O prs.21819 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=0:1:0&result_id=213673" 
+wget -o log -O out.21819 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" http://www-systest.juniper.net/ti/webapp/dr/debug_dr/view/gen_tl9000_report.mhtml?result_id=213673&trans=remove
+delete from script_pr where release='18.4-CI' and function='Protocols'prstr is 1394803 1427911 1428200 1428441  
+insert into reg_openblocker_details(release,function,prnumber,arrival_date,synopsis,reported_in,class,state,pl,category,blocker,dev_owner,resp,originator,hit) values('18.4-CI','Protocols','1428200-1','2019-04-03','[oam] [oam] CI-PR:"show oam ethernet connectivity-fault-management sla-iterator-','18.4R2','bug','assigned','4-IL2','sw-eoam','Test','vingupta','vingupta','venupg','1  ');
+insert into reg_openblocker_details(release,function,prnumber,arrival_date,synopsis,reported_in,class,state,pl,category,blocker,dev_owner,resp,originator,hit) values('18.4-CI','Protocols','1428441-1','2019-04-04','                                      CI-PR:BFD Session on AE's is not coming up','18.4R2','bug','assigned','4-IL2','sw-bfd','Test','nnihasp','nnihasp','venupg','4  ');
+/var/www/html/CI_Report/data/18-4-CI_table
+Done

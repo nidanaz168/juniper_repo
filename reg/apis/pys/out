@@ -1,0 +1,990 @@
+<html>
+<head>
+ <title>TL9000 Report</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <meta name="Pragma" CONTENT="no-cache">
+ <meta name="robots" content="noindex, follow">
+ <link href="/ti/webapp/dr/shared/mainstyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<!-- START STYLESHEET INCLUDE -->
+<script language="javascript">
+ if (navigator.platform.indexOf ("Win32") !=-1) {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ie.css" type="text/css">');
+ } else {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ns.css" type="text/css">');
+ }
+</script>
+
+<body class="td-white-background"  topmargin="5" leftmargin="6" marginwidth="6" marginheight="5" >
+
+</script>
+<!-- END STYLESHEET INCLUDE -->
+
+
+
+<!-- 
+/*
+ * Function to get reg report info
+ *
+ */
+-->
+
+no_tei :  <br><br>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr  class="bluefield">
+  <td rowspan="1"  height="70">&nbsp; &nbsp;
+  <a href="http://www-int.juniper.net/">
+  <img src="/images/juniperLogo.gif" height="33" width="90" border="0"></a></td>
+  <td id=td15> Regression Test Report</td> </tr>
+  <tr> <td>&nbsp; &nbsp;</td> 
+  <td id=td16><font color=red>18.1R2-S4_SYMPHONY</font> ( Service Release)<br> 
+        Document:  <!-- EDIT -->[Document CVS ID TAG]<br>
+        Template: S03.02.P13.T02, <!-- EDIT -->[Revision: 1.10]
+  </td> </tr>
+</table>
+
+<p id=td16_1>JUNIPER NETWORKS COMPANY CONFIDENTIAL</p>
+<p id=td15_1><font color=blue>1.0</font> Introduction</p>
+<p id=td16_1>This document constitutes a Regression Test Report pertaining to the following context: <br><br>- JUNOS release       : <font color=red>18.1R2-S4_SYMPHONY</font><br>-Project Lead        : <font color=blue>vineshv</font><br><br>-Regression Tracking : PR12345<!--br><br>Regression Testplan Link: <br> PATH TO TEST PLAN <br--> </p>
+<br>
+
+<p id=td15_1><font color=blue>2.0 </font>Regression : </p>
+  <div>
+     <div style="float:left;">
+       <fieldset id=td16_1 style="width:500px;padding:0 0 10 15;line-height:25px;">
+	  <legend> Script Filters</legend>
+	  <input type="radio" name="filter_type" value="all" checked onChange="show_hide_scripts('all','');">All Scripts<br>
+	  <input type="radio" name="filter_type" value="final_respin_status_selection" id="final_respin_status_selection_radio">Final Respin Status Selection &nbsp;&nbsp;
+            <select id="pass_fail_combo" onChange="show_hide_scripts(this.value,'final');document.getElementById('final_respin_status_selection_radio').checked=true;">
+               <option value="all">All Scripts</option>
+               <option value="reg_pass">Reg Pass</option>
+               <option value="debug_pass">Debug Pass</option>
+               <option value="fail">Debug Fail</option>
+               <option value="undebugged">UnDebugged</option>
+            </select>
+	  <br>
+
+	  <input type="radio" name="filter_type" value="prs" onChange="showOnlyPrs();">Only PRs<br>
+       </fieldset>
+     </div>
+
+     <div style="float:left;">
+       <fieldset id=td16_1 style="width:180px;padding:0 0 10 15;line-height:20px;">
+	  <legend>Script Execution Legend:</legend> 
+	  P&nbsp;&nbsp;&nbsp;&nbsp; : Reg Pass<br>
+	  DP&nbsp;&nbsp;: Debug Pass<br>
+	  DF&nbsp;&nbsp;: Debug Fail<br>
+	  UD&nbsp;&nbsp;: UnDebugged
+       </fieldset>
+    </div>
+  </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <div>
+      <span id=td16_1>Scripts Displayed: <span id="script_display_count"></span> / <span id="total_script_display_count"></span></span>
+  </div>
+<br>
+
+<script type="text/javascript">
+
+  function showOnlyPrs(){
+    i=0;
+    hide_all();
+    $('span[id="show_pr"]').each(function(){
+      this.closest('tr').style.display = "";
+      i++;
+    }) 
+    $('#script_display_count').text(i);
+  }
+
+  function show_hide_scripts(result_filter_type){
+    hide_all();
+    show_scripts(result_filter_type);
+  }
+
+  function hide_all(result_filter_type){
+    $('tr[id^="script_result_"]').each(function(){
+      $(this).find('td').css('background-color','white');
+      this.style.display = "none";
+    })
+  }
+
+  function show_scripts(result_filter_type){
+    i=0;
+    if(result_filter_type == "all"){
+      $('tr[id^="script_result_"]').each(function(){
+        this.style.display = "";
+	i++;
+      });
+
+      $('#pass_fail_combo').val("all");
+      $('#regular_pass_fail_combo').val("regular_all");
+
+    }else{
+      if(result_filter_type.indexOf("regular_") != -1){
+        $('span[id^="regular_undebugged-"]').each(function(){
+	  $(this).closest('td').css('background-color','orange');
+	  this.closest('tr').style.display="";
+	  i++;
+	})
+      }else{
+        $('tr[id^="script_result_'+result_filter_type+'"]').each(function(){
+	  final_script_result = $(this).find('span[id^="final_undebugged-"]');
+	  script_result_number = (final_script_result.attr('id').split("-"))[1];
+	  regular_script_result = $(this).find('span[id^="regular_"][id$='+script_result_number+']');
+	  console.log(regular_script_result);
+
+	  $(this).find('span[id^="regular_"][id$='+script_result_number+']').closest('td').css('background-color','orange');	  
+	  $(this).find('span[id^="final_undebugged-"]').closest('td').css('background-color','yellow');
+          this.style.display = "";
+	  i++;
+        })
+      }
+    }
+
+    $('#script_display_count').text(i);
+
+  }
+
+</script>
+
+<table id=table1 border=1 width=70% cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5 width=20%>SCENARIO/SCRIPT</td>
+  <td id=td5 width=40%>SYNOPSIS</td>
+  <td id=td5 width=40%>PRs</td>
+  <td id=td5 width=40%>Final Respin Status</td>
+  <td id=td5>18.1R2-S4_SYMPHONY</td>
+ </tr>
+
+
+
+
+
+<!-- to get the position to print -->
+
+
+
+    <tr id="script_result_debug_pass">
+
+    <td id=td17 width=20%>181R1_RLI_37755_SYMPHONY_ACL_l2l3l4_SYMPHONY/181R1_RLI_37755_SYMPHONY_ACL_l2l3l4.pl</td>
+    <td id=td17 width=30%>181R1_RLI_37755_SYMPHONY_ACL_l2l3l4.pl <br> </td>
+    <td id=td17 width=30%>
+	  -
+    </td>
+
+
+
+
+
+	<td id=td17 title="Debug Pass">
+	  <span id="final_undebugged-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_FAIL_ANALYSIS/SUB_2698129/53691046&result_id=202947 target=LOG>DP</a></span>
+	</td>
+
+
+
+
+              <td title="Debug Pass" id=td17 width=25%><span id="regular_scipts-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_FAIL_ANALYSIS/SUB_2698129/53691046&result_id=202947 target=LOG>DP</a> </td>
+
+
+     </tr>
+
+
+
+
+<!-- to get the position to print -->
+
+
+
+    <tr id="script_result_reg_pass">
+
+    <td id=td17 width=20%>181R1_RLI37749_Symphony_vlanrange_igmpsnooping_1.pl_92963_Default_etrans/181R1_RLI37749_Symphony_vlanrange_igmpsnooping_1.pl</td>
+    <td id=td17 width=30%>181R1_RLI37749_Symphony_vlanrange_igmpsnooping_1.pl <br> </td>
+    <td id=td17 width=30%>
+	  -
+    </td>
+
+
+
+
+
+	<td id=td17 title="Reg Pass">
+	  <span id="final_undebugged-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691036/attempt_1/script-exec&result_id=202947 target=LOG>P</a></span>
+	</td>
+
+
+
+
+              <td title="Reg Pass" id=td17 width=25%><span id="regular_scipts-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691036/attempt_1/script-exec&result_id=202947 target=LOG>P</a> </td>
+
+
+     </tr>
+
+
+
+
+<!-- to get the position to print -->
+
+
+
+    <tr id="script_result_reg_pass">
+
+    <td id=td17 width=20%>181R1_RLI_37748_SYMPHONY_LA_FBF_misc_part1.pl_94063_Default_etrans/181R1_RLI_37748_SYMPHONY_LA_FBF_misc_part1.pl</td>
+    <td id=td17 width=30%>181R1_RLI_37748_SYMPHONY_LA_FBF_misc_part1.pl <br> </td>
+    <td id=td17 width=30%>
+	  -
+    </td>
+
+
+
+
+
+	<td id=td17 title="Reg Pass">
+	  <span id="final_undebugged-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691043/attempt_1/script-exec&result_id=202947 target=LOG>P</a></span>
+	</td>
+
+
+
+
+              <td title="Reg Pass" id=td17 width=25%><span id="regular_scipts-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691043/attempt_1/script-exec&result_id=202947 target=LOG>P</a> </td>
+
+
+     </tr>
+
+
+
+
+<!-- to get the position to print -->
+
+
+
+    <tr id="script_result_reg_pass">
+
+    <td id=td17 width=20%>181R1_RLI_37752_SYMPHONY_LA_FBF_FCC_SYMPHONY/181R1_RLI_37752_SYMPHONY_LA_FBF_FCC.pl</td>
+    <td id=td17 width=30%>181R1_RLI_37752_SYMPHONY_LA_FBF_FCC.pl <br> </td>
+    <td id=td17 width=30%>
+	  -
+    </td>
+
+
+
+
+
+	<td id=td17 title="Reg Pass">
+	  <span id="final_undebugged-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691049/attempt_2/script-exec&result_id=202947 target=LOG>P</a></span>
+	</td>
+
+
+
+
+              <td title="Reg Pass" id=td17 width=25%><span id="regular_scipts-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691049/attempt_2/script-exec&result_id=202947 target=LOG>P</a> </td>
+
+
+     </tr>
+
+
+
+
+<!-- to get the position to print -->
+
+
+
+    <tr id="script_result_reg_pass">
+
+    <td id=td17 width=20%>AI_Script_Install_qfx5200-48y.pl_SYMPHONY/AI_Script_Install_qfx5200-48y.pl</td>
+    <td id=td17 width=30%>AI_Script_Install_qfx5200-48y.pl <br> </td>
+    <td id=td17 width=30%>
+	  -
+    </td>
+
+
+
+
+
+	<td id=td17 title="Reg Pass">
+	  <span id="final_undebugged-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691035/attempt_1/script-exec&result_id=202947 target=LOG>P</a></span>
+	</td>
+
+
+
+
+              <td title="Reg Pass" id=td17 width=25%><span id="regular_scipts-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691035/attempt_1/script-exec&result_id=202947 target=LOG>P</a> </td>
+
+
+     </tr>
+
+
+
+
+<!-- to get the position to print -->
+
+
+
+    <tr id="script_result_reg_pass">
+
+    <td id=td17 width=20%>181R1_RLI_37747_SYMPHONY_l2circuits_basic.pl_94229_Default_etrans/181R1_RLI_37747_SYMPHONY_l2circuits_basic.pl</td>
+    <td id=td17 width=30%>181R1_RLI_37747_SYMPHONY_l2circuits_basic.pl <br> </td>
+    <td id=td17 width=30%>
+	  -
+    </td>
+
+
+
+
+
+	<td id=td17 title="Reg Pass">
+	  <span id="final_undebugged-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691047/attempt_1/script-exec&result_id=202947 target=LOG>P</a></span>
+	</td>
+
+
+
+
+              <td title="Reg Pass" id=td17 width=25%><span id="regular_scipts-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691047/attempt_1/script-exec&result_id=202947 target=LOG>P</a> </td>
+
+
+     </tr>
+
+
+
+
+<!-- to get the position to print -->
+
+
+
+    <tr id="script_result_reg_pass">
+
+    <td id=td17 width=20%>181R1_RLI_37753_SYMPHONY_isisv6_overloadv6_SYMPHONY/181R1_RLI_37753_SYMPHONY_isisv6_overloadv6.pl</td>
+    <td id=td17 width=30%>181R1_RLI_37753_SYMPHONY_isisv6_overloadv6.pl <br> </td>
+    <td id=td17 width=30%>
+	  -
+    </td>
+
+
+
+
+
+	<td id=td17 title="Reg Pass">
+	  <span id="final_undebugged-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691052/attempt_1/script-exec&result_id=202947 target=LOG>P</a></span>
+	</td>
+
+
+
+
+              <td title="Reg Pass" id=td17 width=25%><span id="regular_scipts-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691052/attempt_1/script-exec&result_id=202947 target=LOG>P</a> </td>
+
+
+     </tr>
+
+
+
+
+<!-- to get the position to print -->
+
+
+
+    <tr id="script_result_reg_pass">
+
+    <td id=td17 width=20%>181R1_RLI_37751_SYMPHONY_MCLAG_L3_1_SYMPHONY/181R1_RLI_37751_SYMPHONY_MCLAG_L3_1.pl</td>
+    <td id=td17 width=30%>181R1_RLI_37751_SYMPHONY_MCLAG_L3_1.pl <br> </td>
+    <td id=td17 width=30%>
+	  -
+    </td>
+
+
+
+
+
+	<td id=td17 title="Reg Pass">
+	  <span id="final_undebugged-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691045/attempt_1/script-exec&result_id=202947 target=LOG>P</a></span>
+	</td>
+
+
+
+
+              <td title="Reg Pass" id=td17 width=25%><span id="regular_scipts-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691045/attempt_1/script-exec&result_id=202947 target=LOG>P</a> </td>
+
+
+     </tr>
+
+
+
+
+<!-- to get the position to print -->
+
+
+
+    <tr id="script_result_reg_pass">
+
+    <td id=td17 width=20%>181R1_RLI_37762_SYMPHONY_ovsdb_regression_new.pl_94049_Default_etrans/181R1_RLI_37762_SYMPHONY_ovsdb_regression_new.pl</td>
+    <td id=td17 width=30%>181R1_RLI_37762_SYMPHONY_ovsdb_regression_new.pl <br> </td>
+    <td id=td17 width=30%>
+	  -
+    </td>
+
+
+
+
+
+	<td id=td17 title="Reg Pass">
+	  <span id="final_undebugged-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691041/attempt_1/script-exec&result_id=202947 target=LOG>P</a></span>
+	</td>
+
+
+
+
+              <td title="Reg Pass" id=td17 width=25%><span id="regular_scipts-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691041/attempt_1/script-exec&result_id=202947 target=LOG>P</a> </td>
+
+
+     </tr>
+
+
+
+
+<!-- to get the position to print -->
+
+
+
+    <tr id="script_result_reg_pass">
+
+    <td id=td17 width=20%>181R1_RLI_37763_SYMPHONY_static_mac_1.pl_94082_Default_etrans/181R1_RLI_37763_SYMPHONY_static_mac_1.pl</td>
+    <td id=td17 width=30%>181R1_RLI_37763_SYMPHONY_static_mac_1.pl <br> </td>
+    <td id=td17 width=30%>
+	  -
+    </td>
+
+
+
+
+
+	<td id=td17 title="Reg Pass">
+	  <span id="final_undebugged-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691037/attempt_1/script-exec&result_id=202947 target=LOG>P</a></span>
+	</td>
+
+
+
+
+              <td title="Reg Pass" id=td17 width=25%><span id="regular_scipts-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691037/attempt_1/script-exec&result_id=202947 target=LOG>P</a> </td>
+
+
+     </tr>
+
+
+
+
+<!-- to get the position to print -->
+
+
+
+    <tr id="script_result_reg_pass">
+
+    <td id=td17 width=20%>181R1_RLI37760_Symphony_QinQ_port_mode_change_lacp_port_2.pl_92959_Default_etrans/181R1_RLI37760_Symphony_QinQ_port_mode_change_lacp_port_2.pl</td>
+    <td id=td17 width=30%>181R1_RLI37760_Symphony_QinQ_port_mode_change_lacp_port_2.pl <br> </td>
+    <td id=td17 width=30%>
+	  -
+    </td>
+
+
+
+
+
+	<td id=td17 title="Reg Pass">
+	  <span id="final_undebugged-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691053/attempt_1/script-exec&result_id=202947 target=LOG>P</a></span>
+	</td>
+
+
+
+
+              <td title="Reg Pass" id=td17 width=25%><span id="regular_scipts-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691053/attempt_1/script-exec&result_id=202947 target=LOG>P</a> </td>
+
+
+     </tr>
+
+
+
+
+<!-- to get the position to print -->
+
+
+
+    <tr id="script_result_reg_pass">
+
+    <td id=td17 width=20%>181R1_RLI_37759_SYMPHONY_Vxlan_Full_2.pl_94208_Default_etrans/181R1_RLI_37759_SYMPHONY_Vxlan_Full_2.pl</td>
+    <td id=td17 width=30%>181R1_RLI_37759_SYMPHONY_Vxlan_Full_2.pl <br> </td>
+    <td id=td17 width=30%>
+	  -
+    </td>
+
+
+
+
+
+	<td id=td17 title="Reg Pass">
+	  <span id="final_undebugged-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691054/attempt_2/script-exec&result_id=202947 target=LOG>P</a></span>
+	</td>
+
+
+
+
+              <td title="Reg Pass" id=td17 width=25%><span id="regular_scipts-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691054/attempt_2/script-exec&result_id=202947 target=LOG>P</a> </td>
+
+
+     </tr>
+
+
+
+
+<!-- to get the position to print -->
+
+
+
+    <tr id="script_result_reg_pass">
+
+    <td id=td17 width=20%>181R1_RLI_37761_SYMPHONY_Pvlan_Irb_IPV6_3.pl_115461_Default/181R1_RLI_37761_SYMPHONY_Pvlan_Irb_IPV6_3.pl</td>
+    <td id=td17 width=30%>181R1_RLI_37761_SYMPHONY_Pvlan_Irb_IPV6_3.pl <br> </td>
+    <td id=td17 width=30%>
+	  -
+    </td>
+
+
+
+
+
+	<td id=td17 title="Reg Pass">
+	  <span id="final_undebugged-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691034/attempt_1/script-exec&result_id=202947 target=LOG>P</a></span>
+	</td>
+
+
+
+
+              <td title="Reg Pass" id=td17 width=25%><span id="regular_scipts-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691034/attempt_1/script-exec&result_id=202947 target=LOG>P</a> </td>
+
+
+     </tr>
+
+
+
+
+<!-- to get the position to print -->
+
+
+
+    <tr id="script_result_reg_pass">
+
+    <td id=td17 width=20%>181R1_RLI_37759_SYMPHONY_Static_Vxlan_Part1_SYMPHONY/181R1_RLI_37759_SYMPHONY_Static_Vxlan_Part1.pl</td>
+    <td id=td17 width=30%>181R1_RLI_37759_SYMPHONY_Static_Vxlan_Part1.pl <br> </td>
+    <td id=td17 width=30%>
+	  -
+    </td>
+
+
+
+
+
+	<td id=td17 title="Reg Pass">
+	  <span id="final_undebugged-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691040/attempt_1/script-exec&result_id=202947 target=LOG>P</a></span>
+	</td>
+
+
+
+
+              <td title="Reg Pass" id=td17 width=25%><span id="regular_scipts-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691040/attempt_1/script-exec&result_id=202947 target=LOG>P</a> </td>
+
+
+     </tr>
+
+
+
+
+<!-- to get the position to print -->
+
+
+
+    <tr id="script_result_debug_pass">
+
+    <td id=td17 width=20%>181R1_RLI_37744_SYMPHONY_CoS_8021p_SYMPHONY/181R1_RLI_37744_SYMPHONY_CoS_8021p.pl</td>
+    <td id=td17 width=30%>181R1_RLI_37744_SYMPHONY_CoS_8021p.pl <br> </td>
+    <td id=td17 width=30%>
+	  -
+    </td>
+
+
+
+
+
+	<td id=td17 title="Debug Pass">
+	  <span id="final_undebugged-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_FAIL_ANALYSIS/SUB_2698129/53691042&result_id=202947 target=LOG>DP</a></span>
+	</td>
+
+
+
+
+              <td title="Debug Pass" id=td17 width=25%><span id="regular_scipts-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_FAIL_ANALYSIS/SUB_2698129/53691042&result_id=202947 target=LOG>DP</a> </td>
+
+
+     </tr>
+
+
+
+
+<!-- to get the position to print -->
+
+
+
+    <tr id="script_result_reg_pass">
+
+    <td id=td17 width=20%>181R1_RLI37760_Symphony_lacp_xe_2.pl_94537_Default_etrans/181R1_RLI37760_Symphony_lacp_xe_2.pl</td>
+    <td id=td17 width=30%>181R1_RLI37760_Symphony_lacp_xe_2.pl <br> </td>
+    <td id=td17 width=30%>
+	  -
+    </td>
+
+
+
+
+
+	<td id=td17 title="Reg Pass">
+	  <span id="final_undebugged-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691039/attempt_1/script-exec&result_id=202947 target=LOG>P</a></span>
+	</td>
+
+
+
+
+              <td title="Reg Pass" id=td17 width=25%><span id="regular_scipts-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691039/attempt_1/script-exec&result_id=202947 target=LOG>P</a> </td>
+
+
+     </tr>
+
+
+
+
+<!-- to get the position to print -->
+
+
+
+    <tr id="script_result_reg_pass">
+
+    <td id=td17 width=20%>181R1_RLI37745_Symphony_J151X53D70_vlanrange_phase2.pl_93068_Default_etrans/181R1_RLI37745_Symphony_J151X53D70_vlanrange_phase2.pl</td>
+    <td id=td17 width=30%>181R1_RLI37745_Symphony_J151X53D70_vlanrange_phase2.pl <br> </td>
+    <td id=td17 width=30%>
+	  -
+    </td>
+
+
+
+
+
+	<td id=td17 title="Reg Pass">
+	  <span id="final_undebugged-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691038/attempt_1/script-exec&result_id=202947 target=LOG>P</a></span>
+	</td>
+
+
+
+
+              <td title="Reg Pass" id=td17 width=25%><span id="regular_scipts-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691038/attempt_1/script-exec&result_id=202947 target=LOG>P</a> </td>
+
+
+     </tr>
+
+
+
+
+<!-- to get the position to print -->
+
+
+
+    <tr id="script_result_reg_pass">
+
+    <td id=td17 width=20%>181R1_RLI_37764_SYMPHONY_ERSPAN_Negtive_1.pl_115454_Default/181R1_RLI_37764_SYMPHONY_ERSPAN_Negtive_1.pl</td>
+    <td id=td17 width=30%>181R1_RLI_37764_SYMPHONY_ERSPAN_Negtive_1.pl <br> </td>
+    <td id=td17 width=30%>
+	  -
+    </td>
+
+
+
+
+
+	<td id=td17 title="Reg Pass">
+	  <span id="final_undebugged-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691051/attempt_1/script-exec&result_id=202947 target=LOG>P</a></span>
+	</td>
+
+
+
+
+              <td title="Reg Pass" id=td17 width=25%><span id="regular_scipts-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691051/attempt_1/script-exec&result_id=202947 target=LOG>P</a> </td>
+
+
+     </tr>
+
+
+
+
+<!-- to get the position to print -->
+
+
+
+    <tr id="script_result_reg_pass">
+
+    <td id=td17 width=20%>181R1_RLI_37748_SYMPHONY_isis_lsp_generation_passive_intf.pl_94066_Default_etrans/181R1_RLI_37748_SYMPHONY_isis_lsp_generation_passive_intf.pl</td>
+    <td id=td17 width=30%>181R1_RLI_37748_SYMPHONY_isis_lsp_generation_passive_intf.pl <br> </td>
+    <td id=td17 width=30%>
+	  -
+    </td>
+
+
+
+
+
+	<td id=td17 title="Reg Pass">
+	  <span id="final_undebugged-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691050/attempt_2/script-exec&result_id=202947 target=LOG>P</a></span>
+	</td>
+
+
+
+
+              <td title="Reg Pass" id=td17 width=25%><span id="regular_scipts-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691050/attempt_2/script-exec&result_id=202947 target=LOG>P</a> </td>
+
+
+     </tr>
+
+
+
+
+<!-- to get the position to print -->
+
+
+
+    <tr id="script_result_reg_pass">
+
+    <td id=td17 width=20%>181R1_RLI37765_Symphony_L2NG_JDHCP_Relay_003_1.pl_93079_Default_etrans/181R1_RLI37765_Symphony_L2NG_JDHCP_Relay_003_1.pl</td>
+    <td id=td17 width=30%>181R1_RLI37765_Symphony_L2NG_JDHCP_Relay_003_1.pl <br> </td>
+    <td id=td17 width=30%>
+	  -
+    </td>
+
+
+
+
+
+	<td id=td17 title="Reg Pass">
+	  <span id="final_undebugged-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691044/attempt_2/script-exec&result_id=202947 target=LOG>P</a></span>
+	</td>
+
+
+
+
+              <td title="Reg Pass" id=td17 width=25%><span id="regular_scipts-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691044/attempt_2/script-exec&result_id=202947 target=LOG>P</a> </td>
+
+
+     </tr>
+
+
+
+
+<!-- to get the position to print -->
+
+
+
+    <tr id="script_result_reg_pass">
+
+    <td id=td17 width=20%>181R1_RLI37770_Symphony_intf_pause_frame.pl_92510_Default/181R1_RLI37770_Symphony_intf_pause_frame.pl</td>
+    <td id=td17 width=30%>Symphony Pause Frame  <br> </td>
+    <td id=td17 width=30%>
+	  -
+    </td>
+
+
+
+
+
+	<td id=td17 title="Reg Pass">
+	  <span id="final_undebugged-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691048/attempt_1/script-exec&result_id=202947 target=LOG>P</a></span>
+	</td>
+
+
+
+
+              <td title="Reg Pass" id=td17 width=25%><span id="regular_scipts-0"><a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2019/Jan/18.1/results/TI/18.1R2-S4_SYMPHONY/SR_18.1R2-S4_SYMPHONY/REG_PASS/prod/2019/Jan/SUB_2698129/53691048/attempt_1/script-exec&result_id=202947 target=LOG>P</a> </td>
+
+
+     </tr>
+
+
+
+<script type="text/javascript">
+  show_scripts("all");
+  total_script_count = 0;
+  $('tr[id^="script_result_"]').each(function(){
+    total_script_count++;
+  });
+  $('#total_script_display_count').text(total_script_count); 
+</script>
+
+</table>
+
+<!--2.0 END OF SCRIPT TABLE -->
+
+
+<!-- 
+/*
+ * Function to get all the manual info.
+ *
+ */
+
+-->
+
+<br>
+<p id=td15_1><font color=blue>3.0 </font> Manual Testing :</p>
+    <table id=table2 width=50% border=1 cellpadding=1 cellspacing=0 >
+     <tr>
+      <td id=td5>TEST NAME</td>
+      <td id=td5>STATUS</td>
+      <td id=td5>LOG</td>
+      <td id=td5>PR</td>
+     </tr>
+
+
+    </table>
+
+
+
+<!--3.0 END OF MANUAL TABLE -->
+
+
+<!-- 
+/*
+ * Function to get the pr info
+ */
+
+-->
+
+<br>
+<p id=td15_1><font color=blue>4.0 </font> PRs found during Regression Testing :</p>
+
+<table id=table1 width=95% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>PR</td>
+  <td id=td5>CATEGORY</td>
+  <td id=td5>SYNOPSIS</td>
+  <td id=td5>REG</td>
+ </tr>
+
+
+</table>
+
+<!--4.0 END OF PR TABLE -->
+
+
+<br>
+<p id=td15_1><font color=blue>5.0 </font> PRs Fixed during Regression Testing :</p>
+<p id=td16_1><pre>
+<!---   ENTER THE PR FIXED DURING THIS REGRESSION BELOW -->
+-N/A. 
+</pre></p>
+
+<!--5.0 END OF FIXED PR TABLE -->
+
+
+<br>
+<p id=td15_1><font color=blue>6.0 </font> PR Verifications :</p>
+<p id=td16_1><pre>
+<!--   ENTER THE PR VERIFICATION SUMMARY BELLOW -->
+-N/A. 
+</pre></p>
+
+<!--6.0 END OF PR VERFICATION TABLE -->
+
+
+<br>
+<p id=td15_1><font color=blue>7.0 </font> Result Summary :</p>
+<p id=td16_1><pre>
+<font color=blue>7.1</font> Automated Tests:
+Total Number of Automated Scripts = 21
+Total Number of Pass (Regression+Debug) = 21
+Total Number of Debug Failures = 0
+PASS % = 100 %
+
+Unique Script count = 21
+Unique (latest respin) Pass count = 21
+Unique (latest respin) Failure count (including pending) = 0
+ACTUAL PASS% = 100 %
+
+Total Number of Executed Testcases = 92
+Total Number of Un-Executed Testcases = 0
+Total Number of Testcases Pass (Regression+Debug) = 92
+Total Number of Testcases Fail (PR Attached) = 0
+Total Number of Testcases Pending Analysis = 0
+PASS % = 100 %
+
+<font color=blue>7.2</font> Manual Tests:
+Total Number of Manual Tests = 0
+Total Number of Pass = 0
+Total Number of Failures = 0
+PASS % = 0 %
+
+# Only Applicable for Maintenance Releases
+<font color=blue>7.3</font> PR Verifications:
+Total Number of PRs (Y) = # Number of PRs
+Total Number of PRs not fixed (X) = # Number of Failures
+#PASS % = (1 - X/Y) * 100
+PASS % = # PASS % 
+</pre></p>
+
+<!--7.0 END OF SUMMARY TABLE -->
+
+
+<br>
+<p id=td15_1><font color=blue>8.0 </font> Comments :</p>
+<p id=td16_1><pre>
+<!--   ENTER YOUR COMMENTS -->
+-N/A. 
+</pre></p>
+
+<!--8.0 END OF COMMENT TABLE -->
+
+
+<br>
+<p id=td15_1><font color=blue>9.0 </font> Conclusion:</p>
+<p id=td16_1>Failures do not gate/block the release of this product as per JTAC and Systest Leads. <br></p>
+
+<!--9.0 END OF CONCLUSION TABLE -->
+
+
+<!-- EDIT ADD conclusion for new platform-->
+<br><br>
+<p id=td15_1><font color=#993300> 
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+End Of Regression Report</font></p>
+
+
+
+
+
+
+
+
+<br />
+<hr noshade size="1" width="100%" />
+ 
+</body>
+</html>
+
+
+
+

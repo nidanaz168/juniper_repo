@@ -1,0 +1,208 @@
+<html>
+<head>
+ <title>TL9K Summary Report</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <meta name="Pragma" CONTENT="no-cache">
+ <meta name="robots" content="noindex, follow">
+ <link href="/ti/webapp/dr/shared/mainstyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<!-- START STYLESHEET INCLUDE -->
+<script language="javascript">
+ if (navigator.platform.indexOf ("Win32") !=-1) {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ie.css" type="text/css">');
+ } else {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ns.css" type="text/css">');
+ }
+</script>
+
+<body class="td-white-background"  topmargin="5" leftmargin="6" marginwidth="6" marginheight="5" >
+
+</script>
+<!-- END STYLESHEET INCLUDE -->
+
+
+<script type="text/javascript">                                                                                                                                                  
+function displaySpan(theSpan) {
+    if (theSpan.style.display == "none") {
+        theSpan.style.display = "";
+    }
+    else if (theSpan.style.display == "") {
+        theSpan.style.display = "none";
+    } else {
+        theSpan.style.display = "none";
+    }
+}
+</script>
+
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+     <tr  class="bluefield">
+      <td rowspan="2"  height="70">&nbsp; &nbsp;
+       <a href="http://www-int.juniper.net/">
+       <img src="/images/juniperLogo.gif" height="33" width="90" border="0"></a></td>
+      <td id=td15> Summarized Regression Test Report </td> </tr>
+
+ <tr> <td> Result Id's: 200230  </td> </tr></table><hr><a href=/ti/webapp/dr/debug_dr/view/gen_tl9k_report_summary.mhtml?result_id=200230&trans=remove >Click here to Exclude Transition Scripts</a><!-- 
+/*
+ * Function to get reg report info
+ *
+ */
+-->
+
+no_tei :  <br><br>
+        
+
+<!-- 
+/*
+ * Function to get all the manual info.
+ *
+ */
+
+-->
+
+<br>
+
+<!-- 
+/*
+ * Function to get the pr info
+ */
+
+-->
+
+<br>
+
+Result Summary for <font color=red></font> ( Result_id: 200230 ) <br>-Project Lead        : <font color=blue></font> <br>-Regression Tracking : PR<br>
+<p id=td16_1><pre>
+<font color=blue>1</font> Automated Tests:
+Total Number of Automated Scripts = 22
+Total Number of Pass (Regression+Debug) = 16
+Total Number of Debug Failures = 6
+PASS % = 73 %
+
+Unique Script count = 22
+Unique (latest respin) Pass count = 16
+Unique (latest respin) Failure count (including pending) = 6
+ACTUAL PASS% = 73 %
+
+
+Total Number of Testcases count = 112
+Total Number of Testcases Pass (Regression+Debug) = 84 
+Total Number of Testcases Fail (PR Attached) = 28
+Total Number of Testcases Pending Analysis = 0
+PASS % = 75 %
+
+
+<font color=blue>2</font> Manual Tests:
+Total Number of Manual Tests = 0
+Total Number of Pass = 0
+Total Number of Failures = 0
+PASS % = 0 %
+
+</pre></p>
+
+<!--7.0 END OF SUMMARY TABLE -->
+
+
+
+
+
+<li><a href="javascript:displaySpan(span_200230)"><b>Click here to see list of Failed/Undebugged Scripts</b></a>
+<span id="span_200230" style="display:none;">
+<br><br><table border=1> <tr><td><font size=2>Engineer</td><td><font size=2>Script Name</td><td><font size=2>Result</td><td><font size=2>PRs</td></tr>
+<tr><td rowspan=5><font size=2> (5)</td><td><font size=2>181R1_RLI36283_OPUS_LACP_FUP_VC.robot</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #FD5757><font size=2> n <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1409270 target=DISPLAY_PR>1409270 </a>[open]</br></td></tr><td><font size=2>181R1_RLI36283_OPUS_LACP_FUP_VC_1.robot</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #FD5757><font size=2> n <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1409270 target=DISPLAY_PR>1409270 </a>[open]</br></td></tr><td><font size=2>182_QFX_RLI_33686_JVISION_FIREWALL_BASIC.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #FD5757><font size=2> N <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1409270 target=DISPLAY_PR>1409270 </a>[open]</br></td></tr><td><font size=2>QFX5100_36980_181_lacp_telemetry_2.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #FD5757><font size=2> N <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1409270 target=DISPLAY_PR>1409270 </a>[open]</br></td></tr><td><font size=2>QFX5100_36980_181_lacp_telemetry_3.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #FD5757><font size=2> N <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1409270 target=DISPLAY_PR>1409270 </a>[open]</br></td></tr><tr><td rowspan=1><font size=2>sranjana (1)</td><td><font size=2>QFX5100_RLI_36986_JVISION_RPD_TASK_MEM_part2.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #FD5757><font size=2> N <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1408706 target=DISPLAY_PR>1408706 </a>[open]</br></td></tr></table>
+<br><br>
+<table>
+<tr><td>
+<b>Scripts failed Due to PRs - </b>6
+</td></tr>
+<tr><td>
+<b>Scripts pending debugging - </b>0
+</td></tr>
+<tr><td>
+<b>PRs Existing till now - </b></td></tr>
+</table><table border=1>
+<tr><td><font size=2 style="font-weight:bold">PR</td>
+               <td><font size=2 style="font-weight:bold"># Scripts Hit</td>
+               <td><font size=2 style="font-weight:bold">Planned_Release</td>
+               <td><font size=2 style="font-weight:bold">State</td>
+               <td><font size=2 style="font-weight:bold">Category</td>
+               <td><font size=2 style="font-weight:bold">Customer_Risk</td>
+               <td><font size=2 style="font-weight:bold">Problem_level</td>
+               <td><font size=2 style="font-weight:bold">Synopsis</td>
+               <td><font size=2 style="font-weight:bold">Found</td>
+               <td><font size=2 style="font-weight:bold">Reg</td>
+               <td><font size=2 style="font-weight:bold">Blocker</td> 
+            </tr><tr>
+<td><font size=2>1409270</td>
+               <td><font size=2>5</td>
+               <td><font size=2>19.1R1</td><td bgcolor = #FD5757 ><font size=2>open</td>
+<td><font size=2>qfx-sw-pfe-l2</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>JDiSwitchingRegression::Channalised xe interfaces are going down after loading 19.1T image</td>
+               <td><font size=2>NEW</td>
+               <td><font size=2></td>
+               <td><font size=2>PendingBlocker</td></tr>
+<tr>
+<td><font size=2>1408706</td>
+               <td><font size=2>1</td>
+               <td><font size=2>19.1R1</td><td bgcolor = #FD5757 ><font size=2>open</td>
+<td><font size=2>sw-agentd</td> 
+               <td><font size=2>minor</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>xmlproxyd core during jvison - telemetry_end_streaming</td>
+               <td><font size=2>NEW</td>
+               <td><font size=2></td>
+               <td><font size=2>PendingBlocker</td></tr>
+</table>
+</span></li>
+</br><hr> <b>Combined pass rate (actual) for Automated scripts: 72.73 % </b>
+<br />
+<hr noshade size="1" width="100%" />
+ 
+</body>
+</html>
+
+
+
+

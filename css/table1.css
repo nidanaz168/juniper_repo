@@ -1,0 +1,201 @@
+ CAPTION.MYTABLE
+  {
+     background-color:#0B0B61;
+     color:white;
+     border-width:2px;
+     border-color:#cccccc;
+  }
+
+  TABLE.MYTABLE
+  { 
+     font-family:calibri;
+     border-collapse:collapse;
+     font-size:12pt;
+     background-color:#fffffff;
+     border-style:solid;
+     border-color:#cccccc;
+     border-width:1px;
+  }
+
+  .MYTABLE TH
+  {
+     font-size:10pt;
+     background-color:#0B0B61;
+     color:white;
+     border-style:solid;
+     border-width:1px;
+     border-color:#cccccc;
+  }
+
+
+  .MYTABLE TD
+  {  
+     font-size:10pt;
+     background-color:#EFF5FB;
+     color:black;
+     border-style:solid;
+     border-width:1px;
+     border-color:#cccccc;
+	 text-align:center;
+	}
+	.MYTABLE .green
+	{
+		background-color:#BCF5A9;
+	}
+	.MYTABLE .yellow
+	{
+		background-color:#F2F5A9;
+	}
+	.MYTABLE .scope
+	{
+		background-color:#F2F5A9;
+	}
+	.MYTABLE .red
+	{
+		background-color:#F5BCA9;
+	}
+	.MYTABLE .darkred
+	{
+		background-color:#FE2E2E;
+	}
+	
+		
+ .MYTABLE .link 
+  { 
+  background: #EFF5FB;
+    color: #000;
+    font-size: 11px;
+    text-decoration:underline;
+	cursor:pointer;
+	cursor:hand;
+  }
+  .MYTABLE TR hover {
+    background-color:#cccccc;
+  }
+ CAPTION.tablesorter            
+  {
+     background-color:#0B0B61;
+     color:white;
+     border-width:2px;
+     border-color:#cccccc;
+  }
+
+  TABLE.tablesorter
+  {
+     font-family:calibri;
+     border-collapse:collapse;
+     font-size:12pt;
+     background-color:#fffffff;
+     border-style:solid;
+     border-color:#cccccc;
+     border-width:1px;
+  }
+	table.tablesorter thead tr .header {
+	background-color: #e6EEEE;
+	background-image: url(../images/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+
+  .tablesorter TH
+  {
+     font-size:10pt;
+     background-color:#0B0B61;
+     color:black;
+     border-style:solid;
+     border-width:1px;
+     border-color:#cccccc;
+  }
+
+
+  .tablesorter TD
+  {
+     font-size:10pt;
+     background-color:#EFF5FB;
+     color:black;
+     border-style:solid;
+     border-width:1px;
+     border-color:#cccccc;
+     text-align:center;
+  }
+ .tablesorter .link
+  {
+  background: #EFF5FB;
+    color: #000;
+    font-size: 11px;
+    text-decoration:underline;
+    cursor:pointer;
+    cursor:hand;
+  }
+  .tablesorter TR hover {
+    background-color:#cccccc;
+  }
+
+  TABLE.plans
+  { 
+     font-family:calibri;
+     border-collapse:collapse;
+     font-size:12pt;
+     background-color:#fffffff;
+     border-style:solid;
+     border-color:#cccccc;
+     border-width:1px;
+  }
+
+  .plans TH
+  {
+     font-size:16pt;
+     background-color:#4F81BD;
+     color:white;
+     border-style:solid;
+     border-width:1px;
+     border-color:#cccccc;
+  }
+
+
+  .plans TD
+  {  
+     font-size:12pt;
+     background-color:#EFF5FB;
+     color:black;
+     border-style:solid;
+     border-width:1px;
+     border-color:#cccccc;
+     text-align:center;
+  }
+	.plans .odd
+    {
+        background-color:#D3DFEE;
+    }                    
+	.plans .event
+    {
+        background-color:#F2F5A9;
+    }                    
+#toxic
+{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 9px;
+    margin: 45px;
+    width: 480px;
+    text-align: left;
+    border-collapse: collapse;
+	width : 20%;
+}
+#toxic th
+{
+    font-size: 12px;
+    font-weight: normal;
+    padding: 10px 8px;
+    color: #000;
+}
+#toxic td
+{
+    padding: 8px;
+    color: #669;
+}
+.scope
+{
+     background-color:#FFFFFF;
+}
+                           

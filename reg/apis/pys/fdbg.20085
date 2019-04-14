@@ -1,0 +1,1121 @@
+<link rel="stylesheet" type="text/css" href="../shared/resources/css/jquery.dataTables.css">
+<link rel="stylesheet" type="text/css" href="../shared/resources/css/TableTools.css">
+
+<script type="text/javascript" src="../shared/resources/js/jquery.js"></script>
+<script type="text/javascript" src="../shared/resources/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="../shared/resources/js/TableTools.min.js"></script>
+<script type="text/javascript" src="../shared/resources/js/dataTableSelect.js"></script>
+
+
+
+
+<html>
+<head>
+ <title>DEBUG PAGE</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <meta name="Pragma" CONTENT="no-cache">
+ <meta name="robots" content="noindex, follow">
+ <link href="/ti/webapp/dr/shared/mainstyle.css" rel="stylesheet" type="text/css">
+ <script >
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                                            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68983099-2', 'auto');
+  //    ga('set', '&uid', 'ckevin'); // Set the user ID using signed-in user_id.
+  ga('send', 'pageview');
+           console.log("Updated");
+ </script>
+ </head>
+
+<!-- START STYLESHEET INCLUDE -->
+<script language="javascript">
+ if (navigator.platform.indexOf ("Win32") !=-1) {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ie.css" type="text/css">');
+ } else {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ns.css" type="text/css">');
+ }
+</script>
+
+<body class="td-white-background"  topmargin="5" leftmargin="6" marginwidth="6" marginheight="5">
+
+</script>
+<!-- END STYLESHEET INCLUDE -->
+
+
+<!-- 1st ROW START-->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left" width="65%">
+      <table  width="100% border="0 cellspacing="0" cellpadding="0">
+        <tr>
+          <td><a href="http://www-int.juniper.net/"><img src="/shared/images/juniperLogo.gif" alt="Juniper Networks Logo" width="154" height="40" border="0" /></a></td>
+          <td><img src="/image/pixel.gif"  alt="" height="10" /></td>
+          <td> <font color=blue size=4>Regression the Heartbeat Of Testing</font></td>
+          <td>  <font size=2>  Hi nidanaz  </font> </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<div id="banner" style="    width: 90%;
+    width: 90%;
+        font-size: 16px;
+            background-color: greenyellow;
+                margin-left: 40px;
+                    padding: 5px 0 5px 0;
+                        height: 35px;
+                         "
+                          align="center">
+                            DR has been moved to <b>QUINCY</b> from <b>Sunnyvale</b> servers. Please upload your <b>DEBUG</b> logs to
+                            Quincy shells for debugging purposes. <br> Please use any one of the 16 Quincy Shells for
+                            this purpose. <span style="color:red;">ttqc-shell01 .... ttqc-shell16</span> 
+                            </div>
+
+
+
+<!-- 1st ROW END-->
+
+
+
+<!-- 2nd ROW END-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr class="tr-table-header-dark">
+    <td width="47%" colspan="2">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+        <tr>
+         <td width="50%" class="tr-table-header-dark"><img src="/image/pixel.gif"  alt="" width="438" height="1" /></td>
+         <td rowspan="2"  valign="bottom" class="tr-table-header-dark"><img src="/ti/webapp/dr/image/hdr_global_slantline_l.gif" width="25" height="49" alt="divider" /></td>
+        </tr>
+        <tr>
+         <td width="438" height="49" class="darkest-bgcolor"> &nbsp;&nbsp;&nbsp;&nbsp;<span class="header-label">Regression Debugging</span> </td>
+         <td><div align="center"><font size=4>Pinnacle_19.2DCB</font></div> </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- 2nd ROW END-->
+
+
+
+
+
+
+<table width="100%" cellspacing="0" cellpadding="0"><tr><td></td></tr></table>
+
+
+<!-- 3rd ROW START-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=0:2:0&result_id=203046" class="gnavsm">Reg Debug</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=1:1:0&result_id=203046" class="gnavsm">Manual</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=2:0:0&result_id=203046" class="gnavsm">Status</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=3:1:0&result_id=203046" class="gnavsm">Reg Pass</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=4:1:0&result_id=203046" class="gnavsm">Edit</a>
+      </div>
+    </td>
+
+
+
+
+
+
+
+
+    <td width="5" valign="top" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant5b.GIF"></td>
+    <td>
+      <div align="center">
+        <a href="index.mhtml?mode=5:0:0&result_id=203046" class="gnavsm">Views</a>
+      </div>
+    </td>
+    <td width="11" valign="top" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant5a.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=6:0:0&result_id=203046" class="gnavsm">Cores</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=7:0:0&result_id=203046" class="gnavsm">PR Verifications</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+  </tr>
+</table>
+<!-- 3rd ROW END-->
+
+
+<!-- 4rd ROW STARTS-->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+
+<!-- LEFT WINDOW STARTS -->
+
+    <td width="160 pixels" valign="top" rowspan="8"> 
+<!-- $VAR1 = 5;
+ -->
+
+      <!--
+ Debug page left frame. 
+/debug_dr/view/leftframe.mhtml
+-->
+
+
+
+<!--
+ Function to get all the dr owners
+-->
+
+
+
+
+
+<table width="155" border="0" cellspacing="0" cellpadding="0">
+	  
+  <tr align="left" valign="top"> 
+
+    <td width="1" bgcolor="#999999"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td width="5">&nbsp;</td>
+    <td background="/ti/webapp/dr/image/gra_home_verdot_sm.jpg" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td colspan="3"> 
+
+    <table width="155" border="0" cellspacing="0" cellpadding="0">
+
+      <tr align="left"> 
+        <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Loop through the titles in Left Frame -->
+
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+      <tr align="left"> <td colspan="3" height="7" valign="top" class="home-left-nav-dark"></td> </tr>
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md_1.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=5:0:0&result_id=203046" class="nav"> Pending </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+      <tr align="left"> <td colspan="3" height="7" valign="top" class="home-left-nav-dark"></td> </tr>
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=5:1:0&result_id=203046" class="nav"> TestPlan </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+      <tr align="left"> <td colspan="3" height="7" valign="top" class="home-left-nav-dark"></td> </tr>
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=5:2:0&result_id=203046" class="nav"> TestReport </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+      <tr align="left"> <td colspan="3" height="7" valign="top" class="home-left-nav-dark"></td> </tr>
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=5:3:0&result_id=203046" class="nav"> AreaReport </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+      <tr align="left"> <td colspan="3" height="7" valign="top" class="home-left-nav-dark"></td> </tr>
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=5:4:0&result_id=203046" class="nav"> TL9k_summary </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+      <tr align="left"> <td colspan="3" height="7" valign="top" class="home-left-nav-dark"></td> </tr>
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=5:5:0&result_id=203046" class="nav"> PR_Trend </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+      <tr align="left"> <td colspan="3" height="7" valign="top" class="home-left-nav-dark"></td> </tr>
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=5:6:0&result_id=203046" class="nav"> Matrices </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+      <tr align="left"> <td colspan="3" height="7" valign="top" class="home-left-nav-dark"></td> </tr>
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=5:7:0&result_id=203046" class="nav"> First Run RPR </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+      <tr align="left"> <td colspan="3" height="7" valign="top" class="home-left-nav-dark"></td> </tr>
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=5:8:0&result_id=203046" class="nav"> Daily_Report </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td colspan="3" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td colspan="3" valign="top" class="td-white-background" ><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td colspan="3" valign="top" class="td-white-background" ><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+    </table>
+
+    </td>
+
+    <td background="/ti/webapp/dr/image/gra_home_verdot_sm.jpg" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td width="13">&nbsp;</td>
+    <td bgcolor="#999999" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+  </tr>
+
+
+  <tr align="left" valign="top"> 
+    <td width="1" bgcolor="#999999"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td colspan="7" bgcolor="#999999"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td bgcolor="#999999" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+  </tr>
+
+</table>
+
+
+
+
+
+
+
+<p id=p1 align=center><a href="/ti/webapp/dr/main_dr/index.mhtml">DR Main Page </a></p>
+<p id=p1 align=center><a href="http://systest.juniper.net/twiki/bin/view/Main/WebHome" target="_blank">Systest Home </a></p>
+<p id=p1 align=center><a href="http://systest.juniper.net/twiki/bin/view/Main/TI" target="_blank">TI Home </a> </p>
+
+    </td>
+<!-- LEFT WINDOW ENDS-->
+
+
+<!-- RIGHT WINDOW STARTS-->
+    <td valign="top">
+        
+
+<table width="120" border="0" cellspacing="0" cellpadding="0">
+
+    
+<script type="text/javascript" src="../shared/wz_tooltip.js"></script>
+
+     
+
+<style>
+.p1 {margin-top: 30px;}
+.dataTables_wrapper {display: inline-block;}
+.dataTables_filter {float: left;}
+#scenario_wrapper {margin-left: 10px;}
+</style>
+
+<p class=p3>Debug view: <font color=blue>ALL</font></p>
+
+<table id="summary" border="1" cellpadding="0" cellspacing="0" style="width:600px; float:left; margin-left:10px; font-size:0.8em;">
+ <thead>
+  <tr>
+  <th>OWNER</th>
+  <th>REG FAIL</th>
+  <th>PENDING</th>
+  <th>PENDING %</th>
+  <th></th>
+  <th>MANUAL</th>
+  <th>PENDING</th>
+  </tr>
+ </thead>
+ <tbody>
+   <tr>
+    <td class=td2></td>
+    <td class=td1>72</td>
+    <td class=td3>69</td>
+    <td class=td3>96</td>
+    <td></td>
+    <td class=td1>0</td>
+    <td class=td3>0</td>
+   </tr>
+   <tr>
+    <td class=td2>vsachan</td>
+    <td class=td1>1</td>
+    <td class=td3>1</td>
+    <td class=td3>100</td>
+    <td></td>
+    <td class=td1>0</td>
+    <td class=td3>0</td>
+   </tr>
+   <tr>
+    <td class=td2>umaas</td>
+    <td class=td1>3</td>
+    <td class=td3>2</td>
+    <td class=td3>67</td>
+    <td></td>
+    <td class=td1>0</td>
+    <td class=td3>0</td>
+   </tr>
+   <tr>
+    <td class=td2>hindumathi</td>
+    <td class=td1>1</td>
+    <td class=td3>1</td>
+    <td class=td3>100</td>
+    <td></td>
+    <td class=td1>0</td>
+    <td class=td3>0</td>
+   </tr>
+   <tr>
+    <td class=td2>vjananda</td>
+    <td class=td1>4</td>
+    <td class=td3>4</td>
+    <td class=td3>100</td>
+    <td></td>
+    <td class=td1>0</td>
+    <td class=td3>0</td>
+   </tr>
+   <tr>
+    <td class=td2>rajkr</td>
+    <td class=td1>1</td>
+    <td class=td3>1</td>
+    <td class=td3>100</td>
+    <td></td>
+    <td class=td1>0</td>
+    <td class=td3>0</td>
+   </tr>
+   <tr>
+    <td class=td2>mkrithiga</td>
+    <td class=td1>3</td>
+    <td class=td3>3</td>
+    <td class=td3>100</td>
+    <td></td>
+    <td class=td1>0</td>
+    <td class=td3>0</td>
+   </tr>
+   <tr>
+    <td class=td2>gbrindha</td>
+    <td class=td1>2</td>
+    <td class=td3>2</td>
+    <td class=td3>100</td>
+    <td></td>
+    <td class=td1>0</td>
+    <td class=td3>0</td>
+   </tr>
+ </tbody>  
+ <tfoot>
+  <tr>
+   <td class=td2>TOTAL</td>
+   <td class=td1>87</td>
+   <td class=td3>83</td>
+   <td class=td3>96</td>
+   <td></td> 
+   <td class=td1>0</td>
+   <td class=td3>0</td>
+ </tfoot>
+</table>
+
+<p id=p1> 
+ Script Failures (Total / Pending): 
+    <font color=black>87 / 83</font>, 
+ Manual Test (Total / Pending): 
+    <font color=black>0 / 0</font> 
+</p>
+
+ <p class=p1>Zero manual testing pending.</p>
+
+<p class=p1>Pending Scripts</p>
+<table id="scenario" border="1" cellpadding="0" cellspacing="0" style="font-size:0.8em;">
+ <thead>
+  <tr>
+   <th id=owner>OWNER</th>
+   <th>SCENARIO</th>
+   <th>SCRIPT</th>
+  </tr>
+ </thead>
+ <tbody>
+   <tr>
+    <td></td>
+    <td>/FUNCTIONAL_REG/PROTOCOLS/MULTICAST_MVPN/MULTICAST_MVPN/Pinnacle_RLI25347_J151x53D70_MulticastIrbautorpigmpenable_3.pl_76112_Default</td>
+    <td>multicast_irb_auto_rp_igmp_enable_3.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/FUNCTIONAL_REG/PROTOCOLS/IGP/ISIS/Pinnacle_RLI25352_J151X53D70_l3vpn_isis.pl_76185_Default</td>
+    <td>l3vpn_isis.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25344_J151X53D70_rip_gracefulrestart_vlan.pl_76302_Default</td>
+    <td>Pinnacle_RLI25344_J151X53D70_rip_gracefulrestart_vlan.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI26001_J151X53D70_ResilientHashing_L3.pl_76090_Default</td>
+    <td>Pinnacle_RLI26001_J151X53D70_ResilientHashing_L3.pl</td>
+   </tr>
+   <tr>
+    <td>hindumathi</td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI33482_172R1_ZTP.pl_67910_Default</td>
+    <td>Pinnacle_RLI33482_172R1_ZTP.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25344_J151x53D70_rip_poisoned_routes_pr.pl_64373_Default</td>
+    <td>Pinnacle_RLI25344_J151x53D70_rip_poisoned_routes_pr.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/RLI/RLI-25K/RLI-25068/18_1R1_RLI_25068_QFX5200_transition_between_fips_and_non_fips_mode.robot_84567_Default</td>
+    <td>18_1R1_RLI_25068_QFX5200_transition_between_fips_and_non_fips_mode.robot</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25352_J151X53D70_ldp_md5.pl_76331_Default</td>
+    <td>Pinnacle_RLI25352_J151X53D70_ldp_md5.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25344_J151x53D70_bgp_path_regexp.pl_76206_Default</td>
+    <td>Pinnacle_RLI25344_J151x53D70_bgp_path_regexp.pl</td>
+   </tr>
+   <tr>
+    <td>mkrithiga</td>
+    <td>/FUNCTIONAL_REG/PROTOCOLS/MULTICAST_MVPN/PIM/Pinnacle_RLI25344_J151X53D70_LA_mvrf_1.pl_69095_Default</td>
+    <td>la_mvrf_1.pl</td>
+   </tr>
+   <tr>
+    <td>gbrindha</td>
+    <td>/FUNCTIONAL_REG/PLATFORM/INTERFACES/LAG/Pinnacle_RLI25344_J151X53D70_QinQ_port_mode_change_lacp_port_1.pl_67633_Default</td>
+    <td>qinq_port_mode_change_lacp_port_1.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/RLI/RLI-36K/RLI-36121/182R1_RLI_36121_QFX5110_aes67_smpte.robot_104646_Default_etrans</td>
+    <td>182R1_RLI_36121_QFX5110_aes67_smpte.robot</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25344_J151X53D70_vstp.pl_64765_Default</td>
+    <td>Pinnacle_RLI25344_J151X53D70_vstp.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/FUNCTIONAL_REG/PROTOCOLS/L2_SNOOPING/PIM/Pinnacle_RLI25344_J151X53D70_pim_dm.pl_76107_Default</td>
+    <td>pim_dm.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/J151_TPI29668_Pinnacle_LagAcl.pl_76373_Default</td>
+    <td>J151_TPI29668_Pinnacle_LagAcl.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/J151_TPI29668_Pinnacle_vacl_1.pl_76381_Default</td>
+    <td>J151_TPI29668_Pinnacle_vacl_1.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/FUNCTIONAL_REG/PROTOCOLS/RPD_INFRA/HA/Pinnacle_RLI25344_J151X53D70_Redundant_Trunk_phase2.pl_76133_Default</td>
+    <td>redundant_trunk_phase2_001.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25327_J151X53D70_platformtest_validation_3.pl_76105_Default</td>
+    <td>Pinnacle_RLI25327_J151X53D70_platformtest_validation_3.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/PINNACLE_RLI25359_J151X53D70_ACL_IPv6Acl.pl_76347_Default</td>
+    <td>PINNACLE_RLI25359_J151X53D70_ACL_IPv6Acl.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/RLI/RLI-25K/RLI-25068/18_1R1_RLI_25068_QFX5200_ports_and_interfaces.robot_84710_Default</td>
+    <td>18_1R1_RLI_25068_QFX5200_ports_and_interfaces.robot</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25352_J151X53D70_l2ckt_control_frames.pl_64252_Default</td>
+    <td>Pinnacle_RLI25352_J151X53D70_l2ckt_control_frames.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/RLI/RLI-25K/RLI-25068/18_1R1_RLI_25068_QFX5200_self_tests.robot_84766_Default</td>
+    <td>18_1R1_RLI_25068_QFX5200_self_tests.robot</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25344_J151X53D70_802_1Q_2.pl_76181_Default</td>
+    <td>Pinnacle_RLI25344_J151X53D70_802_1Q_2.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/RLI/RLI-36K/RLI-36121/182R1_RLI_36121_QFX5110_aes67_smpte_neg_100G.robot_104928_Default_etrans</td>
+    <td>182R1_RLI_36121_QFX5110_aes67_smpte_neg_100G.robot</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/FUNCTIONAL_REG/PROTOCOLS/BGP/BGP/Pinnacle_RLI25344_J151X53D70_bgp_ecommunity_irb.pl_76312_Default</td>
+    <td>bgp_ecommunity_irb.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25344_J151X53D70_isis_snp_auth.pl_76167_Default</td>
+    <td>Pinnacle_RLI25344_J151X53D70_isis_snp_auth.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25344_J151X53D70_ospf_virtual_links.pl_76300_Default</td>
+    <td>Pinnacle_RLI25344_J151X53D70_ospf_virtual_links.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25347_J151x53D70_Multicastl3autorp_5.pl_76102_Default</td>
+    <td>Pinnacle_RLI25347_J151x53D70_Multicastl3autorp_5.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/FUNCTIONAL_REG/PLATFORM/COS/FORWARING_CLASS/Merus_26268_151X53D70_QoS_rate_limiter_01.pl_63099_Default</td>
+    <td>qos_rate_limiter_01.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/PINNACLE_RLI25359_J151X53D70_ACL_RHC_ACL.pl_76342_Default</td>
+    <td>PINNACLE_RLI25359_J151X53D70_ACL_RHC_ACL.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/RLI/RLI-36K/RLI-36121/182R1_RLI_36121_QFX5200_smpte.robot_104601_Default</td>
+    <td>182R1_RLI_36121_QFX5200_smpte.robot</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/J151_25037_Pinnacle_buffer_10g_2.pl_62960_Default</td>
+    <td>J151_25037_Pinnacle_buffer_10g_2.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/OPUS/Final/182_RLI33687_QFX_JVISION_IFD_BASIC_5200.pl_106664_Default</td>
+    <td>182_RLI33687_QFX_JVISION_IFD_BASIC_5200.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/RLI/RLI-36K/RLI-36121/182R1_RLI_36121_QFX5110_aes67_neg.robot_104925_Default_etrans</td>
+    <td>182R1_RLI_36121_QFX5110_aes67_neg.robot</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25345_J151X53D70_ospfv3_grace_lsa_type.pl_76223_Default</td>
+    <td>Pinnacle_RLI25345_J151X53D70_ospfv3_grace_lsa_type.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/RLI/RLI-36K/RLI-36121/182R1_RLI_36121_QFX5200_media_profile_scaling.robot_104682_Default</td>
+    <td>182R1_RLI_36121_QFX5200_media_profile_scaling.robot</td>
+   </tr>
+   <tr>
+    <td>vjananda</td>
+    <td>/Hurricane/Switching/Pinnacle/J173_RLI_32463_QFX5110_L2NG_DHCPv6_IPv6SG_Access_3.pl_87907_Default</td>
+    <td>J173_RLI_32463_QFX5110_L2NG_DHCPv6_IPv6SG_Access_3.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/RLI/RLI-25K/RLI-25068/18_1R1_RLI_25068_QFX5200_self_tests_kats.robot_84768_Default</td>
+    <td>18_1R1_RLI_25068_QFX5200_self_tests_kats.robot</td>
+   </tr>
+   <tr>
+    <td>vjananda</td>
+    <td>/Hurricane/Switching/Pinnacle/17.4_RLI_36639_QFX5200_DCQCN_part2.pl_sw_qfx</td>
+    <td>17.4_RLI_36639_QFX5200_DCQCN_part2.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/FUNCTIONAL_REG/PROTOCOLS/VRRP/VRRP/Pinnacle_RLI25345_J151X53D70_vrrpv6.pl_64645_Default</td>
+    <td>vrrp_over_v6.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Merus_26270_151X53D70_QoS_two_fc_set.pl_sw_qfx</td>
+    <td>Merus_26270_151X53D70_QoS_two_fc_set.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/FUNCTIONAL_REG/PROTOCOLS/BFD/BFD/Pinnacle_RLI25344_J151X53D70_bfd_sanity_rip.pl_76310_Default</td>
+    <td>bfd_sanity_rip.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/FUNCTIONAL_REG/PROTOCOLS/MULTICAST_MVPN/MULTICAST_MVPN/Pinnacle_RLI25344_J151X53D70_urpf_prefix.pl_76306_Default</td>
+    <td>urpf_prefix.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25344_J151x53D70_bgp_sub_cease_codes.pl_76276_Default</td>
+    <td>Pinnacle_RLI25344_J151x53D70_bgp_sub_cease_codes.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Manhattan/PINNACLE_ACCESS/L3/Protocols/MPLS/Pinnacle_RLI25352_J151X53D70_mpls_auto_bw_4.pl_sw_qfx</td>
+    <td>Pinnacle_RLI25352_J151X53D70_mpls_auto_bw_4.pl</td>
+   </tr>
+   <tr>
+    <td>vjananda</td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI26002_J151X53D70_ovsdb_regression_new_1.pl_72081_Default</td>
+    <td>Pinnacle_RLI26002_J151X53D70_ovsdb_regression_new_1.pl</td>
+   </tr>
+   <tr>
+    <td>mkrithiga</td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25347_J151x53D70_MulticastIrbautorpigmpenable_6.pl_68962_Default</td>
+    <td>Pinnacle_RLI25347_J151x53D70_MulticastIrbautorpigmpenable_6.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Napnook/Jvision_Napnook/173_RLI34810_JVISION_CHASSIS_COMPONENT_QFX5110.pl_72204_Default_etrans</td>
+    <td>173_RLI34810_JVISION_CHASSIS_COMPONENT_QFX5110.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Merus_26270_151X53D70_buffer_2.pl_63153_Default</td>
+    <td>Merus_26270_151X53D70_buffer_2.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25056_151X53D30_ResilientHashing_L2.pl_76357_Default</td>
+    <td>Pinnacle_RLI25056_151X53D30_ResilientHashing_L2.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25344_J151x53D70_LA_ospf_active_backbone_abr_no_bb.pl_76239_Default</td>
+    <td>Pinnacle_RLI25344_J151x53D70_LA_ospf_active_backbone_abr_no_bb.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25344_J151X53D70_FBF.pl_76115_Default</td>
+    <td>Pinnacle_RLI25344_J151X53D70_FBF.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/RLI/RLI-36K/RLI-36121/182R1_RLI_36121_QFX5110_aes67.robot_104630_Default_etrans</td>
+    <td>182R1_RLI_36121_QFX5110_aes67.robot</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Merus_26270_151X53D70_QoS_four_fc_set.pl_sw_qfx</td>
+    <td>Merus_26270_151X53D70_QoS_four_fc_set.pl</td>
+   </tr>
+   <tr>
+    <td>rajkr</td>
+    <td>/Hurricane/Switching/Pinnacle/Napanook_RLI25341_j172_Platform_version_check.pl_80961_Default</td>
+    <td>Napanook_RLI25341_j172_Platform_version_check.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/172_RLI33699_QFX5K_JVision_arp_mx.pl_switching_qfx</td>
+    <td>172_RLI33699_QFX5K_JVision_arp_mx.pl</td>
+   </tr>
+   <tr>
+    <td>umaas</td>
+    <td>/Hurricane/Switching/Pinnacle/151_PR1174932_QFX5200_LICENSING.pl_70700_Default</td>
+    <td>151_PR1174932_QFX5200_LICENSING.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25344_J151X53D70_LAG_as_trunk_port.pl_76126_Default</td>
+    <td>Pinnacle_RLI25344_J151X53D70_LAG_as_trunk_port.pl</td>
+   </tr>
+   <tr>
+    <td>vjananda</td>
+    <td>/Hurricane/Switching/Pinnacle/174_RLI_36639_QFX5200_DCQCN_part1.pl_104599_Default</td>
+    <td>174_RLI_36639_QFX5200_DCQCN_part1.pl</td>
+   </tr>
+   <tr>
+    <td>mkrithiga</td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25327_J151X53D70_platformtest_validation_6.pl_80599_Default</td>
+    <td>Pinnacle_RLI25327_J151X53D70_platformtest_validation_6.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/FUNCTIONAL_REG/PROTOCOLS/L2_SECURITY/802.1X/Pinnacle_RLI25344_J151X53D70_QinQ_port_mode_change_normal_port.pl_76184_Default</td>
+    <td>qinq_port_mode_change_normal_port.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25345_J151X53D70_isisv6_basic_p2p.pl_76253_Default</td>
+    <td>Pinnacle_RLI25345_J151X53D70_isisv6_basic_p2p.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/FUNCTIONAL_REG/PLATFORM/LINECARD/ECMP/Pinnacle_RLI25061_151_Hierarchical_ECMP.pl_76389_Default</td>
+    <td>hierarchical_ecmp.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/FUNCTIONAL_REG/PROTOCOLS/BGP/BGP/Pinnacle_RLI25344_J151X53D70_bgp_monitoring_tool_v3_1.pl_76161_Default</td>
+    <td>bgp_monitoring_tool_v3_1.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25360_151X53D70_mclag_L2_Unicast.pl_65095_Default</td>
+    <td>Pinnacle_RLI25360_151X53D70_mclag_L2_Unicast.pl</td>
+   </tr>
+   <tr>
+    <td>umaas</td>
+    <td>/FUNCTIONAL_REG/PROTOCOLS/VXLAN/VXLAN/Pinnacle_RLI25364_J151X53D70_Vxlan_Full.pl_80533_Default</td>
+    <td>vxlan_full_functionality_tests.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/FUNCTIONAL_REG/PROTOCOLS/VPN/L3VPN/Pinnacle_RLI25352_J151X53D70_l3vpn_prefix.pl_76285_Default</td>
+    <td>l3vpn_prefix.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25344_J151X53D70_LC.pl_76226_Default</td>
+    <td>Pinnacle_RLI25344_J151X53D70_LC.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/FUNCTIONAL_REG/PROTOCOLS/BFD/BFD/Pinnacle_RLI25344_J151X53D70_bfd_sanity_irb.pl_76319_Default</td>
+    <td>bfd_sanity_irb.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25347_J151x53D70_Multicastl3vlantagstatic.pl_76136_Default</td>
+    <td>Pinnacle_RLI25347_J151x53D70_Multicastl3vlantagstatic.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/FUNCTIONAL_REG/PLATFORM/FIREWALL/FIREWALL/J151_TPI29668_Pinnacle_IPv6Acl.pl_76372_Default</td>
+    <td>ipv6_acl_match_conditions_actions.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Merus_26270_151X53D70_multi_dot1p_classifier_custom.pl_76399_Default</td>
+    <td>Merus_26270_151X53D70_multi_dot1p_classifier_custom.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25344_J151X53D70_LA_802_1Q.pl_76157_Default</td>
+    <td>Pinnacle_RLI25344_J151X53D70_LA_802_1Q.pl</td>
+   </tr>
+   <tr>
+    <td>vsachan</td>
+    <td>/Hurricane/Switching/Napnook/172_Napnook_RLI34361_ACL_vacl.pl_67921_Default</td>
+    <td>172_Napnook_RLI34361_ACL_vacl.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25344_J151X53D70_elacp.pl_76122_Default</td>
+    <td>Pinnacle_RLI25344_J151X53D70_elacp.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/FUNCTIONAL_REG/PROTOCOLS/L2_SECURITY/DHCP_SNOOPING/Pinnacle_RLI26271_J151X53D70_DHCP_Snooping93.pl_76095_Default</td>
+    <td>dhcp_snooping.pl</td>
+   </tr>
+   <tr>
+    <td>gbrindha</td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI31995_J172R1_fxpInNonDefaultInst2.pl_80971_Default</td>
+    <td>Pinnacle_RLI31995_J172R1_fxpInNonDefaultInst2.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Devel/Opus/L2/dot1x/pinn_J132_RLI18481_dot1x_advanced_1.pl_sw_qfx</td>
+    <td>pinn_J132_RLI18481_dot1x_advanced_1.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25352_J151X53D70_MPLS_1.pl_76286_Default</td>
+    <td>Pinnacle_RLI25352_J151X53D70_MPLS_1.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/FUNCTIONAL_REG/PROTOCOLS/MPLS/MPLS/Pinnacle_RLI25352_J151X53D70_mpls_auto_bw_1.pl_87894_Default</td>
+    <td>mpls_auto_bw_1.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25344_J151x53D70_isis_lfa.pl_76214_Default</td>
+    <td>Pinnacle_RLI25344_J151x53D70_isis_lfa.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25344_J151X53D70_Proxy_ARP_3.pl_76080_Default</td>
+    <td>Pinnacle_RLI25344_J151X53D70_Proxy_ARP_3.pl</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>/Hurricane/Switching/Pinnacle/Pinnacle_RLI25344_J151X53D70_ospf_path_sel.pl_76297_Default</td>
+    <td>Pinnacle_RLI25344_J151X53D70_ospf_path_sel.pl</td>
+   </tr>
+ </tbody>
+</table>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    /* Initialise the DataTable */
+    $('#summary').dataTable({
+        "bPaginate": false,
+        "bFilter": false,
+        "bInfo": false,
+        "aoColumnDefs": [
+                { "bSortable": false, "aTargets": [ 4 ] }
+        ]
+    });
+    $('#manual').dataTable({
+        "bPaginate": false,
+        "bFilter": false,
+        "bInfo": false
+    });
+    var oTable = $('#scenario').dataTable({
+        "bPaginate": false,
+	"sDom": 'T<"clear">lfrtip',
+	"oTableTools": {
+		"sSwfPath": "../shared/resources/swf/copy_csv_xls_pdf.swf",
+		"aButtons": [ "copy", "csv", "print" ]
+	} 
+    });
+    /* Add a select menu for each TH element in the table footer */
+    $("#scenario #owner").each( function ( i ) {
+        this.innerHTML = '<b>OWNER</b> ' + fnCreateSelect( oTable.fnGetColumnData(i) );
+        $('select', this).change( function () {
+            oTable.fnFilter( $(this).val(), i );
+        } );
+    } );
+});
+</script>
+
+
+
+ 
+
+
+</table>
+
+
+
+    </td>
+<!-- RIGHT WINDOW ENDS-->
+
+
+
+  </tr>
+</table>
+
+<!-- 4rd ROW ENDS-->
+
+
+
+
+
+
+
+
+
+
+
+<br />
+<hr noshade size="1" width="100%" />
+ 
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,131 @@
+{
+    "headingTxt":"Summary Report for Release : 15.1",
+    "coldefs":[
+        {
+            "headerName": "#", 
+            "field": "slno",
+            "width":50,
+            "cellStyle": {"text-align":"center"}
+
+        },
+        {
+            "headerName": "17.1R1", 
+            "children": [
+                        { "headerName": "Pass", "field": "171r1_pass", "width":100},
+                        { "headerName": "Fail", "field": "171r1_fail", "width":100},
+                        { "headerName": "Not Executed", "field": "171r1_notexecuted", "width":100}
+            ]
+        },
+        {
+            "headerName": "17.1R2", 
+            "children": [
+                        { "headerName": "Pass", "field": "171r2_pass", "width":100},
+                        { "headerName": "Fail", "field": "171r2_fail", "width":100},
+                        { "headerName": "Not Executed", "field": "171r2_notexecuted", "width":100}
+            ]
+        },
+        {
+            "headerName": "17.1R3", 
+            "children": [
+                        { "headerName": "Pass", "field": "171r3_pass", "width":100},
+                        { "headerName": "Fail", "field": "171r3_fail", "width":100},
+                        { "headerName": "Not Executed", "field": "171r3_notexecuted", "width":100}
+            ]
+        },
+        {
+            "headerName": "17.1R4", 
+            "children": [
+                        { "headerName": "Pass", "field": "171r4_pass", "width":100},
+                        { "headerName": "Fail", "field": "171r4_fail", "width":100},
+                        { "headerName": "Not Executed", "field": "171r4_notexecuted", "width":100}
+            ]
+        }
+    ],
+    "meta":[
+        {
+            "slno"    : "1",
+            "171r1_pass"    : "1",
+            "171r1_fail"    : "1",
+            "171r1_notexecuted"    : "1",
+            "171r2_pass"    : "1",
+            "171r2_fail"    : "1",
+            "171r2_notexecuted"    : "1",
+            "171r3_pass"    : "1",
+            "171r3_fail"    : "1",
+            "171r3_notexecuted"    : "1",
+            "171r4_pass"    : "1",
+            "171r4_fail"    : "1",
+            "171r4_notexecuted"    : "1"
+        },{
+            "slno"    : "1",
+            "171r1_pass"    : "1",
+            "171r1_fail"    : "1",
+            "171r1_notexecuted"    : "1",
+            "171r2_pass"    : "1",
+            "171r2_fail"    : "1",
+            "171r2_notexecuted"    : "1",
+            "171r3_pass"    : "1",
+            "171r3_fail"    : "1",
+            "171r3_notexecuted"    : "1",
+            "171r4_pass"    : "1",
+            "171r4_fail"    : "1",
+            "171r4_notexecuted"    : "1"
+        },{
+            "slno"    : "1",
+            "171r1_pass"    : "1",
+            "171r1_fail"    : "1",
+            "171r1_notexecuted"    : "1",
+            "171r2_pass"    : "1",
+            "171r2_fail"    : "1",
+            "171r2_notexecuted"    : "1",
+            "171r3_pass"    : "1",
+            "171r3_fail"    : "1",
+            "171r3_notexecuted"    : "1",
+            "171r4_pass"    : "1",
+            "171r4_fail"    : "1",
+            "171r4_notexecuted"    : "1"
+        },{
+            "slno"    : "1",
+            "171r1_pass"    : "1",
+            "171r1_fail"    : "1",
+            "171r1_notexecuted"    : "1",
+            "171r2_pass"    : "1",
+            "171r2_fail"    : "1",
+            "171r2_notexecuted"    : "1",
+            "171r3_pass"    : "1",
+            "171r3_fail"    : "1",
+            "171r3_notexecuted"    : "1",
+            "171r4_pass"    : "1",
+            "171r4_fail"    : "1",
+            "171r4_notexecuted"    : "1"
+        },{
+            "slno"    : "1",
+            "171r1_pass"    : "1",
+            "171r1_fail"    : "1",
+            "171r1_notexecuted"    : "1",
+            "171r2_pass"    : "1",
+            "171r2_fail"    : "1",
+            "171r2_notexecuted"    : "1",
+            "171r3_pass"    : "1",
+            "171r3_fail"    : "1",
+            "171r3_notexecuted"    : "1",
+            "171r4_pass"    : "1",
+            "171r4_fail"    : "1",
+            "171r4_notexecuted"    : "1"
+        },{
+            "slno"    : "1",
+            "171r1_pass"    : "1",
+            "171r1_fail"    : "1",
+            "171r1_notexecuted"    : "1",
+            "171r2_pass"    : "1",
+            "171r2_fail"    : "1",
+            "171r2_notexecuted"    : "1",
+            "171r3_pass"    : "1",
+            "171r3_fail"    : "1",
+            "171r3_notexecuted"    : "1",
+            "171r4_pass"    : "1",
+            "171r4_fail"    : "1",
+            "171r4_notexecuted"    : "1"
+        }
+    ]
+}

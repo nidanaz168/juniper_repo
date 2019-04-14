@@ -1,0 +1,47 @@
+<style type="text/css">
+
+.indentmenu{
+font: bold 13px Verdana;
+width: 100%; /*leave this value as is in most cases*/
+overflow: hidden;
+}
+
+.indentmenu ul{
+margin: 0;
+padding: 0;
+float: left;
+/*width: 86%; /*width of menu*/
+border: 1px solid #564c66; /*dark purple border*/
+/*border-width: 1px 0;
+background: black url(media/indentbg.gif) center center repeat-x;*/
+background: #003366; 
+}
+
+.indentmenu ul li{
+display: inline;
+}
+
+.indentmenu ul li a{
+font-weight:bold;
+float: left;
+color: white; /*text color*/
+padding: 5px 11px;
+text-decoration: none;
+border-right: 1px solid #564c66; /*dark purple divider between menu items*/
+}
+
+.indentmenu ul li a:visited{
+color: white;
+}
+
+.indentmenu ul li a:hover, .indentmenu ul li .current{
+color: white !important; /*text color of selected and active item*/
+padding-top: 6px; /*shift text down 1px for selected and active item*/
+padding-bottom: 4px; /*shift text down 1px for selected and active item*/
+background: #600000  url(media/indentbg2.gif) center center repeat-x;
+}
+
+.selected ul li a{
+	background-color: yellow;
+}
+</style>

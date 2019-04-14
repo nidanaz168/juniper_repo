@@ -1,0 +1,209 @@
+<html>
+<head>
+ <title>TL9K Summary Report</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <meta name="Pragma" CONTENT="no-cache">
+ <meta name="robots" content="noindex, follow">
+ <link href="/ti/webapp/dr/shared/mainstyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<!-- START STYLESHEET INCLUDE -->
+<script language="javascript">
+ if (navigator.platform.indexOf ("Win32") !=-1) {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ie.css" type="text/css">');
+ } else {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ns.css" type="text/css">');
+ }
+</script>
+
+<body class="td-white-background"  topmargin="5" leftmargin="6" marginwidth="6" marginheight="5" >
+
+</script>
+<!-- END STYLESHEET INCLUDE -->
+
+
+<script type="text/javascript">                                                                                                                                                  
+function displaySpan(theSpan) {
+    if (theSpan.style.display == "none") {
+        theSpan.style.display = "";
+    }
+    else if (theSpan.style.display == "") {
+        theSpan.style.display = "none";
+    } else {
+        theSpan.style.display = "none";
+    }
+}
+</script>
+
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+     <tr  class="bluefield">
+      <td rowspan="2"  height="70">&nbsp; &nbsp;
+       <a href="http://www-int.juniper.net/">
+       <img src="/images/juniperLogo.gif" height="33" width="90" border="0"></a></td>
+      <td id=td15> Summarized Regression Test Report </td> </tr>
+
+ <tr> <td> Result Id's: 200346  </td> </tr></table><hr><a href=/ti/webapp/dr/debug_dr/view/gen_tl9k_report_summary.mhtml?result_id=200346&trans=remove >Click here to Exclude Transition Scripts</a><!-- 
+/*
+ * Function to get reg report info
+ *
+ */
+-->
+
+no_tei :  <br><br>
+        
+
+<!-- 
+/*
+ * Function to get all the manual info.
+ *
+ */
+
+-->
+
+<br>
+
+<!-- 
+/*
+ * Function to get the pr info
+ */
+
+-->
+
+<br>
+
+Result Summary for <font color=red></font> ( Result_id: 200346 ) <br>-Project Lead        : <font color=blue></font> <br>-Regression Tracking : PR<br>
+<p id=td16_1><pre>
+<font color=blue>1</font> Automated Tests:
+Total Number of Automated Scripts = 923
+Total Number of Pass (Regression+Debug) = 914
+Total Number of Debug Failures = 9
+PASS % = 99 %
+
+Unique Script count = 922
+Unique (latest respin) Pass count = 914
+Unique (latest respin) Failure count (including pending) = 8
+ACTUAL PASS% = 99 %
+
+
+Total Number of Testcases count = 4810
+Total Number of Testcases Pass (Regression+Debug) = 4782 
+Total Number of Testcases Fail (PR Attached) = 28
+Total Number of Testcases Pending Analysis = 0
+PASS % = 99 %
+
+
+<font color=blue>2</font> Manual Tests:
+Total Number of Manual Tests = 0
+Total Number of Pass = 0
+Total Number of Failures = 0
+PASS % = 0 %
+
+</pre></p>
+
+<!--7.0 END OF SUMMARY TABLE -->
+
+
+
+
+
+<li><a href="javascript:displaySpan(span_200346)"><b>Click here to see list of Failed/Undebugged Scripts</b></a>
+<span id="span_200346" style="display:none;">
+<br><br><table border=1> <tr><td><font size=2>Engineer</td><td><font size=2>Script Name</td><td><font size=2>Result</td><td><font size=2>PRs</td></tr>
+<tr><td rowspan=5><font size=2>saratvk (5)</td><td><font size=2>RLI_21092_Neg.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #FD5757><font size=2> n <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1410544 target=DISPLAY_PR>1410544 </a>[open]</br></td></tr><td><font size=2>RLI_21092_Scaling.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #FD5757><font size=2> n <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1410544 target=DISPLAY_PR>1410544 </a>[open]</br></td></tr><td><font size=2>config_diff_at_commit_check_time_1.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #FD5757><font size=2> n <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1410544 target=DISPLAY_PR>1410544 </a>[open]</br></td></tr><td><font size=2>opscript_rli3080.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #FD5757><font size=2> n <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1410544 target=DISPLAY_PR>1410544 </a>[open]</br></td></tr><td><font size=2>optimize_private_commit_time_scale.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #FD5757><font size=2> n <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1410544 target=DISPLAY_PR>1410544 </a>[open]</br></td></tr><tr><td rowspan=3><font size=2>svallala (3)</td><td><font size=2>142_RLI_19252_i386_ddl_constraint_check_optimization_1.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #FD5757><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1410544 target=DISPLAY_PR>1410544 </a>[open]</br></td></tr><td><font size=2>142_RLI_19252_i386_ddl_constraint_check_optimization_4.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #FD5757><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1410544 target=DISPLAY_PR>1410544 </a>[open]</br></td></tr><td><font size=2>151_21537_mx_occam_leverage_SMP_for_commit_time.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #FD5757><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1410544 target=DISPLAY_PR>1410544 </a>[open]</br></td></tr></table>
+<br><br>
+<table>
+<tr><td>
+<b>Scripts failed Due to PRs - </b>8
+</td></tr>
+<tr><td>
+<b>Scripts pending debugging - </b>0
+</td></tr>
+<tr><td>
+<b>PRs Existing till now - </b></td></tr>
+</table><table border=1>
+<tr><td><font size=2 style="font-weight:bold">PR</td>
+               <td><font size=2 style="font-weight:bold"># Scripts Hit</td>
+               <td><font size=2 style="font-weight:bold">Planned_Release</td>
+               <td><font size=2 style="font-weight:bold">State</td>
+               <td><font size=2 style="font-weight:bold">Category</td>
+               <td><font size=2 style="font-weight:bold">Customer_Risk</td>
+               <td><font size=2 style="font-weight:bold">Problem_level</td>
+               <td><font size=2 style="font-weight:bold">Synopsis</td>
+               <td><font size=2 style="font-weight:bold">Found</td>
+               <td><font size=2 style="font-weight:bold">Reg</td>
+               <td><font size=2 style="font-weight:bold">Blocker</td> 
+            </tr><tr>
+<td><font size=2>1410544</td>
+               <td><font size=2>8</td>
+               <td><font size=2>19.1R1</td><td bgcolor = #FD5757 ><font size=2>open</td>
+<td><font size=2>sw-ui-infra</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>RPT KM REGRESSIONS:MANAGEABILITY::While issuing the command "op jcs_sleep.xsl detail" and "commit synchronize | display detail" there is mismatch in the output</td>
+               <td><font size=2>NEW</td>
+               <td><font size=2></td>
+               <td><font size=2>PendingBlocker</td></tr>
+</table>
+</span></li>
+</br><hr> <b>Combined pass rate (actual) for Automated scripts: 99.13 % </b>
+<br />
+<hr noshade size="1" width="100%" />
+ 
+</body>
+</html>
+
+
+
+

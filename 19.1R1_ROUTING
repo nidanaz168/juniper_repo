@@ -1,0 +1,12 @@
+BD=2019-02-18
+select result_id from er_regression_result where (name= 'RPT_REG_BBE_19.1R_1' and parent_result_id='0')
+209977 
+209977 
+wget -o log -O out.14613 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=5:7:0&result_id=209977" 
+fullfile
+
+hit = wget -o log -O prs.14613 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=0:1:0&result_id=209977" 
+wget -o log -O out.14613 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" http://www-systest.juniper.net/ti/webapp/dr/debug_dr/view/gen_tl9000_report.mhtml?result_id=209977&trans=remove
+delete from script_pr where release='19.1R1' and function='ROUTING NPIs'prstr is  
+/homes/rod/public_html/Regression/report/data/19-1R1_table
+Done

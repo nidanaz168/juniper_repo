@@ -1,0 +1,274 @@
+/*Reseting the margin and padding for the body tag so the
+header and footer will hug the whole screen.*/
+
+h1, p, body, html {
+	margin:0;
+	padding:0;}
+
+/*Just visual styles*/
+body {
+	color:#555;
+	background: #EFEFEF;
+	margin: 0;
+    padding: 0;
+	}
+
+/*Our full length header.
+We align the text center so it shows up in the middle.
+If you prefer you could right or left align it.*/	
+
+#header {
+    width: 100%;
+    height: 57px;
+    margin: 0 auto;
+    padding: 13px 0 0 0;
+    background: url(../images/img06.jpg) repeat-x;
+}
+
+#header h1 {
+    float: left;
+    width: 204px;
+    height: 90px;
+    padding: 104px 100px 0 20px;
+    background: url(../images/img05.jpg) no-repeat;
+    line-height: 32px;
+    font-size: 50px;
+}
+
+#header h2 {
+    width: 904px;
+    height: 105px;
+    text-align: centre;
+    font-size: 30px;
+    color: #FFFFFF;
+    z-index:1;
+}                          
+
+
+/*Center Content*/	
+#container {
+}
+.container th {
+	color:#000;
+}
+
+/*Full width footer*/
+#footer {
+	background-image:url('/NGDashboard/images/bg.jpg');
+	color:#FFFFFF;
+	padding:10px;
+	text-align:center;
+	}
+
+#display{
+	position:absolute;
+	height:;
+	width:;
+	top:200px;
+	left:200px;
+}
+
+#select{
+	height:100px;
+	width:50%;
+	top:20px;
+	left:150px;
+}
+
+.slider_set{
+	position:absolute;
+	height:50px;
+	width:15%;
+	top:20px;
+	left:840px;
+}
+.profile_set{
+	position:absolute;
+	height:50px;
+	width:10%;
+	top:20px;
+	left:1070px;
+}
+
+#slider{
+	position:absolute;
+	top:50px;
+	left:740px;
+}
+.summary th
+{
+	font-size:10pt;
+     background-color:#0B0B61;
+     color:white;
+     border-style:solid;
+     border-width:1px;
+     border-color:#cccccc;      
+}
+.summary TD
+  {
+     font-size:10pt;
+     background-color:#EFF5FB;
+     color:black;
+     border-style:solid;
+     border-width:1px;
+     border-color:#cccccc;
+     text-align:center;
+  }             
+
+/*If you are going to use floats then you will NEED to clear the
+footer so it doesn't bunch the content up*/
+.clear {clear:both;}
+#logo
+{
+	    padding: 10px 20px;
+		    font-size: 200%;
+}
+
+a:focus {
+    outline: none;
+}
+#panel {
+    background: #fff;
+    margin-top: 5%;
+    padding : 2%;
+    height: 200px;
+    display: none;
+    border: solid 1px;
+}
+.slide {
+    margin: 0;
+    padding: 0;
+    /*border-top: solid 1px #422410;*/
+    background: url(btn-slide.gif) no-repeat center top;
+}           
+.btn-slide {
+    background: url(white-arrow.gif) no-repeat right -50px;
+    text-align: center;
+    width: 144px;
+    height: 31px;
+    padding: 10px 10px 0 0;
+    margin: 0 auto;
+    display: block;
+    font: bold 120%/100% Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+.active {
+    background-position: right 12px;
+}
+#header1 {
+    background-color:#D8D8D8;
+    border: 2px solid #000000;
+    padding: 5px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    /*width:1200px;
+    height:100px;*/
+}              
+.submenu {
+            position:absolute;
+			background: #e6e6e6;
+            left:30;
+            top:30;
+            display:none;
+            margin:0 0 0 -1px;
+            padding:0;
+            list-style:none;
+        }
+#goal {
+  width: 700px ;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+.button.blue { background-color: #2c6da0; }
+#mask {
+	display: none;
+	background: #000; 
+	position: fixed; left: 0; top: 0; 
+	z-index: 10;
+	width: 100%; height: 100%;
+	opacity: 0.8;
+	z-index: 999;
+}
+
+/* You can customize to your needs  */
+.login-popup{
+	display:none;
+	background: #EFF4FB;
+	padding: 10px;	
+	border: 2px solid #ddd;
+	float: left;
+	font-size: 1.2em;
+	position: fixed;
+	top: 50%; left: 50%;
+	z-index: 99999;
+	box-shadow: 0px 0px 20px #999; /* CSS3 */
+        -moz-box-shadow: 0px 0px 20px #999; /* Firefox */
+        -webkit-box-shadow: 0px 0px 20px #999; /* Safari, Chrome */
+	border-radius:3px 3px 3px 3px;
+        -moz-border-radius: 3px; /* Firefox */
+        -webkit-border-radius: 3px; /* Safari, Chrome */
+}
+
+img.btn_close { Position the close button
+	float: right; 
+	margin: -28px -28px 0 0;
+}
+
+fieldset { 
+	border:none; 
+}
+
+form.signin .textbox label { 
+	display:block; 
+	padding-bottom:7px; 
+}
+
+form.signin .textbox span { 
+	display:block;
+}
+
+form.signin p, form.signin span { 
+	color:#999; 
+	font-size:11px; 
+	line-height:18px;
+} 
+
+form.signin .textbox input { 
+	background:#666666; 
+	border-bottom:1px solid #333;
+	border-left:1px solid #000;
+	border-right:1px solid #333;
+	border-top:1px solid #000;
+	color:#fff; 
+        border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+	font:13px Arial, Helvetica, sans-serif;
+	padding:6px 6px 4px;
+	width:200px;
+}
+
+form.signin input:-moz-placeholder { color:#bbb; text-shadow:0 0 2px #000; }
+form.signin input::-webkit-input-placeholder { color:#bbb; text-shadow:0 0 2px #000;  }
+
+.button { 
+	background: -moz-linear-gradient(center top, #f3f3f3, #dddddd);
+	background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(#dddddd));
+	background:  -o-linear-gradient(top, #f3f3f3, #dddddd);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f3f3f3', EndColorStr='#dddddd');
+	border-color:#000; 
+	border-width:1px;
+        border-radius:4px 4px 4px 4px;
+	-moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+	color:#333;
+	cursor:pointer;
+	display:inline-block;
+	padding:6px 6px 4px;
+	margin-top:10px;
+	font:12px; 
+	width:214px;
+}
+.button:hover { background:#ddd; }

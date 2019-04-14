@@ -1,0 +1,273 @@
+Commonedge/Protocols/PIM/pim_nbr_policy_neg.pl,General,Multicast,COS
+Commonedge/Protocols/PIM/pim_nbr_policy_neg_2.pl,General,Multicast,COS
+Commonedge/Protocols/Igmp/IGMP_MLD_Immediate_Leave.pl,General,IGMPv2,MLD
+Commonedge/Protocols/Igmp/IGMPv3_MLDv2_Immediate_Leave.pl,General,IGMPv3,MLD
+Commonedge/Protocols/Multicast/mcast_cac.pl,General,Multicast,Call Admission Control
+Interfaces/Atlas/Layer3/cross_connects/RLI4739_Unnumbered_Ethernet.pl,General,Ethernet,Loopback
+Commonedge/Protocols/DHCP/rli4769_acc_internal_route_forw_option.pl,General,DHCP,Access/access-internal route
+Commonedge/Protocols/DHCP/rli4769_acc_internal_route_routing_instance.pl,General,DHCP,Access/access-internal route
+Commonedge/Infrastructure/CF/ChainedFirewallFiltersVPLSAtlas.pl,General,Proto-others,Firewall filters
+Commonedge/Infrastructure/CF/ChainedFirewallFiltersVPLSAtlaspart2.pl,General,Proto-others,Firewall filters
+Commonedge/Infrastructure/CF/ChainedFirewallFiltersVPLSAtlaspart3.pl,General,Proto-others,Firewall filters
+Commonedge/Protocols/VPN/eiBGP_VPN_multi_path_load_balancing.pl,General,Proto-others,eiBGP
+Commonedge/Protocols/PIM/pim_bfd_fl2.pl,General,Multicast,PIM
+Commonedge/Protocols/VRRP/rli2113_ipv6_vrrp-part1.pl,General,VRRP,VRRP IPV6
+Commonedge/Protocols/VRRP/rli2113_ipv6_vrrp-part2.pl,General,VRRP,VRRP IPV6
+Commonedge/Protocols/Igmp/igmp_v2_bulkstats_file_transfer.pl,General,IGMPv2,bulkstats
+Commonedge/Protocols/Igmp/igmp_v2_bulkstats_logging.pl,General,IGMPv2,bulkstats
+Commonedge/Protocols/Igmp/igmp_v3_bulkstats_file_transfer.pl,General,IGMPv2,bulkstats
+Commonedge/Protocols/Igmp/igmp_v3_bulkstats_logging.pl,General,IGMPv3,bulkstats
+Commonedge/Infrastructure/COS/RLI3915.pl,General,CoS,Basic
+Commonedge/Interfaces/Ethernet/RLI4068_8xGE_IQ2_Type3.pl,General,IQ2 PIC,Ethernet
+Commonedge/Interfaces/Layer3/cross_connects/RLI4739_Unnumbered_Ethernet.pl,General,Ethernet,Loopback
+Commonedge/Protocols/BFD/rli4957_BFD_HoldDown_interval-part1.pl,General,Proto-Others,BFD
+Commonedge/Protocols/BFD/rli4957_BFD_HoldDown_interval-part2.pl,General,Proto-Others,BFD
+Commonedge/Protocols/DHCP/dhcp_relay_option_60.pl,General,DHCP,Options
+Commonedge/Protocols/DHCP/License_Dhcp_Address_Assignment_M.pl,General,DHCP,License
+Commonedge/Protocols/DHCP/License_Dhcp_Address_Assignment_MX.pl,General,DHCP,License
+Protocols/OSPF/mt_ospf.pl,General,Proto-Others,OSPF
+Commonedge/Protocols/BGP/rli4728_MT_BGP_Resolver-part1.pl,General,Proto-Others,BGP
+Commonedge/Protocols/BGP/rli4728_MT_BGP_Resolver-part2.pl,General,Proto-Others,BGP
+Commonedge/Protocols/DHCP/rli5309DHCPServer16.pl,General,DHCP,Options
+Commonedge/Protocols/MISC/subnet_support_loopback_intf.pl,General,Proto-Others,Basic
+BRAS/DHCP/dhcp_aaa_auth_relay_1.pl,General,DHCP,AAA
+BRAS/DHCP/dhcp_aaa_auth_relay_2.pl,General,DHCP,AAA
+BRAS/DHCP/dhcp_aaa_auth_relay_3.pl,General,DHCP,AAA
+BRAS/DHCP/dhcp_aaa_auth_relay_4.pl,General,DHCP,AAA
+BRAS/DHCP/dhcp_auth_aaa_16k_relay.pl,General,DHCP,AAA
+Commonedge/Protocols/Igmp/igmp_v2_access_list.pl,General,IGMPv2,ACL
+Commonedge/Protocols/Igmp/igmp_v3_access_list.pl,General,IMPv3,ACL
+Commonedge/Protocols/Igmp/mld_v1_access_list.pl,General,multicast,MLD_v1
+Commonedge/Protocols/Igmp/mld_v1_bulkstats_file_transfer.pl,General,Multicast,MLD_v1
+Commonedge/Protocols/Igmp/mld_v1_bulkstats_logging.pl,General,Multicast,MLD_v1
+Commonedge/Protocols/Igmp/mld_v2_access_list.pl,General,Multicast,MLD_v2
+Commonedge/Protocols/Igmp/mld_v2_bulkstats_file_transfer.pl,General,Multicast,MLD_v2
+Commonedge/Protocols/Igmp/mld_v2_bulkstats_logging.pl,General,Multicast,MLD_v2
+BRAS/DHCP/PR306763.pl,General,DHCP,AAA
+Commonedge/Bras/Radius_Accounting.pl,General,RADIUS,Accounting
+BRAS/RADIUS/radius_auth_static_ifl.pl,General,RADIUS,AAA
+BRAS/RADIUS/rli4692RadAuthRelayTest.pl,General,RADIUS,AAA
+BRAS/RADIUS/rli4692RadAuthSvlanTest.pl,General,RADIUS,AAA
+BRAS/RADIUS/rli4692RadAuthTest.pl,General,RADIUS,AAA
+BRAS/RADIUS/rli4692RadAuthUnumTest.pl,General,RADIUS,AAA
+BRAS/RADIUS/rli4692RadiusAuth16.pl,General,RADIUS,AAA
+Commonedge/Protocols/MISC/subnet_support_loopback_intf_ipv6.pl,General,Proto-Others,Basic
+Commonedge/Protocols/Igmp/igmp_v2_reverse_oif_map_basic.pl,General,Multicast,IGMPv2
+Commonedge/Protocols/Igmp/igmp_v2_reverse_oif_map_neg.pl,General,Multicast,IGMPv2
+Commonedge/Protocols/Igmp/igmp_v3_reverse_oif_map_basic.pl,General,Multicast,IGMPv3
+Commonedge/Protocols/Igmp/igmp_v3_reverse_oif_map_neg.pl,General,Multicast,IGMPv3
+Commonedge/Protocols/Multicast/IgmpSnoopingCliAggEth92.pl,General,Multicast,IGMP-Snooping
+Commonedge/Protocols/Multicast/IgmpSnoopingCliEthernet92.pl,General,Multicast,IGMP-Snooping
+Commonedge/Protocols/Multicast/IgmpSnoopingCliQualLrn92.pl,General,Multicast,IGMP-Snooping
+Commonedge/Protocols/Multicast/IgmpSnoopingCliVirtSwitch92.pl,General,Multicast,IGMP-Snooping
+Commonedge/Protocols/DHCP/Demux/rli5931ClientLimitLSTest.pl,General,DHCP,Lease limit
+Commonedge/Protocols/DHCP/Demux/rli5931ClientLimitLSUTest.pl,General,DHCP,Lease limit
+BRAS/DHCP/rli7183local.pl,General,DHCP,dynamic profiles
+BRAS/DHCP/rli7183localv.pl,General,DHCP,dynamic profiles
+BRAS/DHCP/rli7183relay.pl,General,DHCP,dynamic profiles
+BRAS/DHCP/dhcp_show_subscribers_1.pl,General,DHCP,Basic
+BRAS/DHCP/dhcp_show_subscribers_2.pl,General,DHCP,Basic
+Commonedge/Protocols/Igmp/igmp_only_v2_access_list.pl,General,multicast,IGMP_v2
+Commonedge/Protocols/Igmp/igmp_v3_only_intf.pl,General,multicast,IGMP_v3
+Protocols/Multicast/igmp_v3_only_intf_neg.pl,General,multicast,IGMP_v3
+Commonedge/Bras/RLI4693_CoA_Licensing.pl,General,RADIUS,CoA
+Commonedge/Protocols/Igmp/igmp_only_v2_reverse_oif_map_basic.pl,General,Multicast,IGMP
+BRAS/DHCP/RLI_7220_Section_5_1.pl,General,DHCP,GRES
+Commonedge/Bras/RLI7968GRESLSUTest.pl,General,DHCP,AAA
+Commonedge/Bras/RLI7968GRESRAUTest.pl,General,DHCP,AAA
+Commonedge/Protocols/DHCP/rli7973staticsv.pl,General,DHCP,MAC Validate
+BRAS/DHCP/Semantic_Chk.pl,General,DHCP,Basic
+Infrastructure/PR/dhcpd_filter_pr261009.pl,General,DHCP,Basic
+BRAS/DHCP/CoS/RLI_7876_Connect_RPD_to_QoS_Adjustment_Mechanism.pl,General,DHCP,CoS
+BRAS/DHCP/RLI4605.pl,General,Multicast,IGMP
+BRAS/DHCP/rli6025_irb_dhcp_local.pl,General,DHCP,Others
+BRAS/DHCP/rli6025_irb_dhcp_proxy.pl,General,DHCP,Others
+BRAS/DHCP/rli6025_irb_dhcp_relay.pl,General,DHCP,Others
+Commonedge/Bras/rli6861PlainProxyRATest.pl,General,DHCP,relay agent
+BRAS/PPP/RLI8246_PPP_Dual_Daemons.pl,General,PPP,P2P
+BRAS/DHCP/PR_404818.pl,General,DHCP,Basic
+Commonedge/Bras/pr439166_448810_l3w.pl,General,DHCP,Basic
+BRAS/DHCP/CoS/RLI_4580_Diameter_Support_For_JSRC_Valid8.pl,General,SRC,AAA
+BRAS/DHCP/rli6961DHCPv6DSFRTest.pl,General,DHCP,DHCPv6
+BRAS/DHCP/rli6961DHCPv6LSSVLANFRTest.pl,General,DHCP,DHCPv6
+BRAS/DHCP/testPR1.pl,General,DHCP,MAC Validate
+Commonedge/Bras/radius_round_robin.pl,General,RADIUS,AAA
+BRAS/PPP/CoS/RLI_10542_IQ2E_PPPOE_COS_Multi_UIFL_Support.pl,General,PPP,CoS
+BRAS/DHCP/CoS/RLI_10938_Harden_Multicast_RIF_OIF_Mapping_part2.pl,General,CoS,Multicast
+BRAS/DHCP/RLI_9812_SFWNAT_on_dynamic_static_interfaces.pl,General,DHCP,NAT
+BRAS/DHCP/CoS/RLI_9906_jdhcpd_Support_For_RFC_3203_ForceRenew.pl,General,DHCP,Message
+BRAS/PPP/RLI10549_PPPOE_ServAct.pl,General,PPP,Frame-Route
+Commonedge/Bras/rli9603DHCPv6LSFRDUALSTPOOLTest.pl,General,DHCPv6,authentication
+Commonedge/Bras/rli9603DHCPv6LSFRMULTCLPOOLTest.pl,General,DHCPv6,authentication
+BRAS/DHCP/RLI9750_authd_debuggability.pl,General,DHCP,AAA
+BRAS/DHCP/RLI9812_JFLOW_DHCP_RL.pl,General,DHCP,NAT
+Interfaces/AE/pr_468947_477130.pl,General,Interfaces,AE
+BRAS/DHCP/pr453089.pl,General,DHCP,Lease binding
+BRAS/DHCP/CoS/RLI_6125_SCOS.pl,General,CoS,LAG
+BRAS/PPP/CoS/rli_6136_neo_pppoe_excess_rate_to_services_two.pl,General,PPP,CoS
+BRAS/DHCP/RLI_8158_Aggregate_Clients.pl,General,DHCP,aggregate clients
+BRAS/DHCP/RLI_9438_Dynamic_Policy_skip_action_1.pl,General,DHCP,Basic
+BRAS/DHCP/RLI6257_DHCPv6_DEMUX_STVLAN_nonMRV.pl,General,DHCP,Demux
+BRAS/PPP/RLI6928_bidir_auth.pl,General,PPP,MPLS
+BRAS/PPP/RLI6928_dest_prof_and_mplscp.pl,General,PPP,MPLS
+BRAS/PPP/RLI6928_dest_prof_and_mplscp_neo.pl,General,PPP,MPLS
+BRAS/DHCP/CoS/cos_overhead_shaping_1_cos_levels.pl,General,DHCP,CoS
+BRAS/DHCP/CoS/cos_overhead_shaping_2_cos_models.pl,General,DHCP,CoS
+Interfaces/pr460844.pl,General,Multicast,OIF
+BRAS/DHCP/rli_10815_add_support_to_authd_linked_address_pools.pl,General,DHCP,AAA
+BRAS/PTSP/RLI_11614_PTSP.pl,General,SRC,PTSP
+BRAS/L2W/RLI_13063_dynamic_ae.pl,General,Proto-Others,"L2W(bum , vpls )"
+BRAS/L2W/RLI_13063_dynamic_mx80.pl,General,Proto-Others,"L2W(bum , vpls )"
+BRAS/L2W/RLI_13063_dynamic_mx80_ae.pl,General,Proto-Others,"L2W(bum , vpls )"
+BRAS/L2W/RLI_13063_static.pl,General,Proto-Others,"L2W(bum , vpls )"
+BRAS/DHCP/CoS/RLI_6155_Dynamic_Lawful_Intercept_integration_neo_1.pl,General,DHCP,LI
+BRAS/DHCP/DVLAN/RLI_7537_dv_authentication_dhcp_demux_inst_restarts.pl,General,DHCP,dynamic vlans
+BRAS/DHCP/DVLAN/RLI_7537_dynamic_vlan_over_AE.pl,General,DHCP,dynamic vlans
+BRAS/DHCP/RLI10843_1.pl,General,DHCP,MAC Validate
+BRAS/DHCP/RLI10843_2.pl,General,DHCP,MAC Validate
+BRAS/DHCP/rli11226InterfaceClientLimitLocalServer.pl,General,DHCP,Lease
+BRAS/DHCP/rli11226InterfaceClientLimitRelay.pl,General,DHCP,Lease
+BRAS/DHCP/rli11393_jdhcpd_changes_in_linked_address_pools.pl,General,DHCP,Address Pools
+BRAS/DHCP/rli11804_show_subscriber_summary.pl,General,DHCP,Basic
+BRAS/PPP/rli11804_show_subscriber_summary_pppoe.pl,General,PPP,Basic
+Protocols/Multicast/RLI6111_mcast_dont_age_NEO.pl,General,Multicast,Others
+Protocols/Multicast/RLI6111_pim_bfd_NEO.pl,General,Multicast,PIM
+Protocols/Multicast/RLI6111_pim_nbr_policy_NEO.pl,General,Multicast,PIM
+Interfaces/Ethernet/RLI6111_Unnumbered_Ethernet_interfaces_only_NEO.pl,General,Multicast,Ethernet
+Interfaces/Ethernet/RLI6111_Unnumbered_Ethernet_NEO.pl,General,Multicast,Ethernet
+BRAS/DHCP/RLI6179_MACVALIDATE_ETH.pl,General,DHCP,MAC Validate
+BRAS/DHCP/RLI6179_MACVALIDATE_SVLAN.pl,General,DHCP,MAC Validate
+BRAS/DHCP/RLI6179_MACVALIDATE_VLAN.pl,General,DHCP,MAC Validate
+BRAS/DHCP/RLI6179_MACVALIDATE_VLAN_GRES.pl,General,DHCP,MAC Validate
+BRAS/DHCP/RLI6179_MACVALIDATE_VLAN_NEG.pl,General,DHCP,MAC Validate
+BRAS/DHCP/rli7536_1.pl,General,DHCP,VLAN
+BRAS/JSRC/RLI9256_static_subscribers_jsrc_NEO.pl,General,SRC,AAA
+BRAS/PPP/RLI9576_PPP_load_bal_redund_10_2.pl,General,PPP,Others
+BRAS/DHCP/RLI9699_custom_82_NEO.pl,General,DHCP,Options
+BRAS/L2TP/l2tp_lac_mx.pl,General,Proto-Others,L2TP
+BRAS/DHCP/PR461365.pl,General,DHCP,Message
+BRAS/DHCP/PR463286.pl,General,DHCP,Basic
+BRAS/PPP/CoS/RLI_10282_Marking_Support_For_LAC.pl,General,PPP,L2TP
+BRAS/PPP/RLI_10791_L2TP_LAC.pl,General,PPP,L2TP
+BRAS/DHCP/rli_11097_dhcp_per_interface_tracing.pl,General,DHCP,interface
+BRAS/L2W/RLI_13064.pl,General,Proto-Others,L2W
+BRAS/L2W/RLI_13064_mx80.pl,General,Proto-Others,L2W
+BRAS/L2W/RLI_13064_mx80_ae.pl,General,Proto-Others,L2W
+BRAS/DHCP/rli_14764_dhcp_if_stats_l3w.pl,General,DHCP, Statistics
+BRAS/PPP/RLI_5346_L2TP_LAC.pl,General,PPP,L2TP
+BRAS/DHCP/rli11038_dhcpv6_reconfigure_part1.pl,General,DHCP,DHCPv6
+BRAS/DHCP/rli11038_dhcpv6_reconfigure_part2.pl,General,DHCP,DHCPv6
+BRAS/DHCP/rli11779.pl,General,DHCP,Message
+BRAS/DHCP/rli15248snmp.pl,General,DHCP,SNMP
+/BRAS/L2TP/rli15940.pl,General,PPP,L2TP
+Infrastructure/Firewall/rli4586_http_redirect_ipda_rewrite.pl,General,Proto-Others,Firewall
+Infrastructure/Firewall/rli4586_http_redirect_ipda_rewrite_dhcp.pl,General,Proto-Others,Firewall
+BRAS/DHCP/ServiceAccounting.pl,General,DHCP,AAA
+BRAS/DHCP/rli14390_threshold_support_for_IPv6_pools_snmp_trap.pl,General,DHCP,SNMP
+BRAS/DHCP/rli14390_threshold_support_for_pools_snmp_trap.pl,General,DHCP,SNMP
+BRAS/DHCP/RLI_9161_SMId.pl,General,DHCP,Others
+BRAS/DHCP/CoS/RLI_9238_DFWD_FUF_Dynamic_Profile_1.pl,General,DHCP,DFWD
+BRAS/DHCP/CoS/RLI_9238_DFWD_FUF_Dynamic_Profile_2.pl,General,DHCP,DFWD
+BRAS/DHCP/CoS/RLI_9238_DFWD_FUF_Dynamic_Profile_32.pl,General,DHCP,DFWD
+BRAS/DHCP/CoS/RLI_9238_DFWD_FUF_Dynamic_Profile_34.pl,General,DHCP,DFWD
+BRAS/DHCP/CoS/RLI_9238_DFWD_FUF_Dynamic_Profile_35.pl,General,DHCP,DFWD
+BRAS/DHCP/PR448579.pl,General,DHCP,Bindings
+BRAS/PPP/CoS/RLI_12026_NEO_Rate_Limit_Option_At_The_Queues_Level_PPPoE.pl,General,PPP,CoS
+BRAS/DHCP/rli_12350_snmp_support_for_dhcp_binding_table.pl,General,DHCP,SNMP
+BRAS/DHCP/CoS/RLI_9238_DFWD_FUF_Dynamic_Profile_33.pl,General,DHCP,CoS
+BRAS/PPP/RLI10209_OSINLCP.pl,General,PPP,Others
+BRAS/DHCP/rli10853_authd_snmp.pl,General,DHCP,SNMP
+BRAS/DHCP/rli10853_authd_snmp_ha.pl,General,DHCP,SNMP
+BRAS/RADIUS/rli10855.pl,General,RADIUS,AAA
+BRAS/DHCP/RLI11227.pl,General,DHCP,Others
+BRAS/DHCP/rli11789_dhcpv6_l3ws.pl,General,DHCP,DHCPv6
+BRAS/PPP/rli11964_Restart.pl,General,PPP,Basic
+BRAS/PPP/rli11964_SessionTimeout.pl,General,PPP,Basic
+BRAS/DHCP/AAATest.pl,General,DHCP,AAA
+BRAS/ISSU/ce_issu_basic.pl,General,ISSU,Basic
+BRAS/ISSU/ce_issu_dhcp_adf.pl,General,ISSU,DHCP
+BRAS/ISSU/ce_issu_dhcp_relay_proxy_ae.pl,General,ISSU,DHCP
+BRAS/ISSU/ce_issu_dhcp_relay_proxy_base.pl,General,ISSU,DHCP
+BRAS/ISSU/ce_issu_dhcp_relay_proxy_cos_fwd.pl,General,ISSU,DHCP
+BRAS/ISSU/ce_issu_dhcp_server_aaa.pl,General,ISSU,DHCP
+BRAS/ISSU/ce_issu_dhcp_server_ha.pl,General,ISSU,DHCP
+BRAS/ISSU/ce_issu_dhcpv6_demux.pl,General,ISSU,DHCP
+BRAS/ISSU/ce_issu_dhcpv6_l3ws.pl,General,ISSU,DHCP
+BRAS/ISSU/DHCPv6MLD_ISSU.pl,General,ISSU,MLD
+BRAS/ISSU/issu_dhcp_relay.pl,General,ISSU,DHCP
+BRAS/DHCP/CoS/RLI_11771_ISSU_Dynamic_Policy_skip_action_3.pl,General,ISSU,DHCP
+Infrastructure/Firewall/rli11829_GRES.pl,General,Proto-Others,Firewall
+BRAS/ISSU/RLI_12853_DCOS_ISSU_multiSub.pl,General,ISSU,DHCP
+BRAS/ISSU/RLI_12853_DCOS_ISSU_singleSub.pl,General,ISSU,CoS
+BRAS/ISSU/RLI_12853_DCOS_ISSU_staticSMAP_1.pl,General,ISSU,CoS
+BRAS/ISSU/RLI_12853_DCOS_ISSU_staticSMAP_2.pl,General,ISSU,CoS
+BRAS/ISSU/RLI_12853_DCOS_ISSU_staticSMAP_3.pl,General,ISSU,CoS
+BRAS/L2W/RLI_L2W_P2.pl,General,Proto-Others,L2W
+BRAS/L2W/RLI_L2W_P2_ape_ae.pl,General,Proto-Others,L2W
+BRAS/L2W/RLI_L2W_P2_nni_ae.pl,General,Proto-Others,L2W
+BRAS/DHCP/rli10851snmp.pl,General,DHCP,SNMP
+BRAS/L2TP/rli11108.pl,General,Proto-Others,L2TP
+BRAS/PPP/RLI11802_1.pl,General,PPP,Dual Stack
+Infrastructure/Firewall/rli12370.pl,General,Proto-Others,Firewall
+BRAS/DHCP/RLI5416_part2.pl,General,PPPoE,AE
+BRAS/DHCP/RLI7774.pl,General,Proto-Others,VLAN
+BRAS/PPP/rli9582_ppp_dual_stack_part1.pl,General,PPP,Dual Stack
+BRAS/ISSU/Bidirect_Auth_IPv6cp_ISSU_PPP.pl,General,ISSU,PPP
+BRAS/ISSU/ce_issu_cos_overhead_shaping_dynamic_cos.pl,General,ISSU,CoS
+BRAS/ISSU/ce_issu_pppoe_accounting_li.pl,General,ISSU,PPP
+BRAS/ISSU/ce_issu_pppoe_adf.pl,General,ISSU,PPP
+BRAS/ISSU/ce_issu_pppoe_neo_dynamic_setting_and_updating_qos.pl,General,ISSU,PPP
+BRAS/ISSU/ce_issu_pppoe_neo_ifl_filter_1.pl,General,ISSU,PPP
+BRAS/ISSU/Domain_Maps_PPP_ISSU.pl,General,ISSU,PPP
+BRAS/ISSU/PPPoE_Driven_Prof_RI_SNTS_PPP_ISSU.pl,General,ISSU,PPP
+BRAS/DHCP/RLI_12413_authd_Lawful_intercept_triggers_extentionsPart1.pl,General,DHCP,LI
+BRAS/DHCP/RLI_12413_authd_Lawful_intercept_triggers_extentionsPart2.pl,General,DHCP,LI
+BRAS/JSRC/RLI_13362.pl,General,SRC,Others
+BRAS/DHCP/RLI_14803_Dhcp_Autoconfd_Remove_No_Subscriber_Knob_Basic.pl,General,DHCP,L3W
+BRAS/PPP/RLI_14803_Pppoe_Autoconfd_Remove_No_Subscriber_Knob_Basic.pl,General,DHCP,L3W
+BRAS/PPP/CoS/RLI_5408_ISSU_9860_ae_pppoe_cos_one_singlecard.pl,General,ISSU,PPP
+BRAS/PPP/CoS/RLI_5408_ISSU_9860_ae_pppoe_cos_two_singlecard.pl,General,ISSU,PPP
+BRAS/PPP/RLI11965.pl,General,PPP,L2TP
+BRAS/JSRC/rli12547_part1.pl,General,SRC,AAA
+BRAS/JSRC/rli12547_part2.pl,General,SRC,AAA
+BRAS/RADIUS/rli13363_part1.pl,General,RADIUS,AAA
+BRAS/RADIUS/rli13363_part2.pl,General,RADIUS,AAA
+BRAS/RADIUS/rli13363_part3.pl,General,RADIUS,AAA
+BRAS/RADIUS/rli13363_part4.pl,General,RADIUS,AAA
+BRAS/PPP/RLI13364_part1.pl,General,PPP,AAA
+BRAS/PPP/RLI13364_part2.pl,General,PPP,AAA
+BRAS/RLI13494.pl,General,DHCP,PSTP
+BRAS/DHCP/RLI9578_DHCPOptions.pl,General,DHCP,Options
+BRAS/DHCP/RLI9578_DHCPOptions_ae.pl,General,DHCP,Options
+BRAS/DHCP/RLI9578_DHCPOptions_issu.pl,General,DHCP,Options
+BRAS/ISSU/ce_issu_l2tp_lac.pl,General,ISSU,L2TP
+BRAS/HTTP_IPv4_DA_Rewrite.pl,General,Proto-Others,HTTP
+BRAS/HTTP_IPv6_DA_Rewrite.pl,General,Proto-Others,HTTP
+BRAS/PPP/pr502110.pl,General,PPP,ARP
+BRAS/DHCP/CoS/RLI_13294_QOS_Adjustments_Per_Queue_ext_dynamicCosadjustmin.pl,General,CoS,Others
+BRAS/DHCP/rli_14165_dhcpv6_l3ws_multi_address_support.pl,General,DHCP,DHCPv6
+BRAS/DHCP/rli_14165_dhcpv6_multi_address_support.pl,General,DHCP,DHCPv6
+BRAS/DHCP/RLI_14700_demux_1.pl,General,DHCP,Demux
+BRAS/DHCP/RLI_14700_demux_2.pl,General,DHCP,Demux
+BRAS/RADIUS/RLI12805_RadiusThrottlingMulti.pl,General,RADIUS,Throttling
+BRAS/PPP/RLI15787_NAS_Part1.pl,General,PPP,NAS
+BRAS/PPP/RLI15787_NAS_Part2.pl,General,PPP,NAS
+BRAS/PPP/RLI15787_NAS_Part3.pl,General,PPP,NAS
+BRAS/PPP/RLI15787_NAS_Part4.pl,General,PPP,NAS
+BRAS/PPP/RLI4990.pl,General,PPP,SNMP
+BRAS/PPP/RLI6739_1.pl,General,PPP,ATM
+BRAS/PPP/RLI6739_1a.pl,General,PPP,ATM
+BRAS/PPP/RLI6739_2.pl,General,PPP,ATM
+BRAS/PPP/RLI6739_3.pl,General,PPP,ATM
+BRAS/PPP/RLI6739_4.pl,General,PPP,ATM
+BRAS/L2TP/RLI6929_lns.pl,General,Proto-Others,L2TP
+BRAS/DHCP/RLI9575_L3Wholesale_AcctDuplication_pppoe.pl,General,DHCP,L3W
+BRAS/DHCP/CoS/RLI_14259_VLAN_Deletion_Inactivity_Timeout.pl,General,DHCP,CoS
+BRAS/DHCP/RLI_14489_enhanced_DHCP_binding_cmds_SingleClient_V4_local.pl,General,DHCP,Options
+BRAS/DHCP/RLI_14489_enhanced_DHCP_binding_cmds_SingleClient_V6_local.pl,General,DHCP,Options
+BRAS/DHCP/rli14894_dhcpv6_snoop_relay_RI.pl,General,DHCP,DHCPv6
+BRAS/DHCP/rli14894_dhcpv6_snoop_relay_RI_T2.pl,General,DHCP,DHCPv6
+BRAS/DHCP/rli15466_dhcp_server_part1.pl,General,DHCP,DHCPv6
+BRAS/DHCP/rli15466_dhcp_server_part2.pl,General,DHCP,DHCPv6
+BRAS/DHCP/RLI6661DHCPv4LocalServer.pl,General,DHCP,Server
+BRAS/DHCP/RLI6661DHCPv6LocalServer.pl,General,DHCP,DHCPv6

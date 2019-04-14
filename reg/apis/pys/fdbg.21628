@@ -1,0 +1,632 @@
+<link rel="stylesheet" type="text/css" href="../shared/resources/css/jquery.dataTables.css">
+<link rel="stylesheet" type="text/css" href="../shared/resources/css/TableTools.css">
+
+<script type="text/javascript" src="../shared/resources/js/jquery.js"></script>
+<script type="text/javascript" src="../shared/resources/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="../shared/resources/js/TableTools.min.js"></script>
+<script type="text/javascript" src="../shared/resources/js/dataTableSelect.js"></script>
+
+
+
+
+<html>
+<head>
+ <title>DEBUG PAGE</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <meta name="Pragma" CONTENT="no-cache">
+ <meta name="robots" content="noindex, follow">
+ <link href="/ti/webapp/dr/shared/mainstyle.css" rel="stylesheet" type="text/css">
+ <script >
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                                            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68983099-2', 'auto');
+  //    ga('set', '&uid', 'ckevin'); // Set the user ID using signed-in user_id.
+  ga('send', 'pageview');
+           console.log("Updated");
+ </script>
+ </head>
+
+<!-- START STYLESHEET INCLUDE -->
+<script language="javascript">
+ if (navigator.platform.indexOf ("Win32") !=-1) {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ie.css" type="text/css">');
+ } else {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ns.css" type="text/css">');
+ }
+</script>
+
+<body class="td-white-background"  topmargin="5" leftmargin="6" marginwidth="6" marginheight="5">
+
+</script>
+<!-- END STYLESHEET INCLUDE -->
+
+
+<!-- 1st ROW START-->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left" width="65%">
+      <table  width="100% border="0 cellspacing="0" cellpadding="0">
+        <tr>
+          <td><a href="http://www-int.juniper.net/"><img src="/shared/images/juniperLogo.gif" alt="Juniper Networks Logo" width="154" height="40" border="0" /></a></td>
+          <td><img src="/image/pixel.gif"  alt="" height="10" /></td>
+          <td> <font color=blue size=4>Regression the Heartbeat Of Testing</font></td>
+          <td>  <font size=2>  Hi nidanaz  </font> </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<div id="banner" style="    width: 90%;
+    width: 90%;
+        font-size: 16px;
+            background-color: greenyellow;
+                margin-left: 40px;
+                    padding: 5px 0 5px 0;
+                        height: 35px;
+                         "
+                          align="center">
+                            DR has been moved to <b>QUINCY</b> from <b>Sunnyvale</b> servers. Please upload your <b>DEBUG</b> logs to
+                            Quincy shells for debugging purposes. <br> Please use any one of the 16 Quincy Shells for
+                            this purpose. <span style="color:red;">ttqc-shell01 .... ttqc-shell16</span> 
+                            </div>
+
+
+
+<!-- 1st ROW END-->
+
+
+
+<!-- 2nd ROW END-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr class="tr-table-header-dark">
+    <td width="47%" colspan="2">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+        <tr>
+         <td width="50%" class="tr-table-header-dark"><img src="/image/pixel.gif"  alt="" width="438" height="1" /></td>
+         <td rowspan="2"  valign="bottom" class="tr-table-header-dark"><img src="/ti/webapp/dr/image/hdr_global_slantline_l.gif" width="25" height="49" alt="divider" /></td>
+        </tr>
+        <tr>
+         <td width="438" height="49" class="darkest-bgcolor"> &nbsp;&nbsp;&nbsp;&nbsp;<span class="header-label">Regression Debugging</span> </td>
+         <td><div align="center"><font size=4>19.1B2_Porter2</font></div> </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- 2nd ROW END-->
+
+
+
+
+
+
+<table width="100%" cellspacing="0" cellpadding="0"><tr><td></td></tr></table>
+
+
+<!-- 3rd ROW START-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=0:2:0&result_id=202327" class="gnavsm">Reg Debug</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=1:1:0&result_id=202327" class="gnavsm">Manual</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=2:0:0&result_id=202327" class="gnavsm">Status</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=3:1:0&result_id=202327" class="gnavsm">Reg Pass</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=4:1:0&result_id=202327" class="gnavsm">Edit</a>
+      </div>
+    </td>
+
+
+
+
+
+
+
+
+    <td width="5" valign="top" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant5b.GIF"></td>
+    <td>
+      <div align="center">
+        <a href="index.mhtml?mode=5:0:0&result_id=202327" class="gnavsm">Views</a>
+      </div>
+    </td>
+    <td width="11" valign="top" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant5a.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=6:0:0&result_id=202327" class="gnavsm">Cores</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=7:0:0&result_id=202327" class="gnavsm">PR Verifications</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+  </tr>
+</table>
+<!-- 3rd ROW END-->
+
+
+<!-- 4rd ROW STARTS-->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+
+<!-- LEFT WINDOW STARTS -->
+
+    <td width="160 pixels" valign="top" rowspan="8"> 
+<!-- $VAR1 = 5;
+ -->
+
+      <!--
+ Debug page left frame. 
+/debug_dr/view/leftframe.mhtml
+-->
+
+
+
+<!--
+ Function to get all the dr owners
+-->
+
+
+
+
+
+<table width="155" border="0" cellspacing="0" cellpadding="0">
+	  
+  <tr align="left" valign="top"> 
+
+    <td width="1" bgcolor="#999999"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td width="5">&nbsp;</td>
+    <td background="/ti/webapp/dr/image/gra_home_verdot_sm.jpg" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td colspan="3"> 
+
+    <table width="155" border="0" cellspacing="0" cellpadding="0">
+
+      <tr align="left"> 
+        <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Loop through the titles in Left Frame -->
+
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+      <tr align="left"> <td colspan="3" height="7" valign="top" class="home-left-nav-dark"></td> </tr>
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md_1.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=5:0:0&result_id=202327" class="nav"> Pending </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+      <tr align="left"> <td colspan="3" height="7" valign="top" class="home-left-nav-dark"></td> </tr>
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=5:1:0&result_id=202327" class="nav"> TestPlan </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+      <tr align="left"> <td colspan="3" height="7" valign="top" class="home-left-nav-dark"></td> </tr>
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=5:2:0&result_id=202327" class="nav"> TestReport </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+      <tr align="left"> <td colspan="3" height="7" valign="top" class="home-left-nav-dark"></td> </tr>
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=5:3:0&result_id=202327" class="nav"> AreaReport </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+      <tr align="left"> <td colspan="3" height="7" valign="top" class="home-left-nav-dark"></td> </tr>
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=5:4:0&result_id=202327" class="nav"> TL9k_summary </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+      <tr align="left"> <td colspan="3" height="7" valign="top" class="home-left-nav-dark"></td> </tr>
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=5:5:0&result_id=202327" class="nav"> PR_Trend </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+      <tr align="left"> <td colspan="3" height="7" valign="top" class="home-left-nav-dark"></td> </tr>
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=5:6:0&result_id=202327" class="nav"> Matrices </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+      <tr align="left"> <td colspan="3" height="7" valign="top" class="home-left-nav-dark"></td> </tr>
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=5:7:0&result_id=202327" class="nav"> First Run RPR </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+      <tr align="left"> <td colspan="3" height="7" valign="top" class="home-left-nav-dark"></td> </tr>
+      <tr align="left"> <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td> </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=5:8:0&result_id=202327" class="nav"> Daily_Report </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td colspan="3" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td colspan="3" valign="top" class="td-white-background" ><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td colspan="3" valign="top" class="td-white-background" ><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+    </table>
+
+    </td>
+
+    <td background="/ti/webapp/dr/image/gra_home_verdot_sm.jpg" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td width="13">&nbsp;</td>
+    <td bgcolor="#999999" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+  </tr>
+
+
+  <tr align="left" valign="top"> 
+    <td width="1" bgcolor="#999999"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td colspan="7" bgcolor="#999999"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td bgcolor="#999999" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+  </tr>
+
+</table>
+
+
+
+
+
+
+
+<p id=p1 align=center><a href="/ti/webapp/dr/main_dr/index.mhtml">DR Main Page </a></p>
+<p id=p1 align=center><a href="http://systest.juniper.net/twiki/bin/view/Main/WebHome" target="_blank">Systest Home </a></p>
+<p id=p1 align=center><a href="http://systest.juniper.net/twiki/bin/view/Main/TI" target="_blank">TI Home </a> </p>
+
+    </td>
+<!-- LEFT WINDOW ENDS-->
+
+
+<!-- RIGHT WINDOW STARTS-->
+    <td valign="top">
+        
+
+<table width="120" border="0" cellspacing="0" cellpadding="0">
+
+    
+<script type="text/javascript" src="../shared/wz_tooltip.js"></script>
+
+     
+
+<style>
+.p1 {margin-top: 30px;}
+.dataTables_wrapper {display: inline-block;}
+.dataTables_filter {float: left;}
+#scenario_wrapper {margin-left: 10px;}
+</style>
+
+<p class=p3>Debug view: <font color=blue>ALL</font></p>
+
+<table id="summary" border="1" cellpadding="0" cellspacing="0" style="width:600px; float:left; margin-left:10px; font-size:0.8em;">
+ <thead>
+  <tr>
+  <th>OWNER</th>
+  <th>REG FAIL</th>
+  <th>PENDING</th>
+  <th>PENDING %</th>
+  <th></th>
+  <th>MANUAL</th>
+  <th>PENDING</th>
+  </tr>
+ </thead>
+ <tbody>
+   <tr>
+    <td class=td2>tnandhini</td>
+    <td class=td1>1</td>
+    <td class=td3>0</td>
+    <td class=td3>0</td>
+    <td></td>
+    <td class=td1>0</td>
+    <td class=td3>0</td>
+   </tr>
+ </tbody>  
+ <tfoot>
+  <tr>
+   <td class=td2>TOTAL</td>
+   <td class=td1>1</td>
+   <td class=td3>0</td>
+   <td class=td3>0</td>
+   <td></td> 
+   <td class=td1>0</td>
+   <td class=td3>0</td>
+ </tfoot>
+</table>
+
+<p id=p1> 
+ Script Failures (Total / Pending): 
+    <font color=black>1 / 0</font>, 
+ Manual Test (Total / Pending): 
+    <font color=black>0 / 0</font> 
+</p>
+
+ <p class=p1>Zero manual testing pending.</p>
+
+  <p class=p1>Zero Scripts pending for debugging</p> 
+
+<script type="text/javascript">
+$(document).ready(function() {
+    /* Initialise the DataTable */
+    $('#summary').dataTable({
+        "bPaginate": false,
+        "bFilter": false,
+        "bInfo": false,
+        "aoColumnDefs": [
+                { "bSortable": false, "aTargets": [ 4 ] }
+        ]
+    });
+    $('#manual').dataTable({
+        "bPaginate": false,
+        "bFilter": false,
+        "bInfo": false
+    });
+    var oTable = $('#scenario').dataTable({
+        "bPaginate": false,
+	"sDom": 'T<"clear">lfrtip',
+	"oTableTools": {
+		"sSwfPath": "../shared/resources/swf/copy_csv_xls_pdf.swf",
+		"aButtons": [ "copy", "csv", "print" ]
+	} 
+    });
+    /* Add a select menu for each TH element in the table footer */
+    $("#scenario #owner").each( function ( i ) {
+        this.innerHTML = '<b>OWNER</b> ' + fnCreateSelect( oTable.fnGetColumnData(i) );
+        $('select', this).change( function () {
+            oTable.fnFilter( $(this).val(), i );
+        } );
+    } );
+});
+</script>
+
+
+
+ 
+
+
+</table>
+
+
+
+    </td>
+<!-- RIGHT WINDOW ENDS-->
+
+
+
+  </tr>
+</table>
+
+<!-- 4rd ROW ENDS-->
+
+
+
+
+
+
+
+
+
+
+
+<br />
+<hr noshade size="1" width="100%" />
+ 
+</body>
+</html>
+
+
+
+
+
+
+

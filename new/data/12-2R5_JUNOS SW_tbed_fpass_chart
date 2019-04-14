@@ -1,0 +1,35 @@
+<chart caption='First Pass' xAxisName='Test Beds' yAxisName='Pass %' showValues='1' numberPrefix='' useRoundEdges='1' legendBorderAlpha='100' showBorder='0' bgColor='FFFFFF,FFFFFF' ><categories><category label='csi-irtb2' /><category label='rod-irtb3' /><category label='hcl-proto3' /><category label='hcl-vpn' /><category label='hcl-issu1' /><category label='hcl-proto1' /><category label='hcl-mpls' /><category label='vpls1-irtb' /><category label='mpls2-irtb' /><category label='issu1-irtb' /><category label='csi-irtb1' /><category label='hcl-proto4' /><category label='hcl-mx' /><category label='hcl-mcast3' /><category label='hcl-atari' /><category label='scale-irtb' /><category label='tahi-irtb' /></categories><dataset seriesName='First Pass %'><set label='csi-irtb2' value='100.00'  />
+<set label='rod-irtb3' value='100.00'  />
+<set label='hcl-proto3' value='97.73'  />
+<set label='hcl-vpn' value='93.59'  />
+<set label='hcl-issu1' value='92.77'  />
+<set label='hcl-proto1' value='89.09'  />
+<set label='hcl-mpls' value='88.89'  />
+<set label='vpls1-irtb' value='86.05'  />
+<set label='mpls2-irtb' value='85.71'  />
+<set label='issu1-irtb' value='85.00'  />
+<set label='csi-irtb1' value='80.00'  />
+<set label='hcl-proto4' value='75.36'  />
+<set label='hcl-mx' value='75.00'  />
+<set label='hcl-mcast3' value='71.43'  />
+<set label='hcl-atari' value='70.59'  />
+<set label='scale-irtb' value='66.67'  />
+<set label='tahi-irtb' value='0.00'  />
+</dataset><dataset seriesName='Actual Pass %'><set label='csi-irtb2' value='0.00'  />
+<set label='rod-irtb3' value='0.00'  />
+<set label='hcl-proto3' value='100.00'  />
+<set label='hcl-vpn' value='98.72'  />
+<set label='hcl-issu1' value='100.00'  />
+<set label='hcl-proto1' value='100.00'  />
+<set label='hcl-mpls' value='100.00'  />
+<set label='vpls1-irtb' value='100.00'  />
+<set label='mpls2-irtb' value='91.43'  />
+<set label='issu1-irtb' value='100.00'  />
+<set label='csi-irtb1' value='100.00'  />
+<set label='hcl-proto4' value='100.00'  />
+<set label='hcl-mx' value='98.33'  />
+<set label='hcl-mcast3' value='96.94'  />
+<set label='hcl-atari' value='98.04'  />
+<set label='scale-irtb' value='100.00'  />
+<set label='tahi-irtb' value='100.00'  />
+</dataset></chart>

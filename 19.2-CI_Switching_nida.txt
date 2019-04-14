@@ -1,0 +1,34 @@
+BD=
+select result_id from er_regression_result where name in ('JDI_CI_192_20190319.2_VIRTUAL','PROTOCOLS_PHYSICAL_CI_ZPR_192TH_20190320','Ultimat_CI_19.2DCB_Mar14','Ultimat_19.2DCB_Mar7','Ultimat_CI_19.2DCB_Feb28','Ultimat_19.2DCB_ZPR_Mar22','19_2_DCB_20181224_CBR') and parent_result_id='0'2018-12-24 
+select result_id from er_regression_result where (name= 'Ultimat_CI_19.2DCB_Mar14' and parent_result_id='0')
+select result_id from er_regression_result where (name= 'Ultimat_19.2DCB_Mar7' and parent_result_id='0')
+select result_id from er_regression_result where (name= 'Ultimat_CI_19.2DCB_Feb28' and parent_result_id='0')
+select result_id from er_regression_result where (name= 'Ultimat_19.2DCB_ZPR_Mar22' and parent_result_id='0')
+211723 210512 209423 212583 
+211723 
+wget -o log -O out.22833 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=5:7:0&result_id=211723" 
+fullfile
+
+hit = wget -o log -O prs.22833 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=0:1:0&result_id=211723" 
+wget -o log -O out.22833 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" http://www-systest.juniper.net/ti/webapp/dr/debug_dr/view/gen_tl9000_report.mhtml?result_id=211723&trans=remove
+210512 
+wget -o log -O out.22833 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=5:7:0&result_id=210512" 
+fullfile
+
+hit = wget -o log -O prs.22833 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=0:1:0&result_id=210512" 
+wget -o log -O out.22833 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" http://www-systest.juniper.net/ti/webapp/dr/debug_dr/view/gen_tl9000_report.mhtml?result_id=210512&trans=remove
+209423 
+wget -o log -O out.22833 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=5:7:0&result_id=209423" 
+fullfile
+
+hit = wget -o log -O prs.22833 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=0:1:0&result_id=209423" 
+wget -o log -O out.22833 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" http://www-systest.juniper.net/ti/webapp/dr/debug_dr/view/gen_tl9000_report.mhtml?result_id=209423&trans=remove
+212583 
+wget -o log -O out.22833 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=5:7:0&result_id=212583" 
+fullfile
+
+hit = wget -o log -O prs.22833 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=0:1:0&result_id=212583" 
+wget -o log -O out.22833 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" http://www-systest.juniper.net/ti/webapp/dr/debug_dr/view/gen_tl9000_report.mhtml?result_id=212583&trans=remove
+delete from script_pr where release='19.2-CI' and function='Switching'prstr is 1351906 1380094 1386531 1395994 1396808 1402100 1409165 1412159 1415708 1418056 1418058 1418086 1418929 1419450 1421446 1422085 1422850 1422871 1423173 1423527 1424311 1400231 1402385 1413195 1419117 1419996 1423437 1392152 1408532 1420044 1420671  
+/var/www/html/CI_Report/data/19-2-CI_table
+Done

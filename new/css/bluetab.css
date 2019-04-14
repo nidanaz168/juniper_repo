@@ -1,0 +1,98 @@
+a:focus {
+        outline: none;
+}
+.clear {
+        clear: both;
+}
+.page-wrap {
+        width: 960px;
+        margin-right: auto;
+        margin-left: auto;
+		z-index:-1;	
+}
+.main-nav ul{
+        margin-left: 20px;
+}
+.main-nav ul li {
+        float: left;
+        position: relative;
+        margin-left: -20px;
+        display: inline;
+}
+.main-nav ul li a {
+        width: 110px;
+        height: 19px;
+        display: block;
+        background-image: url('../images/tabs.png');
+        background-position: center center;
+        color: #44403b;
+        text-decoration: none;
+        font-size: 10px;
+        padding-top: 12px;
+        text-align: left;
+        padding-left: 30px;
+        font-weight: bold;
+}
+.main-nav ul li.home a {
+        background-image: url('../images/tab-home.png');
+}
+.main-nav ul li.current a {
+        background-position: top;
+        color: #ffffff;
+}
+.main-nav ul li a:hover {
+        background-position: bottom;
+        color: #ffffff;
+}
+.main-nav ul li.current a:hover {
+        background-position: top; /*To Prevent the Current tab from changing colour on hover*/
+        color: #ffffff;
+}
+.main-nav ul li.current {
+        z-index: -1;
+}
+.main-nav ul li.home {
+        z-index: -1;
+}
+.main-nav ul li.portfolio {
+        z-index: 99;
+}
+.main-nav ul li.services {
+        z-index: 98;
+}
+.main-nav ul li.about {
+        z-index: 97;
+}
+.main-nav ul li.contact {
+        z-index: 96;
+}
+#image {
+        position: relative;
+        float: left;
+}
+#featured {
+        position: relative;
+        background-color: #577295;
+        background-image: url('../images/featured-border.jpg');
+        background-repeat: repeat-y;
+        background-position: left;
+        height: 272px;
+        color: #ffffff;
+}
+#featured h1 {
+        font-size: 24px;
+        position: relative;
+        margin-bottom: 17px;
+}
+#featured p {
+        line-height: 18px;
+        font-size: 12px;
+}
+#featured-content{
+        float: right;
+        position: relative;
+        width: 322px;
+        margin-top: 30px;
+        margin-right: 35px;
+        display: inline;
+}

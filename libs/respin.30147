@@ -1,0 +1,4514 @@
+<link rel="stylesheet" type="text/css" href="../shared/resources/css/jquery.dataTables.css">
+<link rel="stylesheet" type="text/css" href="../shared/resources/css/TableTools.css">
+
+<script type="text/javascript" src="../shared/resources/js/jquery.js"></script>
+<script type="text/javascript" src="../shared/resources/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="../shared/resources/js/TableTools.min.js"></script>
+<script type="text/javascript" src="../shared/resources/js/dataTableSelect.js"></script>
+
+
+
+
+<html>
+<head>
+ <title>DEBUG PAGE</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <meta name="Pragma" CONTENT="no-cache">
+ <meta name="robots" content="noindex, follow">
+ <link href="/ti/webapp/dr/shared/mainstyle.css" rel="stylesheet" type="text/css">
+ <script >
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                                            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68983099-2', 'auto');
+  //    ga('set', '&uid', 'ckevin'); // Set the user ID using signed-in user_id.
+  ga('send', 'pageview');
+           console.log("Updated");
+ </script>
+ </head>
+
+<!-- START STYLESHEET INCLUDE -->
+<script language="javascript">
+ if (navigator.platform.indexOf ("Win32") !=-1) {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ie.css" type="text/css">');
+ } else {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ns.css" type="text/css">');
+ }
+</script>
+
+<body class="td-white-background"  topmargin="5" leftmargin="6" marginwidth="6" marginheight="5">
+
+</script>
+<!-- END STYLESHEET INCLUDE -->
+
+
+<!-- 1st ROW START-->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left" width="65%">
+      <table  width="100% border="0 cellspacing="0" cellpadding="0">
+        <tr>
+          <td><a href="http://www-int.juniper.net/"><img src="/images/juniperLogo.gif" alt="Juniper Networks Logo" width="154" height="40" border="0" /></a></td>
+          <td><img src="/image/pixel.gif"  alt="" height="10" /></td>
+          <td> <font color=blue size=4>Regression the Heartbeat Of Testing</font></td>
+          <td>  <font size=2>  Hi _rptjamuser  </font> </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<div id="banner" style="    width: 90%;
+    width: 90%;
+        font-size: 16px;
+            background-color: greenyellow;
+                margin-left: 40px;
+                    padding: 5px 0 5px 0;
+                        height: 35px;
+                         "
+                          align="center">
+                            DR has been moved to <b>QUINCY</b> from <b>Sunnyvale</b> servers. Please upload your <b>DEBUG</b> logs to
+                            Quincy shells for debugging purposes. <br> Please use any one of the 16 Quincy Shells for
+                            this purpose. <span style="color:red;">ttqc-shell01 .... ttqc-shell16</span> 
+                            </div>
+
+
+
+<!-- 1st ROW END-->
+
+
+
+<!-- 2nd ROW END-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr class="tr-table-header-dark">
+    <td width="47%" colspan="2">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+        <tr>
+         <td width="50%" class="tr-table-header-dark"><img src="/image/pixel.gif"  alt="" width="438" height="1" /></td>
+         <td rowspan="2"  valign="bottom" class="tr-table-header-dark"><img src="/ti/webapp/dr/image/hdr_global_slantline_l.gif" width="25" height="49" alt="divider" /></td>
+        </tr>
+        <tr>
+         <td width="438" height="49" class="darkest-bgcolor"> &nbsp;&nbsp;&nbsp;&nbsp;<span class="header-label">Regression Debugging</span> </td>
+         <td><div align="center"><font size=4>11.4R12_CBR_PLATFORM_MMX_RBU</font></div> </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- 2nd ROW END-->
+
+
+
+
+
+
+<table width="100%" cellspacing="0" cellpadding="0"><tr><td></td></tr></table>
+
+
+<!-- 3rd ROW START-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+
+
+
+
+
+    <td width="5" valign="top" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant5b.GIF"></td>
+    <td>
+      <div align="center">
+        <a href="index.mhtml?mode=0:2:0&result_id=41323" class="gnavsm">Reg Debug</a>
+      </div>
+    </td>
+    <td width="11" valign="top" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant5a.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=1:1:0&result_id=41323" class="gnavsm">Manual</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=2:0:0&result_id=41323" class="gnavsm">Status</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=3:1:0&result_id=41323" class="gnavsm">Reg Pass</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=4:1:0&result_id=41323" class="gnavsm">Edit</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=5:0:0&result_id=41323" class="gnavsm">Views</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=6:0:0&result_id=41323" class="gnavsm">Cores</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=7:0:0&result_id=41323" class="gnavsm">PR Verifications</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+  </tr>
+</table>
+<!-- 3rd ROW END-->
+
+
+<!-- 4rd ROW STARTS-->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+
+<!-- LEFT WINDOW STARTS -->
+
+    <td width="160 pixels" valign="top" rowspan="8"> 
+<!-- $VAR1 = 0;
+ -->
+
+      <!--
+ Debug page left frame. 
+Page: /httpd/htdocs/ti/webapp/dr/debug_dr/reg_debug/leftframe.mhtml
+-->
+
+<!--
+ Function to get all the dr owners
+-->
+
+
+
+
+<table width="120" border="0" cellspacing="0" cellpadding="0">
+	  
+  <tr align="left" valign="top"> 
+
+    <td width="1" bgcolor="#999999"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td width="5">&nbsp;</td>
+    <td background="/ti/webapp/dr/image/gra_home_verdot_sm.jpg" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td colspan="3"> 
+
+    <table width="120" border="0" cellspacing="0" cellpadding="0">
+
+      <tr align="left"> 
+        <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Loop through the titles in Left Frame -->
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md_1.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:0:0&result_id=41323" class="nav"> All Debug </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:1:0&result_id=41323" class="nav"> All PR </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:2:0&result_id=41323" class="nav"> My Pending </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:3:0&result_id=41323" class="nav"> My Completed </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:4:0&result_id=41323" class="nav"> My PR </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+      <tr align="left"> 
+        <td width="1" valign="top" class="home-left-nav-dark"></td>
+
+         <form name="new_owner_debug_page" type=post action="/ti/webapp/dr/debug_dr/index.mhtml">
+        
+          <td valign="center" class="home-left-nav-dark">
+           <select name=owner size="1" >
+               <option value="ALL">debug-owner</option>
+                   <option value=ALL selected>ALL</option>
+                   <option value=aawasthi>aawasthi</option>
+                   <option value=amaravathi>amaravathi</option>
+                   <option value=chandrsm>chandrsm</option>
+                   <option value=deepaknr>deepaknr</option>
+                   <option value=eabu-reg>eabu-reg</option>
+                   <option value=jnavaneeth>jnavaneeth</option>
+                   <option value=keerthigc>keerthigc</option>
+                   <option value=kgayathri>kgayathri</option>
+                   <option value=ksubramani>ksubramani</option>
+                   <option value=manipc>manipc</option>
+                   <option value=pprabhakar>pprabhakar</option>
+                   <option value=pradk>pradk</option>
+                   <option value=rasmi>rasmi</option>
+                   <option value=reshwari>reshwari</option>
+                   <option value=sanukriti>sanukriti</option>
+                   <option value=saranyas>saranyas</option>
+                   <option value=sarchana>sarchana</option>
+                   <option value=shilpah>shilpah</option>
+                   <option value=shivpatil>shivpatil</option>
+                   <option value=vchowdary>vchowdary</option>
+                   <option value=vdharmavar>vdharmavar</option>
+                   <option value=vinothj>vinothj</option>
+                   <option value=vmathangi>vmathangi</option>
+          </select>
+        </td>
+
+
+        <td valign="center" class="home-left-nav-dark">
+          <input type=hidden name=mode value="0:5:0">
+          <input type=hidden name=result_id value="41323">
+          <input type=image border="0" name="submit" 
+            src="/ti/webapp/dr/image/btn_global_goarrow_sm1.GIF" width="18" height="26"/>
+        </td>
+</form>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="1" valign="top" class="home-left-nav-dark"></td>
+
+         <form name="new_owner_debug_page" type=post action="/ti/webapp/dr/debug_dr/index.mhtml">
+          <td valign="center" class="home-left-nav-dark">
+           <input type="text" name=alias maxlength="40" value="" placeholder="ldap alias" style="width:100%;border-radius:3px;padding:2px 5px;" />
+          </td>
+
+          <td valign="center" class="home-left-nav-dark">
+           <input type=hidden name=mode value="0:5:0">
+           <input type=hidden name=result_id value="41323">
+           <input type=image border="0" name="submit" src="/ti/webapp/dr/image/btn_global_goarrow_sm1.GIF" width="18" height="26"/>
+          </td>
+         </form>
+      </tr>
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td colspan="3" valign="top" class="td-white-background" ><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+      <tr align="left"> 
+        <td colspan="3" valign="top" class="td-white-background" ><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+    </table>
+
+    </td>
+
+    <td background="/ti/webapp/dr/image/gra_home_verdot_sm.jpg" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td width="13">&nbsp;</td>
+    <td bgcolor="#999999" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+  </tr>
+
+
+  <tr align="left" valign="top"> 
+    <td width="1" bgcolor="#999999"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td colspan="7" bgcolor="#999999"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td bgcolor="#999999" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+  </tr>
+
+</table>
+
+
+
+
+
+   
+
+
+<p id=p1 align=center><a href="/ti/webapp/dr/main_dr/index.mhtml">DR Main Page </a></p>
+<p id=p1 align=center><a href="http://systest.juniper.net/twiki/bin/view/Main/WebHome" target="_blank">Systest Home </a></p>
+<p id=p1 align=center><a href="http://systest.juniper.net/twiki/bin/view/Main/TI" target="_blank">TI Home </a> </p>
+
+    </td>
+<!-- LEFT WINDOW ENDS-->
+
+
+<!-- RIGHT WINDOW STARTS-->
+    <td valign="top">
+        
+
+<table width="120" border="0" cellspacing="0" cellpadding="0">
+
+    
+
+<!-- 3rd ROW START-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td></td></tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+
+
+
+
+    <td width="5" valign="top" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant5b.GIF"></td>
+    <td>
+      <div align="center">
+        <a href="index.mhtml?mode=0:0:0&owner=_rptjamuser&result_id=41323" class="gnavsm">Script</a>
+      </div>
+    </td>
+    <td width="11" valign="top" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant5a.gif"></td>
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=0:0:1&owner=_rptjamuser&result_id=41323" class="gnavsm">TestBed/Domain</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=0:0:2&owner=_rptjamuser&result_id=41323" class="gnavsm">Reg Exit</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=0:0:3&owner=_rptjamuser&result_id=41323" class="gnavsm">DR Suggest</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+  </tr>
+</table>
+
+
+<!-- 3rd ROW END-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:20px">
+<tr>
+<td><a href='#' onclick='rpr_call();' style="margin-top:10px;margin-left:12px">RPR</a></td>
+</tr>
+</table>
+<script type='text/javascript'>
+  function rpr_call(){
+window.open("https://systest.juniper.net/ti/webapp/dr/debug_dr/reg_debug/rpr_info.mhtml?result_id=41323","_blank","toolbar=yes, scrollbars=yes,resizable=yes,width=400,height=350");
+}
+</script>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!-- 
+/*
+ * Function to sync dr to rm
+ */
+
+-->
+
+
+<br>Total time taken for DR Sync : 0 secs <br><!--
+/*
+ * /dr/debug_dr/reg_debug/reg_debug.mhtml 
+ */
+-->
+
+<!-- 
+/*
+ * Function to get all the debug info for a debug owner.
+ * Return of this function is some stats info and debug info.
+ *
+ *
+ */
+-->
+
+
+<!-- 
+/*
+ * Function to get the manual test count
+ */
+
+-->
+
+
+
+          <script language="javascript" type="text/javascript"> 
+              function confirmHighlighting(){
+                var confirmResult = confirm("This Operation contacts GNATS for realtime data and may take a little"+
+                    "longer to highlight the pending scripts associated with the Open PRs. Are you sure you would like"+
+                    "to continue?");
+                if(confirmResult == true){
+                    var current_url = location.href;
+                    current_url = current_url+"&highlightOpenPrs=true";
+                    location.replace(current_url);
+                }else{
+                  return false;
+                }
+              }
+          </script>
+
+  <div style="width:1100px;" id="debug_script_lists_div">
+      <input type="button" id="debugOpenPrButton" style="float:right;display:none;" value="Debug Open PRs"
+      onclick="debugOpenPrs();">
+      <button id="highlightButton" style="float:right;" type="button" onclick="confirmHighlighting();">Highlight Open PRs</button>
+  </div>
+
+    <!-- DISPLAY STATUS -->
+    <script type="text/javascript">
+
+function rm(id,harness_type) {
+    console.log(harness_type);
+    var all_reg_id = new Array();
+    all_reg_id = id.split(/\s+/);
+    var len = all_reg_id.length;
+
+    for (var i=0; i < len; i++) {
+      var link = "http://systest.juniper.net/rmv2/edp/"+all_reg_id[i];
+      if(harness_type.indexOf("fusion") != -1){
+        link = "https://inception.juniper.net/fusion/v2#submission_id="+all_reg_id[i];
+      }
+      window.open(link);
+    }
+
+    return true;
+}
+
+
+</script>
+
+
+<!-- 
+/*
+ * Function to get the pr count
+ */
+
+-->
+
+
+
+
+
+<p id=p3>Debug view: <font color=blue>ALL</font></p>
+
+<!-- START DISPLAY THE STATUS TABLE -->
+
+<table id=table1 border=1 cellpadding=1 cellspacing=0 >
+ <tr> 
+  <td id=td5>JUNOS</td>
+  <td id=td5>REG FAIL</td>
+  <td id=td5>DEBUG PASS</td>
+  <td id=td5>SW-FAIL</td>
+  <td id=td5>HW-ENV</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>OTHER</td>
+  <td id=td5>TOOLS</td>
+  <td id=td5>PENDING</td>
+ </tr>
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2><input id=p15 type=button value="11.4R12_CBR_PLATFORM_MMX_RBU" onclick="rm('435753 436003 436510 437766','rmv2')"></td>
+  <td id=td1>41</td>
+  <td id=td1>37</td>
+  <td id=td1>4</td>
+  <td id=td1>7</td>
+  <td id=td1>23</td>
+  <td id=td1>1</td>
+  <td id=td1>6</td>
+  <td id=td3>0</td>
+ </tr>
+
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2><input id=p15 type=button value="11.4R12.4" onclick="rm('439377','rmv2')"></td>
+  <td id=td1>4</td>
+  <td id=td1>4</td>
+  <td id=td1>0</td>
+  <td id=td1>2</td>
+  <td id=td1>2</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td3>0</td>
+ </tr>
+
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2><input id=p15 type=button value="11.4R12.4" onclick="rm('440414','rmv2')"></td>
+  <td id=td1>17</td>
+  <td id=td1>17</td>
+  <td id=td1>0</td>
+  <td id=td1>3</td>
+  <td id=td1>12</td>
+  <td id=td1>0</td>
+  <td id=td1>2</td>
+  <td id=td3>0</td>
+ </tr>
+
+
+
+ 
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>TOTAL</td>
+  <td id=td4>62</td>
+  <td id=td4>58</td>
+  <td id=td4>4</td>
+  <td id=td4>12</td>
+  <td id=td4>37</td>
+  <td id=td4>1</td>
+  <td id=td4>8</td>
+  <td id=td3>0</td>
+ </tr>
+</table>
+
+
+<p id=p1> 
+ Script Failures (Total / Pending): 
+    <font color=black>62 / 0</font>, 
+ PR Count: 
+    <font color=black>3</font>, 
+ Manual Test (Total / Pending): 
+    <font color=black>0 / 0</font>
+
+</p><br>
+
+
+
+
+
+<table id=table1 border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>OWNER</td>
+  <td id=td5>REG FAIL</td>
+  <td id=td5>DEBUG PASS</td>
+  <td id=td5>SW-FAIL</td>
+  <td id=td5>HW-ENV</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>OTHER</td>
+  <td id=td5>TOOLS</td>
+
+         <td id=td5>PR PROBABLE</td>
+
+  <td id=td5>PENDING</td>
+ </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>aawasthi</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>chandrsm</td>
+  <td id=td1>0</td>
+  <td id=td1>2</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>2</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>deepaknr</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>jnavaneeth</td>
+  <td id=td1>0</td>
+  <td id=td1>5</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>5</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>kgayathri</td>
+  <td id=td1>0</td>
+  <td id=td1>2</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>2</td>
+
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>ksubramani</td>
+  <td id=td1>0</td>
+  <td id=td1>2</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>2</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>manipc</td>
+  <td id=td1>0</td>
+  <td id=td1>2</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>2</td>
+
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>pprabhakar</td>
+  <td id=td1>0</td>
+  <td id=td1>2</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>2</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>pradk</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>rasmi</td>
+  <td id=td1>0</td>
+  <td id=td1>4</td>
+  <td id=td1>3</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>3</td>
+
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>reshwari</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>sanukriti</td>
+  <td id=td1>0</td>
+  <td id=td1>9</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>8</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>saranyas</td>
+  <td id=td1>0</td>
+  <td id=td1>7</td>
+  <td id=td1>0</td>
+  <td id=td1>6</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>sarchana</td>
+  <td id=td1>0</td>
+  <td id=td1>3</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>3</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>shilpah</td>
+  <td id=td1>0</td>
+  <td id=td1>3</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>3</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>shivpatil</td>
+  <td id=td1>0</td>
+  <td id=td1>2</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>vinothj</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>vmathangi</td>
+  <td id=td1>0</td>
+  <td id=td1>4</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>4</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>vchowdary</td>
+  <td id=td1>0</td>
+  <td id=td1>4</td>
+  <td id=td1>0</td>
+  <td id=td1>3</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>amaravathi</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>keerthigc</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>vdharmavar</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>TOTAL</td>
+  <td id=td4>0</td>
+  <td id=td4>58</td>
+  <td id=td4>4</td>
+  <td id=td4>12</td>
+  <td id=td4>37</td>
+  <td id=td4>1</td>
+  <td id=td4>8</td>
+
+  <td id=td4>0</td>
+
+  <td id=td3>0</td>
+ </tr>
+</table>
+<br><br>
+
+
+<!-- END   DISPLAY THE STATUS TABLE -->
+
+
+
+
+
+
+
+
+
+        <!-- DISPLAY PENDING -->
+        
+<script>
+  function changeURL(){
+    var url=location.href;
+    if(url.search("highlight") != -1){
+      var mod_url = url.replace("&highlightOpenPrs=true",'');
+      window.history.pushState("","",mod_url);
+    }
+  }
+</script>
+
+<body onLoad="changeURL()">
+<script type="text/javascript" src="/ti/webapp/dr/shared/wz_tooltip.js"></script>
+<script type="text/javascript" language="javascript">
+if (!document.location.origin) //IE hack
+   document.location.origin = document.location.protocol+"//"+document.location.host;
+
+function copy(text2copy) {
+  if (window.clipboardData) {
+    window.clipboardData.setData("Text",text2copy);
+  } else {
+    var flashcopier = 'flashcopier';
+    if(!document.getElementById(flashcopier)) {
+      var divholder = document.createElement('div');
+      divholder.id = flashcopier;
+      document.body.appendChild(divholder);
+    }
+    document.getElementById(flashcopier).innerHTML = '';
+    var divinfo = '<embed src="/ti/webapp/dr/debug_dr/reg_debug/_clipboard.swf" FlashVars="clipboard='+escape(text2copy)+'" width="0" height="0" type="application/x-shockwave-flash"></embed>';
+    document.getElementById(flashcopier).innerHTML = divinfo;
+  }
+}
+   var request = null;
+
+   function createRequest() {
+     try {
+       request = new XMLHttpRequest();
+     } catch (trymicrosoft) {
+       try {
+         request = new ActiveXObject("Msxml2.XMLHTTP");
+       } catch (othermicrosoft) {
+         try {
+           request = new ActiveXObject("Microsoft.XMLHTTP");
+         } catch (failed) {
+           request = null;
+         }
+       }
+     }
+
+     if (request == null)
+       Tip("Error creating request object!");
+   }
+
+function GetFailInfo(test_exec_id,exitcode) {
+    if ( exitcode == "FAIL" ||  exitcode == "LINK_FAIL" ) {
+    createRequest();
+    //var url = document.location.origin + '/cgi-bin/dr/GetFailInfo.cgi?test_exec_id=' + test_exec_id ;
+    var url = document.location.origin + '/ti/webapp/dr/debug_dr/infolink/GetFailInfo.mhtml?test_exec_id='+test_exec_id;
+    Tip("wait for it");
+    request.open("GET", url, true);
+    request.onreadystatechange = updatePage;
+    request.send(null);
+} else {
+    Tip("This shows info only for FAIL or LINK_FAIL");
+}
+}
+function GetTbInfo(test_id) {
+     createRequest();
+    //var url = document.location.origin + '/cgi-bin/dr/GetTbInfo.cgi?test_id=' + test_id;
+    var url = document.location.origin + '/ti/webapp/dr/debug_dr/infolink/GetTbInfo.mhtml?test_id=' + test_id;
+    Tip("wait for it");
+     request.open("GET", url, true);
+     request.onreadystatechange = updatePage;
+     request.send(null);
+}
+function GetTimeInfo(test_id) {
+    createRequest();
+    //var url = document.location.origin + '/cgi-bin/dr/GetTimeInfo.cgi?test_id=' + test_id;
+    var url = document.location.origin + '/cgi-bin/dr/GetTimeInfo.cgi?test_id=' + test_id;
+    Tip("wait for it");
+    request.open("GET", url, true);
+    request.onreadystatechange = updatePage;
+    request.send(null);
+}
+  function updatePage() {
+    if (request.readyState == 4) {
+        var resp = request.responseText;
+        Tip(resp);
+    }
+  }
+
+</script>
+
+<!-- START DISPLAY PENDING -->
+
+
+
+
+
+<p id=p2> Zero scripts left for debugging.  </p>
+
+</body>
+<!-- END   DISPLAY PENDING -->
+
+
+
+
+
+
+
+
+
+    <!-- DISPLAY COMPLETED -->
+    <link rel="stylesheet" type="text/css" href="/ti/webapp/dr/shared/activerenderer.css">
+<script type="text/javascript" src="/ti/webapp/dr/shared/activerenderer.js"></script>
+
+
+
+
+<!-- START DISPLAY COMPLETED -->
+ <p id=p4>--------------------------------------------------------------------------------------------------------------------------------------------- </p>
+
+
+
+ 
+
+
+<br> <p id=p2> Debug completed script list: <font color=black>11.4R12_CBR_PLATFORM_MMX_RBU</font> </p>
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>aawasthi</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr bgcolor="#FFFF00">
+
+  <td>Stable_54542_114_Trinity_ADPC_hardening_Port_Mirroring_Multicast</td>
+  <td>114_Trinity_ADPC_hardening_Port_Mirroring_Multicast_JPG.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/MX_SERIES/Infrastructure/TRINITY/Port_Mirroring/114_Trinity_ADPC_hardening_Port_Mirroring_Multicast.pl.eabu-bng-reg-art1_neo1-irtb.7872000.20140503072325&result_id=41323 target=LOG>ABORT</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_435753/EABU_REG/MX_SERIES/Infrastructure/TRINITY/Port_Mirroring/114_Trinity_ADPC_hardening_Port_Mirroring_Multicast.pl.eabu-bng-reg-art1_neo1-irtb.7872000.20140503072325&result_id=41323 target=LOG>FAIL</a> </td>
+  <td>SW-REPRODUCIBLE-PR</td>
+  <td>aawasthi</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "#FD5757">o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=850554 target=DISPLAY_PR>850554 </a>[open]</br></td>
+  <td>neo1-irtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1672302 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1672302_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1672302_2')" onmouseout="nodeLow ('p1672302_2')">C</span>
+    </div>
+    <div id=p1672302_2 class=collapsed>
+        <span class=text><b>o 850554 fail</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>chandrsm</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>RPT_REG_agave_coc3_ingress_rewrite_rt</td>
+  <td>agave_coc3_ingress_rewrite_rt.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/M_SERIES/COMMON/Infrastructure/COS/Rewrite/Agave/2xCHOC3/agave_coc3_ingress_rewrite_rt.pl.art-rtb_eabu-agave.7871781.20140502172550&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_435753/EABU_REG/M_SERIES/COMMON/Infrastructure/COS/Rewrite/Agave/2xCHOC3/agave_coc3_ingress_rewrite_rt.pl.art-rtb_eabu-agave.7871781.20140502172550&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-TIMING-ISSUE</td>
+  <td>chandrsm</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>eabu-agave</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1672299 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1672299_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1672299_2')" onmouseout="nodeLow ('p1672299_2')">C</span>
+    </div>
+    <div id=p1672299_2 class=collapsed>
+        <span class=text><b>Packets were not as expected, passed on rerun</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>RPT_REG_102_agave_pe_4xOC3_aps_intrarouter</td>
+  <td>102_agave_pe_4xOC3_aps_intrarouter.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/M_SERIES/SPIFF/Interfaces/Agave/4xOC3/102_agave_pe_4xOC3_aps_intrarouter.pl.eabu-bng-reg-art1_agave-pe-irtb.7871579.20140503042038&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_435753/EABU_REG/M_SERIES/SPIFF/Interfaces/Agave/4xOC3/102_agave_pe_4xOC3_aps_intrarouter.pl.eabu-bng-reg-art1_agave-pe-irtb.7871579.20140503042038&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-TIMING-ISSUE</td>
+  <td>chandrsm</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>eabu-bng-reg-art1_agave-pe-irtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1672295 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1672295_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1672295_2')" onmouseout="nodeLow ('p1672295_2')">C</span>
+    </div>
+    <div id=p1672295_2 class=collapsed>
+        <span class=text><b>aps state was not as expected, passed on reru</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>deepaknr</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>RPT_REG_114X26_multicastpim_PR786007</td>
+  <td>114X26_multicastpim_PR786007.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/M_SERIES/CFD_SCRIPTS/Interfaces/114X26_multicastpim_PR786007.pl.eabu-bng-reg-art1_agave2-irtb.7871146.20140503011852&result_id=41323 target=LOG>ABORT</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/debug/REG_435753/EABU_REG/M_SERIES/CFD_SCRIPTS/Interfaces/114X26_multicastpim_PR786007.pl.eabu-bng-reg-art1_agave2-irtb.7871146-0.20140512094234&result_id=41323 target=LOG>PASS</a> </td>
+  <td>JBATCH-UPDATE</td>
+  <td>deepaknr</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>eabu-bng-reg-art1_agave2-irtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1672290 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1672290_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1672290_2')" onmouseout="nodeLow ('p1672290_2')">C</span>
+    </div>
+    <div id=p1672290_2 class=collapsed>
+        <span class=text><b>Auto jbatch pass update</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>jnavaneeth</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>RPT_REG_mx_issu_qdpc_basic</td>
+  <td>mx_issu_qdpc_basic.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/MX_SERIES/ISSU/Infrastructure/Bellini/Basic/mx_issu_qdpc_basic.pl.art-rtb_bellini-rtb.7873189.20140503031453&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_435753/EABU_REG/MX_SERIES/ISSU/Infrastructure/Bellini/Basic/mx_issu_qdpc_basic.pl.art-rtb_bellini-rtb.7873189.20140503031453&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>jnavaneeth</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>bellini-rtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1672308 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1672308_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1672308_2')" onmouseout="nodeLow ('p1672308_2')">C</span>
+    </div>
+    <div id=p1672308_2 class=collapsed>
+        <span class=text><b>passed</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>RPT_REG_cf_scaling_rt</td>
+  <td>cf_scaling_rt.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.1/REG_436510/EABU_REG/MX_SERIES/Infrastructure/ADPC/Firewall/Filter/cf_scaling_rt.pl.art-rtb_bellini-rtb.7876310.20140503124533&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_436510/EABU_REG/MX_SERIES/Infrastructure/ADPC/Firewall/Filter/cf_scaling_rt.pl.art-rtb_bellini-rtb.7876310.20140503124533&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>jnavaneeth</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>bellini-rtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1672540 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1672540_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1672540_2')" onmouseout="nodeLow ('p1672540_2')">C</span>
+    </div>
+    <div id=p1672540_2 class=collapsed>
+        <span class=text><b>passed</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>kgayathri</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>RPT_REG_101_neo_aggressive_drop-profiles_fun</td>
+  <td>101_neo_aggressive_drop-profiles_fun.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.3/REG_437766/EABU_REG/MX_SERIES/Infrastructure/NEO/COS/RED/101_neo_aggressive_drop-profiles_fun.pl.rbu-reg-wf-agentsmith.7902408/&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_437766/EABU_REG/MX_SERIES/Infrastructure/NEO/COS/RED/101_neo_aggressive_drop-profiles_fun.pl.rbu-reg-wf-agentsmith.7902408/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>TOOLS-MISC</td>
+  <td>kgayathri</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>agentsmith-rtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1678108 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1678108_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1678108_2')" onmouseout="nodeLow ('p1678108_2')">C</span>
+    </div>
+    <div id=p1678108_2 class=collapsed>
+        <span class=text><b>Passed</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>ksubramani</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>RPT_REG_111_trinity_ratelimit</td>
+  <td>111_trinity_ratelimit.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/MX_SERIES/Infrastructure/NEO/COS/Scheduler/111_trinity_ratelimit.pl.art-rtb_neo-rtb.7873071.20140503022254&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_435753/EABU_REG/MX_SERIES/Infrastructure/NEO/COS/Scheduler/111_trinity_ratelimit.pl.art-rtb_neo-rtb.7873071.20140503022254&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>ksubramani</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>neo-rtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1672306 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1672306_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1672306_2')" onmouseout="nodeLow ('p1672306_2')">C</span>
+    </div>
+    <div id=p1672306_2 class=collapsed>
+        <span class=text><b>passed</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Stable_21463_101_neo_mpls_class</td>
+  <td>101_neo_mpls_class.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.3/REG_437766/EABU_REG/MX_SERIES/Infrastructure/NEO/COS/MPLS_COS/101_neo_mpls_class.pl.rbu-reg-wf-neo.7902361/&result_id=41323 target=LOG>PREP_TOPO_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_437766/EABU_REG/MX_SERIES/Infrastructure/NEO/COS/MPLS_COS/101_neo_mpls_class.pl.rbu-reg-wf-neo.7902361/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>ksubramani</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>rbu-reg-wf-neo</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1678076 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1678076_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1678076_2')" onmouseout="nodeLow ('p1678076_2')">C</span>
+    </div>
+    <div id=p1678076_2 class=collapsed>
+        <span class=text><b>passed</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>manipc</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>RPT_REG_ngs_type1_pe_aps_interchassis</td>
+  <td>ngs_type1_pe_aps_interchassis.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/M_SERIES/COMMON/Interfaces/NGS/APS/ngs_type1_pe_aps_interchassis.pl.art-rtb_ngi-rtb1.7852222.20140429111549&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_435753/EABU_REG/M_SERIES/COMMON/Interfaces/NGS/APS/ngs_type1_pe_aps_interchassis.pl.art-rtb_ngi-rtb1.7852222.20140429111549&result_id=41323 target=LOG>PASS</a> </td>
+  <td>TOOLS-MISC</td>
+  <td>manipc</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>ngi-rtb1</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1671086 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1671086_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1671086_2')" onmouseout="nodeLow ('p1671086_2')">C</span>
+    </div>
+    <div id=p1671086_2 class=collapsed>
+        <span class=text><b>pased in respin</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>RPT_REG_sonet_sdh_invertb1b2b3_type2</td>
+  <td>sonet_sdh_invertb1b2b3_type2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/M_SERIES/COMMON/Interfaces/NGS/sonet_sdh_invertb1b2b3_type2.pl.art-rtb_ngi-rtb1.7853007.20140429153448&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_435753/EABU_REG/M_SERIES/COMMON/Interfaces/NGS/sonet_sdh_invertb1b2b3_type2.pl.art-rtb_ngi-rtb1.7853007.20140429153448&result_id=41323 target=LOG>PASS</a> </td>
+  <td>TOOLS-MISC</td>
+  <td>manipc</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>ngi-rtb1</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1671090 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1671090_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1671090_2')" onmouseout="nodeLow ('p1671090_2')">C</span>
+    </div>
+    <div id=p1671090_2 class=collapsed>
+        <span class=text><b>passed in respin</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>pprabhakar</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>Stable_29798_113_tcp_on_frf16_ifd_RLSQ</td>
+  <td>113_tcp_on_frf16_ifd_RLSQ.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/MX_SERIES/Services/MSDPC/L2/RLSQ/113_tcp_on_frf16_ifd_RLSQ.pl.art-rtb_hcl-hermes-irtb.7859413.20140501144119&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_435753/EABU_REG/MX_SERIES/Services/MSDPC/L2/RLSQ/113_tcp_on_frf16_ifd_RLSQ.pl.art-rtb_hcl-hermes-irtb.7859413.20140501144119&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>pprabhakar</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>hcl-hermes-irtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1671096 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1671096_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1671096_2')" onmouseout="nodeLow ('p1671096_2')">C</span>
+    </div>
+    <div id=p1671096_2 class=collapsed>
+        <span class=text><b>After clean disk got 4th tc passed.</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>pradk</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+
+  <td>RPT_REG_111_mpls_vpn_cos</td>
+  <td>111_mpls_vpn_cos.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/MX_SERIES/Infrastructure/AGSMITH/COS/MPLS_COS/111_mpls_vpn_cos.pl.eabu-bng-reg-art1_neo1-irtb.7871675.20140503050511&result_id=41323 target=LOG>LINK_FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_435753/EABU_REG/MX_SERIES/Infrastructure/AGSMITH/COS/MPLS_COS/111_mpls_vpn_cos.pl.eabu-bng-reg-art1_neo1-irtb.7871675.20140503050511&result_id=41323 target=LOG>PASS</a> </td>
+  <td>HW-ENV-LINK</td>
+  <td>vbaskara</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>eabu-bng-reg-art1_neo1-irtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1672296 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1672296_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1672296_2')" onmouseout="nodeLow ('p1672296_2')">C</span>
+    </div>
+    <div id=p1672296_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>rasmi</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>RPT_REG_pr-451596_460523_neo</td>
+  <td>pr-451596_460523_neo.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.3/REG_437766/EABU_REG/MX_SERIES/CFD_SCRIPTS/Platforms/pr-451596_460523_neo.pl.rbu-reg-blr-atlas7.7902377/&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.3/REG_437766/EABU_REG/MX_SERIES/CFD_SCRIPTS/Platforms/pr-451596_460523_neo.pl.rbu-reg-blr-atlas7.7902377/&result_id=41323 target=LOG>FAIL</a> </td>
+  <td>SW-REPRODUCIBLE-PR</td>
+  <td>rasmi</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "#FD5757">o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=981807 target=DISPLAY_PR>981807 </a>[open]</br></td>
+  <td>rbu-reg-blr-atlas7</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1678324 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1678324_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1678324_2')" onmouseout="nodeLow ('p1678324_2')">C</span>
+    </div>
+    <div id=p1678324_2 class=collapsed>
+        <span class=text><b>o 981807 o 981807</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>RPT_REG_114_neo_mx_vpls_dot1p_inheritance</td>
+  <td>114_neo_mx_vpls_dot1p_inheritance.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/MX_SERIES/Infrastructure/COS/114_neo_mx_vpls_dot1p_inheritance.pl.eabu-bng-reg-art1_atlas7-irtb.7872832.20140503101931&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/MX_SERIES/Infrastructure/COS/114_neo_mx_vpls_dot1p_inheritance.pl.eabu-bng-reg-art1_atlas7-irtb.7872832.20140503101931&result_id=41323 target=LOG>FAIL</a> </td>
+  <td>SW-REPRODUCIBLE-PR</td>
+  <td>rasmi</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "#FD5757">o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=921115 target=DISPLAY_PR>921115 </a>[open]</br> </td>
+  <td>eabu-bng-reg-art1_atlas7-irtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1672304 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1672304_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1672304_2')" onmouseout="nodeLow ('p1672304_2')">C</span>
+    </div>
+    <div id=p1672304_2 class=collapsed>
+        <span class=text><b>o 921115 o 921115 </b></span>
+    </div></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>RPT_REG_114_neo_mx_ccc_dot1p_inheritance</td>
+  <td>114_neo_mx_ccc_dot1p_inheritance.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/MX_SERIES/Infrastructure/COS/114_neo_mx_ccc_dot1p_inheritance.pl.eabu-bng-reg-art1_atlas7-irtb.7872613.20140503090326&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/MX_SERIES/Infrastructure/COS/114_neo_mx_ccc_dot1p_inheritance.pl.eabu-bng-reg-art1_atlas7-irtb.7872613.20140503090326&result_id=41323 target=LOG>FAIL</a> </td>
+  <td>SW-REPRODUCIBLE-PR</td>
+  <td>rasmi</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "#FD5757">o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=921115 target=DISPLAY_PR>921115 </a>[open]</br> </td>
+  <td>eabu-bng-reg-art1_atlas7-irtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1672303 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1672303_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1672303_2')" onmouseout="nodeLow ('p1672303_2')">C</span>
+    </div>
+    <div id=p1672303_2 class=collapsed>
+        <span class=text><b>o 921115 o 921115 </b></span>
+    </div></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>Stable_28359_112_rli_12028_srTCM</td>
+  <td>112_rli_12028_srTCM.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.3/REG_437766/EABU_REG/MX_SERIES/Infrastructure/TRINITY/Firewall/112_rli_12028_srTCM.pl.rbu-reg-blr-atlas7.7902379/&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_437766/EABU_REG/MX_SERIES/Infrastructure/TRINITY/Firewall/112_rli_12028_srTCM.pl.rbu-reg-blr-atlas7.7902379/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>TOOLS-RM</td>
+  <td>rasmi</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>rbu-reg-blr-atlas7</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1678467 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1678467_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1678467_2')" onmouseout="nodeLow ('p1678467_2')">C</span>
+    </div>
+    <div id=p1678467_2 class=collapsed>
+        <span class=text><b>passed</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>Stable_27841_112_mpls_dscp_cls</td>
+  <td>112_mpls_dscp_cls.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.3/REG_437766/EABU_REG/MX_SERIES/Infrastructure/NEO/COS/MPLS_COS/112_mpls_dscp_cls.pl.rbu-reg-blr-atlas7.7902371/&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_437766/EABU_REG/MX_SERIES/Infrastructure/NEO/COS/MPLS_COS/112_mpls_dscp_cls.pl.rbu-reg-blr-atlas7.7902371/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>TOOLS-RM</td>
+  <td>rasmi</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>rbu-reg-blr-atlas7</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1678143 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1678143_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1678143_2')" onmouseout="nodeLow ('p1678143_2')">C</span>
+    </div>
+    <div id=p1678143_2 class=collapsed>
+        <span class=text><b>passed</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>reshwari</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>RPT_REG_vpls_gres_atlas</td>
+  <td>vpls_gres_atlas.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/MX_SERIES/Protocols/ADPC/L3/VPLS/GRES/vpls_gres_atlas.pl.eabu-bng-reg-art1_atlas10-irtb.7874679.20140503172224&result_id=41323 target=LOG>ABORT</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_435753/EABU_REG/MX_SERIES/Protocols/ADPC/L3/VPLS/GRES/vpls_gres_atlas.pl.eabu-bng-reg-art1_atlas10-irtb.7874679.20140503172224&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>reshwari</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>soa1-irtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1672310 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1672310_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1672310_2')" onmouseout="nodeLow ('p1672310_2')">C</span>
+    </div>
+    <div id=p1672310_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>sanukriti</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>RPT_REG_rli_12028_lip_1</td>
+  <td>rli_12028_lip_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/MX_SERIES/Infrastructure/TRINITY/Firewall/Filter/rli_12028_lip_1.pl.art-rtb_oceanus-rtb.7858327.20140501013138&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_435753/EABU_REG/MX_SERIES/Infrastructure/TRINITY/Firewall/Filter/rli_12028_lip_1.pl.art-rtb_oceanus-rtb.7858327.20140501013138&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>sanukriti</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>oceanus-rtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1671095 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1671095_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1671095_2')" onmouseout="nodeLow ('p1671095_2')">C</span>
+    </div>
+    <div id=p1671095_2 class=collapsed>
+        <span class=text><b>passed</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Stable_10362_qce1_mcast_pr</td>
+  <td>qce1_mcast_pr</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/M_SERIES/COMMON/Interfaces/Channelized/CHE1/qce1_mcast_pr.art-rtb_irtb7.7852471.20140429123237&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_435753/EABU_REG/M_SERIES/COMMON/Interfaces/Channelized/CHE1/qce1_mcast_pr.art-rtb_irtb7.7852471.20140429123237&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>sanukriti</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>irtb7</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1671087 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1671087_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1671087_2')" onmouseout="nodeLow ('p1671087_2')">C</span>
+    </div>
+    <div id=p1671087_2 class=collapsed>
+        <span class=text><b>passed</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>RPT_REG_cos_pir_cir_iqge</td>
+  <td>cos_pir_cir_iqge.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/M_SERIES/COMMON/Infrastructure/COS/Policer/IQ/GE/cos_pir_cir_iqge.pl.art-rtb_irtb6.7857673.20140430173808&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_435753/EABU_REG/M_SERIES/COMMON/Infrastructure/COS/Policer/IQ/GE/cos_pir_cir_iqge.pl.art-rtb_irtb6.7857673.20140430173808&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>sanukriti</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>irtb6</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1671092 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1671092_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1671092_2')" onmouseout="nodeLow ('p1671092_2')">C</span>
+    </div>
+    <div id=p1671092_2 class=collapsed>
+        <span class=text><b>passed</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Stable_3459_port_mirroring_ipv6</td>
+  <td>port_mirroring_ipv6.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/M_SERIES/COMMON/Infrastructure/Port_Mirroring/port_mirroring_ipv6.pl.art-rtb_irtb6.7857727.20140430180055&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_435753/EABU_REG/M_SERIES/COMMON/Infrastructure/Port_Mirroring/port_mirroring_ipv6.pl.art-rtb_irtb6.7857727.20140430180055&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>sanukriti</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>irtb6</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1671093 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1671093_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1671093_2')" onmouseout="nodeLow ('p1671093_2')">C</span>
+    </div>
+    <div id=p1671093_2 class=collapsed>
+        <span class=text><b>passed</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Stable_6006_l2tp_mlppp_sg1</td>
+  <td>l2tp_mlppp_sg1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/M_SERIES/COMMON/Services/L2/L2TP/Stargate/l2tp_mlppp_sg1.pl.art-rtb_irtb7.7852194.20140429110658&result_id=41323 target=LOG>CONNECT_FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_435753/EABU_REG/M_SERIES/COMMON/Services/L2/L2TP/Stargate/l2tp_mlppp_sg1.pl.art-rtb_irtb7.7852194.20140429110658&result_id=41323 target=LOG>PASS</a> </td>
+  <td>HW-ROUTER-NOT-REACHABLE</td>
+  <td>sanukriti</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>irtb7</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1671084 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1671084_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1671084_2')" onmouseout="nodeLow ('p1671084_2')">C</span>
+    </div>
+    <div id=p1671084_2 class=collapsed>
+        <span class=text><b>passed</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>RPT_REG_pr265542</td>
+  <td>pr265542.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/M_SERIES/COMMON/Interfaces/PR/pr265542.pl.eabu-bng-reg-art1_reno1-irtb.7875158.20140503183156&result_id=41323 target=LOG>PARAMS_FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_435753/EABU_REG/M_SERIES/COMMON/Interfaces/PR/pr265542.pl.eabu-bng-reg-art1_reno1-irtb.7875158.20140503183156&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-PARAMS-TIMEOUT</td>
+  <td>saranyas</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>reno1-irtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1672312 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1672312_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1672312_2')" onmouseout="nodeLow ('p1672312_2')">C</span>
+    </div>
+    <div id=p1672312_2 class=collapsed>
+        <span class=text><b>Passed</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>saranyas</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>RPT_REG_102_pinot_rli5804_4xcstm1_qos_combine</td>
+  <td>102_pinot_rli5804_4xcstm1_qos_combine.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/M_SERIES/COMMON/Infrastructure/COS/Pinot/Noir/E1/102_pinot_rli5804_4xcstm1_qos_combine.pl.art-rtb_pinot-rtb.7852704.20140429133806&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_435753/EABU_REG/M_SERIES/COMMON/Infrastructure/COS/Pinot/Noir/E1/102_pinot_rli5804_4xcstm1_qos_combine.pl.art-rtb_pinot-rtb.7852704.20140429133806&result_id=41323 target=LOG>PASS</a> </td>
+  <td>HW-ENV-JUNIPER-ROUTERS</td>
+  <td>saranyas</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>pinot-rtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1671088 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1671088_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1671088_2')" onmouseout="nodeLow ('p1671088_2')">C</span>
+    </div>
+    <div id=p1671088_2 class=collapsed>
+        <span class=text><b>Passed</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>RPT_REG_issu_coc12_t1_ospf_isis_scal</td>
+  <td>issu_coc12_t1_ospf_isis_scal.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/M_SERIES/COMMON/ISSU/Interfaces/Channelized/Q_COC/issu_coc12_t1_ospf_isis_scal.pl.art-rtb_issu-int2.7871381.20140502142701&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_435753/EABU_REG/M_SERIES/COMMON/ISSU/Interfaces/Channelized/Q_COC/issu_coc12_t1_ospf_isis_scal.pl.art-rtb_issu-int2.7871381.20140502142701&result_id=41323 target=LOG>PASS</a> </td>
+  <td>HW-ENV-JUNIPER-ROUTERS</td>
+  <td>saranyas</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>issu-int2</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1672292 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1672292_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1672292_2')" onmouseout="nodeLow ('p1672292_2')">C</span>
+    </div>
+    <div id=p1672292_2 class=collapsed>
+        <span class=text><b>Passed</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>RPT_REG_s_issu_classifier</td>
+  <td>s_issu_classifier.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/M_SERIES/SAHARA/ISSU/Infrastructure/COS/Classifier/s_issu_classifier.pl.art-rtb_issu-int2.7871007.20140502120018&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_435753/EABU_REG/M_SERIES/SAHARA/ISSU/Infrastructure/COS/Classifier/s_issu_classifier.pl.art-rtb_issu-int2.7871007.20140502120018&result_id=41323 target=LOG>PASS</a> </td>
+  <td>HW-ENV-JUNIPER-ROUTERS</td>
+  <td>saranyas</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>issu-int2</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1672287 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1672287_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1672287_2')" onmouseout="nodeLow ('p1672287_2')">C</span>
+    </div>
+    <div id=p1672287_2 class=collapsed>
+        <span class=text><b>Passed</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>RPT_RIAD_re_RE-A-2000</td>
+  <td>re_RE-A-2000.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/M_SERIES/COMMON/Infrastructure/GRES/re_RE-A-2000.pl.art-rtb_hcl-irtb6.7859872.20140501170814&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_435753/EABU_REG/M_SERIES/COMMON/Infrastructure/GRES/re_RE-A-2000.pl.art-rtb_hcl-irtb6.7859872.20140501170814&result_id=41323 target=LOG>PASS</a> </td>
+  <td>HW-ENV-JUNIPER-ROUTERS</td>
+  <td>saranyas</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>issu-int2</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1671296 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1671296_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1671296_2')" onmouseout="nodeLow ('p1671296_2')">C</span>
+    </div>
+    <div id=p1671296_2 class=collapsed>
+        <span class=text><b>Passed</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>RPT_REG_102_pinot_rli5804_atm_qos_t1mode_aal5</td>
+  <td>102_pinot_rli5804_atm_qos_t1mode_aal5.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/M_SERIES/COMMON/Infrastructure/COS/Pinot/Mixed/102_pinot_rli5804_atm_qos_t1mode_aal5.pl.art-rtb_pinot-rtb.7852860.20140429142538&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_435753/EABU_REG/M_SERIES/COMMON/Infrastructure/COS/Pinot/Mixed/102_pinot_rli5804_atm_qos_t1mode_aal5.pl.art-rtb_pinot-rtb.7852860.20140429142538&result_id=41323 target=LOG>PASS</a> </td>
+  <td>HW-ENV-JUNIPER-ROUTERS</td>
+  <td>saranyas</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>pinot-rtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1671089 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1671089_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1671089_2')" onmouseout="nodeLow ('p1671089_2')">C</span>
+    </div>
+    <div id=p1671089_2 class=collapsed>
+        <span class=text><b>Passed</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>sarchana</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Stable_28044_112_1588_RLI_12001_basic</td>
+  <td>112_1588_RLI_12001_basic.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/MX_SERIES/Interfaces/HARMONIA/112_1588_RLI_12001_basic.pl.art-rtb_harmonia-rtb.7873093.20140503023757&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_435753/EABU_REG/MX_SERIES/Interfaces/HARMONIA/112_1588_RLI_12001_basic.pl.art-rtb_harmonia-rtb.7873093.20140503023757&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>sarchana</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>harmonia-rtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1672307 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1672307_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1672307_2')" onmouseout="nodeLow ('p1672307_2')">C</span>
+    </div>
+    <div id=p1672307_2 class=collapsed>
+        <span class=text><b>TC 1 config nt supported</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>RPT_REG_trio_lo_kernel_filters</td>
+  <td>trio_lo_kernel_filters.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.3/REG_437766/EABU_REG/MX_SERIES/Infrastructure/TRINITY/Firewall/Filter/trio_lo_kernel_filters.pl.rbu-reg-wf-harmonia.7902392/&result_id=41323 target=LOG>PBUILDER_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_437766/EABU_REG/MX_SERIES/Infrastructure/TRINITY/Firewall/Filter/trio_lo_kernel_filters.pl.rbu-reg-wf-harmonia.7902392/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>sarchana</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>harmonia-rtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1678088 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1678088_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1678088_2')" onmouseout="nodeLow ('p1678088_2')">C</span>
+    </div>
+    <div id=p1678088_2 class=collapsed>
+        <span class=text><b>rerun</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>shilpah</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+
+  <td>RPT_REG_mx960_ge_scaling</td>
+  <td>mx960_ge_scaling</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/MX_SERIES/Interfaces/ADPC/Ethernet/mx960_ge_scaling.eabu-bng-reg-art1_atlas6-irtb.7872945.20140503111409&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_435753/EABU_REG/MX_SERIES/Interfaces/ADPC/Ethernet/mx960_ge_scaling.eabu-bng-reg-art1_atlas6-irtb.7872945.20140503111409&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>shilpah</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>atlas6-irtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1672305 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1672305_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1672305_2')" onmouseout="nodeLow ('p1672305_2')">C</span>
+    </div>
+    <div id=p1672305_2 class=collapsed>
+        <span class=text><b>Passed</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>RPT_REG_aggregate_policer</td>
+  <td>aggregate_policer.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/MX_SERIES/Infrastructure/ADPC/Firewall/Policer/aggregate_policer.pl.eabu-bng-reg-art1_atlas6-irtb.7871684.20140503051227&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_435753/EABU_REG/MX_SERIES/Infrastructure/ADPC/Firewall/Policer/aggregate_policer.pl.eabu-bng-reg-art1_atlas6-irtb.7871684.20140503051227&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>shilpah</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>atlas6-irtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1672297 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1672297_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1672297_2')" onmouseout="nodeLow ('p1672297_2')">C</span>
+    </div>
+    <div id=p1672297_2 class=collapsed>
+        <span class=text><b>Passed</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>shivpatil</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>RPT_REG_101_trio_hdlc_extended-vlan_tcc</td>
+  <td>101_trio_hdlc_extended-vlan_tcc</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.3/REG_437766/EABU_REG/MX_SERIES/Interfaces/NEO/Ethernet/Cross_connect/101_trio_hdlc_extended-vlan_tcc.rbu-reg-blr-atlas1.7902398/&result_id=41323 target=LOG>PREP_TOPO_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_437766/EABU_REG/MX_SERIES/Interfaces/NEO/Ethernet/Cross_connect/101_trio_hdlc_extended-vlan_tcc.rbu-reg-blr-atlas1.7902398/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>shivpatil</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>rbu-reg-blr-atlas1</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1678054 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1678054_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1678054_2')" onmouseout="nodeLow ('p1678054_2')">C</span>
+    </div>
+    <div id=p1678054_2 class=collapsed>
+        <span class=text><b>passed</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>RPT_REG_112_aps_tornado_HDmic_oc48</td>
+  <td>112_aps_tornado_HDmic_oc48.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/MX_SERIES/Interfaces/TORNADO/APS/112_aps_tornado_HDmic_oc48.pl.eabu-bng-reg-art1_atlas1-irtb.7875157.20140503183149&result_id=41323 target=LOG>PARAMS_FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_435753/EABU_REG/MX_SERIES/Interfaces/TORNADO/APS/112_aps_tornado_HDmic_oc48.pl.eabu-bng-reg-art1_atlas1-irtb.7875157.20140503183149&result_id=41323 target=LOG>PASS</a> </td>
+  <td>TOOLS-PARAMS</td>
+  <td>shivpatil</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>eabu-bng-reg-art1_atlas1-irtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1672311 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1672311_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1672311_2')" onmouseout="nodeLow ('p1672311_2')">C</span>
+    </div>
+    <div id=p1672311_2 class=collapsed>
+        <span class=text><b>passed</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>vinothj</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+
+  <td>RPT_REG_113_l3vpn_ip4_ipv6_exp_rewrite</td>
+  <td>113_l3vpn_ip4_ipv6_exp_rewrite.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12/REG_435753/EABU_REG/M_SERIES/COMMON/Infrastructure/COS/Rewrite/113_l3vpn_ip4_ipv6_exp_rewrite.pl.eabu-bng-reg-art1_agave-irtb.7868630.20140502222230&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_435753/EABU_REG/M_SERIES/COMMON/Infrastructure/COS/Rewrite/113_l3vpn_ip4_ipv6_exp_rewrite.pl.eabu-bng-reg-art1_agave-irtb.7868630.20140502222230&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>vinothj</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>eabu-bng-reg-art1_agave-irtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1672286 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1672286_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1672286_2')" onmouseout="nodeLow ('p1672286_2')">C</span>
+    </div>
+    <div id=p1672286_2 class=collapsed>
+        <span class=text><b>Debug Pass</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>vmathangi</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>RPT_REG_scu_dcu_ipv6</td>
+  <td>scu_dcu_ipv6.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12.1/REG_436003/EABU_REG/M_SERIES/SPIFF/Infrastructure/Firewall/Accounting/scu_dcu_ipv6.pl.rbu-reg-blr-spiff1.7877137/&result_id=41323 target=LOG>PBUILDER_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_436003/EABU_REG/M_SERIES/SPIFF/Infrastructure/Firewall/Accounting/scu_dcu_ipv6.pl.rbu-reg-blr-spiff1.7877137/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>vmathangi</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>rbu-reg-blr-spiff1</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1672541 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1672541_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1672541_2')" onmouseout="nodeLow ('p1672541_2')">C</span>
+    </div>
+    <div id=p1672541_2 class=collapsed>
+        <span class=text><b>pass on rerun</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>Stable_14569_isis_graceful</td>
+  <td>isis_graceful.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12.1/REG_436003/EABU_REG/M_SERIES/SPIFF/Protocols/Routing/ISIS/isis_graceful.pl.rbu-reg-blr-spiff1.7877136/&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_436003/EABU_REG/M_SERIES/SPIFF/Protocols/Routing/ISIS/isis_graceful.pl.rbu-reg-blr-spiff1.7877136/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>vmathangi</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>rbu-reg-blr-spiff1</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1673468 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1673468_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1673468_2')" onmouseout="nodeLow ('p1673468_2')">C</span>
+    </div>
+    <div id=p1673468_2 class=collapsed>
+        <span class=text><b>pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>RPT_REG_crtp_ml.jnpr-jnpr</td>
+  <td>crtp_ml.jnpr-jnpr.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12.1/REG_436003/EABU_REG/M_SERIES/SPIFF/Services/L2/CRTP/crtp_ml.jnpr-jnpr.pl.rbu-reg-blr-spiff1.7877144/&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_436003/EABU_REG/M_SERIES/SPIFF/Services/L2/CRTP/crtp_ml.jnpr-jnpr.pl.rbu-reg-blr-spiff1.7877144/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>vmathangi</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>rbu-reg-blr-spiff1</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1673469 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1673469_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1673469_2')" onmouseout="nodeLow ('p1673469_2')">C</span>
+    </div>
+    <div id=p1673469_2 class=collapsed>
+        <span class=text><b>pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>RPT_REG_lsq_crtp_sanity_jnpr</td>
+  <td>lsq_crtp_sanity_jnpr.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/Apr/11.4R12.1/REG_436003/EABU_REG/M_SERIES/SPIFF/Services/L2/CRTP/lsq_crtp_sanity_jnpr.pl.rbu-reg-blr-spiff1.7877146/&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_436003/EABU_REG/M_SERIES/SPIFF/Services/L2/CRTP/lsq_crtp_sanity_jnpr.pl.rbu-reg-blr-spiff1.7877146/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>vmathangi</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>rbu-reg-blr-spiff1</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1672542 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1672542_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1672542_2')" onmouseout="nodeLow ('p1672542_2')">C</span>
+    </div>
+    <div id=p1672542_2 class=collapsed>
+        <span class=text><b>pass on rerun</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+    
+
+
+<br> <p id=p2> Debug completed script list: <font color=black>11.4R12.4</font> </p>
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>jnavaneeth</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+
+  <td>RPT_REG_102_europa_10775_mx_ifl_3col_ingress_policers</td>
+  <td>102_europa_10775_mx_ifl_3col_ingress_policers.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.4/REG_439377/EABU_REG/MX_SERIES/EUROPA/MX_CORE/COS/102_europa_10775_mx_ifl_3col_ingress_policers.pl.rbu-reg-wf-bellini.7963387/&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_439377/EABU_REG/MX_SERIES/EUROPA/MX_CORE/COS/102_europa_10775_mx_ifl_3col_ingress_policers.pl.rbu-reg-wf-bellini.7963387/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>jnavaneeth</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>rbu-reg-wf-bellini</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1683067 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1683067_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1683067_2')" onmouseout="nodeLow ('p1683067_2')">C</span>
+    </div>
+    <div id=p1683067_2 class=collapsed>
+        <span class=text><b>passed</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>rasmi</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+
+  <td>RPT_REG_chassis_chassisd</td>
+  <td>chassis_chassisd.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.4/REG_439377/EABU_REG/MX_SERIES/Infrastructure/Chassis/MX960/chassis_chassisd.pl.rbu-reg-blr-atlas7.7963408/&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_439377/EABU_REG/MX_SERIES/Infrastructure/Chassis/MX960/chassis_chassisd.pl.rbu-reg-blr-atlas7.7963408/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>sarchana</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>rbu-reg-blr-atlas7</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1683105 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1683105_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1683105_2')" onmouseout="nodeLow ('p1683105_2')">C</span>
+    </div>
+    <div id=p1683105_2 class=collapsed>
+        <span class=text><b>rerun</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>saranyas</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>RPT_REG_96_pinot_rli5798_atm_e1mode</td>
+  <td>96_pinot_rli5798_atm_e1mode.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.4/REG_439377/EABU_REG/M_SERIES/COMMON/Interfaces/Pinot/Mixed/96_pinot_rli5798_atm_e1mode.pl.rbu-reg-svl-pinot.7963395/&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_439377/EABU_REG/M_SERIES/COMMON/Interfaces/Pinot/Mixed/96_pinot_rli5798_atm_e1mode.pl.rbu-reg-svl-pinot.7963395/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>HW-ENV-JUNIPER-ROUTERS</td>
+  <td>saranyas</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>pinot-rtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1682692 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1682692_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1682692_2')" onmouseout="nodeLow ('p1682692_2')">C</span>
+    </div>
+    <div id=p1682692_2 class=collapsed>
+        <span class=text><b>Passed</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>vchowdary</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>Stable_28018_112_tornado_features</td>
+  <td>112_tornado_features.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.4/REG_439377/EABU_REG/MX_SERIES/Interfaces/TORNADO/SONET_FEATURES/112_tornado_features.pl.rbu-reg-blr-atlas10.7963412/&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_439377/EABU_REG/MX_SERIES/Interfaces/TORNADO/SONET_FEATURES/112_tornado_features.pl.rbu-reg-blr-atlas10.7963412/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>HW-ENV-JUNIPER-ROUTERS</td>
+  <td>vchowdary</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>rbu-reg-blr-atlas10</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1682701 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1682701_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1682701_2')" onmouseout="nodeLow ('p1682701_2')">C</span>
+    </div>
+    <div id=p1682701_2 class=collapsed>
+        <span class=text><b>pass on rerun</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+    
+
+
+<br> <p id=p2> Debug completed script list: <font color=black>11.4R12.4</font> </p>
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>amaravathi</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>RPT_REG_m320_issu_basic</td>
+  <td>m320_issu_basic.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.4/REG_440414/EABU_REG/M_SERIES/SAHARA/ISSU/Infrastructure/Basic/m320_issu_basic.pl.rbu-reg-chn-planet.8007996/&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_440414/EABU_REG/M_SERIES/SAHARA/ISSU/Infrastructure/Basic/m320_issu_basic.pl.rbu-reg-chn-planet.8007996/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>HW-ENV-JUNIPER-ROUTERS</td>
+  <td>saranyas</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>hcl-planet</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1690896 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1690896_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1690896_2')" onmouseout="nodeLow ('p1690896_2')">C</span>
+    </div>
+    <div id=p1690896_2 class=collapsed>
+        <span class=text><b>Passed</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>jnavaneeth</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>RPT_REG_mx_issu_neo_basic</td>
+  <td>mx_issu_neo_basic.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.4/REG_440414/EABU_REG/MX_SERIES/ISSU/Infrastructure/NEO/Basic/mx_issu_neo_basic.pl.rbu-reg-wf-bellini.8007995/&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_440414/EABU_REG/MX_SERIES/ISSU/Infrastructure/NEO/Basic/mx_issu_neo_basic.pl.rbu-reg-wf-bellini.8007995/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>jnavaneeth</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>rbu-reg-wf-bellini</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1690907 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1690907_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1690907_2')" onmouseout="nodeLow ('p1690907_2')">C</span>
+    </div>
+    <div id=p1690907_2 class=collapsed>
+        <span class=text><b>passed</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>RPT_REG_mx_issu_qdpc_basic</td>
+  <td>mx_issu_qdpc_basic.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.4/REG_440414/EABU_REG/MX_SERIES/ISSU/Infrastructure/Bellini/Basic/mx_issu_qdpc_basic.pl.rbu-reg-wf-bellini.8007993/&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_440414/EABU_REG/MX_SERIES/ISSU/Infrastructure/Bellini/Basic/mx_issu_qdpc_basic.pl.rbu-reg-wf-bellini.8007993/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>jnavaneeth</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>rbu-reg-wf-bellini</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1690906 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1690906_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1690906_2')" onmouseout="nodeLow ('p1690906_2')">C</span>
+    </div>
+    <div id=p1690906_2 class=collapsed>
+        <span class=text><b>passed</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>keerthigc</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>RPT_REG_m120_issu_basic</td>
+  <td>m120_issu_basic.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.4/REG_440414/EABU_REG/M_SERIES/RENO/ISSU/Infrastructure/Basic/m120_issu_basic.pl.rbu-reg-blr-reno1.8008017/&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_440414/EABU_REG/M_SERIES/RENO/ISSU/Infrastructure/Basic/m120_issu_basic.pl.rbu-reg-blr-reno1.8008017/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>keerthigc</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>reno1-irtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1690935 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1690935_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1690935_2')" onmouseout="nodeLow ('p1690935_2')">C</span>
+    </div>
+    <div id=p1690935_2 class=collapsed>
+        <span class=text><b>lower version ISSU not supported</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>kgayathri</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>RPT_REG_mx_issu_agsm_basic</td>
+  <td>mx_issu_agsm_basic.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.4/REG_440414/EABU_REG/MX_SERIES/ISSU/Infrastructure/AGSMITH/Basic/mx_issu_agsm_basic.pl.rbu-reg-wf-agentsmith.8008037/&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_440414/EABU_REG/MX_SERIES/ISSU/Infrastructure/AGSMITH/Basic/mx_issu_agsm_basic.pl.rbu-reg-wf-agentsmith.8008037/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>TOOLS-RM</td>
+  <td>kgayathri</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>agentsmith-rtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1691556 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1691556_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1691556_2')" onmouseout="nodeLow ('p1691556_2')">C</span>
+    </div>
+    <div id=p1691556_2 class=collapsed>
+        <span class=text><b>In RM unable to find the downgrade build info</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>pprabhakar</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Stable_8166_chassis_fpc</td>
+  <td>chassis_fpc.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.4/REG_440414/EABU_REG/MX_SERIES/Infrastructure/Chassis/MX960/chassis_fpc.pl.rbu-reg-chn-hermes.8008026/&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_440414/EABU_REG/MX_SERIES/Infrastructure/Chassis/MX960/chassis_fpc.pl.rbu-reg-chn-hermes.8008026/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>keerthigc</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>hcl-hermes-irtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1691582 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1691582_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1691582_2')" onmouseout="nodeLow ('p1691582_2')">C</span>
+    </div>
+    <div id=p1691582_2 class=collapsed>
+        <span class=text><b>pass on rerun</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>rasmi</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>RPT_REG_96_RLI_5740</td>
+  <td>96_RLI_5740.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.4/REG_440414/EABU_REG/MX_SERIES/Infrastructure/ADPC/Firewall/Policer/96_RLI_5740.pl.rbu-reg-blr-atlas7.8008008/&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_440414/EABU_REG/MX_SERIES/Infrastructure/ADPC/Firewall/Policer/96_RLI_5740.pl.rbu-reg-blr-atlas7.8008008/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>TOOLS-RM</td>
+  <td>rasmi</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>rbu-reg-blr-atlas7</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1691619 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1691619_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1691619_2')" onmouseout="nodeLow ('p1691619_2')">C</span>
+    </div>
+    <div id=p1691619_2 class=collapsed>
+        <span class=text><b>passed</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>sanukriti</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>RPT_REG_mixed_speed_agg_sonet</td>
+  <td>mixed_speed_agg_sonet.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.4/REG_440414/EABU_REG/M_SERIES/COMMON/Infrastructure/COS/Scheduler/Aggregated/mixed_speed_agg_sonet.pl.rbu-reg-svl-irtb6.8008005/&result_id=41323 target=LOG>ABORT</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_440414/EABU_REG/M_SERIES/COMMON/Infrastructure/COS/Scheduler/Aggregated/mixed_speed_agg_sonet.pl.rbu-reg-svl-irtb6.8008005/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>sanukriti</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>irtb6</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1690918 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1690918_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1690918_2')" onmouseout="nodeLow ('p1690918_2')">C</span>
+    </div>
+    <div id=p1690918_2 class=collapsed>
+        <span class=text><b>art3-rtb issue</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>RPT_REG_agg_ether_8q</td>
+  <td>agg_ether_8q.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.4/REG_440414/EABU_REG/M_SERIES/COMMON/Infrastructure/COS/Scheduler/Aggregated/agg_ether_8q.pl.rbu-reg-svl-irtb6.8008003/&result_id=41323 target=LOG>ABORT</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_440414/EABU_REG/M_SERIES/COMMON/Infrastructure/COS/Scheduler/Aggregated/agg_ether_8q.pl.rbu-reg-svl-irtb6.8008003/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>sanukriti</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>irtb6</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1690908 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1690908_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1690908_2')" onmouseout="nodeLow ('p1690908_2')">C</span>
+    </div>
+    <div id=p1690908_2 class=collapsed>
+        <span class=text><b>art3-rtb issue</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>RPT_REG_agg_sonet</td>
+  <td>agg_sonet.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.4/REG_440414/EABU_REG/M_SERIES/COMMON/Infrastructure/COS/Scheduler/Aggregated/agg_sonet.pl.rbu-reg-svl-irtb6.8008004/&result_id=41323 target=LOG>ABORT</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_440414/EABU_REG/M_SERIES/COMMON/Infrastructure/COS/Scheduler/Aggregated/agg_sonet.pl.rbu-reg-svl-irtb6.8008004/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>sanukriti</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>irtb6</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1690917 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1690917_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1690917_2')" onmouseout="nodeLow ('p1690917_2')">C</span>
+    </div>
+    <div id=p1690917_2 class=collapsed>
+        <span class=text><b>passed</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>saranyas</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr bgcolor="#ECCFFF">
+
+  <td>Stable_8405_issu_eia530</td>
+  <td>issu_eia530.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.4/REG_440414/EABU_REG/M_SERIES/COMMON/ISSU/Interfaces/Serial/issu_eia530.pl.rbu-reg-blr-issu2.8007987/&result_id=41323 target=LOG>PREP_TOPO_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_440414/EABU_REG/M_SERIES/COMMON/ISSU/Interfaces/Serial/issu_eia530.pl.rbu-reg-blr-issu2.8007987/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>saranyas</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>issu2-irtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1690916 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1690916_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1690916_2')" onmouseout="nodeLow ('p1690916_2')">C</span>
+    </div>
+    <div id=p1690916_2 class=collapsed>
+        <span class=text><b>Passed</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>sarchana</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+
+  <td>RPT_REG_104_synce_esmc_ql_enable</td>
+  <td>104_synce_esmc_ql_enable.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.4/REG_440414/EABU_REG/MX_SERIES/Interfaces/HARMONIA/104_synce_esmc_ql_enable.pl.rbu-reg-wf-harmonia.8008021/&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_440414/EABU_REG/MX_SERIES/Interfaces/HARMONIA/104_synce_esmc_ql_enable.pl.rbu-reg-wf-harmonia.8008021/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>sarchana</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>rbu-reg-wf-harmonia</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1690936 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1690936_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1690936_2')" onmouseout="nodeLow ('p1690936_2')">C</span>
+    </div>
+    <div id=p1690936_2 class=collapsed>
+        <span class=text><b>rerun</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>shilpah</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+
+  <td>RPT_REG_mx960_lacp</td>
+  <td>mx960_lacp.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.4/REG_440414/EABU_REG/MX_SERIES/Interfaces/ADPC/Ethernet/LACP/mx960_lacp.pl.rbu-reg-blr-atlas6.8008019/&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_440414/EABU_REG/MX_SERIES/Interfaces/ADPC/Ethernet/LACP/mx960_lacp.pl.rbu-reg-blr-atlas6.8008019/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>sravikant</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>atlas6-irtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1690953 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1690953_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1690953_2')" onmouseout="nodeLow ('p1690953_2')">C</span>
+    </div>
+    <div id=p1690953_2 class=collapsed>
+        <span class=text><b>Passed</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>vchowdary</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+
+  <td>RPT_REG_pr454791_pkt_loss_fabric_drop</td>
+  <td>pr454791_pkt_loss_fabric_drop.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.4/REG_440414/EABU_REG/MX_SERIES/Infrastructure/Chassisd/PR/pr454791_pkt_loss_fabric_drop.pl.rbu-reg-blr-atlas10.8008016/&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_440414/EABU_REG/MX_SERIES/Infrastructure/Chassisd/PR/pr454791_pkt_loss_fabric_drop.pl.rbu-reg-blr-atlas10.8008016/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>HW-ENV-JUNIPER-ROUTERS</td>
+  <td>vchowdary</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>rbu-reg-blr-atlas10</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1691581 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1691581_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1691581_2')" onmouseout="nodeLow ('p1691581_2')">C</span>
+    </div>
+    <div id=p1691581_2 class=collapsed>
+        <span class=text><b>pass on rerun</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>RPT_REG_ethernet_untag</td>
+  <td>ethernet_untag</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.4/REG_440414/EABU_REG/MX_SERIES/Interfaces/ADPC/Ethernet/ethernet_untag.rbu-reg-blr-atlas10.8008014/&result_id=41323 target=LOG>PREP_TOPO_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_440414/EABU_REG/MX_SERIES/Interfaces/ADPC/Ethernet/ethernet_untag.rbu-reg-blr-atlas10.8008014/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>vchowdary</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>rbu-reg-blr-atlas10</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1691608 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1691608_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1691608_2')" onmouseout="nodeLow ('p1691608_2')">C</span>
+    </div>
+    <div id=p1691608_2 class=collapsed>
+        <span class=text><b>pass on rerun</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>RPT_REG_ae_vlantag</td>
+  <td>ae_vlantag</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.4/REG_440414/EABU_REG/MX_SERIES/Interfaces/ADPC/Ethernet/Aggregated/ae_vlantag.rbu-reg-blr-atlas10.8008015/&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_440414/EABU_REG/MX_SERIES/Interfaces/ADPC/Ethernet/Aggregated/ae_vlantag.rbu-reg-blr-atlas10.8008015/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>HW-ENV-JUNIPER-ROUTERS</td>
+  <td>vchowdary</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>rbu-reg-blr-atlas10</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1691580 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1691580_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1691580_2')" onmouseout="nodeLow ('p1691580_2')">C</span>
+    </div>
+    <div id=p1691580_2 class=collapsed>
+        <span class=text><b>pass on rerun</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>vdharmavar</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=41323&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Stable_22082_101_neo_4x10GE_basic</td>
+  <td>101_neo_4x10GE_basic.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/regression/results/RBU/2014/May/11.4R12.4/REG_440414/EABU_REG/MX_SERIES/Interfaces/NEO/Ethernet/4X10GE/101_neo_4x10GE_basic.pl.rbu-reg-blr-neo1.8007988/&result_id=41323 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/REG_440414/EABU_REG/MX_SERIES/Interfaces/NEO/Ethernet/4X10GE/101_neo_4x10GE_basic.pl.rbu-reg-blr-neo1.8007988/&result_id=41323 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>vdharmavar</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>atlas3-irtb</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=1690943 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p1690943_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p1690943_2')" onmouseout="nodeLow ('p1690943_2')">C</span>
+    </div>
+    <div id=p1690943_2 class=collapsed>
+        <span class=text><b>passed</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+    
+</br>
+<table border=0>
+
+         <td bgcolor=#ECCFFF>&nbsp;</td> <td> PR probable scripts </td>
+
+     <td bgcolor=#FD5757>&nbsp;</td>
+     <td> PR_open  &nbsp; </td>
+     <td bgcolor=#66FF66>&nbsp;</td>
+     <td> PR_closed &nbsp; </td>
+     <td bgcolor=#66FFFF>&nbsp;</td>
+     <td> PR_other &nbsp; </td>
+
+   </tr>
+</table>
+
+
+<!-- END   DISPLAY COMPLETED -->
+
+
+
+
+
+
+
+
+</table> 
+<br><br><br><br><br><br><br><br>
+
+
+
+ 
+
+
+</table>
+
+
+
+    </td>
+<!-- RIGHT WINDOW ENDS-->
+
+
+
+  </tr>
+</table>
+
+<!-- 4rd ROW ENDS-->
+
+
+
+
+
+
+
+
+
+
+
+<br />
+<hr noshade size="1" width="100%" />
+ 
+</body>
+</html>
+
+
+
+
+
+
+

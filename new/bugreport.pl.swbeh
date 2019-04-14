@@ -1,0 +1,141 @@
+#!/usr/bin/perl
+use HTML::TableExtract;
+use Data::Dumper;
+use DBI;
+use POSIX;
+### Db connection 
+my $hostname = 'eabu-systest-db.juniper.net';
+my $user = "postgres";
+my $pass = "postgres";
+my $port = "5432";
+my $dsn = "dbi:Pg:database=regression;host=$hostname;port=$port";
+my $dbh = DBI->connect($dsn,$user,$pass)
+                or die "Couldn't connect to database ".DBI->errstr;
+$gnats_prefix = "https://gnats.juniper.net/web/default/do-query?adv=0&prs=";
+$gnats_postfix = "&csv=0&columns=synopsis%2Creported-in%2Csubmitter-id%2CRc-Test-Gap-Owner%2CTest-Gap-Analysis-Status%2Cproduct%2Cclass%2Ccategory%2Cproblem-level%2Cblocker%2Cplanned-release%2Cstate%2Cresponsible%2Coriginator%2Carrival-date%2Cdev-owner%2Cfix-eta%2Clatest-summary-status&op=%26";
+### First get the active releases
+%releasemap = ();
+$query = "select distinct(releasename,plannedrelease,debugstart,debugend) from regressionreport where releasename in (select release from releases where active='yes');";   #### get the Active releases
+    my $sth=$dbh->prepare($query);
+    $sth->execute;
+     my $r=$sth->fetchall_arrayref({});
+    foreach my $ar(@{$r})
+    {
+			if($ar->{row} =~ /"/) { next;}
+			($row)  = $ar->{row} =~ /\((.*)\)/;
+			@vals = split(",",$row);
+			$release = $vals[0];
+			$planned_release = $vals[1];
+			$debugstart = $vals[2];
+			$debugend = $vals[3];
+			$releasemap{$release}{planned_release} = $planned_release;
+			$releasemap{$release}{debugstart} = $debugstart;
+			$releasemap{$release}{debugend} = $debugend;
+	}
+		print Dumper(\%releasemap);	
+foreach $rel(sort keys %releasemap)
+{
+$prbuffer = "<table style='width:50%'><thead><tr><th>Number</th><th>Dev-Owner</th><th>Responsible</th><th>Originator</th><th>Created</th><th>Closed-Date</th><th>Feedback-Date</th><th>Planned-Release</th><th>State</th><th>Blocker</th><th>Problem-Level</th><th>Attributes</th><th>Reported-In</th><th>Product</th><th>Submitter-Id</th><th>Customer</th><th>Resolution</th></tr></thead>";
+	@prs = `/usr/local/bin/query-pr  --expr '(planned-release == "$releasemap{$rel}{planned_release}") & ((dev-owner['bu'] == "psd-rbu") | (responsible['bu'] == "psd-rbu")) & (Attributes ~ "regression-pr")'  --format '"%s:&:&:%s:&:&:%s:&:&:%s:&:&:%Q:&:&:%Q:&:&:%Q:&:&:%s:&:&:%s:&:&:%s:&:&:%s:&:&:%s:&:&:%s:&:&:%s:&:&:%s:&:&:%s:&:&:%s:&:&:" Number Dev-Owner Responsible Originator Created Closed-Date Feedback-Date Planned-Release State Blocker Problem-Level Attributes Reported-In  Product Submitter-Id Customer Resolution'`;	
+%prhash_swbeh = ();
+foreach $pr(@prs)
+{
+		@tmp = split(":&:&:",$pr);
+		($prnoscope) = $tmp[0] =~ /(.*)-/;
+		($scope) = $tmp[0] =~ /-(.*)/;
+		chomp($scope);
+		if($scope == 1)
+		{
+			if(exists $releasemap{$rel}{new}) { $releasemap{$rel}{new}++;$releasemap{$rel}{newprs} .= "+$tmp[0]";}
+			else { $releasemap{$rel}{new} = 1; $releasemap{$rel}{newprs} = "$tmp[0]";}
+		}
+		else
+		{		
+			if(exists $releasemap{$rel}{old}) { $releasemap{$rel}{old}++;$releasemap{$rel}{oldprs} .= "+$tmp[0]";}
+			else { $releasemap{$rel}{old} = 1; $releasemap{$rel}{oldprs} = "$tmp[0]";}
+			$prbuffer .= "<tr><td>$tmp[0]</td><td>$tmp[1]</td><td>$tmp[2]</td><td>$tmp[3]</td><td>$tmp[4]</td><td>$tmp[5]</td><td>$tmp[6]</td><td>$tmp[7]</td><td>$tmp[8]</td><td>$tmp[9]</td><td>$tmp[10]</td><td>$tmp[11]</td><td>$tmp[12]</td><td>$tmp[13]</td><td>$tmp[14]</td><td>$tmp[15]</td></tr>";
+			$pr = $tmp[0];
+			($prnoscope) = $pr =~ /(.*)-/;
+			($scope) = $pr =~ /-(.*)/;
+			$prhash_swbeh{$prnoscope}{scope} = $scope;
+			$prhash_swbeh{$prnoscope}{resolution} = $tmp[16];
+			$prhash_swbeh{$prnoscope}{blocker} = $tmp[9];
+			$prhash_swbeh{$prnoscope}{state} = $tmp[8];
+		}
+		if($tmp[16] =~ /^fixed$|^fixed-elswhere$/)
+		{
+			if(exists $releasemap{$rel}{fixed}) { $releasemap{$rel}{fixed}++;$releasemap{$rel}{fixedprs} .= "+$tmp[0]";}
+			else { $releasemap{$rel}{fixed} = 1; $releasemap{$rel}{fixedprs} = "$tmp[0]";}
+		}
+			if(exists $releasemap{$rel}{total}) { $releasemap{$rel}{total}++;$releasemap{$rel}{totalprs} .= "+$tmp[0]";}
+			else { $releasemap{$rel}{total} = 1; $releasemap{$rel}{totalprs} = "$tmp[0]";}
+			
+}	
+$prbuffer .= "</table>";
+$releasestr = $rel;
+$releasestr =~ s/\./-/g;
+open(F,">/homes/rod/public_html/Regression/report/new/data/$releasestr"."swbehaviour_table");
+print F $prbuffer;
+@prs = keys %prhash_swbeh;
+$prstr = join(" ",@prs);
+print "$prstr \n";
+chomp($prstr);
+%escapes = ();
+if($prstr !~ /^$/)
+{
+	@prs = `/usr/local/bin/query-pr $prstr --format '"%s:&:&:%s:&:&:%s:&:&:" Number State  Resolution'`;
+	foreach $pr(@prs)
+	{
+			@tmp = split(":&:&:",$pr);
+			$prnum = $tmp[0];
+            ($prnoscope) = $prnum =~ /(.*)-/;
+            ($scope) = $prnum =~ /-(.*)/;
+			if($scope == $prhash_swbeh{$prnoscope}) { next;}
+			if($tmp[2] =~ /^fixed$|^fixed-elsewhere$/) ### if it is fixed in other releases
+			{
+				if(($prhash_swbeh{$prnoscope}{state} =~ /open|info|analyzed/) || ($prhash_swbeh{$prnoscope}{resolution} =~ /^not-fixed$/))
+				{
+						$escapes{total}{$prnoscope} = 1;
+						if($prhash_swbeh{$prnoscope}{blocker} !~ /^$/)
+						{
+							$escapes{blocker}{$prnoscope} = 1;
+						}
+						else
+						{
+							$escapes{nonblocker}{$prnoscope} = 1;
+						}
+				}
+			}
+	}
+						
+			
+		
+}
+$total_escapes = keys %{$escapes{total}};
+$blocker_escapes = keys %{$escapes{blocker}};
+$nonblocker_escapes = keys %{$escapes{nonblocker}};
+@total_escape_prs = keys %{$escapes{total}};
+@blocker_escape_prs = keys %{$escapes{blocker}};
+@nonblocker_escape_prs = keys %{$escapes{nonblocker}};
+$total_escape_prs_str = join("+",@total_escape_prs);
+$blocker_escape_prs_str = join("+",@blocker_escape_prs);
+$nonblocker_escape_prs_str = join("+",@nonblocker_escape_prs);
+
+$esc_buffer = "<center><table class='firstpass' style='width:50%;'><thead><tr><th colspan=2>Software Escapes for release $rel</th></tr></thead>";
+$esc_buffer .= "<tr><td>Blockers</td><td><a href='$gnats_prefix".$blocker_escape_prs_str."$gnats_postfix' target='_blank'>$blocker_escapes</a></td></tr>";
+$esc_buffer .= "<tr><td>Non Blockers</td><td><a href='$gnats_prefix".$nonblocker_escape_prs_str."$gnats_postfix' target='_blank'>$nonblocker_escapes</a></td></tr>";
+$esc_buffer .= "<tr><td>Total</td><td><a href='$gnats_prefix".$total_escape_prs_str."$gnats_postfix' target='_blank'>$total_escapes</a></td></tr></table></center>";
+open(F,">/homes/rod/public_html/Regression/report/new/data/$releasestr"."swbehaviour_table");
+print F $esc_buffer."<br><br><br>".$prbuffer;
+close(F);
+}
+$buffer = "<center><h1>PR Stats</h1><table class='firstpass' style='width:50%'><thead><tr><th>Release</th><th>Release Date</th><th># New PRs</th><th># Old PRs</th><th>Total </th><th># PRs Fixed</th><th>PRs open after the Release</th></tr></thead>";
+foreach $rel(sort keys %releasemap)
+{
+	$buffer .= "<tr><td>$rel</td><td>$releasemap{$rel}{debugstart}</td><td><a href='$gnats_prefix".$releasemap{$rel}{newprs}."$gnats_postfix' target='_blank'>$releasemap{$rel}{new}</a></td><td><a href='$gnats_prefix".$releasemap{$rel}{oldprs}."$gnats_postfix' target='_blank'>$releasemap{$rel}{old}</a></td><td><a href='$gnats_prefix".$releasemap{$rel}{totalprs}."$gnats_postfix' target='_blank'>$releasemap{$rel}{total}</a></td><td><a href='$gnats_prefix".$releasemap{$rel}{fixedprs}."$gnats_postfix' target='_blank'>$releasemap{$rel}{fixed}</a</td><td>0</td></tr>";
+
+}
+$buffer .= "</table></center>";
+open(F, ">/homes/rod/public_html/Regression/report/new/data/prdata.data");
+print F  $buffer;
+close(F); 

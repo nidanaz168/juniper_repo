@@ -1,0 +1,201 @@
+<html>
+<head>
+ <title>TL9K Summary Report</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <meta name="Pragma" CONTENT="no-cache">
+ <meta name="robots" content="noindex, follow">
+ <link href="/ti/webapp/dr/shared/mainstyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<!-- START STYLESHEET INCLUDE -->
+<script language="javascript">
+ if (navigator.platform.indexOf ("Win32") !=-1) {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ie.css" type="text/css">');
+ } else {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ns.css" type="text/css">');
+ }
+</script>
+
+<body class="td-white-background"  topmargin="5" leftmargin="6" marginwidth="6" marginheight="5" >
+
+</script>
+<!-- END STYLESHEET INCLUDE -->
+
+
+<script type="text/javascript">                                                                                                                                                  
+function displaySpan(theSpan) {
+    if (theSpan.style.display == "none") {
+        theSpan.style.display = "";
+    }
+    else if (theSpan.style.display == "") {
+        theSpan.style.display = "none";
+    } else {
+        theSpan.style.display = "none";
+    }
+}
+</script>
+
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+     <tr  class="bluefield">
+      <td rowspan="2"  height="70">&nbsp; &nbsp;
+       <a href="http://www-int.juniper.net/">
+       <img src="/images/juniperLogo.gif" height="33" width="90" border="0"></a></td>
+      <td id=td15> Summarized Regression Test Report </td> </tr>
+
+ <tr> <td> Result Id's: 200191  </td> </tr></table><hr><a href=/ti/webapp/dr/debug_dr/view/gen_tl9k_report_summary.mhtml?result_id=200191&trans=remove >Click here to Exclude Transition Scripts</a><!-- 
+/*
+ * Function to get reg report info
+ *
+ */
+-->
+
+no_tei :  <br><br>
+        
+
+<!-- 
+/*
+ * Function to get all the manual info.
+ *
+ */
+
+-->
+
+<br>
+
+<!-- 
+/*
+ * Function to get the pr info
+ */
+
+-->
+
+<br>
+
+Result Summary for <font color=red></font> ( Result_id: 200191 ) <br>-Project Lead        : <font color=blue></font> <br>-Regression Tracking : PR<br>
+<p id=td16_1><pre>
+<font color=blue>1</font> Automated Tests:
+Total Number of Automated Scripts = 48
+Total Number of Pass (Regression+Debug) = 45
+Total Number of Debug Failures = 3
+PASS % = 94 %
+
+Unique Script count = 40
+Unique (latest respin) Pass count = 37
+Unique (latest respin) Failure count (including pending) = 3
+ACTUAL PASS% = 93 %
+
+
+Total Number of Testcases count = 280
+Total Number of Testcases Pass (Regression+Debug) = 266 
+Total Number of Testcases Fail (PR Attached) = 14
+Total Number of Testcases Pending Analysis = 0
+PASS % = 95 %
+
+
+<font color=blue>2</font> Manual Tests:
+Total Number of Manual Tests = 0
+Total Number of Pass = 0
+Total Number of Failures = 0
+PASS % = 0 %
+
+</pre></p>
+
+<!--7.0 END OF SUMMARY TABLE -->
+
+
+
+
+
+<li><a href="javascript:displaySpan(span_200191)"><b>Click here to see list of Failed/Undebugged Scripts</b></a>
+<span id="span_200191" style="display:none;">
+<br><br><table border=1> <tr><td><font size=2>Engineer</td><td><font size=2>Script Name</td><td><font size=2>Result</td><td><font size=2>PRs</td></tr>
+<tr><td rowspan=2><font size=2>rajs (2)</td><td><font size=2>J172_23221_pfc_events.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FF66><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1406373 target=DISPLAY_PR>1406373 </a>[closed]</br></td></tr><td><font size=2>RLI_23149_V44_Local_Switching_Elite_Dual_AD_16_25.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> O <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1406429 target=DISPLAY_PR>1406429 </a>[need-info]</br></td></tr><tr><td rowspan=1><font size=2>tbprabhu (1)</td><td><font size=2>RLI_25471_V44_LACP_HA_Elit_Dual_1.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> O <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1405849 target=DISPLAY_PR>1405849 </a>[need-info]</br></td></tr></table>
+<br><br>
+<table>
+<tr><td>
+<b>Scripts failed Due to PRs - </b>3
+</td></tr>
+<tr><td>
+<b>Scripts pending debugging - </b>0
+</td></tr>
+<tr><td>
+<b>PRs Existing till now - </b></td></tr>
+</table><table border=1>
+<tr><td><font size=2 style="font-weight:bold">PR</td>
+               <td><font size=2 style="font-weight:bold"># Scripts Hit</td>
+               <td><font size=2 style="font-weight:bold">Planned_Release</td>
+               <td><font size=2 style="font-weight:bold">State</td>
+               <td><font size=2 style="font-weight:bold">Category</td>
+               <td><font size=2 style="font-weight:bold">Customer_Risk</td>
+               <td><font size=2 style="font-weight:bold">Problem_level</td>
+               <td><font size=2 style="font-weight:bold">Synopsis</td>
+               <td><font size=2 style="font-weight:bold">Found</td>
+               <td><font size=2 style="font-weight:bold">Reg</td>
+               <td><font size=2 style="font-weight:bold">Blocker</td> 
+            </tr><tr>
+<td><font size=2>1405849</td>
+               <td><font size=2>1</td>
+               <td><font size=2>17.3R3-S3</td><td bgcolor = #66FFFF ><font size=2>need-info</td>
+<td><font size=2>sw-v44-pfe-agg</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>JDI-REG: V44 Phase1 & Phase2:  Traffic Loss seen during reboot for all SD devices in V44 Phase 1 & Phase 2 setup.</td>
+               <td><font size=2>OLD</td>
+               <td><font size=2></td>
+               <td><font size=2>PendingBlocker</td></tr>
+<tr>
+<td><font size=2>1406429</td>
+               <td><font size=2>1</td>
+               <td><font size=2>17.3R3-S3</td><td bgcolor = #66FFFF ><font size=2>need-info</td>
+<td><font size=2>sw-v44-pfe-agg</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>JDI-REG: V44 Phase2: Local Switching functionality with some SDs not working as expected</td>
+               <td><font size=2>OLD</td>
+               <td><font size=2></td>
+               <td><font size=2>PendingBlocker</td></tr>
+<tr>
+<td><font size=2>1406373</td>
+               <td><font size=2>1</td>
+               <td><font size=2>17.3R3-S3</td><td bgcolor = #66FF66 ><font size=2>closed</td>
+<td><font size=2>sw-v44-pfe-agg</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>JDI-Reg:V44 Phase2: PFC: Inconsistent drops are seen for no-loss traffic</td>
+               <td><font size=2>OLD</td>
+               <td><font size=2></td>
+               <td><font size=2>NONE</td></tr>
+</table>
+</span></li>
+</br><hr> <b>Combined pass rate (actual) for Automated scripts: 92.50 % </b>
+<br />
+<hr noshade size="1" width="100%" />
+ 
+</body>
+</html>
+
+
+
+

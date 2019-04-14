@@ -1,0 +1,31 @@
+<chart caption='First Pass' xAxisName='Test Beds' yAxisName='Pass %' showValues='1' numberPrefix='' useRoundEdges='1' legendBorderAlpha='100' showBorder='0' bgColor='FFFFFF,FFFFFF' ><categories><category label='cbu-rtb2' /><category label='hcl-hsbu-ind' /><category label='hsbu-tx1' /><category label='hcl-hsbu-txp' /><category label='irtb13' /><category label='hsbu-ind-tx' /><category label='eol-ntt' /><category label='royal-enfield' /><category label='hcl-hsbu-jcs' /><category label='txp-rtb1' /><category label='cbu-irtb1' /><category label='txp-ind' /><category label='bombay' /><category label='rtb9' /><category label='platform1-rtb' /></categories><dataset seriesName='First Pass %'><set label='cbu-rtb2' value='100.00'  />
+<set label='hcl-hsbu-ind' value='92.86'  />
+<set label='hsbu-tx1' value='88.89'  />
+<set label='hcl-hsbu-txp' value='85.71'  />
+<set label='irtb13' value='83.33'  />
+<set label='hsbu-ind-tx' value='80.00'  />
+<set label='eol-ntt' value='75.00'  />
+<set label='royal-enfield' value='75.00'  />
+<set label='hcl-hsbu-jcs' value='66.67'  />
+<set label='txp-rtb1' value='66.67'  />
+<set label='cbu-irtb1' value='66.67'  />
+<set label='txp-ind' value='63.64'  />
+<set label='bombay' value='55.56'  />
+<set label='rtb9' value='50.00'  />
+<set label='platform1-rtb' value='50.00'  />
+</dataset><dataset seriesName='Actual Pass %'><set label='cbu-rtb2' value='0.00'  />
+<set label='hcl-hsbu-ind' value='100.00'  />
+<set label='hsbu-tx1' value='100.00'  />
+<set label='hcl-hsbu-txp' value='100.00'  />
+<set label='irtb13' value='100.00'  />
+<set label='hsbu-ind-tx' value='100.00'  />
+<set label='eol-ntt' value='100.00'  />
+<set label='royal-enfield' value='100.00'  />
+<set label='hcl-hsbu-jcs' value='100.00'  />
+<set label='txp-rtb1' value='100.00'  />
+<set label='cbu-irtb1' value='100.00'  />
+<set label='txp-ind' value='100.00'  />
+<set label='bombay' value='100.00'  />
+<set label='rtb9' value='90.00'  />
+<set label='platform1-rtb' value='100.00'  />
+</dataset></chart>

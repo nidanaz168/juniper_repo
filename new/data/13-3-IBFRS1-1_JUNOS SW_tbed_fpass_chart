@@ -1,0 +1,29 @@
+<chart caption='First Pass' xAxisName='Test Beds' yAxisName='Pass %' showValues='1' numberPrefix='' useRoundEdges='1' legendBorderAlpha='100' showBorder='0' bgColor='FFFFFF,FFFFFF' ><categories><category label='tot-mpls' /><category label='scale-irtb' /><category label='(d)-tot-proto1-services' /><category label='rtb4' /><category label='(d)-tot-master-domain' /><category label='(d)-tot-static-pilot' /><category label='tot-proto2' /><category label='(d)-tot-infra-dt' /><category label='(d)-tot-europa-issu1' /><category label='(d)-tot-mpls-soa1' /><category label='rtb13' /><category label='hcl-mx' /><category label='vpls1-irtb' /><category label='tot-igp' /></categories><dataset seriesName='First Pass %'><set label='tot-mpls' value='100.00'  />
+<set label='scale-irtb' value='75.00'  />
+<set label='(d)-tot-proto1-services' value='70.36'  />
+<set label='rtb4' value='66.67'  />
+<set label='(d)-tot-master-domain' value='62.50'  />
+<set label='(d)-tot-static-pilot' value='58.50'  />
+<set label='tot-proto2' value='56.79'  />
+<set label='(d)-tot-infra-dt' value='55.69'  />
+<set label='(d)-tot-europa-issu1' value='49.13'  />
+<set label='(d)-tot-mpls-soa1' value='44.07'  />
+<set label='rtb13' value='40.00'  />
+<set label='hcl-mx' value='0.00'  />
+<set label='vpls1-irtb' value='0.00'  />
+<set label='tot-igp' value='0.00'  />
+</dataset><dataset seriesName='Actual Pass %'><set label='tot-mpls' value='0.00'  />
+<set label='scale-irtb' value='100.00'  />
+<set label='(d)-tot-proto1-services' value='92.74'  />
+<set label='rtb4' value='83.33'  />
+<set label='(d)-tot-master-domain' value='91.67'  />
+<set label='(d)-tot-static-pilot' value='91.77'  />
+<set label='tot-proto2' value='92.59'  />
+<set label='(d)-tot-infra-dt' value='90.65'  />
+<set label='(d)-tot-europa-issu1' value='88.70'  />
+<set label='(d)-tot-mpls-soa1' value='86.02'  />
+<set label='rtb13' value='100.00'  />
+<set label='hcl-mx' value='100.00'  />
+<set label='vpls1-irtb' value='100.00'  />
+<set label='tot-igp' value='100.00'  />
+</dataset></chart>

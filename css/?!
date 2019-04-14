@@ -1,0 +1,67 @@
+/*** Document ready function  executed at first *****/
+var respcontent;
+$(document).ready(function() {
+$("table").tablesorter({
+	sortList: [[0,1]]  
+	});
+$(".edit").click(function() {
+		id = $(this).attr('id');
+		cls = $("#"+id).attr("class");
+		if(cls.search(/save/i) >= 0) /*** Save Clicked *****/
+		{
+			saverow(id);
+		}
+		else
+		{
+			createeditrow(id);
+		}
+		});
+$(".save").click(function() {
+			alert("save me");
+			alert($(this).attr("count"));
+		});
+});
+
+function plotetrans(release)
+{
+	ajaxObj = $.ajax({
+        url : "../libs/plot.php?type=etrans&release="+release,
+		async:false,
+         });
+
+        ajaxObj.complete(
+         function(content) {
+           str = content.responseText;
+               var chart_trend_etrans = new FusionCharts("/PRINFO/AF/Charts/FCF_MSLine.swf", "ChartId", "1400", "500");
+                   chart_trend_etrans.setDataXML(str);
+					div = "etransgraph_"+release;
+                   chart_trend_etrans.render(div);
+
+                    }
+
+                );                        
+}
+function createeditrow(id)
+{
+	$("#"+id).attr("src","../images/save.png");
+    $("#"+id).addClass("save");
+    $("#"+id).attr("count",id);
+	$("#scripting"+id).html("<input id='escripting"+id+"' />");
+	$("#comments"+id).html("<input id='ecomments"+id+"' />");
+	$("#gnats"+id).html("<select id='egnats"+id+"'><option value='YES'>YES</option><option value='NO'>NO</option></select>");
+	$("#rc"+id).html("<select id='erc"+id+"'><option value='YES'>YES</option><option value='NO'>NO</option></select>");
+	$("#rcplan"+id).html("<input id='ercplan"+id+"' />");
+	$("#rcclose"+id).html("<input id='ercclose"+id+"' />");
+	$("#scripted"+id).html("<select id='escripted"+id+"'><option value='NO'>NO</option><option value='YES-NEW'>YES-NEW</option><option value='YES-EXISTING'>YES-EXISTING</option></select>");
+	$("#scriptname"+id).html("<input id='escriptname"+id+"' />");
+	$("#scriptpath"+id).html("<input id='escriptpath"+id+"' />");
+	$("#reviewed"+id).html("<select id='ereviewed"+id+"'><option value='YES'>YES</option><option value='NO'>NO</option><option value='IN-PROGRESS'>IN-PROGRESS</option></select>");
+	$("#etrans"+id).html("<select id='etrans"+id+"'><option value='COMPLETED'>COMPLETED</option><option value='SUBMITED'>SUBMITED</option><option value='IN-PROGRESS'>IN-PROGRESS</option></select>");
+	$("#improve"+id).html("<input id='eimprove"+id+"' />");
+	$("#rccstatus"+id).html("<select id='erccstatus"+id+"'><option value='COMPLETED'>COMPLETED</option><option value='PENDING'>PENDING</option></select>");
+}
+function saverow(id)
+{
+		alert($("#escripting"+id).val());
+		alert($("#egnats"+id+" :selected").text());
+}

@@ -1,0 +1,13 @@
+BD=
+select result_id from er_regression_result where name in ('JDI_CI_192_20190319.2_VIRTUAL','PROTOCOLS_PHYSICAL_CI_ZPR_192TH_20190320','Ultimat_CI_19.2DCB_Mar14','Ultimat_19.2DCB_Mar7','Ultimat_CI_19.2DCB_Feb28','Ultimat_19.2DCB_ZPR_Mar22','19_2_DCB_20181224_CBR') and parent_result_id='0'2018-12-24 
+select result_id from er_regression_result where (name= 'JDI_CI_192_20190319.2_VIRTUAL' and parent_result_id='0')
+212221 
+212221 
+wget -o log -O out.22467 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=5:7:0&result_id=212221" 
+fullfile
+
+hit = wget -o log -O prs.22467 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=0:1:0&result_id=212221" 
+wget -o log -O out.22467 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" http://www-systest.juniper.net/ti/webapp/dr/debug_dr/view/gen_tl9000_report.mhtml?result_id=212221&trans=remove
+delete from script_pr where release='19.2-CI' and function='ROUTING VIRTUAL'prstr is 1383844 1394535 1398225 1399713 1401677 1406022 1406051 1406384 1407892 1413737 1414970 1418152 1418192 1418241 1418929 1420895 1421076 1421625 1422446 1422470 1424415 1424495 1424504 1424768 1424966 1425048 1425084 1425117 1425175 1425388 1425428 1425437 1425449 1425703 1425981 1426435 1426583 1426661 1426873 1428127 1429352  
+/var/www/html/CI_Report/data/19-2-CI_table
+Done

@@ -1,0 +1,16 @@
+./heatmap.pl 12.3R2 MMX
+./heatmap.pl 12.3Pre-R3 MMX
+./heatmap.pl 13.2B1-PS MMX
+./heatmap.pl 13.3_IBFRS1 MMX
+./heatmap.pl 13.1R2 MMX
+./heatmap.pl 12.3R3 MMX
+./heatmap.pl 11.4X7 MMX
+./heatmap.pl 12.3R2 RPD
+./heatmap.pl 12.3Pre-R3 RPD
+./heatmap.pl 13.2B1-PS RPD
+./heatmap.pl 12.3R3 RPD
+./heatmap.pl 12.3R2 TPTX
+./heatmap.pl 12.3Pre-R3 TPTX
+./heatmap.pl 13.2B1-PS TPTX
+./heatmap.pl 13.1R2 TPTX
+./heatmap.pl 12.3R3 TPTX

@@ -1,0 +1,767 @@
+
+
+  
+
+
+
+
+
+  
+
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 9]><!-->	<html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Flexible, Responsive Grid | Gumby Framework</title>
+    <meta name="description" content="The Gumby Framework offers customizable, flexible &amp; responsive CSS grids including a hybrid grid" />
+    <meta name="author" content="/humans.txt">
+
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+
+    <meta name="google-site-verification" content="TTuqn2YYupgiGLoJebl_q8v1FUvs9VZW08BuZ7aiGuY" />
+
+    <!--Facebook Metadata /-->
+	<meta property="og:url" content="http://gumbyframework.com/docs/grid" />
+    <meta property="og:image" content="http://gumbyframework.com/facebook.jpg?gumby2" />
+	<meta property="og:description" content="The Gumby Framework offers customizable, flexible &amp; responsive CSS grids including a hybrid grid"/>
+	<meta property="og:title" content="Flexible, Responsive Grid | Gumby Framework"/>
+
+    <!--Google+ Metadata /-->
+    <meta itemprop="url" content="http://gumbyframework.com/docs/grid" />
+	<meta itemprop="name" content="Flexible, Responsive Grid | Gumby Framework">
+
+	<meta itemprop="description" content="The Gumby Framework offers customizable, flexible &amp; responsive CSS grids including a hybrid grid">
+	<meta itemprop="image" content="http://gumbyframework.com/facebook.jpg?gumby2">
+
+    <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="http://gumbyframework.com/css/gumby.css">
+    <link rel="stylesheet" href="http://gumbyframework.com/js/libs/google-code-prettify/prettify.css">
+
+    <script src="/components/gumby/js/libs/modernizr-2.6.2.min.js"></script>
+
+  </head>
+
+  <body onload="prettyPrint()" class="docs grid" id="inner-doc">
+    <nav id="navbar-main-nav" class="navbar">
+  <div class="row">
+    <a class="toggle" gumby-trigger="#navbar-main-nav #main-nav" href="#"><i class="icon-menu"></i></a>
+    <h1 class="four columns logo">
+      <a href="/">
+        <img src="http://gumbyframework.com/img/gumby_mainlogo.png" gumby-retina>
+
+      </a>
+    </h1>
+    <nav class="ten columns pull_right">
+      <ul id="main-nav">
+        <li><a href="#">Features</a>
+          <div class="dropdown">
+            <ul>
+              <li><a href="/features">The Grid</a></li>
+
+              <li><a href="/features/prototype">Rapid Prototyping</a></li>
+              <li><a href="/features/sass">Sass</a></li>
+              <li><a href="/features/mobile">Mobile</a></li>
+              <li><a href="/showcase">Showcase</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <a href="#">Documentation</a>
+          <div class="dropdown">
+            <ul>
+              <li><a href="/docs/">Getting Started</a></li>
+              <li><a href="/docs/grid/">The Grid</a></li>
+              <li><a href="/docs/ui-kit/">UI Kit</a></li>
+
+              <li><a href="/docs/sass/">Sass</a></li>
+              <li><a href="/docs/javascript/">JavaScript</a></li>
+              <li><a href="/demo">Demo</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="http://gumbyframework.com/customize">Customize</a></li>
+
+        <li><a href="https://plus.google.com/communities/108760896951473344451" target="_blank">Community</a></li>
+        <li>
+          <p class="medium pretty default btn icon-github icon-left">
+            <a href="https://github.com/GumbyFramework/Gumby"> GitHub</a>
+          </p>
+        </li>
+      </ul>
+
+    </nav>
+  </div>
+</nav>
+
+    <div class="container shaded">
+      <div id="inner-nav" class="row">
+        <h2 class="three columns left-center">The Grid</h2>
+        <ul class="six columns pull_right">
+          <li>
+
+            <div class="medium metro rounded btn active"><a href="/docs/grid/">The Grid</a></div>
+          </li>
+          <li>
+            <div class="medium metro rounded btn"><a href="/docs/ui-kit/">UI Kit</a></div>
+          </li>
+          <li>
+            <div class="medium metro rounded btn"><a href="/docs/sass/">Sass</a></div>
+
+          </li>
+          <li>
+            <div class="medium metro rounded btn"><a href="/docs/javascript/">JavaScript</a></div>
+          </li>
+          <li>
+            <div class="medium metro rounded btn"><a href="/demo">Demo</a></div>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="container nopad">
+      <div class="row">
+        <section class="four columns">
+          <nav id="sidebar-nav-holder" class="vertical-nav" gumby-fixed="top|[data-target='psd-templates']">
+            <ul id="sidebar-nav">
+              
+                <li class="active">
+
+                  <a href="#grid-fundamentals" class="skip" gumby-easing="easeOutQuad" gumby-duration="600" gumby-goto="[data-target='grid-fundamentals']">Grid Fundamentals</a>
+                </li>
+                
+                <li>
+                  <a href="#basic-grid" class="skip" gumby-easing="easeOutQuad" gumby-duration="600" gumby-goto="[data-target='basic-grid']">Basic Grid</a>
+                </li>
+                
+                <li>
+                  <a href="#hybrid-grid" class="skip" gumby-easing="easeOutQuad" gumby-duration="600" gumby-goto="[data-target='hybrid-grid']">Hybrid Grid</a>
+
+                </li>
+                
+                <li>
+                  <a href="#pushing-columns" class="skip" gumby-easing="easeOutQuad" gumby-duration="600" gumby-goto="[data-target='pushing-columns']">Pushing Columns</a>
+                </li>
+                
+                <li>
+                  <a href="#centered-columns" class="skip" gumby-easing="easeOutQuad" gumby-duration="600" gumby-goto="[data-target='centered-columns']">Centered Columns</a>
+                </li>
+                
+                <li>
+
+                  <a href="#tiles" class="skip" gumby-easing="easeOutQuad" gumby-duration="600" gumby-goto="[data-target='tiles']">Tiles</a>
+                </li>
+                
+                <li>
+                  <a href="#nested-grids" class="skip" gumby-easing="easeOutQuad" gumby-duration="600" gumby-goto="[data-target='nested-grids']">Nested Grids</a>
+                </li>
+                
+                <li>
+                  <a href="#semantic-grids" class="skip" gumby-easing="easeOutQuad" gumby-duration="600" gumby-goto="[data-target='semantic-grids']">Semantic Grids</a>
+
+                </li>
+                
+                <li>
+                  <a href="#psd-templates" class="skip" gumby-easing="easeOutQuad" gumby-duration="600" gumby-goto="[data-target='psd-templates']">PSD Templates</a>
+                </li>
+                
+            </ul>
+          </nav>
+        </section>
+        <section class="nine columns push_one" id="docs-content">
+
+          
+
+          <div class="left-center" data-target="grid-fundamentals">
+            <h2>Grid Fundamentals</h2>
+            <p>Gumby Framework uses a container class to create a base padding. We also use row classes to create horizontal rows, define the page's max-width, and contain the various page columns. Column classes round out the bunch and create the final structure of the page. The magic of responsivity occurs because columns don't have a fixed width: they can vary based on the resolution of the screen, or the size of the window (try scaling down this window to see what we mean). This allows for your project to adapt to any viewport, any device, without separate stylesheets or html templates.</p>
+          </div>
+
+          
+
+          <div class="left-center" data-target="basic-grid">
+            <h2>Basic Grid</h2>
+            <p>If you look at the example below you can see how the rows and columns come together to build structure. Each row of columns are inside of a div that has been assigned the row class. Thanks to Sass, all aspects of the grid are now variables that you can customize and build-to-order unique grid sizes, columnm numbers, widths and variations on each of your projects!</p>
+
+<div class="example-grid grid">
+  <div class="row">
+    <div class="fourteen columns">
+      <p>14 columns</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="thirteen columns">
+
+      <p>13 columns</p>
+    </div>
+    <div class="one columns">
+      <p>1</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="twelve columns">
+
+      <p>12 columns</p>
+    </div>
+    <div class="two columns">
+      <p>2</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="eleven columns">
+
+      <p>11 columns</p>
+    </div>
+    <div class="three columns">
+      <p>3 columns</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="ten columns">
+
+      <p>10 columns</p>
+    </div>
+    <div class="four columns">
+      <p>4 columns</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="nine columns">
+
+      <p>9 columns</p>
+    </div>
+    <div class="five columns">
+      <p>5 columns</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="eight columns">
+
+      <p>8 columns</p>
+    </div>
+    <div class="six columns">
+      <p>6 columns</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="seven columns">
+
+      <p>7 columns</p>
+    </div>
+    <div class="seven columns">
+      <p>7 columns</p>
+    </div>
+  </div>
+</div>
+
+<div>
+
+<pre class="prettyprinted lang-html linenums">
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;fourteen columns&quot;&gt;
+      &lt;p&gt;14 columns&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;twelve columns&quot;&gt;
+      &lt;p&gt;12 columns&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;two columns&quot;&gt;
+      &lt;p&gt;2&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</pre>
+</div>
+
+          </div>
+
+          
+
+          <div class="left-center" data-target="hybrid-grid">
+            <h2>Hybrid Grid</h2>
+            <p>Here is where the Gumby Framework gets way more interesting... The Hybrid Grid. What the Hybrid Grid allows you, and your designers, to do is create layouts like never before by allowing you to define what grid to use, wherever you want on the page. By defining class="sixteen colgrid" on any element that has been assigned a row class, or simply right on the html element you are creating a sixteen column grid within that element, or page.</p>
+
+<p>The example below shows a 14-Column grid with a 16-Column grid injected in the middle of it. This will not only allow some pages of your project to be laid out using a 16-Column grid, but also any section of the page as well! You will be able to be more flexible than ever before, and your designers will have the freedom to design things that would normally "break the grid" if you were stuck with only one grid system on a page.</p>
+            
+<p>Again, thanks to Sass, the hybrid grid column number is a variable so go with whatever you want!</p>
+
+<div class="example-grid grid">
+  <div class="row">
+    <div class="fourteen columns">
+      <p>14 columns</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="seven columns">
+
+      <p>7 columns</p>
+    </div>
+    <div class="seven columns">
+      <p>7 columns</p>
+    </div>
+  </div>
+  <div class="sixteen colgrid">
+    <div class="row">
+
+      <div class="sixteen columns">
+        <p>16 columns</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="four columns">
+        <p>4 columns</p>
+      </div>
+
+      <div class="four columns">
+        <p>4 columns</p>
+      </div>
+      <div class="four columns">
+        <p>4 columns</p>
+      </div>
+      <div class="four columns">
+        <p>4 columns</p>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="two columns">
+        <p>2</p>
+      </div>
+      <div class="two columns">
+        <p>2</p>
+
+      </div>
+      <div class="two columns">
+        <p>2</p>
+      </div>
+      <div class="two columns">
+        <p>2</p>
+      </div>
+      <div class="two columns">
+
+        <p>2</p>
+      </div>
+      <div class="two columns">
+        <p>2</p>
+      </div>
+      <div class="two columns">
+        <p>2</p>
+
+      </div>
+      <div class="two columns">
+        <p>2</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+<pre class="prettyprinted lang-html linenums">
+
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;fourteen columns&quot;&gt;
+      &lt;p&gt;14 columns&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;sixteen colgrid&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;four columns&quot;&gt;
+        &lt;p&gt;4 columns&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;four columns&quot;&gt;
+        &lt;p&gt;4 columns&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;four columns&quot;&gt;
+
+        &lt;p&gt;4 columns&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;four columns&quot;&gt;
+        &lt;p&gt;4 columns&lt;/p&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</pre>
+</div>
+          </div>
+
+          
+
+          <div class="left-center" data-target="pushing-columns">
+            <h2>Pushing Columns</h2>
+
+            <p>Push columns allow you to create additional space between columns in a row. Say you have a chunk of text, lets call it a blog post, that only needs to occupy six columns; and your sidebar is only three columns wide, but it hugs the right side of the document in your comp because your designer likes tons of pretty whitespace... You can push that sidebar over to the right using .push_three, then profit from Gumbys awesomeness and ease-of-use. Push columns are also nestable, just like the rest of the grid.</p>
+
+<div class="example-grid grid">
+  <div class="row">
+    <div class="fourteen columns">
+      <p>14 columns</p>
+    </div>
+  </div>
+  <div class="row">
+
+    <div class="eleven columns">
+      <p>11 columns</p>
+    </div>
+    <div class="push_one two columns">
+      <p>2</p>
+    </div>
+  </div>
+  <div class="row">
+
+    <div class="seven columns">
+      <p>7 columns</p>
+    </div>
+    <div class="push_one six columns">
+      <p>6 columns</p>
+    </div>
+  </div>
+  <div class="row">
+
+    <div class="three columns">
+      <p>3 columns</p>
+    </div>
+    <div class="push_one ten columns">
+      <p>10 columns</p>
+    </div>
+  </div>
+</div>
+
+<div>
+<pre class="prettyprinted lang-html linenums">
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;seven columns&quot;&gt;
+      &lt;p&gt;7 columns&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;push_one six columns&quot;&gt;
+      &lt;p&gt;6 columns&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+
+    &lt;div class=&quot;three columns&quot;&gt;
+      &lt;p&gt;3 columns&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;push_two nine columns&quot;&gt;
+      &lt;p&gt;9 columns&lt;/p&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+</pre>
+</div>
+          </div>
+
+          
+
+          <div class="left-center" data-target="centered-columns">
+            <h2>Centered Columns</h2>
+            <p>Centered columns are placed in the middle of the row. This does not center their content, but centers the grid element itself. This is a convenient way to make sure a block is centered, even if you change the number of columns it contains. Note: There cannot be any other column blocks in the row for this to work.</p>
+
+<div class="example-grid grid">
+  <div class="row">
+    <div class="fourteen columns">
+      <p>14 columns</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="centered ten columns">
+
+      <p>10 columns</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="centered six columns">
+      <p>6 columns</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="centered two columns">
+      <p>2</p>
+    </div>
+  </div>
+</div>
+
+<div>
+<pre class="prettyprinted lang-html linenums">
+  &lt;div class=&quot;row&quot;&gt;
+
+    &lt;div class=&quot;centered ten columns&quot;&gt;
+      &lt;p&gt;10 columns&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+
+    &lt;div class=&quot;centered six columns&quot;&gt;
+      &lt;p&gt;6 columns&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</pre>
+</div>
+
+          </div>
+
+          
+
+          <div class="left-center" data-target="tiles">
+            <h2>Tiles</h2>
+            <p>Tiles are an awesome new way to lay out elements on a page that you want to maintain their grid" style layout. This allows you to preserve the look and feel of things like a grid of profile images in a friends list, or other block-style content generated by your application across devices. Tiles are invoked using the .tiles class in association with a .two-up, .three_up, .four_up, or .five_up class to determine the layout. Tiles are a fantastic addition to Gumby 2 that will help sure up some of those use cases that required you to write your own styles in earlier versions.</p>
+
+<p>With Tiles maintaining their N-up configuration on mobile devices, Gumby 2 has unlocked powers never before possible in our framework before.</p>
+
+<div class="example-grid grid">
+
+  <ul class="two_up tiles">
+    <li>Two Up</li>
+    <li>Two Up</li>
+    <li>Two Up</li>
+    <li>Two Up</li>
+  </ul>
+  <ul class="four_up tiles">
+
+    <li>Four Up</li>
+    <li>Four Up</li>
+    <li>Four Up</li>
+    <li>Four Up</li>
+    <li>Four Up</li>
+    <li>Four Up</li>
+
+    <li>Four Up</li>
+    <li>Four Up</li>
+  </ul>
+</div>
+
+<div>
+<pre class="prettyprinted lang-html linenums">
+  &lt;ul class=&quot;two_up tiles&quot;&gt;
+    &lt;li&gt;Two Up&lt;/li&gt;
+
+    &lt;li&gt;Two Up&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;ul class=&quot;four_up tiles&quot;&gt;
+    &lt;li&gt;Four Up&lt;/li&gt;
+
+    &lt;li&gt;Four Up&lt;/li&gt;
+    &lt;li&gt;Four Up&lt;/li&gt;
+    &lt;li&gt;Four Up&lt;/li&gt;
+  &lt;/ul&gt;
+
+</pre>
+</div>
+          </div>
+
+          
+
+          <div class="left-center" data-target="nested-grids">
+            <h2>Nested Grids</h2>
+            <p>You can nest grids within grids infinitely, but after a while the columns become too small to be practical.</p>
+
+<div>
+<pre class="prettyprinted lang-html linenums">
+  &lt;div class=&quot;row&quot;&gt;
+
+    &lt;div class=&quot;seven columns&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;ten columns&quot;&gt;
+          &lt;p&gt;10 columns&lt;/p&gt;
+
+        &lt;/div&gt;
+        &lt;div class=&quot;four columns&quot;&gt;
+          &lt;p&gt;4 columns&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+    &lt;div class=&quot;seven columns&quot;&gt;
+      &lt;p&gt;7 columns&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+</pre>
+</div>
+          </div>
+
+          
+
+          <div class="left-center" data-target="semantic-grids">
+            <h2>Semantic Grids</h2>
+            <h3>Your Markup</h3>
+<pre class="prettyprinted lang-html linenums">
+  &lt;section&gt;
+
+    &lt;article&gt;
+      &lt;p&gt;Im speaking Russian&lt;/p&gt;
+    &lt;/article&gt;
+    &lt;aside&gt;
+      &lt;p&gt;Wibbly Wobbly&lt;/p&gt;
+
+    &lt;/aside&gt;
+  &lt;/section&gt;
+</pre>
+
+<h3>The SCSS</h3>
+<pre class="prettyprinted lang-css linenums">
+  section {
+    @include row();
+  }
+  article {
+    @include column(8);
+  }
+  aside {
+    @include column(4);
+  }
+</pre>
+
+<h3>Options</h3>
+
+<pre class="prettyprinted lang-css linenums">
+  @include row($nested);
+  // $nested: set to false, can be false, or nested
+</pre>
+
+<h3>Defining Columns</h3>
+<pre class="prettyprinted lang-css linenums">
+  @include column($columns, $alignment, $behavior);
+  @include hybrid($columns, $alignment, $behavior);
+  // $columns: an integer, the number of columns for your element
+  // $alignment: set to false, can be false, or center
+  // $behavior: set to false, can be false, or collapse
+</pre>
+
+<h3>Push</h3>
+<pre class="prettyprinted lang-css linenums">
+  @include push($columns, $hybrid-grid);
+  // $columns: an integer, the number of columns to push your element
+  // $hybrid: set to false, can be false, or hybrid
+
+</pre>
+
+<h3>Pull</h3>
+<pre class="prettyprinted lang-css linenums">
+  @include pull($direction);
+  // $direction: set to false, can be false, left, or right
+</pre>
+          </div>
+
+          
+
+          <div class="left-center" data-target="psd-templates">
+            <h2>PSD Templates</h2>
+            <div id="templates">
+
+  <p>As with the original Gumby, Gumby 2 has two PSD's that help get you started designing on 12 and 16 column grid systems. You can find these templates below.</p>
+
+  <div class="medium metro rounded btn primary"><a href="/gumby-psd.zip" target="_blank">Download PSD Templates</a></div>
+</div>
+          </div>
+
+          
+        </section>
+      </div>
+    </div>
+
+  <div class="container shaded" id="subfoot">
+	<section class="row">
+      <div class="eleven columns centered">
+        <div class="row">
+			<article class="six columns">
+				<h3 class="action">You simply <b class="embolden">have</b> to try it.</h3>
+          </article>
+
+          <div class="eight columns dl_and_docs">
+            <div class="medium metro rounded btn download primary"><a href="/customize">Download Gumby 2</a></div>
+            
+            <div class="medium metro rounded btn dark"><a href="/docs">Read the Documentation</a></div>
+			</div>
+        </div>
+      </div>
+	</section>
+  </div>
+
+  <div class="container">
+	<footer class="row" id="credits">
+		<div class="seven columns left-center">
+			<p>Developed <span>with love</span> by your friends at <a href="http://www.digitalsurgeons.com/" target="_blank" title="Digital Marketing Agency">Digital Surgeons</a></p>
+			<p class="disclaimer">Disclaimer: Gumby Framework holds no affiliation or association with our friends at www.gumbyworld.com, Primavision Inc. or Prema Toy Inc.</p>
+
+		</div>
+		<div class="seven columns">
+			<div class="row">
+          <ul class="socbtns">
+            <li><div class="btn primary"><a target="_blank" href="https://github.com/GumbyFramework/Gumby">Github</a></div></li>
+            <li><div class="btn twitter"><a target="_blank" href="https://twitter.com/gumbycss">Twitter</a></div></li>
+            <li><div class="btn facebook"><a target="_blank" href="https://www.facebook.com/gumbyframework">Facebook</a></div></li>
+
+            <li><div class="btn danger"><a target="_blank" href="https://plus.google.com/communities/108760896951473344451">Google+</a></div></li>
+          </ul>
+			</div>
+		</div>
+	</footer>
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.9.1.min.js"><\/script>')</script>
+
+  <script src="http://gumbyframework.com/components/gumby/js/libs/gumby.min.js"></script>
+  <script src="http://gumbyframework.com/js/plugins.js"></script>
+  <script src="http://gumbyframework.com/js/build/global.min.js"></script>
+  
+  <script src="http://gumbyframework.com/js/build/docs.min.js?v=061213"></script>
+  
+  <script src="http://gumbyframework.com/js/build/events.min.js"></script>
+
+  
+  <script src="http://gumbyframework.com/js/libs/google-code-prettify/prettify.js"></script>
+  
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31797645-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+     chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+  <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+  <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+
+  <!-- Bugherd -->
+  <script type='text/javascript'>
+(function (d, t) {
+  var bh = d.createElement(t), s = d.getElementsByTagName(t)[0];
+  bh.type = 'text/javascript';
+  bh.src = '//www.bugherd.com/sidebarv2.js?apikey=k2wxp1tsv91hmgwvxauxga';
+  s.parentNode.insertBefore(bh, s);
+  })(document, 'script');
+</script>
+
+  </body>
+</html>
+

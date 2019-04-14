@@ -1,0 +1,511 @@
+<html>
+<head>
+ <title>TL9K Summary Report</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <meta name="Pragma" CONTENT="no-cache">
+ <meta name="robots" content="noindex, follow">
+ <link href="/ti/webapp/dr/shared/mainstyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<!-- START STYLESHEET INCLUDE -->
+<script language="javascript">
+ if (navigator.platform.indexOf ("Win32") !=-1) {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ie.css" type="text/css">');
+ } else {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ns.css" type="text/css">');
+ }
+</script>
+
+<body class="td-white-background"  topmargin="5" leftmargin="6" marginwidth="6" marginheight="5" >
+
+</script>
+<!-- END STYLESHEET INCLUDE -->
+
+
+<script type="text/javascript">                                                                                                                                                  
+function displaySpan(theSpan) {
+    if (theSpan.style.display == "none") {
+        theSpan.style.display = "";
+    }
+    else if (theSpan.style.display == "") {
+        theSpan.style.display = "none";
+    } else {
+        theSpan.style.display = "none";
+    }
+}
+</script>
+
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+     <tr  class="bluefield">
+      <td rowspan="2"  height="70">&nbsp; &nbsp;
+       <a href="http://www-int.juniper.net/">
+       <img src="/images/juniperLogo.gif" height="33" width="90" border="0"></a></td>
+      <td id=td15> Summarized Regression Test Report </td> </tr>
+
+ <tr> <td> Result Id's: 203096  </td> </tr></table><hr><a href=/ti/webapp/dr/debug_dr/view/gen_tl9k_report_summary.mhtml?result_id=203096&trans=remove >Click here to Exclude Transition Scripts</a><!-- 
+/*
+ * Function to get reg report info
+ *
+ */
+-->
+
+no_tei :  <br><br>
+        
+
+<!-- 
+/*
+ * Function to get all the manual info.
+ *
+ */
+
+-->
+
+<br>
+
+<!-- 
+/*
+ * Function to get the pr info
+ */
+
+-->
+
+<br>
+
+Result Summary for <font color=red></font> ( Result_id: 203096 ) <br>-Project Lead        : <font color=blue></font> <br>-Regression Tracking : PR<br>
+<p id=td16_1><pre>
+<font color=blue>1</font> Automated Tests:
+Total Number of Automated Scripts = 2090
+Total Number of Pass (Regression+Debug) = 2048
+Total Number of Debug Failures = 20
+PASS % = 98 %
+
+Unique Script count = 2090
+Unique (latest respin) Pass count = 2048
+Unique (latest respin) Failure count (including pending) = 42
+ACTUAL PASS% = 98 %
+
+
+Total Number of Testcases count = 8724
+Total Number of Testcases Pass (Regression+Debug) = 8642 
+Total Number of Testcases Fail (PR Attached) = 53
+Total Number of Testcases Pending Analysis = 29
+PASS % = 99 %
+
+
+<font color=blue>2</font> Manual Tests:
+Total Number of Manual Tests = 0
+Total Number of Pass = 0
+Total Number of Failures = 0
+PASS % = 0 %
+
+</pre></p>
+
+<!--7.0 END OF SUMMARY TABLE -->
+
+
+
+
+
+<li><a href="javascript:displaySpan(span_203096)"><b>Click here to see list of Failed/Undebugged Scripts</b></a>
+<span id="span_203096" style="display:none;">
+<br><br><table border=1> <tr><td><font size=2>Engineer</td><td><font size=2>Script Name</td><td><font size=2>Result</td><td><font size=2>PRs</td></tr>
+<tr><td rowspan=15><font size=2>ankushts (15)</td><td><font size=2>112_l2vpn_vccv_bfd.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> O <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1399713 target=DISPLAY_PR>1399713 </a>[assigned]</br></td></tr><td><font size=2>12_3_RLI_16297_l2vpn_vpls_modify_bgp_path_selection.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> O <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1406961 target=DISPLAY_PR>1406961 </a>[assigned]</br></td></tr><td><font size=2>bgp_add_path.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1394127 target=DISPLAY_PR>1394127 </a>[assigned]</br></td></tr><td><font size=2>detour_computation.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>l2vpn_vccv_bfd.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> O <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1399713 target=DISPLAY_PR>1399713 </a>[assigned]</br></td></tr><td><font size=2>mcast-vpn.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>ospf_domainid.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1407141 target=DISPLAY_PR>1407141 </a>[assigned]</br></td></tr><td><font size=2>pim_graft.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>ppmd_pim_hello_rosen.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>qual_nexthop.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1411934 target=DISPLAY_PR>1411934 </a>[assigned]</br></td></tr><td><font size=2>vplsGeneral_macAge_novlan</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1410802 target=DISPLAY_PR>1410802 </a>[assigned]</br></td></tr><td><font size=2>vplsGeneral_macAge_vlan</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1410802 target=DISPLAY_PR>1410802 </a>[assigned]</br></td></tr><td><font size=2>vplsMplsFilter</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1410802 target=DISPLAY_PR>1410802 </a>[assigned]</br></td></tr><td><font size=2>vpls_vccv_bfd.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> O <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1399713 target=DISPLAY_PR>1399713 </a>[assigned]</br></td></tr><td><font size=2>vpn_rtf_2.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1401677 target=DISPLAY_PR>1401677 </a>[assigned]</br></td></tr><tr><td rowspan=1><font size=2>bshivas (1)</td><td><font size=2>174_RLI23424_evpn_Duplicate_MAC_MH_scl600.robot</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><tr><td rowspan=7><font size=2>harshr (7)</td><td><font size=2>OptionE_2AS_MH_LDP_Core.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #FD5757><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1391188 target=DISPLAY_PR>1391188 </a>[open]</br></td></tr><td><font size=2>ngmvpn_2l_rr_asm_dm.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1405239 target=DISPLAY_PR>1405239 </a>[assigned]</br></td></tr><td><font size=2>ngmvpn_2l_rr_i_p2mp_def_dm.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1405239 target=DISPLAY_PR>1405239 </a>[assigned]</br></td></tr><td><font size=2>ngmvpn_2l_rr_i_p2mp_def_ssm.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1405239 target=DISPLAY_PR>1405239 </a>[assigned]</br></td></tr><td><font size=2>ngmvpn_2l_rr_ssm_ssm.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1405239 target=DISPLAY_PR>1405239 </a>[assigned]</br></td></tr><td><font size=2>ngmvpn_tc_5_10_2.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1405239 target=DISPLAY_PR>1405239 </a>[assigned]</br></td></tr><td><font size=2>node_id_sub_object.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1406590 target=DISPLAY_PR>1406590 </a>[assigned]</br></td></tr><tr><td rowspan=4><font size=2>kjagadeesh (4)</td><td><font size=2>141R3_RLI_9025_vplsp2mp_nsr_dynamic1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>162_RLI_21344_OSPF_SPRING_NodeSID_4.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>162_Trinity_RLI_27384_bgp_vpn_api.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>RLI_13683_basic_1.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1404963 target=DISPLAY_PR>1404963 </a>[under-analysis]</br></td></tr><tr><td rowspan=1><font size=2>nsandhya (1)</td><td><font size=2>bgp_negative_cli.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><tr><td rowspan=7><font size=2>raziqm (7)</td><td><font size=2>114_igmpv3test.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141R4_Trinity_RLI_21627_EVPN_AA_Aliasing_FF0.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_trinity_RLI17152_evpn_vs_irb.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_x50_Trio_Hot_Root_Standby_HA.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>151_RLI_15733_Segmented_interarea_lsp_spt_only_inclusive_ldp_p2mp_seg_threshold_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>151_RLI_26333_ORR_5.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>v4_ov6_bgp_s1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><tr><td rowspan=3><font size=2>script changes (3)</td><td><font size=2>PR_235048.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>PR_393004.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>pim-v6rpdr.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><tr><td rowspan=2><font size=2>sridhbik (2)</td><td><font size=2>141_RLI19721_IPv6_RDNSS_Func_AE.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_RLI19721_IPv6_RDNSS_Switchover.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr></table>
+<br><br>
+<table>
+<tr><td>
+<b>Scripts failed Due to PRs - </b>20
+</td></tr>
+<tr><td>
+<b>Scripts pending debugging - </b>22
+</td></tr>
+<tr><td>
+<b>PRs Existing till now - </b></td></tr>
+</table><table border=1>
+<tr><td><font size=2 style="font-weight:bold">PR</td>
+               <td><font size=2 style="font-weight:bold"># Scripts Hit</td>
+               <td><font size=2 style="font-weight:bold">Planned_Release</td>
+               <td><font size=2 style="font-weight:bold">State</td>
+               <td><font size=2 style="font-weight:bold">Category</td>
+               <td><font size=2 style="font-weight:bold">Customer_Risk</td>
+               <td><font size=2 style="font-weight:bold">Problem_level</td>
+               <td><font size=2 style="font-weight:bold">Synopsis</td>
+               <td><font size=2 style="font-weight:bold">Found</td>
+               <td><font size=2 style="font-weight:bold">Reg</td>
+               <td><font size=2 style="font-weight:bold">Blocker</td> 
+            </tr><tr>
+<td><font size=2>1404963</td>
+               <td><font size=2>1</td>
+               <td><font size=2>19.2DCB</td><td bgcolor = #66FFFF ><font size=2>under-analysis</td>
+<td><font size=2>sw-evpn-l2fwd</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>CI-PR:getting incorrect value for "l2-mac-flags" in evpn mac-table instance output..instead of "DCP" we are getting "PC"</td>
+               <td><font size=2>OLD</td>
+               <td><font size=2></td>
+               <td><font size=2>FRS</td></tr>
+<tr>
+<td><font size=2>1406590</td>
+               <td><font size=2>1</td>
+               <td><font size=2>19.2DCB</td><td bgcolor = #66FFFF ><font size=2>assigned</td>
+<td><font size=2>sw-rp-rsvp</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>CI-PR:Link Protection is showing down in absence of Node Protection</td>
+               <td><font size=2>OLD</td>
+               <td><font size=2></td>
+               <td><font size=2>Test</td></tr>
+<tr>
+<td><font size=2>1394127</td>
+               <td><font size=2>1</td>
+               <td><font size=2>19.2DCB</td><td bgcolor = #66FFFF ><font size=2>assigned</td>
+<td><font size=2>sw-bgp</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>CI-PR : BGP : Incorrect next hop seein with bgp add path configuration</td>
+               <td><font size=2>OLD</td>
+               <td><font size=2></td>
+               <td><font size=2>Test</td></tr>
+<tr>
+<td><font size=2>1411934</td>
+               <td><font size=2>1</td>
+               <td><font size=2>19.2DCB</td><td bgcolor = #66FFFF ><font size=2>assigned</td>
+<td><font size=2>sw-routing-infra-nexthops</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>CI-PR : Expected route entries were not formed while verifying with  multiple qualified next hop testing</td>
+               <td><font size=2>OLD</td>
+               <td><font size=2></td>
+               <td><font size=2>NONE</td></tr>
+<tr>
+<td><font size=2>1401677</td>
+               <td><font size=2>1</td>
+               <td><font size=2>19.2DCB</td><td bgcolor = #66FFFF ><font size=2>assigned</td>
+<td><font size=2>sw-bgp</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>CI-PR : Memory block  for bgp metric nodes and  bgp_uio_trace_conf is not getting cleared even after deactivating protocolbgp and routing instances</td>
+               <td><font size=2>OLD</td>
+               <td><font size=2></td>
+               <td><font size=2>NONE</td></tr>
+<tr>
+<td><font size=2>1391188</td>
+               <td><font size=2>1</td>
+               <td><font size=2>19.2DCB</td><td bgcolor = #FD5757 ><font size=2>open</td>
+<td><font size=2>sw-vpls</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>[vpls] [generic_vpls]  After restarting chassisd ,current DF ASBR in BGP-VPLS ,VPLS connection state do not come up</td>
+               <td><font size=2>OLD</td>
+               <td><font size=2></td>
+               <td><font size=2>NONE</td></tr>
+<tr>
+<td><font size=2>1407141</td>
+               <td><font size=2>1</td>
+               <td><font size=2>19.2DCB</td><td bgcolor = #66FFFF ><font size=2>assigned</td>
+<td><font size=2>sw-bgp</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>CI-PR:Expected interface  is  not observed with  basic vpn_ospf check  path.</td>
+               <td><font size=2>OLD</td>
+               <td><font size=2></td>
+               <td><font size=2>NONE</td></tr>
+<tr>
+<td><font size=2>1406961</td>
+               <td><font size=2>1</td>
+               <td><font size=2>19.2DCB</td><td bgcolor = #66FFFF ><font size=2>assigned</td>
+<td><font size=2>sw-bgp</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>CI-PR : Active route is not received from route reflector in PE2 after enabling l2vpn-bgp-rules knob in RR1 and RR2</td>
+               <td><font size=2>OLD</td>
+               <td><font size=2></td>
+               <td><font size=2>NONE</td></tr>
+<tr>
+<td><font size=2>1410802</td>
+               <td><font size=2>4</td>
+               <td><font size=2>19.2DCB</td><td bgcolor = #66FFFF ><font size=2>assigned</td>
+<td><font size=2>sw-atlas-l2fwd</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>CI-PR: Mac address entry for CE1 is still observed on remote PE3 for more than 60 secs even after applying discard input flat filter .</td>
+               <td><font size=2>OLD</td>
+               <td><font size=2></td>
+               <td><font size=2>NONE</td></tr>
+<tr>
+<td><font size=2>1399713</td>
+               <td><font size=2>3</td>
+               <td><font size=2>19.2DCB</td><td bgcolor = #66FFFF ><font size=2>assigned</td>
+<td><font size=2>sw-mpls-oam</td> 
+               <td><font size=2>minor</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>PR to check bfd sessions for l2vpn, rsvp. ldp etc</td>
+               <td><font size=2>OLD</td>
+               <td><font size=2></td>
+               <td><font size=2>NONE</td></tr>
+<tr>
+<td><font size=2>1405239</td>
+               <td><font size=2>5</td>
+               <td><font size=2>19.2DCB</td><td bgcolor = #66FFFF ><font size=2>assigned</td>
+<td><font size=2>sw-mvpn</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>CI-PR:Failed to find expected AD route of 1:10.210.255.200:32767:10.210.255.200 in instance green on DUTs</td>
+               <td><font size=2>OLD</td>
+               <td><font size=2></td>
+               <td><font size=2>Test</td></tr>
+</table>
+</span></li>
+</br><hr> <b>Combined pass rate (actual) for Automated scripts: 97.99 % </b>
+<br />
+<hr noshade size="1" width="100%" />
+ 
+</body>
+</html>
+
+
+
+

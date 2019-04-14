@@ -1,0 +1,3713 @@
+<link rel="stylesheet" type="text/css" href="../shared/resources/css/jquery.dataTables.css">
+<link rel="stylesheet" type="text/css" href="../shared/resources/css/TableTools.css">
+
+<script type="text/javascript" src="../shared/resources/js/jquery.js"></script>
+<script type="text/javascript" src="../shared/resources/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="../shared/resources/js/TableTools.min.js"></script>
+<script type="text/javascript" src="../shared/resources/js/dataTableSelect.js"></script>
+
+
+
+
+<html>
+<head>
+ <title>DEBUG PAGE</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <meta name="Pragma" CONTENT="no-cache">
+ <meta name="robots" content="noindex, follow">
+ <link href="/ti/webapp/dr/shared/mainstyle.css" rel="stylesheet" type="text/css">
+ <script >
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                                            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68983099-2', 'auto');
+  //    ga('set', '&uid', 'ckevin'); // Set the user ID using signed-in user_id.
+  ga('send', 'pageview');
+           console.log("Updated");
+ </script>
+ </head>
+
+<!-- START STYLESHEET INCLUDE -->
+<script language="javascript">
+ if (navigator.platform.indexOf ("Win32") !=-1) {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ie.css" type="text/css">');
+ } else {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ns.css" type="text/css">');
+ }
+</script>
+
+<body class="td-white-background"  topmargin="5" leftmargin="6" marginwidth="6" marginheight="5">
+
+</script>
+<!-- END STYLESHEET INCLUDE -->
+
+
+<!-- 1st ROW START-->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left" width="65%">
+      <table  width="100% border="0 cellspacing="0" cellpadding="0">
+        <tr>
+          <td><a href="http://www-int.juniper.net/"><img src="/images/juniperLogo.gif" alt="Juniper Networks Logo" width="154" height="40" border="0" /></a></td>
+          <td><img src="/image/pixel.gif"  alt="" height="10" /></td>
+          <td> <font color=blue size=4>Regression the Heartbeat Of Testing</font></td>
+          <td>  <font size=2>  Hi _rptjamuser  </font> </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<div id="banner" style="    width: 90%;
+    width: 90%;
+        font-size: 16px;
+            background-color: greenyellow;
+                margin-left: 40px;
+                    padding: 5px 0 5px 0;
+                        height: 35px;
+                         "
+                          align="center">
+                            DR has been moved to <b>QUINCY</b> from <b>Sunnyvale</b> servers. Please upload your <b>DEBUG</b> logs to
+                            Quincy shells for debugging purposes. <br> Please use any one of the 16 Quincy Shells for
+                            this purpose. <span style="color:red;">ttqc-shell01 .... ttqc-shell16</span> 
+                            </div>
+
+
+
+<!-- 1st ROW END-->
+
+
+
+<!-- 2nd ROW END-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr class="tr-table-header-dark">
+    <td width="47%" colspan="2">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+        <tr>
+         <td width="50%" class="tr-table-header-dark"><img src="/image/pixel.gif"  alt="" width="438" height="1" /></td>
+         <td rowspan="2"  valign="bottom" class="tr-table-header-dark"><img src="/ti/webapp/dr/image/hdr_global_slantline_l.gif" width="25" height="49" alt="divider" /></td>
+        </tr>
+        <tr>
+         <td width="438" height="49" class="darkest-bgcolor"> &nbsp;&nbsp;&nbsp;&nbsp;<span class="header-label">Regression Debugging</span> </td>
+         <td><div align="center"><font size=4>18.1R3-FR_sazerac</font></div> </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- 2nd ROW END-->
+
+
+
+
+
+
+<table width="100%" cellspacing="0" cellpadding="0"><tr><td></td></tr></table>
+
+
+<!-- 3rd ROW START-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+
+
+
+
+
+    <td width="5" valign="top" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant5b.GIF"></td>
+    <td>
+      <div align="center">
+        <a href="index.mhtml?mode=0:2:0&result_id=185913" class="gnavsm">Reg Debug</a>
+      </div>
+    </td>
+    <td width="11" valign="top" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant5a.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=1:1:0&result_id=185913" class="gnavsm">Manual</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=2:0:0&result_id=185913" class="gnavsm">Status</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=3:1:0&result_id=185913" class="gnavsm">Reg Pass</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=4:1:0&result_id=185913" class="gnavsm">Edit</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=5:0:0&result_id=185913" class="gnavsm">Views</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=6:0:0&result_id=185913" class="gnavsm">Cores</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=7:0:0&result_id=185913" class="gnavsm">PR Verifications</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+  </tr>
+</table>
+<!-- 3rd ROW END-->
+
+
+<!-- 4rd ROW STARTS-->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+
+<!-- LEFT WINDOW STARTS -->
+
+    <td width="160 pixels" valign="top" rowspan="8"> 
+<!-- $VAR1 = 0;
+ -->
+
+      <!--
+ Debug page left frame. 
+Page: /httpd/htdocs/ti/webapp/dr/debug_dr/reg_debug/leftframe.mhtml
+-->
+
+<!--
+ Function to get all the dr owners
+-->
+
+
+
+
+<table width="120" border="0" cellspacing="0" cellpadding="0">
+	  
+  <tr align="left" valign="top"> 
+
+    <td width="1" bgcolor="#999999"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td width="5">&nbsp;</td>
+    <td background="/ti/webapp/dr/image/gra_home_verdot_sm.jpg" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td colspan="3"> 
+
+    <table width="120" border="0" cellspacing="0" cellpadding="0">
+
+      <tr align="left"> 
+        <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Loop through the titles in Left Frame -->
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md_1.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:0:2&result_id=185913" class="nav"> All Debug </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:1:2&result_id=185913" class="nav"> All PR </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:2:2&result_id=185913" class="nav"> My Pending </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:3:2&result_id=185913" class="nav"> My Completed </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:4:2&result_id=185913" class="nav"> My PR </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+      <tr align="left"> 
+        <td width="1" valign="top" class="home-left-nav-dark"></td>
+
+         <form name="new_owner_debug_page" type=post action="/ti/webapp/dr/debug_dr/index.mhtml">
+        
+          <td valign="center" class="home-left-nav-dark">
+           <select name=owner size="1" >
+               <option value="ALL">debug-owner</option>
+                   <option value=ALL selected>ALL</option>
+                   <option value=NONE>NONE</option>
+                   <option value=dillim>dillim</option>
+                   <option value=kdmanoj>kdmanoj</option>
+                   <option value=marun>marun</option>
+          </select>
+        </td>
+
+
+        <td valign="center" class="home-left-nav-dark">
+          <input type=hidden name=mode value="0:5:2">
+          <input type=hidden name=result_id value="185913">
+          <input type=image border="0" name="submit" 
+            src="/ti/webapp/dr/image/btn_global_goarrow_sm1.GIF" width="18" height="26"/>
+        </td>
+</form>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="1" valign="top" class="home-left-nav-dark"></td>
+
+         <form name="new_owner_debug_page" type=post action="/ti/webapp/dr/debug_dr/index.mhtml">
+          <td valign="center" class="home-left-nav-dark">
+           <input type="text" name=alias maxlength="40" value="" placeholder="ldap alias" style="width:100%;border-radius:3px;padding:2px 5px;" />
+          </td>
+
+          <td valign="center" class="home-left-nav-dark">
+           <input type=hidden name=mode value="0:5:2">
+           <input type=hidden name=result_id value="185913">
+           <input type=image border="0" name="submit" src="/ti/webapp/dr/image/btn_global_goarrow_sm1.GIF" width="18" height="26"/>
+          </td>
+         </form>
+      </tr>
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td colspan="3" valign="top" class="td-white-background" ><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+      <tr align="left"> 
+        <td colspan="3" valign="top" class="td-white-background" ><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+    </table>
+
+    </td>
+
+    <td background="/ti/webapp/dr/image/gra_home_verdot_sm.jpg" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td width="13">&nbsp;</td>
+    <td bgcolor="#999999" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+  </tr>
+
+
+  <tr align="left" valign="top"> 
+    <td width="1" bgcolor="#999999"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td colspan="7" bgcolor="#999999"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td bgcolor="#999999" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+  </tr>
+
+</table>
+
+
+
+
+
+   
+
+
+<p id=p1 align=center><a href="/ti/webapp/dr/main_dr/index.mhtml">DR Main Page </a></p>
+<p id=p1 align=center><a href="http://systest.juniper.net/twiki/bin/view/Main/WebHome" target="_blank">Systest Home </a></p>
+<p id=p1 align=center><a href="http://systest.juniper.net/twiki/bin/view/Main/TI" target="_blank">TI Home </a> </p>
+
+    </td>
+<!-- LEFT WINDOW ENDS-->
+
+
+<!-- RIGHT WINDOW STARTS-->
+    <td valign="top">
+        
+
+<table width="120" border="0" cellspacing="0" cellpadding="0">
+
+    
+
+<!-- 3rd ROW START-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td></td></tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=0:0:0&owner=_rptjamuser&result_id=185913" class="gnavsm">Script</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=0:0:1&owner=_rptjamuser&result_id=185913" class="gnavsm">TestBed/Domain</a>
+      </div>
+    </td>
+
+
+
+
+
+
+
+    <td width="5" valign="top" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant5b.GIF"></td>
+    <td>
+      <div align="center">
+        <a href="index.mhtml?mode=0:0:2&owner=_rptjamuser&result_id=185913" class="gnavsm">Reg Exit</a>
+      </div>
+    </td>
+    <td width="11" valign="top" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant5a.gif"></td>
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=0:0:3&owner=_rptjamuser&result_id=185913" class="gnavsm">DR Suggest</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+  </tr>
+</table>
+
+
+<!-- 3rd ROW END-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:20px">
+<tr>
+<td><a href='#' onclick='rpr_call();' style="margin-top:10px;margin-left:12px">RPR</a></td>
+</tr>
+</table>
+<script type='text/javascript'>
+  function rpr_call(){
+window.open("https://systest.juniper.net/ti/webapp/dr/debug_dr/reg_debug/rpr_info.mhtml?result_id=185913","_blank","toolbar=yes, scrollbars=yes,resizable=yes,width=400,height=350");
+}
+</script>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!-- 
+/*
+ * Function to sync DR to FusionV2 
+ */
+
+-->
+
+
+
+<br>Total time taken for DR Sync : 0 secs <br><!--
+/*
+ * /dr/debug_dr/reg_debug/reg_debug.mhtml 
+ */
+-->
+
+<!-- 
+/*
+ * Function to get all the debug info for a debug owner.
+ * Return of this function is some stats info and debug info.
+ *
+ *
+ */
+-->
+
+
+<!-- 
+/*
+ * Function to get the manual test count
+ */
+
+-->
+
+
+
+          <script language="javascript" type="text/javascript"> 
+              function confirmHighlighting(){
+                var confirmResult = confirm("This Operation contacts GNATS for realtime data and may take a little"+
+                    "longer to highlight the pending scripts associated with the Open PRs. Are you sure you would like"+
+                    "to continue?");
+                if(confirmResult == true){
+                    var current_url = location.href;
+                    current_url = current_url+"&highlightOpenPrs=true";
+                    location.replace(current_url);
+                }else{
+                  return false;
+                }
+              }
+          </script>
+
+  <div style="width:1100px;" id="debug_script_lists_div">
+      <input type="button" id="debugOpenPrButton" style="float:right;display:none;" value="Debug Open PRs"
+      onclick="debugOpenPrs();">
+      <button id="highlightButton" style="float:right;" type="button" onclick="confirmHighlighting();">Highlight Open PRs</button>
+  </div>
+
+    <!-- DISPLAY STATUS -->
+    <script type="text/javascript">
+
+function rm(id,harness_type) {
+    console.log(harness_type);
+    var all_reg_id = new Array();
+    all_reg_id = id.split(/\s+/);
+    var len = all_reg_id.length;
+
+    for (var i=0; i < len; i++) {
+      var link = "http://systest.juniper.net/rmv2/edp/"+all_reg_id[i];
+      if(harness_type.indexOf("fusion") != -1){
+        link = "https://inception.juniper.net/fusion/v2#submission_id="+all_reg_id[i];
+      }
+      window.open(link);
+    }
+
+    return true;
+}
+
+
+</script>
+
+
+<!-- 
+/*
+ * Function to get the pr count
+ */
+
+-->
+
+
+
+
+
+<p id=p3>Debug view: <font color=blue>ALL</font></p>
+
+<!-- START DISPLAY THE STATUS TABLE -->
+
+<table id=table1 border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>REG EXIT</td>
+  <td id=td5>REG FAIL</td>
+  <td id=td5>DEBUG PASS</td>
+  <td id=td5>SW-FAIL</td>
+  <td id=td5>HW-ENV</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>OTHER</td>
+  <td id=td5>TOOLS</td>
+  <td id=td5>PENDING</td>
+ </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>ABORT</td>
+  <td id=td1>7</td>
+  <td id=td1>6</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>6</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td3>1</td> 
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>CONNECT_LOST</td>
+  <td id=td1>2</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td3>1</td> 
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>CORE_PASS</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td3>1</td> 
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>FAIL</td>
+  <td id=td1>44</td>
+  <td id=td1>26</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>21</td>
+  <td id=td1>1</td>
+  <td id=td1>1</td>
+  <td id=td3>17</td> 
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>INIT_FAIL</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td3>1</td> 
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>LINK_FAIL</td>
+  <td id=td1>5</td>
+  <td id=td1>4</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>2</td>
+  <td id=td1>2</td>
+  <td id=td1>2</td>
+  <td id=td3>1</td> 
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>RESOURCE_UNAVAILABLE</td>
+  <td id=td1>1</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td3>0</td> 
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>SPIRENT_CONNECT_ERROR</td>
+  <td id=td1>17</td>
+  <td id=td1>13</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>13</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td3>3</td> 
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>TEST_TIMEOUT</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td3>1</td> 
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>TOTAL</td>
+  <td id=td4>79</td>
+  <td id=td4>51</td>
+  <td id=td4>1</td>
+  <td id=td4>1</td>
+  <td id=td4>43</td>
+  <td id=td4>3</td>
+  <td id=td4>5</td>
+  <td id=td3>26</td>
+ </tr>
+</table>
+
+
+<p id=p1>
+ Script Failures (Total / Pending):
+    <font color=black>79 / 26</font>,
+ PR Count:
+    <font color=black>2</font>,
+ Manual Test (Total / Pending):
+    <font color=black>0 / 0</font>
+
+</p><br>
+
+
+<!-- END   DISPLAY THE STATUS TABLE -->
+
+
+
+
+
+
+
+
+
+        <!-- DISPLAY PENDING -->
+        
+<script>
+  function changeURL(){
+    var url=location.href;
+    if(url.search("highlight") != -1){
+      var mod_url = url.replace("&highlightOpenPrs=true",'');
+      window.history.pushState("","",mod_url);
+    }
+  }
+</script>
+
+<body onLoad="changeURL()">
+<script type="text/javascript" src="/ti/webapp/dr/shared/wz_tooltip.js"></script>
+<script type="text/javascript" language="javascript">
+if (!document.location.origin) //IE hack
+   document.location.origin = document.location.protocol+"//"+document.location.host;
+
+function copy(text2copy) {
+  if (window.clipboardData) {
+    window.clipboardData.setData("Text",text2copy);
+  } else {
+    var flashcopier = 'flashcopier';
+    if(!document.getElementById(flashcopier)) {
+      var divholder = document.createElement('div');
+      divholder.id = flashcopier;
+      document.body.appendChild(divholder);
+    }
+    document.getElementById(flashcopier).innerHTML = '';
+    var divinfo = '<embed src="/ti/webapp/dr/debug_dr/reg_debug/_clipboard.swf" FlashVars="clipboard='+escape(text2copy)+'" width="0" height="0" type="application/x-shockwave-flash"></embed>';
+    document.getElementById(flashcopier).innerHTML = divinfo;
+  }
+}
+   var request = null;
+
+   function createRequest() {
+     try {
+       request = new XMLHttpRequest();
+     } catch (trymicrosoft) {
+       try {
+         request = new ActiveXObject("Msxml2.XMLHTTP");
+       } catch (othermicrosoft) {
+         try {
+           request = new ActiveXObject("Microsoft.XMLHTTP");
+         } catch (failed) {
+           request = null;
+         }
+       }
+     }
+
+     if (request == null)
+       Tip("Error creating request object!");
+   }
+
+function GetFailInfo(test_exec_id,exitcode) {
+    if ( exitcode == "FAIL" ||  exitcode == "LINK_FAIL" ) {
+    createRequest();
+    //var url = document.location.origin + '/cgi-bin/dr/GetFailInfo.cgi?test_exec_id=' + test_exec_id ;
+    var url = document.location.origin + '/ti/webapp/dr/debug_dr/infolink/GetFailInfo.mhtml?test_exec_id='+test_exec_id;
+    Tip("wait for it");
+    request.open("GET", url, true);
+    request.onreadystatechange = updatePage;
+    request.send(null);
+} else {
+    Tip("This shows info only for FAIL or LINK_FAIL");
+}
+}
+function GetTbInfo(test_id) {
+     createRequest();
+    //var url = document.location.origin + '/cgi-bin/dr/GetTbInfo.cgi?test_id=' + test_id;
+    var url = document.location.origin + '/ti/webapp/dr/debug_dr/infolink/GetTbInfo.mhtml?test_id=' + test_id;
+    Tip("wait for it");
+     request.open("GET", url, true);
+     request.onreadystatechange = updatePage;
+     request.send(null);
+}
+function GetTimeInfo(test_id) {
+    createRequest();
+    //var url = document.location.origin + '/cgi-bin/dr/GetTimeInfo.cgi?test_id=' + test_id;
+    var url = document.location.origin + '/cgi-bin/dr/GetTimeInfo.cgi?test_id=' + test_id;
+    Tip("wait for it");
+    request.open("GET", url, true);
+    request.onreadystatechange = updatePage;
+    request.send(null);
+}
+  function updatePage() {
+    if (request.readyState == 4) {
+        var resp = request.responseText;
+        Tip(resp);
+    }
+  }
+
+</script>
+
+<!-- START DISPLAY PENDING -->
+
+
+
+
+
+
+
+
+<br>
+<p id=p2>
+ Debug script listss: <font color=black>18.1R3-FR_sazerac</font>
+</p>
+
+
+
+
+
+
+
+
+
+<p id=p1>
+
+
+
+
+
+
+<!-- Frame the href for edit -->
+
+
+
+ Reg Exit: <font color=black><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6133068&result_id=185913&owner=ALL&task=EDIT>ABORT</a></font>
+
+
+ &nbsp;&nbsp;
+  <a href=/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml?debug_id=6133068&result_id=185913&owner=ALL&reschedule_type=JBATCH target=DISPLAY_JB>JB</a>
+
+</p>
+
+
+
+
+
+<table id=table2 onmouseout="UnTip()" width=85% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>JBATCH</td>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>
+  <td id=td5>TESTCASES (P:F:O:N)</td>
+  <td id=td5>TPM info</td>
+  <td id=td5 onmouseover="Tip('click here to enable history summary')" onmouseout="UnTip()"><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&result_id=185913&owner=ALL&comm_exp=NO&history_exp=YES>H</a></td>
+ </tr>
+
+
+   	<tr>
+
+  <td>37045026</td>
+  <td>Sazerac_RLI24482_151X53D50_DHCP_Relay_005.pl_60819_Default_etrans</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6133068&result_id=185913&owner=ALL&task=EDIT>Sazerac_RLI24482_151X53D50_DHCP_Relay_005.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/37045026/attempt_1/script-exec/&result_id=185913  onmouseover=GetFailInfo("37045026","ABORT") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/37045026/attempt_1/script-exec/" target=LOG> ABORT</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/37045026/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/37045026/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>4</span>:<span class=red>1</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=60819" onmouseover=GetTimeInfo("60819") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6133068  onmouseover=GetTbInfo("60819") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+
+<p id=p1>
+
+
+
+
+
+
+<!-- Frame the href for edit -->
+
+
+
+ Reg Exit: <font color=black><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6133066&result_id=185913&owner=ALL&task=EDIT>CONNECT_LOST</a></font>
+
+
+ &nbsp;&nbsp;
+  <a href=/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml?debug_id=6133066&result_id=185913&owner=ALL&reschedule_type=JBATCH target=DISPLAY_JB>JB</a>
+
+</p>
+
+
+
+
+
+<table id=table2 onmouseout="UnTip()" width=85% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>JBATCH</td>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>
+  <td id=td5>TESTCASES (P:F:O:N)</td>
+  <td id=td5>TPM info</td>
+  <td id=td5 onmouseover="Tip('click here to enable history summary')" onmouseout="UnTip()"><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&result_id=185913&owner=ALL&comm_exp=NO&history_exp=YES>H</a></td>
+ </tr>
+
+
+   	<tr>
+
+  <td>36962883</td>
+  <td>SAZERAC_RLI24479_151X53D50_Multicastl3vlanautorp_3.pl_101450_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6133066&result_id=185913&owner=ALL&task=EDIT>SAZERAC_RLI24479_151X53D50_Multicastl3vlanautorp_3.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962883/attempt_1/script-exec/&result_id=185913  onmouseover=GetFailInfo("36962883","CONNECT_LOST") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962883/attempt_1/script-exec/" target=LOG> CONNECT_LOST</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962883/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962883/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>2</span>:<span class=red>1</span>:<span class=gray>0</span>:<span class=black>3</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=101450" onmouseover=GetTimeInfo("101450") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6133066  onmouseover=GetTbInfo("101450") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+
+<p id=p1>
+
+
+
+
+
+
+<!-- Frame the href for edit -->
+
+
+
+ Reg Exit: <font color=black><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6116708&result_id=185913&owner=ALL&task=EDIT>CORE_PASS</a></font>
+
+
+ &nbsp;&nbsp;
+  <a href=/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml?debug_id=6116708&result_id=185913&owner=ALL&reschedule_type=JBATCH target=DISPLAY_JB>JB</a>
+
+</p>
+
+
+
+
+
+<table id=table2 onmouseout="UnTip()" width=85% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>JBATCH</td>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>
+  <td id=td5>TESTCASES (P:F:O:N)</td>
+  <td id=td5>TPM info</td>
+  <td id=td5 onmouseover="Tip('click here to enable history summary')" onmouseout="UnTip()"><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&result_id=185913&owner=ALL&comm_exp=NO&history_exp=YES>H</a></td>
+ </tr>
+
+
+   	<tr>
+
+  <td>36484088</td>
+  <td>SAZERAC_RLI24481_151X53D50_IPv6Acl_1_ph1.pl_101556_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6116708&result_id=185913&owner=ALL&task=EDIT>SAZERAC_RLI24481_151X53D50_IPv6Acl_1_ph1.pl</a></td>
+  <td bgcolor=#EB9A9A> 
+      <img src="/ti/webapp/dr/shared/images/core_hit.png" width="20px" height="20px" style="vertical-align:middle;"/>
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484088/attempt_1/script-exec/&result_id=185913  onmouseover=GetFailInfo("36484088","CORE_PASS") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484088/attempt_1/script-exec/" target=LOG> CORE_PASS</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484088/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484088/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>6</span>:<span class=red>0</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=101556" onmouseover=GetTimeInfo("101556") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116708  onmouseover=GetTbInfo("101556") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+
+<p id=p1>
+
+
+
+
+
+
+<!-- Frame the href for edit -->
+
+
+
+ Reg Exit: <font color=black><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6133225&debug_id=6120538&debug_id=6133070&debug_id=6127028&debug_id=6127023&debug_id=6133062&debug_id=6133059&debug_id=6133060&debug_id=6133063&debug_id=6127037&debug_id=6116689&debug_id=6133065&debug_id=6116706&debug_id=6116723&debug_id=6133058&debug_id=6127021&debug_id=6116729&result_id=185913&owner=ALL&task=EDIT>FAIL</a></font>
+
+
+ &nbsp;&nbsp;
+  <a href=/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml?debug_id=6133225&debug_id=6120538&debug_id=6133070&debug_id=6127028&debug_id=6127023&debug_id=6133062&debug_id=6133059&debug_id=6133060&debug_id=6133063&debug_id=6127037&debug_id=6116689&debug_id=6133065&debug_id=6116706&debug_id=6116723&debug_id=6133058&debug_id=6127021&debug_id=6116729&result_id=185913&owner=ALL&reschedule_type=JBATCH target=DISPLAY_JB>JB</a>
+
+</p>
+
+
+
+
+
+<table id=table2 onmouseout="UnTip()" width=85% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>JBATCH</td>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>
+  <td id=td5>TESTCASES (P:F:O:N)</td>
+  <td id=td5>TPM info</td>
+  <td id=td5 onmouseover="Tip('click here to enable history summary')" onmouseout="UnTip()"><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&result_id=185913&owner=ALL&comm_exp=NO&history_exp=YES>H</a></td>
+ </tr>
+
+
+   	<tr>
+
+  <td>37045060</td>
+  <td>SAZERAC_RLI24473_151X53D50_VC_HA_SET_2.pl_101650_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6133225&result_id=185913&owner=ALL&task=EDIT>SAZERAC_RLI24473_151X53D50_VC_HA_SET_2.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/37045060/attempt_1/script-exec/&result_id=185913  onmouseover=GetFailInfo("37045060","FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/37045060/attempt_1/script-exec/" target=LOG> FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/37045060/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/37045060/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>2</span>:<span class=red>1</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=101650" onmouseover=GetTimeInfo("101650") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6133225  onmouseover=GetTbInfo("101650") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>36483828</td>
+  <td>SAZERAC_RLI24479_151X53D50_IGMP_SNOOPING_1.pl_93056_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6120538&result_id=185913&owner=ALL&task=EDIT>SAZERAC_RLI24479_151X53D50_IGMP_SNOOPING_1.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483828/attempt_1/script-exec/&result_id=185913  onmouseover=GetFailInfo("36483828","FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483828/attempt_1/script-exec/" target=LOG> FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483828/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483828/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>6</span>:<span class=red>4</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=93056" onmouseover=GetTimeInfo("93056") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6120538  onmouseover=GetTbInfo("93056") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>36962881</td>
+  <td>SAZERAC_RLI24479_151X53D50_MulticastIrbautorpigmpenable_3.pl_101442_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6133070&result_id=185913&owner=ALL&task=EDIT>SAZERAC_RLI24479_151X53D50_MulticastIrbautorpigmpenable_3.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962881/attempt_1/script-exec/&result_id=185913  onmouseover=GetFailInfo("36962881","FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962881/attempt_1/script-exec/" target=LOG> FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962881/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962881/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>0</span>:<span class=red>5</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=101442" onmouseover=GetTimeInfo("101442") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6133070  onmouseover=GetTbInfo("101442") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>36483839</td>
+  <td>SAZERAC_RLI24479_151X53D50_MulticastIrbstaticigmpenable.pl_101001_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6127028&result_id=185913&owner=ALL&task=EDIT>SAZERAC_RLI24479_151X53D50_MulticastIrbstaticigmpenable.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483839/attempt_1/script-exec/&result_id=185913  onmouseover=GetFailInfo("36483839","FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483839/attempt_1/script-exec/" target=LOG> FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483839/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483839/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>2</span>:<span class=red>3</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=101001" onmouseover=GetTimeInfo("101001") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6127028  onmouseover=GetTbInfo("101001") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>36483915</td>
+  <td>SAZERAC_RLI24479_151X53D50_Multicastl3bootstrap.pl_101200_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6127023&result_id=185913&owner=ALL&task=EDIT>SAZERAC_RLI24479_151X53D50_Multicastl3bootstrap.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483915/attempt_1/script-exec/&result_id=185913  onmouseover=GetFailInfo("36483915","FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483915/attempt_1/script-exec/" target=LOG> FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483915/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483915/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>2</span>:<span class=red>3</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=101200" onmouseover=GetTimeInfo("101200") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6127023  onmouseover=GetTbInfo("101200") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>36962884</td>
+  <td>SAZERAC_RLI24481_151X53D50_CoS_FixedClassifier.pl_101672_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6133062&result_id=185913&owner=ALL&task=EDIT>SAZERAC_RLI24481_151X53D50_CoS_FixedClassifier.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962884/attempt_1/script-exec/&result_id=185913  onmouseover=GetFailInfo("36962884","FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962884/attempt_1/script-exec/" target=LOG> FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962884/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962884/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>4</span>:<span class=red>1</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=101672" onmouseover=GetTimeInfo("101672") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6133062  onmouseover=GetTbInfo("101672") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>36962886</td>
+  <td>SAZERAC_RLI24481_151X53D50_CoS_Scheduler.pl_101677_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6133059&result_id=185913&owner=ALL&task=EDIT>SAZERAC_RLI24481_151X53D50_CoS_Scheduler.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962886/attempt_1/script-exec/&result_id=185913  onmouseover=GetFailInfo("36962886","FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962886/attempt_1/script-exec/" target=LOG> FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962886/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962886/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>2</span>:<span class=red>5</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=101677" onmouseover=GetTimeInfo("101677") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6133059  onmouseover=GetTbInfo("101677") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>37045034</td>
+  <td>SAZERAC_RLI24481_151X53D50_egress_pacl.pl_101072_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6133060&result_id=185913&owner=ALL&task=EDIT>SAZERAC_RLI24481_151X53D50_egress_pacl.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/37045034/attempt_1/script-exec/&result_id=185913  onmouseover=GetFailInfo("37045034","FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/37045034/attempt_1/script-exec/" target=LOG> FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/37045034/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/37045034/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>4</span>:<span class=red>1</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=101072" onmouseover=GetTimeInfo("101072") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6133060  onmouseover=GetTbInfo("101072") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>37045048</td>
+  <td>SAZERAC_RLI24481_151X53D50_pacl_2.pl_101495_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6133063&result_id=185913&owner=ALL&task=EDIT>SAZERAC_RLI24481_151X53D50_pacl_2.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/37045048/attempt_1/script-exec/&result_id=185913  onmouseover=GetFailInfo("37045048","FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/37045048/attempt_1/script-exec/" target=LOG> FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/37045048/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/37045048/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>3</span>:<span class=red>3</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=101495" onmouseover=GetTimeInfo("101495") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6133063  onmouseover=GetTbInfo("101495") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>36484061</td>
+  <td>SAZERAC_RLI24481_151X53D50_vacl_3_2.pl_101513_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6127037&result_id=185913&owner=ALL&task=EDIT>SAZERAC_RLI24481_151X53D50_vacl_3_2.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484061/attempt_1/script-exec/&result_id=185913  onmouseover=GetFailInfo("36484061","FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484061/attempt_1/script-exec/" target=LOG> FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484061/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484061/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>0</span>:<span class=red>3</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=101513" onmouseover=GetTimeInfo("101513") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6127037  onmouseover=GetTbInfo("101513") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>36484142</td>
+  <td>SAZERAC_RLI24484_151X53D50_CAPTIVE_PORTAL_new_1.pl_101714_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6116689&result_id=185913&owner=ALL&task=EDIT>SAZERAC_RLI24484_151X53D50_CAPTIVE_PORTAL_new_1.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484142/attempt_1/script-exec/&result_id=185913  onmouseover=GetFailInfo("36484142","FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484142/attempt_1/script-exec/" target=LOG> FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484142/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484142/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>2</span>:<span class=red>2</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=101714" onmouseover=GetTimeInfo("101714") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116689  onmouseover=GetTbInfo("101714") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>36962879</td>
+  <td>Sazerac_RLI24477_151X53D50_L2PT_1.pl_63406_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6133065&result_id=185913&owner=ALL&task=EDIT>Sazerac_RLI24477_151X53D50_L2PT_1.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962879/attempt_1/script-exec/&result_id=185913  onmouseover=GetFailInfo("36962879","FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962879/attempt_1/script-exec/" target=LOG> FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962879/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962879/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>4</span>:<span class=red>2</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=63406" onmouseover=GetTimeInfo("63406") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6133065  onmouseover=GetTbInfo("63406") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>36484087</td>
+  <td>Sazerac_RLI24477_151X53D50_MVRP_1_ph1.pl_101555_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6116706&result_id=185913&owner=ALL&task=EDIT>Sazerac_RLI24477_151X53D50_MVRP_1_ph1.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484087/attempt_1/script-exec/&result_id=185913  onmouseover=GetFailInfo("36484087","FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484087/attempt_1/script-exec/" target=LOG> FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484087/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484087/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>4</span>:<span class=red>2</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=101555" onmouseover=GetTimeInfo("101555") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116706  onmouseover=GetTbInfo("101555") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>36483996</td>
+  <td>Sazerac_RLI24477_151X53D50_RC_2.pl_101379_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6116723&result_id=185913&owner=ALL&task=EDIT>Sazerac_RLI24477_151X53D50_RC_2.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483996/attempt_1/script-exec/&result_id=185913  onmouseover=GetFailInfo("36483996","FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483996/attempt_1/script-exec/" target=LOG> FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483996/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483996/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>1</span>:<span class=red>6</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=101379" onmouseover=GetTimeInfo("101379") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116723  onmouseover=GetTbInfo("101379") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>37045066</td>
+  <td>Sazerac_RLI24477_151X53D50_Uplink_Failure_Detectaion_1_1.pl_101719_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6133058&result_id=185913&owner=ALL&task=EDIT>Sazerac_RLI24477_151X53D50_Uplink_Failure_Detectaion_1_1.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/37045066/attempt_1/script-exec/&result_id=185913  onmouseover=GetFailInfo("37045066","FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/37045066/attempt_1/script-exec/" target=LOG> FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/37045066/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/37045066/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>5</span>:<span class=red>3</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=101719" onmouseover=GetTimeInfo("101719") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6133058  onmouseover=GetTbInfo("101719") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>36483823</td>
+  <td>Sazerac_RLI24477_151X53D50_vlaninfra_1_1.pl_93042_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6127021&result_id=185913&owner=ALL&task=EDIT>Sazerac_RLI24477_151X53D50_vlaninfra_1_1.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483823/attempt_1/script-exec/&result_id=185913  onmouseover=GetFailInfo("36483823","FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483823/attempt_1/script-exec/" target=LOG> FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483823/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483823/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>6</span>:<span class=red>1</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=93042" onmouseover=GetTimeInfo("93042") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6127021  onmouseover=GetTbInfo("93042") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>36483824</td>
+  <td>Sazerac_RLI24478_151X53D50_L3_vrrp1.pl_93047_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6116729&result_id=185913&owner=ALL&task=EDIT>Sazerac_RLI24478_151X53D50_L3_vrrp1.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483824/attempt_4/script-exec/&result_id=185913  onmouseover=GetFailInfo("36483824","FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483824/attempt_4/script-exec/" target=LOG> FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483824/attempt_4/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483824/attempt_4/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>1</span>:<span class=red>2</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=93047" onmouseover=GetTimeInfo("93047") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116729  onmouseover=GetTbInfo("93047") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+
+<p id=p1>
+
+
+
+
+
+
+<!-- Frame the href for edit -->
+
+
+
+ Reg Exit: <font color=black><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6120533&result_id=185913&owner=ALL&task=EDIT>INIT_FAIL</a></font>
+
+
+ &nbsp;&nbsp;
+  <a href=/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml?debug_id=6120533&result_id=185913&owner=ALL&reschedule_type=JBATCH target=DISPLAY_JB>JB</a>
+
+</p>
+
+
+
+
+
+<table id=table2 onmouseout="UnTip()" width=85% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>JBATCH</td>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>
+  <td id=td5>TESTCASES (P:F:O:N)</td>
+  <td id=td5>TPM info</td>
+  <td id=td5 onmouseover="Tip('click here to enable history summary')" onmouseout="UnTip()"><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&result_id=185913&owner=ALL&comm_exp=NO&history_exp=YES>H</a></td>
+ </tr>
+
+
+   	<tr>
+
+  <td>36484121</td>
+  <td>SAZERAC_RLI24481_151X53D50_COS_Policer.pl_101676_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6120533&result_id=185913&owner=ALL&task=EDIT>SAZERAC_RLI24481_151X53D50_COS_Policer.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484121/attempt_1/script-exec/&result_id=185913  onmouseover=GetFailInfo("36484121","INIT_FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484121/attempt_1/script-exec/" target=LOG> INIT_FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484121/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484121/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>0</span>:<span class=red>0</span>:<span class=gray>0</span>:<span class=black>22</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=101676" onmouseover=GetTimeInfo("101676") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6120533  onmouseover=GetTbInfo("101676") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+
+<p id=p1>
+
+
+
+
+
+
+<!-- Frame the href for edit -->
+
+
+
+ Reg Exit: <font color=black><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6133069&result_id=185913&owner=ALL&task=EDIT>LINK_FAIL</a></font>
+
+
+ &nbsp;&nbsp;
+  <a href=/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml?debug_id=6133069&result_id=185913&owner=ALL&reschedule_type=JBATCH target=DISPLAY_JB>JB</a>
+
+</p>
+
+
+
+
+
+<table id=table2 onmouseout="UnTip()" width=85% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>JBATCH</td>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>
+  <td id=td5>TESTCASES (P:F:O:N)</td>
+  <td id=td5>TPM info</td>
+  <td id=td5 onmouseover="Tip('click here to enable history summary')" onmouseout="UnTip()"><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&result_id=185913&owner=ALL&comm_exp=NO&history_exp=YES>H</a></td>
+ </tr>
+
+
+   	<tr>
+
+  <td>36962877</td>
+  <td>Sazerac_RLI24483_151X53D50_Erspan_Port_Mirroring.pl_101137_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6133069&result_id=185913&owner=ALL&task=EDIT>Sazerac_RLI24483_151X53D50_Erspan_Port_Mirroring.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962877/attempt_1/script-exec/&result_id=185913  onmouseover=GetFailInfo("36962877","LINK_FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962877/attempt_1/script-exec/" target=LOG> LINK_FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962877/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962877/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>0</span>:<span class=red>0</span>:<span class=gray>0</span>:<span class=black>6</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=101137" onmouseover=GetTimeInfo("101137") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6133069  onmouseover=GetTbInfo("101137") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<p id=p1>
+
+
+
+
+
+
+<!-- Frame the href for edit -->
+
+
+
+ Reg Exit: <font color=black><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6123723&debug_id=6133064&debug_id=6120530&result_id=185913&owner=ALL&task=EDIT>SPIRENT_CONNECT_ERROR</a></font>
+
+
+ &nbsp;&nbsp;
+  <a href=/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml?debug_id=6123723&debug_id=6133064&debug_id=6120530&result_id=185913&owner=ALL&reschedule_type=JBATCH target=DISPLAY_JB>JB</a>
+
+</p>
+
+
+
+
+
+<table id=table2 onmouseout="UnTip()" width=85% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>JBATCH</td>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>
+  <td id=td5>TESTCASES (P:F:O:N)</td>
+  <td id=td5>TPM info</td>
+  <td id=td5 onmouseover="Tip('click here to enable history summary')" onmouseout="UnTip()"><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&result_id=185913&owner=ALL&comm_exp=NO&history_exp=YES>H</a></td>
+ </tr>
+
+
+   	<tr>
+
+  <td>36484020</td>
+  <td>SAZERAC_RLI24479_151X53D50_L2_Multicast_3.pl_101436_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6123723&result_id=185913&owner=ALL&task=EDIT>SAZERAC_RLI24479_151X53D50_L2_Multicast_3.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484020/attempt_1/script-exec/&result_id=185913  onmouseover=GetFailInfo("36484020","SPIRENT_CONNECT_ERROR") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484020/attempt_1/script-exec/" target=LOG> SPIRENT_CONNECT_ERROR</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484020/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484020/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>0</span>:<span class=red>0</span>:<span class=gray>0</span>:<span class=black>4</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=101436" onmouseover=GetTimeInfo("101436") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6123723  onmouseover=GetTbInfo("101436") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>36962885</td>
+  <td>SAZERAC_RLI24481_151X53D50_CoS_misc.pl_101675_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6133064&result_id=185913&owner=ALL&task=EDIT>SAZERAC_RLI24481_151X53D50_CoS_misc.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962885/attempt_1/script-exec/&result_id=185913  onmouseover=GetFailInfo("36962885","SPIRENT_CONNECT_ERROR") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962885/attempt_1/script-exec/" target=LOG> SPIRENT_CONNECT_ERROR</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962885/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962885/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>0</span>:<span class=red>0</span>:<span class=gray>0</span>:<span class=black>13</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=101675" onmouseover=GetTimeInfo("101675") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6133064  onmouseover=GetTbInfo("101675") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>36484136</td>
+  <td>Sazerac_RLI24482_151X53D50_DHCPv6_Snooping_NDI_2_new.pl_101700_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6120530&result_id=185913&owner=ALL&task=EDIT>Sazerac_RLI24482_151X53D50_DHCPv6_Snooping_NDI_2_new.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484136/attempt_1/script-exec/&result_id=185913  onmouseover=GetFailInfo("36484136","SPIRENT_CONNECT_ERROR") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484136/attempt_1/script-exec/" target=LOG> SPIRENT_CONNECT_ERROR</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484136/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484136/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>0</span>:<span class=red>0</span>:<span class=gray>0</span>:<span class=black>2</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=101700" onmouseover=GetTimeInfo("101700") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6120530  onmouseover=GetTbInfo("101700") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+
+<p id=p1>
+
+
+
+
+
+
+<!-- Frame the href for edit -->
+
+
+
+ Reg Exit: <font color=black><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6133915&result_id=185913&owner=ALL&task=EDIT>TEST_TIMEOUT</a></font>
+
+
+ &nbsp;&nbsp;
+  <a href=/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml?debug_id=6133915&result_id=185913&owner=ALL&reschedule_type=JBATCH target=DISPLAY_JB>JB</a>
+
+</p>
+
+
+
+
+
+<table id=table2 onmouseout="UnTip()" width=85% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>JBATCH</td>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>
+  <td id=td5>TESTCASES (P:F:O:N)</td>
+  <td id=td5>TPM info</td>
+  <td id=td5 onmouseover="Tip('click here to enable history summary')" onmouseout="UnTip()"><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&result_id=185913&owner=ALL&comm_exp=NO&history_exp=YES>H</a></td>
+ </tr>
+
+
+   	<tr>
+
+  <td>37045059</td>
+  <td>Sazerac_RLI24477_151X53D55_Uplink_Failure_Detectaion_1_1.pl_101644_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6133915&result_id=185913&owner=ALL&task=EDIT>Sazerac_RLI24477_151X53D55_Uplink_Failure_Detectaion_1_1.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/37045059/attempt_1/script-exec/&result_id=185913  onmouseover=GetFailInfo("37045059","TEST_TIMEOUT") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/37045059/attempt_1/script-exec/" target=LOG> TEST_TIMEOUT</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/37045059/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/37045059/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>0</span>:<span class=red>0</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=101644" onmouseover=GetTimeInfo("101644") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6133915  onmouseover=GetTbInfo("101644") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+</table>
+
+
+
+
+
+<script>
+   function debugOpenPrs(){
+      var editUrl =
+        "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&result_id=185913&owner=ALL&task=EDIT&debug_id_pr=";    
+      window.open(editUrl,'_blank');
+   }
+ </script>
+
+
+  
+
+<br>
+<hr>
+<br>
+<table border=0>
+   <tr> 
+    <td bgcolor=#FFFF00>&nbsp;</td> <td> Transition scripts </td> 
+	  <td></td>
+    <td bgcolor=#EB9A9A>&nbsp;</td> <td> This log hit a core </td> 
+ 	  <td></td>
+
+
+
+    <td></td>
+   </tr>
+</table>
+
+</body>
+<!-- END   DISPLAY PENDING -->
+
+
+
+
+
+
+
+
+
+    <!-- DISPLAY COMPLETED -->
+    <link rel="stylesheet" type="text/css" href="/ti/webapp/dr/shared/activerenderer.css">
+<script type="text/javascript" src="/ti/webapp/dr/shared/activerenderer.js"></script>
+
+
+
+
+<!-- START DISPLAY COMPLETED -->
+ <p id=p4>--------------------------------------------------------------------------------------------------------------------------------------------- </p>
+
+
+
+ 
+
+
+<br> <p id=p2> Debug completed script list: <font color=black>18.1R3-FR_sazerac</font> </p>
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Reg Exit: <font color=black>ABORT</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&result_id=185913&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>SAZERAC_RLI24479_151X53D50_vlanrange_igmpsnooping.pl_101209_Default</td>
+  <td>SAZERAC_RLI24479_151X53D50_vlanrange_igmpsnooping.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483919/attempt_1/script-exec/&result_id=185913 target=LOG>ABORT</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483919&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>vavula</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116717 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116717_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116717_2')" onmouseout="nodeLow ('p6116717_2')">C</span>
+    </div>
+    <div id=p6116717_2 class=collapsed>
+        <span class=text><b>rerunpassed</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24474_151X53D50_connectivity.pl_101035_Default</td>
+  <td>Sazerac_RLI24474_151X53D50_connectivity.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483783/attempt_1/script-exec/&result_id=185913 target=LOG>ABORT</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483783&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>vikulkarni</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6120678 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6120678_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6120678_2')" onmouseout="nodeLow ('p6120678_2')">C</span>
+    </div>
+    <div id=p6120678_2 class=collapsed>
+        <span class=text><b>Ping to Host IP is done</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24474_151X53D50_connectivity_saz48.pl_101634_Default</td>
+  <td>Sazerac_RLI24474_151X53D50_connectivity_saz48.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484107/attempt_1/script-exec/&result_id=185913 target=LOG>ABORT</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36484107&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>vikulkarni</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6123719 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6123719_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6123719_2')" onmouseout="nodeLow ('p6123719_2')">C</span>
+    </div>
+    <div id=p6123719_2 class=collapsed>
+        <span class=text><b>Ping to Host IP is done</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24477_151X53D50_Uplink_Failure_Detectaion_1.pl_65701_Default</td>
+  <td>Sazerac_RLI24477_151X53D50_Uplink_Failure_Detectaion_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483803/attempt_1/script-exec/&result_id=185913 target=LOG>ABORT</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483803&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>vikulkarni</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116676 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116676_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116676_2')" onmouseout="nodeLow ('p6116676_2')">C</span>
+    </div>
+    <div id=p6116676_2 class=collapsed>
+        <span class=text><b>Resources are changed according to script topology.</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24477_151X53D50_Uplink_Failure_Detectaion_2.pl_101409_Default</td>
+  <td>Sazerac_RLI24477_151X53D50_Uplink_Failure_Detectaion_2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484009/attempt_2/script-exec/&result_id=185913 target=LOG>ABORT</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36484009&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>vikulkarni</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116679 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116679_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116679_2')" onmouseout="nodeLow ('p6116679_2')">C</span>
+    </div>
+    <div id=p6116679_2 class=collapsed>
+        <span class=text><b>Resources are changed according to script topology.</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24477_151X53D50_Uplink_Failure_Detectaion_4.pl_101411_Default</td>
+  <td>Sazerac_RLI24477_151X53D50_Uplink_Failure_Detectaion_4.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484010/attempt_1/script-exec/&result_id=185913 target=LOG>ABORT</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36484010&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>vikulkarni</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116711 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116711_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116711_2')" onmouseout="nodeLow ('p6116711_2')">C</span>
+    </div>
+    <div id=p6116711_2 class=collapsed>
+        <span class=text><b>Resources are changed according to script topology.</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Reg Exit: <font color=black>CONNECT_LOST</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&result_id=185913&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>SAZERAC_RLI24478_151X53D50_L3Gresfulospf.pl_61191_Default</td>
+  <td>SAZERAC_RLI24478_151X53D50_L3Gresfulospf.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483926/attempt_2/script-exec/&result_id=185913 target=LOG>CONNECT_LOST</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483926&result_id=185913 target=LOG>PASS</a> </td>
+  <td>HW-ROUTER-NOT-REACHABLE</td>
+  <td>vikulkarni</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116725 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116725_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116725_2')" onmouseout="nodeLow ('p6116725_2')">C</span>
+    </div>
+    <div id=p6116725_2 class=collapsed>
+        <span class=text><b>Router is reachable</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Reg Exit: <font color=black>FAIL</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&result_id=185913&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>SAZERAC_15.1X53_D50_ICMPv6_RA.pl_101722_Default</td>
+  <td>SAZERAC_15.1X53_D50_ICMPv6_RA.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484148/attempt_1/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36484148&result_id=185913 target=LOG>PASS</a> </td>
+  <td>TOOLS-PARAMS</td>
+  <td>cyadla</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6120537 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6120537_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6120537_2')" onmouseout="nodeLow ('p6120537_2')">C</span>
+    </div>
+    <div id=p6120537_2 class=collapsed>
+        <span class=text><b>passed in jdi-reg-blrt-saz-bng-reg4</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>SAZERAC_RLI24478_151X53D50_Vrrp_restart.pl_101128_Default</td>
+  <td>SAZERAC_RLI24478_151X53D50_Vrrp_restart.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483894/attempt_4/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483894&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>anukritij</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6128793 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6128793_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6128793_2')" onmouseout="nodeLow ('p6128793_2')">C</span>
+    </div>
+    <div id=p6128793_2 class=collapsed>
+        <span class=text><b>passed in saz-bng-reg1</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>SAZERAC_RLI24478_151X53D50_ospf_lag.pl_94010_Default</td>
+  <td>SAZERAC_RLI24478_151X53D50_ospf_lag.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483829/attempt_2/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483829&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>mtiruvaipati</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6120529 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6120529_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6120529_2')" onmouseout="nodeLow ('p6120529_2')">C</span>
+    </div>
+    <div id=p6120529_2 class=collapsed>
+        <span class=text><b>Pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>SAZERAC_RLI24478_151X53D50_rip_gracefulrestart_vlan.pl_101112_Default</td>
+  <td>SAZERAC_RLI24478_151X53D50_rip_gracefulrestart_vlan.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483885/attempt_1/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483885&result_id=185913 target=LOG>PASS</a> </td>
+  <td>TOOLS-PARAMS</td>
+  <td>cyadla</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6120536 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6120536_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6120536_2')" onmouseout="nodeLow ('p6120536_2')">C</span>
+    </div>
+    <div id=p6120536_2 class=collapsed>
+        <span class=text><b>passed in jdi-reg-blrt-saz-bng-reg4</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>SAZERAC_RLI24479_151X53D50_IGMP_SNOOPING_2.pl_101668_Default</td>
+  <td>SAZERAC_RLI24479_151X53D50_IGMP_SNOOPING_2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484116/attempt_1/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36484116&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>anukritij</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6120539 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6120539_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6120539_2')" onmouseout="nodeLow ('p6120539_2')">C</span>
+    </div>
+    <div id=p6120539_2 class=collapsed>
+        <span class=text><b>passed</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>SAZERAC_RLI24481_151X53D50_Syslog_reject_ingress_1.pl_101025_Default</td>
+  <td>SAZERAC_RLI24481_151X53D50_Syslog_reject_ingress_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483771/attempt_1/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483771&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>cyadla</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116668 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116668_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116668_2')" onmouseout="nodeLow ('p6116668_2')">C</span>
+    </div>
+    <div id=p6116668_2 class=collapsed>
+        <span class=text><b>rerun - pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>SAZERAC_RLI24481_151X53D50_l2l3l4.pl_101083_Default</td>
+  <td>SAZERAC_RLI24481_151X53D50_l2l3l4.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483876/attempt_1/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483876&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>vikulkarni</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6127027 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6127027_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6127027_2')" onmouseout="nodeLow ('p6127027_2')">C</span>
+    </div>
+    <div id=p6127027_2 class=collapsed>
+        <span class=text><b>DBP is used</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>SAZERAC_RLI24481_151X53D50_lo0_DENYALL_2.pl_101494_Default</td>
+  <td>SAZERAC_RLI24481_151X53D50_lo0_DENYALL_2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484049/attempt_1/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36484049&result_id=185913 target=LOG>PASS</a> </td>
+  <td>TOOLS-PARAMS</td>
+  <td>cyadla</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6120531 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6120531_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6120531_2')" onmouseout="nodeLow ('p6120531_2')">C</span>
+    </div>
+    <div id=p6120531_2 class=collapsed>
+        <span class=text><b>passed in jdi-reg-blrt-saz-bng-reg1</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>SAZERAC_RLI24484_151X53D50_CAPTIVE_PORTAL_new.pl_101715_Default</td>
+  <td>SAZERAC_RLI24484_151X53D50_CAPTIVE_PORTAL_new.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484143/attempt_1/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36484143&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>mtiruvaipati</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116683 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116683_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116683_2')" onmouseout="nodeLow ('p6116683_2')">C</span>
+    </div>
+    <div id=p6116683_2 class=collapsed>
+        <span class=text><b>Pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>SAZERAC_RLI24484_151X53D50_Captive_Portal.pl_101212_Default</td>
+  <td>SAZERAC_RLI24484_151X53D50_Captive_Portal.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483927/attempt_1/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483927&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>vavula</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116707 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116707_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116707_2')" onmouseout="nodeLow ('p6116707_2')">C</span>
+    </div>
+    <div id=p6116707_2 class=collapsed>
+        <span class=text><b>rerunpassed</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>SAZERAC_RLI24484_151X53D50_Captive_Portal_1_ph1.pl_101562_Default</td>
+  <td>SAZERAC_RLI24484_151X53D50_Captive_Portal_1_ph1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484091/attempt_1/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36484091&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>mtiruvaipati</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116693 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116693_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116693_2')" onmouseout="nodeLow ('p6116693_2')">C</span>
+    </div>
+    <div id=p6116693_2 class=collapsed>
+        <span class=text><b>Pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>SAZERAC_RLI24484_151X53D50_dot1x_advanced_5.pl_93048_Default</td>
+  <td>SAZERAC_RLI24484_151X53D50_dot1x_advanced_5.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483825/attempt_1/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483825&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>vikulkarni</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116726 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116726_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116726_2')" onmouseout="nodeLow ('p6116726_2')">C</span>
+    </div>
+    <div id=p6116726_2 class=collapsed>
+        <span class=text><b>Resources are changed according to script topology.</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>SAZERAC_RLI24484_151X53D50_dot1x_basic_5.pl_100998_Default</td>
+  <td>SAZERAC_RLI24484_151X53D50_dot1x_basic_5.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483777/attempt_1/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483777&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>vikulkarni</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116736 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116736_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116736_2')" onmouseout="nodeLow ('p6116736_2')">C</span>
+    </div>
+    <div id=p6116736_2 class=collapsed>
+        <span class=text><b>Calling function issue</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24474_151X53D50_Console_saz48.pl_101627_Default</td>
+  <td>Sazerac_RLI24474_151X53D50_Console_saz48.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484104/attempt_1/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484104/attempt_1/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td>KNOWN-ISSUE-NOT-FIXED</td>
+  <td>cyadla</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "#66FF66"> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1351906 target=DISPLAY_PR>1351906 </a>[closed]</br></td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116712 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116712_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116712_2')" onmouseout="nodeLow ('p6116712_2')">C</span>
+    </div>
+    <div id=p6116712_2 class=collapsed>
+        <span class=text><b>Merged in PR</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24477_151X53D50_L2PT_3.pl_63405_Default</td>
+  <td>Sazerac_RLI24477_151X53D50_L2PT_3.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483791/attempt_1/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483791&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>vikulkarni</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116682 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116682_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116682_2')" onmouseout="nodeLow ('p6116682_2')">C</span>
+    </div>
+    <div id=p6116682_2 class=collapsed>
+        <span class=text><b>LLDP issue resolved</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24477_151X53D50_SFLOW_3.pl_101403_Default</td>
+  <td>Sazerac_RLI24477_151X53D50_SFLOW_3.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484004/attempt_2/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36484004&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>mtiruvaipati</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116701 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116701_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116701_2')" onmouseout="nodeLow ('p6116701_2')">C</span>
+    </div>
+    <div id=p6116701_2 class=collapsed>
+        <span class=text><b>Pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24477_151X53D50_Sticky_MAC_2.pl_101407_Default</td>
+  <td>Sazerac_RLI24477_151X53D50_Sticky_MAC_2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484007/attempt_1/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36484007&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>vikulkarni</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6123722 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6123722_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6123722_2')" onmouseout="nodeLow ('p6123722_2')">C</span>
+    </div>
+    <div id=p6123722_2 class=collapsed>
+        <span class=text><b>committed properly</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24477_151X53D50_Unknown_unicast_forwarding_1.pl_101038_Default</td>
+  <td>Sazerac_RLI24477_151X53D50_Unknown_unicast_forwarding_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483802/attempt_1/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483802&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>mtiruvaipati</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116735 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116735_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116735_2')" onmouseout="nodeLow ('p6116735_2')">C</span>
+    </div>
+    <div id=p6116735_2 class=collapsed>
+        <span class=text><b>Pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24477_151X53D50_mac_move_trunk.pl_63393_Default</td>
+  <td>Sazerac_RLI24477_151X53D50_mac_move_trunk.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483807/attempt_1/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483807&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>vikulkarni</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6127020 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6127020_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6127020_2')" onmouseout="nodeLow ('p6127020_2')">C</span>
+    </div>
+    <div id=p6127020_2 class=collapsed>
+        <span class=text><b>mac-move-limit work properly</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24477_151X53D50_mapping_swap_egress_lag_lacp.pl_100999_Default</td>
+  <td>Sazerac_RLI24477_151X53D50_mapping_swap_egress_lag_lacp.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483808/attempt_1/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483808&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>vavula</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6127029 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6127029_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6127029_2')" onmouseout="nodeLow ('p6127029_2')">C</span>
+    </div>
+    <div id=p6127029_2 class=collapsed>
+        <span class=text><b>rerunpassed</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24477_151X53D50_mapping_swap_ingress_3.pl_101352_Default</td>
+  <td>Sazerac_RLI24477_151X53D50_mapping_swap_ingress_3.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483991/attempt_1/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483991&result_id=185913 target=LOG>PASS</a> </td>
+  <td>TOOLS-PARAMS</td>
+  <td>cyadla</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6127022 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6127022_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6127022_2')" onmouseout="nodeLow ('p6127022_2')">C</span>
+    </div>
+    <div id=p6127022_2 class=collapsed>
+        <span class=text><b>passed in sazmac-bng-reg1</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24477_151X53D50_rfc2787a_mib_1.pl_101384_Default</td>
+  <td>Sazerac_RLI24477_151X53D50_rfc2787a_mib_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483998/attempt_1/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483998&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>vikulkarni</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116727 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116727_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116727_2')" onmouseout="nodeLow ('p6116727_2')">C</span>
+    </div>
+    <div id=p6116727_2 class=collapsed>
+        <span class=text><b>MIB path is proper</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24477_151X53D50_vlaninfra_1.pl_101189_Default</td>
+  <td>Sazerac_RLI24477_151X53D50_vlaninfra_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483752/attempt_1/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483752&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>mtiruvaipati</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116709 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116709_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116709_2')" onmouseout="nodeLow ('p6116709_2')">C</span>
+    </div>
+    <div id=p6116709_2 class=collapsed>
+        <span class=text><b>Pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24477_151X53D50_vstp_2.pl_101415_Default</td>
+  <td>Sazerac_RLI24477_151X53D50_vstp_2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484012/attempt_3/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36484012&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>vikulkarni</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6127197 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6127197_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6127197_2')" onmouseout="nodeLow ('p6127197_2')">C</span>
+    </div>
+    <div id=p6127197_2 class=collapsed>
+        <span class=text><b>Calling module issue</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24482_151X53D50_DHCP_Relay_006.pl_101150_Default</td>
+  <td>Sazerac_RLI24482_151X53D50_DHCP_Relay_006.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483904/attempt_2/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483904&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>anukritij</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6120535 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6120535_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6120535_2')" onmouseout="nodeLow ('p6120535_2')">C</span>
+    </div>
+    <div id=p6120535_2 class=collapsed>
+        <span class=text><b>passed in saz-bng-reg1</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24482_151X53D50_proxy_arp_1_3.pl_101530_Default</td>
+  <td>Sazerac_RLI24482_151X53D50_proxy_arp_1_3.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484071/attempt_1/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36484071&result_id=185913 target=LOG>PASS</a> </td>
+  <td>TOOLS-PARAMS</td>
+  <td>cyadla</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6127024 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6127024_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6127024_2')" onmouseout="nodeLow ('p6127024_2')">C</span>
+    </div>
+    <div id=p6127024_2 class=collapsed>
+        <span class=text><b>passed in jdi-reg-blre-sazerac-reg4</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24483_151X53D50_Erspan_Port_Mirroring_mod.pl_101138_Default</td>
+  <td>Sazerac_RLI24483_151X53D50_Erspan_Port_Mirroring_mod.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2118968/36962878/attempt_1/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2118968/36962878&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>vavula</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6133067 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6133067_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6133067_2')" onmouseout="nodeLow ('p6133067_2')">C</span>
+    </div>
+    <div id=p6133067_2 class=collapsed>
+        <span class=text><b>rerunpassed</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Reg Exit: <font color=black>LINK_FAIL</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&result_id=185913&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24477_151X53D50_LACP_tagAI_2.pl_101311_Default</td>
+  <td>Sazerac_RLI24477_151X53D50_LACP_tagAI_2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483976/attempt_1/script-exec/&result_id=185913 target=LOG>LINK_FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483976&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-INCOMPATIBLE-CONFIGURATION</td>
+  <td>cyadla</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6127196 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6127196_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6127196_2')" onmouseout="nodeLow ('p6127196_2')">C</span>
+    </div>
+    <div id=p6127196_2 class=collapsed>
+        <span class=text><b>passed in saz-bng-reg1</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24477_151X53D50_PR984024.pl_62152_Default</td>
+  <td>Sazerac_RLI24477_151X53D50_PR984024.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483794/attempt_1/script-exec/&result_id=185913 target=LOG>LINK_FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483794&result_id=185913 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>mtiruvaipati</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116677 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116677_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116677_2')" onmouseout="nodeLow ('p6116677_2')">C</span>
+    </div>
+    <div id=p6116677_2 class=collapsed>
+        <span class=text><b>Pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24477_151X53D50_lacp_ge_2.pl_101309_Default</td>
+  <td>Sazerac_RLI24477_151X53D50_lacp_ge_2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483974/attempt_1/script-exec/&result_id=185913 target=LOG>LINK_FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483974&result_id=185913 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>mtiruvaipati</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116690 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116690_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116690_2')" onmouseout="nodeLow ('p6116690_2')">C</span>
+    </div>
+    <div id=p6116690_2 class=collapsed>
+        <span class=text><b>Pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24477_151X53D50_mapping_swap_egress_1.pl_101345_Default</td>
+  <td>Sazerac_RLI24477_151X53D50_mapping_swap_egress_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483989/attempt_1/script-exec/&result_id=185913 target=LOG>LINK_FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483989&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-INCOMPATIBLE-CONFIGURATION</td>
+  <td>cyadla</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6120534 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6120534_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6120534_2')" onmouseout="nodeLow ('p6120534_2')">C</span>
+    </div>
+    <div id=p6120534_2 class=collapsed>
+        <span class=text><b>passed in jdi-reg-blrt-saz-bng-reg1</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Reg Exit: <font color=black>RESOURCE_UNAVAILABLE</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&result_id=185913&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>SAZERAC_RLI24478_151X53D50_vrrp_v1_1_61503_Default</td>
+  <td>SAZERAC_RLI24478_151X53D50_vrrp_v1_1</td>
+  <td> - </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483922&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>mtiruvaipati</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6130867 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6130867_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6130867_2')" onmouseout="nodeLow ('p6130867_2')">C</span>
+    </div>
+    <div id=p6130867_2 class=collapsed>
+        <span class=text><b>Pass</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Reg Exit: <font color=black>SPIRENT_CONNECT_ERROR</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&result_id=185913&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>SAZERAC_RLI24479_151X53D50_IgmpSnooping_IRB_1.pl_101431_Default</td>
+  <td>SAZERAC_RLI24479_151X53D50_IgmpSnooping_IRB_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484017/attempt_1/script-exec/&result_id=185913 target=LOG>SPIRENT_CONNECT_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36484017&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>cyadla</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116732 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116732_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116732_2')" onmouseout="nodeLow ('p6116732_2')">C</span>
+    </div>
+    <div id=p6116732_2 class=collapsed>
+        <span class=text><b>rerun - pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>SAZERAC_RLI24479_151X53D50_L2_Multicast.pl_101222_Default</td>
+  <td>SAZERAC_RLI24479_151X53D50_L2_Multicast.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483938/attempt_1/script-exec/&result_id=185913 target=LOG>SPIRENT_CONNECT_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483938&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>mtiruvaipati</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116730 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116730_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116730_2')" onmouseout="nodeLow ('p6116730_2')">C</span>
+    </div>
+    <div id=p6116730_2 class=collapsed>
+        <span class=text><b>Pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>SAZERAC_RLI24479_151X53D50_Multicastl3autorp_1.pl_101444_Default</td>
+  <td>SAZERAC_RLI24479_151X53D50_Multicastl3autorp_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484026/attempt_1/script-exec/&result_id=185913 target=LOG>SPIRENT_CONNECT_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36484026&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>vikulkarni</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116721 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116721_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116721_2')" onmouseout="nodeLow ('p6116721_2')">C</span>
+    </div>
+    <div id=p6116721_2 class=collapsed>
+        <span class=text><b>Spirent Connectivity issue</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>SAZERAC_RLI24479_151X53D50_Multicastl3autorp_2.pl_101445_Default</td>
+  <td>SAZERAC_RLI24479_151X53D50_Multicastl3autorp_2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484027/attempt_1/script-exec/&result_id=185913 target=LOG>SPIRENT_CONNECT_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36484027&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>vikulkarni</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116669 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116669_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116669_2')" onmouseout="nodeLow ('p6116669_2')">C</span>
+    </div>
+    <div id=p6116669_2 class=collapsed>
+        <span class=text><b>Spirent Connectivity issue</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>SAZERAC_RLI24479_151X53D50_Multicastl3autorp_4.pl_101447_Default</td>
+  <td>SAZERAC_RLI24479_151X53D50_Multicastl3autorp_4.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484028/attempt_1/script-exec/&result_id=185913 target=LOG>SPIRENT_CONNECT_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36484028&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>vikulkarni</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116734 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116734_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116734_2')" onmouseout="nodeLow ('p6116734_2')">C</span>
+    </div>
+    <div id=p6116734_2 class=collapsed>
+        <span class=text><b>Spirent Connectivity issue</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>SAZERAC_RLI24479_151X53D50_pim_dm.pl_101207_Default</td>
+  <td>SAZERAC_RLI24479_151X53D50_pim_dm.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483917/attempt_1/script-exec/&result_id=185913 target=LOG>SPIRENT_CONNECT_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483917&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>cyadla</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116716 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116716_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116716_2')" onmouseout="nodeLow ('p6116716_2')">C</span>
+    </div>
+    <div id=p6116716_2 class=collapsed>
+        <span class=text><b>rerun - pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>SAZERAC_RLI24479_151X53D50_pim_dm_1.pl_101452_Default</td>
+  <td>SAZERAC_RLI24479_151X53D50_pim_dm_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484030/attempt_1/script-exec/&result_id=185913 target=LOG>SPIRENT_CONNECT_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36484030&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>cyadla</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116694 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116694_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116694_2')" onmouseout="nodeLow ('p6116694_2')">C</span>
+    </div>
+    <div id=p6116694_2 class=collapsed>
+        <span class=text><b>rerun - pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>SAZERAC_RLI24484_151X53D50_dot1x_basic_2.pl_101174_Default</td>
+  <td>SAZERAC_RLI24484_151X53D50_dot1x_basic_2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483905/attempt_1/script-exec/&result_id=185913 target=LOG>SPIRENT_CONNECT_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483905&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>vikulkarni</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116738 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116738_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116738_2')" onmouseout="nodeLow ('p6116738_2')">C</span>
+    </div>
+    <div id=p6116738_2 class=collapsed>
+        <span class=text><b>Spirent Connectivity issue</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24478_151X53D50_L3_bfd2.pl_101657_Default</td>
+  <td>Sazerac_RLI24478_151X53D50_L3_bfd2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484114/attempt_1/script-exec/&result_id=185913 target=LOG>SPIRENT_CONNECT_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484114/attempt_1/script-exec/&result_id=185913 target=LOG>FAIL</a> </td>
+  <td>SW-REPRODUCIBLE-PR</td>
+  <td>cyadla</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "#66FFFF"> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1380451 target=DISPLAY_PR>1380451 </a>[assigned]</br></td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116688 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116688_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116688_2')" onmouseout="nodeLow ('p6116688_2')">C</span>
+    </div>
+    <div id=p6116688_2 class=collapsed>
+        <span class=text><b>Merged in PR</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24482_151X53D50_DAI_2_new.pl_101681_Default</td>
+  <td>Sazerac_RLI24482_151X53D50_DAI_2_new.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484125/attempt_1/script-exec/&result_id=185913 target=LOG>SPIRENT_CONNECT_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36484125&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>cyadla</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116697 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116697_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116697_2')" onmouseout="nodeLow ('p6116697_2')">C</span>
+    </div>
+    <div id=p6116697_2 class=collapsed>
+        <span class=text><b>rerun - pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24482_151X53D50_DAI_3_new.pl_101682_Default</td>
+  <td>Sazerac_RLI24482_151X53D50_DAI_3_new.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484126/attempt_1/script-exec/&result_id=185913 target=LOG>SPIRENT_CONNECT_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36484126&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>mtiruvaipati</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116675 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116675_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116675_2')" onmouseout="nodeLow ('p6116675_2')">C</span>
+    </div>
+    <div id=p6116675_2 class=collapsed>
+        <span class=text><b>Pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24482_151X53D50_DAI_4_new.pl_101040_Default</td>
+  <td>Sazerac_RLI24482_151X53D50_DAI_4_new.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483816/attempt_1/script-exec/&result_id=185913 target=LOG>SPIRENT_CONNECT_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483816&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>mtiruvaipati</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116684 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116684_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116684_2')" onmouseout="nodeLow ('p6116684_2')">C</span>
+    </div>
+    <div id=p6116684_2 class=collapsed>
+        <span class=text><b>Pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24482_151X53D50_DAI_5_new.pl_101683_Default</td>
+  <td>Sazerac_RLI24482_151X53D50_DAI_5_new.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36484127/attempt_1/script-exec/&result_id=185913 target=LOG>SPIRENT_CONNECT_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36484127&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>mtiruvaipati</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116719 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116719_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116719_2')" onmouseout="nodeLow ('p6116719_2')">C</span>
+    </div>
+    <div id=p6116719_2 class=collapsed>
+        <span class=text><b>Pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>Sazerac_RLI24483_151X53D50_Erspan_WithRoutingProtocols.pl_101139_Default</td>
+  <td>Sazerac_RLI24483_151X53D50_Erspan_WithRoutingProtocols.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Aug/SUB_2106630/36483901/attempt_1/script-exec/&result_id=185913 target=LOG>SPIRENT_CONNECT_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2106630/36483901&result_id=185913 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>mtiruvaipati</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6116705 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6116705_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6116705_2')" onmouseout="nodeLow ('p6116705_2')">C</span>
+    </div>
+    <div id=p6116705_2 class=collapsed>
+        <span class=text><b>Pass</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+    
+</br>
+<table border=0>
+
+
+     <td bgcolor=#FD5757>&nbsp;</td>
+     <td> PR_open  &nbsp; </td>
+     <td bgcolor=#66FF66>&nbsp;</td>
+     <td> PR_closed &nbsp; </td>
+     <td bgcolor=#66FFFF>&nbsp;</td>
+     <td> PR_other &nbsp; </td>
+
+   </tr>
+</table>
+
+
+<!-- END   DISPLAY COMPLETED -->
+
+
+
+
+
+
+
+
+</table> 
+<br><br><br><br><br><br><br><br>
+
+
+
+ 
+
+
+</table>
+
+
+
+    </td>
+<!-- RIGHT WINDOW ENDS-->
+
+
+
+  </tr>
+</table>
+
+<!-- 4rd ROW ENDS-->
+
+
+
+
+
+
+
+
+
+
+
+<br />
+<hr noshade size="1" width="100%" />
+ 
+</body>
+</html>
+
+
+
+
+
+
+

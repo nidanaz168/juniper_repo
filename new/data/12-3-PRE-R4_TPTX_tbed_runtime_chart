@@ -1,0 +1,16 @@
+<chart caption='Testbed Usage' xAxisName='Test Beds' yAxisName='Hours' showValues='1' numberPrefix='' useRoundEdges='1' legendBorderAlpha='100' showBorder='0' bgColor='FFFFFF,FFFFFF' ><categories><category label='hcl-hsbu-txp' /><category label='platform1-rtb' /><category label='bombay' /><category label='cbu-irtb1' /><category label='hcl-hsbu-ind' /><category label='hsbu-tx1' /><category label='royal-enfield' /><category label='txp-ind' /><category label='eol-ntt' /><category label='cbu-rtb2' /><category label='hsbu-ind-tx' /><category label='rtb9' /><category label='irtb13' /><category label='txp-rtb1' /><category label='hcl-hsbu-jcs' /></categories><dataset seriesName='Usgae Hours'><set label='hcl-hsbu-txp' value='13.65'  />
+<set label='platform1-rtb' value='12.47'  />
+<set label='bombay' value='12.24'  />
+<set label='cbu-irtb1' value='11.35'  />
+<set label='hcl-hsbu-ind' value='10.73'  />
+<set label='hsbu-tx1' value='9.78'  />
+<set label='royal-enfield' value='9.78'  />
+<set label='txp-ind' value='8.45'  />
+<set label='eol-ntt' value='7.71'  />
+<set label='cbu-rtb2' value='6.66'  />
+<set label='hsbu-ind-tx' value='5.79'  />
+<set label='rtb9' value='5.38'  />
+<set label='irtb13' value='4.46'  />
+<set label='txp-rtb1' value='2.01'  />
+<set label='hcl-hsbu-jcs' value='1.47'  />
+</dataset></chart>

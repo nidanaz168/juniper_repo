@@ -1,0 +1,20 @@
+BD=2019-04-19
+select result_id from er_regression_result where (name= '18_4_Platform_PFE' and parent_result_id='0')
+select result_id from er_regression_result where (name= '18.4_20190409' and parent_result_id='0')
+212499 214563 
+212499 
+wget -o log -O out.22303 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=5:7:0&result_id=212499" 
+fullfile
+
+hit = wget -o log -O prs.22303 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=0:1:0&result_id=212499" 
+wget -o log -O out.22303 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" http://www-systest.juniper.net/ti/webapp/dr/debug_dr/view/gen_tl9000_report.mhtml?result_id=212499&trans=remove
+214563 
+wget -o log -O out.22303 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=5:7:0&result_id=214563" 
+fullfile
+
+hit = wget -o log -O prs.22303 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=0:1:0&result_id=214563" 
+wget -o log -O out.22303 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" http://www-systest.juniper.net/ti/webapp/dr/debug_dr/view/gen_tl9000_report.mhtml?result_id=214563&trans=remove
+delete from script_pr where release='18.4-CI' and function='Platform-PFE'prstr is 1346610 1407205 1424391 1427562 1427565 1428233 1418152 1418282 1418468 1429001 1429952  
+insert into reg_openblocker_details(release,function,prnumber,arrival_date,synopsis,reported_in,class,state,pl,category,blocker,dev_owner,resp,originator,hit) values('18.4-CI','Platform-PFE','1428233-1','2019-04-03','                                                CI-PR: BFD session not coming up','18.4R2','bug','assigned','3-IL1','sw-mpls-oam','MR','srajagopal','srajagopal','avempati','1  ');
+/var/www/html/CI_Report/data/18-4-CI_table
+Done

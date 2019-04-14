@@ -1,0 +1,13 @@
+BD=
+select result_id from er_regression_result where name in ('18.4T_Ridge_ZPR_CI','Mojito_18.4T_CI_Mar29','V44_18.4T_ZPR_Mar29','Ultimat_CI_18.4T_Feb25','Ultimat_CI_18.4T_Mar7','Sazerac_CI_18.4T_Mar13','Ultimat_18.4T_ZPR_Mar22','JDI_CI_184_20190329.0','ELIT_18.4TOT_ZPR','RPT_REG_SERVICES_R2_18.4','RPT_REG_SERVICES_18.4R2-MAIN','RPT_REG_BBE_18.4TOT_ZPR','18_4_vertual_BBE_18.4-20190328.0','Sazerac_18.4T_CI_testing','RPT_REG_KM_18.4R2','RPT_REG_KM_18.4_CI_ZPR','18.4T_Porter2_CI_Testing','RPT-REG-ACX-18.4R2_ZPR','Macallan__18.4T_CI_testing','EX_MOJITO_18.4_CI_testing','Pinnacle_18.4TOT','18.4T_Porter3_CI_Testing','Azurite_18.4TOT_ZPR','Onyx_18.4TOT_ZPR','18.4T_MojitoRoyale_CI_ZPR','EX_MARTINI_18.4T_CI','Xellent_18.4TOT_ZPR','Summit_18.4_CI','Symphony_18.4R2_TOT','Pearls_18.4TOT_ZPR','PROTOCOLS_PHYSICAL_CI_18.4Th_20190328','RPT_REG_KM_18.4_CI_ZPR','Rodnik_b54_v44_18.4','opus_18.4T_CI','18.4T_Ultimat_ZPR','RPT_REG_TPTX_18.4TOT_ZPR_CI','18_4_Platform_PFE','18.4_20190409 ') and parent_result_id='0'2019-03-04 
+select result_id from er_regression_result where (name= '18.4T_Ridge_ZPR_CI' and parent_result_id='0')
+213601 
+213601 
+wget -o log -O out.18451 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=5:7:0&result_id=213601" 
+fullfile
+
+hit = wget -o log -O prs.18451 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=0:1:0&result_id=213601" 
+wget -o log -O out.18451 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" http://www-systest.juniper.net/ti/webapp/dr/debug_dr/view/gen_tl9000_report.mhtml?result_id=213601&trans=remove
+delete from script_pr where release='18.4-CI' and function='EX4600'prstr is  
+/var/www/html/CI_Report/data/18-4-CI_table
+Done

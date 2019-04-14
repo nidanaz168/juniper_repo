@@ -1,0 +1,43 @@
+--2019-04-12 06:45:01--  http://www-systest.juniper.net/ti/webapp/dr/debug_dr/view/gen_tl9000_report.mhtml?result_id=201715
+Resolving www-systest.juniper.net (www-systest.juniper.net)... 10.47.225.106
+Connecting to www-systest.juniper.net (www-systest.juniper.net)|10.47.225.106|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: http://systest.juniper.net/ti/webapp/dr/debug_dr/view/gen_tl9000_report.mhtml?result_id=201715 [following]
+--2019-04-12 06:45:02--  http://systest.juniper.net/ti/webapp/dr/debug_dr/view/gen_tl9000_report.mhtml?result_id=201715
+Resolving systest.juniper.net (systest.juniper.net)... 10.47.225.106
+Reusing existing connection to www-systest.juniper.net:80.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: https://systest.juniper.net/ti/webapp/dr/debug_dr/view/gen_tl9000_report.mhtml?result_id=201715 [following]
+--2019-04-12 06:45:02--  https://systest.juniper.net/ti/webapp/dr/debug_dr/view/gen_tl9000_report.mhtml?result_id=201715
+Connecting to systest.juniper.net (systest.juniper.net)|10.47.225.106|:443... connected.
+HTTP request sent, awaiting response... 401 Authorization Required
+Authentication selected: Basic realm="Test Technologies Web Services (use your Windows password)"
+Reusing existing connection to systest.juniper.net:443.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: 'out'
+
+     0K .......... .......... .......... .......... ..........  476K
+    50K .......... .......... .......... .......... ..........  955K
+   100K .......... .......... .......... .......... ..........  110M
+   150K .......... .......... .......... .......... ..........  957K
+   200K .......... .......... .......... .......... ..........  210M
+   250K .......... .......... .......... .......... ..........  203M
+   300K .......... .......... .......... .......... ..........  966K
+   350K .......... .......... .......... .......... ..........  190M
+   400K .......... .......... .......... .......... ..........  214M
+   450K .......... .......... .......... .......... ..........  180M
+   500K .......... .......... .......... .......... ..........  221M
+   550K .......... .......... .......... .......... ..........  958K
+   600K .......... .......... .......... .......... ..........  104M
+   650K .......... .......... .......... .......... ..........  140M
+   700K .......... .......... .......... .......... ..........  155M
+   750K .......... .......... .......... .......... ..........  146M
+   800K .......... .......... .......... .......... ..........  144M
+   850K .......... .......... .......... .......... ..........  994K
+   900K .......... .......... .......... .......... ..........  113M
+   950K .......... .......... .......... .......... ..........  139M
+  1000K                                                        26.1G=0.4s
+
+2019-04-12 06:45:21 (2.65 MB/s) - 'out' saved [1024014]
+

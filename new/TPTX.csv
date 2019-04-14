@@ -1,0 +1,1723 @@
+/system-test/testscripts/AGAVE/TSeries/AGAVE_4xE3_multiports_fr2_t.pl,General,AGAVE,e3-multiport
+/system-test/testscripts/AGAVE/TSeries/AGAVE_coc12_qcstm4_bert_t.pl,General,AGAVE,qcstm4_bert
+/system-test/testscripts/AGAVE/TSeries/AGAVE_coc12_sdh_ccc_t_rt.pl,General,AGAVE,4choc12
+/system-test/testscripts/AGAVE/TSeries/AGAVE_coc12_sonet_ds_bert_t.pl,General,AGAVE,1xQ2CHOC12 SONET
+/system-test/testscripts/AGAVE/TSeries/AGAVE_coc12_sonet_fr_ccc_t_rt.pl,General,AGAVE,4choc12
+/system-test/testscripts/AGAVE/TSeries/AGAVE_coc12_sonet_t1_bert_t.pl,General,AGAVE,1xQ2CHOC12_T1
+/system-test/testscripts/AGAVE/TSeries/agave_ct3_ingress_rewrite_rt_t.pl,General,AGAVE,REWRITE
+/system-test/testscripts/AGAVE/TSeries/AGAVE_oc12_sanity_t.pl,General,AGAVE,OC12 SANITY
+/system-test/testscripts/AGAVE/TSeries/AGAVE_oc12_scaling_t.pl,General,AGAVE,OC12 SCALING
+/system-test/testscripts/AGAVE/TSeries/AGAVE_oc12_tcc_t_rt.pl,General,AGAVE,CHOC12
+/system-test/testscripts/AGAVE/TSeries/agave_performance_monitoring_coc12_t.pl,General,AGAVE,CHOC12
+/system-test/testscripts/AGAVE/TSeries/AGAVE_performance_monitoring_oc12_t.pl,General,AGAVE,POS
+/system-test/testscripts/cf/fbf/fbf_output.pl,General,FIREWALL,fbf
+/system-test/testscripts/cf/firewall/firewall_basic.pl,General,FIREWALL,basic
+/system-test/testscripts/cf/firewall/show_fil.pl,General,Cf,firewall
+/system-test/testscripts/Conformance/UPDN/UpDnJT_Validate_TX,General,CHASSISD,UPGRADE
+/system-test/testscripts/Conformance/UPDN/UpDnJT_Validate_TXP,General,CHASSISD,UPGRADE
+/system-test/testscripts/Hobson/cf/fbf/fbf_basic.pl,General,cf,FBF
+/system-test/testscripts/Hobson/cf/fbf/fbf_vrf_v6.pl,General,FIREWALL,FBF
+/system-test/testscripts/Hobson/Customers/BritishTelecom/NET/bt_issu.pl,General,ISSU,BT21C TX upgrade
+/system-test/testscripts/Hobson/dailyregressions/sanity/bgp_sanity.pl,General,BGP,SANITY
+/system-test/testscripts/Hobson/dailyregressions/sanity/isis_sanity.pl,General,ISIS,SANITY
+/system-test/testscripts/Hobson/dailyregressions/sanity/l2ckt_sanity.pl,General,ospf,ldp
+/system-test/testscripts/Hobson/dailyregressions/sanity/ldp_sanity.pl,General,LDP,SANITY
+/system-test/testscripts/Hobson/dailyregressions/sanity/lsp_sanity.pl,General,MPLS,LSP
+/system-test/testscripts/Hobson/dailyregressions/sanity/ospf_sanity.pl,General,OSPF,Sanity
+/system-test/testscripts/Hobson/dailyregressions/sanity/snmp_sanity.pl,General,SNMP,SANITY
+/system-test/testscripts/Hobson/Infrastructure/Bluecube/txportmirror_basic_v4v6.pl,General,HOBSON,PORT MIRRORING
+/system-test/testscripts/Hobson/Infrastructure/CBF/rpd_chassid_lsp_cbf.pl,General,COS,CBF
+/system-test/testscripts/Hobson/Infrastructure/Chassisd/basic/chassis_alarm.pl,General,CHASSISD,alarm
+/system-test/testscripts/Hobson/Infrastructure/Chassisd/basic/chassis_cb.pl,General,CHASSISD,Basic
+/system-test/testscripts/Hobson/Infrastructure/Chassisd/basic/chassis_cg.pl,General,CHASSISD,Basic
+/system-test/testscripts/Hobson/Infrastructure/Chassisd/basic/chassis_chassisd.pl,General,CHASSISD,Basic
+/system-test/testscripts/Hobson/Infrastructure/Chassisd/basic/chassis_craftd.pl,General,CHASSISD,Basic
+/system-test/testscripts/Hobson/Infrastructure/Chassisd/basic/chassis_fpc.pl,General,CHASSISD,Basic
+/system-test/testscripts/Hobson/Infrastructure/Chassisd/basic/chassis_lcc.pl,General,CHASSISD,lcc
+/system-test/testscripts/Hobson/Infrastructure/Chassisd/basic/chassis_pic.pl,General,CHASSISD,PIC
+/system-test/testscripts/Hobson/Infrastructure/Chassisd/basic/chassis_set.pl,General,CHASSISD,CHASSIS
+/system-test/testscripts/Hobson/Infrastructure/Chassisd/basic/chassis_show.pl,General,CHASSISD,basic
+/system-test/testscripts/Hobson/Infrastructure/Chassisd/basic/chassis_sp.pl,General,CHASSISD,basic
+/system-test/testscripts/Hobson/Infrastructure/Chassisd/basic/chassis_xml.pl,General,CHASSISD,xml output
+/system-test/testscripts/Hobson/Infrastructure/Chassisd/basic/cli_check.pl,General,CHASSISD,chassis 
+/system-test/testscripts/Hobson/Infrastructure/Chassisd/basic/pic_info_tx.pl,General,CHASSISD,PIC
+/system-test/testscripts/Hobson/Infrastructure/Chassisd/basic/pr66113.pl,General,CHASSISD,jnxoperatingdesc for lcc switchover
+/system-test/testscripts/Hobson/Infrastructure/COS/RED_on_Avg_QDepth_tx.pl,General,COS,WRED
+/system-test/testscripts/Hobson/Infrastructure/Diffserv/pfeQueuing_atm.pl,General,PFE,ATM-II
+/system-test/testscripts/Hobson/Infrastructure/GRES/graceful_cbf.pl,General,GRES,CBF 
+/system-test/testscripts/Hobson/Infrastructure/GRES/graceful_cbfv6.pl,General,GRES,RE
+/system-test/testscripts/Hobson/Infrastructure/GRES/graceful_dcuscu.pl,General,GRES,SCU and DCU
+/system-test/testscripts/Hobson/Infrastructure/GRES/graceful_fbf.pl,General,GRES,FBF
+/system-test/testscripts/Hobson/Infrastructure/GRES/graceful_firewallv6.pl,General,GRES,FIREWALL_IPV6
+/system-test/testscripts/Hobson/Infrastructure/GRES/graceful_lsp_cbf.pl,General,GRES,graceful with lsp cbf
+/system-test/testscripts/Hobson/Infrastructure/GRES/graceful_lsp_cbf_lr.pl,General,GRES,Platform
+/system-test/testscripts/Hobson/Infrastructure/GRES/graceful_sampling.pl,General,GRES,REDUNDANCY
+/system-test/testscripts/Hobson/Infrastructure/GRES/graceful_sanity_ping_tx_rt.pl,General,GRES,sanity on tx
+/system-test/testscripts/Hobson/Infrastructure/GRES/graceful_urpf.pl,General,GRES,URPF
+/system-test/testscripts/Hobson/Infrastructure/GRES/gres_attribute_hidden.pl,General,GRES,hidden gres attribute
+/system-test/testscripts/Hobson/Infrastructure/GRES/gres_nh_check.pl,General,GRES,NH
+/system-test/testscripts/Hobson/Infrastructure/GRES/hobson_gres.pl,General,GRES,Hobsongres
+/system-test/testscripts/Hobson/Infrastructure/GRES/PR/hobson_gres_panic.pl,General,GRES,RE
+/system-test/testscripts/Hobson/Infrastructure/GRES/PR/HobsonGresReSwitch.pl,General,GRES,RE
+/system-test/testscripts/Hobson/Infrastructure/GRES/rpd_chassid_lsp_cbf_lr.pl,General,GRES,RPD with lsp cbf
+/system-test/testscripts/Hobson/Infrastructure/PR/SCC_Spmb_restart.pl,General,HOBSON,SPMB
+/system-test/testscripts/Hobson/Infrastructure/uRPF/urpf_sonet.pl,General,uRPF,urpf
+/system-test/testscripts/Hobson/Interfaces/AE/ccc_ae_mix_l2vpn.pl,General,AE,L2vpn CCC-AE
+/system-test/testscripts/Hobson/Interfaces/AE/ccc_agg_ge.pl,General,AE,CCC
+/system-test/testscripts/Hobson/Interfaces/AE/ccc_agg_mix.pl,General,CCC-AE,AE
+/system-test/testscripts/Hobson/Interfaces/AE/mix_remote_intsw_ccc_ae.pl,General,AE,ccc
+/system-test/testscripts/Hobson/Interfaces/AS/as_bgp,General,POS,AS
+/system-test/testscripts/Hobson/Interfaces/AS/as_neg,General,AS,METRICS
+/system-test/testscripts/Hobson/Interfaces/GE/gige_autonego.pl,General,HOBSON,ETHERNET
+/system-test/testscripts/Hobson/Interfaces/GRE/gre-tunnel-test,General,Tunnel,GRE
+/system-test/testscripts/Hobson/Interfaces/GRE/tun_unnum,General,GRES,Tunnel pic unnumber
+/system-test/testscripts/Hobson/Interfaces/GRES/tunnel/graceful_tunnel_test_rt.pl,General,GRES,tunnel
+/system-test/testscripts/Hobson/ISSU/Interfaces/hobson_issu_iq2_protocols_rt.pl,General,ISSU,IQ2
+/system-test/testscripts/Hobson/ISSU/Protocols/issu_multicast_test.pl,General,ISSU,AII
+/system-test/testscripts/Hobson/Protocols/BGP/nh-peer,General,BGP,NH
+/system-test/testscripts/Hobson/Protocols/GRES/protocols_GRES.pl,General,GRES,graceful_restart
+/system-test/testscripts/Hobson/Protocols/ISIS/basic_v6_bcast.pl,General,ISIS,IPV6
+/system-test/testscripts/Hobson/Protocols/ISIS/isis_shortcuts_lvl12.pl,General,ISIS,isis
+/system-test/testscripts/Hobson/Protocols/ISIS/isis_snmp.pl,General,ISIS,SNMP
+/system-test/testscripts/Hobson/Protocols/L2CKT/l2ckt_cword_vlan_rt.pl,General,L2CKT,VLAN
+/system-test/testscripts/Hobson/Protocols/L2CKT/l2ckt_cword_vpc.pl,General,L2CKT,l2ckt vpc encap
+/system-test/testscripts/Hobson/Protocols/L2VPN/l2vpn_cword_cell_rt.pl,General,L2VPN,Basic
+/system-test/testscripts/Hobson/Protocols/L2VPN/l2vpn_cword_ethernet_rt.pl,General,L2VPN,Basic
+/system-test/testscripts/Hobson/Protocols/L2VPN/tcc-atm-snap-hdlc.pl,General,L2VPN,ATM-tcc and cisco HDLC CCC encap
+/system-test/testscripts/Hobson/Protocols/LDP/ldp_deaggregate_ldp_over_rsvp.pl,General,LDP,LDP-over-RSVP
+/system-test/testscripts/Hobson/Protocols/LR/ldp_LR_basic.pl,General,LDP,logical router
+/system-test/testscripts/Hobson/Protocols/LR/lr_de_activate.pl,General,LR,lr-ipv4
+/system-test/testscripts/Hobson/Protocols/MPLS/ipv6_l3vpn_v4_v6_path_mtu.pl,General,MPLS,ipv6
+/system-test/testscripts/Hobson/Protocols/MPLS/lsp_ping_l3vpn_ldp.pl,General,MPLS,L3VPN
+/system-test/testscripts/Hobson/Protocols/MPLS/mpls_basic.pl,General,MPLS,BASIC
+/system-test/testscripts/Hobson/Protocols/MPLS/mpls_load_balance_agg_rsvp.pl,General,Mpls,Load_Balance
+/system-test/testscripts/Hobson/Protocols/MPLS/mpls_load_balance_agg_sonet.pl,General,MPLS,LDP
+/system-test/testscripts/Hobson/Protocols/MPLS/mpls_load_balance_sonet.pl,General,MPLS,LB
+/system-test/testscripts/Hobson/Protocols/MPLS/p2mp-basic-ccc.pl,General,MPLS,P2MP
+/system-test/testscripts/Hobson/Protocols/MPLS/path_mtu_gre.pl,General,MPLS,GRE 
+/system-test/testscripts/Hobson/Protocols/Multicast/J64-rli2502-msdp-src-lmt.pl,General,MULTICAST,MSDP
+/system-test/testscripts/Hobson/Protocols/Multicast/mcastaeaggrTX.pl,General,MULTICAST,AE
+/system-test/testscripts/Hobson/Protocols/Multicast/mcast-gres.pl,General,MULTICAST,GRES
+/system-test/testscripts/Hobson/Protocols/Multicast/mcast-vpn.pl,General,MULTICAST,vpn
+/system-test/testscripts/Hobson/Protocols/Multicast/mcast-vpn-three.pl,General,MULTICAST,L3VPN
+/system-test/testscripts/Hobson/Protocols/Multicast/msdp.pl,General,MULTICAST,msdp
+/system-test/testscripts/Hobson/Protocols/Multicast/msdp_ebgp_3.pl,General,MULTICAST,msdp_ebgp
+/system-test/testscripts/Hobson/Protocols/Multicast/msdp_ibgp.pl,General,MULTICAST,msdp_ibgp
+/system-test/testscripts/Hobson/Protocols/Multicast/msdp_mesh_groups.pl,General,MULTICAST,MSDP
+/system-test/testscripts/Hobson/Protocols/Multicast/msdp_mib.pl,General,MULTICAST,msdp_mib
+/system-test/testscripts/Hobson/Protocols/Multicast/pim-bgp-indnh.pl,General,MULTICAST,pim/bgp
+/system-test/testscripts/Hobson/Protocols/Multicast/pim-unique.pl,General,MULTICAST,PIM
+/system-test/testscripts/Hobson/Protocols/Multicast/pim-v6rpdr.pl,General,MULTICAST,PIM_IPV6
+/system-test/testscripts/Hobson/Protocols/NSR/bgp_nsr_vpn_testcase_rt.pl,General,NSR,BGP
+/system-test/testscripts/Hobson/Protocols/NSR/nsr_isis.pl,General,NSR,ISIS
+/system-test/testscripts/Hobson/Protocols/NSR/nsr_ldp_msg_basic.pl,General,NSR,LDP
+/system-test/testscripts/Hobson/Protocols/OSPF/hellov3.pl,General,OSPF,METRICS
+/system-test/testscripts/Hobson/Protocols/OSPF/ospf_multauthkey.pl,General,OSPF,Hobson
+/system-test/testscripts/Hobson/Protocols/OSPF/ospf_nbrs.pl,General,OSPF,area_nbrs
+/system-test/testscripts/Hobson/Protocols/OSPF/ospf_path_sel.pl,General,OSPF,METRICS
+/system-test/testscripts/Hobson/Protocols/OSPF/ospf_policy_export.pl,General,OSPF,POLICY
+/system-test/testscripts/Hobson/Protocols/OSPF/ospf_sham_links_lr.pl,General,OSPF,Sham-links
+/system-test/testscripts/Hobson/Protocols/OSPF/ospf3_path_sel.pl,General,OSPF,METRICS
+/system-test/testscripts/Hobson/Protocols/SNMP/firewall_dcd.pl,General,SNMP,Firewall with DCD
+/system-test/testscripts/Hobson/Protocols/SNMP/freespace.pl,General,SNMP,CHASSIS
+/system-test/testscripts/Hobson/Protocols/SNMP/gres_link_mib.pl,General,SNMP,GRES/MIB
+/system-test/testscripts/Hobson/Protocols/SNMP/ipAddrTable_walk.pl,General,SNMP,IP
+/system-test/testscripts/Hobson/Protocols/SNMP/jnxOperating.pl,General,SNMP,snmp walk for jnxOperating
+/system-test/testscripts/Hobson/Protocols/SNMP/mib2dScaling.pl,General,SNMP,MIB-SCALING
+/system-test/testscripts/Hobson/Protocols/SNMP/mpls_lsr_std_mib.pl,General,SNMP,mpls
+/system-test/testscripts/Hobson/Protocols/SNMP/mpls_lsr_std_mib_p2mp.pl,General,SNMP,P2MP LSP MIB
+/system-test/testscripts/Hobson/Protocols/SNMP/mpls_lsr_std_mib_rmt_switch.pl,General,SNMP,MPLS LSR MID
+/system-test/testscripts/Hobson/Protocols/SNMP/mpls_lsr_std_mib_stk.pl,General,SNMP,MPLS LSR MID
+/system-test/testscripts/Hobson/Protocols/SNMP/mpls_lsr_std_mib_vpn.pl,General,SNMP,MPLS
+/system-test/testscripts/Hobson/Protocols/SNMP/PerProtoSrcAddrSNMP.pl,General,SNMP,MIB
+/system-test/testscripts/Hobson/Protocols/SNMP/pfe_statistics_mib_rli4463.pl,General,SNMP,pfe
+/system-test/testscripts/Hobson/Protocols/SNMP/reorder.pl,General,SNMP,Reorder Chassis  State
+/system-test/testscripts/Hobson/Protocols/SNMP/rescue_with_snmp.pl,General,SNMP,RESCUE CONFIG
+/system-test/testscripts/Hobson/Protocols/SNMP/rli2716_gmpls_snmp_mib_1.pl,General,SNMP,GMPLS
+/system-test/testscripts/Hobson/Protocols/SNMP/rli2716_gmpls_snmp_mib_2.pl,General,SNMP,mpls lsp tunnel
+/system-test/testscripts/Hobson/Protocols/SNMP/rmon.pl,General,SNMP,RMON
+/system-test/testscripts/Hobson/Protocols/SNMP/rpm_with_bgp_3097_Scaling.pl,General,BGP,RPM
+/system-test/testscripts/Hobson/Protocols/SNMP/snmp_pr1.pl,General,Hobson,SNMP
+/system-test/testscripts/Hobson/Protocols/SNMP/SNMP_trap_RSVP_path.pl,General,SNMP,Trap for RSVP path
+/system-test/testscripts/Hobson/Protocols/SNMP/snmpv3.pl,General,SNMP,SNMPV3
+/system-test/testscripts/Hobson/Protocols/SNMP/snmpv3/aes128.pl,General,SNMP,SNMPv3
+/system-test/testscripts/Hobson/Protocols/SNMP/snmpv3/rli1690_SNMPv3,General,SNMP,SNMP v3 interoperability
+/system-test/testscripts/Hobson/Protocols/SNMP/snmpv3/tripleDES.pl,General,SNMP,snmpv3 for 3DES and AES crypto
+/system-test/testscripts/Hobson/Protocols/SNMP/tpi_5688_trap_queue_new.pl,General,SNMP,Trap Queue limit
+/system-test/testscripts/Hobson/Protocols/SNMP/TraceRouteMib.pl,General,SNMP,Traceroute functionality
+/system-test/testscripts/Hobson/Protocols/SNMP/trap_port.pl,General,HOBSON,SNMP
+/system-test/testscripts/Hobson/Protocols/SNMP/varbinds.pl,General,HOBSON,SNMP
+/system-test/testscripts/Hobson/Protocols/SNMP/VPN_IntfPseudowire_UpDnNotification_SNMP.pl,General,SNMP,Trap for Vpn PseudoWire Up/Down
+/system-test/testscripts/Hobson/Protocols/SNMP/vpn-ping.pl,General,SNMP,VPN
+/system-test/testscripts/Hobson/Protocols/VPN/auto_vpn_overlap.pl,General,VPLS,vpn
+/system-test/testscripts/Hobson/Protocols/VPN/gre-logical-interface-vpn.pl,General,L3VPN,gre_ipip
+/system-test/testscripts/Hobson/System-Wide/Security/nmap.pl,General,Security,RE_Security
+/system-test/testscripts/Hobson/System-Wide/Security/nmap_3_4.pl,General,SECURITY,NMAP
+/system-test/testscripts/HSBU/Applications/mixed/sangria/sangria_rib_fib.pl,General,BGP,Scaling
+/system-test/testscripts/HSBU/Applications/mixed/sangria/slash_32_scaling.pl,General,MULTISERVICES,SCALING
+/system-test/testscripts/HSBU/Applications/multiservices/sangria/apps-multiservice-MedScale.pl,General,MULTISERVICES,Sangria
+/system-test/testscripts/HSBU/Applications/multiservices/sangria/J_123_ptx_mcast-agg-multiservice_nsr.pl,General,MULTISERVICES,NSR
+/system-test/testscripts/HSBU/Applications/multiservices/sangria/mcast-agg-multiservice-MedScale.pl,General,MULTISERVICES,Aggregation
+/system-test/testscripts/HSBU/Applications/multiservices/sangria/mcast-multiservice.pl,General,MULTISERVICES,Sangria
+/system-test/testscripts/HSBU/Applications/multiservices/sangria/mcast-v4v6-agg-multiservice.pl,General,MULTISERVICES,mcast
+/system-test/testscripts/HSBU/Applications/multiservices/sangria/mcast-v4v6-multiservice.pl,General,MULTISERVICES,ipv6/ipv4
+/system-test/testscripts/HSBU/Applications/multiservices/sangria/mcast-v6-agg-multiservice.pl,General,MULTISERVICES,Aggregation
+/system-test/testscripts/HSBU/Applications/multiservices/sangria/mcast-v6-multiservice.pl,General,MULTISERVICES,PIM
+/system-test/testscripts/HSBU/Applications/multiservices/sangria/p2mp-agg-multiservice-MedScale.pl,General,MULTISERVICES,"P2mp,Sangria"
+/system-test/testscripts/HSBU/Applications/ptx3k/LDP/J121_13339_Sangria_LDP_LFA_ECMP_STC.pl,General,LDP,LFA_ECMP_STC
+/system-test/testscripts/HSBU/Applications/ptx3k/LDP/J121_13339_Sangria_LDP_LFA_STC.pl,General,LDP,LFA_STC
+/system-test/testscripts/HSBU/Applications/ptx3k/LDP/J121_13339_Sangria_LDP_scale.pl,General,LDP,SCALING
+/system-test/testscripts/HSBU/Applications/ptx3k/mixed/rli11527_sangria_apps_ifl_scaling.pl,General,Sangria,IFL_SCALING
+/system-test/testscripts/HSBU/Applications/ptx3k/Static-lsp/J121_13340_Sangria_static_lsp_chain.pl,General,LDP,STATIC_LSP
+/system-test/testscripts/HSBU/Applications/ptx3k/Static-lsp/J121_13340_Sangria_static_lsp_chain_ae_scale.pl,General,LDP,STATIC_LSP_AE
+/system-test/testscripts/HSBU/Applications/Sangria/LDP/J121_13339_Sangria_LDP_LFA_ECMP_STC.pl,General,LDP,ECMP
+/system-test/testscripts/HSBU/Applications/Sangria/LDP/J121_13339_Sangria_LDP_LFA_STC.pl,General,SANGRIA,LDP
+/system-test/testscripts/HSBU/Applications/Sangria/Static-lsp/J121_13340_Sangria_static_lsp_chain.pl,General,MPLS,Static-lsp
+/system-test/testscripts/HSBU/Applications/Sangria/Static-lsp/J121_13340_Sangria_static_lsp_chain_ae_scale.pl,General,MPLS,Basic
+/system-test/testscripts/HSBU/Applications/STFPC1/ms_app.pl,General,STFPC1,802.1ag
+/system-test/testscripts/HSBU/Applications/STFPC1/ms_app_l2circuit.pl,General,STFPC1,802.1ag
+/system-test/testscripts/HSBU/Applications/STFPC1/ms_app_l3vpn.pl,General,STFPC1,802.1ag
+/system-test/testscripts/HSBU/Applications/STFPC1/ms_app_mpls.pl,General,STFPC1,802.1ag
+/system-test/testscripts/HSBU/Applications/STFPC1/sg1_combo_svcs.pl,General,GSP,STFPC1
+/system-test/testscripts/HSBU/Applications/STFPC2/protocols_GRES_stfpc2.pl,General,CCC,GRES
+/system-test/testscripts/HSBU/Applications/vrf_local/122_RLI_13680_Tseries_vrf_local_sanity.pl,General,L3VPN,vrf_local
+/system-test/testscripts/HSBU/Belvedere/BLVD_specific/J131_16863_BLVD_T1600_FaultHandling.pl,General,CHASSISD,Fabric Management
+/system-test/testscripts/HSBU/Belvedere/BLVD_specific/J131_16863_BLVD_T4000_FaultHandling_HCFPC.pl,General,CHASSISD,Fabric Management_HCFPC
+/system-test/testscripts/HSBU/Belvedere/BLVD_specific/J131_16863_BLVD_T4000_FaultHandling_STFPC.pl,General,CHASSISD,Fabric Management_STFPC
+/system-test/testscripts/HSBU/Belvedere/BLVD_specific/J131_16917_16859_16856_BLVD_CHASSISD_RESTARTS.pl,General,CHASSISD,RESTARTS
+/system-test/testscripts/HSBU/Belvedere/BLVD_specific/J131_16917_16859_16856_BLVD_CHASSISD_RESTARTS.pl,General,CHASSISD,RE
+/system-test/testscripts/HSBU/Belvedere/BLVD_specific/J131_16917_16859_16856_BLVD_FPC_PIC_FLAP.pl,General,CHASSISD,FPC/PIC
+/system-test/testscripts/HSBU/Belvedere/BLVD_specific/J131_16917_16859_16856_BLVD_FPC_PIC_FLAP.pl,General,PFC,FPC_PIC_FLAP
+/system-test/testscripts/HSBU/Belvedere/BLVD_specific/J131_16917_16859_16856_BLVD_GRES_TESTS.pl,General,CHASSISD,GRES
+/system-test/testscripts/HSBU/Belvedere/BLVD_specific/J131_16917_16859_16856_BLVD_LCC_TESTS.pl,General,CHASSISD,LCC_TEST
+/system-test/testscripts/HSBU/Belvedere/BLVD_specific/J131_16917_16859_16856_BLVD_SIB_TESTS.pl,General,CHASSISD,SIB_TEST
+/system-test/testscripts/HSBU/Belvedere/BLVD_specific/J131_16917_16859_16856_BLVD_SPMB_RESTARTS.pl,General,CHASSISD,SPMB_RESTART
+/system-test/testscripts/HSBU/Belvedere/BLVD_specific/J131_16917_16859_16856_BLVD_SYSTEM_REBOOTS.pl,General,CHASSISD,REBOOT
+/system-test/testscripts/HSBU/Belvedere/Infrastructure/J131_16873_BLVD_AE_Aggregate_Policer.pl,General,AE,POLICER
+/system-test/testscripts/HSBU/Belvedere/Infrastructure/J131_16873_BLVD_aggregate_policer.pl,General,AE,POLICER
+/system-test/testscripts/HSBU/Belvedere/Infrastructure/J131_16873_BLVD_chained_ccc_filters.pl,General,CCC,FILTER
+/system-test/testscripts/HSBU/Belvedere/Infrastructure/J131_16873_BLVD_chained_firewall_filters.pl,General,FIREWALL,FILTER
+/system-test/testscripts/HSBU/Belvedere/Infrastructure/J131_16873_BLVD_chained_mpls_filters.pl,General,MPLS,FILTER
+/system-test/testscripts/HSBU/Belvedere/Infrastructure/J131_16873_BLVD_Chassis_Scheduler.pl,General,CHASSISD,SCHEDULER
+/system-test/testscripts/HSBU/Belvedere/Infrastructure/J131_16873_BLVD_ClassRew.pl,General,CLASSIFIER,REWRITE
+/system-test/testscripts/HSBU/Belvedere/Infrastructure/J131_16873_BLVD_dcu_scu_bps_pps.pl,General,CHASSISD,DCU_SCU_BPS_PPS
+/system-test/testscripts/HSBU/Belvedere/Infrastructure/J131_16873_BLVD_FBF.pl,General,CHASSISD,FBF
+/system-test/testscripts/HSBU/Belvedere/Infrastructure/J131_16873_BLVD_firewall_filter_firewall_rt.pl,General,FIREWALL,FILTER_REWRITE
+/system-test/testscripts/HSBU/Belvedere/Infrastructure/J131_16873_BLVD_firewallfilter_show_fil.pl,General,FIREWALL,FILTER 
+/system-test/testscripts/HSBU/Belvedere/Infrastructure/J131_16873_BLVD_Hercules_firewallfilter_ipv6filter.pl,General,FIREWALL,IPv6_FILTER
+/system-test/testscripts/HSBU/Belvedere/Infrastructure/J131_16873_BLVD_IFL_Creation_deletion.pl,General,IFL,CREATE/DELETE
+/system-test/testscripts/HSBU/Belvedere/Infrastructure/J131_16873_BLVD_InputShaping.pl,General,COS,SHAPING
+/system-test/testscripts/HSBU/Belvedere/Infrastructure/J131_16873_BLVD_iptraffic_filters.pl,General,FILTER,IPTRAFFIC
+/system-test/testscripts/HSBU/Belvedere/Infrastructure/J131_16873_BLVD_IQ2_flexible_sched_alloc.pl,General,IQ2,SCHEDULER
+/system-test/testscripts/HSBU/Belvedere/Infrastructure/J131_16873_BLVD_IQCOS.pl,General,IQ2,COS
+/system-test/testscripts/HSBU/Belvedere/Infrastructure/J131_16873_BLVD_mpls_ipv6_filter.pl,General,MPLS,IPv6_FILTER
+/system-test/testscripts/HSBU/Belvedere/Infrastructure/J131_16873_BLVD_mplsfilter.pl,General,MPLS,FILTER
+/system-test/testscripts/HSBU/Belvedere/Infrastructure/J131_16873_BLVD_scheduler.pl,General,CHASSISD,SCHEDULER
+/system-test/testscripts/HSBU/Belvedere/Infrastructure/J131_16873_BLVD_Shaping.pl,General,CHASSISD,SHAPING
+/system-test/testscripts/HSBU/Belvedere/Infrastructure/J131_16873_BLVD_Simple_Policer.pl,General,POLICER,BASIC
+/system-test/testscripts/HSBU/Belvedere/Infrastructure/J131_16873_BLVD_simple_policer_with_filter.pl,General,POLICER,FILTER
+/system-test/testscripts/HSBU/Belvedere/Infrastructure/J131_16873_BLVD_srTCM_CA.pl,General,POLICER,srTCM_CA
+/system-test/testscripts/HSBU/Belvedere/Infrastructure/J131_16873_BLVD_srTCM_CB.pl,General,POLICER,scTCM_CB
+/system-test/testscripts/HSBU/Belvedere/Infrastructure/J131_16873_BLVD_trTCM_CA.pl,General,POLICER,trTCM_CA
+/system-test/testscripts/HSBU/Belvedere/Infrastructure/J131_16873_BLVD_trTCM_CB.pl,General,POLICER,trTCM_CB
+/system-test/testscripts/HSBU/Belvedere/Interfaces/J131_16875_BLVD_aggeth_4links_ge.pl,General,AGGREGATION,GE
+/system-test/testscripts/HSBU/Belvedere/Interfaces/J131_16875_BLVD_aggeth_4links_xe.pl,General,AGGREGATION,XE
+/system-test/testscripts/HSBU/Belvedere/Interfaces/J131_16875_BLVD_aggson_4links_oc192.pl,General,AGGREGATION,OC192
+/system-test/testscripts/HSBU/Belvedere/Interfaces/J131_16875_BLVD_aggson_4links_oc48.pl,General,AGGREGATION,OC48
+/system-test/testscripts/HSBU/Belvedere/Interfaces/J131_16875_BLVD_as_encaps.pl,General,AS,ENCAPSULATION
+/system-test/testscripts/HSBU/Belvedere/Interfaces/J131_16875_BLVD_ccc.pl,General,CHASSISD,CCC
+/system-test/testscripts/HSBU/Belvedere/Interfaces/J131_16875_BLVD_eoam_802.1ag_basic.pl,General,EOAM,802.1ag
+/system-test/testscripts/HSBU/Belvedere/Interfaces/J131_16875_BLVD_ethernet_statistics.pl,General,ETHERNET,STATISTICS
+/system-test/testscripts/HSBU/Belvedere/Interfaces/J131_16875_BLVD_ethernet_statistics.pl,General,ETHERNET,CHASSIS
+/system-test/testscripts/HSBU/Belvedere/Interfaces/J131_16875_BLVD_interface_basic_tests.pl,General,ETHERNET,BASIC
+/system-test/testscripts/HSBU/Belvedere/Interfaces/J131_16875_BLVD_OC192_tcc.pl,General,OC192,TCC
+/system-test/testscripts/HSBU/Belvedere/Interfaces/J131_16875_BLVD_OC48_tcc.pl,General,OC48,TCC
+/system-test/testscripts/HSBU/Belvedere/Interfaces/J131_16875_BLVD_q2choc12_scaling.pl,General,Q2CHOC12,SCALING
+/system-test/testscripts/HSBU/Belvedere/Interfaces/J131_16875_BLVD_tcc.pl,General,CHASSISD,TCC
+/system-test/testscripts/HSBU/Belvedere/Interfaces/J131_BLVD_16875_aggson_mixed.pl,General,AGGREGATION,SONET
+/system-test/testscripts/HSBU/Belvedere/Interfaces/J131_BLVD_16875_OC768-over-OC192.pl,General,OC768,OC768-over-OC192
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_aggregate_l3sanity.pl,General,AE,L3_SANITY
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_bfd_sanity.pl,General,BFD,SANITY
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_bgp.multias.pl,General,BGP,MULTIAS2
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_bgp.multias2.pl,General,BGP,MULTIAS2
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_bgp_aggregate_routes.pl,General,BGP,AE
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_bgp_community.v6.pl,General,BGP,COMMUNITY_V6
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_bgp_link_bw.pl,General,BGP,LINK_BW
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_bgp_nsr_vpn_testcase.pl,General,BGP,NSR_VPN
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_bgp_prefix_limit.pl,General,BGP,METRICS
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_bgp_sanity_with_traffic.pl,General,BGP,SANITY
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_bgp_v6_as_filter.pl,General,BGP,FILTER
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_bgp_v6_ibgp_ripng.pl,General,BGP,IBGP_RIPING
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_bgp_v6_native.pl,General,BGP,VPLS_SCALING
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_bgp_vpls_scaled_frr.pl,General,BGP,VPLS_SCALING
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_bgp_vpls_scaled_gres.pl,General,BGP,VPLS_SCALING
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_comp_nh_scaling_2Agg.pl,General,CNH,SCALING_AG
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_comp_nh_scaling_3Agg.pl,General,CNH,SCALING_AG
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_comp_nh_scaling_4Agg.pl,General,CNH,SCALING_AG
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_comp_nh_scaling_plain_unilist.pl,General,CNH,SCALING_PLAIN
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_comp_nh_scaling_plain_unilist_frr.pl,General,CNH,SCALING_PLAIN
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_dyn_gre_tunnel.pl,General,DYN,GRES
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_exp_classifier_exp_null.pl,General,EXP,CLASSIFIER
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_gre_mtu_check.pl,General,GRES,MTU
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_gre-tunnel-test.pl,General,GRES,TUNNEL
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_ipv6_sanity.pl,General,IPV6,SANITY
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_ipv6_vrftable_sanity.pl,General,IPV6,SANITY
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_isis_prefix_export_limit.pl,General,ISIS,METRICS
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_ISIS_sanity.pl,General,ISIS,SANITY
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_isis_spfdelay.pl,General,ISIS,SPF_DELAY
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_isis_tag.pl,General,ISIS,TAG
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_isis_tag_multi_inst.pl,General,ISIS,TAG_MULTI
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_isis_timers.pl,General,ISIS,TIMERS
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_ISISv6_metrics.pl,General,ISISV6,METRICS
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_ISISv6_Overload.pl,General,ISISV6,METRICS
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_isisv6_sanity.pl,General,ISISV6,SANITY
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_jflowv9_ipv4.pl,General,JFLOW,IPV4
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_jflowv9_ipv6.pl,General,JFLOW,IPV6
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_l2circuit_sanity.pl,General,L2_CIRCUIT,SANITY
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_l2vpn-vlan-ge.1.pl,General,LDP,VPLS_SANITY
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_ldp_vpls_basic.pl,General,LDC,VPLS_BASIC
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_load_balance_mpls.pl,General,LB,MPLS
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_lt_interface_basic_test.pl,General,LT,BASIC_TEST
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_lvrrp_sanity.pl,General,LVRRP,SANITY
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_mcast_mbt.pl,General,MCAST,MBT
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_mcast_protocols.pl,General,MCAST,PROTOCOLS
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_mesh_isis.pl,General,ISIS,MESH
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_MPLS_CCC.pl,General,MPLS,CCC
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_mpls_IPV6_filter.pl,General,MPLS,IPv6_FILTER
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_MPLS_Static_LSP.pl,General,MPLS,LSP
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_Multiservices_GRES.pl,General,MULTISERVICES,GRES
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_Ospf_lfa.pl,General,OSPF,IFA
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_OSPF_lsa_types.pl,General,OSPF,LSA_TYPES
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_ospf_multauthkey.pl,General,OSPF,AUTHENTICATION
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_ospf_nssa.pl,General,OSPF,NSSA
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_ospf_overload.pl,General,OSPF,OVERLOAD
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_OSPF_redistribution.pl,General,OSPF,REDISTRIBUTION
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_ospf_sanity.pl,General,OSPF,SANITY
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_ospf3_path_selection.pl,General,OSPFv3,METRICS
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_ospfv3_timers.pl,General,OSPFv3,TIMERS
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_p2mp_mbt.pl,General,P2MP,MBT
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_p2mp_rsvp_tracert.pl,General,P2MP,RSVP_TRACERT
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_pim-bgp-indnh.pl,General,MULTICAST,PIM/BGP
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_Policy_Damping.pl,General,POLICIER,DAMPING
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_RIP_basic.pl,General,RIP,BASIC
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_rsvp_sanity.pl,General,RSVP,SANITY
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_stub_default_metric.pl,General,OSPF,STUB
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_ttl_pr_8245.pl,General,MPLS,TTL/Rate limit
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_tunnel_pic_bullfrog_40G.pl,General,TUNNEL,PIC
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_vpls_bgp_ad_backup_rr.pl,General,VPLS,BGP_BACKUP_RR
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_vpls_cos.pl,General,VPLS,COS
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_vpls_encap.pl,General,VPLS,ENCAPSULATION
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_vpls_intwrk_basic_fn.pl,General,VPLS,INTERWORK
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_vpls_sanity.pl,General,VPLS,SANITY
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_vplsMpls.VLAN_T.pl,General,VPLS,VLAN_TAG
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BLVD_vpn_ae.pl,General,VPN,AE
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BVLD_bgp_authentication_Absolut.pl,General,BGP,AUTHENTICATION
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BVLD_bgp_nh-peer.pl,General,BGP,NH
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BVLD_bgp_pmtu_discovery.pl,General,BGP,PMTU
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BVLD_ecmp.pl,General,CHASSISD,ECMP
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BVLD_l3vpn_sanity.pl,General,L3VPN,SANITY
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BVLD_urpf_ae.pl,General,uRPF,AE
+/system-test/testscripts/HSBU/Belvedere/Protocols/J131_16871_BVLD_urpf_ether.pl,General,uRPF,ETHERNET
+/system-test/testscripts/HSBU/cf/firewall/Absolut/chained_firewall_filters.pl,General,FIREWALL,FILTER
+/system-test/testscripts/HSBU/cf/firewall/Policing/Absolut/lsp_policing.pl,General,FIREWALL,lsp/policing
+/system-test/testscripts/HSBU/CFD/Misc/PR455166_mgd.pl,General,CPU,Chassiss
+/system-test/testscripts/HSBU/CFD/Misc/PR462074_mplsfrr.pl,General,MPLS,FRR
+/system-test/testscripts/HSBU/CFD/Misc/PR467018_loadbalancing.pl,General,LB,CFD
+/system-test/testscripts/HSBU/CFD/Misc/PR488078_sibmodAH.pl,General,CFD,CFD
+/system-test/testscripts/HSBU/CFD/Misc/PR490406_OSPFAE.pl,General,OSPF,Basic
+/system-test/testscripts/HSBU/CFD/Misc/PR515244_isispanic.pl,General,ISIS,ISIS
+/system-test/testscripts/HSBU/CFD/Misc/PR526749_LACP.pl,General,LACP,CFD
+/system-test/testscripts/HSBU/CFD/Misc/pr686448_ISSU_clock_sync.pl,General,ISSU,Chassis
+/system-test/testscripts/HSBU/CFD/Misc/PR717384.pl,General,CFD,CFD
+/system-test/testscripts/HSBU/CFD/Misc/pr791501.pl,General,FrameRelay,POS
+/system-test/testscripts/HSBU/CFD/Misc/PRs_AEflap.pl,General,ETHERNET,AE
+/system-test/testscripts/HSBU/CFD/Misc/PRs_CLI_issues.pl,General,CLI,cli
+/system-test/testscripts/HSBU/CFD/Misc/PRs_SyslogErrors.pl,General,CFD,RE
+/system-test/testscripts/HSBU/CFD/Protocols/PR485833_pol.pl,General,CFD,Policer
+/system-test/testscripts/HSBU/CFD/Protocols/PR492042_lrFR.pl,General,LRFR,CFD
+/system-test/testscripts/HSBU/CFD/Protocols/PR500492_l3vpn.pl,General,L3VPN,CFD
+/system-test/testscripts/HSBU/CFD/Protocols/PR502365_firewall.pl,General,CFD,COS/GRES
+/system-test/testscripts/HSBU/CFD/Protocols/PR507358_bgp.pl,General,BGP,CFD
+/system-test/testscripts/HSBU/CFD/Protocols/PR529408_PIM.pl,General,PIM,CFD
+/system-test/testscripts/HSBU/Customers/CST-NTT-NGN/PR512229_jflowv9_ipv6_nh.pl,General,JFLOW,IPV6
+/system-test/testscripts/HSBU/Customers/CST-NTT-NGN/PR516058_jflowv9_ipv6_AE.pl,General,JFLOW,IPV6
+/system-test/testscripts/HSBU/Customers/CST-NTT-NGN/PR527779_IPv6_NDP.pl,General,NDP,IPV6
+/system-test/testscripts/HSBU/Customers/CST-NTT-NGN/PR528027_AE_stat.pl,General,AE,STATISTICS
+/system-test/testscripts/HSBU/Customers/CST-NTT-NGN/PR551161_COS_Schedule.pl,General,COS,SCHEDULER
+/system-test/testscripts/HSBU/Customers/Verizon/vz_backbone.pl,General,CHASSISD,AE
+/system-test/testscripts/HSBU/DNH/TX/Interfaces/ATM/atm2.pl,General,ATM,ATM2
+/system-test/testscripts/HSBU/Infrastructure/Absolut/64bit/rli_11770_gres.pl,General,ABSOLUTE,GRES
+/system-test/testscripts/HSBU/Infrastructure/Absolut/64bit/rli_11770_gres_gr.pl,General,ABSOLUTE,GRES
+/system-test/testscripts/HSBU/Infrastructure/Absolut/64bit/rli_11770_gres_nsr.pl,General,NSR,Basic
+/system-test/testscripts/HSBU/Infrastructure/Absolut/Absolut_UI_support.pl,General,ABSOLUTE,UI
+/system-test/testscripts/HSBU/Infrastructure/Absolut/mcast_mbt.pl,General,MULTICAST,PFE
+/system-test/testscripts/HSBU/Infrastructure/Absolut/p2mp_mbt.pl,General,ABSOLUTE,p2mp
+/system-test/testscripts/HSBU/Infrastructure/Absolut/PR584728_show_ver_on_txp.pl,General,UI,CLI
+/system-test/testscripts/HSBU/Infrastructure/Absolut/rli_11770_reboot_router.pl,General,CHASSISD,Tseries router reboot
+/system-test/testscripts/HSBU/Infrastructure/Absolut/rli_11770_router_install.pl,General,ABSOLUTE,RE 
+/system-test/testscripts/HSBU/Infrastructure/Absolut/rli_11770_upgrade_router.pl,General,ABSOLUTE,CHASSIS
+/system-test/testscripts/HSBU/Infrastructure/Agave/agave_coc48_BA_classification_rt_issu.pl,General,AGAVE,cos
+/system-test/testscripts/HSBU/Infrastructure/Agave/agave_coc48_oc3_pir_cir_issu.pl,General,AGAVE,issu
+/system-test/testscripts/HSBU/Infrastructure/Agave/agave_oc12_pir_cir_t.pl,General,AGAVE,CHOC12
+/system-test/testscripts/HSBU/Infrastructure/Agave/agave_oc3_BA_classification_rt_t.pl,General,AGAVE,CLASSIFICATION
+/system-test/testscripts/HSBU/Infrastructure/Agave/agave_t3_rate_limiting_LLQ_t.pl,General,AGAVE,LLQ 
+/system-test/testscripts/HSBU/Infrastructure/Bluecube/Absolut/port_mirroring_ipv6.pl,General,ABSOLUTE,port mirroring
+/system-test/testscripts/HSBU/Infrastructure/Bluecube/FlowTap/112_flowtap_control_1_ipv6_t.pl,General,services,flowtap
+/system-test/testscripts/HSBU/Infrastructure/Bluecube/FlowTap/112_flowtap_control_2_ipv6_t.pl,General,services,flowtap
+/system-test/testscripts/HSBU/Infrastructure/Bluecube/FlowTap/112_flowtap_notif_proto_ipv6_t.pl,General,Bluecube,FlowTap
+/system-test/testscripts/HSBU/Infrastructure/Bluecube/Multi_Pkt_PortMirror.pl,General,Bluecube,port mirroring
+/system-test/testscripts/HSBU/Infrastructure/CBF/Absolut/lsp_cbf_8Q_aggether_Absolut.pl,General,CBF,LSP
+/system-test/testscripts/HSBU/Infrastructure/CBF/Absolut/rpd_chassid_lsp_cbf.pl,General,CBF,LSP
+/system-test/testscripts/HSBU/Infrastructure/CF/dcp_eftf_functional_test_t.pl,General,Cf,Destination Class Policing
+/system-test/testscripts/HSBU/Infrastructure/CF/Firewall/2lvl_filter_sauza.pl,General,FIREWALL,FILTER
+/system-test/testscripts/HSBU/Infrastructure/CF/urpf_discard.pl,General,CF,urpf
+/system-test/testscripts/HSBU/Infrastructure/CFD/PR_661367_SNMP_disable.pl,General,SNMP,CFD
+/system-test/testscripts/HSBU/Infrastructure/CFD/PR_709337_UI_instance_import_commit_failed.pl,General,CFD,UI
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/Absolut/PEM_Fabric_powercycle.pl,General,CHASSISD,FRU
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/J114_13509_t1600_fhp_fpc_regression.pl,General,CHASSISD,fhp_fpc
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/J114_13509_t1600_fhp_re_regression.pl,General,CHASSISD,fhp_re
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/mgd_sanity_tx.pl,General,CHASSISD,MGD
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/PEM/SiriusPEMTest.pl,General,CHASSISD,PEM
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/pr_482332.pl,General,CHASSISD,cli
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/ptx3k/re_priority-1.pl,General,CHASSISD,RE
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/ptx3k/re_ptx.pl,General,CHASSISD,RE
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/ptx3k/ssh-connect.pl,General,CHASSISD,SSH-CONNECT
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/re_priority-1.pl,General,CHASSISD,Tseries
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/RLI_13292/degraded_fabric_handling_nort_11_3_pfe1-2.pl,General,CHASSISD,FABRIC
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/RLI_13292/degraded_fabric_handling_rt_11_3_pfe1-m.pl,General,CHASSISD,PFE
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/RLI_13292/degraded_fabric_handling_rt_11_3_pfe2-2.pl,General,CHASSISD,Fabric handling
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/Sangria/123_RLI_12450_PTX9000_hostbound.pl,General,CHASSISD,HOSTBOUND
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/Sangria/re_if_flap.pl,General,RE,PTX
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/Sangria/re_ptx.pl,General,RE ,PTX
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/Sangria/re_ptx_priority-0.pl,General,CHASSISD,PTX
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/Sangria/re_ptx_priority-1.pl,General,COS,scaling
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/Sangria/re_ptx_priority-2.pl,General,CHASSISD,PTX
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/Sangria/re_ptx_priority-3.pl,General,CHASSISD,RE
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/Sangria/re_ptx_priority-4.pl,General,CHASSISD,PTX
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/Sangria/re_ptx_priority-5.pl,General,CHASSISD,PTX
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/Sangria/re_traffic_sanity.pl,General,RE,PTX
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/Sangria/re_traffic_sanity-2.pl,General,RE,PTX
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/Sangria/ssh_priv_separation_sangria.pl,General,RE ,PTX
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/Sangria/ssh-connect.pl,General,RE,PTX
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/ssh_priv_separation_T_TXP.pl,General,CHASSISD,SSH
+/system-test/testscripts/HSBU/Infrastructure/COS/Absolut/iq2_cos_10g_part2_absolut.pl,General,COS,10Gig   iq2
+/system-test/testscripts/HSBU/Infrastructure/COS/atm2_ifd_egress_fcq.pl,General,COS,FCQ_Egress
+/system-test/testscripts/HSBU/Infrastructure/COS/Brooklyn/cos_8queue_tseries_ae.pl,General,COS,8Queue
+/system-test/testscripts/HSBU/Infrastructure/COS/Brooklyn/fc16_classifier_rewrite_e3fpc_ae.pl,General,COS,CLASSIFIER REWRITE
+/system-test/testscripts/HSBU/Infrastructure/COS/Brooklyn/rt_cos_classifier_rewrite_ae.pl,General,COS,FC16
+/system-test/testscripts/HSBU/Infrastructure/Cos/cos_red.pl,General,COS,Basic
+/system-test/testscripts/HSBU/Infrastructure/Cos/cos_scheduler.pl,General,Cos,WRR
+/system-test/testscripts/HSBU/Infrastructure/Cos/cos_scheduler_so.pl,General,COS,SCHEDULER
+/system-test/testscripts/HSBU/Infrastructure/Cos/Dolphin_WFQ_Ifl_iflset_T.pl,General,Cos,WFQ
+/system-test/testscripts/HSBU/Infrastructure/Cos/exp_classifier_exp_null_sauza_rt.pl,General,Cos,sauza
+/system-test/testscripts/HSBU/Infrastructure/COS/FC16/Absolut/fc16_rewrite_v6.pl,General,Cos,IPv6 on FC16
+/system-test/testscripts/HSBU/Infrastructure/COS/FC16/Absolut/fc16_rewrite_v6_rt.pl,General,Cos,Fc16 rewrite
+/system-test/testscripts/HSBU/Infrastructure/COS/IQ/iq_egress_fcq.pl,General,Cos,IQ
+/system-test/testscripts/HSBU/Infrastructure/COS/IQ/iq2_ifd_egress_fcq.pl,General,Cos,Iq2
+/system-test/testscripts/HSBU/Infrastructure/COS/lsq_egress_fcq.pl,General,COS,LSQ/FCQ
+/system-test/testscripts/HSBU/Infrastructure/Cos/misc_v6cos_sauza_rt.pl,General,Cos,sauza
+/system-test/testscripts/HSBU/Infrastructure/Cos/misc_v6cos_sauza_rt.pl,General,Cos,Basic
+/system-test/testscripts/HSBU/Infrastructure/Cos/mpls_vlanccc_cos_sauza.pl,General,Cos,mpls_vlanccc
+/system-test/testscripts/HSBU/Infrastructure/COS/PR/chassis_scheduler_pr449966.pl,General,COS,scheduler
+/system-test/testscripts/HSBU/Infrastructure/COS/PR/PR_442418.pl,General,COS,Aggregation
+/system-test/testscripts/HSBU/Infrastructure/COS/PR/pr_474981.pl,General,COS,WRED Profile unavailable log messages
+/system-test/testscripts/HSBU/Infrastructure/COS/pr400749_per_unit_schdlr_qchip_err.pl,General,COS,QCHIP
+/system-test/testscripts/HSBU/Infrastructure/COS/ptx3k/121_RLI_17906_PTX_ptx_cos_sch_sanity.pl,General,COS,SCHEDULAR
+/system-test/testscripts/HSBU/Infrastructure/COS/ptx3k/121_RLI_17906_PTX_ptx_cos_schedulers.pl,General,COS,SCHEDULAR
+/system-test/testscripts/HSBU/Infrastructure/COS/ptx3k/121_RLI_17906_PTX_ptx_cos_schedulers_excess.pl,General,COS,SCHEDULAR
+/system-test/testscripts/HSBU/Infrastructure/COS/ptx3k/123_RLI_18945_PTX_ptx_cos_latency.pl,General,COS,LATENCY
+/system-test/testscripts/HSBU/Infrastructure/COS/ptx3k/123_TPI_18945_ptx_exp_classifier_exp_null.pl,General,COS,CLASSIFIER
+/system-test/testscripts/HSBU/Infrastructure/COS/ptx3k/123_TPI_18945_ptx_exp_classifier_exp_null_two_lbl.pl,General,COS,CLASSIFIER
+/system-test/testscripts/HSBU/Infrastructure/COS/ptx3k/cbf_v4.pl,General,COS,CBF_IPv4
+/system-test/testscripts/HSBU/Infrastructure/COS/ptx3k/fc16_classifier_v6.pl,General,COS,FC16_CLASSIFIER
+/system-test/testscripts/HSBU/Infrastructure/COS/ptx3k/fc16_rewrite_v6.pl,General,COS,FC16_REWRITE_IPv6
+/system-test/testscripts/HSBU/Infrastructure/COS/ptx3k/ptx_cos_sch_sanity.pl,General,COS,SCHEDULAR
+/system-test/testscripts/HSBU/Infrastructure/COS/ptx3k/ptx_cos_schedulers.pl,General,COS,SCHEDULAR
+/system-test/testscripts/HSBU/Infrastructure/COS/ptx3k/sangria_cos_4plp_map.pl,General,COS,4PLP_MAP
+/system-test/testscripts/HSBU/Infrastructure/COS/ptx3k/sangria_cos_clr_rew_scaling.pl,General,COS,CLASSIFIER_REWRITE
+/system-test/testscripts/HSBU/Infrastructure/COS/ptx3k/sangria_cos_clr_rew_scaling2.pl,General,COS,CLASSIFIER_REWRITE
+/system-test/testscripts/HSBU/Infrastructure/COS/ptx3k/sangria_cos_fc16_classifier_rewrite.pl,General,COS,FC16_CLASSIFIER_REWRITE
+/system-test/testscripts/HSBU/Infrastructure/COS/Safari/safari_rsd_firewall.pl,General,COS,safari
+/system-test/testscripts/HSBU/Infrastructure/COS/Safari/su_4plp_class_rew_rsd.pl,General,ETHERNET,COS
+/system-test/testscripts/HSBU/Infrastructure/COS/Safari/su_4plp_class_rew_rsd_ftmgmt.pl,General,cos,cos
+/system-test/testscripts/HSBU/Infrastructure/COS/Safari/sue_rsd_scheduler.pl,General,COS,SCHEDULER
+/system-test/testscripts/HSBU/Infrastructure/COS/Safari/sue_rsd_trtcm_rt.pl,General,COS,trTCM
+/system-test/testscripts/HSBU/Infrastructure/COS/Sangria/121_RLI_17906_PTX_ptx_cos_schedulers.pl,General,PFE,COS
+/system-test/testscripts/HSBU/Infrastructure/COS/Sangria/121_RLI_17906_PTX_ptx_cos_schedulers_excess.pl,General,CHASSISD,COS
+/system-test/testscripts/HSBU/Infrastructure/COS/Sangria/123_RLI_18945_PTX_ptx_cos_latency.pl,General,Cos,Latency
+/system-test/testscripts/HSBU/Infrastructure/COS/Sangria/123_TPI_18945_ptx5000_exp_classifier_exp_null.pl,General,COS,classifier
+/system-test/testscripts/HSBU/Infrastructure/COS/Sangria/123_TPI_18945_ptx5000_exp_classifier_exp_null_two_lbl.pl,General,COS,classifier
+/system-test/testscripts/HSBU/Infrastructure/COS/Sangria/cbf_v4.pl,General,COS,PFE
+/system-test/testscripts/HSBU/Infrastructure/COS/Sangria/fc16_classifier_v6.pl,General,COS,fc16_classifier/ipv6
+/system-test/testscripts/HSBU/Infrastructure/COS/Sangria/fc16_rewrite_v6.pl,General,COS,fc16_rewrite_v6
+/system-test/testscripts/HSBU/Infrastructure/COS/Sangria/PR738552_ptx_cos_schedulers_excess.pl,General,COS,schedulers
+/system-test/testscripts/HSBU/Infrastructure/COS/Sangria/ptx_cos_sch_sanity.pl,General,COS,sanity
+/system-test/testscripts/HSBU/Infrastructure/COS/Sangria/ptx_cos_schedulers.pl,General,COS,scheduler
+/system-test/testscripts/HSBU/Infrastructure/COS/Sangria/PVQ/132_RLI_16699_exp_classifier_exp_null.pl,General,COS,CLASSIFIER
+/system-test/testscripts/HSBU/Infrastructure/COS/Sangria/PVQ/132_RLI_16699_fc16_rewrite_v6.pl,General,COS,FC16_REWRITE_IPv6
+/system-test/testscripts/HSBU/Infrastructure/COS/Sangria/PVQ/132_RLI_16699_per_unit_scheduler_n_to_1.pl,General,COS,SCHEDULAR
+/system-test/testscripts/HSBU/Infrastructure/COS/Sangria/sangria_cos_4plp_map.pl,General,COS,Sangria
+/system-test/testscripts/HSBU/Infrastructure/COS/Sangria/sangria_cos_clr_rew_scaling.pl,General,COS,classifier
+/system-test/testscripts/HSBU/Infrastructure/COS/Sangria/sangria_cos_clr_rew_scaling2.pl,General,COS,cos
+/system-test/testscripts/HSBU/Infrastructure/COS/Sangria/sangria_cos_fc16_classifier_rewrite.pl,General,CHASSISD,Fabric
+/system-test/testscripts/HSBU/Infrastructure/Cos/trtcm_tserie_rt.pl,General,COS,COS
+/system-test/testscripts/HSBU/Infrastructure/COS/Unidir_iq2_cos.pl,General,Cos,iq2
+/system-test/testscripts/HSBU/Infrastructure/Diffserv/Absolut/ieee_cos.pl,General,ABSOLUTE,ieee cos
+/system-test/testscripts/HSBU/Infrastructure/Firewall/32bitsFilters/basic_firewall.pl,General,FIREWALL,BASIC
+/system-test/testscripts/HSBU/Infrastructure/Firewall/32bitsFilters/basic_policer.pl,General,FIREWALL,basic policer
+/system-test/testscripts/HSBU/Infrastructure/Firewall/32bitsFilters/FilterScaling_rt.pl,General,FIREWALL,Filter Scaling
+/system-test/testscripts/HSBU/Infrastructure/Firewall/32bitsFilters/svc_frag_opt.pl,General,FIREWALL,FILTER
+/system-test/testscripts/HSBU/Infrastructure/Firewall/ms_app_jtree_filter_multisegment.pl,General,cf,firewall
+/system-test/testscripts/HSBU/Infrastructure/Firewall/ptx3k/J121_11559_PTX_firewall_Rejct_Loopback.pl,General,Firewall,FIREWALL_REJECT_WAN
+/system-test/testscripts/HSBU/Infrastructure/Firewall/ptx3k/sangria_auto_policing.pl,General,Firewall,POLICY
+/system-test/testscripts/HSBU/Infrastructure/Firewall/ptx3k/sangria_filter_order.pl,General,Firewall,FILTER
+/system-test/testscripts/HSBU/Infrastructure/Firewall/ptx3k/sangria_firewall_dscp_action.pl,General,Firewall,DSCP
+/system-test/testscripts/HSBU/Infrastructure/Firewall/ptx3k/sangria_firewall_ipv4_2_input.pl,General,Firewall,IPv4
+/system-test/testscripts/HSBU/Infrastructure/Firewall/ptx3k/sangria_firewall_ipv4_2_output.pl,General,Firewall,IPv4
+/system-test/testscripts/HSBU/Infrastructure/Firewall/ptx3k/sangria_firewall_ipv4_input.pl,General,Firewall,IPv4
+/system-test/testscripts/HSBU/Infrastructure/Firewall/ptx3k/sangria_firewall_ipv4_output.pl,General,Firewall,IPv4
+/system-test/testscripts/HSBU/Infrastructure/Firewall/ptx3k/sangria_firewall_ipv6_2_input.pl,General,Firewall,IPv6
+/system-test/testscripts/HSBU/Infrastructure/Firewall/ptx3k/sangria_firewall_ipv6_2_output.pl,General,Firewall,IPv6
+/system-test/testscripts/HSBU/Infrastructure/Firewall/ptx3k/sangria_firewall_ipv6_input.pl,General,Firewall,IPv6
+/system-test/testscripts/HSBU/Infrastructure/Firewall/ptx3k/sangria_firewall_ipv6_output.pl,General,Firewall,IPv6
+/system-test/testscripts/HSBU/Infrastructure/Firewall/ptx3k/sangria_firewall_ISFcounter.pl,General,Firewall,ISF_COUNTER
+/system-test/testscripts/HSBU/Infrastructure/Firewall/ptx3k/sangria_firewall_sanity.pl,General,Firewall,SANITY
+/system-test/testscripts/HSBU/Infrastructure/Firewall/ptx3k/sangria_ftf.pl,General,Firewall,FTF
+/system-test/testscripts/HSBU/Infrastructure/Firewall/ptx3k/sangria_mpls_ae.pl,General,Firewall,MPLS/AE
+/system-test/testscripts/HSBU/Infrastructure/Firewall/ptx3k/sangria_policer.pl,General,Firewall,POLICER
+/system-test/testscripts/HSBU/Infrastructure/Firewall/ptx3k/sangria_policer_ae.pl,General,Firewall,POLICER_AE
+/system-test/testscripts/HSBU/Infrastructure/Firewall/ptx3k/sangria_policer_ccc.pl,General,Firewall,POLICER_CCC
+/system-test/testscripts/HSBU/Infrastructure/Firewall/ptx3k/sangria_policer_group.pl,General,Firewall,POLICER_GROUP
+/system-test/testscripts/HSBU/Infrastructure/Firewall/ptx3k/sangria_policer_ipv6.pl,General,Firewall,POLICER_IPv6
+/system-test/testscripts/HSBU/Infrastructure/Firewall/ptx3k/sangria_policer_mpls2.pl,General,Firewall,POLICER_MPLS
+/system-test/testscripts/HSBU/Infrastructure/Firewall/ptx3k/sangria_policer_srtcm.pl,General,Firewall,POLICER_srTCM
+/system-test/testscripts/HSBU/Infrastructure/Firewall/ptx3k/sangria_policer_trtcm.pl,General,Firewall,POLICER_trTCM
+/system-test/testscripts/HSBU/Infrastructure/Firewall/ptx3k/sangria_port_mirroring.pl,General,Firewall,PORT_MIRRORING
+/system-test/testscripts/HSBU/Infrastructure/Firewall/ptx3k/sangria_port_mirroring_ae.pl,General,Firewall,PORT_MIRRORING_AE
+/system-test/testscripts/HSBU/Infrastructure/Firewall/Sangria/J121_11559_PTX_firewall_Rejct_Loopback.pl,General,FIREWALL,policer
+/system-test/testscripts/HSBU/Infrastructure/Firewall/Sangria/sangria_auto_policing.pl,General,FIREWALL,Policer
+/system-test/testscripts/HSBU/Infrastructure/Firewall/Sangria/sangria_filter_order.pl,General,FIREWALL,FILTER
+/system-test/testscripts/HSBU/Infrastructure/Firewall/Sangria/sangria_firewall_dscp_action.pl,General,FIREWALL,Policer
+/system-test/testscripts/HSBU/Infrastructure/Firewall/Sangria/sangria_firewall_ipv4_2_input.pl,General,FIREWALL,POLICER
+/system-test/testscripts/HSBU/Infrastructure/Firewall/Sangria/sangria_firewall_ipv4_2_output.pl,General,FIREWALL,POLICER
+/system-test/testscripts/HSBU/Infrastructure/Firewall/Sangria/sangria_firewall_ipv4_input.pl,General,FIREWALL,Sangria
+/system-test/testscripts/HSBU/Infrastructure/Firewall/Sangria/sangria_firewall_ipv4_output.pl,General,FIREWALL,Sangria
+/system-test/testscripts/HSBU/Infrastructure/Firewall/Sangria/sangria_firewall_ipv6_2_input.pl,General,FIREWALL,Sangria
+/system-test/testscripts/HSBU/Infrastructure/Firewall/Sangria/sangria_firewall_ipv6_2_output.pl,General,FIREWALL,Sangria
+/system-test/testscripts/HSBU/Infrastructure/Firewall/Sangria/sangria_firewall_ipv6_input.pl,General,FIREWALL,Sangria
+/system-test/testscripts/HSBU/Infrastructure/Firewall/Sangria/sangria_firewall_ipv6_output.pl,General,FIREWALL,Sangria
+/system-test/testscripts/HSBU/Infrastructure/Firewall/Sangria/sangria_firewall_ISFcounter.pl,General,FIREWALL,Sangria
+/system-test/testscripts/HSBU/Infrastructure/Firewall/Sangria/sangria_firewall_sanity.pl,General,FIREWALL,Sangria
+/system-test/testscripts/HSBU/Infrastructure/Firewall/Sangria/sangria_ftf.pl,General,FIREWALL,FTF
+/system-test/testscripts/HSBU/Infrastructure/Firewall/Sangria/sangria_mpls_ae.pl,General,FIREWALL,MPLS
+/system-test/testscripts/HSBU/Infrastructure/Firewall/Sangria/sangria_policer.pl,General,FIREWALL,POLICER
+/system-test/testscripts/HSBU/Infrastructure/Firewall/Sangria/sangria_policer_ae.pl,General,FIREWALL,POLICER
+/system-test/testscripts/HSBU/Infrastructure/Firewall/Sangria/sangria_policer_ccc.pl,General,FIREWALL,Policer
+/system-test/testscripts/HSBU/Infrastructure/Firewall/Sangria/sangria_policer_group.pl,General,FIREWALL,Policer
+/system-test/testscripts/HSBU/Infrastructure/Firewall/Sangria/sangria_policer_ipv6.pl,General,FIREWALL,POLICER
+/system-test/testscripts/HSBU/Infrastructure/Firewall/Sangria/sangria_policer_mpls2.pl,General,FIREWALL,Policer
+/system-test/testscripts/HSBU/Infrastructure/Firewall/Sangria/sangria_policer_srtcm.pl,General,FIREWALL,Policer
+/system-test/testscripts/HSBU/Infrastructure/Firewall/Sangria/sangria_policer_trtcm.pl,General,FIREWALL,Policer
+/system-test/testscripts/HSBU/Infrastructure/Firewall/Sangria/sangria_port_mirroring.pl,General,FIREWALL,mirroring
+/system-test/testscripts/HSBU/Infrastructure/Firewall/Sangria/sangria_port_mirroring_ae.pl,General,FIREWALL,mirroring
+/system-test/testscripts/HSBU/Infrastructure/GRES/Absolut/graceful_cos.pl,General,GRES,COS
+/system-test/testscripts/HSBU/Infrastructure/GRES/graceful_sanity_ping_sauza_rt.pl,General,GRES,sanity on sauza
+/system-test/testscripts/HSBU/Infrastructure/GRES/graceful_sanity_ping_sauza_tc2_rt.pl,General,GRES,sanity on sauza
+/system-test/testscripts/HSBU/Infrastructure/GSP/Absolut/jflowv9_mpls_TXP.pl,General,GSP,mpls
+/system-test/testscripts/HSBU/Infrastructure/GSP/dep_functional_test_pkt.pl,General,TUNNEL,DEP
+/system-test/testscripts/HSBU/Infrastructure/GSP/Hobson/101_jflowv9_RLI_11912_per_pfe_tseries.pl,General,GSP,Stargate
+/system-test/testscripts/HSBU/Infrastructure/GSP/Hobson/jflowv9_ipv6_sg3_scaling_tx.pl,General,GSP,Scaling
+/system-test/testscripts/HSBU/Infrastructure/GSP/Hobson/jflowv9_mpls_sg3_scaling_tx.pl,General,GSP,mpls
+/system-test/testscripts/HSBU/Infrastructure/GSP/ipsec_aes_nh_v6v4_traffic_on_v4gw_pkt.pl,General,GSP,IPV6/4
+/system-test/testscripts/HSBU/Infrastructure/GSP/ipsec_aes_nh_v6v4_traffic_on_v6gw_pkt.pl,General,GSP,ipsec
+/system-test/testscripts/HSBU/Infrastructure/GSP/ipsec_ike_nh_pkt.pl,General,GSP,ipsec
+/system-test/testscripts/HSBU/Infrastructure/GSP/ipsec_ike_nh_proto_safari.pl,General,GSP,IPSec
+/system-test/testscripts/HSBU/Infrastructure/GSP/ipsec_int_pkt.pl,General,GSP,ipsec
+/system-test/testscripts/HSBU/Infrastructure/GSP/ipsec_pkt_flow.pl,General,GSP,Tunnel
+/system-test/testscripts/HSBU/Infrastructure/GSP/ipsec_sanity_safari.pl,General,GSP,IPSec
+/system-test/testscripts/HSBU/Infrastructure/GSP/mcast-ipsec_rt.pl,General,GSP,MCAST IPSEC
+/system-test/testscripts/HSBU/Infrastructure/GSP/vpn_ipsec_pepe_t.pl,General,GSP,VPN/IPSEC
+/system-test/testscripts/HSBU/Infrastructure/GSP/vrfAwareIKE/ipsec_int_vrfAware_pkt.pl,General,GRES,Ipsec with Vrf
+/system-test/testscripts/HSBU/Infrastructure/GSP/vrfAwareIKE/IPsec_vrfAware_performance_2RTports_INT_pkt.pl,General,GSP ,VRF
+/system-test/testscripts/HSBU/Infrastructure/GSP/vrfAwareIKE/IPsec_vrfAware_performance_2RTports_pkt.pl,General,GSP,IPSEC
+/system-test/testscripts/HSBU/Infrastructure/GSP/vrfAwareIKE/IPsec_vrfAware_performance_2RTports_pkt.pl,General,GSP ,VRF
+/system-test/testscripts/HSBU/Infrastructure/Hobson/GRES/gres_pr432761_TX.pl,General,GRES,checking for PFEMAN reconnect error
+/system-test/testscripts/HSBU/Infrastructure/Hobson/UI/pr293195_delete_file.pl,General,UI,CHASSIS
+/system-test/testscripts/HSBU/Infrastructure/ISSU/issu_sanity_cos.pl,General,ISSU,SANITY
+/system-test/testscripts/HSBU/Infrastructure/ISSU/pr707215_issu.pl,General,ISSU,Chassis/OSPF/BFD
+/system-test/testscripts/HSBU/Infrastructure/JFlow/gsp_accouting_gres_ms400_tx.pl,General,JFLOW,GSP accounting with GRES
+/system-test/testscripts/HSBU/Infrastructure/JFlow/JFlow6_pmon_ipv4.pl,General,JFLOW,Passive monitoring
+/system-test/testscripts/HSBU/Infrastructure/JFlow/JFlow6_pmon_ipv4_1.pl,General,JFLOW,Passive monitoring
+/system-test/testscripts/HSBU/Infrastructure/JFlow/jflowv9_ipv4_tx.pl,General,JFLOW,IPV4
+/system-test/testscripts/HSBU/Infrastructure/JFlow/jflowv9_ipv6_tx.pl,General,JFLOW,IPV6
+/system-test/testscripts/HSBU/Infrastructure/mpls_filter/MPLS_Filter.pl,General,MPLS,FILTER
+/system-test/testscripts/HSBU/Infrastructure/PFE/fib_basic.pl,General,PFE,fib_basic
+/system-test/testscripts/HSBU/Infrastructure/PFE/fib_basic2.pl,General,PFE,fib
+/system-test/testscripts/HSBU/Infrastructure/PFE/fib_basic2_ae.pl,General,PFE,FIB Localization
+/system-test/testscripts/HSBU/Infrastructure/PFE/fib_basic2_v6.pl,General,PFE,fib_v6
+/system-test/testscripts/HSBU/Infrastructure/PFE/fib_graceful_fbf.pl,General,PFE,GRES
+/system-test/testscripts/HSBU/Infrastructure/PFE/fib_graceful_ftfv6.pl,General,PFE,GRES
+/system-test/testscripts/HSBU/Infrastructure/PFE/fib_mcast_vpn_basic.pl,General,PFE,mcast_vpn
+/system-test/testscripts/HSBU/Infrastructure/PFE/fib_rip_nsr.pl,General,PFE,RIP
+/system-test/testscripts/HSBU/Infrastructure/PFE/fib_scu_dcu_bps_pps_ipv6.pl,General,PFE,IPv6 
+/system-test/testscripts/HSBU/Infrastructure/PFE/fib_v6_route_filter.pl,General,PFE,FILTER
+/system-test/testscripts/HSBU/Infrastructure/PFE/NH/ptx3k/ipv4_ecmp_ae_2x4_nh.pl,General,PFE,NH
+/system-test/testscripts/HSBU/Infrastructure/PFE/NH/ptx3k/ipv4_ecmp_ae_2x4_nh_2.pl,General,PFE,NH
+/system-test/testscripts/HSBU/Infrastructure/PFE/NH/ptx3k/ipv6_ecmp_ae_2x4_nh.pl,General,PFE,NH
+/system-test/testscripts/HSBU/Infrastructure/PFE/NH/ptx3k/ipv6_ecmp_ae_2x4_nh_2.pl,General,PFE,NH
+/system-test/testscripts/HSBU/Infrastructure/PFE/NH/ptx3k/J121_ptx_mpls_ecmp_ae_lb_hash_key_2x4.pl,General,PFE,NH
+/system-test/testscripts/HSBU/Infrastructure/PFE/NH/ptx3k/J123_18958_ptx_ip_to_mpls_ecmp_ae_nh.pl,General,PFE,NH
+/system-test/testscripts/HSBU/Infrastructure/PFE/NH/ptx3k/unilist_different_type.pl,General,PFE,NH
+/system-test/testscripts/HSBU/Infrastructure/PFE/NH/Sangria/ipv4_ecmp_ae_2x4_nh.pl,General,pfe,nh
+/system-test/testscripts/HSBU/Infrastructure/PFE/NH/Sangria/ipv4_ecmp_ae_2x4_nh_2.pl,General,pfe,nh
+/system-test/testscripts/HSBU/Infrastructure/PFE/NH/Sangria/ipv6_ecmp_ae_2x4_nh.pl,General,PFE,NH
+/system-test/testscripts/HSBU/Infrastructure/PFE/NH/Sangria/ipv6_ecmp_ae_2x4_nh_2.pl,General,pfe,nh
+/system-test/testscripts/HSBU/Infrastructure/PFE/NH/Sangria/J121_ptx_mpls_ecmp_ae_lb_hash_key_2x4.pl,General,PFE,NH
+/system-test/testscripts/HSBU/Infrastructure/PFE/NH/Sangria/J123_18958_ptx_ip_to_mpls_ecmp_ae_nh.pl,General,PFE,NH
+/system-test/testscripts/HSBU/Infrastructure/PFE/NH/Sangria/J123_18958_ptx_ipv4_ecmp_ae_nh_64LAG.pl,General,PFE,NH
+/system-test/testscripts/HSBU/Infrastructure/PFE/NH/Sangria/unilist_different_type.pl,General,PFE,NH
+/system-test/testscripts/HSBU/Infrastructure/PFE/PFE_ROUTE/ptx3k/ccc_local_switching_scale_tl.pl,General,PFE,PFE_ROUTE
+/system-test/testscripts/HSBU/Infrastructure/PFE/PFE_ROUTE/ptx3k/J121_ptx_ipv4_fib_mix_prefix_30.pl,General,PFE,PFE_ROUTE
+/system-test/testscripts/HSBU/Infrastructure/PFE/PFE_ROUTE/ptx3k/J121_ptx_ipv6_fib_mix_prefix_126.pl,General,PFE,PFE_ROUTE
+/system-test/testscripts/HSBU/Infrastructure/PFE/PFE_ROUTE/ptx3k/sangria-l2circuits-ccc.pl,General,PFE,PFE_ROUTE
+/system-test/testscripts/HSBU/Infrastructure/PFE/PFE_ROUTE/ptx3k/sangria-l2circuits-tcc.pl,General,PFE,PFE_ROUTE
+/system-test/testscripts/HSBU/Infrastructure/PFE/PFE_ROUTE/ptx3k/tcc_local_switching_scale_tl.pl,General,PFE,PFE_ROUTE
+/system-test/testscripts/HSBU/Infrastructure/PFE/PFE_ROUTE/Sangria/ccc_local_switching_scale_tl.pl,General,PFE,Routes
+/system-test/testscripts/HSBU/Infrastructure/PFE/PFE_ROUTE/Sangria/J121_ptx_ipv4_fib_mix_prefix_30.pl,General,PFE,IPV4_FIB
+/system-test/testscripts/HSBU/Infrastructure/PFE/PFE_ROUTE/Sangria/J121_ptx_ipv6_fib_mix_prefix_126.pl,General,PFE,PFE_ROUTE
+/system-test/testscripts/HSBU/Infrastructure/PFE/PFE_ROUTE/Sangria/J121_ptx_ipv6_fib_prefix_108.pl,General,PFE,IPv6 Routes
+/system-test/testscripts/HSBU/Infrastructure/PFE/PFE_ROUTE/Sangria/sangria-l2circuits-ccc.pl,General,PFE,Routes
+/system-test/testscripts/HSBU/Infrastructure/PFE/PFE_ROUTE/Sangria/sangria-l2circuits-tcc.pl,General,PFE,Routes
+/system-test/testscripts/HSBU/Infrastructure/PFE/PFE_ROUTE/Sangria/tcc_local_switching_scale_tl.pl,General,PFE,Routes
+/system-test/testscripts/HSBU/Infrastructure/PFE/Sangria/j123_18764_PTX_dhcp.pl,General,PFE,DHCP
+/system-test/testscripts/HSBU/Infrastructure/Platform/Fabric/FHP/J123_RLI_16485_PTX_FHP_GRES.pl,General,CHASSISD,PTX
+/system-test/testscripts/HSBU/Infrastructure/Platform/Fabric/FHP/J123_RLI_16485_PTX_FHP_interaction_blackholing_degreadfabric.pl,General,CHASSISD,PTX
+/system-test/testscripts/HSBU/Infrastructure/Platform/Fabric/FHP/J123_RLI_16485_PTX_FHP_interaction_degreadfabric_blackholing.pl,General,CHASSISD,PTX
+/system-test/testscripts/HSBU/Infrastructure/Platform/Fabric/FHP/J123_RLI_16485_PTX_FHP_multifpc_Blackholing_nort.pl,General,CHASSISD,PTX
+/system-test/testscripts/HSBU/Infrastructure/Platform/Fabric/FHP/J123_RLI_16485_PTX_FHP_multifpc_DegradedFabric_nort.pl,General,CHASSISD,PTX
+/system-test/testscripts/HSBU/Infrastructure/Platform/Fabric/FHP/J123_RLI_16485_PTX_FHP_offlinefaultsib.pl,General,CHASSISD,PTX
+/system-test/testscripts/HSBU/Infrastructure/Platform/Fabric/FHP/J123_RLI_16485_PTX_FHP_sibautoheal.pl,General,CHASSISD,PTX
+/system-test/testscripts/HSBU/Infrastructure/Platform/ptx3k/133_RLI_18003_PTX3000_down-zone.pl,General,Sangria,DOWN_ZONE
+/system-test/testscripts/HSBU/Infrastructure/Platform/ptx3k/133_RLI_18003_PTX3000-zone0.pl,General,Sangria,ZONE0
+/system-test/testscripts/HSBU/Infrastructure/Platform/ptx3k/133_RLI_18003_PTX3000-zone1.pl,General,Sangria,ZONE1
+/system-test/testscripts/HSBU/Infrastructure/Policing/BW_Sharing_policer_ae.pl,General,POLICER,Aggregation
+/system-test/testscripts/HSBU/Infrastructure/Policing/ethernet_policer_8k.pl,General,POLICER,ETHERNET
+/system-test/testscripts/HSBU/Infrastructure/Policing/hierarchical_policer_ipv4.pl,General,POLICER,IPV4
+/system-test/testscripts/HSBU/Infrastructure/Policing/hierarchical_policer_ipv4_lsq.pl,General,FIREWALL,Policer/hierarchicalpolicer
+/system-test/testscripts/HSBU/Infrastructure/Policing/hierarchical_policer_ipv6.pl,General,POLICER,IPV6
+/system-test/testscripts/HSBU/Infrastructure/Policing/hierarchical_policer_ipv6_lsq.pl,General,FIREWALL,Policer/hierarchicalpolicer
+/system-test/testscripts/HSBU/Infrastructure/Policing/hierarchical_policer_mpls.pl,General,POLICER,mpls
+/system-test/testscripts/HSBU/Infrastructure/Policing/hierarchical_policer_mpls_lsq.pl,General,FIREWALL,Policer/hierarchicalpolicer
+/system-test/testscripts/HSBU/Infrastructure/Policing/hierarchical_policer_scale.pl,General,FIREWALL,Scaling
+/system-test/testscripts/HSBU/Infrastructure/Policing/hierarchical_policer_scale_different_hp.pl,General,FIREWALL,POLICER
+/system-test/testscripts/HSBU/Infrastructure/Policing/hierarchical_policer_scale_lp.pl,General,FIREWALL,policer
+/system-test/testscripts/HSBU/Infrastructure/Policing/hierarchical_policer_scale_php.pl,General,POLICER,Hierarchical
+/system-test/testscripts/HSBU/Infrastructure/Policing/sonet_policer_8k.pl,General,POLICER,sonet
+/system-test/testscripts/HSBU/Infrastructure/PR/fpc_resync.pl,General,PR,FPC
+/system-test/testscripts/HSBU/Infrastructure/PR/pr429564_LCC_page_fault_TX.pl,General,PR,chassisd
+/system-test/testscripts/HSBU/Infrastructure/PR/PR-526463.pl,General,SNMP,chassis/PSD
+/system-test/testscripts/HSBU/Infrastructure/PR/PR701800_SCG.pl,General,CHASSISD,SCG
+/system-test/testscripts/HSBU/Infrastructure/RLI-9434/rli_9434_gres_gr.pl,General,Scaling,GRES+graceful_restart
+/system-test/testscripts/HSBU/Infrastructure/RLI-9434/rli_9434_gres_nsr.pl,General,Scaling,GRES+NSR
+/system-test/testscripts/HSBU/Infrastructure/RLI-9434/rli_9434_traffic_test.pl,General,scaling,Basic
+/system-test/testscripts/HSBU/Infrastructure/Safari/SCE/RouteReflector/HS22/safari_sce_em0_interface_withMTUfix_64bit.pl,General,SCE,ETHERNET
+/system-test/testscripts/HSBU/Infrastructure/Safari/SCE/RouteReflector/HS22/safari_sce_em1_interface_withMTUfix_64bit.pl,General,SCE,ETHERNET
+/system-test/testscripts/HSBU/Infrastructure/Safari/SCE/RouteReflector/HS22/safari_sce_firewall_em0_64bit.pl,General,SCE,FIREWALL
+/system-test/testscripts/HSBU/Infrastructure/Safari/SCE/RouteReflector/HS22/safari_sce_firewall_em1_64bit.pl,General,SCE,FIREWALL
+/system-test/testscripts/HSBU/Infrastructure/Safari/SCE/RouteReflector/HS22/sce_chassisd_test.pl,General,SCE,CHASSIS
+/system-test/testscripts/HSBU/Infrastructure/Safari/SCE/RouteReflector/safari_rr_l3vpn_withMTUfix.pl,General,SAFARI,l3vpn
+/system-test/testscripts/HSBU/Infrastructure/Safari/SCE/RouteReflector/sce_chassisd_test.pl,General,SCE,Chassis
+/system-test/testscripts/HSBU/Infrastructure/Safari/SCE/RouteReflector/sce_fxp0_interface_MTUfix.pl,General,SCE,Interface testing
+/system-test/testscripts/HSBU/Infrastructure/Safari/SCE/RouteReflector/sce_fxp0_other_MTUfix.pl,General,SAFARI,BGP
+/system-test/testscripts/HSBU/Infrastructure/Safari/SCE/RouteReflector/sce_fxp1_interface_MTUfix.pl,General,SCE,interface testing
+/system-test/testscripts/HSBU/Infrastructure/Safari/SCE/RouteReflector/sce_fxp1_other_MTUfix.pl,General,SAFARI,route reflector
+/system-test/testscripts/HSBU/Infrastructure/Safari/Shared_Uplink/1x10GE_2psd_DA_filter.pl,General,SAFARI,Basic
+/system-test/testscripts/HSBU/Infrastructure/Safari/Shared_Uplink/bgp_sanity_DA_Filter.pl,General,BGP,Sanity
+/system-test/testscripts/HSBU/Infrastructure/Safari/Shared_Uplink/DWDM_2psd.pl,General,SAFARI,Basic
+/system-test/testscripts/HSBU/Infrastructure/Safari/Shared_Uplink/DWDM_basic.pl,General,SAFARI,SHARED UPLINK
+/system-test/testscripts/HSBU/Infrastructure/Safari/Shared_Uplink/ospf_sanity_DA_Filter.pl,General,SAFARI,OSPF
+/system-test/testscripts/HSBU/Infrastructure/Safari/Shared_Uplink/rli5083_events_perf.pl,General,SAFARI,SHARED UPLINK
+/system-test/testscripts/HSBU/Infrastructure/Safari/Shared_Uplink/rli5083_ipv4_bid.pl,General,SHARED_UPLINK,ipv4 bi-directional
+/system-test/testscripts/HSBU/Infrastructure/Safari/Shared_Uplink/rli5083_ipv4_perf.pl,General,SAFARI,SHARED UPLINK
+/system-test/testscripts/HSBU/Infrastructure/Safari/Shared_Uplink/rli5083_mpls_perf.pl,General,SHARED_UPLINK,mpls
+/system-test/testscripts/HSBU/Infrastructure/Safari/Shared_Uplink/Sanity_DA_Filter.pl,General,Filter,SHARED UPLINK
+/system-test/testscripts/HSBU/Infrastructure/Safari/Shared_Uplink/SUSAUZA_4plp_rewrite.pl,General,SAFARI,classification/Rewrite over shared interface
+/system-test/testscripts/HSBU/Infrastructure/Safari/Shared_Uplink/SUSAUZA_basic.pl,General,SAFARI,SHARED UPLINK
+/system-test/testscripts/HSBU/Infrastructure/Safari/Shared_Uplink/SUSAUZA_cf_scaling.pl,General,SAFARI,SHARED UPLINK
+/system-test/testscripts/HSBU/Infrastructure/Safari/Shared_Uplink/SUSAUZA_l2vpn_sanity_rt.pl,General,SAFARI,L2VPN
+/system-test/testscripts/HSBU/Infrastructure/Safari/Shared_Uplink/SUSAUZA_pim_sanity.pl,General,SAFARI,pim
+/system-test/testscripts/HSBU/Infrastructure/Safari/shareduplink_psd_policer.pl,General,SAFARI,SHARED UPLINK
+/system-test/testscripts/HSBU/Infrastructure/Safari/sue_firewall.pl,General,SHARED_UPLINK,FIREWALL
+/system-test/testscripts/HSBU/Infrastructure/Safari/sue_firewall_ipv6.pl,General,FIREWALL,ipv6
+/system-test/testscripts/HSBU/Infrastructure/Safari/sue_policer.pl,General,POLICER,basic
+/system-test/testscripts/HSBU/Infrastructure/Safari/sue_sa_filter.pl,General,SHARED_UPLINK,FILTER
+/system-test/testscripts/HSBU/Infrastructure/Sampling/Absolut/sampled.pl,General,ABSOLUTE,RE sampling
+/system-test/testscripts/HSBU/Infrastructure/Sangria/J123_18945_PTX_COS_ae_64link.pl,General,COS,AE_64LINK
+/system-test/testscripts/HSBU/Infrastructure/Sangria/J132_RLI_19404_rpm_bgp_3097_sangria.pl,General,Sangria,RPM_BGP
+/system-test/testscripts/HSBU/Infrastructure/Sangria/J132_RLI_19404_rpm_scaling_sangria.pl,General,Sangria,RPM_SCALIN
+/system-test/testscripts/HSBU/Infrastructure/Sangria/jnxBox_state.pl,General,SANGRIA,JNXBOX
+/system-test/testscripts/HSBU/Infrastructure/Sangria/jnxBox_test.pl,General,SANGRIA,CB
+/system-test/testscripts/HSBU/Infrastructure/Sangria/mib_asci_dec_test.pl,General,SANGRIA,MIB
+/system-test/testscripts/HSBU/Infrastructure/Sangria/pfe_statistics_mib_rli11514.pl,General,SANGRIA,PFE/MIB
+/system-test/testscripts/HSBU/Infrastructure/Sangria/Platform/chassis_sangria_cb.pl,General,CHASSISD,PTX
+/system-test/testscripts/HSBU/Infrastructure/Sangria/Platform/chassis_sangria_fpc1.pl,General,CHASSISD,FPC
+/system-test/testscripts/HSBU/Infrastructure/Sangria/Platform/chassis_sangria_fpc2.pl,General,CHASSISD,FPC
+/system-test/testscripts/HSBU/Infrastructure/Sangria/Platform/chassis_sangria_pic.pl,General,CHASSISD,PTX
+/system-test/testscripts/HSBU/Infrastructure/Sangria/Platform/chassis_sangria_spmb.pl,General,CHASSISD,PTX
+/system-test/testscripts/HSBU/Infrastructure/Sangria/Platform/chassis_sangria_zone0_cooling.pl,General,CHASSISD,PTX
+/system-test/testscripts/HSBU/Infrastructure/Sangria/Platform/Fabric/J123_RLI_12451_PTX_Sangria_fabric_basic.pl,General,CHASSISD,Fabric Management
+/system-test/testscripts/HSBU/Infrastructure/Sangria/Platform/Fabric/J123_RLI_12451_PTX_Sangria_fabric_faulthandling.pl,General,CHASSISD,Fabric Management
+/system-test/testscripts/HSBU/Infrastructure/Sangria/Platform/Fabric/J123_RLI_12451_PTX_Sangria_fabric_faulthandling_2.pl,General,CHASSISD,Fabric Management
+/system-test/testscripts/HSBU/Infrastructure/Sangria/Platform/Fabric/J123_RLI_12451_PTX_Sangria_fabric_faulthandling_3.pl,General,CHASSISD,Fabric Management
+/system-test/testscripts/HSBU/Infrastructure/Sangria/Platform/J123_12450_ptx_down-zone0.pl,General,CHASSISD,RE/CB and SIB cooling zone
+/system-test/testscripts/HSBU/Infrastructure/Sangria/Platform/J123_12450_ptx_down-zone1.pl,General,CHASSISD,FPC cooling zone
+/system-test/testscripts/HSBU/Infrastructure/Sangria/Platform/Sangria_CCG.pl,General,UI,config
+/system-test/testscripts/HSBU/Infrastructure/Sangria/Platform/SangriaPowerTest.pl,General,SANGRIA,PowerTest
+/system-test/testscripts/HSBU/Infrastructure/Sangria/Platform/SangriaPowerTest_2.pl,General,SANGRIA,PowerTest
+/system-test/testscripts/HSBU/Infrastructure/Sangria/Platform/SangriaPowerTest_GRES.pl,General,GRES,RE
+/system-test/testscripts/HSBU/Infrastructure/Sangria/Platform/SangriaPowerTest_RESwitchOver.pl,General,GRES,PowerTest
+/system-test/testscripts/HSBU/Infrastructure/Sangria/sangria_cos_4plp_map_ae.pl,General,COS,Aggregation
+/system-test/testscripts/HSBU/Infrastructure/Sangria/snmpd_rli2947_3_gres.pl,General,SNMP,GRES
+/system-test/testscripts/HSBU/Infrastructure/Services/114_dfc_enhance_ipv6_t.pl,General,SERVICES,DFC_IPV6
+/system-test/testscripts/HSBU/Infrastructure/Services/flowtap_ui_ms500.pl,General,services,flowtap
+/system-test/testscripts/HSBU/Infrastructure/Services/gre_tunnel_reassembly.pl,General,Services,gre
+/system-test/testscripts/HSBU/Infrastructure/Services/gsp_accouting_t1600.pl,General,services,sampling/flow accouting
+/system-test/testscripts/HSBU/Infrastructure/Services/gsp_phase2_t.pl,General,Services,ASP
+/system-test/testscripts/HSBU/Infrastructure/Services/ids_anomaly_t.pl,General,services,IDS
+/system-test/testscripts/HSBU/Infrastructure/Services/ids_dos_t.pl,General,Services,IDS on ASP
+/system-test/testscripts/HSBU/Infrastructure/Services/ids_sanity_t.pl,General,Services,IDS sanity on ASP
+/system-test/testscripts/HSBU/Infrastructure/Services/ids_syncookie_t.pl,General,services,IDS
+/system-test/testscripts/HSBU/Infrastructure/Services/j113_cypher_sanity.pl,General,SERVICES,CYPHER
+/system-test/testscripts/HSBU/Infrastructure/Services/j113_uni_directional_support.pl,General,SERVICES,CYPHER
+/system-test/testscripts/HSBU/Infrastructure/Services/j113_uni_directional_support_1.pl,General,SERVICES,CYPHER
+/system-test/testscripts/HSBU/Infrastructure/Services/svc_frag_opt_t.pl,General,Services,Fragmentation
+/system-test/testscripts/HSBU/Infrastructure/Services/test_twamp.pl,General,Services,twamp
+/system-test/testscripts/HSBU/Infrastructure/Services/twice_nat_bsd.pl,General,Services,twice NAT
+/system-test/testscripts/HSBU/Infrastructure/SNMP/sangria/daemon_uptimes_sangria.pl,General,SNMP,Infra
+/system-test/testscripts/HSBU/Infrastructure/SNMP/sangria/jnxOperating.pl,General,SNMP,Infra
+/system-test/testscripts/HSBU/Infrastructure/SNMP/sangria/mpls_lsr_std_mib.pl,General,SNMP,Infra
+/system-test/testscripts/HSBU/Infrastructure/SNMP/sangria/pr555345_MIB_GRES.pl,General,SNMP,GRES
+/system-test/testscripts/HSBU/Infrastructure/SNMP/sangria/snmpv3.pl,General,SNMP,MIB
+/system-test/testscripts/HSBU/Infrastructure/STFPC1/cbf_new.pl,General,STFPC1,Cos Based Forwarding
+/system-test/testscripts/HSBU/Infrastructure/STFPC1/ecmp-stoli.pl,General,ECMP,STFPC1
+/system-test/testscripts/HSBU/Infrastructure/STFPC1/mpls_filter.pl,General,STFPC1,mpls filter
+/system-test/testscripts/HSBU/Infrastructure/STFPC2/iq2_1g_rli3621_8q.pl,General,STFPC2,PIR CIR on iq2
+/system-test/testscripts/HSBU/Infrastructure/STFPC2/urpf_ge.pl,General,STFPC2,basic
+/system-test/testscripts/HSBU/Infrastructure/STFPC2/v6_firewall.pl,General,STFPC2,basic
+/system-test/testscripts/HSBU/Infrastructure/STFPC4_1/cbf_v4_stfpc_4_1.pl,General,CBF,STFPC4
+/system-test/testscripts/HSBU/Infrastructure/STFPC4_1/rt_cos_classifier_rewrite_stfpc_4_1.pl,General,STFPC4,COS
+/system-test/testscripts/HSBU/Infrastructure/Sundance/Sundance_coc12_ds_pir_cir.pl,General,Sundance,coc12 with CIR and PIR
+/system-test/testscripts/HSBU/Infrastructure/Sundance/Sundance_coc12_ingress_rewrite_rt.pl,General,Sundance,coc12 ingress rewrite
+/system-test/testscripts/HSBU/Infrastructure/Sundance/Sundance_coc12_lsq_cos.pl,General,Sundance,cos/lsq
+/system-test/testscripts/HSBU/Interfaces/10GE/iq2_wan_phy_rdi_alm_test.pl,General,ETHERNET,10GE
+/system-test/testscripts/HSBU/Interfaces/10GE/PR_59493_Cls_no_rt_1x10GE.pl,General,10GE,COS
+/system-test/testscripts/HSBU/Interfaces/10GE/PR_59493_cos_exp_inet_1x10Gig.pl,General,10GE,cos
+/system-test/testscripts/HSBU/Interfaces/10GE/PR_59493_Ieee_cos_1x10GE.pl,General,10GE,10GE
+/system-test/testscripts/HSBU/Interfaces/AE/Absolut/ae_link_protection.pl,General,AE,link protection
+/system-test/testscripts/HSBU/Interfaces/AE/aggeth.pl,General,ETHERNET,AE
+/system-test/testscripts/HSBU/Interfaces/AE/ecmp/ecmp_agg.pl,General,ETHERNET,AE
+/system-test/testscripts/HSBU/Interfaces/AE/ecmp/ecmp_agg_mpls.pl,General,ETHERNET,AE
+/system-test/testscripts/HSBU/Interfaces/AE/LACP/lacp_centralized.pl,General,ETHERNET,AE
+/system-test/testscripts/HSBU/Interfaces/AE/LACP/lacp_distribute.pl,General,ETHERNET,AE/LACP
+/system-test/testscripts/HSBU/Interfaces/AE/pr_558774_lacp_counters.pl,General,AE,LACP
+/system-test/testscripts/HSBU/Interfaces/AE/pr442418_rst_fpc_agg.pl,General,AE,cos
+/system-test/testscripts/HSBU/Interfaces/AE/Sangria/Sangria_AE_1.pl,General,SANGRIA,"AE,10GE"
+/system-test/testscripts/HSBU/Interfaces/AE/Sangria/Sangria_AE_2.pl,General,SANGRIA,"AE,10GE"
+/system-test/testscripts/HSBU/Interfaces/AE/Sangria/Sangria_AE_LACP.pl,General,AE,LACP
+/system-test/testscripts/HSBU/Interfaces/AE/Sangria/Sangria_AE_LinkProtection.pl,General,SANGRIA,"AE,10GE"
+/system-test/testscripts/HSBU/Interfaces/Agave/96_choc48_e3_options_issu_rt.pl,General,AGAVE,AGAVE
+/system-test/testscripts/HSBU/Interfaces/Agave/96_choc48_traffic_issu.pl,General,AGAVE,CHOC48
+/system-test/testscripts/HSBU/Interfaces/Agave/96_issu_agave_coc48_so_FCQ.pl,General,ISSU ,Cos
+/system-test/testscripts/HSBU/Interfaces/Agave/96_issu_agave_coc48_so_TCP.pl,General,AGAVE,LLQ
+/system-test/testscripts/HSBU/Interfaces/Agave/AGAVE_4xOC3_ccc_t.pl,General,AGAVE,ccc encapsulation
+/system-test/testscripts/HSBU/Interfaces/Agave/AGAVE_4xOC3_ccc_t_pr526974.pl,General,AGAVE,CCC encaps on 4xOC-3
+/system-test/testscripts/HSBU/Interfaces/Agave/AGAVE_4xOC3_tcc_t.pl,General,AGAVE,oc3
+/system-test/testscripts/HSBU/Interfaces/Agave/agave_coc12_ds_sonet_issu_CoS.pl,General,AGAVE,ISSU
+/system-test/testscripts/HSBU/Interfaces/Agave/agave_coc48_oc3_red.pl,General,AGAVE,REDUNDANCY
+/system-test/testscripts/HSBU/Interfaces/Agave/agave_oc12_issu_CoS.pl,General,AGAVE,issu/cos
+/system-test/testscripts/HSBU/Interfaces/Agave/ce1t1_e1_ds_options_tseries.pl,General,AGAVE,10xCE1T1
+/system-test/testscripts/HSBU/Interfaces/Agave/ce1t1_e1_options_tseries.pl,General,AGAVE,CHE1T1
+/system-test/testscripts/HSBU/Interfaces/Agave/ce1t1_t1_ds_options_tseries.pl,General,AGAVE,DS OPTIONS
+/system-test/testscripts/HSBU/Interfaces/Agave/ce1t1_t1_options_tseries.pl,General,AGAVE,T1 OPTIONS
+/system-test/testscripts/HSBU/Interfaces/Agave/ce1t1_tcc_ds_tseries_rt.pl,General,AGAVE,10xCHE1T1
+/system-test/testscripts/HSBU/Interfaces/Agave/ce1t1_tcc_tseries_rt.pl,General,AGAVE,10xCHE1T1
+/system-test/testscripts/HSBU/Interfaces/Agave/choc48_sdh_ds_options_issu_rt.pl,General,ISSU,CHOC48
+/system-test/testscripts/HSBU/Interfaces/Agave/L2/CRTP/AGAVE_4xcoc12_crtp_scaling_perf_sg1.pl,General,AGAVE,4CHOC12
+/system-test/testscripts/HSBU/Interfaces/Agave/L2/CRTP/AGAVE_4xcoc12_crtp_scaling_perf_sg1_max_contexts.pl,General,AGAVE,4CHOC12
+/system-test/testscripts/HSBU/Interfaces/Agave/L2/LSQ/AGAVE_4xcoc12_mlppp_scaling_perf_sg1.pl,General,AGAVE,LSQ
+/system-test/testscripts/HSBU/Interfaces/Agave/L2/LSQ/AGAVE_coc12_frf16_scaling_perf_sg1.pl,General,AGAVE,LSQ
+/system-test/testscripts/HSBU/Interfaces/Agave/L2/LSQ/AGAVE_frf16_scaling_perf_sg1.pl,General,AGAVE,lsq
+/system-test/testscripts/HSBU/Interfaces/Agave/L2/LSQ/AGAVE_oc12_crtp_scaling_perf_sg1_max_contexts.pl,General,AGAVE,LSQ
+/system-test/testscripts/HSBU/Interfaces/Agave/L2/LSQ/CRTP/lsq_crtp_mcml_lfi_jnpr.pl,General,AGAVE,lsq
+/system-test/testscripts/HSBU/Interfaces/Agave/L2/LSQ/CRTP/lsq_crtp_sanity_jnpr.pl,General,AGAVE,LSQ/CRTP
+/system-test/testscripts/HSBU/Interfaces/Agave/L2/LSQ/crtp_scaling_perf_sg1.pl,General,AGAVE,lsq
+/system-test/testscripts/HSBU/Interfaces/Agave/L2/LSQ/LSQ_Preserve_Intreface.pl,General,AGAVE,LSQ
+/system-test/testscripts/HSBU/Interfaces/Agave/L2/LSQ/Stargate/Agave_frf16_scaling_perf_sg1.pl,General,AGAVE,lsq
+/system-test/testscripts/HSBU/Interfaces/Agave/L2/LSQ/Stargate/frf16_scaling_perf_sg1.pl,General,AGAVE,LSQ
+/system-test/testscripts/HSBU/Interfaces/Agave/L2/RLSQ/COS/GRES/rlsq_gres_cos.pl,General,COS,GRES
+/system-test/testscripts/HSBU/Interfaces/Agave/L2/RLSQ/rlsq_cos_CHDS3.pl,General,AGAVE,CHDS3
+/system-test/testscripts/HSBU/Interfaces/Agave/L2/RLSQ/rlsq_gres_pr276623.pl,General,AGAVE,RLSQ
+/system-test/testscripts/HSBU/Interfaces/Agave/LSQ/AGAVE_CHDS3_frf_minlinks_t.pl,General,AGAVE,FRF
+/system-test/testscripts/HSBU/Interfaces/Agave/LSQ/AGAVE_CHDS3_frf15_t.pl,General,AGAVE,LSQ/FRF
+/system-test/testscripts/HSBU/Interfaces/Agave/Protocols/ISSU/96_mpls_coc48_issu.pl,General,AGAVE,CHOC48
+/system-test/testscripts/HSBU/Interfaces/Agave/Protocols/ISSU/96_vpn_coc48_issu.pl,General,ISSU,CHOC48
+/system-test/testscripts/HSBU/Interfaces/AGG/aggrether-google-basic-nongres.pl,General,MPLS,"COS, AGG"
+/system-test/testscripts/HSBU/Interfaces/AGG/aggrether-google-gres-restart.pl,General,MPLS,"COS, AGG, GRES"
+/system-test/testscripts/HSBU/Interfaces/AGG/aggrsonet-google-isis-flap-los-nongres.pl,General,MPLS,"COS, AGG"
+/system-test/testscripts/HSBU/Interfaces/APS/aps_2routers_no_concat.pl,General,APS,ETHERNET
+/system-test/testscripts/HSBU/Interfaces/APS/aps_annexb_2routers_misc.pl,General,APS,APS
+/system-test/testscripts/HSBU/Interfaces/APS/aps_annexb_protocols_2routers_atm2_oc3.pl,General,APS,APS
+/system-test/testscripts/HSBU/Interfaces/APS/container_interface_aps.pl,General,APS,CI
+/system-test/testscripts/HSBU/Interfaces/APS/pr403734_as_mxd_link_spd.pl,General,APS,Aggregation
+/system-test/testscripts/HSBU/Interfaces/APS/pr512825.pl,General,APS,ifl
+/system-test/testscripts/HSBU/Interfaces/APS/pr517221_aps_force_working.pl,General,APS,cli
+/system-test/testscripts/HSBU/Interfaces/AS/Absolut/absolut_as_encaps_rt.pl,General,ABSOLUTE,AS
+/system-test/testscripts/HSBU/Interfaces/AS/aggson.pl,General,POS,AS
+/system-test/testscripts/HSBU/Interfaces/Brooklyn/ae_basic.pl,General,Brooklyn,100GE
+/system-test/testscripts/HSBU/Interfaces/Brooklyn/apps-multiservice.pl,General,Brooklyn,HA_MS
+/system-test/testscripts/HSBU/Interfaces/Brooklyn/Brooklyn_40G_Interface_test.pl,General,MPLS,L3VPN
+/system-test/testscripts/HSBU/Interfaces/Brooklyn/Brooklyn_40G_Interface_test_2.pl,General,MPLS,L3VPN
+/system-test/testscripts/HSBU/Interfaces/Brooklyn/Brooklyn_Interface_test.pl,General,Brooklyn,100GE
+/system-test/testscripts/HSBU/Interfaces/Brooklyn/Brooklyn_Interface_test2.pl,General,Brooklyn,100GE
+/system-test/testscripts/HSBU/Interfaces/Brooklyn/brooklyn_l3vpn_100g_protlsp_bfd_isis_nsr.pl,General,Brooklyn,L3VPN
+/system-test/testscripts/HSBU/Interfaces/Brooklyn/brooklyn_l3vpn_100g_protlsp_bfd_ospf_nsr.pl,General,Brooklyn,L3VPN
+/system-test/testscripts/HSBU/Interfaces/Brooklyn/brooklyn40G_l3vpn_isis.pl,General,Brooklyn,l3vpn/isis
+/system-test/testscripts/HSBU/Interfaces/Brooklyn/brooklyn40G_l3vpn_ospf.pl,General,Brooklyn,l3vpn/ospf
+/system-test/testscripts/HSBU/Interfaces/Brooklyn/ccc_ae_ge_l2vpn2_rt.pl,General,CCC,l2vpn
+/system-test/testscripts/HSBU/Interfaces/Brooklyn/graceful_firewall_ae.pl,General,brooklyn,100GE
+/system-test/testscripts/HSBU/Interfaces/Brooklyn/TPI13573_TwoIfd.pl,General,Brooklyn,vlan
+/system-test/testscripts/HSBU/Interfaces/CIN/ccc_ae_ge_l2vpn_rt.pl,General,CIN,L2VPN
+/system-test/testscripts/HSBU/Interfaces/CIN/cin_ae_basic_ge.pl,General,CIN,Ethernet AE
+/system-test/testscripts/HSBU/Interfaces/CIN/cin_aggregate_nexthop_ge.pl,General,CIN,Aggregation
+/system-test/testscripts/HSBU/Interfaces/CIN/cin_lacp_priority.pl,General,CIN,lacp
+/system-test/testscripts/HSBU/Interfaces/CIN/cin_LACP_tagAI.pl,General,CIN,LACP
+/system-test/testscripts/HSBU/Interfaces/CIN/cin_LACP_tagAI_gres_ccc.pl,General,CIN,"lacp, gres"
+/system-test/testscripts/HSBU/Interfaces/CIN/cin_mpls_aggr_basic_ospf.pl,General,CIN,ae
+/system-test/testscripts/HSBU/Interfaces/Cuervo/aggeth_cuervo.pl,General,Cuervo,Aggregation
+/system-test/testscripts/HSBU/Interfaces/Cuervo/Cuervo_AE.pl,General,Cuervo,AE
+/system-test/testscripts/HSBU/Interfaces/Cuervo/Cuervo_AE_multi.pl,General,Cuervo,Aggregation
+/system-test/testscripts/HSBU/Interfaces/Cuervo/cuervo_asynchronous-notification.pl,General,CUERVO,LAN-PHY
+/system-test/testscripts/HSBU/Interfaces/Cuervo/cuervo_cntrl_q.pl,General,Cuervo,OSPF/RIP
+/system-test/testscripts/HSBU/Interfaces/Cuervo/cuervo_cos_gres.pl,General,Cuervo,GRES
+/system-test/testscripts/HSBU/Interfaces/Cuervo/cuervo_da_mac_fltr_gres.pl,General,Cuervo,GRES
+/system-test/testscripts/HSBU/Interfaces/Cuervo/cuervo_intr_driven_link_detection.pl,General,Cuervo,MPLS
+/system-test/testscripts/HSBU/Interfaces/Cuervo/cuervo_lan_phy_tcc_encap_tests.pl,General,Cuervo,tcc encapsulations
+/system-test/testscripts/HSBU/Interfaces/Cuervo/cuervo_mac_learning_tag_intf_gres.pl,General,Cuervo,MAC_LEARNING
+/system-test/testscripts/HSBU/Interfaces/Cuervo/cuervo_mac_policers_tag_intf_gres.pl,General,Cuervo,mac policer
+/system-test/testscripts/HSBU/Interfaces/Cuervo/cuervo_scale_mac_filters_untag_intf.pl,General,Cuervo,MAC_FILTER
+/system-test/testscripts/HSBU/Interfaces/Cuervo/cuervo_scale_mac_learning_tag_intf.pl,General,Cuervo,Scaling
+/system-test/testscripts/HSBU/Interfaces/Cuervo/cuervo_scale_mac_policers_tag_intf.pl,General,POLICER,Scaling
+/system-test/testscripts/HSBU/Interfaces/Cuervo/cuervo_wan_phy_alm_test.pl,General,CUERVO,WAN-PHY
+/system-test/testscripts/HSBU/Interfaces/Cuervo/cuervo_wan_phy_ccc_encap_tests.pl,General,CCC,Cuervo
+/system-test/testscripts/HSBU/Interfaces/Cuervo/cuervo_wan_phy_test.pl,General,Cuervo,wan_phy
+/system-test/testscripts/HSBU/Interfaces/Cuervo/ieee_cos_cuervo.pl,General,Cuervo,cos/ieee
+/system-test/testscripts/HSBU/Interfaces/Cuervo/ms_cuervo_l3vpn.pl,General,CUERVO,L3VPM
+/system-test/testscripts/HSBU/Interfaces/Cuervo/Qing_and_Scheduling_Cuervo_AE.pl,General,ETHERNET,10GE
+/system-test/testscripts/HSBU/Interfaces/Cuervo/RLI14419/dscp_Cuervo.pl,General,Cuervo,dscp
+/system-test/testscripts/HSBU/Interfaces/Cuervo/RLI9510/rli9510_8021p.pl,General,CUERVO,COS
+/system-test/testscripts/HSBU/Interfaces/Cuervo/RLI9510/rli9510_cir.pl,General,Cuervo,COS
+/system-test/testscripts/HSBU/Interfaces/Cuervo/RLI9510/rli9510_dscp.pl,General,Cuervo,COS
+/system-test/testscripts/HSBU/Interfaces/Cuervo/RLI9510/rli9510_dscpv6.pl,General,Cuervo,COS
+/system-test/testscripts/HSBU/Interfaces/Cuervo/RLI9510/rli9510_dscpv6_vlan.pl,General,Cuervo,Dscpv6 on vlan
+/system-test/testscripts/HSBU/Interfaces/Cuervo/RLI9510/rli9510_exp.pl,General,Cuervo,COS
+/system-test/testscripts/HSBU/Interfaces/Cuervo/RLI9510/rli9510_fixed.pl,General,Cuervo,COS
+/system-test/testscripts/HSBU/Interfaces/Cuervo/RLI9510/rli9510_inet.pl,General,Cuervo,COS
+/system-test/testscripts/HSBU/Interfaces/Cuervo/RLI9510/rli9510_nwe.pl,General,Cuervo,RLI9510
+/system-test/testscripts/HSBU/Interfaces/Cuervo/RLI9510/rli9510_pir.pl,General,Cuervo,PIR
+/system-test/testscripts/HSBU/Interfaces/Cuervo/RLI9510/rli9510_pir8q.pl,General,CUERVO,COS
+/system-test/testscripts/HSBU/Interfaces/Cuervo/vlan_rewrite_cuervo.pl,General,Cuervo,vlan rewrite
+/system-test/testscripts/HSBU/Interfaces/Ethernet/Absolut/Int_stats_GE.pl,General,ETHERNET,basic interface stats
+/system-test/testscripts/HSBU/Interfaces/Ethernet/arp_aging_timer_sauza.pl,General,ETHERNET,Arp
+/system-test/testscripts/HSBU/Interfaces/GRES/Txungres.pl,General,GRES,TX_Matrix
+/system-test/testscripts/HSBU/Interfaces/GRES/Txungres_rt.pl,General,GRES,Ethernet 
+/system-test/testscripts/HSBU/Interfaces/Heavenly/Heavenly_CoS_Classifier_Rewrite.pl,General,Heavenly,COS classifier and rewrite
+/system-test/testscripts/HSBU/Interfaces/Heavenly/Heavenly_CoS_Schedulers_ISSU.pl,General,Heavenly,ISSU
+/system-test/testscripts/HSBU/Interfaces/Heavenly/over-subscribed/Heavenly_CoS_Schedulers.pl,General,Heavenly,Cos/Scheduler oversubscribed
+/system-test/testscripts/HSBU/Interfaces/Helio_int/Helios_Tunable_XFP_snmp.pl,General,ETHERNET,10GE
+/system-test/testscripts/HSBU/Interfaces/Helio_int/RLI_9185_Helios_Tunable_XFP_1RTR.pl,General,ETHERNET,10GE
+/system-test/testscripts/HSBU/Interfaces/Hobson/AE/aggregate_ethernet_unnumber.pl,General,AE,UNNUMBER_ETHERNET
+/system-test/testscripts/HSBU/Interfaces/Hobson/EtherNet/datatraffic_ethernet_unnumber.pl,General,ETHERNET,Ethernet unnumbered
+/system-test/testscripts/HSBU/Interfaces/Hobson/EtherNet/datatraffic_ethernet_unnumber_mirror.pl,General,ETHERNET,Ethernet unnumbered mirror
+/system-test/testscripts/HSBU/Interfaces/Hobson/EtherNet/ge_scal_unnum_gres.pl,General,ETHERNET,GE/UNMUMBER
+/system-test/testscripts/HSBU/Interfaces/IQ2/Absolut/ose_basic_new.pl,General,ABSOLUTE,iq2
+/system-test/testscripts/HSBU/Interfaces/IQ2/Safari/iq2_1g_rli3621_gres_safari.pl,General,IQ2,GRES
+/system-test/testscripts/HSBU/Interfaces/IQ2/Safari/iq2_cos_dei_rli6766_safari.pl,General,IQ2,COS
+/system-test/testscripts/HSBU/Interfaces/IQ2/Safari/iq2_fc_policer_safari.pl,General,IQ2,policer
+/system-test/testscripts/HSBU/Interfaces/IQ2/Safari/iq2_pir_cir_safari.pl,General,cos,iq2
+/system-test/testscripts/HSBU/Interfaces/IQ2/Safari/iq2_psd_cli.pl,General,IQ2,psd cli
+/system-test/testscripts/HSBU/Interfaces/IQ2/Safari/iq2_trtcm_safari.pl,General,IQ2,trtcm
+/system-test/testscripts/HSBU/Interfaces/IQ2/Safari/simple_filter_on_IQ2_safari.pl,General,COS,ethernet IQ2
+/system-test/testscripts/HSBU/Interfaces/ISSU/ISSU_4x10ge.pl,General,ISSU,4x10GE Sauza PIC 
+/system-test/testscripts/HSBU/Interfaces/OTN/SNMP/Otn_10g_snmp_mib.pl,General,SNMP,OTN
+/system-test/testscripts/HSBU/Interfaces/OTN/tunable_10ge.pl,General,OTN,10GE
+/system-test/testscripts/HSBU/Interfaces/POS/Absolut/as_2x_link.pl,General,POS,ETHERNET
+/system-test/testscripts/HSBU/Interfaces/POS/Absolut/container_aps_basic.pl,General,POS,APS
+/system-test/testscripts/HSBU/Interfaces/POS/Absolut/sonet_2routers.pl,General,ABSOLUTE,sonet
+/system-test/testscripts/HSBU/Interfaces/POS/Absolut/sonet_basic_routing_protocol.pl,General,Pos,basic routing
+/system-test/testscripts/HSBU/Interfaces/POS/PR99627.pl,General,POS,chassisd
+/system-test/testscripts/HSBU/Interfaces/PR/Absolut/int_firewall_group_pr38707.pl,General,PR,firewall
+/system-test/testscripts/HSBU/Interfaces/ptx3k/121_RLI_11515_eoam_basic.pl,General,EOAM,BASIC
+/system-test/testscripts/HSBU/Interfaces/ptx3k/121_RLI_11515_eoam_sanity.pl,General,EOAM,SANITY
+/system-test/testscripts/HSBU/Interfaces/ptx3k/121_RLI_12673_eoam_802.1ag_basic.pl,General,EOAM,802.1ag
+/system-test/testscripts/HSBU/Interfaces/ptx3k/ae_basic_test.pl,General,Sangria,AE_BASIC
+/system-test/testscripts/HSBU/Interfaces/ptx3k/i2c_accelerator.pl,General,10GE,I 2C ACCELATOR
+/system-test/testscripts/HSBU/Interfaces/ptx3k/Interface_test.pl,General,EOAM,Interface_Test
+/system-test/testscripts/HSBU/Interfaces/ptx3k/interfaceStats.pl,General,EOAM,INTERFACE_STATS
+/system-test/testscripts/HSBU/Interfaces/ptx3k/multiIflStats.pl,General,EOAM,MULTI_IFL_STATS
+/system-test/testscripts/HSBU/Interfaces/ptx3k/Sangria_AE_LACP.pl,General,Sangria,AE_LACP
+/system-test/testscripts/HSBU/Interfaces/ptx3k/Sangria_AE_LinkProtection.pl,General,Sangria,AE_LINKPROTECTION
+/system-test/testscripts/HSBU/Interfaces/ptx3k/SangriaIntf_10G.pl,General,Sangria,10G
+/system-test/testscripts/HSBU/Interfaces/ptx3k/SangriaIntf_40G.pl,General,Sangria,40G
+/system-test/testscripts/HSBU/Interfaces/ptx3k/SangriaIntf2_10G.pl,General,Sangria,10G
+/system-test/testscripts/HSBU/Interfaces/ptx3k/SangriaIntf2_40G.pl,General,Sangria,40G
+/system-test/testscripts/HSBU/Interfaces/ptx3k/stressTest.pl,General,EOAM,Stresstest
+/system-test/testscripts/HSBU/Interfaces/QCT3/qct3_ds_t.pl,General,ETHERNET,DS
+/system-test/testscripts/HSBU/Interfaces/QCT3/qct3_fr_ds_t.pl,General,ETHERNET,DS 
+/system-test/testscripts/HSBU/Interfaces/QCT3/qct3_t1_bert_t.pl,General,ETHERNET,t1
+/system-test/testscripts/HSBU/Interfaces/QCT3/qct3_t1_t.pl,General,QCT3,BASIC
+/system-test/testscripts/HSBU/Interfaces/QCT3/qct3_t3_bert_t.pl,General,QCT3,BERT
+/system-test/testscripts/HSBU/Interfaces/QCT3/qct3_t3_t.pl,General,QCT3,T3
+/system-test/testscripts/HSBU/Interfaces/Safari/Inter_PSD/rli7776_cf_ipv4.pl,General,SAFARI,Inter PSD forwarding
+/system-test/testscripts/HSBU/Interfaces/Safari/Inter_PSD/rli7776_cf_ipv6.pl,General,SAFARI,Inter PSD forwarding
+/system-test/testscripts/HSBU/Interfaces/Safari/Inter_PSD/rli7776_cf_mcst.pl,General,SAFARI,Inter PSD forwarding
+/system-test/testscripts/HSBU/Interfaces/Safari/Inter_PSD/rli7776_cf_nwe.pl,General,ETHERNET,GE
+/system-test/testscripts/HSBU/Interfaces/Safari/Inter_PSD/rli7776_cf_vpn.pl,General,ETHERNET,GE
+/system-test/testscripts/HSBU/Interfaces/Safari/Mixed_version/safari_as0.pl,General,SAFARI,Aggregation
+/system-test/testscripts/HSBU/Interfaces/Safari/Mixed_version/safari_noconcat.pl,General,SAFARI,Aggregation
+/system-test/testscripts/HSBU/Interfaces/Sangria/121_RLI_11448_ptx5000_sangria_100g_1.pl,General,SANGRIA,100GE
+/system-test/testscripts/HSBU/Interfaces/Sangria/121_RLI_11448_ptx5000_sangria_100g_2.pl,General,SANGRIA,100GE
+/system-test/testscripts/HSBU/Interfaces/Sangria/121_RLI_11506_ptx5000_sangria_1.pl,General,CHASSISD,100GE
+/system-test/testscripts/HSBU/Interfaces/Sangria/121_RLI_11506_ptx5000_sangria_2.pl,General,SANGRIA,10ge/40ge
+/system-test/testscripts/HSBU/Interfaces/Sangria/121_RLI_11511_ptx_5000_SangriaCCCTCC.pl,General,SANGRIA,10GE
+/system-test/testscripts/HSBU/Interfaces/Sangria/121_RLI_11515_ptx5000_eoam_basic.pl,General,CHASSISD,EOAM
+/system-test/testscripts/HSBU/Interfaces/Sangria/121_RLI_11515_ptx5000_eoam_sanity.pl,General,ETHERNET,EOAM
+/system-test/testscripts/HSBU/Interfaces/Sangria/121_RLI_12673_eoam_802.1ag_basic.pl,General,ETHERNET,802.1ag
+/system-test/testscripts/HSBU/Interfaces/Sangria/121_RLI_16622_ptx5000_sangria_brooklyn_interop.pl,General,brooklyn,FPC
+/system-test/testscripts/HSBU/Interfaces/Sangria/121_RLI_17906_ptx5000_MAX_MTU.pl,General,SANGRIA,MTU
+/system-test/testscripts/HSBU/Interfaces/Sangria/ae_basic_test.pl,General,AE,10GE
+/system-test/testscripts/HSBU/Interfaces/Sangria/Eristoff/J132_17524_ae_advance_WAN.pl,General,Sangria,AE_WAN
+/system-test/testscripts/HSBU/Interfaces/Sangria/Eristoff/J132_17524_ptx_cos_schedulers_WAN.pl,General,Sangria,COS_SCHEDULER
+/system-test/testscripts/HSBU/Interfaces/Sangria/Eristoff/J132_17524_ptx5000_wan_phy_alm_test.pl,General,Sangria,WAN_PHY
+/system-test/testscripts/HSBU/Interfaces/Sangria/Eristoff/J132_17524_Sangria_AE_LACP_WAN.pl,General,Sangria,AE_LACP_WAN
+/system-test/testscripts/HSBU/Interfaces/Sangria/Eristoff/J132_17524_Sangria_AE_LinkProtection_WAN.pl,General,Sangria,AE_LP
+/system-test/testscripts/HSBU/Interfaces/Sangria/Eristoff/J132_17524_sangria_firewall_sanity_WAN.pl,General,Sangria,FIREWALL_WAN
+/system-test/testscripts/HSBU/Interfaces/Sangria/i2c_accelerator.pl,General,SANGRIA,10GE
+/system-test/testscripts/HSBU/Interfaces/Sangria/Interface_test.pl,General,ADSL,AnnexA
+/system-test/testscripts/HSBU/Interfaces/Sangria/interfaceStats.pl,General,SANGRIA,10GE
+/system-test/testscripts/HSBU/Interfaces/Sangria/J123_12686_ptx_Sangria_64LinksAE_1.pl,General,SANGRIA,10GE
+/system-test/testscripts/HSBU/Interfaces/Sangria/J123_12686_ptx_Sangria_64LinksAE_2.pl,General,ipv6,basic
+/system-test/testscripts/HSBU/Interfaces/Sangria/j123_18764_ptx_lldp_pr.pl,General,CHASSISD,LLDP
+/system-test/testscripts/HSBU/Interfaces/Sangria/J123_18824_ptx_100gintf.pl,General,ETHERNET,100GE
+/system-test/testscripts/HSBU/Interfaces/Sangria/multiIflStats.pl,General,SANGRIA,10GE
+/system-test/testscripts/HSBU/Interfaces/Sangria/SangriaIntf_10G.pl,General,SANGRIA,10GE
+/system-test/testscripts/HSBU/Interfaces/Sangria/SangriaIntf_40G.pl,General,SANGRIA,40GE
+/system-test/testscripts/HSBU/Interfaces/Sangria/SangriaIntf2_10G.pl,General,SANGRIA,10GE
+/system-test/testscripts/HSBU/Interfaces/Sangria/SangriaIntf2_40G.pl,General,SANGRIA,40GE
+/system-test/testscripts/HSBU/Interfaces/Sauza/eoam_802.1ag_basic_sauza.pl,General,SAUZA,eoam
+/system-test/testscripts/HSBU/Interfaces/Sauza/eoam_sanity_sauza.pl,General,ETHERNET,OAM
+/system-test/testscripts/HSBU/Interfaces/STFPC1/as_encaps_rt.pl,General,STFPC1,basic
+/system-test/testscripts/HSBU/Interfaces/STFPC1/ccc_agg_ge.pl,General,STFPC1,CCC-AE
+/system-test/testscripts/HSBU/Interfaces/STFPC1/ngs_ccc.pl,General,STFPC1,CCC
+/system-test/testscripts/HSBU/Interfaces/STFPC1/ngs_encaps_stfpc1.pl,General,STFPC1,NGS
+/system-test/testscripts/HSBU/Interfaces/STFPC1/sonet_non_concat.pl,General,STFPC1,No-concate
+/system-test/testscripts/HSBU/Interfaces/STFPC2/bgp_vpls_scaled_learning_stfpc2,General,STFPC2,VPLS
+/system-test/testscripts/HSBU/Interfaces/STFPC2/STFPC2_Q24xCHOC12.pl,General,AGAVE,CHOC12
+/system-test/testscripts/HSBU/Interfaces/STFPC2/STFPC2_Q24xCHOC12_scaling.pl,General,AGAVE,CHOC12
+/system-test/testscripts/HSBU/Interfaces/STFPC3/issu_scu.stfpc3_rt.pl,General,STFPC3,ISSU upgrade DCU SCU
+/system-test/testscripts/HSBU/Interfaces/Stoli/sram_parity_check_pr478143.pl,General,STOLI,sram
+/system-test/testscripts/HSBU/Interfaces/Sundance/SUNDANCE_4coc12_sdh_e1_scaling_rt.pl,General,Sundance,sdh e1 scaling
+/system-test/testscripts/HSBU/Interfaces/Sundance/SUNDANCE_4coc12_sdh_e3_scaling_rt.pl,General,Sundance,sdh e3 scaling
+/system-test/testscripts/HSBU/Interfaces/Sundance/SUNDANCE_4coc12_sonet_ds_scaling_rt.pl,General,Sundance,sonet DS scaling
+/system-test/testscripts/HSBU/Interfaces/Sundance/SUNDANCE_4coc12_sonet_so_scaling_rt.pl,General,Sundance,Scaling
+/system-test/testscripts/HSBU/Interfaces/Sundance/Sundance_coc12_so_basic.pl,General,Sundance,4xchOC12
+/system-test/testscripts/HSBU/Interfaces/Sundance/Sundance_coc12_sonet_t3_bert.pl,General,Sundance,4xchOC12/agave
+/system-test/testscripts/HSBU/Interfaces/Sundance/Sundance_coc12_t3_basic.pl,General,Sundance,4xchOC12 basic
+/system-test/testscripts/HSBU/Interfaces/Sundance/Sundance_coc12_t3_loopback.pl,General,Sundance,4xchOC12 loopback
+/system-test/testscripts/HSBU/Interfaces/Sundance/Sundance_coc12_tcc.pl,General,Sundance,CCC encapsulations
+/system-test/testscripts/HSBU/ISSU/Infrastructure/classifier_v6_issu_rt.pl,General,ISSU,COS IPV6
+/system-test/testscripts/HSBU/ISSU/Infrastructure/issu_icmp_firewall_new_rt.pl,General,ISSU,Firewall
+/system-test/testscripts/HSBU/ISSU/Infrastructure/rt_cos_classifier_rewrite_issu.pl,General,ISSU,COS classifier and rewrite
+/system-test/testscripts/HSBU/ISSU/Infrastructure/Sangria/J132_15595_sangria_pfe_issu.pl,General,Sangria,ISSU/PFE
+/system-test/testscripts/HSBU/ISSU/Interfaces/issu_pos_as0_4links_new_rt.pl,General,ISSU,POS AS0 and oc48/192
+/system-test/testscripts/HSBU/ISSU/MPLS/sangria/J132_RLI11443_ptx_ISSU_uhp_scal.pl,General,MPLS,ISSI_UHP
+/system-test/testscripts/HSBU/ISSU/TXMatrix/bgp_l2vpn_scaling_regression_issu.pl,General,bgp,l2vpn
+/system-test/testscripts/HSBU/ISSU/TXMatrix/bgp_route_propagation_convergence_issu.pl,General,ISSU,BGP
+/system-test/testscripts/HSBU/ISSU/TXMatrix/issu_consolidated_pos_interfaces.pl,General,ISSU,POS with APS
+/system-test/testscripts/HSBU/ISSU/TXP/issu_ipv4_over_ipv4_gre_tunnel_TXP.pl,General,ISSU,gre-tunnel
+/system-test/testscripts/HSBU/ISSU/TXP/issu_ipv6_over_ipv4_ip_tunnel_TXP.pl,General,ISSU,"ip-tunnel,ISSU"
+/system-test/testscripts/HSBU/ISSU/TXP/issu_rate_shaping_TXP.pl,General,ISSU,rate_shaping
+/system-test/testscripts/HSBU/ISSU/TXP/lacp_u_issu_TXP.pl,General,ISSU,LACP
+/system-test/testscripts/HSBU/ISSU/TXP/txp_issu_l3prot_l3vpn.pl,General,ISSU,L3VPN
+/system-test/testscripts/HSBU/ISSU/TXP/txp_issu_l3prot_l3vpn_l2ckt_policer.pl,General,ISSU,"L3VPN,L2ckt,Policer"
+/system-test/testscripts/HSBU/ISSU/TXP/txp_issu_l3prot_l3vpn_mpls_policer.pl,General,ISSU,"MPLS,Policer"
+/system-test/testscripts/HSBU/ISSU/TXP/txp_issu_l3prot_mpls.pl,General,ISSU,MPLS
+/system-test/testscripts/HSBU/ISSU/TXP/txp_issu_l3vpn_l2ckt.pl,General,ISSU,"L3VPN,L2ckt"
+/system-test/testscripts/HSBU/Protocols/Absolut/P2MP/p2mp-advanced-ccc-absolut.pl,General,MPLS,P2MP
+/system-test/testscripts/HSBU/Protocols/Absolut/SNMP/snmpd_rli2947_3_gres_absolut.pl,General,SNMP,GRES
+/system-test/testscripts/HSBU/Protocols/Agave/AGAVE_coc12_bgp_vrf_basic.pl,General,BGP,VRF
+/system-test/testscripts/HSBU/Protocols/Agave/AGAVE_coc12_frr_detour.pl,General,MPLS,FRR
+/system-test/testscripts/HSBU/Protocols/Agave/AGAVE_coc12_frr_igp.pl,General,MPLS,IGP
+/system-test/testscripts/HSBU/Protocols/Agave/AGAVE_coc12_ipip_logical_vpn.pl,General,AGAVE,IPIP tunnel interface
+/system-test/testscripts/HSBU/Protocols/Agave/AGAVE_coc12_vpn_rr.pl,General,BGP,L3VPN
+/system-test/testscripts/HSBU/Protocols/GRES/pr440525_BGP_routes_flap_TX.pl,General,GRES,BGP Flap routes
+/system-test/testscripts/HSBU/Protocols/GRES/Sangria/rli11550_gr_gres_bgp_stc.pl,General,GRES,BGP
+/system-test/testscripts/HSBU/Protocols/GRES/Sangria/rli11550_ldp_gr_gres_lrHelpers.pl,General,GRES,LDP
+/system-test/testscripts/HSBU/Protocols/GRES/Sangria/rli11550_Scale_isis_gr_gres_lrHelpers.pl,General,GRES,ISIS
+/system-test/testscripts/HSBU/Protocols/GRES/Sangria/rli11550_Scale_ospf_gr_gres_lrHelpers.pl,General,GRES,OSPF
+/system-test/testscripts/HSBU/Protocols/GRES/Sangria/rli11550_Scale_rsvp_gr_gres_lrHelpers.pl,General,GRES,RSVP
+/system-test/testscripts/HSBU/Protocols/ISIS/pr_241094.pl,General,ISIS,MTU
+/system-test/testscripts/HSBU/Protocols/ISIS/Sangria/rli11527_sangria_apps_isis_scaling.pl,General,ISIS,Scaling
+/system-test/testscripts/HSBU/Protocols/LDP/Sangria/rli11527_sangria_apps_ldp_direct_scaling.pl,General,LDP,Scaling
+/system-test/testscripts/HSBU/Protocols/LDP/Sangria/rli11527_sangria_apps_ldp_targeted_scaling.pl,General,LDP,Scaling
+/system-test/testscripts/HSBU/Protocols/MPLS/ABsolut/p2mp-mpls-lsp-pr.pl,General,MPLS,P2MP 
+/system-test/testscripts/HSBU/Protocols/MPLS/FRR/ptx3k/frr.pl,General,MPLS,FRR
+/system-test/testscripts/HSBU/Protocols/MPLS/FRR/ptx3k/frr_detour.pl,General,MPLS,FRR
+/system-test/testscripts/HSBU/Protocols/MPLS/FRR/ptx3k/stc_frr_failover_transit.pl,General,MPLS,FRR
+/system-test/testscripts/HSBU/Protocols/MPLS/FRR/ptx3k/stc_frr_failover_transit_agg.pl,General,MPLS,FRR
+/system-test/testscripts/HSBU/Protocols/MPLS/FRR/sangria/frr.pl,General,MPLS,FRR/p2mp
+/system-test/testscripts/HSBU/Protocols/MPLS/FRR/sangria/frr_detour.pl,General,MPLS,FRR/p2mp
+/system-test/testscripts/HSBU/Protocols/MPLS/FRR/sangria/stc_frr_failover_transit.pl,General,MPLS,FRR
+/system-test/testscripts/HSBU/Protocols/MPLS/FRR/sangria/stc_frr_failover_transit_agg.pl,General,MPLS,FRR/p2mp
+/system-test/testscripts/HSBU/Protocols/MPLS/Google/automatic_bw.pl,General,MPLS,LSP
+/system-test/testscripts/HSBU/Protocols/MPLS/mpls_load_balancing.pl,General,MPLS,Load_Balance
+/system-test/testscripts/HSBU/Protocols/MPLS/ntt_ngtv_model_c.pl,General,MPLS,P2MP
+/system-test/testscripts/HSBU/Protocols/MPLS/ntt_ngtv_model_d.pl,General,MPLS,NTT
+/system-test/testscripts/HSBU/Protocols/MPLS/P2MP/p2mp_fast_mbb.pl,General,MPLS,P2MP
+/system-test/testscripts/HSBU/Protocols/MPLS/P2MP/p2mp_fpc_lsp_correlation.pl,General,MPLS,p2mp
+/system-test/testscripts/HSBU/Protocols/MPLS/P2MP/p2mp_fpc_lsp_correlation_LR.pl,General,MPLS,p2mp
+/system-test/testscripts/HSBU/Protocols/MPLS/P2MP/p2mp_mbb.pl,General,MPLS,p2mp
+/system-test/testscripts/HSBU/Protocols/MPLS/P2MP/p2mp_mbb_ae_out_2x2.pl,General,MPLS,P2MP
+/system-test/testscripts/HSBU/Protocols/MPLS/P2MP/p2mp_mbb_protected_1.pl,General,MPLS,p2mp
+/system-test/testscripts/HSBU/Protocols/MPLS/P2MP/PR658921_FMBB_packet_loss.pl,General,MPLS,P2MP
+/system-test/testscripts/HSBU/Protocols/MPLS/P2MP/PR661493_p2mp_rpd_restart.pl,General,MPLS,P2MP
+/system-test/testscripts/HSBU/Protocols/MPLS/P2MP/PR676761_p2mp_snmp.pl,General,MPLS,P2MP
+/system-test/testscripts/HSBU/Protocols/MPLS/P2MP/PR696592_p2mp_snmp.pl,General,MPLS,P2MP
+/system-test/testscripts/HSBU/Protocols/MPLS/P2MP/PR706431_EMBT_core_check.pl,General,MPLS,P2MP
+/system-test/testscripts/HSBU/Protocols/MPLS/P2MP/PR730696_p2mp_mbt.pl,General,MPLS,P2MP
+/system-test/testscripts/HSBU/Protocols/MPLS/P2MP/PR734828_p2mp_correlation_logging.pl,General,MPLS,P2MP
+/system-test/testscripts/HSBU/Protocols/Multicast/Absolut/anycastRP.pl,General,MULTICAST,COS
+/system-test/testscripts/HSBU/Protocols/Multicast/Absolut/CNH/mcast_protocols.pl,General,MULTICAST,mcast_protocols
+/system-test/testscripts/HSBU/Protocols/Multicast/Absolut/CNH/mcast_scale_as.pl,General,MULTICAST,Composite Nexthop on AS interface
+/system-test/testscripts/HSBU/Protocols/Multicast/Absolut/CNH/mvpn_scale_groups.pl,General,MULTICAST,CNH
+/system-test/testscripts/HSBU/Protocols/Multicast/Absolut/mcastvpn_pd_in_vrf_absolut.pl,General,MULTICAST,basic on pd interface
+/system-test/testscripts/HSBU/Protocols/Multicast/Absolut/mcastvpn_pe_in_vrf_rt.pl,General,MULTICAST,vpn
+/system-test/testscripts/HSBU/Protocols/Multicast/Absolut/msdp_mib.pl,General,MULTICAST,msdp_mib
+/system-test/testscripts/HSBU/Protocols/Multicast/Absolut/multicast_int_stats-ipv6.pl,General,MULTICAST,IPV6
+/system-test/testscripts/HSBU/Protocols/Multicast/Absolut/pim-common.pl,General,MULTICAST,pim
+/system-test/testscripts/HSBU/Protocols/Multicast/NG_MVPN/Absolut/mcast_ng_vpn_p2mp_three.pl,General,MULTICAST,Mcast ng_vpn
+/system-test/testscripts/HSBU/Protocols/Multicast/NG_MVPN/Absolut/ng_mvpn_threePEs_Misc_BSR.pl,General,MULTICAST,ngmvpn
+/system-test/testscripts/HSBU/Protocols/Multicast/NG_MVPN/Absolut/ngmvpn_extranets_rsvp_p2mp_topo1_r0_rr.pl,General,MULTICAST,ngmvpn
+/system-test/testscripts/HSBU/Protocols/Multicast/NG_MVPN/Absolut/ng-mvpn-three.pl,General,MULTICAST,"PIM,MVPN"
+/system-test/testscripts/HSBU/Protocols/Multicast/pr402660_pim_loadbalance.pl,General,MULTICAST,pim
+/system-test/testscripts/HSBU/Protocols/NH/ip_load_balancing.pl,General,NH,Load_Balance
+/system-test/testscripts/HSBU/Protocols/NH/l3vpn_rt.pl,General,NH,l3vpn
+/system-test/testscripts/HSBU/Protocols/NSR/Absolut/bgp_nsr_vpn_testcase2_rt.pl,General,NSR,BGP
+/system-test/testscripts/HSBU/Protocols/NSR/interAS_nsr.pl,General,NSR,InterAS
+/system-test/testscripts/HSBU/Protocols/OSPF/Absolut/ospf_graceful_restart.pl,General,OSPF,graceful_restart
+/system-test/testscripts/HSBU/Protocols/OSPF/pr432581_OSPF_ABR_LSA.pl,General,OSPF,ABR_LSA
+/system-test/testscripts/HSBU/Protocols/OSPF/sangria/rli11527_sangria_apps_ospfv3_scale.pl,General,Ospf,OSPFV3
+/system-test/testscripts/HSBU/Protocols/ptx3k/JT121_17905_isis_sanity.pl,General,Sangria,ISSI_SANITY
+/system-test/testscripts/HSBU/Protocols/ptx3k/JT121_17905_ospf_sanity.pl,General,Sangria,OSPF_SANITY
+/system-test/testscripts/HSBU/Protocols/ptx3k/rli11527_sangria_apps_isis_scaling.pl,General,Sangria,ISIS_SCALING
+/system-test/testscripts/HSBU/Protocols/RSVP/PR602850_txp_rsvp_over_xe.pl,General,VPLS,RSVP
+/system-test/testscripts/HSBU/Protocols/RSVP/Sangria/sangria_rsvp_scaling.pl,General,RSVP,Scaling
+/system-test/testscripts/HSBU/Protocols/Sangria/J121_13339_Sangria_LDP_scale.pl,General,LDP,Scaling
+/system-test/testscripts/HSBU/Protocols/Sangria/J121_13339_Sangria_LDP_scale_event.pl,General,LDP,Scaling
+/system-test/testscripts/HSBU/Protocols/Sangria/J123_12683_ptx_multiservices.pl,General,MULTISERVICES,sangria
+/system-test/testscripts/HSBU/Protocols/Sangria/JT121_17905_bfd_sanity.pl,General,SANGRIA,BFD
+/system-test/testscripts/HSBU/Protocols/Sangria/JT121_17905_bgp_sanity_with_traffic.pl,General,BGP,Sanity
+/system-test/testscripts/HSBU/Protocols/Sangria/JT121_17905_isis_sanity.pl,General,ISIS,SANITY
+/system-test/testscripts/HSBU/Protocols/Sangria/JT121_17905_ospf_sanity.pl,General,SANGRIA,OSPF
+/system-test/testscripts/HSBU/Protocols/Sangria/JT121_17905_rip_basic.pl,General,RIP,BASIS
+/system-test/testscripts/HSBU/Protocols/Sangria/NSR/J_121_15594_ptx_bgp_nsr_confedaration.pl,General,NSR,BGP_NSR
+/system-test/testscripts/HSBU/Protocols/Sangria/NSR/J121_15594_ptx_l2ckt_nsr_advanced.pl,General,NSR,l2ckt
+/system-test/testscripts/HSBU/Protocols/Sangria/NSR/J121_15594_ptx_l2cktNsr_Rsvp_advanced.pl,General,NSR,RSVP
+/system-test/testscripts/HSBU/Protocols/Sangria/NSR/J121_15594_ptx_l2cktNsr_Rsvp_negative.pl,General,NSR,RSVP
+/system-test/testscripts/HSBU/Protocols/Sangria/NSR/J121_15594_ptx_nsr_l2ckt_rsvp_rsvpfeature.pl,General,NSR,Rsvp
+/system-test/testscripts/HSBU/Protocols/Sangria/NSR/J121_15594_ptx_pim_nsr_scaling_ptx1.pl,General,NSR,pim
+/system-test/testscripts/HSBU/Protocols/Sangria/NSR/J121_15594_ptx_pim_nsr_scaling_ptx2.pl,General,NSR,PIM
+/system-test/testscripts/HSBU/Protocols/Sangria/NSR/J121_15594_ptx_pim_nsr_scaling_ptx3.pl,General,NSR,PIM
+/system-test/testscripts/HSBU/Protocols/Sangria/NSR/J121_17013_PTX_ldp_nsr_direct_scale.pl,General,NSR,Scaling
+/system-test/testscripts/HSBU/Protocols/Sangria/NSR/J121_17013_PTX_ldp_nsr_direct_scale2.pl,General,NSR,Ldp Scaling
+/system-test/testscripts/HSBU/Protocols/Sangria/NSR/J121_17013_PTX_ldp_nsr_direct_scale3.pl,General,NSR,LDP
+/system-test/testscripts/HSBU/Protocols/Sangria/NSR/J121_17013_PTX_ldp_nsr_direct_scale4.pl,General,NSR,LDP
+/system-test/testscripts/HSBU/Protocols/Sangria/NSR/J121_17013_PTX_ldp_nsr_direct_scale5.pl,General,NSR,ldp
+/system-test/testscripts/HSBU/Protocols/Sangria/NSR/J121_17013_PTX_ldp_nsr_direct_scale6.pl,General,NSR,LDP
+/system-test/testscripts/HSBU/Protocols/Sangria/NSR/J121_17013_PTX_ldp_nsr_direct_scale7.pl,General,NSR,LDP
+/system-test/testscripts/HSBU/Protocols/Sangria/NSR/J121_17013_PTX_ldp_nsr_direct_scale8.pl,General,NSR,Ldp Scaling
+/system-test/testscripts/HSBU/Protocols/Sangria/NSR/J121_6486_ptx_ldp_bfd_nsr.pl,General,NSR,BFD
+/system-test/testscripts/HSBU/Protocols/Sangria/NSR/J121_RLI2712_ptx_nsr_ldp_msg_basic.pl,General,NSR,Ldp basic
+/system-test/testscripts/HSBU/Protocols/Sangria/NSR/J121_RLI3776_ptx_nsr_bgp_gr_helper.pl,General,NSR,Gr-helper
+/system-test/testscripts/HSBU/Protocols/Sangria/NSR/J121_TPI_12639_ptx_ospf_nsr_gap.pl,General,ospf,nsr
+/system-test/testscripts/HSBU/Protocols/Sangria/NSR/J121_TPI12639_ptx_nsr_bgp_basic_gap_aeas.pl,General,NSR,bgp basic
+/system-test/testscripts/HSBU/Protocols/Sangria/RLI11840/l2ckt_comp_nh.pl,General,L2CKT,Composite NH
+/system-test/testscripts/HSBU/Protocols/Sangria/RLI11840/l2vpn_comp_nh.pl,General,L2VPN,Composite NH
+/system-test/testscripts/HSBU/Protocols/Sangria/RLI11840/l2vpn_scale.pl,General,L2VPN,Composite NH
+/system-test/testscripts/HSBU/Protocols/Sangria/RLI11840/l3vpn_comp_nh.pl,General,L2VPN,Composite NH
+/system-test/testscripts/HSBU/Protocols/Sangria/RLI11840/lbgp_comp_nh.pl,General,BGP,NH
+/system-test/testscripts/HSBU/Protocols/Sangria/RLI11840/trans_vpn_comp_nh.pl,General,L2VPN,Inter_Provider
+/system-test/testscripts/HSBU/Protocols/Sangria/RLI11840/trans_vpn_comp_nh_ne.pl,General,L2VPN,Inter_Provider
+/system-test/testscripts/HSBU/Protocols/Scaling/Absolut/mbtree_STC.pl,General,Scaling,multicast/p2mp
+/system-test/testscripts/HSBU/Protocols/Scaling/Absolut/mbtree_STC_embt.pl,General,ABSOLUTE,P2MP
+/system-test/testscripts/HSBU/Protocols/Scaling/Absolut/mbtree_STC1.pl,General,MULTICAST,P2MP
+/system-test/testscripts/HSBU/Protocols/Scaling/Absolut/stc_bgpv4_mesh,General,Scaling,bgp
+/system-test/testscripts/HSBU/Protocols/Scaling/Absolut/stc_bgpv4_meshv6,General,ABSOLUTE,BGP
+/system-test/testscripts/HSBU/Protocols/Scaling/Absolut/stc_combo_mesh,General,MULTICAST,Scaling
+/system-test/testscripts/HSBU/Protocols/Scaling/Absolut/stc_mcast_mesh,General,MULTICAST,Scaling
+/system-test/testscripts/HSBU/Protocols/Scaling/Absolut/stc_mcast_mesh_v6,General,Scaling,mcast
+/system-test/testscripts/HSBU/Protocols/Scaling/Absolut/stc_multiservice,General,Scaling,multiservice
+/system-test/testscripts/HSBU/Protocols/Scaling/Absolut/stc_vlan_mesh,General,Scaling,vlan_mesh
+/system-test/testscripts/HSBU/Protocols/Scaling/Absolut/test_stc_isis_nsr.pl,General,Scaling,isis
+/system-test/testscripts/HSBU/Protocols/Scaling/Absolut/test_stc_ospf_nsr.pl,General,MULTICAST,"OSPF,NSR"
+/system-test/testscripts/HSBU/Protocols/Scaling/Absolut/test_stc_v6_forwarding.pl,General,Scaling,IPV6
+/system-test/testscripts/HSBU/Protocols/Scaling/RSVP_Ingress_NSR.pl,General,Scaling,RSVP Ingress NSR
+/system-test/testscripts/HSBU/Protocols/SNMP/Absolut/chassis_mib_absolut.pl,General,SNMP,jnxBox table
+/system-test/testscripts/HSBU/Protocols/SNMP/Absolut/draft_mpls_ldp_mib_routing_inst_absolut.p,General,SNMP,mpls_ldp_mib
+/system-test/testscripts/HSBU/Protocols/SNMP/Absolut/jnxOperating.pl,General,SNMP,MIB
+/system-test/testscripts/HSBU/Protocols/SNMP/Absolut/mpls_lsr_std_mib_vpn.pl,General,SNMP,MPLS VPN LSP MIB
+/system-test/testscripts/HSBU/Protocols/SNMP/pr555345_MIB_GRES.pl,General,SNMP,GRES
+/system-test/testscripts/HSBU/Protocols/VPLS/Absolut/vplsMpls.VLAN_T,General,VPLS,mpls/RSVP
+/system-test/testscripts/HSBU/Protocols/VPLS/PR744361_OSPF_over_VPLS.pl,General,VPLS,Basic
+/system-test/testscripts/HSBU/Protocols/VPLS/vpls_bgp_ad_backup_rr.pl,General,VPLS,bgp
+/system-test/testscripts/HSBU/Protocols/VPLS/vpls_bgp_ad_multiple_rr.pl,General,VPLS,bgp
+/system-test/testscripts/HSBU/Protocols/VPLS/vpls_intwrk_basic_fn_tx.pl,General,VPLS,Mesh_group
+/system-test/testscripts/HSBU/Protocols/VPLS/vpls_mg_multi_homing.pl,General,Vpls,Multihoming DF
+/system-test/testscripts/HSBU/Protocols/VPN/Absolut/gre-logical-interface-vpn.pl,General,L3VPN,gre_ipip
+/system-test/testscripts/HSBU/Protocols/VPN/Absolut/ping_telnet.pl,General,VPN,LOOPBACK
+/system-test/testscripts/HSBU/Protocols/VPN/comp_nh_scaling_2Agg.pl,General,VPN,L3VPN
+/system-test/testscripts/HSBU/Protocols/VPN/comp_nh_scaling_3Agg.pl,General,VPN,L3VPN
+/system-test/testscripts/HSBU/Protocols/VPN/comp_nh_scaling_4Agg.pl,General,VPN,L3VPN
+/system-test/testscripts/HSBU/Protocols/VPN/comp_nh_scaling_8Agg.pl,General,VPN,L3VPN
+/system-test/testscripts/HSBU/Protocols/VPN/comp_nh_scaling_plain_unilist.pl,General,VPN,composite Next hop for L3VPN
+/system-test/testscripts/HSBU/Protocols/VPN/comp_nh_scaling_unilist_agg.pl,General,VPN,composite Next hop
+/system-test/testscripts/HSBU/Protocols/VPN/comp_nh_scaling_unilist_agg_unicast.pl,General,VPN,composite Next hop
+/system-test/testscripts/HSBU/Protocols/VPN/ms_app_ibgp_ebgp_jtree_multisegment.pl,General,VPN,L3VPN Multisegment memory 
+/system-test/testscripts/HSBU/Protocols/VRRP/Vrrp_Arp.pl,General,VRRP,ARP
+/system-test/testscripts/HSBU/Protocols/VRRP/vrrp_ping_basic,General,VRRP,BASIC
+/system-test/testscripts/HSBU/Sanity/Absolut/graceful_sanity_ping_txp_rt.pl,General,GRES,sanity for txp
+/system-test/testscripts/HSBU/Sanity/Absolut/mcast_sanity.pl,General,MULTICAST,multicast
+/system-test/testscripts/HSBU/Sanity/Absolut/vpls_sanity.pl,General,vpls,SANITY
+/system-test/testscripts/HSBU/Scaling/Protocol/rli4137.pl,General,OSPF,OSPF
+/system-test/testscripts/HSBU/services/safari/dyn_gre_tunnel.pl,General,services,GRE Tunnel
+/system-test/testscripts/HSBU/services/safari/gre_tunnel_key_ms.pl,General,SAFARI,Multi Services
+/system-test/testscripts/HSBU/services/safari/ipip-logical-interface-vpn.pl,General,SAFARI,IPIP 
+/system-test/testscripts/HSBU/services/safari/mcast-vpn-basic.pl,General,SAFARI,mcast-vpn
+/system-test/testscripts/HSBU/services/tunnel_pic_bullfrog_40G.pl,General,GR,TUNNEL
+/system-test/testscripts/HSBU/SNMP/ptx3k/121_ptx_aes128.pl,General,SNMP,AES128
+/system-test/testscripts/HSBU/SNMP/ptx3k/121_ptx_bgpMibsCheck.pl,General,SNMP,BFG_MIB
+/system-test/testscripts/HSBU/SNMP/ptx3k/121_ptx_check_jnxContainersLevel.pl,General,SNMP,jnxContainerslevel
+/system-test/testscripts/HSBU/SNMP/ptx3k/121_ptx_firewall_dcd.pl,General,SNMP,FIREWALL_DCD
+/system-test/testscripts/HSBU/SNMP/ptx3k/121_ptx_freespace.pl,General,SNMP,FREESPACE
+/system-test/testscripts/HSBU/SNMP/ptx3k/121_ptx_ipAddrTable_walk.pl,General,SNMP,SNMPWALK
+/system-test/testscripts/HSBU/SNMP/ptx3k/121_ptx_PerProtoSrcAddrSNMP.pl,General,SNMP,SNMPWALK
+/system-test/testscripts/HSBU/SNMP/ptx3k/121_ptx_reorder.pl,General,SNMP,REORDER
+/system-test/testscripts/HSBU/SNMP/ptx3k/121_ptx_rescue_with_snmp.pl,General,SNMP,RESCUE_SNMP
+/system-test/testscripts/HSBU/SNMP/ptx3k/121_ptx_RLI_11514.pl,General,SNMP,MIB
+/system-test/testscripts/HSBU/SNMP/ptx3k/121_ptx_rli1690_SNMPv3.pl,General,SNMP,SNMPv3
+/system-test/testscripts/HSBU/SNMP/ptx3k/121_ptx_rmon.pl,General,SNMP,RMON
+/system-test/testscripts/HSBU/SNMP/ptx3k/121_ptx_system_mib.pl,General,SNMP,MIB
+/system-test/testscripts/HSBU/SNMP/ptx3k/121_ptx_tpi_5688_trap_queue_new.pl,General,SNMP,TRAP
+/system-test/testscripts/HSBU/SNMP/ptx3k/121_ptx_TraceRouteMib.pl,General,SNMP,MIB
+/system-test/testscripts/HSBU/SNMP/ptx3k/121_ptx_trap_port.pl,General,SNMP,TRAO
+/system-test/testscripts/HSBU/SNMP/ptx3k/121_ptx_tripleDES.pl,General,SNMP,DES
+/system-test/testscripts/HSBU/SNMP/ptx3k/J121_ptx_gres_link_mib.pl,General,SNMP,GRES_MIB
+/system-test/testscripts/HSBU/SNMP/ptx3k/J121_ptx_mib2dScaling.pl,General,SNMP,MIB
+/system-test/testscripts/HSBU/SNMP/ptx3k/J121_ptx_pr22069.pl,General,SNMP,Counter
+/system-test/testscripts/HSBU/SNMP/ptx3k/J121_ptx_snmp_pr1.pl,General,SNMP,SNMP
+/system-test/testscripts/HSBU/SNMP/ptx3k/J121_ptx_vpn-ping.pl,General,SNMP,VPN
+/system-test/testscripts/HSBU/SNMP/Sangria/121_ptx_aes128.pl,General,SNMP,SNMPV3
+/system-test/testscripts/HSBU/SNMP/Sangria/121_ptx_bgpMibsCheck.pl,General,SNMP,bgp
+/system-test/testscripts/HSBU/SNMP/Sangria/121_ptx_check_jnxContainersLevel.pl,General,SNMP,MIB
+/system-test/testscripts/HSBU/SNMP/Sangria/121_ptx_firewall_dcd.pl,General,SNMP,firewall
+/system-test/testscripts/HSBU/SNMP/Sangria/121_ptx_freespace.pl,General,SNMP,freespace
+/system-test/testscripts/HSBU/SNMP/Sangria/121_ptx_ipAddrTable_walk.pl,General,SNMP,Ipadd_walk
+/system-test/testscripts/HSBU/SNMP/Sangria/121_ptx_PerProtoSrcAddrSNMP.pl,General,SNMP,TRAP
+/system-test/testscripts/HSBU/SNMP/Sangria/121_ptx_reorder.pl,General,SNMP,REORDER
+/system-test/testscripts/HSBU/SNMP/Sangria/121_ptx_rescue_with_snmp.pl,General,CHASSISD,RE
+/system-test/testscripts/HSBU/SNMP/Sangria/121_ptx_RLI_11514.pl,General,SNMP,snmp
+/system-test/testscripts/HSBU/SNMP/Sangria/121_ptx_rli1690_SNMPv3.pl,General,SNMP,SNMPv3
+/system-test/testscripts/HSBU/SNMP/Sangria/121_ptx_rmon.pl,General,SNMP,RMON
+/system-test/testscripts/HSBU/SNMP/Sangria/121_ptx_system_mib.pl,General,SNMP,mib
+/system-test/testscripts/HSBU/SNMP/Sangria/121_ptx_tpi_5688_trap_queue_new.pl,General,SNMP,TRAP
+/system-test/testscripts/HSBU/SNMP/Sangria/121_ptx_trap_port.pl,General,SNMP,TRAP
+/system-test/testscripts/HSBU/SNMP/Sangria/121_ptx_tripleDES.pl,General,SNMP,SNMPV3
+/system-test/testscripts/HSBU/SNMP/Sangria/121_ptx_varbinds.pl,General,SNMP,varbinds
+/system-test/testscripts/HSBU/SNMP/Sangria/J121_ptx_gres_link_mib.pl,General,SNMP,GRES
+/system-test/testscripts/HSBU/SNMP/Sangria/J121_ptx_mib2dScaling.pl,General,SNMP,Scaling
+/system-test/testscripts/HSBU/SNMP/Sangria/J121_ptx_pr22069.pl,General,CHASSISD,COUNTER
+/system-test/testscripts/HSBU/SNMP/Sangria/J121_ptx_snmp_pr1.pl,General,SANGRIA,SNMP
+/system-test/testscripts/HSBU/SNMP/Sangria/J121_ptx_vpn-ping.pl,General,SNMP,VPN
+/system-test/testscripts/HSBU/SOLeS/Absolut/frr_scaling,General,ABSOLUTE,FRR_AE
+/system-test/testscripts/HSBU/SOLeS/cox,General,MPLS,P2MP/P2P
+/system-test/testscripts/HSBU/SOLeS/RLI-7686/rli-7686-mcast-agg-mbb.pl,General,MULTICAST,AE
+/system-test/testscripts/HSBU/t4k/Infrastucture/CNH/J121_14056_comp_nh_scaling_2Agg.pl,General,CNH,AE_SCALING
+/system-test/testscripts/HSBU/t4k/Infrastucture/CNH/J121_14056_comp_nh_scaling_3Agg.pl,General,CNH,Scaling
+/system-test/testscripts/HSBU/t4k/Infrastucture/CNH/J121_14056_comp_nh_scaling_4Agg.pl,General,CNH,AE_SCALING
+/system-test/testscripts/HSBU/t4k/Infrastucture/CNH/J121_14056_comp_nh_scaling_plain_unilist.pl,General,CNH,AE_SCALING
+/system-test/testscripts/HSBU/t4k/Infrastucture/CoS/J121_14057_Hercules_dscp_2471_lt.pl,General,hercules,COS
+/system-test/testscripts/HSBU/t4k/Infrastucture/CoS/J121r2_14197_T4000_ClassRew.pl,General,Hercules,COS
+/system-test/testscripts/HSBU/t4k/Infrastucture/CoS/J121r2_15602_T4000_cos.pl,General,Hercules,COS
+/system-test/testscripts/HSBU/t4k/Infrastucture/CoS/J121r2_15602_T4000_re_fc_dscp_rli12434.pl,General,COS,fc/dscp
+/system-test/testscripts/HSBU/t4k/Infrastucture/CoS/J121r2_RLI_14196_T4000_Lsp_auto_policing.pl,General,Hercules,COS::POLICER
+/system-test/testscripts/HSBU/t4k/Infrastucture/CoS/J122_14197_T4000_sched.pl,General,Hercules,COS
+/system-test/testscripts/HSBU/t4k/Infrastucture/CoS/J122_15526_t4000_AE_IFD_Shaping.pl,General,Hercules,COS
+/system-test/testscripts/HSBU/t4k/Infrastucture/CoS/J122_15526_t4000_IFD_Shaping.pl,General,Hercules,COS
+/system-test/testscripts/HSBU/t4k/Infrastucture/FirewallFilters/J121_14048_Hercules_firewall_filter_firewall_rt.pl,General,FIREWALL,FILTER
+/system-test/testscripts/HSBU/t4k/Infrastucture/FirewallFilters/J121_14048_Hercules_firewallfilter_show_fil.pl,General,Hercules,Firewall_filter
+/system-test/testscripts/HSBU/t4k/Infrastucture/FirewallFilters/J121_14058_t4000_iptraffic_filters.pl,General,FIREWALL,FILTER
+/system-test/testscripts/HSBU/t4k/Infrastucture/FirewallFilters/J121_RLI-14048_Hercules_firewallfilter_ipv6filter.pl,General,Hercules,FIREWALL_FILTER
+/system-test/testscripts/HSBU/t4k/Infrastucture/FirewallFilters/J121_RLI-14048_Hercules_firewallfilter_mplsfilter.pl,General,FIREWALL,MPLS
+/system-test/testscripts/HSBU/t4k/Infrastucture/FirewallFilters/J121r2_14196_T4000_FBF.pl,General,Hercules,Firewall
+/system-test/testscripts/HSBU/t4k/Infrastucture/FirewallFilters/J121r2_14196_T4000_FBFV6.pl,General,Hercules,Firewall_filter
+/system-test/testscripts/HSBU/t4k/Infrastucture/ISSU/J132_18375_t4k_issu_l3prot_l3vpn.pl,General,ISSU,L3VPN
+/system-test/testscripts/HSBU/t4k/Infrastucture/ISSU/J132_18375_t4k_issu_l3prot_l3vpn_mpls_filter.pl,General,ISSU,L3VPN with filter
+/system-test/testscripts/HSBU/t4k/Infrastucture/ISSU/J132_18375_t4k_issu_l3prot_l3vpn_mpls_policer.pl,General,ISSU,L3VPN with Policer
+/system-test/testscripts/HSBU/t4k/Infrastucture/ISSU/J132_18375_t4k_issu_rosen.pl,General,ISSU,ROSEN
+/system-test/testscripts/HSBU/t4k/Infrastucture/JFlow/J121r2_15593_t4000_dfc.pl,General,JFLOW,Dynamic_Flow
+/system-test/testscripts/HSBU/t4k/Infrastucture/JFlow/J121r2_15593_t4000_jflowv9_ipv4.pl,General,JFLOW,IPv4
+/system-test/testscripts/HSBU/t4k/Infrastucture/JFlow/J121r2_15593_t4000_jflowv9_ipv6.pl,General,JFLOW,IPV6
+/system-test/testscripts/HSBU/t4k/Infrastucture/Multicast/J121_14055_Hercules_anycastRP.pl,General,MULTICAST,RP
+/system-test/testscripts/HSBU/t4k/Infrastucture/Multicast/J121_14055_Hercules_mcast_protocols.pl,General,MULTICAST,BASIC
+/system-test/testscripts/HSBU/t4k/Infrastucture/Multicast/J121_14055_Hercules_msdp.pl,General,MULTICAST,MSDP
+/system-test/testscripts/HSBU/t4k/Infrastucture/Multicast/J121_14055_Hercules_pim-bgp-indnh.pl,General,MULTICAST,BGP
+/system-test/testscripts/HSBU/t4k/Infrastucture/Multicast/J121_14057_Hercules_dyn_gre_tunnel.pl,General,Hercules,MULTICAST
+/system-test/testscripts/HSBU/t4k/Infrastucture/Multicast/J121_14057_Hercules_gre_mtu_check.pl,General,Hercules,MULTICAST
+/system-test/testscripts/HSBU/t4k/Infrastucture/Multicast/J121_14057_Hercules_gre-tunnel-test.pl,General,MULTICAST,GRE
+/system-test/testscripts/HSBU/t4k/Infrastucture/Multicast/J121_14057_Hercules_lt_interface_basic_test.pl,General,MULTICAST,LT_INTERFACE
+/system-test/testscripts/HSBU/t4k/Infrastucture/Multicast/J122_15586_T4000_mcast_mbt.pl,General,Hercules,MULTICAST
+/system-test/testscripts/HSBU/t4k/Infrastucture/Multicast/J122_15586_T4000_p2mp_mbt.pl,General,MULTICAST,P2MP
+/system-test/testscripts/HSBU/t4k/Infrastucture/PEM/J123_19088_t4k_Power_management.pl,General,PEM,Power Management
+/system-test/testscripts/HSBU/t4k/Infrastucture/PFE/J121_12899_12901_12902_t4000_fru_handling_1.pl,General,PFE,FRU
+/system-test/testscripts/HSBU/t4k/Infrastucture/PFE/J121_12899_12901_12902_t4000_fru_handling_2.pl,General,PFE,FRU
+/system-test/testscripts/HSBU/t4k/Infrastucture/PFE/J121r2_14246_t4000_fabric_state.pl,General,Hercules,PFE
+/system-test/testscripts/HSBU/t4k/Infrastucture/PFE/J121r2_14246_t4000_pfe_fabric_fault.pl,General,Hercules,PFE
+/system-test/testscripts/HSBU/t4k/Infrastucture/PFE/J123_17558_oss_check.pl,General,PFE,OSS
+/system-test/testscripts/HSBU/t4k/Infrastucture/PFE/J131_825994_t4000_si_coeffs.pl,General,PFE,CHASSIS
+/system-test/testscripts/HSBU/t4k/Infrastucture/Policer/J121_14048_t4000_AE_Aggregate_Policer.pl,General,POLICER,AE 
+/system-test/testscripts/HSBU/t4k/Infrastucture/Policer/J121_14048_t4000_IFL_Creation_deletion.pl,General,POLICER,IFL
+/system-test/testscripts/HSBU/t4k/Infrastucture/Policer/J121_14048_t4000_Simple_Policer.pl,General,POLICER,AE
+/system-test/testscripts/HSBU/t4k/Infrastucture/Policer/J121_14048_t4000_simple_policer_with_filter_Spirent.pl,General,POLICER,FILTER
+/system-test/testscripts/HSBU/t4k/Infrastucture/Policer/J121r2_RLI_14196_T4000_lsp_policing.pl,General,POLICER,LSP
+/system-test/testscripts/HSBU/t4k/Infrastucture/Policer/J121r2_RLI_14196_T4000_srTCM.pl,General,Hercules,POLICER
+/system-test/testscripts/HSBU/t4k/Infrastucture/Policer/J121r2_RLI_14196_T4000_trTCM.pl,General,Hercules,POLICER
+/system-test/testscripts/HSBU/t4k/Infrastucture/Policer/J121r2_RLI_14196_T4000_trTCM_characterization_IPv4_Network_Events.pl,General,Hercules,POLICER
+/system-test/testscripts/HSBU/t4k/Infrastucture/Policer/J122_15524_T4k_hp_ipv4.pl,General,Hercules,POLICER
+/system-test/testscripts/HSBU/t4k/Infrastucture/Policer/J122_15524_T4k_hp_ipv4_2.pl,General,Hercules,POLICER
+/system-test/testscripts/HSBU/t4k/Infrastucture/Policer/J122_15524_T4k_hp_ipv6.pl,General,Hercules,POLICER
+/system-test/testscripts/HSBU/t4k/Infrastucture/Policer/J122_15524_T4k_hp_mpls.pl,General,Hercules,POLICER
+/system-test/testscripts/HSBU/t4k/Infrastucture/Policer/J122_RLI_14196_T4000_trTCM_characterization_IPv4_Network_Events.pl,General,POLICER,TCM
+/system-test/testscripts/HSBU/t4k/Interfaces/100GE/J121_14043_t4000_ae_advance.pl,General,Hercules,100GE
+/system-test/testscripts/HSBU/t4k/Interfaces/100GE/J121_14043_t4000_ae_basic.pl,General,AE,BASIC
+/system-test/testscripts/HSBU/t4k/Interfaces/100GE/J121_14043_t4000_ae_link_protection.pl,General,100GE,ae
+/system-test/testscripts/HSBU/t4k/Interfaces/100GE/J121_14043_t4000_ether_error_stats.pl,General,Hercules,100GE
+/system-test/testscripts/HSBU/t4k/Interfaces/100GE/J121_14043_t4000_interface_basic_tests.pl,General,100GE,BASIC
+/system-test/testscripts/HSBU/t4k/Interfaces/100GE/J121_14043_t4000_intr_link_down.pl,General,Hercules,100GE
+/system-test/testscripts/HSBU/t4k/Interfaces/100GE/J121_14043_tseries_lacp_tests.pl,General,Hercules,100GE
+/system-test/testscripts/HSBU/t4k/Interfaces/100GE/J121R2_16841_t4000_brooklyn_introp.pl,General,Hercules,100GE
+/system-test/testscripts/HSBU/t4k/Interfaces/10GE/J121_14044_t4000_ae_advance.pl,General,10GE,ae
+/system-test/testscripts/HSBU/t4k/Interfaces/10GE/J121_14044_t4000_ae_basic.pl,General,Hercules,10GE
+/system-test/testscripts/HSBU/t4k/Interfaces/10GE/J121_14044_t4000_ae_link_protection.pl,General,Hercules,10GE
+/system-test/testscripts/HSBU/t4k/Interfaces/10GE/J121_14044_t4000_ether_error_stats.pl,General,Hercules,10GE
+/system-test/testscripts/HSBU/t4k/Interfaces/10GE/J121_14044_t4000_interface_basic_tests.pl,General,Hercules,10GE
+/system-test/testscripts/HSBU/t4k/Interfaces/10GE/J121_14044_t4000_intr_link_down.pl,General,Hercules,10GE
+/system-test/testscripts/HSBU/t4k/Interfaces/10GE/J121_14044_tseries_ae_statistics.pl,General,10GE,ae
+/system-test/testscripts/HSBU/t4k/Interfaces/10GE/J121_14044_tseries_ethernet_statistics.pl,General,Hercules,10GE
+/system-test/testscripts/HSBU/t4k/Interfaces/10GE/J121_14044_tseries_lacp_mib.pl,General,Hercules,10GE
+/system-test/testscripts/HSBU/t4k/Interfaces/10GE/J121_14044_tseries_lacp_tests.pl,General,Hercules,10GE
+/system-test/testscripts/HSBU/t4k/Interfaces/10GE/J121r2_14190_t4000_ae_advance.pl,General,Hercules,10GE
+/system-test/testscripts/HSBU/t4k/Interfaces/10GE/J121r2_14190_t4000_wan_phy_alm_test.pl,General,Hercules,10GE
+/system-test/testscripts/HSBU/t4k/Interfaces/10GE/J121r2_14198_t4000_mac_acc_tag_intf.pl,General,Hercules,10GE
+/system-test/testscripts/HSBU/t4k/Interfaces/10GE/J121r2_14198_t4000_mac_acc_untag.pl,General,Hercules,10GE
+/system-test/testscripts/HSBU/t4k/Interfaces/10GE/J121r2_14198_t4000_mac_pol_untag.pl,General,Hercules,10GE
+/system-test/testscripts/HSBU/t4k/Interfaces/10GE/j121r2_18243_t4000_interface_basic_tests.pl,General,10GE,BASIC
+/system-test/testscripts/HSBU/t4k/Interfaces/10GE/j121r2_18243_tseries_ethernet_statistics.pl,General,Hercules,10GE
+/system-test/testscripts/HSBU/t4k/Interfaces/10GE/J121r2_18243_wan_phy_alm_test.pl,General,Hercules,10GE
+/system-test/testscripts/HSBU/t4k/Interfaces/10GE/J123_16738_t4000_Cuervo_chassis_optics_test.pl,General,Hercules,Cuervo_chassis
+/system-test/testscripts/HSBU/t4k/Interfaces/10GE/wan-phy/J121r2_14045_t4000_interface_basic_tests.pl,General,Hercules,10GE
+/system-test/testscripts/HSBU/t4k/Interfaces/10GE/wan-phy/J121r2_14045_t4000_intr_link_down.pl,General,10GE,wan-phy
+/system-test/testscripts/HSBU/t4k/Interfaces/10GE/wan-phy/J121r2_14045_t4000_wan_phy_test.pl,General,10GE,VLAN
+/system-test/testscripts/HSBU/t4k/Interfaces/10GE/wan-phy/J121r2_14045_tseries_wan_phy_ccc_encap_tests.pl,General,10GE,VLAN
+/system-test/testscripts/HSBU/t4k/Interfaces/10GE/wan-phy/J121r2_14190_tseries_ethernet_statistics.pl,General,ETHERNET,10GE
+/system-test/testscripts/HSBU/t4k/Interfaces/10GE/wan-phy/j121r2_18243_t4000_ae_advance.pl,General,Hercules,10GE
+/system-test/testscripts/HSBU/t4k/Interfaces/10GE/wan-phy/j121r2_18243_t4000_wan_phy_test.pl,General,Hercules,10GE
+/system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/CRTP/AGAVE_1xcoc48_crtp_scaling_perf_sg3.pl,General,AGAVE,CHOC48
+/system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/CRTP/AGAVE_1xcoc48_crtp_scaling_perf_sg3_max_contexts.pl,General,AGAVE,CHOC48
+/system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/LSQ/112_frf15_multiple_dlci.pl,General,AGAVE,4CHOC12
+/system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/LSQ/121_11125_ipv6_intf_stats_mlppp_LSQ.pl,General,AGAVE,4CHOC12
+/system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/LSQ/122_15900_LSQ_L2_queue_stats.pl,General,AGAVE,4CHOC12
+/system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/LSQ/AGAVE_1xcoc48_frf15.pl,General,AGAVE,CHOC48
+/system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/LSQ/AGAVE_1xcoc48_mlppp_scaling_perf_sg3.pl,General,AGAVE,LSQ
+/system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/LSQ/CHOC3/AGAVE_coc3_crtp_scaling_perf_sg3_max_contexts.pl,General,AGAVE,CHOC3
+/system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/LSQ/CHOC3/AGAVE_coc3_frf15.pl,General,AGAVE,LSQ
+/system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/LSQ/CHOC3/frf15_traffic_control_profile.pl,General,AGAVE,CHOC3
+/system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/LSQ/CHOC3/frf15_traffic_control_profile_2.pl,General,AGAVE,CHOC3
+/system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/LSQ/CHOC3/mlppp_scaling_perf_sg3_coc3.pl,General,AGAVE,LSQ
+/system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/LSQ/CHOC3/mlppp_stats.pl,General,AGAVE,LSQ
+/system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/LSQ/PR_280739.pl,General,AGAVE,LSQ/MLPPP/FRF16
+/system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/RLSQ/102_rlsq_MixedEncaps_System_Misc_tests.pl,General,AGAVE,LSQ
+/system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/RLSQ/102_rlsq_mlfr_mfr_cos_config_check.pl,General,AGAVE,RLSQ/MLFR
+/system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/RLSQ/102_rlsq_mlfr_mfr_mixed_encaps_gres.pl,General,AGAVE,RLSQ/MLFR
+/system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/RLSQ/102_rlsq_mlfr_mfr_restoration_time.pl,General,AGAVE,RLSQ/MLFR
+/system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/RLSQ/112_frf15_multiple_dlci_scaling.pl,General,AGAVE,lsq
+/system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/RLSQ/113_tcp_on_frf16_ifd_RLSQ_ws.pl,General,AGAVE,RLSQ/frf16
+/system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/RLSQ/121_11125_ipv6_intf_stats_RLSQ_ws.pl,General,AGAVE,RLSQ
+/system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/RLSQ/122_15900_RLSQ_hs_L2_queue_stats_gres.pl,General,AGAVE,RLSQ
+/system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/RLSQ/122_15900_RLSQ_ws_L2_queue_stats.pl,General,AGAVE,RLSQ
+/system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/RLSQ/lsq_ha_preserve_interface_rlsq.pl,General,AGAVE ,4CHOC12
+/system-test/testscripts/HSBU/t4k/Interfaces/AS/J132_16658_T4k_32as.pl,General,AS,32AS
+/system-test/testscripts/HSBU/t4k/Interfaces/Others/J121_14050_ccc.pl,General,Hercules,ccc
+/system-test/testscripts/HSBU/t4k/Interfaces/Others/J121_14050_vpls_rewrite.pl,General,Hercules,vpls
+/system-test/testscripts/HSBU/t4k/Interfaces/Others/J121r2_14190_t4000_ae_basic.pl,General,ETHERNET,AE
+/system-test/testscripts/HSBU/t4k/Interfaces/Others/J121r2_14198_t4000_mac_filter_tag.pl,General,Hercules,FILTER
+/system-test/testscripts/HSBU/t4k/Interfaces/Others/J121r2_14198_t4000_mac_filter_untag.pl,General,Hercules,FILTER
+/system-test/testscripts/HSBU/t4k/Protocols/BFD/J121_14058_t4000_bfd_sanity_ae_non-ae.pl,General,BFD,Hercules
+/system-test/testscripts/HSBU/t4k/Protocols/BGP/J121_14058_t4000_bgp.multias.pl,General,BGP,MULTI_AS
+/system-test/testscripts/HSBU/t4k/Protocols/BGP/J121_14058_t4000_bgp.multias2.pl,General,BGP,Hercules
+/system-test/testscripts/HSBU/t4k/Protocols/BGP/J121_14058_t4000_bgp_aggregate_routes.pl,General,BGP,Hercules
+/system-test/testscripts/HSBU/t4k/Protocols/BGP/J121_14058_t4000_bgp_authentication_Absolut.pl,General,BGP,IPv6
+/system-test/testscripts/HSBU/t4k/Protocols/BGP/J121_14058_t4000_bgp_community.v6.pl,General,BGP,IPV6
+/system-test/testscripts/HSBU/t4k/Protocols/BGP/J121_14058_t4000_bgp_link_bw.pl,General,BGP,LINK
+/system-test/testscripts/HSBU/t4k/Protocols/BGP/J121_14058_t4000_bgp_nh-peer.pl,General,BGP,NH
+/system-test/testscripts/HSBU/t4k/Protocols/BGP/J121_14058_t4000_bgp_pmtu_discovery.pl,General,BGP,MTU
+/system-test/testscripts/HSBU/t4k/Protocols/BGP/J121_14058_t4000_bgp_prefix_limit.pl,General,BGP,Hercules
+/system-test/testscripts/HSBU/t4k/Protocols/BGP/J121_14058_t4000_bgp_sanity_with_traffic.pl,General,BGP,SANITY
+/system-test/testscripts/HSBU/t4k/Protocols/BGP/J121_14058_t4000_bgp_v6_as_filter.pl,General,BGP,FILTER
+/system-test/testscripts/HSBU/t4k/Protocols/BGP/J121_14058_t4000_bgp_v6_ibgp_ripng.pl,General,BGP,ibgp
+/system-test/testscripts/HSBU/t4k/Protocols/BGP/J121_14058_t4000_bgp_v6_native.pl,General,BGP,fib
+/system-test/testscripts/HSBU/t4k/Protocols/GRES-GR/J121r2_14247_T4000_Scaled_ISIS_GR_GRES_LR.pl,General,GRES-GR,ISIS
+/system-test/testscripts/HSBU/t4k/Protocols/GRES-GR/J121r2_14247_T4000_Scaled_OSPF_GR_GRES_LR.pl,General,GRES,OSPF
+/system-test/testscripts/HSBU/t4k/Protocols/GRES-GR/J121r2_14247_T4000_Scaled_RSVP_GR_GRES_LR.pl,General,GRES-GR,RSVP
+/system-test/testscripts/HSBU/t4k/Protocols/ISIS/J121_14058_t4000_isis_lfa.pl,General,ISIS,Hercules
+/system-test/testscripts/HSBU/t4k/Protocols/ISIS/J121_14058_t-series_isis_prefix_export_limit.pl,General,ISIS,BASIC
+/system-test/testscripts/HSBU/t4k/Protocols/ISIS/J121_14058_t-series_ISIS_sanity.pl,General,ISIS,SANITY
+/system-test/testscripts/HSBU/t4k/Protocols/ISIS/J121_14058_t-series_isis_spfdelay.pl,General,ISIS,Hercules
+/system-test/testscripts/HSBU/t4k/Protocols/ISIS/J121_14058_t-series_isis_tag.pl,General,ISIS,Hercules
+/system-test/testscripts/HSBU/t4k/Protocols/ISIS/J121_14058_t-series_isis_timers.pl,General,ISIS,lsp
+/system-test/testscripts/HSBU/t4k/Protocols/ISIS/J121_14058_t-series_ISISv6_metrics.pl,General,ISIS,IPV6
+/system-test/testscripts/HSBU/t4k/Protocols/ISIS/J121_14058_t-series_ISISv6_Overload.pl,General,ISIS,Hercules
+/system-test/testscripts/HSBU/t4k/Protocols/ISIS/J121_14058_t-series_isisv6_sanity.pl,General,ISIS,Hercules
+/system-test/testscripts/HSBU/t4k/Protocols/ISIS/J121_14058_t-series_mesh_isis.pl,General,ISIS,Hercules
+/system-test/testscripts/HSBU/t4k/Protocols/Miscellaneous/J121_14058_t4000_ecmp.pl,General,ECMP,"RSVP,LDP"
+/system-test/testscripts/HSBU/t4k/Protocols/Miscellaneous/J121_14058_t4000_ipv6_sanity.pl,General,IPv6,SANITY
+/system-test/testscripts/HSBU/t4k/Protocols/Miscellaneous/J121_14058_t4000_ipv6_vrftable_sanity.pl,General,IPv6,VRF/SANITY
+/system-test/testscripts/HSBU/t4k/Protocols/Miscellaneous/J121_14058_t4000_lvrrp_sanity.pl,General,LVRRP,SANITY
+/system-test/testscripts/HSBU/t4k/Protocols/Miscellaneous/J121_14058_t4000_Policy_Damping.pl,General,BGP,POLICER
+/system-test/testscripts/HSBU/t4k/Protocols/Miscellaneous/J121_14058_t4000_urpf_ae.pl,General,AE,urpf
+/system-test/testscripts/HSBU/t4k/Protocols/Miscellaneous/J121_14058_t4000_urpf_ether.pl,General,ETHERNET,urpf
+/system-test/testscripts/HSBU/t4k/Protocols/Miscellaneous/J121_14058_t-series_stub_default_metric.pl,General,OSPF,Metric
+/system-test/testscripts/HSBU/t4k/Protocols/Miscellaneous/J121_T4K_PR_Automation.pl,General,CFD,CFD
+/system-test/testscripts/HSBU/t4k/Protocols/MPLS/J121_14046_Hercules_MPLS_CCC.pl,General,MPLS,Hercules
+/system-test/testscripts/HSBU/t4k/Protocols/MPLS/J121_14046_Hercules_MPLS_Static_LSP.pl,General,MPLS,Hercules
+/system-test/testscripts/HSBU/t4k/Protocols/MPLS/J121_14046_load_balance_mpls.pl,General,MPLS,Load_Balance
+/system-test/testscripts/HSBU/t4k/Protocols/MPLS/J121_14058_t4000_rsvp_sanity.pl,General,MPLS,Hercules
+/system-test/testscripts/HSBU/t4k/Protocols/MPLS/J122_15586_T4000_p2mp_rsvp_tracert_2.pl,General,MPLS,p2mp
+/system-test/testscripts/HSBU/t4k/Protocols/OSPF/J121_14058_t4000_Ospf_lfa.pl,General,OSPF,lfa
+/system-test/testscripts/HSBU/t4k/Protocols/OSPF/J121_14058_t4000_ospfv3_timers.pl,General,OSPF,Hercules
+/system-test/testscripts/HSBU/t4k/Protocols/OSPF/J121_14058_t-series_OSPF_lsa_types.pl,General,OSPF,Hercules
+/system-test/testscripts/HSBU/t4k/Protocols/OSPF/J121_14058_t-series_ospf_multauthkey.pl,General,OSPF,Hercules
+/system-test/testscripts/HSBU/t4k/Protocols/OSPF/J121_14058_t-series_ospf_nssa.pl,General,OSPF,NSSA
+/system-test/testscripts/HSBU/t4k/Protocols/OSPF/J121_14058_t-series_ospf_overload.pl,General,OSPF,OVERLOAD
+/system-test/testscripts/HSBU/t4k/Protocols/OSPF/J121_14058_t-series_OSPF_redistribution.pl,General,OSPF,redistribute
+/system-test/testscripts/HSBU/t4k/Protocols/OSPF/J121_14058_t-series_ospf_sanity.pl,General,OSPF,SANITY
+/system-test/testscripts/HSBU/t4k/Protocols/OSPF/J121_14058_t-series_ospf3_path_selection.pl,General,OSPF,LSA
+/system-test/testscripts/HSBU/t4k/Protocols/RIP/J121_14058_t4000_rip_basic.pl,General,RIP,BASIC
+/system-test/testscripts/HSBU/t4k/Protocols/VPLS/J121_14054_t4000_ae_vpls.pl,General,VPLS,Hercules
+/system-test/testscripts/HSBU/t4k/Protocols/VPLS/J121_14054_t4000_ldp_vpls_basic.pl,General,VPLS,Hercules
+/system-test/testscripts/HSBU/t4k/Protocols/VPLS/J121_14054_t4000_vpls_aging_T.pl,General,VPLS,VPLS MAC AGING
+/system-test/testscripts/HSBU/t4k/Protocols/VPLS/J121_14054_t4000_vpls_bgp_ad_backup_rr.pl,General,VPLS,Hercules
+/system-test/testscripts/HSBU/t4k/Protocols/VPLS/J121_14054_t4000_vpls_cos.pl,General,VPLS,Hercules
+/system-test/testscripts/HSBU/t4k/Protocols/VPLS/J121_14054_t4000_vpls_encap.pl,General,VPLS,Hercules
+/system-test/testscripts/HSBU/t4k/Protocols/VPLS/J121_14054_t4000_vpls_intwrk_basic_fn.pl,General,VPLS,Hercules
+/system-test/testscripts/HSBU/t4k/Protocols/VPLS/J121_14054_t4000_vpls_mg_multi_homing.pl,General,VPLS,LDP
+/system-test/testscripts/HSBU/t4k/Protocols/VPLS/J121_14054_t4000_vpls_sanity.pl,General,VPLS,Hercules
+/system-test/testscripts/HSBU/t4k/Protocols/VPLS/J121_14054_t4000_vplsMpls.VLAN_T.pl,General,VPLS,VLAN
+/system-test/testscripts/HSBU/t4k/Protocols/VPLS/J123_16363_t4000_bgp_vpls_scaled_aging.pl,General,VPLS,BGP
+/system-test/testscripts/HSBU/t4k/Protocols/VPLS/J123_16363_t4000_bgp_vpls_scaled_learning.pl,General,VPLS,BGP
+/system-test/testscripts/HSBU/t4k/Protocols/VPN/J121_14058_t4000_aggregate_l3sanity.pl,General,VPN,SANITY
+/system-test/testscripts/HSBU/t4k/Protocols/VPN/J121_14058_t4000_l2circuit_sanity.pl,General,VPN,SANITY
+/system-test/testscripts/HSBU/t4k/Protocols/VPN/J121_14058_t4000_l2vpn-vlan-ge.1.pl,General,VPN,VLAN
+/system-test/testscripts/HSBU/t4k/Protocols/VPN/J121_14058_t4000_l3vpn_sanity.pl,General,VPN,SANITY/ST-FPC1
+/system-test/testscripts/HSBU/t4k/Protocols/VPN/J121_14058_t4000_vpn_ae.pl,General,VPN,Hercules
+/system-test/testscripts/Infrastructure/Absolut4/Fabric/pr547970_abs_lcc4.pl,General,ABSOLUTE,fabric
+/system-test/testscripts/Infrastructure/Bluecube/t640_ipsec.pl,General,L3VPN,IPSEC
+/system-test/testscripts/Infrastructure/CF/firewall_counters_protocol.pl,General,CF,Firewall
+/system-test/testscripts/Infrastructure/CF/firewall_re.pl,General,cos,basic
+/system-test/testscripts/Infrastructure/CF/ifgrp.pl,General,CF,FILTER
+/system-test/testscripts/Infrastructure/Chassisd/Quiet-Chassis/chassis-fantray.pl,General,CHASSISD,Quiet_chassis
+/system-test/testscripts/Infrastructure/COS/4PLP/4plp_e2fpc_stoli.pl,General,COS,4Colors
+/system-test/testscripts/Infrastructure/COS/4PLP/4plp_stoli_e2fpc_rt.pl,General,COS,4PLP
+/system-test/testscripts/Infrastructure/COS/copy_plp_rli3045_tseries.pl,General,COS,COPY-PLP
+/system-test/testscripts/Infrastructure/COS/copy_plp_rli3045_tseries_rt.pl,General,COS,COPY-PLP
+/system-test/testscripts/Infrastructure/COS/cos_8_queue_dscp_rewrite_rt.pl,General,COS,DSCP_REWRITE
+/system-test/testscripts/Infrastructure/COS/cos_8queue_tseries.pl,General,COS,Qpic/Scheduler
+/system-test/testscripts/Infrastructure/COS/dlci_q_cstm1_oc3.pl,General,Cos,dlci with QPP-chstm1
+/system-test/testscripts/Infrastructure/COS/dscp_bleaching_gfpc.pl,General,COS,dscp
+/system-test/testscripts/Infrastructure/COS/expcos_aggether_pr49168.pl,General,COS,MPLS
+/system-test/testscripts/Infrastructure/COS/FC16/fc16_classifier_rewrite_nonee2fpc.pl,General,COS,rewrite classifier
+/system-test/testscripts/Infrastructure/COS/FC16/fc16_dscp_2471_lt_rt.pl,General,COS,FC16
+/system-test/testscripts/Infrastructure/COS/Hobson_sw_basics_rt.pl,General,COS,Platform
+/system-test/testscripts/Infrastructure/COS/IQ2/iq2_policer.pl,General,COS,IQ2/POLICER
+/system-test/testscripts/Infrastructure/COS/IQ2/iq2_trtcm.pl,General,cos,iq2e
+/system-test/testscripts/Infrastructure/COS/ldp_cos_fwd.pl,General,COS,ldp
+/system-test/testscripts/Infrastructure/COS/multi_priority.pl,General,cos,basic
+/system-test/testscripts/Infrastructure/COS/mvpn_gre_rw_lmnr.pl,General,cos,mvpn
+/system-test/testscripts/Infrastructure/COS/pfeQueuing_tseries.pl,General,COS,QPIC/PFE
+/system-test/testscripts/Infrastructure/COS/PR/atm2_ifl-state_PR60157.pl,General,COS,QUEUE
+/system-test/testscripts/Infrastructure/COS/PR/pr22130.pl,General,cos,mpls
+/system-test/testscripts/Infrastructure/COS/PR/pr22672.pl,General,COS,REWRITE
+/system-test/testscripts/Infrastructure/COS/qpp_8q_qge.pl,General,Cos,Qpp
+/system-test/testscripts/Infrastructure/COS/qstm1_large_buf.pl,General,Cos,Large delay buffer
+/system-test/testscripts/Infrastructure/COS/t_qce1_ifd_shaping.pl,General,COS,Qpic
+/system-test/testscripts/Infrastructure/COS/t_qge_ifd_shaping.pl,General,COS,Qpic
+/system-test/testscripts/Infrastructure/COS/trTCM/Q_drops_TRTCM_and_schedul.pl,General,COS,TRTCM
+/system-test/testscripts/Infrastructure/COS/trTCM/trTCM_e2_non-e2_stoli_rt.pl,General,Cos,Two rate TricolorMarking
+/system-test/testscripts/Infrastructure/COS/trTCM/trTCM_rli3023_stoli_rt.pl,General,COS,RE
+/system-test/testscripts/Infrastructure/COS/vlan_q_haddock_t.pl,General,COS,Qpic
+/system-test/testscripts/Infrastructure/Diffserv/cos_3bit_inet_exp_pr57053.pl,General,COS,Classify_REW
+/system-test/testscripts/Infrastructure/Diffserv/qos_to_exp,General,COS,Classify_REW
+/system-test/testscripts/Infrastructure/Diffserv/rli1389/exp-ieee.pl,General,COS,MPLS
+/system-test/testscripts/Infrastructure/Diffserv/rli652-atm-clp-gimlet.pl,General,COS,CLASSIFY-REWITE
+/system-test/testscripts/Infrastructure/Diffserv/TX_LSQ/lsp_cbf_8Q_aggether.pl,General,LSQ,CBF on 8Qaggether
+/system-test/testscripts/Infrastructure/Diffserv/TX_LSQ/lsp_cbf_8Q_aggsonet.pl,General,LSQ,CBF on 8Qaggsonet
+/system-test/testscripts/Infrastructure/Diffserv/TX_LSQ/lsp_cbf_8Q_lr.pl,General,LSQ,LSP/CBF
+/system-test/testscripts/Infrastructure/EGFPC/e2_fpc.pl,General,EGFPC,E2 FPC
+/system-test/testscripts/Infrastructure/EGFPC/enhanced_fpc.pl,General,EGFPC,EGFPC COS
+/system-test/testscripts/Infrastructure/GRES/graceful_cos_8queue_tseries.pl,General,GRES,Basic
+/system-test/testscripts/Infrastructure/GRES/graceful_sanity_ping_panic_T.pl,General,GRES,SANITY
+/system-test/testscripts/Infrastructure/GSP/asp_accouting_tx.pl,General,Accounting,"asp,jflow"
+/system-test/testscripts/Infrastructure/GSP/gre_tunnel_key_enhanced.pl,General,GSP,GRE tunnel key
+/system-test/testscripts/Infrastructure/GSP/gsp_accouting_tx_max_flows.pl,General,GSP,AS2 PICs
+/system-test/testscripts/Infrastructure/Infrastructure/jtm.pl,General,JTREE,JTREE MEMORY CHECK
+/system-test/testscripts/Infrastructure/Infrastructure/pfe_res_usg.pl,General,PFE,RE
+/system-test/testscripts/Infrastructure/Kernel/kernel_hd1.pl,General,KERNEL,CHASSIS
+/system-test/testscripts/Infrastructure/Kernel/kernel_hd2.pl,General,KERNEL,CHASSIS
+/system-test/testscripts/Infrastructure/Kernel/kernel_hd3.pl,General,Kernel,Chassisd
+/system-test/testscripts/Infrastructure/Kernel/kernel_hd4.pl,General,Kernel,Chassisd
+/system-test/testscripts/Infrastructure/Kernel/kernel_hd5.pl,General,Kernel,Chassisd
+/system-test/testscripts/Infrastructure/Kernel/kernel_hd6.pl,General,Kernel,Chassisd
+/system-test/testscripts/Infrastructure/RE/re_tx.pl,General,COS,RE
+/system-test/testscripts/Infrastructure/Redundancy/re_RE-A-2000-multireboot.pl,General,CHASSISD,RE
+/system-test/testscripts/Infrastructure/SNMP/snmp_index.pl,General,pfe,mib
+/system-test/testscripts/Infrastructure/SNMP/snmp_index_issu.pl,General,SNMP,ISSU
+/system-test/testscripts/Infrastructure/SNMP/TX_snmpchasd.pl,General,SNMP,CHASSIS
+/system-test/testscripts/Infrastructure/UI/safari_ui_rli3834_1.pl,General,UI,CLI
+/system-test/testscripts/Interfaces/ATM/atm2_f4_oam.pl,General,ATM,oam
+/system-test/testscripts/Interfaces/ATM/atm2_f5_oam.pl,General,ATM,oam
+/system-test/testscripts/Interfaces/Dense-Fe/TSeries/de_encaps.pl,General,ETHERNET,DENSE FE (DFE)
+/system-test/testscripts/Interfaces/FE/Int_stats_FE.pl,General,ETHERNET,Interface_stats
+/system-test/testscripts/Interfaces/GE/GAP/gap_3routers,General,ETHERNET,GE
+/system-test/testscripts/Interfaces/GE/GAP/gap_ccc,General,ETHERNET,GE
+/system-test/testscripts/Interfaces/GE/haddock/pr37661.pl,General,GE,vlan
+/system-test/testscripts/Interfaces/GE/Xenpak_interrupt.pl,General,GE,xenpack
+/system-test/testscripts/Interfaces/GRE-type2/tun_num.pl,General,GRE-type2,tunnel number with ip and gr encap
+/system-test/testscripts/Interfaces/GRE-type2/tun_unnum,General,GRE-type2,tunnel unnmbered with ip and gr encap
+/system-test/testscripts/Interfaces/IQ2/scaling-performance/scaling_statistic.pl,General,scaling,IQ2
+/system-test/testscripts/Interfaces/POS/Int_stats_SO.pl,General,POS,Basic
+/system-test/testscripts/Interfaces/POS/Scaling/pos_oc192_scal.pl,General,POS,oc192 scaling for sonet/SDH mode
+/system-test/testscripts/Interfaces/PR/int_firewall_group_pr38707.pl,General,PR,firewall
+/system-test/testscripts/Interfaces/QCT3/l3vpn/l3vpn_qds_tserie.pl,General,QCT3,l3vpn with ds
+/system-test/testscripts/Interfaces/QCT3/l3vpn/l3vpn_qt1_tserie.pl,General,QCT3,l3vpn with t1
+/system-test/testscripts/Interfaces/QCT3/l3vpn/l3vpn_qt3_tserie.pl,General,QCT3,l3vpn with t3
+/system-test/testscripts/Interfaces/TUNNEL/gre_scaling_tunnel.pl,General,Tunnel,Gre_scaling
+/system-test/testscripts/ISSU/Infrastructure/Chassis/issu_chassis_knob.pl,General,CHASSISD,ISSU
+/system-test/testscripts/ISSU/Infrastructure/Cos/issu_classifier.pl,General,ISSU,issu/cos
+/system-test/testscripts/ISSU/Infrastructure/Firewall/issu_firewall.pl,General,ISSU,Firewall
+/system-test/testscripts/ISSU/Infrastructure/Firewall/issu_policer.pl,General,ISSU,firewall with COS
+/system-test/testscripts/ISSU/Infrastructure/issu_eginsamefpc.pl,General,ISSU,COS
+/system-test/testscripts/ISSU/Infrastructure/issu_fab_forward.pl,General,ISSU,chassis
+/system-test/testscripts/ISSU/Infrastructure/Performance/issu_cpu_consumption.pl,General,ISSU,cpu_consumption
+/system-test/testscripts/ISSU/Infrastructure/Performance/issu_route_download_characterization.pl,General,ISSU,COS
+/system-test/testscripts/ISSU/Interfaces/IQ_PIC/issu_iq2_protocols_rt.pl,General,ISSU,IQ_PIC
+/system-test/testscripts/ISSU/Interfaces/POS/issu_pos.pl,General,ISSU,OC48/192
+/system-test/testscripts/ISSU/Interfaces/POS/issu_pos_scaling_rt.pl,General, ISSU, POS
+/system-test/testscripts/ISSU/Interfaces/POS/issu_sonet_non_concat_rt.pl,General,Pos,OC48/192
+/system-test/testscripts/ISSU/Protocols/GFPC4/gfpc4_rp_ISSU_rt.pl,General,GFPC4,issu
+/system-test/testscripts/ISSU/Protocols/VPLS/vpls_bgp_issu_t1600.pl,General,VPLS,issu
+/system-test/testscripts/ISSU/TXMatrix/issu_classifier_TX.pl,General,issu,cos
+/system-test/testscripts/ISSU/TXMatrix/issu_egress_rewrite_TX.pl,General,CHASSISD,ISSU
+/system-test/testscripts/ISSU/TXMatrix/issu_scheduler_RED_TX.pl,General,ISSU,SCHEDULER
+/system-test/testscripts/Protocols/BFD/PPMD_Delegate_PFE_AE_SCALING.pl,General,BFD,ppmd
+/system-test/testscripts/Protocols/CCC/ethernet/enetccc_rmtif_55,General,ccc,ethernet
+/system-test/testscripts/Protocols/CCC/vlan/j60_rli1525_vlanccc_t.pl,General,CCC,vlan 
+/system-test/testscripts/Protocols/GRES/vpls_gres_tx_advanced.pl,General,GRES,vpls
+/system-test/testscripts/Protocols/GRES/vpls_gres_tx_basic.pl,General,GRES,"vpls,gres"
+/system-test/testscripts/Protocols/GRES/vpls_gres_tx_ldp_and_gre.pl,General,GRES,vpls
+/system-test/testscripts/Protocols/IPv6/bgp/back2back/v6_native,General,IPV6,BGP
+/system-test/testscripts/Protocols/IPv6/bgp/ibgp_core/TSeries/v6_ibgp_isis,General,Ipv6,bgp
+/system-test/testscripts/Protocols/IPv6/bgp/ibgp_core/v6_ibgp_isis_rt,General,Ipv6,ibgp
+/system-test/testscripts/Protocols/IPv6/bgp/tunnels/TSeries/v6_tunneled_ebgp_v4xport,General,bgp,v6_ebgp
+/system-test/testscripts/Protocols/IPv6/bgp/tunnels/TSeries/v6_tunneled_ibgp,General,IPV6,BGP
+/system-test/testscripts/Protocols/IPv6/bgp/tunnels/TSeries/v6_tunneled_ibgp_v4xport,General,IPV6,BGP
+/system-test/testscripts/Protocols/IPv6/Ping/pr_77269_egress_int_source.pl,General,IPv6,ping
+/system-test/testscripts/Protocols/L2Circuit/PR/l2ckt_dn_prPR272321.pl,General,L2CKT,Aggregation
+/system-test/testscripts/Protocols/L2Circuit/T_L2Circuit/l2circuits-basic,General,L2CKT,basic
+/system-test/testscripts/Protocols/L2Circuit/trunk/lr_uni_trunk,General,L2CKT,trunk
+/system-test/testscripts/Protocols/L2VPN/basic/basic_T/l2vpn-frame.1_rt.pl,General,L2VPN,RSVP
+/system-test/testscripts/Protocols/L2VPN/basic/basic_T/l2vpn-hdlc.1_rt.pl,General,L2VPN,"CISCO HDLC, RSVP"
+/system-test/testscripts/Protocols/L2VPN/basic/basic_T/l2vpn-ppp.1_rt.pl,General,L2VPN,"PPP, RSVP"
+/system-test/testscripts/Protocols/L2VPN/basic/basic_T/l2vpn-vlan-ge.1_rt.pl,General,L2VPN,"GE, VLAN, RSVP"
+/system-test/testscripts/Protocols/L2VPN/TCC/TCC_T/tcc-atm-hdlc_rt.pl,General,L2VPN,TCC
+/system-test/testscripts/Protocols/L2VPN/TCC/TCC_T/tcc-atm-ppp_rt.pl,General,L2VPN,TCC
+/system-test/testscripts/Protocols/L2VPN/TCC/TCC_T/tcc-atm-snap-hdlc_rt.pl,General,L2VPN,TCC
+/system-test/testscripts/Protocols/L2VPN/TCC/TCC_T/tcc-atm-snap-ppp_rt.pl,General,L2VPN,TCC
+/system-test/testscripts/Protocols/L2VPN/TCC/TCC_T/tcc-frame-atm_rt.pl,General,L2VPN,TCC
+/system-test/testscripts/Protocols/L2VPN/TCC/TCC_T/tcc-frame-atm-snap_rt.pl,General,L2VPN,TCC
+/system-test/testscripts/Protocols/L2VPN/TCC/TCC_T/tcc-frame-hdlc_rt.pl,General,L2VPN,TCC
+/system-test/testscripts/Protocols/L2VPN/TCC/TCC_T/tcc-frame-ppp_rt.pl,General,L2VPN,TCC
+/system-test/testscripts/Protocols/L2VPN/vpn_mpls/vpn_mpls_T/l2vpnMPLS,General,L2VPN,Vpls/ Mpls
+/system-test/testscripts/Protocols/LDP/LDP/stats/ldp-stats_T_series.pl,General,LDP,ldp statistics
+/system-test/testscripts/Protocols/Misc/maxarps_tx.pl,General,PFE,ARP
+/system-test/testscripts/Protocols/MPLS/Hierarchy/lsp_hierarchy_appl.pl,General,MPLS,LSP
+/system-test/testscripts/Protocols/MPLS/Hierarchy/lsp_hierarchy_basic.pl,General,MPLS,LSP
+/system-test/testscripts/Protocols/MPLS/MPLS_NOAH/load_balancing/load_balancing_t_series.pl,General,Mpls,Load_Balance
+/system-test/testscripts/Protocols/MPLS/MPLS_NOAH/load_balancing/mpls_lb_eth_pw_agg.pl,General,mpls,Load_Balance
+/system-test/testscripts/Protocols/MPLS/PR/graceful_lsp_crash.pl,General,MPLS,GRES
+/system-test/testscripts/Protocols/MPLS/PR/lbVideoSonetArt.pl,General,MPLS,Level 3 hashing for non TCP/UDP
+/system-test/testscripts/Protocols/MPLS/PR/mpls_ttl_pr_8245_t_series.pl,General,MPLS,BASIC
+/system-test/testscripts/Protocols/MPLS/PR/mpls-ttl-swap-T.pl,General,MPLS,TTl CHECK
+/system-test/testscripts/Protocols/OSPF/ospf_route_priority_basic.pl,General,OSPF,Route_Priority
+/system-test/testscripts/Protocols/OSPF/PR/PR305462_OSPFFLAP.pl,General,OSPF,Aggregation
+/system-test/testscripts/Protocols/OSPF/Sham_links/ospf_sham_links_multiple_ces_per_pe_table_label.pl,General,OSPF,Sham_links
+/system-test/testscripts/Protocols/PRs/TXcommitGenerateER416380.pl,General,CHASSISD,CLI
+/system-test/testscripts/Protocols/SNMP/fru/cfchange_T_series.pl,General,NMS_SNMP,fru
+/system-test/testscripts/Protocols/SNMP/fru/fru_T_series.pl,General,NMS_SNMP,fru
+/system-test/testscripts/Protocols/SNMP/fru/frutrap_T_series.pl,General,SNMP,FRU
+/system-test/testscripts/Protocols/SNMP/J102_PR_546872_T.pl,General,SNMP,MIB2D/Polling
+/system-test/testscripts/Protocols/SNMP/PR_559166.pl,General,SNMP,SNMP
+/system-test/testscripts/Protocols/VPLS/ATM/atm_vpls_gr_if_sw_ether_encaps.pl,General,VPLS,ATM
+/system-test/testscripts/Protocols/VPLS/ATM/enet_vpls_atm_scal.pl,General,VPLS,ATM
+/system-test/testscripts/Protocols/VPLS/LDP/vpls_ldp_ce_vlan_T,General,vpls,ldp
+/system-test/testscripts/Protocols/VPLS/LDP/vpls_ldp_exvlan_T,General,vpls,ldp
+/system-test/testscripts/Protocols/VPLS/LDP/vpls_ldp_vlan_exvlan_T,General,vpls,ldp
+/system-test/testscripts/Protocols/VPLS/vpls_aging_T,General,VPLS,AGING
+/system-test/testscripts/Protocols/VPLS/vpls_gre_T,General,VPLS,GREs
+/system-test/testscripts/Protocols/VPLS/vpls_lt.pl,General,vpls,rsvp
+/system-test/testscripts/Protocols/VPLS/vplsMpls.VLAN_T,General,VPLS,vlan/mpls
+/system-test/testscripts/Protocols/VPLS/vplsMplsFilter_T,General,vpls,rsvp
+/system-test/testscripts/Protocols/VPN/vrf_table_label/ae/m320_ae_no_vlan_basic_test.pl,General,l3vpn,aggregated interfaces
+/system-test/testscripts/Protocols/VPN/vrf_table_label/ae/m320_ae_vlan_lacp_basic_test.pl,General,L3VPN,vrf_table_label/AE
+/system-test/testscripts/Protocols/VPN/vrf_table_label/ae/t_ae_bgp_rr.pl,General,VPN,AE
+/system-test/testscripts/Protocols/VPN/vrf_table_label/ae/t_ae_lr_ipv6.pl,General,L3VPN,AE
+/system-test/testscripts/Protocols/VPN/vrf_table_label/ae/t_ae_vlan_2vpns.pl,General,L3VPN,vrf_table_label/AE
+/system-test/testscripts/Protocols/VPN/vrf_table_label/ae/t_ae_vlan_ce_pe.pl,General,L3VPN,aggregated interface with vrf table
+/system-test/testscripts/Protocols/VPN/vrf_table_label/ae/t_ae_vlan_interprovider_vpn.pl,General,L3VPN,VRF table check with aggregated interfaces
+/system-test/testscripts/Protocols/VPN/vrf_table_label/ae/t_ae_vlan_lacp_2_bundles_rt.pl,General,VPN,VRF table check for aggregated interface
+/system-test/testscripts/Protocols/VPN/vrf_table_label/sonet_vrf_tbl_lbl_Tseries_basic.pl,General,L3VPN,VRF
+/system-test/testscripts/Protocols/VPN/vrf_table_label/vlan/m320_q_ge_2_vpns.pl,General,VPN,vrf_table_label
+/system-test/testscripts/Protocols/VPN/vrf_table_label/vlan/m320_vlan_4_port_ge.pl,General,VPN,Vrf Table
+/system-test/testscripts/Protocols/VPN/vrf_table_label/vlan/t_gap_ge_reboot.pl,General,L2VPN,VRF table check with router reboot
+/system-test/testscripts/Protocols/VPN/vrf_table_label/vlan/t_vlan_legacy_ge.pl,General,vpn,vlan
+/system-test/testscripts/Protocols/VPN/vrf_table_label/vrf_table_label_two_vpns_lr_atm_t_series.pl,General,L3VPN,vrf_table_label
+/system-test/testscripts/Protocols/VPN/vrf_table_label/vrf_table_label_two_vpns_lr_sonet_t_series.pl,General,l3vpn,vrf
+/system-test/testscripts/Protocols/VPN/vrf_table_label/vrf_table-label_t_reboot.pl,General,l3vpn,vrf
+/system-test/testscripts/Protocols/VPN/vrf_table_label/vrf_tbl_lbl_Tseries_broadcast.pl,General,l3vpn,vrf
+/system-test/testscripts/Protocols/VRRP/qppge_vrrp.pl,General,VRRP,QPIC/QGE
+/system-test/testscripts/Safari/cf/ftf/ftf_basic_safari.pl,General,CF,FTF
+/system-test/testscripts/Safari/Infrastructure/CF/aggregate_policer_safari.pl,General,CF,POLICY
+/system-test/testscripts/Safari/Infrastructure/CF/firewall_rt_safari.pl,General,CF,FIREWALL
+/system-test/testscripts/Safari/Infrastructure/Chassisd/jcs_sanity.pl,General,CHASSISD,JCS
+/system-test/testscripts/Safari/Infrastructure/Chassisd/safari_chassis_chassisd.pl,General,SAFARI,CHASSISD
+/system-test/testscripts/Safari/Infrastructure/Chassisd/safari_chassis_fpc.pl,General,CHASSISD,Basic
+/system-test/testscripts/Safari/Infrastructure/Chassisd/safari_chassis_pic.pl,General,CHASSISD,Basic
+/system-test/testscripts/Safari/Infrastructure/Chassisd/safari_chassis_re.pl,General,CHASSISD,Basic
+/system-test/testscripts/Safari/Infrastructure/COS/agg_ether_8q_safari.pl,General,cos,Aggregation
+/system-test/testscripts/Safari/Infrastructure/GRES/graceful_cos_safari.pl,General,GRES,COS
+/system-test/testscripts/Safari/Infrastructure/SNMP/daemon/daemon_uptimes_safari.pl,General,SNMP,CHASSIS
+/system-test/testscripts/Safari/Infrastructure/SNMP/filter_test1_safari.pl,General,SNMP,FILTER
+/system-test/testscripts/Safari/Infrastructure/SNMP/filter_test2_safari.pl,General,SNMP,FILTER
+/system-test/testscripts/Safari/Infrastructure/SNMP/fru_table_safari.pl,General,SNMP,FRU table
+/system-test/testscripts/Safari/Infrastructure/SNMP/snmpd_rli2947_1_fe_safari.pl,General,SNMP,MIB
+/system-test/testscripts/Safari/Interfaces/GE_SFP/safari_switchover_on_ge.pl,General,ETHERNET,GE
+/system-test/testscripts/Safari/Interfaces/POS/safari_1xOC192XFP_sdh_basic.pl,General,POS,Basic
+/system-test/testscripts/Safari/Interfaces/POS/safari_1xOC192XFP_sonet_basic.pl,General,POS,1xOC192XFP_sonet
+/system-test/testscripts/Safari/Interfaces/POS/safari_sonet_ccc.pl,General,POS,Sonet
+/system-test/testscripts/Safari/Interfaces/SharedUplink/DWDM_scal.pl,General,SHARED_UPLINK,Safari
+/system-test/testscripts/Safari/Protocols/IPv6/ldp_rsvp_mpls_v6_safari.pl,General,Ipv6,mpls
+/system-test/testscripts/Safari/Protocols/LR/bgp_lr_safari_rt.pl,General,bgp,lr
+/system-test/testscripts/Safari/Protocols/NSR/nsr_l2circuit_test_safari.pl,General,NSR,LDP
+/system-test/testscripts/Safari/Protocols/NSR/nsr_ldp_basic_safari.pl,General,nsr,ldp
+/system-test/testscripts/Safari/Protocols/OSPF/ospf_virtual_links_safari.pl,General,OSPF,Basic
+/system-test/testscripts/Safari/Protocols/VPLS/vpls_iflflood_vlan_Safari.pl,General,vpls,ifl count
+/system-test/testscripts/Safari/Protocols/VPLS/vplsMpls.VLANtoEXTVLAN_Safari,General,VPLS,vlan/mpls
+/system-test/testscripts/Safari/Protocols/VPN/general_vrf_table_label_basic_sonet_safari.pl,General,L3VPN,vrf_table_label
+/system-test/testscripts/Safari/Protocols/VPN/vpn_lb_safari_rt.pl,General,VPN,Load_Balance
+/system-test/testscripts/Stinger/GRES/graceful_cos.pl,General,GRES,COS
+/system-test/testscripts/Stinger/Infrastructure/hsl_basic.pl,General,HSL,Basic
+/system-test/testscripts/Stinger/Infrastructure/hsl_default.pl,General,HSL,Default
+/system-test/testscripts/Stinger/Infrastructure/hsl_rt_static_gres.pl,General,HSL,GRES
+/system-test/testscripts/Stinger/Infrastructure/hsl_rt_transit.pl,General,HSL,RT_Transit
+/system-test/testscripts/Stinger/Infrastructure/urpf_ae.pl,General,uRPF,Basic
+/system-test/testscripts/Stinger/Protocols/BFD/bfd_sanity.pl,General,BFD,SANITY
+/system-test/testscripts/Stinger/Protocols/BGP/bgp_authentication.pl,General,BGP,MD5 authentication
+/system-test/testscripts/Stinger/Protocols/BGP/bgp_community.v6.pl,General,Bgp,v6 community
+/system-test/testscripts/Stinger/Protocols/L2VPN/l2ckt_cword_ethernet_rt.pl,General,L2VPN,"L2CKT, ETHERNET"
+/system-test/testscripts/Stinger/Protocols/L2VPN/l2ckt_cword_hdlc_rt.pl,General,L2VPN,"L2CKT,CISCO HDLC"
+/system-test/testscripts/Stinger/Protocols/LDP/ldp_md5.pl,General,LDP,MD5 Authentication
+/system-test/testscripts/Stinger/Protocols/MPLS/mpls_load_balance_agg_rsvp.pl,General,Mpls,Load_Balance
+/system-test/testscripts/Stinger/Protocols/RSVP/penultiBasic,General,RSVP,BASIC
+/system-test/testscripts/Stinger/Protocols/RSVP/rsvp_nbr_flow.pl,General,RSVP,NBR
+/system-test/testscripts/Stinger/Protocols/VPLS/vplsGeneral_macAge_vlan,General,vpls,vlan
+/system-test/testscripts/Stinger/Protocols/VPLS/vplsMpls.NoVLAN_GRES,General,VPLS,MPLS
+/system-test/testscripts/Stinger/sanity/l3vpn_sanity.pl,General,L3VPN,sanity
+/system-test/testscripts/System-Wide/accounting/accounting_T/DestBilling.pl,General,Accounting,Basic
+/system-test/testscripts/System-Wide/accounting/accounting_T/flat_fileDCU.pl,General,Accounting,DCU for flat file
+/system-test/testscripts/System-Wide/accounting/accounting_T/flat_fileFW.pl,General,Accounting,Basic
+/system-test/testscripts/System-Wide/accounting/accounting_T/flat_fileIF.pl,General,Accounting,Basic
+/system-test/testscripts/System-Wide/accounting/accounting_T/vpn_dcu.pl,General,Accounting,basic
+/system-test/testscripts/System-Wide/accounting/accounting_T/vpn_dcu_egress.pl,General,Accounting,basic
+/system-test/testscripts/System-Wide/accounting/accounting_T/vpn_scu.pl,General,Accounting,basic
+/system-test/testscripts/System-Wide/accounting/accounting_T/vpn_scu_egress.pl,General,Accounting,basic
+/system-test/testscripts/System-Wide/accounting/dcu_scu_bps_pps_tx.pl,General,Counter,SCU/DCU Counter
+/system-test/testscripts/System-Wide/accounting/scu_dcu_bps_pps_ipv6_tx.pl,General,Accounting,"DCU,SCU,counter"
+/testscripts/HSBU/Interfaces/Agave/L2/RLSQ/rlsq_gres_cos_CHDS3.pl,General,AGAVE,CHDS3
+/testscripts/HSBU/t4k/Infrastucture/CNH/J121_14056_comp_nh_scaling_plain_unilist_frr.pl,General,CNH,Scaling
+system-test/testscripts/Hobson/Infrastructure/Chassisd/basic/chassis_test.pl,General,CHASSISD,basic
+system-test/testscripts/Hobson/Infrastructure/Diffserv/pfeQueuing_tseries.pl,General,PFE,Q-PIC/HE
+system-test/testscripts/Hobson/Protocols/CCC/ccc_aal5_extvlan_gfr.pl,General,CCC,GRES/VLAN
+system-test/testscripts/Hobson/Protocols/NSR/bgp_nsr_abs.pl,General,bgp,nsr
+system-test/testscripts/HSBU/Infrastructure/Agave/atm2_egress_fcq.pl,General,AGAVE,ATM
+system-test/testscripts/HSBU/Infrastructure/Chassisd/Absolut/PEMTest.pl,General,CHASSISD, PEMs
+system-test/testscripts/HSBU/Infrastructure/Safari/Shared_Uplink/rli5083_gres_perf.pl,General,SHARED_UPLINK,GRES
+system-test/testscripts/HSBU/Infrastructure/Safari/Shared_Uplink/rli5083_ipv6_perf.pl,General,SHARED_UPLINK,IPV6
+system-test/testscripts/HSBU/Interfaces/Agave/L2/LSQ/121_11125_ipv6_intf_stats_mlppp_LSQ_scaling_sg1.pl,General,AGAVE,LSQ/mlppp
+system-test/testscripts/HSBU/Interfaces/Agave/L2/LSQ/1xCHOC12/AGAVE_coc12_scaling_perf_lsq_mixed_encaps.pl,General,AGAVE,LSQ/1xCHOC12
+system-test/testscripts/HSBU/Interfaces/Agave/L2/LSQ/1xCHOC12/Lsq_HA.pl,General,AGAVE,LSQ/HA
+system-test/testscripts/HSBU/Interfaces/Agave/L2/LSQ/AGAVE_4xcoc12_frf15.pl,General,AGAVE,LSQ/frf15
+system-test/testscripts/HSBU/Interfaces/Agave/L2/LSQ/AGAVE_mlppp_scaling_perf_sg1.pl,General,AGAVE,LSQ/mlppp/4xCHOC12
+system-test/testscripts/HSBU/Interfaces/Agave/L2/LSQ/AGAVE_oc12_crtp_scaling_perf_sg1.pl,General,AGAVE,LSQ/CRTP
+system-test/testscripts/HSBU/Interfaces/Agave/L2/LSQ/AGAVE_oc12_mcmlppp_scaling_perf_sg1.pl,General,AGAVE,LSQ/mcmlppp
+system-test/testscripts/HSBU/Interfaces/Agave/L2/LSQ/AGAVE_oc12_mlppp_scaling_perf_sg1.pl,General,AGAVE,LSQ
+system-test/testscripts/HSBU/Interfaces/Agave/L2/LSQ/CHDS3/lsq_pir_cir.pl,General,AGAVE,LSQ/PIR/CIR
+system-test/testscripts/HSBU/Interfaces/Agave/L2/LSQ/CHDS3/scaling_perf_lsq.pl,General,AGAVE,LSQ/CHDS3
+system-test/testscripts/HSBU/Interfaces/Agave/L2/LSQ/mlppp_scaling_perf_sg1.pl,General,AGAVE,LSQ/mlppp
+system-test/testscripts/HSBU/Interfaces/Agave/L2/LSQ/Stargate/113_tcp_on_frf16_scaling_sg1_LSQ.pl,General,AGAVE,LSQ/Stargate
+system-test/testscripts/HSBU/Interfaces/Agave/L2/RLSQ/COS/rlsq_cos.pl,General,AGAVE,RLSQ
+system-test/testscripts/HSBU/Interfaces/Agave/L2/RLSQ/rlsq_restoration_times.pl,General,AGAVE,RLSQ
+system-test/testscripts/HSBU/Interfaces/LLDP/LLDP.pl,General,LLDP,GE/IQ2
+system-test/testscripts/HSBU/Interfaces/PR/pr277326_holddown_pic_reboot.pl,General,CHASSISD,PIC
+system-test/testscripts/HSBU/Interfaces/QCT3/PPLB_t1_12.pl,General,ETHERNET,T1
+system-test/testscripts/HSBU/Interfaces/Safari/Inter_PSD/rli7776_cf_gr.pl,General,ETHERNET,GE
+system-test/testscripts/HSBU/Interfaces/Safari/Inter_PSD/rli7776_cf_mpls.pl,General,ETHERNET,MPLS/GE
+system-test/testscripts/HSBU/Interfaces/Safari/Inter_PSD/rli7776_cf_nsr.pl,General,ETHERNET,GE
+system-test/testscripts/HSBU/Protocols/Absolut/P2MP/p2mp-advanced-static-absolut.pl,General,MPLS,P2MP
+system-test/testscripts/HSBU/Protocols/Multicast/NG_MVPN/Absolut/ng_mvpn_threePEs_Misc_PIM_DM.pl,General,MULTICAST,PIM/VPN
+system-test/testscripts/HSBU/t4k/Infrastucture/CoS/J121_14047_T4k_ClassRew.pl,General,COS,ClassRew
+system-test/testscripts/HSBU/t4k/Infrastucture/GRES/J121r2_14247_t4000_Multiservices_GRES.pl,General,GRES,Basic
+system-test/testscripts/HSBU/t4k/Infrastucture/JFlow/J121r2_15593_t4000_jflowv5_v8.pl,General,JFLOW,jflow
+system-test/testscripts/HSBU/t4k/Infrastucture/PFE/J121r2_14246_t4000_fabric_pfe_fault.pl,General,CHASSISD,SIB fault handling
+system-test/testscripts/HSBU/t4k/Infrastucture/Policer/J121_14048_t4000_Aggregate_Policer.pl,General,MPLS,Policer
+system-test/testscripts/HSBU/t4k/Interfaces/10GE/J121r2_14198_t4000_mac_pol_tag.pl,General,10GE,Mac_policer
+system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/LSQ/113_tcp_on_frf16_ifd_LSQ.pl,General,AGAVE,LSQ/frf16
+system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/LSQ/121_11125_ipv6_intf_stats_mlppp_LSQ_scaling_sg2.pl,General,AGAVE,LSQ/MLPPP
+system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/LSQ/121_11125_ipv6_intf_stats_mlppp_LSQ_scaling_sg3.pl,General,AGAVE,LSQ/MLPPP
+system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/LSQ/PR_1048067.pl,General,AGAVE,LSQ/MLFR
+system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/LSQ/PR_1052970.pl,General,AGAVE,LSQ/Mixed Encaps 
+system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/RLSQ/102_rlsq_mlfr_mfr_restoration_time_2.pl,General,AGAVE,RLSQ/mlfr
+system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/RLSQ/102_rlsq_mlppp_mlfr_mfr_mixed_scaling_sg2.pl,General,AGAVE,RLSQ/MLFR
+system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/RLSQ/112_frf15_multiple_dlci_rlsq.pl,General,AGAVE,RLSQ/frf15
+system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/RLSQ/112_frf15_multiple_dlci_rlsq1.pl,General,AGAVE,RLSQ/frf15
+system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/RLSQ/121_11125_ipv6_intf_RLSQ_scaling_sg2_hs.pl,General,AGAVE,RLSQ/4CHOC12
+system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/RLSQ/121_11125_ipv6_intf_RLSQ_scaling_sg2_ws.pl,General,AGAVE,RLSQ/Scaling
+system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/RLSQ/122_15900_RLSQ_hs_L2_queue_stats.pl,General,AGAVE,RLSQ/Stats
+system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/RLSQ/rlsq_gres.pl,General,AGAVE,RLSQ/GRES
+system-test/testscripts/HSBU/t4k/Interfaces/Agave/L2/RLSQ/Rlsq_MLFR16.pl,General,AGAVE,RLSQ/MLFR
+system-test/testscripts/HSBU/t4k/Interfaces/Others/J121_14050_tcc.pl,General,BGP,Encapsualtion
+system-test/testscripts/HSBU/t4k/Protocols/GRES-GR/J121r2_14247_T4000_Scaled_LDP_GR_GRES_LR.pl,General,LDP,GRES
+system-test/testscripts/HSBU/t4k/Protocols/MCAST/NGMVPN/ngmvpn_rpt_spt_mode_topo1_basic1.pl,General,MULTICAST,NGMVPN
+system-test/testscripts/HSBU/t4k/Protocols/MCAST/NGMVPN/ngmvpn_rpt_spt_mode_topo1_basic2.pl,General,MULTICAST,NGMVPN
+system-test/testscripts/HSBU/t4k/Protocols/MCAST/NGMVPN/ngmvpn_rpt_spt_mode_topo1_basic3.pl,General,MULTICAST,NGMVPN
+system-test/testscripts/HSBU/t4k/Protocols/MCAST/NGMVPN/ngmvpn_rpt_spt_mode_topo1_r4_rr.pl,General,MULTICAST,NGMVPN
+system-test/testscripts/Protocols/CCC/ccc-lmi/link_status_ppp.pl,General,CCC,ccc-lmi
+system-test/testscripts/Protocols/L2Circuit/trunk/uni_trunk,General,L2CKT,trunk
+system-test/testscripts/HSBU/t4k/Protocols/BFD,General,BFD,BGP
+system-test/testscripts/HSBU/t4k/Infrastucture/ISSU,General,MCAST,ISSU
+system-test/testscripts/HSBU/Protocols/ptx3k,General,GRES,ISIS
+system-test/testscripts/HSBU/Interfaces/ptx3k,General,SangriaCCCTCC,ptx3k
+system-test/testscripts/HSBU/Belvedere/Protocols/,General,BASIC,RIP
+system-test/testscripts/HSBU/Interfaces/ptx3k/,General,AE,Sangria
+system-test/testscripts/HSBU/t4k/Infrastucture/ISSU,General,Chassisd,ISSU
+system-test/testscripts/HSBU/Infrastructure/ptx3k,General,GRES,SNMP
+system-test/testscripts/HSBU/Protocols/ptx3k/sangria_rsvp_scaling.pl,General,RSVP,SCALING
+system-test/testscripts/HSBU/Infrastructure/ptx3k,General,PFE,MIB
+system-test/testscripts/HSBU/Infrastructure/Chassisd/ptx3k/re_traffic_sanity-2.pl,General,Chassisd,RE
+system-test/testscripts/HSBU/Infrastructure/ptx3k/jnxBox_test.pl,General,SNMP,MIB
+/system-test/testscripts/HSBU/Customers/Cox/sangria/PR867190_Cox_PTX_feature_ae_ifd.pl,General,COX,AE
+system-test/testscripts/HSBU/ISSU/Infrastructure/Sangria/J132_15595_Sangria_ISSU3.pl,General,ISSU,CCG
+system-test/testscripts/HSBU/Infrastructure/Chassisd/ptx3k/re_ptx_priority-4.pl,General,Chassisd,RE
+system-test/testscripts/HSBU/Infrastructure/Chassisd/ptx3k/re_ptx_priority-5.pl,General,Chassisd,RE
+system-test/testscripts/HSBU/SNMP/ptx3k/J132_ptx_varbinds.pl,General,SNMP,MIB
+system-test/testscripts/HSBU/Customers/Cox/sangria/PR867190_Cox_PTX_feature_ae_vlan.pl,General,COX,AE
+system-test/testscripts/HSBU/Infrastructure/Chassisd/ptx3k/ssh_priv_separation_sangria.pl,General,Chassisd,SSH
+system-test/testscripts/HSBU/Protocols/ptx3k/rli11527_sangria_apps_ospfv3_scale.pl,General,OSPF,ospfv3
+/system-test/testscripts/HSBU/Interfaces/Sangria/Eristoff/J132_17524_testIPv4_Fwding_WAN.pl,General,10GE,IPv4
+/system-test/testscripts/HSBU/t4k/Infrastucture/ISSU/J132_18375_t4k_issu_ipv4_over_ipv4_gre_tunnel.pl,General,Chassisd,ISSU
+/system-test/testscripts/HSBU/Belvedere/Interfaces/J131_16875_BLVD_qcoc12_t3.pl,General,QCOC12,T3
+/system-test/testscripts/HSBU/Protocols/MPLS/sangria/j132_11443_ptx_sangria_uhp_rsvp.pl,General,MPLS,RSVP
+/system-test/testscripts/HSBU/Infrastructure/ptx3k/jnxBox_state.pl,General,Chassisd,SNMP
+/system-test/testscripts/HSBU/ISSU/Infrastructure/Sangria/J132_15595_Sangria_ISSU4.pl,General,ISSU,Sangria
+/system-test/testscripts/Hobson/Interfaces/AE/LACP/lacp_distribute.pl,General,AE,LACP
+/system-test/testscripts/HSBU/Interfaces/ptx3k/j123_18764_ptx_lldp_pr.pl,General,EOAM,LLDP
+/system-test/testscripts/HSBU/Infrastructure/Platform/ptx3k/chassis_sangria_cb.pl,General,Chassisd,Sangria
+/system-test/testscripts/HSBU/Protocols/OSPF/sangria/rli11527_sangria_apps_ospfv2_scale.pl,General,OSPF,Scaling
+/system-test/testscripts/HSBU/Protocols/MPLS/sangria/j132_11443_ptx_uhp_scal.pl,General,MPLS,Scaling
+/system-test/testscripts/HSBU/Infrastructure/Platform/ptx3k/chassis_sangria_zone0_cooling.pl,General,Chassisd,Cooling
+/system-test/testscripts/HSBU/Protocols/ptx3k/rli11527_sangria_apps_ospfv2_scale.pl,General,OSPF,Scaling
+/system-test/testscripts/HSBU/SNMP/ptx3k/pr555345_MIB_GRES.pl,General,SNMP,GRES
+/system-test/testscripts/HSBU/Interfaces/ptx3k/Sangria_AE_2.pl,General,AE,Ethernet
+/system-test/testscripts/HSBU/Infrastructure/ptx3k/J132_18945_PTX_COS_ae_64link.pl,General,COS,AE
+/system-test/testscripts/HSBU/Applications/multiservices/ptx3k/mcast-v4v6-multiservice.pl,General,Multicast,PIM/MS
+/system-test/testscripts/HSBU/Applications/multiservices/ptx3k/mcast-multiservice.pl,General,Multicast,PIM/MS
+/system-test/testscripts/HSBU/Interfaces/Layer2overheadaccounting/J133_19285_t-series_layer2overheadknob.pl,General,Layer2overheadaccounting,
+/system-test/testscripts/HSBU/t4k/Infrastucture/ISSU/J132_18375_t4k_apps-multiservice_issu_proto.pl,General,ISSU,Chassisd
+system-test/testscripts/HSBU/t4k/Infrastucture/PFE/J121_19777_t4000_pr780708.pl,General,Hercules,Policer
+system-test/testscripts/HSBU/Infrastructure/Sangria/PFE/cflowd/j132_16656_multiIfls_multiFamily_mirroring.pl,General,PFE,Sangria
+system-test/testscripts/HSBU/Interfaces/ptx3k/121_RLI_11506_interface_sangria_1.pl,General,EOAM,Sangria
+system-test/testscripts/HSBU/Infrastructure/ptx3k/mib_asci_dec_test.pl,General,SNMP,Mib
+system-test/testscripts/HSBU/Infrastructure/Platform/ptx3k/chassis_sangria_pic.pl,General,Platform,Chassis
+system-test/testscripts/HSBU/Protocols/MPLS/sangria/j132_11443_ptx_uhp_mn_l3vpn.pl,General,MPLS,l3vpn/sangria
+system-test/testscripts/HSBU/Applications/multiservices/ptx3k/mcast-agg-multiservice-MedScale.pl,General,Multicast,Scaling
+system-test/testscripts/HSBU/SNMP/ptx3k/snmpv3.pl,General,snmpv3,Sangria
+system-test/testscripts/HSBU/Applications/ptx3k/mixed/sangria_rib_fib.pl,General,Fib/Rib,Sangria
+system-test/testscripts/HSBU/t4k/Infrastucture/ISSU/J132_18375_t4k_issu_cpu_consumption.pl,General,Chassis,ISSU
+/system-test/testscripts/HSBU/Protocols/ptx3k/RLI11840/,General,Protocol,bgp
+/system-test/testscripts/HSBU/Interfaces/ptx3k/,General,interfcaes,eoam
+/system-test/testscripts/HSBU/Infrastructure/ptx3k,General,infrastructure,cos
+/system-test/testscripts/HSBU/Protocols/MPLS/P2MP/Sangria/,General,Protocol,mpls
+/system-test/testscripts/HSBU/t4k/Infrastucture/ISSU/,General,protocol,issu
+/system-test/testscripts/HSBU/Interfaces/ptx3k/,General,interfcaes,eoam
+/system-test/testscripts/HSBU/Protocols/VPLS/,General,Protocol,vpls
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/ptx3k/,General,infrastructure,chassisd
+/system-test/testscripts/HSBU/Interfaces/ptx3k/,General,interfcaes,eoam
+/system-test/testscripts/HSBU/t4k/Infrastucture/CFD/,General,infrastructure,sampling
+/system-test/testscripts/HSBU/Applications/ptx3k/mixed/slash_32_scaling.pl,General,Applications,ptx3k
+/system-test/testscripts/HSBU/Infrastructure/COS/ptx3k/J132_18945_ptx_cos_schedulers_mixed_speed.pl,General,Infrastructure,COS
+system-test/testscripts/HSBU/SNMP/ptx3k/mpls_lsr_std_mib.pl,General,Protocols,SNMP
+/system-test/testscripts/HSBU/Infrastructure/Chassisd/ptx3k/re_ptx_priority-2.pl,General,Infrastructure,chassis
+/system-test/testscripts/HSBU/Belvedere/Interfaces/J131_16875_BLVD_tenge_eoam_discovery.pl,General,Interfaces,Protocols
+/system-test/testscripts/HSBU/Infrastructure/Sangria/PFE/cflowd/j132_16656_portMirrorAddEditDeletCheckOnAeinterface.pl,General,Infrastructure,Sangria
+/system-test/testscripts/HSBU/Interfaces/ptx3k/J132_12686_ptx_Sangria_64LinksAE_1.pl,General,Interfaces,AE
+/system-test/testscripts/HSBU/Protocols/Sangria/NSR/J121_15594_ptx_l2ckt_nsr_negative.pl,General,Protocols,Sangria
+/system-test/testscripts/HSBU/Infrastructure/PFE/NH/ptx3k/J132_18958_ptx_ipv4_ecmp_ae_nh_64LAG.pl,General,Infrastructure,PFE
+/system-test/testscripts/HSBU/Customers/Cox/sangria/PR867190_Cox_PTX_feature_vlan.pl,General,Customers,COX
+system-test/testscripts/HSBU/Interfaces/Layer2overheadaccounting/J133_19285_t-series_layer2overheadknob_2.pl,General,FPC,Stoli
+system-test/testscripts/HSBU/CFD/Misc/pr_732893_heavenly_pic.pl,General,COS,PIC
+system-test/testscripts/HSBU/Belvedere/Infrastructure/J131_16873_BLVD_firewallfilter_mplsfilter.pl,General,MPLS ,Firewall
+ system-test/testscripts/HSBU/t4k/Infrastucture/ISSU/J132_18375_t4k_issu_ipv6_over_ipv4_ip_tunnel.pl,General,ISSU,Chassis
+  system-test/testscripts/HSBU/SNMP/ptx3k/jnxOperating.pl,General,SNMP,MIB
+system-test/testscripts/HSBU/Infrastructure/Chassisd/ptx3k/re_ptx_priority-3.pl,General,RE,Chassis
+system-test/testscripts/HSBU/Infrastructure/Chassisd/ptx3k/re_if_flap.pl,General,RE,Chassis
+system-test/testscripts/HSBU/Infrastructure/Sangria/PFE/cflowd/j132_16656_portMirrorAddEditDeletCheck.pl,General,PFE,cflowd
+system-test/testscripts/HSBU/Interfaces/ptx3k/J132_12686_ptx_Sangria_64LinksAE_2.pl,General,EOAM,  Interfaces
+system-test/testscripts/HSBU/ISSU/Infrastructure/Sangria/J132_15595_Sangria_ISSU1.pl,General,ISSU,Chassis
+system-test/testscripts/HSBU/Infrastructure/Sangria/Platform/chassis_sangria_zone1_cooling.pl,General,"Chassis
+",FPC
+system-test/testscripts/HSBU/SNMP/ptx3k/daemon_uptimes_sangria.pl,General,SNMP, Chassis
+system-test/testscripts/HSBU/Infrastructure/Chassisd/ptx3k/re_traffic_sanity.pl,General,RE,Chassis
+system-test/testscripts/HSBU/Applications/multiservices/ptx3k/mcast-v4v6-agg-multiservice.pl,General,Multicast,PIM
+system-test/testscripts/HSBU/Interfaces/Absolut/AE/LACP/lacp_distribute.pl,General,Aggregate Ethernet,LACP
+system-test/testscripts/HSBU/Customers/Cox/sangria/PR867190_Cox_PTX_feature_ifd.pl,General,COX,p2mp
+system-test/testscripts/HSBU/SNMP/Sangria/121_ptx_TraceRouteMib.pl,General,SNMP,mib
+/system-test/testscripts/HSBU/Interfaces/ptx3k/121_RLI_11448_sangria_100g_2.pl,General,EOAM,100G
+system-test/testscripts/HSBU/Interfaces/Cuervo/J131_T1600_PR_818605_ingress_red_drops_cuervo.pl,General,COS,RED
+system-test/testscripts/HSBU/ISSU/Infrastructure/Sangria/J132_15595_Sangria_ISSU2.pl,General,Chassisd,ISSU 
+system-test/testscripts/HSBU/Infrastructure/COS/Sangria/121_RLI_17906_PTX_ptx_cos_sch_sanity.pl,General,COS,Scheduler

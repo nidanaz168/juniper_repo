@@ -1,0 +1,3392 @@
+<link rel="stylesheet" type="text/css" href="../shared/resources/css/jquery.dataTables.css">
+<link rel="stylesheet" type="text/css" href="../shared/resources/css/TableTools.css">
+
+<script type="text/javascript" src="../shared/resources/js/jquery.js"></script>
+<script type="text/javascript" src="../shared/resources/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="../shared/resources/js/TableTools.min.js"></script>
+<script type="text/javascript" src="../shared/resources/js/dataTableSelect.js"></script>
+
+
+
+
+<html>
+<head>
+ <title>DEBUG PAGE</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <meta name="Pragma" CONTENT="no-cache">
+ <meta name="robots" content="noindex, follow">
+ <link href="/ti/webapp/dr/shared/mainstyle.css" rel="stylesheet" type="text/css">
+ <script >
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                                            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68983099-2', 'auto');
+  //    ga('set', '&uid', 'ckevin'); // Set the user ID using signed-in user_id.
+  ga('send', 'pageview');
+           console.log("Updated");
+ </script>
+ </head>
+
+<!-- START STYLESHEET INCLUDE -->
+<script language="javascript">
+ if (navigator.platform.indexOf ("Win32") !=-1) {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ie.css" type="text/css">');
+ } else {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ns.css" type="text/css">');
+ }
+</script>
+
+<body class="td-white-background"  topmargin="5" leftmargin="6" marginwidth="6" marginheight="5">
+
+</script>
+<!-- END STYLESHEET INCLUDE -->
+
+
+<!-- 1st ROW START-->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left" width="65%">
+      <table  width="100% border="0 cellspacing="0" cellpadding="0">
+        <tr>
+          <td><a href="http://www-int.juniper.net/"><img src="/images/juniperLogo.gif" alt="Juniper Networks Logo" width="154" height="40" border="0" /></a></td>
+          <td><img src="/image/pixel.gif"  alt="" height="10" /></td>
+          <td> <font color=blue size=4>Regression the Heartbeat Of Testing</font></td>
+          <td>  <font size=2>  Hi _rptjamuser  </font> </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<div id="banner" style="    width: 90%;
+    width: 90%;
+        font-size: 16px;
+            background-color: greenyellow;
+                margin-left: 40px;
+                    padding: 5px 0 5px 0;
+                        height: 35px;
+                         "
+                          align="center">
+                            DR has been moved to <b>QUINCY</b> from <b>Sunnyvale</b> servers. Please upload your <b>DEBUG</b> logs to
+                            Quincy shells for debugging purposes. <br> Please use any one of the 16 Quincy Shells for
+                            this purpose. <span style="color:red;">ttqc-shell01 .... ttqc-shell16</span> 
+                            </div>
+
+
+
+<!-- 1st ROW END-->
+
+
+
+<!-- 2nd ROW END-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr class="tr-table-header-dark">
+    <td width="47%" colspan="2">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+        <tr>
+         <td width="50%" class="tr-table-header-dark"><img src="/image/pixel.gif"  alt="" width="438" height="1" /></td>
+         <td rowspan="2"  valign="bottom" class="tr-table-header-dark"><img src="/ti/webapp/dr/image/hdr_global_slantline_l.gif" width="25" height="49" alt="divider" /></td>
+        </tr>
+        <tr>
+         <td width="438" height="49" class="darkest-bgcolor"> &nbsp;&nbsp;&nbsp;&nbsp;<span class="header-label">Regression Debugging</span> </td>
+         <td><div align="center"><font size=4>18.3Throttle_FR_RIDGE_DR1</font></div> </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- 2nd ROW END-->
+
+
+
+
+
+
+<table width="100%" cellspacing="0" cellpadding="0"><tr><td></td></tr></table>
+
+
+<!-- 3rd ROW START-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+
+
+
+
+
+    <td width="5" valign="top" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant5b.GIF"></td>
+    <td>
+      <div align="center">
+        <a href="index.mhtml?mode=0:2:0&result_id=179235" class="gnavsm">Reg Debug</a>
+      </div>
+    </td>
+    <td width="11" valign="top" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant5a.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=1:1:0&result_id=179235" class="gnavsm">Manual</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=2:0:0&result_id=179235" class="gnavsm">Status</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=3:1:0&result_id=179235" class="gnavsm">Reg Pass</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=4:1:0&result_id=179235" class="gnavsm">Edit</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=5:0:0&result_id=179235" class="gnavsm">Views</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=6:0:0&result_id=179235" class="gnavsm">Cores</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=7:0:0&result_id=179235" class="gnavsm">PR Verifications</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+  </tr>
+</table>
+<!-- 3rd ROW END-->
+
+
+<!-- 4rd ROW STARTS-->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+
+<!-- LEFT WINDOW STARTS -->
+
+    <td width="160 pixels" valign="top" rowspan="8"> 
+<!-- $VAR1 = 0;
+ -->
+
+      <!--
+ Debug page left frame. 
+Page: /httpd/htdocs/ti/webapp/dr/debug_dr/reg_debug/leftframe.mhtml
+-->
+
+<!--
+ Function to get all the dr owners
+-->
+
+
+
+
+<table width="120" border="0" cellspacing="0" cellpadding="0">
+	  
+  <tr align="left" valign="top"> 
+
+    <td width="1" bgcolor="#999999"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td width="5">&nbsp;</td>
+    <td background="/ti/webapp/dr/image/gra_home_verdot_sm.jpg" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td colspan="3"> 
+
+    <table width="120" border="0" cellspacing="0" cellpadding="0">
+
+      <tr align="left"> 
+        <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Loop through the titles in Left Frame -->
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md_1.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:0:0&result_id=179235" class="nav"> All Debug </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:1:0&result_id=179235" class="nav"> All PR </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:2:0&result_id=179235" class="nav"> My Pending </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:3:0&result_id=179235" class="nav"> My Completed </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:4:0&result_id=179235" class="nav"> My PR </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+      <tr align="left"> 
+        <td width="1" valign="top" class="home-left-nav-dark"></td>
+
+         <form name="new_owner_debug_page" type=post action="/ti/webapp/dr/debug_dr/index.mhtml">
+        
+          <td valign="center" class="home-left-nav-dark">
+           <select name=owner size="1" >
+               <option value="ALL">debug-owner</option>
+                   <option value=ALL selected>ALL</option>
+                   <option value=NONE>NONE</option>
+                   <option value=ananthamk>ananthamk</option>
+                   <option value=aswinb>aswinb</option>
+                   <option value=jfebi>jfebi</option>
+                   <option value=sranjana>sranjana</option>
+                   <option value=wirotl>wirotl</option>
+          </select>
+        </td>
+
+
+        <td valign="center" class="home-left-nav-dark">
+          <input type=hidden name=mode value="0:5:0">
+          <input type=hidden name=result_id value="179235">
+          <input type=image border="0" name="submit" 
+            src="/ti/webapp/dr/image/btn_global_goarrow_sm1.GIF" width="18" height="26"/>
+        </td>
+</form>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="1" valign="top" class="home-left-nav-dark"></td>
+
+         <form name="new_owner_debug_page" type=post action="/ti/webapp/dr/debug_dr/index.mhtml">
+          <td valign="center" class="home-left-nav-dark">
+           <input type="text" name=alias maxlength="40" value="" placeholder="ldap alias" style="width:100%;border-radius:3px;padding:2px 5px;" />
+          </td>
+
+          <td valign="center" class="home-left-nav-dark">
+           <input type=hidden name=mode value="0:5:0">
+           <input type=hidden name=result_id value="179235">
+           <input type=image border="0" name="submit" src="/ti/webapp/dr/image/btn_global_goarrow_sm1.GIF" width="18" height="26"/>
+          </td>
+         </form>
+      </tr>
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td colspan="3" valign="top" class="td-white-background" ><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+      <tr align="left"> 
+        <td colspan="3" valign="top" class="td-white-background" ><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+    </table>
+
+    </td>
+
+    <td background="/ti/webapp/dr/image/gra_home_verdot_sm.jpg" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td width="13">&nbsp;</td>
+    <td bgcolor="#999999" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+  </tr>
+
+
+  <tr align="left" valign="top"> 
+    <td width="1" bgcolor="#999999"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td colspan="7" bgcolor="#999999"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td bgcolor="#999999" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+  </tr>
+
+</table>
+
+
+
+
+
+   
+
+
+<p id=p1 align=center><a href="/ti/webapp/dr/main_dr/index.mhtml">DR Main Page </a></p>
+<p id=p1 align=center><a href="http://systest.juniper.net/twiki/bin/view/Main/WebHome" target="_blank">Systest Home </a></p>
+<p id=p1 align=center><a href="http://systest.juniper.net/twiki/bin/view/Main/TI" target="_blank">TI Home </a> </p>
+
+    </td>
+<!-- LEFT WINDOW ENDS-->
+
+
+<!-- RIGHT WINDOW STARTS-->
+    <td valign="top">
+        
+
+<table width="120" border="0" cellspacing="0" cellpadding="0">
+
+    
+
+<!-- 3rd ROW START-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td></td></tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+
+
+
+
+    <td width="5" valign="top" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant5b.GIF"></td>
+    <td>
+      <div align="center">
+        <a href="index.mhtml?mode=0:0:0&owner=_rptjamuser&result_id=179235" class="gnavsm">Script</a>
+      </div>
+    </td>
+    <td width="11" valign="top" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant5a.gif"></td>
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=0:0:1&owner=_rptjamuser&result_id=179235" class="gnavsm">TestBed/Domain</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=0:0:2&owner=_rptjamuser&result_id=179235" class="gnavsm">Reg Exit</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=0:0:3&owner=_rptjamuser&result_id=179235" class="gnavsm">DR Suggest</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+  </tr>
+</table>
+
+
+<!-- 3rd ROW END-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:20px">
+<tr>
+<td><a href='#' onclick='rpr_call();' style="margin-top:10px;margin-left:12px">RPR</a></td>
+</tr>
+</table>
+<script type='text/javascript'>
+  function rpr_call(){
+window.open("https://systest.juniper.net/ti/webapp/dr/debug_dr/reg_debug/rpr_info.mhtml?result_id=179235","_blank","toolbar=yes, scrollbars=yes,resizable=yes,width=400,height=350");
+}
+</script>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!-- 
+/*
+ * Function to sync DR to FusionV2 
+ */
+
+-->
+
+
+
+<br>Total time taken for DR Sync : 0 secs <br><!--
+/*
+ * /dr/debug_dr/reg_debug/reg_debug.mhtml 
+ */
+-->
+
+<!-- 
+/*
+ * Function to get all the debug info for a debug owner.
+ * Return of this function is some stats info and debug info.
+ *
+ *
+ */
+-->
+
+
+<!-- 
+/*
+ * Function to get the manual test count
+ */
+
+-->
+
+
+
+          <script language="javascript" type="text/javascript"> 
+              function confirmHighlighting(){
+                var confirmResult = confirm("This Operation contacts GNATS for realtime data and may take a little"+
+                    "longer to highlight the pending scripts associated with the Open PRs. Are you sure you would like"+
+                    "to continue?");
+                if(confirmResult == true){
+                    var current_url = location.href;
+                    current_url = current_url+"&highlightOpenPrs=true";
+                    location.replace(current_url);
+                }else{
+                  return false;
+                }
+              }
+          </script>
+
+  <div style="width:1100px;" id="debug_script_lists_div">
+      <input type="button" id="debugOpenPrButton" style="float:right;display:none;" value="Debug Open PRs"
+      onclick="debugOpenPrs();">
+      <button id="highlightButton" style="float:right;" type="button" onclick="confirmHighlighting();">Highlight Open PRs</button>
+  </div>
+
+    <!-- DISPLAY STATUS -->
+    <script type="text/javascript">
+
+function rm(id,harness_type) {
+    console.log(harness_type);
+    var all_reg_id = new Array();
+    all_reg_id = id.split(/\s+/);
+    var len = all_reg_id.length;
+
+    for (var i=0; i < len; i++) {
+      var link = "http://systest.juniper.net/rmv2/edp/"+all_reg_id[i];
+      if(harness_type.indexOf("fusion") != -1){
+        link = "https://inception.juniper.net/fusion/v2#submission_id="+all_reg_id[i];
+      }
+      window.open(link);
+    }
+
+    return true;
+}
+
+
+</script>
+
+
+<!-- 
+/*
+ * Function to get the pr count
+ */
+
+-->
+
+
+
+
+
+<p id=p3>Debug view: <font color=blue>ALL</font></p>
+
+<!-- START DISPLAY THE STATUS TABLE -->
+
+<table id=table1 border=1 cellpadding=1 cellspacing=0 >
+ <tr> 
+  <td id=td5>JUNOS</td>
+  <td id=td5>REG FAIL</td>
+  <td id=td5>DEBUG PASS</td>
+  <td id=td5>SW-FAIL</td>
+  <td id=td5>HW-ENV</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>OTHER</td>
+  <td id=td5>TOOLS</td>
+  <td id=td5>PENDING</td>
+ </tr>
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2><input id=p15 type=button value="18.3Throttle_FR_RIDGE_DR1" onclick="rm('1928916 1928927 1962159 1966868 1966877 1970391 1966850 1966822 1962245 1974583 1977187 1981342 1991161 1996958','fusionv2')"></td>
+  <td id=td1>75</td>
+  <td id=td1>66</td>
+  <td id=td1>9</td>
+  <td id=td1>0</td>
+  <td id=td1>22</td>
+  <td id=td1>44</td>
+  <td id=td1>0</td>
+  <td id=td3>0</td>
+ </tr>
+
+
+
+ 
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>TOTAL</td>
+  <td id=td4>75</td>
+  <td id=td4>66</td>
+  <td id=td4>9</td>
+  <td id=td4>0</td>
+  <td id=td4>22</td>
+  <td id=td4>44</td>
+  <td id=td4>0</td>
+  <td id=td3>0</td>
+ </tr>
+</table>
+
+
+<p id=p1> 
+ Script Failures (Total / Pending): 
+    <font color=black>75 / 0</font>, 
+ PR Count: 
+    <font color=black>3</font>, 
+ Manual Test (Total / Pending): 
+    <font color=black>0 / 0</font>
+
+</p><br>
+
+
+
+
+
+<table id=table1 border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>OWNER</td>
+  <td id=td5>REG FAIL</td>
+  <td id=td5>DEBUG PASS</td>
+  <td id=td5>SW-FAIL</td>
+  <td id=td5>HW-ENV</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>OTHER</td>
+  <td id=td5>TOOLS</td>
+
+
+  <td id=td5>PENDING</td>
+ </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2></td>
+  <td id=td1>0</td>
+  <td id=td1>43</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>18</td>
+  <td id=td1>25</td>
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>ananthamk</td>
+  <td id=td1>0</td>
+  <td id=td1>10</td>
+  <td id=td1>8</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>9</td>
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>aswinb</td>
+  <td id=td1>0</td>
+  <td id=td1>4</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>3</td>
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>jfebi</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>sranjana</td>
+  <td id=td1>0</td>
+  <td id=td1>8</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>2</td>
+  <td id=td1>6</td>
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>wirotl</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>TOTAL</td>
+  <td id=td4>0</td>
+  <td id=td4>66</td>
+  <td id=td4>9</td>
+  <td id=td4>0</td>
+  <td id=td4>22</td>
+  <td id=td4>44</td>
+  <td id=td4>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+</table>
+<br><br>
+
+
+<!-- END   DISPLAY THE STATUS TABLE -->
+
+
+
+
+
+
+
+
+
+        <!-- DISPLAY PENDING -->
+        
+<script>
+  function changeURL(){
+    var url=location.href;
+    if(url.search("highlight") != -1){
+      var mod_url = url.replace("&highlightOpenPrs=true",'');
+      window.history.pushState("","",mod_url);
+    }
+  }
+</script>
+
+<body onLoad="changeURL()">
+<script type="text/javascript" src="/ti/webapp/dr/shared/wz_tooltip.js"></script>
+<script type="text/javascript" language="javascript">
+if (!document.location.origin) //IE hack
+   document.location.origin = document.location.protocol+"//"+document.location.host;
+
+function copy(text2copy) {
+  if (window.clipboardData) {
+    window.clipboardData.setData("Text",text2copy);
+  } else {
+    var flashcopier = 'flashcopier';
+    if(!document.getElementById(flashcopier)) {
+      var divholder = document.createElement('div');
+      divholder.id = flashcopier;
+      document.body.appendChild(divholder);
+    }
+    document.getElementById(flashcopier).innerHTML = '';
+    var divinfo = '<embed src="/ti/webapp/dr/debug_dr/reg_debug/_clipboard.swf" FlashVars="clipboard='+escape(text2copy)+'" width="0" height="0" type="application/x-shockwave-flash"></embed>';
+    document.getElementById(flashcopier).innerHTML = divinfo;
+  }
+}
+   var request = null;
+
+   function createRequest() {
+     try {
+       request = new XMLHttpRequest();
+     } catch (trymicrosoft) {
+       try {
+         request = new ActiveXObject("Msxml2.XMLHTTP");
+       } catch (othermicrosoft) {
+         try {
+           request = new ActiveXObject("Microsoft.XMLHTTP");
+         } catch (failed) {
+           request = null;
+         }
+       }
+     }
+
+     if (request == null)
+       Tip("Error creating request object!");
+   }
+
+function GetFailInfo(test_exec_id,exitcode) {
+    if ( exitcode == "FAIL" ||  exitcode == "LINK_FAIL" ) {
+    createRequest();
+    //var url = document.location.origin + '/cgi-bin/dr/GetFailInfo.cgi?test_exec_id=' + test_exec_id ;
+    var url = document.location.origin + '/ti/webapp/dr/debug_dr/infolink/GetFailInfo.mhtml?test_exec_id='+test_exec_id;
+    Tip("wait for it");
+    request.open("GET", url, true);
+    request.onreadystatechange = updatePage;
+    request.send(null);
+} else {
+    Tip("This shows info only for FAIL or LINK_FAIL");
+}
+}
+function GetTbInfo(test_id) {
+     createRequest();
+    //var url = document.location.origin + '/cgi-bin/dr/GetTbInfo.cgi?test_id=' + test_id;
+    var url = document.location.origin + '/ti/webapp/dr/debug_dr/infolink/GetTbInfo.mhtml?test_id=' + test_id;
+    Tip("wait for it");
+     request.open("GET", url, true);
+     request.onreadystatechange = updatePage;
+     request.send(null);
+}
+function GetTimeInfo(test_id) {
+    createRequest();
+    //var url = document.location.origin + '/cgi-bin/dr/GetTimeInfo.cgi?test_id=' + test_id;
+    var url = document.location.origin + '/cgi-bin/dr/GetTimeInfo.cgi?test_id=' + test_id;
+    Tip("wait for it");
+    request.open("GET", url, true);
+    request.onreadystatechange = updatePage;
+    request.send(null);
+}
+  function updatePage() {
+    if (request.readyState == 4) {
+        var resp = request.responseText;
+        Tip(resp);
+    }
+  }
+
+</script>
+
+<!-- START DISPLAY PENDING -->
+
+
+
+
+
+<p id=p2> Zero scripts left for debugging.  </p>
+
+</body>
+<!-- END   DISPLAY PENDING -->
+
+
+
+
+
+
+
+
+
+    <!-- DISPLAY COMPLETED -->
+    <link rel="stylesheet" type="text/css" href="/ti/webapp/dr/shared/activerenderer.css">
+<script type="text/javascript" src="/ti/webapp/dr/shared/activerenderer.js"></script>
+
+
+
+
+<!-- START DISPLAY COMPLETED -->
+ <p id=p4>--------------------------------------------------------------------------------------------------------------------------------------------- </p>
+
+
+
+ 
+
+
+<br> <p id=p2> Debug completed script list: <font color=black>18.3Throttle_FR_RIDGE_DR1</font> </p>
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black></font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=179235&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_J132_RLI18481_Dot1X_split_3.pl_78757_Default</td>
+  <td>Ridge_J132_RLI18481_Dot1X_split_3.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1991161/REG_FAIL/prod/2018/Jul/SUB_1991161/32751799/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1991161/REG_FAIL_ANALYSIS/SUB_1991161/32751799&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6017287 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6017287_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6017287_2')" onmouseout="nodeLow ('p6017287_2')">C</span>
+    </div>
+    <div id=p6017287_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>182R1_RLI36635_EX4600_LFM_VC.robot_106754_Default</td>
+  <td>182R1_RLI36635_EX4600_LFM_VC.robot</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1974583/REG_FAIL/prod/2018/Jul/SUB_1974583/32180446/attempt_1/script-exec&result_id=179235 target=LOG>INIT_FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1974583/REG_FAIL_ANALYSIS/SUB_1974583/32180446&result_id=179235 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5997928 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5997928_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5997928_2')" onmouseout="nodeLow ('p5997928_2')">C</span>
+    </div>
+    <div id=p5997928_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_J132_RLI18481_dacl_policer.pl_78730_Default</td>
+  <td>Ridge_J132_RLI18481_dacl_policer.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962245/REG_FAIL/prod/2018/Jul/SUB_1962245/31683591/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962245/REG_FAIL_ANALYSIS/SUB_1962245/31683591&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5996355 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5996355_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5996355_2')" onmouseout="nodeLow ('p5996355_2')">C</span>
+    </div>
+    <div id=p5996355_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>182R1_RLI36635_EX4600_LFM_1.robot_94968_Default_etrans</td>
+  <td>182R1_RLI36635_EX4600_LFM_1.robot</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1966868/REG_FAIL/prod/2018/Jul/SUB_1966868/31900745/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1966868/REG_FAIL_ANALYSIS/SUB_1966868/31900745&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5993515 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5993515_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5993515_2')" onmouseout="nodeLow ('p5993515_2')">C</span>
+    </div>
+    <div id=p5993515_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_ospf_active_backbone_abr_loses_bb_vlan_1.pl_78441_Default</td>
+  <td>Ridge_ospf_active_backbone_abr_loses_bb_vlan_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL/prod/2018/Jun/SUB_1928927/29718715/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL_ANALYSIS/SUB_1928927/29718715&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5990617 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5990617_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5990617_2')" onmouseout="nodeLow ('p5990617_2')">C</span>
+    </div>
+    <div id=p5990617_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_18901_L3VPN_LDPoverRSVP.pl_78650_Default</td>
+  <td>Ridge_18901_L3VPN_LDPoverRSVP.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL/prod/2018/Jun/SUB_1928927/29718805/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL_ANALYSIS/SUB_1928927/29718805&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5990620 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5990620_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5990620_2')" onmouseout="nodeLow ('p5990620_2')">C</span>
+    </div>
+    <div id=p5990620_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_isis_overloadv6.pl_78708_Default</td>
+  <td>Ridge_isis_overloadv6.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL/prod/2018/Jun/SUB_1928927/29718863/attempt_1/script-exec&result_id=179235 target=LOG>ABORT</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL_ANALYSIS/SUB_1928927/29718863&result_id=179235 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>sranjana</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5990622 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5990622_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5990622_2')" onmouseout="nodeLow ('p5990622_2')">C</span>
+    </div>
+    <div id=p5990622_2 class=collapsed>
+        <span class=text><b>Pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_L2NG_vacl_1_2.pl_78456_Default</td>
+  <td>Ridge_L2NG_vacl_1_2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL/prod/2018/Jun/SUB_1928927/29718730/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL_ANALYSIS/SUB_1928927/29718730&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5990631 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5990631_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5990631_2')" onmouseout="nodeLow ('p5990631_2')">C</span>
+    </div>
+    <div id=p5990631_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_J132_RLI17458_Multicastl3autorp_4.pl_78656_Default</td>
+  <td>Ridge_J132_RLI17458_Multicastl3autorp_4.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL/prod/2018/Jun/SUB_1928927/29718811/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL_ANALYSIS/SUB_1928927/29718811&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5990613 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5990613_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5990613_2')" onmouseout="nodeLow ('p5990613_2')">C</span>
+    </div>
+    <div id=p5990613_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_J132_RLI17458_Multicastl3vlanautorp_5.pl_78616_Default</td>
+  <td>Ridge_J132_RLI17458_Multicastl3vlanautorp_5.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL/prod/2018/Jun/SUB_1928927/29718771/attempt_1/script-exec&result_id=179235 target=LOG>CONNECT_LOST</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL_ANALYSIS/SUB_1928927/29718771&result_id=179235 target=LOG>PASS</a> </td>
+  <td>SCRIPT-FLAKY</td>
+  <td>sranjana</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5992272 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5992272_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5992272_2')" onmouseout="nodeLow ('p5992272_2')">C</span>
+    </div>
+    <div id=p5992272_2 class=collapsed>
+        <span class=text><b>Pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_J132_RLI17458_Multicastl3autorp_3.pl_78655_Default</td>
+  <td>Ridge_J132_RLI17458_Multicastl3autorp_3.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL/prod/2018/Jun/SUB_1928927/29718810/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL_ANALYSIS/SUB_1928927/29718810&result_id=179235 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>sranjana</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5990629 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5990629_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5990629_2')" onmouseout="nodeLow ('p5990629_2')">C</span>
+    </div>
+    <div id=p5990629_2 class=collapsed>
+        <span class=text><b>Pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_sys_Appl_mib.pl_78694_Default</td>
+  <td>Ridge_sys_Appl_mib.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Jun/SUB_1928927/29718849/attempt_1/script-exec/&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL_ANALYSIS/SUB_1928927/29718849&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5990605 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5990605_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5990605_2')" onmouseout="nodeLow ('p5990605_2')">C</span>
+    </div>
+    <div id=p5990605_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_openflow_ctl_OF131_EX4600.pl_75349_Default</td>
+  <td>Ridge_openflow_ctl_OF131_EX4600.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Jun/SUB_1928927/29718707/attempt_1/script-exec/&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL_ANALYSIS/SUB_1928927/29718707&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5990609 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5990609_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5990609_2')" onmouseout="nodeLow ('p5990609_2')">C</span>
+    </div>
+    <div id=p5990609_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_ospf_lag_1.pl_78457_Default</td>
+  <td>Ridge_ospf_lag_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL/prod/2018/Jun/SUB_1928927/29718731/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL_ANALYSIS/SUB_1928927/29718731&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5990615 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5990615_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5990615_2')" onmouseout="nodeLow ('p5990615_2')">C</span>
+    </div>
+    <div id=p5990615_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_18901_ldp_basic_1.pl_78451_Default</td>
+  <td>Ridge_18901_ldp_basic_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL/prod/2018/Jun/SUB_1928927/29718725/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL_ANALYSIS/SUB_1928927/29718725&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5990628 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5990628_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5990628_2')" onmouseout="nodeLow ('p5990628_2')">C</span>
+    </div>
+    <div id=p5990628_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_jnx-event_mib.pl_78717_Default</td>
+  <td>Ridge_jnx-event_mib.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Jun/SUB_1928927/29718872/attempt_2/script-exec/&result_id=179235 target=LOG>KILLED</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL_ANALYSIS/SUB_1928927/29718872&result_id=179235 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6002137 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6002137_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6002137_2')" onmouseout="nodeLow ('p6002137_2')">C</span>
+    </div>
+    <div id=p6002137_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_18901_l3vpn_1.pl_78406_Default</td>
+  <td>Ridge_18901_l3vpn_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Jun/SUB_1928916/29718426/attempt_1/script-exec/&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/18.3Throttle_FR_RIDGE_DR1/REG_FAIL_ANALYSIS/SUB_1928916/29718426&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5965183 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5965183_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5965183_2')" onmouseout="nodeLow ('p5965183_2')">C</span>
+    </div>
+    <div id=p5965183_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_OSPF_GR_2.pl_78491_Default</td>
+  <td>Ridge_OSPF_GR_2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Jun/SUB_1928916/29718461/attempt_1/script-exec/&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/18.3Throttle_FR_RIDGE_DR1/REG_FAIL_ANALYSIS/SUB_1928916/29718461&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5965187 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5965187_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5965187_2')" onmouseout="nodeLow ('p5965187_2')">C</span>
+    </div>
+    <div id=p5965187_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_CoS_LAG_1.pl_78436_Default</td>
+  <td>Ridge_CoS_LAG_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Jun/SUB_1928916/29718453/attempt_1/script-exec/&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/18.3Throttle_FR_RIDGE_DR1/REG_FAIL_ANALYSIS/SUB_1928916/29718453&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5965188 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5965188_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5965188_2')" onmouseout="nodeLow ('p5965188_2')">C</span>
+    </div>
+    <div id=p5965188_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_J132_RLI17454_L2NG_pacl_5.pl_78610_Default</td>
+  <td>Ridge_J132_RLI17454_L2NG_pacl_5.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/18.3Throttle_FR_RIDGE_DR1/REG_FAIL/prod/2018/Jun/SUB_1928916/29718574/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/18.3Throttle_FR_RIDGE_DR1/REG_FAIL_ANALYSIS/SUB_1928916/29718574&result_id=179235 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>sranjana</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5984198 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5984198_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5984198_2')" onmouseout="nodeLow ('p5984198_2')">C</span>
+    </div>
+    <div id=p5984198_2 class=collapsed>
+        <span class=text><b>Pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_bgp_gr_basic_2.pl_78568_Default</td>
+  <td>Ridge_bgp_gr_basic_2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Jun/SUB_1928916/29718538/attempt_1/script-exec/&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/18.3Throttle_FR_RIDGE_DR1/REG_FAIL_ANALYSIS/SUB_1928916/29718538&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5965182 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5965182_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5965182_2')" onmouseout="nodeLow ('p5965182_2')">C</span>
+    </div>
+    <div id=p5965182_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_L2NG_L3QOS_Rewrite_2_3.pl_78745_Default</td>
+  <td>Ridge_L2NG_L3QOS_Rewrite_2_3.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/18.3Throttle_FR_RIDGE_DR1/REG_FAIL/prod/2018/Jun/SUB_1928916/29718575/attempt_4/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/18.3Throttle_FR_RIDGE_DR1/REG_FAIL_ANALYSIS/SUB_1928916/29718575&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5984273 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5984273_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5984273_2')" onmouseout="nodeLow ('p5984273_2')">C</span>
+    </div>
+    <div id=p5984273_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_L2NG_vstp_2.pl_78582_Default</td>
+  <td>Ridge_L2NG_vstp_2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/18.3Throttle_FR_RIDGE_DR1/REG_FAIL/prod/2018/Jun/SUB_1928916/29718552/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/18.3Throttle_FR_RIDGE_DR1/REG_FAIL_ANALYSIS/SUB_1928916/29718552&result_id=179235 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>snagisetty</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5981414 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5981414_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5981414_2')" onmouseout="nodeLow ('p5981414_2')">C</span>
+    </div>
+    <div id=p5981414_2 class=collapsed>
+        <span class=text><b>Passed in Fusion</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_L2NG_RACL_Counters_1.pl_78586_Default</td>
+  <td>Ridge_L2NG_RACL_Counters_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/18.3Throttle_FR_RIDGE_DR1/REG_FAIL/prod/2018/Jun/SUB_1928916/29718555/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/18.3Throttle_FR_RIDGE_DR1/REG_FAIL_ANALYSIS/SUB_1928916/29718555&result_id=179235 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>snagisetty</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5984216 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5984216_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5984216_2')" onmouseout="nodeLow ('p5984216_2')">C</span>
+    </div>
+    <div id=p5984216_2 class=collapsed>
+        <span class=text><b>Passed in Fusion</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_J132_RLI8535_lldp_mib_4.pl_78401_Default</td>
+  <td>Ridge_J132_RLI8535_lldp_mib_4.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/18.3Throttle_FR_RIDGE_DR1/REG_FAIL/prod/2018/Jun/SUB_1928916/29718421/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/18.3Throttle_FR_RIDGE_DR1/REG_FAIL_ANALYSIS/SUB_1928916/29718421&result_id=179235 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>snagisetty</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5983799 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5983799_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5983799_2')" onmouseout="nodeLow ('p5983799_2')">C</span>
+    </div>
+    <div id=p5983799_2 class=collapsed>
+        <span class=text><b>Passed in Fusion</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_J132_RLI17541_Sticky_MAC_4.pl_78405_Default</td>
+  <td>Ridge_J132_RLI17541_Sticky_MAC_4.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/18.3Throttle_FR_RIDGE_DR1/REG_FAIL/prod/2018/Jun/SUB_1928916/29718425/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/18.3Throttle_FR_RIDGE_DR1/REG_FAIL_ANALYSIS/SUB_1928916/29718425&result_id=179235 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>snagisetty</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5983718 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5983718_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5983718_2')" onmouseout="nodeLow ('p5983718_2')">C</span>
+    </div>
+    <div id=p5983718_2 class=collapsed>
+        <span class=text><b>Re-Run</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_J132_RLI17541_Sticky_MAC_2.pl_78403_Default</td>
+  <td>Ridge_J132_RLI17541_Sticky_MAC_2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/18.3Throttle_FR_RIDGE_DR1/REG_FAIL/prod/2018/Jun/SUB_1928916/29718423/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/18.3Throttle_FR_RIDGE_DR1/REG_FAIL_ANALYSIS/SUB_1928916/29718423&result_id=179235 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>snagisetty</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5983852 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5983852_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5983852_2')" onmouseout="nodeLow ('p5983852_2')">C</span>
+    </div>
+    <div id=p5983852_2 class=collapsed>
+        <span class=text><b>Re-Run</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_OSPF_GR_3.pl_78492_Default</td>
+  <td>Ridge_OSPF_GR_3.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Jun/SUB_1928916/29718462/attempt_1/script-exec/&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/18.3Throttle_FR_RIDGE_DR1/REG_FAIL_ANALYSIS/SUB_1928916/29718462&result_id=179235 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>sranjana</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5965190 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5965190_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5965190_2')" onmouseout="nodeLow ('p5965190_2')">C</span>
+    </div>
+    <div id=p5965190_2 class=collapsed>
+        <span class=text><b>Pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_J132_RLI8535_lldp_mib_2.pl_78399_Default</td>
+  <td>Ridge_J132_RLI8535_lldp_mib_2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/18.3Throttle_FR_RIDGE_DR1/REG_FAIL/prod/2018/Jun/SUB_1928916/29718419/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/18.3Throttle_FR_RIDGE_DR1/REG_FAIL_ANALYSIS/SUB_1928916/29718419&result_id=179235 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>snagisetty</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5983853 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5983853_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5983853_2')" onmouseout="nodeLow ('p5983853_2')">C</span>
+    </div>
+    <div id=p5983853_2 class=collapsed>
+        <span class=text><b>Re-Run-Snmp Mib Issue</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_jnx-syslog_mib.pl_78718_Default</td>
+  <td>Ridge_jnx-syslog_mib.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Jun/SUB_1928927/29718873/attempt_2/script-exec/&result_id=179235 target=LOG>KILLED</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL_ANALYSIS/SUB_1928927/29718873&result_id=179235 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5998337 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5998337_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5998337_2')" onmouseout="nodeLow ('p5998337_2')">C</span>
+    </div>
+    <div id=p5998337_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_rfc1213-system-mib.pl_78724_Default</td>
+  <td>Ridge_rfc1213-system-mib.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL/prod/2018/Jun/SUB_1928927/29718879/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL_ANALYSIS/SUB_1928927/29718879&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5990624 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5990624_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5990624_2')" onmouseout="nodeLow ('p5990624_2')">C</span>
+    </div>
+    <div id=p5990624_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>182R1_EX4600_RLI_37005_IPv6_radius_dot1x_dhcp1.robot_107861_Default</td>
+  <td>182R1_EX4600_RLI_37005_IPv6_radius_dot1x_dhcp1.robot</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1966850/REG_FAIL/prod/2018/Jul/SUB_1966850/31900262/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1966850/REG_FAIL_ANALYSIS/SUB_1966850/31900262&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5996356 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5996356_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5996356_2')" onmouseout="nodeLow ('p5996356_2')">C</span>
+    </div>
+    <div id=p5996356_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_L2NG_L3QOS_Rewrite_3.pl_78744_Default</td>
+  <td>Ridge_L2NG_L3QOS_Rewrite_3.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962245/REG_FAIL/prod/2018/Jul/SUB_1962245/31683594/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962245/REG_FAIL_ANALYSIS/SUB_1962245/31683594&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5996354 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5996354_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5996354_2')" onmouseout="nodeLow ('p5996354_2')">C</span>
+    </div>
+    <div id=p5996354_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_bfd_sanity_bgp_1.pl_78424_Default</td>
+  <td>Ridge_bfd_sanity_bgp_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Jun/SUB_1928916/29718443/attempt_1/script-exec/&result_id=179235 target=LOG>ABORT</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/18.3Throttle_FR_RIDGE_DR1/REG_FAIL_ANALYSIS/SUB_1928916/29718443&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5965185 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5965185_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5965185_2')" onmouseout="nodeLow ('p5965185_2')">C</span>
+    </div>
+    <div id=p5965185_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_bgp_gr_basic_3.pl_78569_Default</td>
+  <td>Ridge_bgp_gr_basic_3.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Jun/SUB_1928916/29718539/attempt_1/script-exec/&result_id=179235 target=LOG>LINK_FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/18.3Throttle_FR_RIDGE_DR1/REG_FAIL_ANALYSIS/SUB_1928916/29718539&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5965184 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5965184_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5965184_2')" onmouseout="nodeLow ('p5965184_2')">C</span>
+    </div>
+    <div id=p5965184_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_L2NG_L3QOS_CLASSIFIER_3.pl_78753_Default</td>
+  <td>Ridge_L2NG_L3QOS_CLASSIFIER_3.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Jun/SUB_1928916/29718583/attempt_1/script-exec/&result_id=179235 target=LOG>CONNECT_LOST</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/18.3Throttle_FR_RIDGE_DR1/REG_FAIL_ANALYSIS/SUB_1928916/29718583&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5965180 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5965180_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5965180_2')" onmouseout="nodeLow ('p5965180_2')">C</span>
+    </div>
+    <div id=p5965180_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_ipv6MIB_1.pl_78558_Default</td>
+  <td>Ridge_ipv6MIB_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Jun/SUB_1928916/29718528/attempt_1/script-exec/&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/18.3Throttle_FR_RIDGE_DR1/REG_FAIL_ANALYSIS/SUB_1928916/29718528&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5965191 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5965191_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5965191_2')" onmouseout="nodeLow ('p5965191_2')">C</span>
+    </div>
+    <div id=p5965191_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_rip_metric_policy_irb.pl_78666_Default</td>
+  <td>Ridge_rip_metric_policy_irb.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL/prod/2018/Jun/SUB_1928927/29718821/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL_ANALYSIS/SUB_1928927/29718821&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5990607 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5990607_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5990607_2')" onmouseout="nodeLow ('p5990607_2')">C</span>
+    </div>
+    <div id=p5990607_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_L2NG_L3QOS_CLASSIFIER_EXTENDED_3.pl_78749_Default</td>
+  <td>Ridge_L2NG_L3QOS_CLASSIFIER_EXTENDED_3.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Jun/SUB_1928916/29718579/attempt_1/script-exec/&result_id=179235 target=LOG>CONNECT_LOST</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/18.3Throttle_FR_RIDGE_DR1/REG_FAIL_ANALYSIS/SUB_1928916/29718579&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5965189 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5965189_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5965189_2')" onmouseout="nodeLow ('p5965189_2')">C</span>
+    </div>
+    <div id=p5965189_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_openflow_dataplane_Spirent_131_EX4600.pl_75348_Default</td>
+  <td>Ridge_openflow_dataplane_Spirent_131_EX4600.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Jun/SUB_1928927/29718706/attempt_2/script-exec/&result_id=179235 target=LOG>INIT_FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL_ANALYSIS/SUB_1928927/29718706&result_id=179235 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5990621 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5990621_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5990621_2')" onmouseout="nodeLow ('p5990621_2')">C</span>
+    </div>
+    <div id=p5990621_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_jnx-ping_mib_1.pl_78439_Default</td>
+  <td>Ridge_jnx-ping_mib_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL/prod/2018/Jun/SUB_1928927/29718713/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL_ANALYSIS/SUB_1928927/29718713&result_id=179235 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>snagisetty</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5993101 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5993101_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5993101_2')" onmouseout="nodeLow ('p5993101_2')">C</span>
+    </div>
+    <div id=p5993101_2 class=collapsed>
+        <span class=text><b>Re-Run</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_jnx-ping_mib_2.pl_78440_Default</td>
+  <td>Ridge_jnx-ping_mib_2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL/prod/2018/Jun/SUB_1928927/29718714/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL_ANALYSIS/SUB_1928927/29718714&result_id=179235 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>snagisetty</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5992205 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5992205_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5992205_2')" onmouseout="nodeLow ('p5992205_2')">C</span>
+    </div>
+    <div id=p5992205_2 class=collapsed>
+        <span class=text><b>Passed in Fusion</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_isis_v6_basic_p2p_1.pl_78543_Default</td>
+  <td>Ridge_isis_v6_basic_p2p_1.pl</td>
+  <td> - </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_1928916/29718513&result_id=179235 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5965186 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5965186_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5965186_2')" onmouseout="nodeLow ('p5965186_2')">C</span>
+    </div>
+    <div id=p5965186_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>ananthamk</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=179235&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_J141_RLI20261_MACSEC.pl_103277_Default</td>
+  <td>Ridge_J141_RLI20261_MACSEC.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1974583/REG_FAIL/prod/2018/Jul/SUB_1974583/32180437/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1974583/REG_FAIL/prod/2018/Jul/SUB_1974583/32180437/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td>SW-REPRODUCIBLE-PR</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "#FD5757"> N <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1375915 target=DISPLAY_PR>1375915 </a>[open]</br></td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5997929 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5997929_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5997929_2')" onmouseout="nodeLow ('p5997929_2')">C</span>
+    </div>
+    <div id=p5997929_2 class=collapsed>
+        <span class=text><b></b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>173_RLI34852_OC_BGPOPS_EX4600.pl_81240_Default</td>
+  <td>173_RLI34852_OC_BGPOPS_EX4600.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1974583/REG_FAIL/prod/2018/Jul/SUB_1974583/32180430/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1974583/REG_FAIL/prod/2018/Jul/SUB_1974583/32180430/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td>SW-REPRODUCIBLE-PR</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "#66FFFF"> O <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1342583 target=DISPLAY_PR>1342583 </a>[need-info]</br></td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5997936 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5997936_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5997936_2')" onmouseout="nodeLow ('p5997936_2')">C</span>
+    </div>
+    <div id=p5997936_2 class=collapsed>
+        <span class=text><b></b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>173_RLI_34730_Ridge_TVP_HostOS.pl_81403_Default</td>
+  <td>173_RLI_34730_Ridge_TVP_HostOS.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1970391/REG_FAIL/prod/2018/Jul/SUB_1970391/31983880/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1970391/REG_FAIL/prod/2018/Jul/SUB_1970391/31983880/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td>SW-REPRODUCIBLE-PR</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "#66FFFF"> N <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1372508 target=DISPLAY_PR>1372508 </a>[assigned]</br></td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5993838 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5993838_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5993838_2')" onmouseout="nodeLow ('p5993838_2')">C</span>
+    </div>
+    <div id=p5993838_2 class=collapsed>
+        <span class=text><b></b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>173_RLI_34730_Ridge_TVP_version_check.pl_69713_Default</td>
+  <td>173_RLI_34730_Ridge_TVP_version_check.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1970391/REG_FAIL/prod/2018/Jul/SUB_1970391/31983883/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1970391/REG_FAIL_ANALYSIS/SUB_1970391/31983883&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5993839 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5993839_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5993839_2')" onmouseout="nodeLow ('p5993839_2')">C</span>
+    </div>
+    <div id=p5993839_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>173_RLI_34730_Ridge_TVP_platform.pl_69709_Default</td>
+  <td>173_RLI_34730_Ridge_TVP_platform.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1970391/REG_FAIL/prod/2018/Jul/SUB_1970391/31983881/attempt_1/script-exec&result_id=179235 target=LOG>SPIRENT_CONNECT_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1970391/REG_FAIL/prod/2018/Jul/SUB_1970391/31983881/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td>SW-REPRODUCIBLE-PR</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "#66FFFF"> N <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1372508 target=DISPLAY_PR>1372508 </a>[assigned]</br></td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5993840 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5993840_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5993840_2')" onmouseout="nodeLow ('p5993840_2')">C</span>
+    </div>
+    <div id=p5993840_2 class=collapsed>
+        <span class=text><b></b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>173_RLI_34730_Ridge_TVP_deamon.pl_81405_Default</td>
+  <td>173_RLI_34730_Ridge_TVP_deamon.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1970391/REG_FAIL/prod/2018/Jul/SUB_1970391/31983879/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1970391/REG_FAIL/prod/2018/Jul/SUB_1970391/31983879/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td>SW-REPRODUCIBLE-PR</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "#66FFFF"> N <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1372508 target=DISPLAY_PR>1372508 </a>[assigned]</br></td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5993843 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5993843_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5993843_2')" onmouseout="nodeLow ('p5993843_2')">C</span>
+    </div>
+    <div id=p5993843_2 class=collapsed>
+        <span class=text><b></b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>174R1_RLI27006_EX4600_L2PT_misc_basic.robot_71988_Default</td>
+  <td>174R1_RLI27006_EX4600_L2PT_misc_basic.robot</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962159/REG_FAIL/prod/2018/Jul/SUB_1962159/31676607/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962159/REG_FAIL_ANALYSIS/SUB_1962159/31676607&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5990606 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5990606_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5990606_2')" onmouseout="nodeLow ('p5990606_2')">C</span>
+    </div>
+    <div id=p5990606_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>174R1_RLI27006_EX4600_L2PT_VSTP_basic.robot_71754_Default</td>
+  <td>174R1_RLI27006_EX4600_L2PT_VSTP_basic.robot</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962159/REG_FAIL/prod/2018/Jul/SUB_1962159/31676606/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962159/REG_FAIL_ANALYSIS/SUB_1962159/31676606&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-ANALYZED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5990611 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5990611_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5990611_2')" onmouseout="nodeLow ('p5990611_2')">C</span>
+    </div>
+    <div id=p5990611_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>174R1_RLI27006_EX4600_L2PT_LAG_basic.robot_71752_Default</td>
+  <td>174R1_RLI27006_EX4600_L2PT_LAG_basic.robot</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962159/REG_FAIL/prod/2018/Jul/SUB_1962159/31676608/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962159/REG_FAIL_ANALYSIS/SUB_1962159/31676608&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5990634 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5990634_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5990634_2')" onmouseout="nodeLow ('p5990634_2')">C</span>
+    </div>
+    <div id=p5990634_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>174R1_RLI27006_EX4600_L2PT_basic.robot_71986_Default</td>
+  <td>174R1_RLI27006_EX4600_L2PT_basic.robot</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962159/REG_FAIL/prod/2018/Jul/SUB_1962159/31676598/attempt_2/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962159/REG_FAIL_ANALYSIS/SUB_1962159/31676598&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5990635 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5990635_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5990635_2')" onmouseout="nodeLow ('p5990635_2')">C</span>
+    </div>
+    <div id=p5990635_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>174R1_RLI27006_EX4600_L2PT_gres_VSTP_basic.robot_71756_Default</td>
+  <td>174R1_RLI27006_EX4600_L2PT_gres_VSTP_basic.robot</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962159/REG_FAIL/prod/2018/Jul/SUB_1962159/31676605/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962159/REG_FAIL_ANALYSIS/SUB_1962159/31676605&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5992092 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5992092_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5992092_2')" onmouseout="nodeLow ('p5992092_2')">C</span>
+    </div>
+    <div id=p5992092_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_181_RLI36226_EX4600_IP_Source_Gaurd_2.pl_82796_Default</td>
+  <td>Ridge_181_RLI36226_EX4600_IP_Source_Gaurd_2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962159/REG_FAIL/prod/2018/Jul/SUB_1962159/31676633/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962159/REG_FAIL_ANALYSIS/SUB_1962159/31676633&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5990608 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5990608_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5990608_2')" onmouseout="nodeLow ('p5990608_2')">C</span>
+    </div>
+    <div id=p5990608_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_181_RLI36226_EX4600_IP_Source_Gaurd_1.pl_82795_Default</td>
+  <td>Ridge_181_RLI36226_EX4600_IP_Source_Gaurd_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962159/REG_FAIL/prod/2018/Jul/SUB_1962159/31676634/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962159/REG_FAIL_ANALYSIS/SUB_1962159/31676634&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5990632 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5990632_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5990632_2')" onmouseout="nodeLow ('p5990632_2')">C</span>
+    </div>
+    <div id=p5990632_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_CoS_LAG_2a.pl_102486_Default</td>
+  <td>Ridge_CoS_LAG_2a.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Jun/SUB_1928916/29718602/attempt_1/script-exec/&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/18.3Throttle_FR_RIDGE_DR1/REG_FAIL_ANALYSIS/SUB_1928916/29718602&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5965181 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5965181_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5965181_2')" onmouseout="nodeLow ('p5965181_2')">C</span>
+    </div>
+    <div id=p5965181_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>173_RLI_34853_oc_intf_drend_EX4600_1.pl_103276_Default</td>
+  <td>173_RLI_34853_oc_intf_drend_EX4600_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1974583/REG_FAIL/prod/2018/Jul/SUB_1974583/32180436/attempt_1/script-exec&result_id=179235 target=LOG>ABORT</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1974583/REG_FAIL/prod/2018/Jul/SUB_1974583/32180436/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td>SW-REPRODUCIBLE-PR</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "#66FFFF"> O <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1342583 target=DISPLAY_PR>1342583 </a>[need-info]</br></td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5997932 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5997932_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5997932_2')" onmouseout="nodeLow ('p5997932_2')">C</span>
+    </div>
+    <div id=p5997932_2 class=collapsed>
+        <span class=text><b></b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_J174_RLI34589_mld_snoop_advance_1.pl_71220_Default</td>
+  <td>Ridge_J174_RLI34589_mld_snoop_advance_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962245/REG_FAIL/prod/2018/Jul/SUB_1962245/31683620/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962245/REG_FAIL_ANALYSIS/SUB_1962245/31683620&result_id=179235 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>sranjana</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5996359 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5996359_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5996359_2')" onmouseout="nodeLow ('p5996359_2')">C</span>
+    </div>
+    <div id=p5996359_2 class=collapsed>
+        <span class=text><b>Pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>173_RLI_34730_Ridge_TVP_HostOS1.pl_81404_Default</td>
+  <td>173_RLI_34730_Ridge_TVP_HostOS1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1970391/REG_FAIL/prod/2018/Jul/SUB_1970391/31983882/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1970391/REG_FAIL/prod/2018/Jul/SUB_1970391/31983882/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td>SW-REPRODUCIBLE-PR</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "#66FFFF"> N <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1372508 target=DISPLAY_PR>1372508 </a>[assigned]</br></td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5993842 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5993842_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5993842_2')" onmouseout="nodeLow ('p5993842_2')">C</span>
+    </div>
+    <div id=p5993842_2 class=collapsed>
+        <span class=text><b></b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>173_RLI_34730_Ridge_TVP_restart_host_deamon.pl_81402_Default</td>
+  <td>173_RLI_34730_Ridge_TVP_restart_host_deamon.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1970391/REG_FAIL/prod/2018/Jul/SUB_1970391/31983878/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1970391/REG_FAIL/prod/2018/Jul/SUB_1970391/31983878/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td>SW-REPRODUCIBLE-PR</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "#66FFFF"> N <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1372508 target=DISPLAY_PR>1372508 </a>[assigned]</br></td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5993841 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5993841_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5993841_2')" onmouseout="nodeLow ('p5993841_2')">C</span>
+    </div>
+    <div id=p5993841_2 class=collapsed>
+        <span class=text><b></b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>aswinb</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=179235&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_J151_RLI23340_EX4600_lldp_basic_3.pl_80237_Default</td>
+  <td>Ridge_J151_RLI23340_EX4600_lldp_basic_3.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962245/REG_FAIL/prod/2018/Jul/SUB_1962245/31683607/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962245/REG_FAIL_ANALYSIS/SUB_1962245/31683607&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5996357 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5996357_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5996357_2')" onmouseout="nodeLow ('p5996357_2')">C</span>
+    </div>
+    <div id=p5996357_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>vcf_NSSU.pl_80319_Default</td>
+  <td>vcf_NSSU.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL/prod/2018/Jun/SUB_1928927/29718938/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL_ANALYSIS/SUB_1928927/29718938&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5990612 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5990612_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5990612_2')" onmouseout="nodeLow ('p5990612_2')">C</span>
+    </div>
+    <div id=p5990612_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_172R1_RLI31296_Openconfig.robot_68455_Default</td>
+  <td>Ridge_172R1_RLI31296_Openconfig.robot</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1974583/REG_FAIL/prod/2018/Jul/SUB_1974583/32180434/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1974583/REG_FAIL_ANALYSIS/SUB_1974583/32180434&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5997931 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5997931_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5997931_2')" onmouseout="nodeLow ('p5997931_2')">C</span>
+    </div>
+    <div id=p5997931_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Ridge_openflow_dataplane_Spirent_EX4600.pl_80978_Default</td>
+  <td>Ridge_openflow_dataplane_Spirent_EX4600.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Jun/SUB_1928927/29718942/attempt_1/script-exec/&result_id=179235 target=LOG>INIT_FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1928927/REG_FAIL_ANALYSIS/SUB_1928927/29718942&result_id=179235 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5990616 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5990616_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5990616_2')" onmouseout="nodeLow ('p5990616_2')">C</span>
+    </div>
+    <div id=p5990616_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>jfebi</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=179235&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+
+  <td>173_RLI_34853_oc_intf_drend_EX4600.pl_81387_Default</td>
+  <td>173_RLI_34853_oc_intf_drend_EX4600.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1974583/REG_FAIL/prod/2018/Jul/SUB_1974583/32180431/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1974583/REG_FAIL/prod/2018/Jul/SUB_1974583/32180431/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td>SW-REPRODUCIBLE-PR</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "#66FFFF"> O <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1342583 target=DISPLAY_PR>1342583 </a>[need-info]</br></td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5997930 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5997930_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5997930_2')" onmouseout="nodeLow ('p5997930_2')">C</span>
+    </div>
+    <div id=p5997930_2 class=collapsed>
+        <span class=text><b></b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>sranjana</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=179235&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+
+  <td>173_RLI_34861_oc_intf_basic_EX4600.pl_81415_Default</td>
+  <td>173_RLI_34861_oc_intf_basic_EX4600.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1974583/REG_FAIL/prod/2018/Jul/SUB_1974583/32180432/attempt_1/script-exec&result_id=179235 target=LOG>ABORT</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1974583/REG_FAIL_ANALYSIS/SUB_1974583/32180432&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5997935 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5997935_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5997935_2')" onmouseout="nodeLow ('p5997935_2')">C</span>
+    </div>
+    <div id=p5997935_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>RIDGE_RLI34586_173_Pvlan_Irb_IPV6_2.pl_81412_Default</td>
+  <td>RIDGE_RLI34586_173_Pvlan_Irb_IPV6_2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962159/REG_FAIL/prod/2018/Jul/SUB_1962159/31676603/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962159/REG_FAIL_ANALYSIS/SUB_1962159/31676603&result_id=179235 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>sranjana</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5990614 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5990614_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5990614_2')" onmouseout="nodeLow ('p5990614_2')">C</span>
+    </div>
+    <div id=p5990614_2 class=collapsed>
+        <span class=text><b>Pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>RIDGE_RLI34586_173_Pvlan_Irb_IPV6_5.pl_81407_Default</td>
+  <td>RIDGE_RLI34586_173_Pvlan_Irb_IPV6_5.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962159/REG_FAIL/prod/2018/Jul/SUB_1962159/31676615/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962159/REG_FAIL_ANALYSIS/SUB_1962159/31676615&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5992266 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5992266_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5992266_2')" onmouseout="nodeLow ('p5992266_2')">C</span>
+    </div>
+    <div id=p5992266_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>RIDGE_RLI34586_173_Pvlan_Irb_IPV4.pl_69644_Default</td>
+  <td>RIDGE_RLI34586_173_Pvlan_Irb_IPV4.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962159/REG_FAIL/prod/2018/Jul/SUB_1962159/31676624/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962159/REG_FAIL_ANALYSIS/SUB_1962159/31676624&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5990618 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5990618_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5990618_2')" onmouseout="nodeLow ('p5990618_2')">C</span>
+    </div>
+    <div id=p5990618_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>173_RLI_34861_oc_intf_ut_EX4600.pl_81416_Default</td>
+  <td>173_RLI_34861_oc_intf_ut_EX4600.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1974583/REG_FAIL/prod/2018/Jul/SUB_1974583/32180433/attempt_1/script-exec&result_id=179235 target=LOG>ABORT</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1974583/REG_FAIL_ANALYSIS/SUB_1974583/32180433&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5997933 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5997933_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5997933_2')" onmouseout="nodeLow ('p5997933_2')">C</span>
+    </div>
+    <div id=p5997933_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>RIDGE_RLI34586_173_Pvlan_Irb_IPV4_4.pl_81409_Default</td>
+  <td>RIDGE_RLI34586_173_Pvlan_Irb_IPV4_4.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962159/REG_FAIL/prod/2018/Jul/SUB_1962159/31676613/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962159/REG_FAIL_ANALYSIS/SUB_1962159/31676613&result_id=179235 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>sranjana</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5992238 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5992238_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5992238_2')" onmouseout="nodeLow ('p5992238_2')">C</span>
+    </div>
+    <div id=p5992238_2 class=collapsed>
+        <span class=text><b>Pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>RIDGE_RLI34586_173_Pvlan_Irb_IPV6_4.pl_81408_Default</td>
+  <td>RIDGE_RLI34586_173_Pvlan_Irb_IPV6_4.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962159/REG_FAIL/prod/2018/Jul/SUB_1962159/31676614/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962159/REG_FAIL_ANALYSIS/SUB_1962159/31676614&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5992237 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5992237_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5992237_2')" onmouseout="nodeLow ('p5992237_2')">C</span>
+    </div>
+    <div id=p5992237_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>RIDGE_RLI34586_173_Pvlan_Irb_IPV6.pl_81414_Default</td>
+  <td>RIDGE_RLI34586_173_Pvlan_Irb_IPV6.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962159/REG_FAIL/prod/2018/Jul/SUB_1962159/31676612/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1962159/REG_FAIL_ANALYSIS/SUB_1962159/31676612&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5992204 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5992204_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5992204_2')" onmouseout="nodeLow ('p5992204_2')">C</span>
+    </div>
+    <div id=p5992204_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>wirotl</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=179235&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+
+  <td>174R1_RLI24914_Ex_system_personality.robot_103169_Default</td>
+  <td>174R1_RLI24914_Ex_system_personality.robot</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1974583/REG_FAIL/prod/2018/Jul/SUB_1974583/32180438/attempt_1/script-exec&result_id=179235 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/DR/Archive/2018/Jul/SYSTEST/18.3Throttle_FR_RIDGE_DR1/results/TI/_1974583/REG_FAIL_ANALYSIS/SUB_1974583/32180438&result_id=179235 target=LOG>PASS</a> </td>
+  <td>FALSE-FAILURE-RESOLVED</td>
+  <td>ananthamk</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=5997934 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p5997934_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p5997934_2')" onmouseout="nodeLow ('p5997934_2')">C</span>
+    </div>
+    <div id=p5997934_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+    
+</br>
+<table border=0>
+
+
+     <td bgcolor=#FD5757>&nbsp;</td>
+     <td> PR_open  &nbsp; </td>
+     <td bgcolor=#66FF66>&nbsp;</td>
+     <td> PR_closed &nbsp; </td>
+     <td bgcolor=#66FFFF>&nbsp;</td>
+     <td> PR_other &nbsp; </td>
+
+   </tr>
+</table>
+
+
+<!-- END   DISPLAY COMPLETED -->
+
+
+
+
+
+
+
+
+</table> 
+<br><br><br><br><br><br><br><br>
+
+
+
+ 
+
+
+</table>
+
+
+
+    </td>
+<!-- RIGHT WINDOW ENDS-->
+
+
+
+  </tr>
+</table>
+
+<!-- 4rd ROW ENDS-->
+
+
+
+
+
+
+
+
+
+
+
+<br />
+<hr noshade size="1" width="100%" />
+ 
+</body>
+</html>
+
+
+
+
+
+
+

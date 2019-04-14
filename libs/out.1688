@@ -1,0 +1,1423 @@
+<html>
+<head>
+ <title>TL9K Summary Report</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <meta name="Pragma" CONTENT="no-cache">
+ <meta name="robots" content="noindex, follow">
+ <link href="/ti/webapp/dr/shared/mainstyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<!-- START STYLESHEET INCLUDE -->
+<script language="javascript">
+ if (navigator.platform.indexOf ("Win32") !=-1) {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ie.css" type="text/css">');
+ } else {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ns.css" type="text/css">');
+ }
+</script>
+
+<body class="td-white-background"  topmargin="5" leftmargin="6" marginwidth="6" marginheight="5" >
+
+</script>
+<!-- END STYLESHEET INCLUDE -->
+
+
+<script type="text/javascript">                                                                                                                                                  
+function displaySpan(theSpan) {
+    if (theSpan.style.display == "none") {
+        theSpan.style.display = "";
+    }
+    else if (theSpan.style.display == "") {
+        theSpan.style.display = "none";
+    } else {
+        theSpan.style.display = "none";
+    }
+}
+</script>
+
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+     <tr  class="bluefield">
+      <td rowspan="2"  height="70">&nbsp; &nbsp;
+       <a href="http://www-int.juniper.net/">
+       <img src="/images/juniperLogo.gif" height="33" width="90" border="0"></a></td>
+      <td id=td15> Summarized Regression Test Report </td> </tr>
+
+ <tr> <td> Result Id's: 210414  </td> </tr></table><hr><a href=/ti/webapp/dr/debug_dr/view/gen_tl9k_report_summary.mhtml?result_id=210414&trans=remove >Click here to Exclude Transition Scripts</a><!-- 
+/*
+ * Function to get reg report info
+ *
+ */
+-->
+
+no_tei :  <br><br>
+        
+
+<!-- 
+/*
+ * Function to get all the manual info.
+ *
+ */
+
+-->
+
+<br>
+
+<!-- 
+/*
+ * Function to get the pr info
+ */
+
+-->
+
+<br>
+
+Result Summary for <font color=red></font> ( Result_id: 210414 ) <br>-Project Lead        : <font color=blue></font> <br>-Regression Tracking : PR<br>
+<p id=td16_1><pre>
+<font color=blue>1</font> Automated Tests:
+Total Number of Automated Scripts = 276
+Total Number of Pass (Regression+Debug) = 73
+Total Number of Debug Failures = 11
+PASS % = 26 %
+
+Unique Script count = 276
+Unique (latest respin) Pass count = 73
+Unique (latest respin) Failure count (including pending) = 203
+ACTUAL PASS% = 26 %
+
+
+Total Number of Testcases count = 1453
+Total Number of Testcases Pass (Regression+Debug) = 707 
+Total Number of Testcases Fail (PR Attached) = 46
+Total Number of Testcases Pending Analysis = 700
+PASS % = 49 %
+
+
+<font color=blue>2</font> Manual Tests:
+Total Number of Manual Tests = 0
+Total Number of Pass = 0
+Total Number of Failures = 0
+PASS % = 0 %
+
+</pre></p>
+
+<!--7.0 END OF SUMMARY TABLE -->
+
+
+
+
+
+<li><a href="javascript:displaySpan(span_210414)"><b>Click here to see list of Failed/Undebugged Scripts</b></a>
+<span id="span_210414" style="display:none;">
+<br><br><table border=1> <tr><td><font size=2>Engineer</td><td><font size=2>Script Name</td><td><font size=2>Result</td><td><font size=2>PRs</td></tr>
+<tr><td rowspan=8><font size=2>kphanee (8)</td><td><font size=2>101_trio_ae_interface_mode_access.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>101_trio_mac_account_ae_flexi_ethernet_services.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_X51_MX_RLI16679_Single_Auth_for_DHCP_DS_TOMCAT_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_X51_MX_RLI16679_Single_Auth_for_DHCP_DS_TOMCAT_3_ALOHA.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>152_Tomcat_RLI20873_Framed_IPv6_Route_PrefixDelegation.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>RLI9575_L3Wholesale_AcctDuplication.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>ce_issu_dhcpv6_ALOHA.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>rli_14165_dhcpv6_multi_address_support.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><tr><td rowspan=2><font size=2>mukilvanan (2)</td><td><font size=2>141_MX_RLI18732_DHCP_LeaseTime_Violation_ISSU.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_MX_RLI_19384_IPv4_Address_ISSU.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><tr><td rowspan=1><font size=2>rameshbp (1)</td><td><font size=2>RLI_5408_ISSU_9860_ae_pppoe_cos_one_singlecard.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><tr><td rowspan=190><font size=2>sathish (190)</td><td><font size=2>101_trio_irb_mixed_cls_rw.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>111_trinity_ratelimit.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>112_1588_rli_12001_neo_ordinary_slave.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>112_mxvc_RLI7669.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>112_mxvc_RLI8191.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>112_mxvc_cos_overhead_shaping_2_cos_models_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>112_mxvc_dhcp_show_subscribers.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>112_mxvc_ipv6_filters.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>112_mxvc_rli4692RadAuthRelayTest.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>112_mxvc_rli6861PlainProxyRATest.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>112_mxvc_rli7973dhcp.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>112_mxvc_scu_dcu_bps_pps_ipv6.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>113_oceanus_12071_basic_firewall.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>123_MX_RLI15445_Source_Addr_Compliance_RFC4291_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>123_MX_RLI16227_Wait_for_Acct_ON_Ack.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>123_MX_RLI16360_dual-stack_without_IPv4_in_access-accept_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>123_hyperion_mxvc_RLI15972_dhcp_show_subscribers.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>123_mx_RLI14895_DHCP_Vendor_Option_based_DSI_Creation_AE_V6.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>123_snorkel_mxvc_RLI15972_VC_basic_part2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>131X49_141X50_test_aaa_line_id.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>131_MX-Series_RLI13250_Ipv4_address_saving.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>131_Neo_RLI_16353_ACI_VLAN_Cos_Vars_Controlled_By_Client_Session.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>131_RLI15910_Pppoe_Dhcp_Over_Pseudowire_Cos_Part1.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #FD5757><font size=2> n <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1424020 target=DISPLAY_PR>1424020 </a>[open]</br></td></tr><td><font size=2>131_RLI15910_Pppoe_Dhcp_Over_Pseudowire_Cos_Part4.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #FD5757><font size=2> n <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1424020 target=DISPLAY_PR>1424020 </a>[open]</br></td></tr><td><font size=2>131_X49_TPI_24169_HTTP_Redirect_Rewrite_Dynamic_RE_Based_CPCD_ISSU.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>131_X49_TPI_24169_HTTP_Redirect_Rewrite_Dynamic_RE_Based_CPCD_ISSU1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>131_mx_RLI15884_PART_4.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>131x42_tomcat_MX_RLI_20176_VLAN_ranges_limit_AE.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>131x49_MX_RLI19544_Dynamic_Shaping_Adjustments_for_Business_Services.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>131x49_MX_RLI19879_PART1.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #FD5757><font size=2> n <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1422757 target=DISPLAY_PR>1422757 </a>[open]</br></td></tr><td><font size=2>131x49_MX_RLI19879_PART1_MX80.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>131x49_MX_RLI19879_PART2_MX80.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>131x49_MX_RLI19879_PART3.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>133_MX_891121_PWT_local-switch_l2circuit_part1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>133_MX_RLI16484_Scenario_2_based_RADIUS_accounting_messages_part3.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>133_MX_RLI16812_COS_scheduler_hierarchy_Commands_GRES.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>133_MX_RLI19631_MLPPP_single_link_LFI_MLPPPoE_K4.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>133_R3_RLI_20686_MTU_MRU_SETTINGS_ISSU.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>133_R3_RLI_20686_MTU_MRU_size.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>133_R3_RLI_20686_MTU_MRU_size_ISSU.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141X50_MX_RLI29075_ISSU.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141X50_RLI_24435_Remote_ID_Parsing_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141X50_RLI_24556_ppp_disconnect_with_reconnect_l2bsa_semantics_part2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141X50_RLI_30834_Local_Address_Pool_Rapid_Drain_ISSU_Part3.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141X50_TPI_37605_New_Dynamic_Variable_ISSU.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141X51_MX-Series_RLI20371_No_DHCP_access-internal_route_Server_Tomcat_part4.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141X51_MX-Series_RLI20371_No_DHCP_access-internal_route_Server_Tomcat_part4_ALOHA.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141X51_TOMCAT_RLI19545_UCAC_IGMP_DHCP_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141X51_TOMCAT_RLI19545_UCAC_IGMP_DHCP_ISSU.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_MX_RCCA_PR_1074992.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_MX_RLI11803THRD.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_MX_RLI11803_AE.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_MX_RLI11803_ISSU.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_MX_RLI15918_DHCP_Dual_Stack_On_IRB_With_Trunks_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_MX_RLI16522_Dynamic_VLAN_Authentication_AE.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_MX_RLI16522_Dynamic_VLAN_Authentication_ISSU.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_MX_RLI19542_Service_Volume_Time_Acc_Threshold.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_MX_RLI19542_Service_Volume_Time_Acc_Threshold_DS_3.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_MX_RLI_16060_Address_pool_Hold_down_ISSU.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_MX_RLI_27462_ER_58442_L2BSA_DT_ISSU.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_RLI17738_Pppoe_Dhcp_Over_Pseudowire_Cos_Part3.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #FD5757><font size=2> n <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1424020 target=DISPLAY_PR>1424020 </a>[open]</br></td></tr><td><font size=2>141_RLI5412_DSL_line_attributes_from_LAC_to_LNS_ISSU.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_RLI_10613_mxvc_ce_issu_dhcp_server_func.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_X50_MX_RLI24551_Support_non_overlap_vlanrange_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_X50_MX_RLI24639_Duplicate_Client_DUID_Support_server_5.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_X51_MX_RLI16679_Single_Auth_for_DHCP_DS_TOMCAT_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_X51_MX_RLI16679_Single_Auth_for_DHCP_DS_TOMCAT_ISSU.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_X51_Tomcat_MX_RLI20475_COS_scheduler_hierarchy_Commands_Enhancements.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_X_50_RLI_24555_Removing_ANCP_triggered_dynamic_VLAN_session_upon_ANCP_disruption_part1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_X_50_RLI_24555_Removing_ANCP_triggered_dynamic_VLAN_session_upon_ANCP_disruption_part3.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_X_50_RLI_24661_Firewall_Filter_Term_Action_for_L2BSA_Session_Service_part1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_X_50_RLI_24661_Firewall_Filter_Term_Action_for_L2BSA_Session_Service_part2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_X_51_23037_DNS_Provisioning_Scaling_Tomcat.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141_X_51_RLI_20166_IFL_Or_ACISET_over_Static_UIFL.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141x50_MX_RLI24645_idlemonitoringress_L2TP.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> N <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1416817 target=DISPLAY_PR>1416817 </a>[need-info]</br></td></tr><td><font size=2>141x50_MX_RLI24645_idlemonitoringress_L2TP_GRES.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> N <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1416817 target=DISPLAY_PR>1416817 </a>[need-info]</br></td></tr><td><font size=2>141x50_MX_RLI24645_idlemonitoringress_dySingle.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> O <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1416817 target=DISPLAY_PR>1416817 </a>[need-info]</br></td></tr><td><font size=2>141x50_MX_RLI_24632_L2BSA_Portuptrigger.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141x50_MX_RLI_24632_L2BSA_Portuptrigger_ISSU1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141x50_MX_TPI_27584_Incorrect_Schedule_Heirarcahry_Shaping_Rates_After_CoA_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141x50_MX_TPI_27584_Incorrect_Schedule_Heirarcahry_Shaping_Rates_After_CoA_AE.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141x50_RLI24638_CoA_multiServices_act_deact_part1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141x51_MX_RLI17312_TomcatStuckSessionClear_Init.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141x51_MX_RLI17312_TomcatStuckSessionClear_dyIPdemux.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141x51_MX_RLI17312_TomcatStuckSessionClear_dySingle.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141x51_MX_RLI17312_TomcatStuckSessionClear_staIPdemux.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141x51_MX_RLI_13897_tomcat_ISSU.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141x51_RLI_20154_ANCP_Support_QoSAdjust_PPPoE_DHCP_IPDemux_Part1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141x51_Tomcat_MX_RLI19357_DualStack_Accounting_Suspend_Baseline.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141x51_Tomcat_MX_RLI_20157_ancp.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>141x51_Tomcat_MX_RLI_20157_coa_ISSU.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>142_MXVC_TPI25266_ipv6_filter.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>151_34543_CHAP_local_name_ISSU.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>151_MX_RLI14026_Leasequery_Support_for_jdhcpd_dhcpv6_static.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>151_MX_RLI_19806_L2_LI_T7.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>151_MX_RLI_20588_HTTP_Redirect_Rewrite_Static_RE_Based_CPCD_DHCP_Relay.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #FD5757><font size=2> N <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1422757 target=DISPLAY_PR>1422757 </a>[open]</br> n <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1423715 target=DISPLAY_PR>1423715 </a>[open]</br></td></tr><td><font size=2>151_MX_RLI_20589_HTTP_Redirect_Rewrite_Static_RE_Based_CPCD_J2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>151_MX_RLI_20589_HTTP_Redirect_Rewrite_Static_RE_Based_CPCD_PPPoE_VRF.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>151_MX_TPI35117_Config_Optimization_L2_Node_Scaling_ISSU.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>151_MX_TPI35118_RI_predefined_variable_defaults_ISSU.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>151_R1_MX_RLI20184_DHCP_IP_session_support_using_BFD_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>151_R1_MX_RLI20184_DHCP_IP_session_support_using_BFD_BasicDhcpv4Relay.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>151_R1_MX_RLI20184_DHCP_IP_session_support_using_BFD_BasicDhcpv4Relayproxy.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>151_R1_MX_RLI20184_DHCP_IP_session_support_using_BFD_BasicDhcpv4Server.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>151_R1_MX_RLI20184_DHCP_IP_session_support_using_BFD_BasicDhcpv6Relay.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>151_R1_MX_RLI20184_DHCP_IP_session_support_using_BFD_BasicDhcpv6Server.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>151_R1_MX_RLI20184_DHCP_IP_session_support_using_BFD_DRv4.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>151_R1_MX_RLI20184_DHCP_IP_session_support_using_BFD_DRv6.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1410625 target=DISPLAY_PR>1410625 </a>[assigned]</br></td></tr><td><font size=2>151_RLI18969_LAC_support_AVP24_AVP38_TOMCAT_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>151_RLI_22013_ISSU_VLAN_Demux_DHCP_Dual_Stack.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>151_RLI_22013_ISSU_VLAN_Demux_PPPoE_Dual_Stack.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>151_RLI_27452_Service_FlatFile_Accounting_DHCP_Relay_Demux_Interface_part1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>151_RLI_27452_Service_FlatFile_Accounting_DHCP_Relay_Demux_Interface_part2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>151_RLI_27452_Service_FlatFile_Accounting_DHCP_Relay_Demux_Interface_part3.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>151_RLI_27452_Service_FlatFile_Accounting_DHCP_Server_Demux_Interface_part1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>151_Tomcat_MX_RLI_14026_DHCPv4_DEFAULT_RI_DYNAMIC.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1410625 target=DISPLAY_PR>1410625 </a>[assigned]</br></td></tr><td><font size=2>151_Tomcat_RLI_19460_DHCPv6_Guided_Relay_Server_Using_Radius_3.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>151_Tomcat_RLI_19460_DHCPv6_Guided_Relay_Server_Using_Radius_Scale.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>152_MX_RLI20169_MLPPP_single_link_LFI_MLPPPoE_tomcat_K1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>152_MX_RLI20169_MLPPP_single_link_LFI_MLPPPoE_tomcat_K2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>152_MX_RLI20169_MLPPP_single_link_LFI_MLPPPoE_tomcat_K3.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>152_MX_RLI20169_MLPPP_single_link_LFI_MLPPPoE_tomcat_K4.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>152_MX_RLI20169_MLPPP_single_link_LFI_MLPPPoLNS_tomcat_K3.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>152_MX_RLI23860_AE_TIMESTAMP.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>152_Tomcat_RLI20873_Framed_IPv6_Route_Scaling.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>161R1_RLI_24460_Remote_ID_Parsing.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>161R1_RLI_24460_Remote_ID_Parsing_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>161R1_RLI_24460_Remote_ID_Parsing_ISSU_4.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>161X60_RLI_27463_DHCP_Asymmetric_Lease_Time_Support_6_ISSU.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>161_MX_RLI16156_DHCP_Offer_Delay_DHCPv6.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>161_MX_RLI27468_Optional_Services_Pppoev4.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>161_MX_TPI40296_COA_CODE_COVERAGE_issu.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>161_RLI_25388_InterfaceSet_TrafficStats_AciVlan.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>161_RLI_25388_InterfaceSet_TrafficStats_SvlanSet.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>161_RLI_28923_Tomcat_Multicast_Based_Dynamic_L2_HQOS_Adjust.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>161_RLI_28923_Tomcat_Multicast_Based_Dynamic_L2_HQOS_Adjust_ISSU.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>161_Tomcat_RLI24544_Limiting_PPPoE_sessions_per_PFE.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>161_X60_RLI_27483_DT_BNG_ESSMD_Scaling_HA_3.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>161x60_MX_RLI_27484_Report_Effective_Shaping_Rate_GRES_SCALE.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #FD5757><font size=2> n <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1424020 target=DISPLAY_PR>1424020 </a>[open]</br></td></tr><td><font size=2>161x60_MX_TPI_36477_Fix_inconsistencies_ancp_cli.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>161x60_RLI_27484_Report_Effective_Shaping_Rate.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>162_RLI_27205_MXVC_mqtt_replication.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>171_RLI_16160_ACI_ARI_based_ACIVLANs_ISSU.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>171_RLI_20328_InterfaceSet_TrafficStats_SNMP_ISSU.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>172R1_RLI28009_DT_BNG_ESSMD_Scaling_Func3.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>L3Wholesale_PPPoe_ISSU.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>RCCA_PR876405_DHCPv4_Relay_option-82.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>RLI12580_part1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>RLI12580_part2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>RLI13364_part1_MX80.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>RLI15787_NAS_Part1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>RLI15787_NAS_Part4.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>RLI16704_CLI_Based_Service_Activation_DHCPv6.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>RLI17166_MacValidate_Optimized.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>RLI6179_MACVALIDATE_VLAN_GRES.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>RLI7968GRESRAUTest.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>RLI8191.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>RLI9578_DHCPOptions_issu.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>RLI_10839_VC.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>RLI_11078_DHCPv6_PD_OVER_PPP_PART_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>RLI_11771_ISSU_Dynamic_Policy_skip_action_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>RLI_11771_ISSU_Dynamic_Policy_skip_action_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>RLI_11771_ISSU_Dynamic_Policy_skip_action_3.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>RLI_12357_Parameterized_Filter_Policer_Issu.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>RLI_12872_ANCP_dyn_part1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>RLI_13230.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>RLI_7537_dv_authentication_dhcp_inst_restarts.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>RLI_7537_dv_authentication_vlan_inst.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>RLI_9238_DFWD_FUF_Dynamic_Profile_33.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>RLI_9438_Dynamic_Policy_skip_action_22.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>ce_10688_ae.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>ce_issu_cos_overhead_shaping_if_type.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>ce_issu_dhcp_relay_proxy_L3Wholesale.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>ce_issu_dhcp_relay_proxy_base.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>ce_issu_dhcp_server_func.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>cos_overhead_shaping_3_if_types.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>dhcp_aaa_auth_2_ALOHA.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>dhcp_aaa_auth_relay_2_ALOHA.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>dhcp_show_subscribers_1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>dhcp_show_subscribers_2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>rli12047_part2.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>rli4692RadAuthSvlanTest.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>rli4692RadAuthUnumTest_ALOHA.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>rli6025_irb_dhcp_local.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>rli6531_neo_part1.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>rli6961DHCPv6CRALSFRTest_ALOHA.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>rli9603DHCPv6LSSVLANFRPOOLTest_ALOHA.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>rli_14764_dhcp_if_stats_l3w.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>rli_14764_dhcp_if_stats_l3w_ae.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>rli_4550.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><tr><td rowspan=2><font size=2>thejaswi (2)</td><td><font size=2>133_MX_RLI16812_COS_scheduler_hierarchy_Commands.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>152_Tomcat_MX_19149_ETL_on_Self_Destroying_ISSU.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr></table>
+<br><br>
+<table>
+<tr><td>
+<b>Scripts failed Due to PRs - </b>11
+</td></tr>
+<tr><td>
+<b>Scripts pending debugging - </b>192
+</td></tr>
+<tr><td>
+<b>PRs Existing till now - </b></td></tr>
+</table><table border=1>
+<tr><td><font size=2 style="font-weight:bold">PR</td>
+               <td><font size=2 style="font-weight:bold"># Scripts Hit</td>
+               <td><font size=2 style="font-weight:bold">Planned_Release</td>
+               <td><font size=2 style="font-weight:bold">State</td>
+               <td><font size=2 style="font-weight:bold">Category</td>
+               <td><font size=2 style="font-weight:bold">Customer_Risk</td>
+               <td><font size=2 style="font-weight:bold">Problem_level</td>
+               <td><font size=2 style="font-weight:bold">Synopsis</td>
+               <td><font size=2 style="font-weight:bold">Found</td>
+               <td><font size=2 style="font-weight:bold">Reg</td>
+               <td><font size=2 style="font-weight:bold">Blocker</td> 
+            </tr><tr>
+<td><font size=2>1424020</td>
+               <td><font size=2>4</td>
+               <td><font size=2>19.2DCB</td><td bgcolor = #FD5757 ><font size=2>open</td>
+<td><font size=2>sw-mobile-mobiled</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>JDI CI PHY ROUTING : Observed mobiled core @ #0  thr_kill () at thr_kill.S:3 #1  0xc8c91d2f in abort () at /.amd/svl-engdata1vs1/occamdev/build/freebsd/stable_11/20190228.065536_fbsd-builder_stable_11.0.df99236/src/lib/libc/stdlib/abort.c:65</td>
+               <td><font size=2>NEW</td>
+               <td><font size=2></td>
+               <td><font size=2>NONE</td></tr>
+<tr>
+<td><font size=2>1423715</td>
+               <td><font size=2>1</td>
+               <td><font size=2>19.2DCB</td><td bgcolor = #FD5757 ><font size=2>open</td>
+<td><font size=2>sw-bbe-db</td> 
+               <td><font size=2>minor</td>
+               <td><font size=2>6-IL4</td>
+               <td><font size=2>JDI CI PHY ROUTING : mspmand.core is generated in bbe routers #0  msp_policy_db_get_svc_set_sm (pdh=0x0) at ../../../../../src/junos/lib/libmsp-svcs/svc-set/msp_policy_db.c:565</td>
+               <td><font size=2>NEW</td>
+               <td><font size=2></td>
+               <td><font size=2>NONE</td></tr>
+<tr>
+<td><font size=2>1422757</td>
+               <td><font size=2>2</td>
+               <td><font size=2>19.2DCB</td><td bgcolor = #FD5757 ><font size=2>open</td>
+<td><font size=2>sw-bbe-stats</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>AUTO-CORE-PR : JDI CI PHY ROUTING : BBE-STATSD core found @ validateSessionId BbeStatsSessionDb::Entry::Entry BbeStats::getSlots</td>
+               <td><font size=2>NEW</td>
+               <td><font size=2></td>
+               <td><font size=2>FRS</td></tr>
+<tr>
+<td><font size=2>1416817</td>
+               <td><font size=2>3</td>
+               <td><font size=2>19.2DCB</td><td bgcolor = #66FFFF ><font size=2>need-info</td>
+<td><font size=2>sw-bbe-stats</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>[subscriber_services/jdhcpd] [all] DHCP subscriber is torn down before the configured idle timeout value for monitor input traffic</td>
+               <td><font size=2>OLD</td>
+               <td><font size=2></td>
+               <td><font size=2>FRS</td></tr>
+<tr>
+<td><font size=2>1410625</td>
+               <td><font size=2>2</td>
+               <td><font size=2>19.2DCB</td><td bgcolor = #66FFFF ><font size=2>assigned</td>
+<td><font size=2>sw-bbe-stats</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>RPT_BBE_REGRESSIONS : Acct-Input-Packets & Acct-Output-Packets files are missing in verifyInRadAcctMessage</td>
+               <td><font size=2>OLD</td>
+               <td><font size=2></td>
+               <td><font size=2>NONE</td></tr>
+</table>
+</span></li>
+</br><hr> <b>Combined pass rate (actual) for Automated scripts: 26.45 % </b>
+<br />
+<hr noshade size="1" width="100%" />
+ 
+</body>
+</html>
+
+
+
+

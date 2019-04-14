@@ -1,0 +1,3 @@
+<chart caption='First Pass' xAxisName='Test Beds' yAxisName='Pass %' showValues='1' numberPrefix='' useRoundEdges='1' legendBorderAlpha='100' showBorder='0' bgColor='FFFFFF,FFFFFF' ><categories><category label='(d)-eabu-reg-amx-dt1' /></categories><dataset seriesName='First Pass %'><set label='(d)-eabu-reg-amx-dt1' value='85.03'  />
+</dataset><dataset seriesName='Actual Pass %'><set label='(d)-eabu-reg-amx-dt1' value='96.79'  />
+</dataset></chart>

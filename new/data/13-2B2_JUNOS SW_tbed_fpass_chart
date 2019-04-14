@@ -1,0 +1,35 @@
+<chart caption='First Pass' xAxisName='Test Beds' yAxisName='Pass %' showValues='1' numberPrefix='' useRoundEdges='1' legendBorderAlpha='100' showBorder='0' bgColor='FFFFFF,FFFFFF' ><categories><category label='(d)-nsr2-static-domain' /><category label='nsr2-srx-rtb' /><category label='rtb-t4000' /><category label='(d)-er-master-domain' /><category label='mx-rtb' /><category label='trinity-rtb' /><category label='rtb4' /><category label='issu-rtb1' /><category label='(d)-rtb-master-domain' /><category label='nsr2-rtb' /><category label='er-master' /><category label='scale-rtb' /><category label='rtb13' /><category label='mvpn-rtb' /><category label='mpls1-rtb' /><category label='(d)-issu-rtb1-domain' /><category label='(d)-scale-rtb-domain' /></categories><dataset seriesName='First Pass %'><set label='(d)-nsr2-static-domain' value='100.00'  />
+<set label='nsr2-srx-rtb' value='90.48'  />
+<set label='rtb-t4000' value='87.97'  />
+<set label='(d)-er-master-domain' value='82.35'  />
+<set label='mx-rtb' value='79.65'  />
+<set label='trinity-rtb' value='72.09'  />
+<set label='rtb4' value='71.05'  />
+<set label='issu-rtb1' value='69.64'  />
+<set label='(d)-rtb-master-domain' value='68.75'  />
+<set label='nsr2-rtb' value='66.94'  />
+<set label='er-master' value='65.18'  />
+<set label='scale-rtb' value='64.52'  />
+<set label='rtb13' value='62.67'  />
+<set label='mvpn-rtb' value='61.63'  />
+<set label='mpls1-rtb' value='60.87'  />
+<set label='(d)-issu-rtb1-domain' value='50.00'  />
+<set label='(d)-scale-rtb-domain' value='33.33'  />
+</dataset><dataset seriesName='Actual Pass %'><set label='(d)-nsr2-static-domain' value='0.00'  />
+<set label='nsr2-srx-rtb' value='100.00'  />
+<set label='rtb-t4000' value='96.24'  />
+<set label='(d)-er-master-domain' value='100.00'  />
+<set label='mx-rtb' value='97.35'  />
+<set label='trinity-rtb' value='95.35'  />
+<set label='rtb4' value='85.53'  />
+<set label='issu-rtb1' value='96.43'  />
+<set label='(d)-rtb-master-domain' value='100.00'  />
+<set label='nsr2-rtb' value='96.77'  />
+<set label='er-master' value='93.75'  />
+<set label='scale-rtb' value='92.47'  />
+<set label='rtb13' value='93.33'  />
+<set label='mvpn-rtb' value='93.02'  />
+<set label='mpls1-rtb' value='89.13'  />
+<set label='(d)-issu-rtb1-domain' value='100.00'  />
+<set label='(d)-scale-rtb-domain' value='100.00'  />
+</dataset></chart>

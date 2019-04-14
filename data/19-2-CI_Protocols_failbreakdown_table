@@ -1,0 +1,1 @@
+<center><table class='table table-bordered table-striped'><thead><tr><th>Exit Code</th><th>Count of scripts </th></tr></thead><tbody><tr><th>ABORT</th><td>3</td></tr><tr><th>CONNECT_LOST</th><td>8</td></tr><tr><th>FAIL</th><td>12</td></tr><tr><th>LINK_FAIL</th><td>7</td></tr><tr><th>TEST_TIMEOUT</th><td>1</td></tr><tr><th>TOTAL</th><td>31</td></tr></thead></tbody></table>

@@ -1,0 +1,12 @@
+<chart caption='First Pass' xAxisName='Test Beds' yAxisName='Pass %' showValues='1' numberPrefix='' useRoundEdges='1' legendBorderAlpha='100' showBorder='0' bgColor='FFFFFF,FFFFFF' ><categories><category label='bng-ce-bras3' /><category label='bng-ce-bras2' /><category label='bng-ce-bras4' /><category label='hcl-ce3' /><category label='hcl-metro' /><category label='hcl-vanam' /><category label='hcl-ce2' /><category label='hcl-ce1' /><category label='ce-rtb' /><category label='hcl-chai' /><category label='ce3-rtb' /></categories><dataset seriesName='First Pass %'><set label='bng-ce-bras3' value='84.69'  />
+<set label='bng-ce-bras2' value='84.52'  />
+<set label='bng-ce-bras4' value='78.57'  />
+<set label='hcl-ce3' value='78.21'  />
+<set label='hcl-metro' value='76.39'  />
+<set label='hcl-vanam' value='71.43'  />
+<set label='hcl-ce2' value='70.42'  />
+<set label='hcl-ce1' value='68.66'  />
+<set label='ce-rtb' value='67.09'  />
+<set label='hcl-chai' value='61.19'  />
+<set label='ce3-rtb' value='52.38'  />
+</dataset></chart>

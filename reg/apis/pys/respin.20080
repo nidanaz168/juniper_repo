@@ -1,0 +1,2911 @@
+<link rel="stylesheet" type="text/css" href="../shared/resources/css/jquery.dataTables.css">
+<link rel="stylesheet" type="text/css" href="../shared/resources/css/TableTools.css">
+
+<script type="text/javascript" src="../shared/resources/js/jquery.js"></script>
+<script type="text/javascript" src="../shared/resources/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="../shared/resources/js/TableTools.min.js"></script>
+<script type="text/javascript" src="../shared/resources/js/dataTableSelect.js"></script>
+
+
+
+
+<html>
+<head>
+ <title>DEBUG PAGE</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <meta name="Pragma" CONTENT="no-cache">
+ <meta name="robots" content="noindex, follow">
+ <link href="/ti/webapp/dr/shared/mainstyle.css" rel="stylesheet" type="text/css">
+ <script >
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                                            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68983099-2', 'auto');
+  //    ga('set', '&uid', 'ckevin'); // Set the user ID using signed-in user_id.
+  ga('send', 'pageview');
+           console.log("Updated");
+ </script>
+ </head>
+
+<!-- START STYLESHEET INCLUDE -->
+<script language="javascript">
+ if (navigator.platform.indexOf ("Win32") !=-1) {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ie.css" type="text/css">');
+ } else {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ns.css" type="text/css">');
+ }
+</script>
+
+<body class="td-white-background"  topmargin="5" leftmargin="6" marginwidth="6" marginheight="5">
+
+</script>
+<!-- END STYLESHEET INCLUDE -->
+
+
+<!-- 1st ROW START-->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left" width="65%">
+      <table  width="100% border="0 cellspacing="0" cellpadding="0">
+        <tr>
+          <td><a href="http://www-int.juniper.net/"><img src="/images/juniperLogo.gif" alt="Juniper Networks Logo" width="154" height="40" border="0" /></a></td>
+          <td><img src="/image/pixel.gif"  alt="" height="10" /></td>
+          <td> <font color=blue size=4>Regression the Heartbeat Of Testing</font></td>
+          <td>  <font size=2>  Hi nidanaz  </font> </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<div id="banner" style="    width: 90%;
+    width: 90%;
+        font-size: 16px;
+            background-color: greenyellow;
+                margin-left: 40px;
+                    padding: 5px 0 5px 0;
+                        height: 35px;
+                         "
+                          align="center">
+                            DR has been moved to <b>QUINCY</b> from <b>Sunnyvale</b> servers. Please upload your <b>DEBUG</b> logs to
+                            Quincy shells for debugging purposes. <br> Please use any one of the 16 Quincy Shells for
+                            this purpose. <span style="color:red;">ttqc-shell01 .... ttqc-shell16</span> 
+                            </div>
+
+
+
+<!-- 1st ROW END-->
+
+
+
+<!-- 2nd ROW END-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr class="tr-table-header-dark">
+    <td width="47%" colspan="2">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+        <tr>
+         <td width="50%" class="tr-table-header-dark"><img src="/image/pixel.gif"  alt="" width="438" height="1" /></td>
+         <td rowspan="2"  valign="bottom" class="tr-table-header-dark"><img src="/ti/webapp/dr/image/hdr_global_slantline_l.gif" width="25" height="49" alt="divider" /></td>
+        </tr>
+        <tr>
+         <td width="438" height="49" class="darkest-bgcolor"> &nbsp;&nbsp;&nbsp;&nbsp;<span class="header-label">Regression Debugging</span> </td>
+         <td><div align="center"><font size=4>18.2X75-D40_T_OPUS_CLOUD</font></div> </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- 2nd ROW END-->
+
+
+
+
+
+
+<table width="100%" cellspacing="0" cellpadding="0"><tr><td></td></tr></table>
+
+
+<!-- 3rd ROW START-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+
+
+
+
+
+    <td width="5" valign="top" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant5b.GIF"></td>
+    <td>
+      <div align="center">
+        <a href="index.mhtml?mode=0:2:0&result_id=199393" class="gnavsm">Reg Debug</a>
+      </div>
+    </td>
+    <td width="11" valign="top" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant5a.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=1:1:0&result_id=199393" class="gnavsm">Manual</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=2:0:0&result_id=199393" class="gnavsm">Status</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=3:1:0&result_id=199393" class="gnavsm">Reg Pass</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=4:1:0&result_id=199393" class="gnavsm">Edit</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=5:0:0&result_id=199393" class="gnavsm">Views</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=6:0:0&result_id=199393" class="gnavsm">Cores</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=7:0:0&result_id=199393" class="gnavsm">PR Verifications</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+  </tr>
+</table>
+<!-- 3rd ROW END-->
+
+
+<!-- 4rd ROW STARTS-->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+
+<!-- LEFT WINDOW STARTS -->
+
+    <td width="160 pixels" valign="top" rowspan="8"> 
+<!-- $VAR1 = 0;
+ -->
+
+      <!--
+ Debug page left frame. 
+Page: /httpd/htdocs/ti/webapp/dr/debug_dr/reg_debug/leftframe.mhtml
+-->
+
+<!--
+ Function to get all the dr owners
+-->
+
+
+
+
+<table width="120" border="0" cellspacing="0" cellpadding="0">
+	  
+  <tr align="left" valign="top"> 
+
+    <td width="1" bgcolor="#999999"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td width="5">&nbsp;</td>
+    <td background="/ti/webapp/dr/image/gra_home_verdot_sm.jpg" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td colspan="3"> 
+
+    <table width="120" border="0" cellspacing="0" cellpadding="0">
+
+      <tr align="left"> 
+        <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Loop through the titles in Left Frame -->
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md_1.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:0:0&result_id=199393" class="nav"> All Debug </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:1:0&result_id=199393" class="nav"> All PR </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:2:0&result_id=199393" class="nav"> My Pending </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:3:0&result_id=199393" class="nav"> My Completed </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:4:0&result_id=199393" class="nav"> My PR </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+      <tr align="left"> 
+        <td width="1" valign="top" class="home-left-nav-dark"></td>
+
+         <form name="new_owner_debug_page" type=post action="/ti/webapp/dr/debug_dr/index.mhtml">
+        
+          <td valign="center" class="home-left-nav-dark">
+           <select name=owner size="1" >
+               <option value="ALL">debug-owner</option>
+                   <option value=ALL selected>ALL</option>
+                   <option value=NONE>NONE</option>
+                   <option value=anveshr>anveshr</option>
+                   <option value=archn>archn</option>
+                   <option value=aswinb>aswinb</option>
+                   <option value=kalain>kalain</option>
+                   <option value=kandanki>kandanki</option>
+                   <option value=karthir>karthir</option>
+                   <option value=mohamedya>mohamedya</option>
+                   <option value=mshubha>mshubha</option>
+          </select>
+        </td>
+
+
+        <td valign="center" class="home-left-nav-dark">
+          <input type=hidden name=mode value="0:5:0">
+          <input type=hidden name=result_id value="199393">
+          <input type=image border="0" name="submit" 
+            src="/ti/webapp/dr/image/btn_global_goarrow_sm1.GIF" width="18" height="26"/>
+        </td>
+</form>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="1" valign="top" class="home-left-nav-dark"></td>
+
+         <form name="new_owner_debug_page" type=post action="/ti/webapp/dr/debug_dr/index.mhtml">
+          <td valign="center" class="home-left-nav-dark">
+           <input type="text" name=alias maxlength="40" value="" placeholder="ldap alias" style="width:100%;border-radius:3px;padding:2px 5px;" />
+          </td>
+
+          <td valign="center" class="home-left-nav-dark">
+           <input type=hidden name=mode value="0:5:0">
+           <input type=hidden name=result_id value="199393">
+           <input type=image border="0" name="submit" src="/ti/webapp/dr/image/btn_global_goarrow_sm1.GIF" width="18" height="26"/>
+          </td>
+         </form>
+      </tr>
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td colspan="3" valign="top" class="td-white-background" ><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+      <tr align="left"> 
+        <td colspan="3" valign="top" class="td-white-background" ><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+    </table>
+
+    </td>
+
+    <td background="/ti/webapp/dr/image/gra_home_verdot_sm.jpg" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td width="13">&nbsp;</td>
+    <td bgcolor="#999999" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+  </tr>
+
+
+  <tr align="left" valign="top"> 
+    <td width="1" bgcolor="#999999"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td colspan="7" bgcolor="#999999"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td bgcolor="#999999" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+  </tr>
+
+</table>
+
+
+
+
+
+   
+
+
+<p id=p1 align=center><a href="/ti/webapp/dr/main_dr/index.mhtml">DR Main Page </a></p>
+<p id=p1 align=center><a href="http://systest.juniper.net/twiki/bin/view/Main/WebHome" target="_blank">Systest Home </a></p>
+<p id=p1 align=center><a href="http://systest.juniper.net/twiki/bin/view/Main/TI" target="_blank">TI Home </a> </p>
+
+    </td>
+<!-- LEFT WINDOW ENDS-->
+
+
+<!-- RIGHT WINDOW STARTS-->
+    <td valign="top">
+        
+
+<table width="120" border="0" cellspacing="0" cellpadding="0">
+
+    
+
+<!-- 3rd ROW START-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td></td></tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+
+
+
+
+    <td width="5" valign="top" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant5b.GIF"></td>
+    <td>
+      <div align="center">
+        <a href="index.mhtml?mode=0:0:0&owner=nidanaz&result_id=199393" class="gnavsm">Script</a>
+      </div>
+    </td>
+    <td width="11" valign="top" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant5a.gif"></td>
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=0:0:1&owner=nidanaz&result_id=199393" class="gnavsm">TestBed/Domain</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=0:0:2&owner=nidanaz&result_id=199393" class="gnavsm">Reg Exit</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=0:0:3&owner=nidanaz&result_id=199393" class="gnavsm">DR Suggest</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+  </tr>
+</table>
+
+
+<!-- 3rd ROW END-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:20px">
+<tr>
+<td><a href='#' onclick='rpr_call();' style="margin-top:10px;margin-left:12px">RPR</a></td>
+</tr>
+</table>
+<script type='text/javascript'>
+  function rpr_call(){
+window.open("https://systest.juniper.net/ti/webapp/dr/debug_dr/reg_debug/rpr_info.mhtml?result_id=199393","_blank","toolbar=yes, scrollbars=yes,resizable=yes,width=400,height=350");
+}
+</script>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!-- 
+/*
+ * Function to sync DR to FusionV2 
+ */
+
+-->
+
+
+
+<br>Total time taken for DR Sync : 4 secs <br><!--
+/*
+ * /dr/debug_dr/reg_debug/reg_debug.mhtml 
+ */
+-->
+
+<!-- 
+/*
+ * Function to get all the debug info for a debug owner.
+ * Return of this function is some stats info and debug info.
+ *
+ *
+ */
+-->
+
+
+<!-- 
+/*
+ * Function to get the manual test count
+ */
+
+-->
+
+
+
+          <script language="javascript" type="text/javascript"> 
+              function confirmHighlighting(){
+                var confirmResult = confirm("This Operation contacts GNATS for realtime data and may take a little"+
+                    "longer to highlight the pending scripts associated with the Open PRs. Are you sure you would like"+
+                    "to continue?");
+                if(confirmResult == true){
+                    var current_url = location.href;
+                    current_url = current_url+"&highlightOpenPrs=true";
+                    location.replace(current_url);
+                }else{
+                  return false;
+                }
+              }
+          </script>
+
+  <div style="width:1100px;" id="debug_script_lists_div">
+      <input type="button" id="debugOpenPrButton" style="float:right;display:none;" value="Debug Open PRs"
+      onclick="debugOpenPrs();">
+      <button id="highlightButton" style="float:right;" type="button" onclick="confirmHighlighting();">Highlight Open PRs</button>
+  </div>
+
+    <!-- DISPLAY STATUS -->
+    <script type="text/javascript">
+
+function rm(id,harness_type) {
+    console.log(harness_type);
+    var all_reg_id = new Array();
+    all_reg_id = id.split(/\s+/);
+    var len = all_reg_id.length;
+
+    for (var i=0; i < len; i++) {
+      var link = "http://systest.juniper.net/rmv2/edp/"+all_reg_id[i];
+      if(harness_type.indexOf("fusion") != -1){
+        link = "https://inception.juniper.net/fusion/v2#submission_id="+all_reg_id[i];
+      }
+      window.open(link);
+    }
+
+    return true;
+}
+
+
+</script>
+
+
+<!-- 
+/*
+ * Function to get the pr count
+ */
+
+-->
+
+
+
+
+
+<p id=p3>Debug view: <font color=blue>ALL</font></p>
+
+<!-- START DISPLAY THE STATUS TABLE -->
+
+<table id=table1 border=1 cellpadding=1 cellspacing=0 >
+ <tr> 
+  <td id=td5>JUNOS</td>
+  <td id=td5>REG FAIL</td>
+  <td id=td5>DEBUG PASS</td>
+  <td id=td5>SW-FAIL</td>
+  <td id=td5>HW-ENV</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>OTHER</td>
+  <td id=td5>TOOLS</td>
+  <td id=td5>PENDING</td>
+ </tr>
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2><input id=p15 type=button value="18.2X75-D40_T_OPUS_CLOUD" onclick="rm('2567468 2574775 2580658 2580644 2580668 2584512','fusionv2')"></td>
+  <td id=td1>53</td>
+  <td id=td1>48</td>
+  <td id=td1>5</td>
+  <td id=td1>0</td>
+  <td id=td1>48</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td3>0</td>
+ </tr>
+
+
+
+ 
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>TOTAL</td>
+  <td id=td4>53</td>
+  <td id=td4>48</td>
+  <td id=td4>5</td>
+  <td id=td4>0</td>
+  <td id=td4>48</td>
+  <td id=td4>0</td>
+  <td id=td4>0</td>
+  <td id=td3>0</td>
+ </tr>
+</table>
+
+
+<p id=p1> 
+ Script Failures (Total / Pending): 
+    <font color=black>53 / 0</font>, 
+ PR Count: 
+    <font color=black>3</font>, 
+ Manual Test (Total / Pending): 
+    <font color=black>0 / 0</font>
+
+</p><br>
+
+
+
+
+
+<table id=table1 border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>OWNER</td>
+  <td id=td5>REG FAIL</td>
+  <td id=td5>DEBUG PASS</td>
+  <td id=td5>SW-FAIL</td>
+  <td id=td5>HW-ENV</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>OTHER</td>
+  <td id=td5>TOOLS</td>
+
+
+  <td id=td5>PENDING</td>
+ </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2></td>
+  <td id=td1>0</td>
+  <td id=td1>28</td>
+  <td id=td1>2</td>
+  <td id=td1>0</td>
+  <td id=td1>28</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>anveshr</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>archn</td>
+  <td id=td1>0</td>
+  <td id=td1>5</td>
+  <td id=td1>2</td>
+  <td id=td1>0</td>
+  <td id=td1>5</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>kalain</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>kandanki</td>
+  <td id=td1>0</td>
+  <td id=td1>2</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>2</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>karthir</td>
+  <td id=td1>0</td>
+  <td id=td1>3</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>3</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>mohamedya</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>mshubha</td>
+  <td id=td1>0</td>
+  <td id=td1>7</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>7</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>TOTAL</td>
+  <td id=td4>0</td>
+  <td id=td4>48</td>
+  <td id=td4>5</td>
+  <td id=td4>0</td>
+  <td id=td4>48</td>
+  <td id=td4>0</td>
+  <td id=td4>0</td>
+
+
+  <td id=td3>0</td>
+ </tr>
+</table>
+<br><br>
+
+
+<!-- END   DISPLAY THE STATUS TABLE -->
+
+
+
+
+
+
+
+
+
+        <!-- DISPLAY PENDING -->
+        
+<script>
+  function changeURL(){
+    var url=location.href;
+    if(url.search("highlight") != -1){
+      var mod_url = url.replace("&highlightOpenPrs=true",'');
+      window.history.pushState("","",mod_url);
+    }
+  }
+</script>
+
+<body onLoad="changeURL()">
+<script type="text/javascript" src="/ti/webapp/dr/shared/wz_tooltip.js"></script>
+<script type="text/javascript" language="javascript">
+if (!document.location.origin) //IE hack
+   document.location.origin = document.location.protocol+"//"+document.location.host;
+
+function copy(text2copy) {
+  if (window.clipboardData) {
+    window.clipboardData.setData("Text",text2copy);
+  } else {
+    var flashcopier = 'flashcopier';
+    if(!document.getElementById(flashcopier)) {
+      var divholder = document.createElement('div');
+      divholder.id = flashcopier;
+      document.body.appendChild(divholder);
+    }
+    document.getElementById(flashcopier).innerHTML = '';
+    var divinfo = '<embed src="/ti/webapp/dr/debug_dr/reg_debug/_clipboard.swf" FlashVars="clipboard='+escape(text2copy)+'" width="0" height="0" type="application/x-shockwave-flash"></embed>';
+    document.getElementById(flashcopier).innerHTML = divinfo;
+  }
+}
+   var request = null;
+
+   function createRequest() {
+     try {
+       request = new XMLHttpRequest();
+     } catch (trymicrosoft) {
+       try {
+         request = new ActiveXObject("Msxml2.XMLHTTP");
+       } catch (othermicrosoft) {
+         try {
+           request = new ActiveXObject("Microsoft.XMLHTTP");
+         } catch (failed) {
+           request = null;
+         }
+       }
+     }
+
+     if (request == null)
+       Tip("Error creating request object!");
+   }
+
+function GetFailInfo(test_exec_id,exitcode) {
+    if ( exitcode == "FAIL" ||  exitcode == "LINK_FAIL" ) {
+    createRequest();
+    //var url = document.location.origin + '/cgi-bin/dr/GetFailInfo.cgi?test_exec_id=' + test_exec_id ;
+    var url = document.location.origin + '/ti/webapp/dr/debug_dr/infolink/GetFailInfo.mhtml?test_exec_id='+test_exec_id;
+    Tip("wait for it");
+    request.open("GET", url, true);
+    request.onreadystatechange = updatePage;
+    request.send(null);
+} else {
+    Tip("This shows info only for FAIL or LINK_FAIL");
+}
+}
+function GetTbInfo(test_id) {
+     createRequest();
+    //var url = document.location.origin + '/cgi-bin/dr/GetTbInfo.cgi?test_id=' + test_id;
+    var url = document.location.origin + '/ti/webapp/dr/debug_dr/infolink/GetTbInfo.mhtml?test_id=' + test_id;
+    Tip("wait for it");
+     request.open("GET", url, true);
+     request.onreadystatechange = updatePage;
+     request.send(null);
+}
+function GetTimeInfo(test_id) {
+    createRequest();
+    //var url = document.location.origin + '/cgi-bin/dr/GetTimeInfo.cgi?test_id=' + test_id;
+    var url = document.location.origin + '/cgi-bin/dr/GetTimeInfo.cgi?test_id=' + test_id;
+    Tip("wait for it");
+    request.open("GET", url, true);
+    request.onreadystatechange = updatePage;
+    request.send(null);
+}
+  function updatePage() {
+    if (request.readyState == 4) {
+        var resp = request.responseText;
+        Tip(resp);
+    }
+  }
+
+</script>
+
+<!-- START DISPLAY PENDING -->
+
+
+
+
+
+<p id=p2> Zero scripts left for debugging.  </p>
+
+</body>
+<!-- END   DISPLAY PENDING -->
+
+
+
+
+
+
+
+
+
+    <!-- DISPLAY COMPLETED -->
+    <link rel="stylesheet" type="text/css" href="/ti/webapp/dr/shared/activerenderer.css">
+<script type="text/javascript" src="/ti/webapp/dr/shared/activerenderer.js"></script>
+
+
+
+
+<!-- START DISPLAY COMPLETED -->
+ <p id=p4>--------------------------------------------------------------------------------------------------------------------------------------------- </p>
+
+
+
+ 
+
+
+<br> <p id=p2> Debug completed script list: <font color=black>18.2X75-D40_T_OPUS_CLOUD</font> </p>
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black></font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=199393&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_J132_RLI20898_vlanrange_igmpsnooping_1.pl_77788_Default</td>
+  <td>vlanrange_igmpsnooping_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2567468/49348436/attempt_1/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2567468/49348436/attempt_1/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td>SW-REPRODUCIBLE-PR</td>
+  <td>ksawant</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "#66FF66"> O <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1402739 target=DISPLAY_PR>1402739 </a>[closed]</br></td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6802083 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6802083_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6802083_2')" onmouseout="nodeLow ('p6802083_2')">C</span>
+    </div>
+    <div id=p6802083_2 class=collapsed>
+        <span class=text><b>PR 1402739</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_RSVP_TE_MIB.pl_78364_Default</td>
+  <td>Opus_RSVP_TE_MIB.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2567468/49348515/attempt_1/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2567468/49348515&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>ksawant</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6802113 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6802113_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6802113_2')" onmouseout="nodeLow ('p6802113_2')">C</span>
+    </div>
+    <div id=p6802113_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_J132_RLI20898_vlanrange_igmpsnooping.pl_77789_Default</td>
+  <td>Opus_J132_RLI20898_vlanrange_igmpsnooping.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2567468/49348437/attempt_3/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2567468/49348437&result_id=199393 target=LOG>FAIL</a> </td>
+  <td>SW-REPRODUCIBLE-PR</td>
+  <td>aswinb</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "#66FF66"> O <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1402739 target=DISPLAY_PR>1402739 </a>[closed]</br></td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6802088 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6802088_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6802088_2')" onmouseout="nodeLow ('p6802088_2')">C</span>
+    </div>
+    <div id=p6802088_2 class=collapsed>
+        <span class=text><b>Pr 1402739</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_J132_rfc2922_mib_1.pl_77706_Default</td>
+  <td>Opus_J132_rfc2922_mib_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2567468/49348422/attempt_1/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2567468/49348422&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>ksawant</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6802059 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6802059_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6802059_2')" onmouseout="nodeLow ('p6802059_2')">C</span>
+    </div>
+    <div id=p6802059_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_dot1x_basic_1.pl_77531_Default</td>
+  <td>Opus_dot1x_basic_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2567468/49348383/attempt_1/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2567468/49348383&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>apottipati</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6802037 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6802037_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6802037_2')" onmouseout="nodeLow ('p6802037_2')">C</span>
+    </div>
+    <div id=p6802037_2 class=collapsed>
+        <span class=text><b>pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_dot1x_basic_1_2.pl_77530_Default</td>
+  <td>Opus_dot1x_basic_1_2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2580644/49814686/attempt_1/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2580644/49814686&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-NOT-FLAKY</td>
+  <td>apottipati</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6812008 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6812008_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6812008_2')" onmouseout="nodeLow ('p6812008_2')">C</span>
+    </div>
+    <div id=p6812008_2 class=collapsed>
+        <span class=text><b>pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_dot1x_basic_1_1.pl_77529_Default</td>
+  <td>Opus_dot1x_basic_1_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2567468/49348381/attempt_1/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2567468/49348381&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>apottipati</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6802060 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6802060_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6802060_2')" onmouseout="nodeLow ('p6802060_2')">C</span>
+    </div>
+    <div id=p6802060_2 class=collapsed>
+        <span class=text><b>pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_J132_RLI17541_MAC_LIMITING.pl_77771_Default</td>
+  <td>Opus_J132_RLI17541_MAC_LIMITING.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2567468/49348429/attempt_3/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2567468/49348429&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>aswinb</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6802138 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6802138_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6802138_2')" onmouseout="nodeLow ('p6802138_2')">C</span>
+    </div>
+    <div id=p6802138_2 class=collapsed>
+        <span class=text><b>pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_J132_RLI18446_JDHCP_Server_2.pl_77787_Default</td>
+  <td>jdhcp_server_2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2580644/49814741/attempt_1/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2580644/49814741&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>aswinb</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6811997 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6811997_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6811997_2')" onmouseout="nodeLow ('p6811997_2')">C</span>
+    </div>
+    <div id=p6811997_2 class=collapsed>
+        <span class=text><b>pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_ospf_stub_vlan.pl_78240_Default</td>
+  <td>Opus_ospf_stub_vlan.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2584512/49915223/attempt_2/script-exec/&result_id=199393 target=LOG>FILE_NOT_FOUND</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2584512/49915223&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>ksawant</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6815727 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6815727_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6815727_2')" onmouseout="nodeLow ('p6815727_2')">C</span>
+    </div>
+    <div id=p6815727_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_J141_20341_Vxlan_Full_2a.pl_77298_Default</td>
+  <td>Opus_J141_20341_Vxlan_Full_2a.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2584512/49915191/attempt_3/script-exec/&result_id=199393 target=LOG>SPIRENT_CONNECT_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2584512/49915191&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>skollipara</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6815726 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6815726_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6815726_2')" onmouseout="nodeLow ('p6815726_2')">C</span>
+    </div>
+    <div id=p6815726_2 class=collapsed>
+        <span class=text><b></b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_J141_20341_Vxlan_Full_2.pl_77868_Default</td>
+  <td>Opus_J141_20341_Vxlan_Full_2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2584512/49915213/attempt_5/script-exec/&result_id=199393 target=LOG>SPIRENT_CONNECT_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2584512/49915213&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>skollipara</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6815724 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6815724_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6815724_2')" onmouseout="nodeLow ('p6815724_2')">C</span>
+    </div>
+    <div id=p6815724_2 class=collapsed>
+        <span class=text><b></b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_J132_RLI17390_rmon_history_sanity.pl_77712_Default</td>
+  <td>Opus_J132_RLI17390_rmon_history_sanity.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2584512/49915206/attempt_3/script-exec/&result_id=199393 target=LOG>SPIRENT_CONNECT_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2584512/49915206&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>skollipara</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6815721 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6815721_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6815721_2')" onmouseout="nodeLow ('p6815721_2')">C</span>
+    </div>
+    <div id=p6815721_2 class=collapsed>
+        <span class=text><b></b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_J141_26067_Static_Vxlan_Part-2.pl_77918_Default</td>
+  <td>Opus_J141_26067_Static_Vxlan_Part-2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2584512/49915219/attempt_3/script-exec/&result_id=199393 target=LOG>SPIRENT_CONNECT_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2584512/49915219&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>skollipara</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6815720 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6815720_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6815720_2')" onmouseout="nodeLow ('p6815720_2')">C</span>
+    </div>
+    <div id=p6815720_2 class=collapsed>
+        <span class=text><b></b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_J141_21363_PVLAN_negativetest_2.pl_77904_Default</td>
+  <td>Opus_J141_21363_PVLAN_negativetest_2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2584512/49915215/attempt_2/script-exec/&result_id=199393 target=LOG>SPIRENT_CONNECT_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2584512/49915215&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>skollipara</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6815718 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6815718_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6815718_2')" onmouseout="nodeLow ('p6815718_2')">C</span>
+    </div>
+    <div id=p6815718_2 class=collapsed>
+        <span class=text><b></b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_J141_21363_PVLAN_negativetest.pl_77905_Default</td>
+  <td>Opus_J141_21363_PVLAN_negativetest.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2584512/49915216/attempt_2/script-exec/&result_id=199393 target=LOG>SPIRENT_CONNECT_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2584512/49915216&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>skollipara</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6815716 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6815716_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6815716_2')" onmouseout="nodeLow ('p6815716_2')">C</span>
+    </div>
+    <div id=p6815716_2 class=collapsed>
+        <span class=text><b></b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_J132_RLI17541_static_mac_1.pl_77772_Default</td>
+  <td>static_mac_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2584512/49915209/attempt_2/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2584512/49915209&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>apottipati</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6815714 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6815714_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6815714_2')" onmouseout="nodeLow ('p6815714_2')">C</span>
+    </div>
+    <div id=p6815714_2 class=collapsed>
+        <span class=text><b>pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_J152_23760_UDF.pl_77320_Default</td>
+  <td>Opus_J152_23760_UDF.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2584512/49915193/attempt_4/script-exec/&result_id=199393 target=LOG>SPIRENT_CONNECT_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2584512/49915193&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>skollipara</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6815713 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6815713_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6815713_2')" onmouseout="nodeLow ('p6815713_2')">C</span>
+    </div>
+    <div id=p6815713_2 class=collapsed>
+        <span class=text><b></b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_J152_23760_UDF_HA.pl_77319_Default</td>
+  <td>Opus_J152_23760_UDF_HA.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2584512/49915192/attempt_4/script-exec/&result_id=199393 target=LOG>SPIRENT_CONNECT_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2584512/49915192&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>skollipara</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6815711 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6815711_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6815711_2')" onmouseout="nodeLow ('p6815711_2')">C</span>
+    </div>
+    <div id=p6815711_2 class=collapsed>
+        <span class=text><b></b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_J122_15959_FBF_advanced_1.pl_77668_Default</td>
+  <td>Opus_J122_15959_FBF_advanced_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2580644/49814730/attempt_1/script-exec/&result_id=199393 target=LOG>CONNECT_LOST</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2580644/49814730&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-NOT-FLAKY</td>
+  <td>aswinb</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6812028 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6812028_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6812028_2')" onmouseout="nodeLow ('p6812028_2')">C</span>
+    </div>
+    <div id=p6812028_2 class=collapsed>
+        <span class=text><b>pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_isis_tag_multi_inst.pl_77598_Default</td>
+  <td>Opus_isis_tag_multi_inst.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2574775/49678643/attempt_4/script-exec/&result_id=199393 target=LOG>LINK_FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2574775/49678643&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-NOT-FLAKY</td>
+  <td>aswinb</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6812038 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6812038_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6812038_2')" onmouseout="nodeLow ('p6812038_2')">C</span>
+    </div>
+    <div id=p6812038_2 class=collapsed>
+        <span class=text><b>pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_bgpmib_mib.pl_77459_Default</td>
+  <td>Opus_bgpmib_mib.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2580644/49814698/attempt_2/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2580644/49814698&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>aswinb</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6811980 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6811980_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6811980_2')" onmouseout="nodeLow ('p6811980_2')">C</span>
+    </div>
+    <div id=p6811980_2 class=collapsed>
+        <span class=text><b>pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_J132_RLI17541_IR.pl_77767_Default</td>
+  <td>Opus_J132_RLI17541_IR.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2574775/49678594/attempt_3/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2574775/49678594&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>skollipara</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6812036 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6812036_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6812036_2')" onmouseout="nodeLow ('p6812036_2')">C</span>
+    </div>
+    <div id=p6812036_2 class=collapsed>
+        <span class=text><b>using opus</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_J141_21363_PVLAN_stabilitytest.pl_77906_Default</td>
+  <td>Opus_J141_21363_PVLAN_stabilitytest.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2580658/49814903/attempt_1/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2580658/49814903&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>ksawant</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6812025 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6812025_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6812025_2')" onmouseout="nodeLow ('p6812025_2')">C</span>
+    </div>
+    <div id=p6812025_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_J141_28134_PR_978385.pl_77919_Default</td>
+  <td>Opus_J141_28134_PR_978385.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2580644/49814709/attempt_1/script-exec/&result_id=199393 target=LOG>ABORT</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2580644/49814709&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>aswinb</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6812014 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6812014_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6812014_2')" onmouseout="nodeLow ('p6812014_2')">C</span>
+    </div>
+    <div id=p6812014_2 class=collapsed>
+        <span class=text><b>pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_mpls_auto_bw_4_1.pl_78190_Default</td>
+  <td>Opus_mpls_auto_bw_4_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2580668/49815198/attempt_1/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2580668/49815198&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>ksawant</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6812003 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6812003_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6812003_2')" onmouseout="nodeLow ('p6812003_2')">C</span>
+    </div>
+    <div id=p6812003_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_J141_20570_ERPS_3.pl_77878_Default</td>
+  <td>Opus_J141_20570_ERPS_3.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2574775/49678622/attempt_6/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2574775/49678622&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>aswinb</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6811973 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6811973_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6811973_2')" onmouseout="nodeLow ('p6811973_2')">C</span>
+    </div>
+    <div id=p6811973_2 class=collapsed>
+        <span class=text><b>pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_bsr.pl_77503_Default</td>
+  <td>Opus_bsr.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2567468/49348371/attempt_6/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2567468/49348371&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>apottipati</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6803590 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6803590_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6803590_2')" onmouseout="nodeLow ('p6803590_2')">C</span>
+    </div>
+    <div id=p6803590_2 class=collapsed>
+        <span class=text><b>pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_J141_21149_MPLS_ECMP_On_LSR_10G.pl_77895_Default</td>
+  <td>Opus_J141_21149_MPLS_ECMP_On_LSR_10G.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2567468/49348451/attempt_1/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2567468/49348451&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>aswinb</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6802071 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6802071_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6802071_2')" onmouseout="nodeLow ('p6802071_2')">C</span>
+    </div>
+    <div id=p6802071_2 class=collapsed>
+        <span class=text><b>pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>132_RLI_20140_opus_reboot.robot_94686_Default</td>
+  <td>132_RLI_20140_opus_reboot.robot</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2567468/49348603/attempt_1/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2567468/49348603&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>aswinb</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6802042 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6802042_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6802042_2')" onmouseout="nodeLow ('p6802042_2')">C</span>
+    </div>
+    <div id=p6802042_2 class=collapsed>
+        <span class=text><b>pass</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>anveshr</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=199393&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_172_RLI25863_QFX_EXACT_NAME.pl_81154_Default</td>
+  <td>Opus_172_RLI25863_QFX_EXACT_NAME.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2567468/49348588/attempt_1/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2567468/49348588&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>aswinb</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6802062 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6802062_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6802062_2')" onmouseout="nodeLow ('p6802062_2')">C</span>
+    </div>
+    <div id=p6802062_2 class=collapsed>
+        <span class=text><b>pass</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>archn</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=199393&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_172_RLI_32966_DREND_2.pl_80799_Default</td>
+  <td>Opus_172_RLI_32966_DREND_2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2567468/49348582/attempt_1/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2567468/49348582/attempt_1/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td>SW-REPRODUCIBLE-PR</td>
+  <td>ksawant</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "#66FFFF"> O <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1406900 target=DISPLAY_PR>1406900 </a>[assigned]</br></td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6802041 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6802041_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6802041_2')" onmouseout="nodeLow ('p6802041_2')">C</span>
+    </div>
+    <div id=p6802041_2 class=collapsed>
+        <span class=text><b>PR 1406900 </b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_172_RLI_32966_DREND.pl_66031_Default</td>
+  <td>Opus_172_RLI_32966_DREND.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2567468/49348580/attempt_1/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2567468/49348580/attempt_1/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td>SW-REPRODUCIBLE-PR</td>
+  <td>skollipara</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "#66FFFF"> O <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1406900 target=DISPLAY_PR>1406900 </a>[assigned]</br></td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6802089 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6802089_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6802089_2')" onmouseout="nodeLow ('p6802089_2')">C</span>
+    </div>
+    <div id=p6802089_2 class=collapsed>
+        <span class=text><b>pr 1406900</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_J132_RLI18481_dot1x_advanced_1.pl_80155_Default</td>
+  <td>Opus_J132_RLI18481_dot1x_advanced_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2574775/49678633/attempt_1/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2574775/49678633&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>apottipati</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6811977 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6811977_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6811977_2')" onmouseout="nodeLow ('p6811977_2')">C</span>
+    </div>
+    <div id=p6811977_2 class=collapsed>
+        <span class=text><b>pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_RLI_31921_ecmp.pl_80655_Default</td>
+  <td>Opus_RLI_31921_ecmp.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2567468/49348577/attempt_3/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2567468/49348577&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>ksawant</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6802107 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6802107_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6802107_2')" onmouseout="nodeLow ('p6802107_2')">C</span>
+    </div>
+    <div id=p6802107_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_oftestOpus.pl_80194_Default</td>
+  <td>Opus_oftestOpus.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2584512/49915239/attempt_2/script-exec/&result_id=199393 target=LOG>ABORT</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2584512/49915239&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>apottipati</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6815728 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6815728_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6815728_2')" onmouseout="nodeLow ('p6815728_2')">C</span>
+    </div>
+    <div id=p6815728_2 class=collapsed>
+        <span class=text><b>pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_J141_26067_Static_Vxlan_Part-1_2.pl_80168_Default</td>
+  <td>Opus_J141_26067_Static_Vxlan_Part-1_2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2584512/49915238/attempt_2/script-exec/&result_id=199393 target=LOG>SPIRENT_CONNECT_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2584512/49915238&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>skollipara</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6815725 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6815725_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6815725_2')" onmouseout="nodeLow ('p6815725_2')">C</span>
+    </div>
+    <div id=p6815725_2 class=collapsed>
+        <span class=text><b></b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_oftestOpus2.pl_80195_Default</td>
+  <td>Opus_oftestOpus2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2584512/49915240/attempt_3/script-exec/&result_id=199393 target=LOG>ABORT</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2584512/49915240&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>ksawant</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6815723 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6815723_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6815723_2')" onmouseout="nodeLow ('p6815723_2')">C</span>
+    </div>
+    <div id=p6815723_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>kalain</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=199393&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_J114_RLI15714_MPLS_IPV6_part3.pl_80658_Default</td>
+  <td>mpls_ipv6_part3.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2584512/49915243/attempt_2/script-exec/&result_id=199393 target=LOG>SCRIPT_START_FAILURE</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2584512/49915243&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>ksawant</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6815717 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6815717_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6815717_2')" onmouseout="nodeLow ('p6815717_2')">C</span>
+    </div>
+    <div id=p6815717_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>kandanki</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=199393&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_dot1x_advanced_1_1.pl_80111_Default</td>
+  <td>Opus_dot1x_advanced_1_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2580668/49815215/attempt_1/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2580668/49815215/attempt_1/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td>SW-REPRODUCIBLE-PR</td>
+  <td>ksawant</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "#66FFFF"> O <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1234703 target=DISPLAY_PR>1234703 </a>[ready-to-commit]</br></td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6811999 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6811999_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6811999_2')" onmouseout="nodeLow ('p6811999_2')">C</span>
+    </div>
+    <div id=p6811999_2 class=collapsed>
+        <span class=text><b>PR 1234703</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_173_RLI_32342_Opus_TVP_host_deamon.pl_68259_Default</td>
+  <td>Opus_173_RLI_32342_Opus_TVP_host_deamon.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2567468/49348586/attempt_1/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2567468/49348586&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>apottipati</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6802100 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6802100_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6802100_2')" onmouseout="nodeLow ('p6802100_2')">C</span>
+    </div>
+    <div id=p6802100_2 class=collapsed>
+        <span class=text><b>pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_173_RLI_32342_Opus_TVP_HostOS1.pl_68257_Default</td>
+  <td>Opus_173_RLI_32342_Opus_TVP_HostOS1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2567468/49348585/attempt_1/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2567468/49348585&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>apottipati</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6802046 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6802046_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6802046_2')" onmouseout="nodeLow ('p6802046_2')">C</span>
+    </div>
+    <div id=p6802046_2 class=collapsed>
+        <span class=text><b>pass</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>karthir</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=199393&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_RLI26098_DHCP_Relay_SeparateVRF_VTAG_1.pl_80059_Default</td>
+  <td>Opus_RLI26098_DHCP_Relay_SeparateVRF_VTAG_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2567468/49348539/attempt_2/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2567468/49348539&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>apottipati</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6802132 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6802132_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6802132_2')" onmouseout="nodeLow ('p6802132_2')">C</span>
+    </div>
+    <div id=p6802132_2 class=collapsed>
+        <span class=text><b>pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_vrrp_func.pl_80011_Default</td>
+  <td>Opus_vrrp_func.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2567468/49348533/attempt_11/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2567468/49348533&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>aswinb</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6803593 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6803593_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6803593_2')" onmouseout="nodeLow ('p6803593_2')">C</span>
+    </div>
+    <div id=p6803593_2 class=collapsed>
+        <span class=text><b>pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_vrrp_func_1.pl_80012_Default</td>
+  <td>Opus_vrrp_func_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2567468/49348534/attempt_12/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2567468/49348534&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>aswinb</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6803588 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6803588_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6803588_2')" onmouseout="nodeLow ('p6803588_2')">C</span>
+    </div>
+    <div id=p6803588_2 class=collapsed>
+        <span class=text><b>pass</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>mohamedya</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=199393&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+
+  <td>171_RLI_31848_BGP_TE_1.pl_77295_Default</td>
+  <td>171_RLI_31848_BGP_TE_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2580668/49815211/attempt_1/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2580668/49815211&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>skollipara</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6811984 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6811984_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6811984_2')" onmouseout="nodeLow ('p6811984_2')">C</span>
+    </div>
+    <div id=p6811984_2 class=collapsed>
+        <span class=text><b>using bedrock</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Script Owner: <font color=black>mshubha</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>  
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:0&result_id=199393&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_J132_RLI18481_dacl_policer.pl_80110_Default</td>
+  <td>Opus_J132_RLI18481_dacl_policer.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2567468/49348545/attempt_1/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2567468/49348545&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>skollipara</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6802095 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6802095_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6802095_2')" onmouseout="nodeLow ('p6802095_2')">C</span>
+    </div>
+    <div id=p6802095_2 class=collapsed>
+        <span class=text><b>using bedrock</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_RLI26929_DHCP_Smart_Relay_002.pl_80122_Default</td>
+  <td>dhcp_smart_relay_002.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2567468/49348555/attempt_1/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2567468/49348555&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>aswinb</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6802068 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6802068_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6802068_2')" onmouseout="nodeLow ('p6802068_2')">C</span>
+    </div>
+    <div id=p6802068_2 class=collapsed>
+        <span class=text><b>pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_RLI_24901_Drop_counters_1.pl_80229_Default</td>
+  <td>Opus_RLI_24901_Drop_counters_1.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2584512/49915241/attempt_3/script-exec/&result_id=199393 target=LOG>SPIRENT_CONNECT_ERROR</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2584512/49915241&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>skollipara</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6815722 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6815722_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6815722_2')" onmouseout="nodeLow ('p6815722_2')">C</span>
+    </div>
+    <div id=p6815722_2 class=collapsed>
+        <span class=text><b>using opus-sup-vc</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_rip_gracefulrestart_irb.pl_80067_Default</td>
+  <td>Opus_rip_gracefulrestart_irb.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2584512/49915232/attempt_2/script-exec/&result_id=199393 target=LOG>INIT_FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2584512/49915232&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>ksawant</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6815719 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6815719_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6815719_2')" onmouseout="nodeLow ('p6815719_2')">C</span>
+    </div>
+    <div id=p6815719_2 class=collapsed>
+        <span class=text><b>PASS</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_isis_lsdb_purge_mixed_vc.pl_79999_Default</td>
+  <td>Opus_isis_lsdb_purge_mixed_vc.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2567468/49348530/attempt_1/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2567468/49348530&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>aswinb</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6802137 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6802137_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6802137_2')" onmouseout="nodeLow ('p6802137_2')">C</span>
+    </div>
+    <div id=p6802137_2 class=collapsed>
+        <span class=text><b>pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_RLI_24901_Drop_counters.pl_80003_Default</td>
+  <td>Opus_RLI_24901_Drop_counters.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2580644/49814723/attempt_1/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2580644/49814723&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>aswinb</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6812033 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6812033_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6812033_2')" onmouseout="nodeLow ('p6812033_2')">C</span>
+    </div>
+    <div id=p6812033_2 class=collapsed>
+        <span class=text><b>pass</b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+
+  <td>Opus_RLI_24901_Drop_counters_2.pl_80137_Default</td>
+  <td>Opus_RLI_24901_Drop_counters_2.pl</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2018/Dec/SUB_2580644/49814727/attempt_1/script-exec/&result_id=199393 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2580644/49814727&result_id=199393 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>aswinb</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6812009 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6812009_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6812009_2')" onmouseout="nodeLow ('p6812009_2')">C</span>
+    </div>
+    <div id=p6812009_2 class=collapsed>
+        <span class=text><b>pass</b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+    
+</br>
+<table border=0>
+
+
+     <td bgcolor=#FD5757>&nbsp;</td>
+     <td> PR_open  &nbsp; </td>
+     <td bgcolor=#66FF66>&nbsp;</td>
+     <td> PR_closed &nbsp; </td>
+     <td bgcolor=#66FFFF>&nbsp;</td>
+     <td> PR_other &nbsp; </td>
+
+   </tr>
+</table>
+
+
+<!-- END   DISPLAY COMPLETED -->
+
+
+
+
+
+
+
+
+</table> 
+<br><br><br><br><br><br><br><br>
+
+
+
+ 
+
+
+</table>
+
+
+
+    </td>
+<!-- RIGHT WINDOW ENDS-->
+
+
+
+  </tr>
+</table>
+
+<!-- 4rd ROW ENDS-->
+
+
+
+
+
+
+
+
+
+
+
+<br />
+<hr noshade size="1" width="100%" />
+ 
+</body>
+</html>
+
+
+
+
+
+
+

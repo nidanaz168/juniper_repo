@@ -1,0 +1,7 @@
+<chart caption='Testbed Usage' xAxisName='Test Beds' yAxisName='Hours' showValues='1' numberPrefix='' useRoundEdges='1' legendBorderAlpha='100' showBorder='0' bgColor='FFFFFF,FFFFFF' ><categories><category label='bng-ce-bras3' /><category label='hcl-ce3' /><category label='bng-ce-bras2' /><category label='hcl-ce2' /><category label='ce-rtb' /><category label='hcl-ce1' /></categories><dataset seriesName='Usgae Hours'><set label='bng-ce-bras3' value='4.05'  />
+<set label='hcl-ce3' value='2.03'  />
+<set label='bng-ce-bras2' value='1.9'  />
+<set label='hcl-ce2' value='1.1'  />
+<set label='ce-rtb' value='0.63'  />
+<set label='hcl-ce1' value='0.51'  />
+</dataset></chart>

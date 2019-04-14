@@ -1,0 +1,12 @@
+BD=2019-07-11
+select result_id from er_regression_result where (name= 'RPT_REG_ACX_19.3DCB_ZPR' and parent_result_id='0')
+213855 
+213855 
+wget -o log -O out.24504 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=5:7:0&result_id=213855" 
+fullfile
+
+hit = wget -o log -O prs.24504 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=0:1:0&result_id=213855" 
+wget -o log -O out.24504 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" http://www-systest.juniper.net/ti/webapp/dr/debug_dr/view/gen_tl9000_report.mhtml?result_id=213855&trans=remove
+delete from script_pr where release='19.3DCB-CI' and function='ACX'prstr is  
+/var/www/html/CI_Report/data/19-3DCB-CI_table
+Done

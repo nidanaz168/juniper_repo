@@ -1,0 +1,98 @@
+<chart caption="ROUTING VIRTUAL Progress" subcaption="" xAxisName='Days' yAxisName="PRs" showvalues="1" areaOverColumns="0" formatNumberScale='0' decimalPrecision='0' showvalues='0' numdivlines='3' numVdivlines='0' rotateNames='1' bgColor='FFFFFF, 6DA5DB'  bgAlpha='100' baseFontColor='000000' canvasBgAlpha='0' canvasBorderColor='FFFFFF' divLineColor='FFFFFF' divLineAlpha='100' numVDivlines='10' vDivLineisDashed='1' showAlternateVGridColor='1' lineColor='BBDA00' toolTipBgColor='FFFFFF' toolTipBorderColor='406181' alternateHGridAlpha='5' showSum='1' showAboutMenuItem='1' aboutMenuItemLabel='view blocker details' aboutMenuItemLink='JavaScript:getblocker("asathreya");' scrollToEnd='1' plotFillRatio='100' legendPosition='DOWN'>
+
+        <categories >
+			<category label="2019-04-02"/> 
+<category label="2019-04-03"/> 
+<category label="2019-04-04"/> 
+<category label="2019-04-05"/> 
+<category label="2019-04-06"/> 
+<category label="2019-04-07"/> 
+<category label="2019-04-08"/> 
+<category label="2019-04-09"/> 
+<category label="2019-04-10"/> 
+<category label="2019-04-11"/> 
+<category label="2019-04-12"/> 
+<category label="2019-04-13"/> 
+<category label="2019-04-14"/> 
+
+        </categories>
+		<dataset seriesName="executed" color="#0404B4" anchorRadius='2' anchorBgColor='0404B4' anchorBorderColor='0404B4' anchorBorderThickness='2'>
+<set value="99.88" />
+<set value="108.47" />
+<set value="108.92" />
+<set value="0" />
+<set value="109.85" />
+<set value="109.76" />
+<set value="109.5" />
+<set value="109.5" />
+<set value="108.87" />
+<set value="108.87" />
+<set value="100" />
+<set value="100" />
+<set value="100" />
+</dataset><dataset seriesName="overallpass" color="#0B6121" anchorRadius='2' anchorBgColor='0B6121' anchorBorderColor='0B6121' anchorBorderThickness='2'>
+<set value="96.42" />
+<set value="96.9" />
+<set value="96.73" />
+<set value="0" />
+<set value="97.66" />
+<set value="97.81" />
+<set value="98.08" />
+<set value="98.11" />
+<set value="98.71" />
+<set value="98.74" />
+<set value="99.04" />
+<set value="99.04" />
+<set value="99.04" />
+</dataset><dataset seriesName="overallfail" color="#8A0808" anchorRadius='2' anchorBgColor='8A0808' anchorBorderColor='8A0808' anchorBorderThickness='2'>
+<set value="0.22" />
+<set value="0.26" />
+<set value="0.48" />
+<set value="0" />
+<set value="0.84" />
+<set value="0.86" />
+<set value="0.86" />
+<set value="0.9" />
+<set value="0.92" />
+<set value="0.92" />
+<set value="0.96" />
+<set value="0.96" />
+<set value="0.96" />
+</dataset><dataset seriesName="tobedebugged" color="#610B4B" anchorRadius='2' anchorBgColor='610B4B' anchorBorderColor='610B4B' anchorBorderThickness='2'>
+<set value="3.37" />
+<set value="2.84" />
+<set value="2.58" />
+<set value="0" />
+<set value="0" />
+<set value="1.13" />
+<set value="1.02" />
+<set value="0.4" />
+<set value="0.37" />
+<set value="0.34" />
+<set value="0" />
+<set value="0" />
+<set value="0" />
+</dataset>
+
+<styles>
+                <definition>
+                        <style name='XScaleAnim' type='ANIMATION' duration='0.5' start='0' param='_xScale' />
+                        <style name='YScaleAnim' type='ANIMATION' duration='0.5' start='0' param='_yscale' />
+                        <style name='XAnim' type='ANIMATION' duration='0.5' start='0' param='_yscale' />
+                        <style name='AlphaAnim' type='ANIMATION' duration='0.5' start='0' param='_alpha' />
+						<style type="font" name="CaptionFont" bold="1" size='2'/>
+						<style type="font" font="Segoe Ui" name="CaptionFont" bold="1" size='13'/>
+                </definition>
+
+                <application>
+                        <apply toObject='CANVAS' styles='XScaleAnim, YScaleAnim,AlphaAnim' />
+                        <apply toObject='DIVLINES' styles='XScaleAnim,AlphaAnim' />
+                        <apply toObject='VDIVLINES' styles='YScaleAnim,AlphaAnim' />
+                        <apply toObject='HGRID' styles='YScaleAnim,AlphaAnim' />
+						<apply toObject="DATALABELS" styles="CaptionFont" />
+						<apply toObject="LEGEND" styles="CaptionFont" />
+						<apply toObject="DATAVALUES" styles="CaptionFont" />
+                </application>
+
+        </styles>
+</chart>

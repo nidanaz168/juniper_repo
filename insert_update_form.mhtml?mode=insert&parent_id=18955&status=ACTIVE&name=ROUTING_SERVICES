@@ -1,0 +1,165 @@
+
+
+
+<html><body>
+
+<p align="center"><font face="Verdana, Arial, Helvetica, sans-serif"><b>System error</b></font></p>
+<table border="0" cellspacing="0" cellpadding="1">
+ <tr>
+  <td nowrap="nowrap" align="left" valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2"><b>error:</b>&nbsp;</font></td>
+  <td align="left" valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2">DBIx::Abstract (execute): ERROR:  duplicate key value violates unique constraint &quot;suite_parent_id_key&quot;<br>DETAIL:  Key (parent_id, name)=(18955, ROUTING_SERVICES) already exists.<br>    SQL: INSERT INTO suite ( status, name, parent_id) VALUES (?, ?, ?)<br>STACK TRACE<br> at /volume/labtools/lib/DBIx/Abstract.pm line 358<br>	DBIx::Abstract::__mod_query('DBIx::Abstract=HASH(0x2b98840)', 'INSERT INTO suite ( status, name, parent_id) VALUES (?, ?, ?)', 'ACTIVE', 'ROUTING_SERVICES', 18955) called at /volume/labtools/lib/DBIx/Abstract.pm line 596<br>	DBIx::Abstract::insert('DBIx::Abstract=HASH(0x2b98840)', 'suite', 'HASH(0xb2d68960)') called at /opt/SysTest/Entity.pm line 625<br>	SysTest::Entity::insert('SysTest::Entity::Suite=HASH(0xb4878b40)', 'DATA', 'HASH(0xb27f6200)', 'GET_ID', 1) called at /var/www/html/entity/suite/insert_update_form.mhtml line 64<br>	HTML::Mason::Commands::__ANON__('status', 'ACTIVE', 'mode', 'insert', 'name', 'ROUTING_SERVICES', 'parent_id', 18955) called at /usr/local/share/perl5/HTML/Mason/Component.pm line 135<br>	HTML::Mason::Component::run('HTML::Mason::Component::FileBased=HASH(0xb5b01388)', 'status', 'ACTIVE', 'mode', 'insert', 'name', 'ROUTING_SERVICES', 'parent_id', 18955, ...) called at /usr/local/share/perl5/HTML/Mason/Request.pm line 1297<br>	eval {...} called at /usr/local/share/perl5/HTML/Mason/Request.pm line 1292<br>	HTML::Mason::Request::comp(undef, undef, undef, 'status', 'ACTIVE', 'mode', 'insert', 'name', 'ROUTING_SERVICES', ...) called at /usr/local/share/perl5/HTML/Mason/Request.pm line 481<br>	eval {...} called at /usr/local/share/perl5/HTML/Mason/Request.pm line 481<br>	eval {...} called at /usr/local/share/perl5/HTML/Mason/Request.pm line 433<br>	HTML::Mason::Request::exec('HTML::Mason::Request::ApacheHandler=HASH(0xb5b01b08)') called at /usr/local/share/perl5/HTML/Mason/ApacheHandler.pm line 168<br>	HTML::Mason::Request::ApacheHandler::exec('HTML::Mason::Request::ApacheHandler=HASH(0xb5b01b08)') called at /usr/local/share/perl5/HTML/Mason/ApacheHandler.pm line 825<br>	HTML::Mason::ApacheHandler::handle_request('HTML::Mason::ApacheHandler=HASH(0x2aaae30)', 'Apache2::RequestRec=SCALAR(0xb5841b50)') called at (eval 34) line 8<br>	HTML::Mason::ApacheHandler::handler('HTML::Mason::ApacheHandler', 'Apache2::RequestRec=SCALAR(0xb5841b50)') called at -e line 0<br>	eval {...} called at -e line 0<br><br></font></td>
+ </tr>
+ <tr>
+  <td nowrap="nowrap" align="left" valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2"><b>context:</b>&nbsp;</font></td>
+  <td align="left" valign="top" nowrap="nowrap"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2">
+   <table border="0" cellpadding="0" cellspacing="0">
+
+    <tr>
+     <td nowrap="nowrap" align="left" valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2"><b>...</b>&nbsp;</font></td>
+     <td align="left" valign="top" nowrap="nowrap"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2"></font></td>
+    </tr>
+
+    <tr>
+     <td nowrap="nowrap" align="left" valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2"><b>337:</b>&nbsp;</font></td>
+     <td align="left" valign="top" nowrap="nowrap"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2">        Carp::longmess().&quot;\n&quot;;</font></td>
+    </tr>
+
+    <tr>
+     <td nowrap="nowrap" align="left" valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2"><b>338:</b>&nbsp;</font></td>
+     <td align="left" valign="top" nowrap="nowrap"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2">  }</font></td>
+    </tr>
+
+    <tr>
+     <td nowrap="nowrap" align="left" valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2"><b>339:</b>&nbsp;</font></td>
+     <td align="left" valign="top" nowrap="nowrap"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2">  if (!$sth-&gt;execute(@bind_values)) {</font></td>
+    </tr>
+
+    <tr>
+     <td nowrap="nowrap" align="left" valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2"><b>340:</b>&nbsp;</font></td>
+     <td align="left" valign="top" nowrap="nowrap"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2">    eval('use Carp;');</font></td>
+    </tr>
+
+    <tr>
+     <td nowrap="nowrap" align="left" valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2"><b>341:</b>&nbsp;</font></td>
+     <td align="left" valign="top" nowrap="nowrap"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2"><font color=red>    die 'DBIx::Abstract (execute): '.$sth-&gt;errstr.&quot;\n&quot;.</font></font></td>
+    </tr>
+
+    <tr>
+     <td nowrap="nowrap" align="left" valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2"><b>342:</b>&nbsp;</font></td>
+     <td align="left" valign="top" nowrap="nowrap"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2">        &quot;    SQL: $sql\n&quot;.</font></td>
+    </tr>
+
+    <tr>
+     <td nowrap="nowrap" align="left" valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2"><b>343:</b>&nbsp;</font></td>
+     <td align="left" valign="top" nowrap="nowrap"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2">        &quot;STACK TRACE\n&quot;.</font></td>
+    </tr>
+
+    <tr>
+     <td nowrap="nowrap" align="left" valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2"><b>344:</b>&nbsp;</font></td>
+     <td align="left" valign="top" nowrap="nowrap"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2">        Carp::longmess().&quot;\n&quot;;</font></td>
+    </tr>
+
+    <tr>
+     <td nowrap="nowrap" align="left" valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2"><b>345:</b>&nbsp;</font></td>
+     <td align="left" valign="top" nowrap="nowrap"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2">  }</font></td>
+    </tr>
+
+    <tr>
+     <td nowrap="nowrap" align="left" valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2"><b>...</b>&nbsp;</font></td>
+     <td align="left" valign="top" nowrap="nowrap"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2"></font></td>
+    </tr>
+
+
+   </table>
+  </font></td>
+ </tr>
+ <tr>
+  <td align="left" valign="top" nowrap="nowrap"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2"><b>code stack:</b>&nbsp;</font></td>
+  <td align="left" valign="top" nowrap="nowrap"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2">
+        /volume/labtools/lib/DBIx/Abstract.pm:341<br>
+        /volume/labtools/lib/DBIx/Abstract.pm:358<br>
+        /volume/labtools/lib/DBIx/Abstract.pm:596<br>
+        /opt/SysTest/Entity.pm:625<br>
+        /var/www/html/entity/suite/insert_update_form.mhtml:64<br>
+  </font></td>
+ </tr>
+</table>
+
+<a href="#raw">raw error</a><br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<a name="raw"></a>
+
+<pre>DBIx::Abstract (execute): ERROR:  duplicate key value violates unique constraint &quot;suite_parent_id_key&quot;
+DETAIL:  Key (parent_id, name)=(18955, ROUTING_SERVICES) already exists.
+    SQL: INSERT INTO suite ( status, name, parent_id) VALUES (?, ?, ?)
+STACK TRACE
+ at /volume/labtools/lib/DBIx/Abstract.pm line 358
+DBIx::Abstract::__mod_query('DBIx::Abstract=HASH(0x2b98840)', 'INSERT INTO suite ( status, name, parent_id) VALUES (?, ?, ?)', 'ACTIVE', 'ROUTING_SERVICES', 18955) called at /volume/labtools/lib/DBIx/Abstract.pm line 596
+DBIx::Abstract::insert('DBIx::Abstract=HASH(0x2b98840)', 'suite', 'HASH(0xb2d68960)') called at /opt/SysTest/Entity.pm line 625
+SysTest::Entity::insert('SysTest::Entity::Suite=HASH(0xb4878b40)', 'DATA', 'HASH(0xb27f6200)', 'GET_ID', 1) called at /var/www/html/entity/suite/insert_update_form.mhtml line 64
+HTML::Mason::Commands::__ANON__('status', 'ACTIVE', 'mode', 'insert', 'name', 'ROUTING_SERVICES', 'parent_id', 18955) called at /usr/local/share/perl5/HTML/Mason/Component.pm line 135
+HTML::Mason::Component::run('HTML::Mason::Component::FileBased=HASH(0xb5b01388)', 'status', 'ACTIVE', 'mode', 'insert', 'name', 'ROUTING_SERVICES', 'parent_id', 18955, ...) called at /usr/local/share/perl5/HTML/Mason/Request.pm line 1297
+eval {...} called at /usr/local/share/perl5/HTML/Mason/Request.pm line 1292
+HTML::Mason::Request::comp(undef, undef, undef, 'status', 'ACTIVE', 'mode', 'insert', 'name', 'ROUTING_SERVICES', ...) called at /usr/local/share/perl5/HTML/Mason/Request.pm line 481
+eval {...} called at /usr/local/share/perl5/HTML/Mason/Request.pm line 481
+eval {...} called at /usr/local/share/perl5/HTML/Mason/Request.pm line 433
+HTML::Mason::Request::exec('HTML::Mason::Request::ApacheHandler=HASH(0xb5b01b08)') called at /usr/local/share/perl5/HTML/Mason/ApacheHandler.pm line 168
+HTML::Mason::Request::ApacheHandler::exec('HTML::Mason::Request::ApacheHandler=HASH(0xb5b01b08)') called at /usr/local/share/perl5/HTML/Mason/ApacheHandler.pm line 825
+HTML::Mason::ApacheHandler::handle_request('HTML::Mason::ApacheHandler=HASH(0x2aaae30)', 'Apache2::RequestRec=SCALAR(0xb5841b50)') called at (eval 34) line 8
+HTML::Mason::ApacheHandler::handler('HTML::Mason::ApacheHandler', 'Apache2::RequestRec=SCALAR(0xb5841b50)') called at -e line 0
+eval {...} called at -e line 0
+
+
+
+Trace begun at /usr/local/share/perl5/HTML/Mason/Exceptions.pm line 125
+HTML::Mason::Exceptions::rethrow_exception('DBIx::Abstract (execute): ERROR:  duplicate key value violates unique constraint &quot;suite_parent_id_key&quot;^JDETAIL:  Key (parent_id, name)=(18955, ROUTING_SERVICES) already exists.^J    SQL: INSERT INTO suite ( status, name, parent_id) VALUES (?, ?, ?)^JSTACK TRACE^J at /volume/labtools/lib/DBIx/Abstract.pm line 358^J^IDBIx::Abstract::__mod_query(\'DBIx::Abstract=HASH(0x2b98840)\', \'INSERT INTO suite ( status, name, parent_id) VALUES (?, ?, ?)\', \'ACTIVE\', \'ROUTING_SERVICES\', 18955) called at /volume/labtools/lib/DBIx/Abstract.pm line 596^J^IDBIx::Abstract::insert(\'DBIx::Abstract=HASH(0x2b98840)\', \'suite\', \'HASH(0xb2d68960)\') called at /opt/SysTest/Entity.pm line 625^J^ISysTest::Entity::insert(\'SysTest::Entity::Suite=HASH(0xb4878b40)\', \'DATA\', \'HASH(0xb27f6200)\', \'GET_ID\', 1) called at /var/www/html/entity/suite/insert_update_form.mhtml line 64^J^IHTML::Mason::Commands::__ANON__(\'status\', \'ACTIVE\', \'mode\', \'insert\', \'name\', \'ROUTING_SERVICES\', \'parent_id\', 18955) called at /usr/local/share/perl5/HTML/Mason/Component.pm line 135^J^IHTML::Mason::Component::run(\'HTML::Mason::Component::FileBased=HASH(0xb5b01388)\', \'status\', \'ACTIVE\', \'mode\', \'insert\', \'name\', \'ROUTING_SERVICES\', \'parent_id\', 18955, ...) called at /usr/local/share/perl5/HTML/Mason/Request.pm line 1297^J^Ieval {...} called at /usr/local/share/perl5/HTML/Mason/Request.pm line 1292^J^IHTML::Mason::Request::comp(undef, undef, undef, \'status\', \'ACTIVE\', \'mode\', \'insert\', \'name\', \'ROUTING_SERVICES\', ...) called at /usr/local/share/perl5/HTML/Mason/Request.pm line 481^J^Ieval {...} called at /usr/local/share/perl5/HTML/Mason/Request.pm line 481^J^Ieval {...} called at /usr/local/share/perl5/HTML/Mason/Request.pm line 433^J^IHTML::Mason::Request::exec(\'HTML::Mason::Request::ApacheHandler=HASH(0xb5b01b08)\') called at /usr/local/share/perl5/HTML/Mason/ApacheHandler.pm line 168^J^IHTML::Mason::Request::ApacheHandler::exec(\'HTML::Mason::Request::ApacheHandler=HASH(0xb5b01b08)\') called at /usr/local/share/perl5/HTML/Mason/ApacheHandler.pm line 825^J^IHTML::Mason::ApacheHandler::handle_request(\'HTML::Mason::ApacheHandler=HASH(0x2aaae30)\', \'Apache2::RequestRec=SCALAR(0xb5841b50)\') called at (eval 34) line 8^J^IHTML::Mason::ApacheHandler::handler(\'HTML::Mason::ApacheHandler\', \'Apache2::RequestRec=SCALAR(0xb5841b50)\') called at -e line 0^J^Ieval {...} called at -e line 0^J^J') called at /volume/labtools/lib/DBIx/Abstract.pm line 341
+DBIx::Abstract::__literal_query('DBIx::Abstract=HASH(0x2b98840)', 'INSERT INTO suite ( status, name, parent_id) VALUES (?, ?, ?)', 'ACTIVE', 'ROUTING_SERVICES', 18955) called at /volume/labtools/lib/DBIx/Abstract.pm line 358
+DBIx::Abstract::__mod_query('DBIx::Abstract=HASH(0x2b98840)', 'INSERT INTO suite ( status, name, parent_id) VALUES (?, ?, ?)', 'ACTIVE', 'ROUTING_SERVICES', 18955) called at /volume/labtools/lib/DBIx/Abstract.pm line 596
+DBIx::Abstract::insert('DBIx::Abstract=HASH(0x2b98840)', 'suite', 'HASH(0xb2d68960)') called at /opt/SysTest/Entity.pm line 625
+SysTest::Entity::insert('SysTest::Entity::Suite=HASH(0xb4878b40)', 'DATA', 'HASH(0xb27f6200)', 'GET_ID', 1) called at /var/www/html/entity/suite/insert_update_form.mhtml line 64
+HTML::Mason::Commands::__ANON__('status', 'ACTIVE', 'mode', 'insert', 'name', 'ROUTING_SERVICES', 'parent_id', 18955) called at /usr/local/share/perl5/HTML/Mason/Component.pm line 135
+HTML::Mason::Component::run('HTML::Mason::Component::FileBased=HASH(0xb5b01388)', 'status', 'ACTIVE', 'mode', 'insert', 'name', 'ROUTING_SERVICES', 'parent_id', 18955) called at /usr/local/share/perl5/HTML/Mason/Request.pm line 1297
+eval {...} at /usr/local/share/perl5/HTML/Mason/Request.pm line 1292
+HTML::Mason::Request::comp(undef, undef, undef, 'status', 'ACTIVE', 'mode', 'insert', 'name', 'ROUTING_SERVICES', 'parent_id', 18955) called at /usr/local/share/perl5/HTML/Mason/Request.pm line 481
+eval {...} at /usr/local/share/perl5/HTML/Mason/Request.pm line 481
+eval {...} at /usr/local/share/perl5/HTML/Mason/Request.pm line 433
+HTML::Mason::Request::exec('HTML::Mason::Request::ApacheHandler=HASH(0xb5b01b08)') called at /usr/local/share/perl5/HTML/Mason/ApacheHandler.pm line 168
+HTML::Mason::Request::ApacheHandler::exec('HTML::Mason::Request::ApacheHandler=HASH(0xb5b01b08)') called at /usr/local/share/perl5/HTML/Mason/ApacheHandler.pm line 825
+HTML::Mason::ApacheHandler::handle_request('HTML::Mason::ApacheHandler=HASH(0x2aaae30)', 'Apache2::RequestRec=SCALAR(0xb5841b50)') called at (eval 34) line 8
+HTML::Mason::ApacheHandler::handler('HTML::Mason::ApacheHandler', 'Apache2::RequestRec=SCALAR(0xb5841b50)') called at -e line 0
+eval {...} at -e line 0
+</pre>
+
+</body></html>

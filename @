@@ -1,0 +1,326 @@
+
+ var funct="create";
+var gbu = "psg-eabu";
+var syncflag = false;
+var gmenu =""; /* Varible holding the menu selected */
+var stack = [];
+var stack_index = -1;
+var stack_pointer=0;
+var stack_flag= 0;
+var rep_elem_cnt=0;
+var exportarr;
+var completedexport = [];
+var mgractive="";
+var myExportComponent;
+							 
+$(document).ready(function() {
+$("#main").tabs();  
+//$("#configinput").show();
+$("#report-sub").show();
+            $("#configinput").hide();
+            $("#display").show();
+$("#report-sub").tabs();  
+	$('#main').bind('tabsselect', function(event, ui) {
+        var str = String(ui.tab);
+        if(str.search(/config/i) >=0)
+        {
+			$("#configinput").show();
+			$("#report-sub").hide();
+			$("#display").hide();
+			$("#archive_data").hide();
+		}
+        if(str.search(/report_/i) >=0)
+        {
+			$("#report-sub").show();
+			$("#configinput").hide();
+			$("#display").show();
+			$("#archive_data").hide();
+		}
+		});
+	$('#createconfig').click(function() {
+		afunction = $('#function').val();	
+		release = $("#release").val();
+		script_planned = $("#scipt_planned").val();
+		dr_names = $("#dr_names").val();
+		planned_release = $("#planned_release").val();
+		active = $("#active").val();
+		url = "http://eabu-systest-db.juniper.net/Regression/report/libs/saveregression.php?release="+release+"&function="+afunction+"&script_planned="+script_planned+"&dr_names="+dr_names+"&planned_release="+planned_release+"&active="+active;
+		 $.ajax({
+    url:url,
+     async:false,
+    success:function(returnedContent){
+			alert("Updated");
+		}
+		});
+	});
+	$("#selrel").change(function() {
+			selrel = $("#selrel").val();
+			selfunct = $("#selfunct").val();
+		url = "http://eabu-systest-db.juniper.net/Regression/report/libs/getreleasevals.php?release="+selrel+"&function="+selfunct;
+		$.ajax({
+    url:url,
+     async:false,
+    success:function(returnedContent){
+		var arr = returnedContent.split("&");
+		$("#release").val(arr[0]);
+		$("#function").val(arr[1]);
+		$("#scipt_planned").val(arr[2]);
+		$("#dr_names").val(arr[3]);
+		$("#planned_release").val(arr[4]);
+		$("#active").val(arr[5]);
+        }
+        });
+	});
+	$("#selfunct").change(function() {
+			selrel = $("#selrel").val();
+			selfunct = $("#selfunct").val();
+		url = "http://eabu-systest-db.juniper.net/Regression/report/libs/getreleasevals.php?release="+selrel+"&function="+selfunct;
+		$.ajax({
+    url:url,
+     async:false,
+    success:function(returnedContent){
+		var arr = returnedContent.split("&");
+		$("#release").val(arr[0]);
+		$("#function").val(arr[1]);
+		$("#scipt_planned").val(arr[2]);
+		$("#dr_names").val(arr[3]);
+		$("#planned_release").val(arr[4]);
+		$("#active").val(arr[5]);
+        }
+        });
+	});
+	$('#report-sub').bind('tabsselect', function(event, ui) {
+        var str = String(ui.tab);
+		arr = str.split("#");
+		arr1 = arr[1].split("_");
+		getreleasereport(arr1[0]);
+    });
+	$("#selrelar").change(function() {
+			selrel = $("#selrelar").val();
+			actrel = selrel;
+			selrel=selrel.replace(/\./g,'-'); 
+			selrel = "archives_"+selrel;
+	getreleasereport(selrel);
+	});
+	$(".headerlink").live("click",function()
+	{
+			id =$(this).attr("id");
+			$(".selectedcol").each(function()
+			{
+				$(this).removeClass("selectedcol");
+			});
+			$(".col"+id).each(function()
+			{
+				$(this).addClass("selectedcol");
+			});
+			
+	});
+		
+});								
+function getreleasereport(rel)
+{
+	disablealltabs();
+	i = checkforarchive(rel);
+	if(i == 0)
+	{
+		$("#archives").addClass('selected-tab');
+		$("#archives").addClass("ui-state-active ui-tabs-selected");
+		//select the release in listbox
+		$("#selrelar option").each(function() {
+  this.selected = $(this).text() == actrel;
+});
+
+
+
+
+	}
+	else
+	{
+	$("#"+rel).addClass('selected-tab');
+	$("#"+rel).addClass("ui-state-active ui-tabs-selected");
+	}
+	if((rel.search(/archives/i) >=0) || (i == 0))
+	{
+		$("#configinput").hide();
+		arr = rel.split("_");
+		if(arr[1]) { rel = arr[1];}
+		alert(rel);
+		if((!rel) || (rel.search('/archives/') >=0 )) {alert("herh");rel = $("#selrelar").val();rel=rel.replace('/\./g',"-"); }
+		rel=rel.replace('/\./g',"-");
+		$("#archive_data").show();
+        $("#display").show();
+     $("#display").html("<center><h1>SUMMARY</h1><div id='regtab' ></div><div id='detailtab' ></div><div id='graphtab' ></div><div id='breaktab' ></div>");
+    url = "http://eabu-systest-db.juniper.net/Regression/report/libs/getreleasereport.php?release="+rel;
+        $.ajax({
+    url:url,
+     async:false,
+    success:function(returnedContent){
+        if(returnedContent.search(/<error>/i) >=0) { $("#regtab").html(returnedContent);;return;}
+        else
+        {
+                            $("#regtab").html(returnedContent);
+                            getdetailedreport(rel,"RBU");
+        }
+    }
+    });
+		return;
+	}
+		$("#archive_data").hide();
+		$("#display").show();
+	 $("#display").html("<center><h1>SUMMARY</h1><div id='regtab' ></div><div id='detailtab' ></div><div id='graphtab' ></div><div id='breaktab' ></div>");
+	url = "http://eabu-systest-db.juniper.net/Regression/report/libs/getreleasereport.php?release="+rel;
+        $.ajax({
+    url:url,
+     async:false,
+    success:function(returnedContent){
+		if(returnedContent.search(/<error>/i) >=0) { $("#regtab").html(returnedContent);;return;}
+		else
+		{
+							$("#regtab").html(returnedContent);
+							getdetailedreport(rel,"RBU");
+		}
+	}
+	});
+	//Details
+	//getdetailedreport(rel,"RBU");
+}
+function getdetailedreport(rel,func)
+{
+	//Details
+	url = "http://eabu-systest-db.juniper.net/Regression/report/libs/getdetailreport.php?release="+rel+"&function="+func;
+        $.ajax({
+    url:url,
+     async:false,
+	success:function(returnedContent){
+	$("#detailtab").html(returnedContent);
+	displaygraphs(rel,func);
+	}
+	});
+	url = "http://eabu-systest-db.juniper.net/Regression/report/libs/getbreakdown.php?release="+rel+"&function="+func;
+        $.ajax({
+    url:url,
+     async:false,
+	success:function(returnedContent){
+	$("#breaktab").html(returnedContent);
+	}
+	});
+}
+	
+function displaygraphs(rel,func)
+{
+	// Now Progress Data
+	blkid="mmxchart";
+    var blocker = getChartFromId(blkid);
+    if(blocker == null)
+    {
+        blocker = new FusionCharts("/fusion/FusionCharts_Website/FusionCharts_Website/Charts/ScrollLine2D.swf", blkid, "940", "540");
+    }
+    blocker.configure("ChartNoDataText", "Loading  Chart Please Wait");
+    blocker.render("graphtab");
+    $.ajax({
+    url:"http://eabu-systest-db.juniper.net/Regression/report/libs/getprogress.php?release="+rel+"&type="+func,
+     async:false,
+    success:function(returnedContent){
+        blocker.setXMLData(returnedContent);
+    }
+    });
+
+}
+function displayarchivegraphs(rel)
+{
+	blkid="arfirstpasschart";
+    var blocker = getChartFromId(blkid);
+    if(blocker == null)
+    {
+        blocker = new FusionCharts("/fusion/FusionCharts_Website/FusionCharts_Website/Charts/ScrollStackedColumn2D.swf", blkid, "440", "340");
+    }
+    blocker.configure("ChartNoDataText", "Loading  Chart Please Wait");
+    blocker.render("arfirstpass");
+    $.ajax({
+    url:"http://eabu-systest-db.juniper.net/Regression/report/libs/getchart.php?release="+rel+"&type=firstpass",
+     async:false,
+    success:function(returnedContent){
+        blocker.setXMLData(returnedContent);
+    }
+	});
+	blkid="aroverallchart";
+    var blocker = getChartFromId(blkid);
+    if(blocker == null)
+    {
+        blocker = new FusionCharts("/fusion/FusionCharts_Website/FusionCharts_Website/Charts/ScrollStackedColumn2D.swf", blkid, "440", "340");
+    }
+    blocker.configure("ChartNoDataText", "Loading  Chart Please Wait");
+    blocker.render("aroverall");
+    $.ajax({
+    url:"http://eabu-systest-db.juniper.net/Regression/report/libs/getchart.php?release="+rel+"&type=overall",
+     async:false,
+    success:function(returnedContent){
+        blocker.setXMLData(returnedContent);
+    }
+	});
+	// Now Progress Data
+	blkid="armmxchart";
+    var blocker = getChartFromId(blkid);
+    if(blocker == null)
+    {
+        blocker = new FusionCharts("/fusion/FusionCharts_Website/FusionCharts_Website/Charts/ScrollLine2D.swf", blkid, "440", "340");
+    }
+    blocker.configure("ChartNoDataText", "Loading  Chart Please Wait");
+    blocker.render("armmx");
+    $.ajax({
+    url:"http://eabu-systest-db.juniper.net/Regression/report/libs/getprogress.php?release="+rel+"&type=mmx",
+     async:false,
+    success:function(returnedContent){
+        blocker.setXMLData(returnedContent);
+    }
+    });
+blkid="arrpdchart";
+    var blocker = getChartFromId(blkid);
+    if(blocker == null)
+    {
+        blocker = new FusionCharts("/fusion/FusionCharts_Website/FusionCharts_Website/Charts/ScrollLine2D.swf", blkid, "440", "340");
+    }
+    blocker.configure("ChartNoDataText", "Loading  Chart Please Wait");
+    blocker.render("arrpd");
+    $.ajax({
+    url:"http://eabu-systest-db.juniper.net/Regression/report/libs/getprogress.php?release="+rel+"&type=rpd",
+     async:false,
+    success:function(returnedContent){
+        blocker.setXMLData(returnedContent);
+    }
+    });
+blkid="artxchart";
+    var blocker = getChartFromId(blkid);
+    if(blocker == null)
+    {
+        blocker = new FusionCharts("/fusion/FusionCharts_Website/FusionCharts_Website/Charts/ScrollLine2D.swf", blkid, "440", "340");
+    }
+    blocker.configure("ChartNoDataText", "Loading  Chart Please Wait");
+    blocker.render("artx");
+    $.ajax({
+    url:"http://eabu-systest-db.juniper.net/Regression/report/libs/getprogress.php?release="+rel+"&type=tx",
+     async:false,
+    success:function(returnedContent){
+        blocker.setXMLData(returnedContent);
+    }
+    });
+
+}
+function disablealltabs()
+{
+	$('.reptab').each(function () {
+		$(this).removeClass("ui-state-active ui-tabs-selected");
+		$(this).addClass("ui-state-default");
+	});
+}
+function checkforarchive(rel)
+{
+	found = 0;
+	$(".reptab").each(function()
+	{
+		id = $(this).attr("id");
+		if(rel.search(id) == 0) {found = 1;}
+	});
+	return found;
+}
+	

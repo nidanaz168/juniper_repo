@@ -1,0 +1,182 @@
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+Testbed Utilization by Regression.
+Regression ID: <% $regression_exec_id %>
+
+% my %hash, my %hash1;
+% my @arr, my %h;
+
+<table border=0 cellspacing=2 cellpadding=2>
+<tr BGCOLOR="#C0C0C0"><td>Testbed</td><td># of scenarios</td><td>Total Time</td><td>Scenarios</td></tr>
+% foreach my $tb (@testbed_stat) {
+% $bgcolor = ($bgcolor eq '#CCCCCC') ? '#FFFFFF' : '#CCCCCC';
+%  $hash{$tb->{testbed_name}}{pass} =0;
+%  $hash{$tb->{testbed_name}}{fail} =0;
+<tr bgcolor="<% $bgcolor %>">
+    <td valign="top"><% $tb->{testbed_name} %></td>
+    <td valign="top"><% $tb->{cnt} %></td>
+    <td valign="top" align="center"><% $runtime_hash{$tb->{testbed_name}} %> hours</td>
+    <td valign="top">
+        <table>
+% foreach my $se (@testbed_scenarios) {
+% next unless $se->{testbed_id} == $tb->{testbed_id};
+<tr><td><A HREF="/regressman/se_display.mhtml?se_id=<% $se->{scenario_exec_id} %>"><% $se->{scenario_name} %></A></td>
+    <td><% $se->{status} %></td>
+    <td><% $se->{pass} %>:<% $se->{fail} %></td>
+%  $hash{$tb->{testbed_name}}{pass} += $se->{pass}; 
+%  $hash{$tb->{testbed_name}}{fail} += $se->{fail}; 
+
+</tr>
+% }
+        </table>
+    </td>
+</tr>
+% }
+</table>
+
+
+% foreach my $tc (@testbed_errstat) {
+% $hash1{$tc->{name}}->{$tc->{exitcode}}=$tc->{count};
+% $h{$tc->{exitcode}}="";
+% }
+
+% @arr = sort keys %h; # Storing the type of error in an array eliminating duplicates
+% $bgcolor = '#CCCCCC';
+
+<h3> Summary of Testbed Execution</h3>
+<table border=2>
+<tr bgcolor="<% $bgcolor %>">
+<td>Testbed</td>
+<td>Total</td>
+<td>Pass</td>
+<td>Fail</td>
+<td>Pass %</td>
+<td>Fail %</td>
+<td>Run Time (Hour)</td>
+
+</tr>
+% my $total = 0;
+% foreach (keys %hash) {
+%   $bgcolor = ($bgcolor eq '#CCCCCC') ? '#FFFFFF' : '#CCCCCC';
+%   my $te_total = $hash{$_}{pass} + $hash{$_}{fail};
+%   my $script_pass_percent = ($te_total) ? sprintf("%.1f", (($hash{$_}{pass} / $te_total) * 100)) : "0.0";
+%   my $script_fail_percent = ($te_total) ? sprintf("%.1f", (($hash{$_}{fail} / $te_total) * 100)) : "0.0";
+    <tr bgcolor="<% $bgcolor %>">
+    <td><%$_%></td>
+    <td><%$hash{$_}{pass} + $hash{$_}{fail}%></td>
+    <td><%$hash{$_}{pass}%></td>
+    <td><%$hash{$_}{fail}%></td>
+    <td><%$script_pass_percent%></td>
+    <td><%$script_fail_percent%></td>
+    <td><%$runtime_hash{$_}%></td>
+% $total += $runtime_hash{$_};
+    </tr>
+% }
+<tr><td colspan=6>All<td><%$total%></td></tr>
+</table>
+
+<br><br>
+<b>Detailed Report</b>
+<br>
+
+% $bgcolor = '#CCCCCC';
+
+<table border=2 >
+<tr bgcolor="<% $bgcolor %>">
+<td> Testbed </td>
+% foreach (@arr) {
+    <td> <% $_ %> </td>
+% }
+<td> Total </td>
+</tr>
+
+% my %hash123=();
+% my $null_val;
+% foreach my $tb (keys %hash1) {
+%   $bgcolor = ($bgcolor eq '#CCCCCC') ? '#FFFFFF' : '#CCCCCC';
+    <tr bgcolor="<% $bgcolor %>">
+    <td> <% $tb %> </td>
+
+%my $total=0;
+%   foreach (sort @arr) {
+%     if (!defined($hash1{$tb}{$_})) { $hash1{$tb}{$_} =0;}
+      <td align="center"><A HREF="/regressman/script_display.mhtml?testbed=<%$tb%>&re_id=<%$regression_exec_id%>&ex_code=<% $_ %>" target="_blank"> <%  $hash1{$tb}{$_} %> </td>
+%     $total += $hash1{$tb}{$_};
+% $hash123{$_}{count} += $hash1{$tb}{$_}; 
+% $hash123{Z_TOTAL}{count} += $hash1{$tb}{$_};
+%   }
+<td align="center"><A HREF="/regressman/script_display.mhtml?testbed=<%$tb%>&re_id=<%$regression_exec_id%>&ex_code=<% $null_val %>" target="_blank"><%  $total %> </td>
+    </tr>
+% }
+
+<tr><td>All</td>
+% foreach (sort keys %hash123) {
+<td align="center"><A HREF="/regressman/script_display.mhtml?testbed=<%$null_val%>&re_id=<%$regression_exec_id%>&ex_code=<% $_ %>" target="_blank"> <% $hash123{$_}{count} %> </td>
+% }
+</tr>
+</table>
+
+</body></html>
+<%init>
+
+my $bgcolor="#CCCCCC";
+my $sql=qq!
+SELECT
+    testbed.testbed_id,
+    testbed.name              AS testbed_name,
+    count(testbed.testbed_id) AS cnt,
+    to_char(sum(finish - start),'HH24 "Hours" MI "Minutes"')       AS sumtime
+FROM
+    scenario_exec INNER JOIN testbed on (
+        scenario_exec.regression_exec_id = $regression_exec_id
+        AND scenario_exec.testbed_id = testbed.testbed_id)
+GROUP BY testbed.testbed_id,testbed_name
+ORDER BY sumtime desc!;
+my @testbed_stat = db_get_all_rows($sql);
+
+my @testbed_scenarios = db_get_all_rows("
+    SELECT
+        scenario_exec.scenario_exec_id,
+        scenario_exec.testbed_id,
+        scenario_exec.scenario_name,
+        scenario_exec.status,
+        scenario_exec.result_pass as pass,
+        (scenario_exec.result_fail + scenario_exec.result_abort + scenario_exec.result_quit + 
+        scenario_exec.result_unsupported + scenario_exec.result_noresult) as fail
+    FROM scenario_exec WHERE regression_exec_id=$regression_exec_id ORDER BY updated");
+
+my @run_time = db_get_all_rows ("
+    select testbed.name, sum(extract (epoch from test_exec.finish)-extract(epoch from test_exec.start))/3600 as runtime
+    from test_exec, scenario_exec, testbed
+    where
+    testbed.testbed_id=scenario_exec.testbed_id and
+    test_exec.scenario_exec_id=scenario_exec.scenario_exec_id and
+    test_exec.regression_exec_id=$regression_exec_id group by testbed.name
+    ");
+
+my %runtime_hash;
+foreach (@run_time) {
+  if($_->{'runtime'}) {
+    $runtime_hash{$_->{'name'}}=sprintf("%.2f",$_->{'runtime'});
+  } else {
+    $runtime_hash{$_->{'name'}}=0;
+  }
+}
+
+my @testbed_errstat = db_get_all_rows("
+    SELECT
+        testbed.name,test_exec.exitcode, count(*)
+    FROM testbed,scenario_exec,test_exec 
+    WHERE scenario_exec.scenario_exec_id=test_exec.scenario_exec_id and 
+         testbed.testbed_id=scenario_exec.testbed_id and test_exec.regression_exec_id=$regression_exec_id
+    GROUP BY testbed.name,test_exec.exitcode
+    ORDER BY testbed.name");
+
+</%init>
+<%args>
+$regression_exec_id
+</%args>

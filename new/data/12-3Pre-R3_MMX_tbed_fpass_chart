@@ -1,0 +1,24 @@
+<chart caption='First Pass' xAxisName='Test Beds' yAxisName='Pass %' showValues='1' numberPrefix='' useRoundEdges='1' legendBorderAlpha='100' showBorder='0' bgColor='FFFFFF,FFFFFF' ><categories><category label='hcl-atari' /><category label='csi-irtb2' /><category label='sw2' /><category label='sw7' /><category label='hcl-proto1' /><category label='sw3' /><category label='hcl-mcast3' /><category label='hcl-mpls' /><category label='rod-irtb3' /><category label='tahi-irtb' /><category label='hcl-proto3' /><category label='scale-vt2' /><category label='hcl-vpn' /><category label='hcl-issu1' /><category label='issu1-irtb' /><category label='vpls1-irtb' /><category label='irtb4' /><category label='scale-irtb' /><category label='hcl-proto4' /><category label='hcl-mx' /><category label='scale-vt1' /><category label='mpls2-irtb' /><category label='csi-irtb1' /></categories><dataset seriesName='First Pass %'><set label='hcl-atari' value='100.00'  />
+<set label='csi-irtb2' value='95.65'  />
+<set label='sw2' value='88.00'  />
+<set label='sw7' value='87.10'  />
+<set label='hcl-proto1' value='82.76'  />
+<set label='sw3' value='77.50'  />
+<set label='hcl-mcast3' value='77.34'  />
+<set label='hcl-mpls' value='75.00'  />
+<set label='rod-irtb3' value='75.00'  />
+<set label='tahi-irtb' value='74.86'  />
+<set label='hcl-proto3' value='72.15'  />
+<set label='scale-vt2' value='71.67'  />
+<set label='hcl-vpn' value='70.41'  />
+<set label='hcl-issu1' value='68.87'  />
+<set label='issu1-irtb' value='65.08'  />
+<set label='vpls1-irtb' value='58.97'  />
+<set label='irtb4' value='58.89'  />
+<set label='scale-irtb' value='58.33'  />
+<set label='hcl-proto4' value='53.21'  />
+<set label='hcl-mx' value='51.28'  />
+<set label='scale-vt1' value='50.00'  />
+<set label='mpls2-irtb' value='48.31'  />
+<set label='csi-irtb1' value='25.00'  />
+</dataset></chart>

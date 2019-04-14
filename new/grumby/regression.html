@@ -1,0 +1,238 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/b/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Gumby - A Flexible, Responsive CSS Framework - Powered by Sass</title>
+  <meta name="description" content="Create rapid and logical page layout and app prototypes with Gumby Framework, a flexible, responsive CSS framework, powered by Sass" />
+  <meta name="author" content="humans.txt">
+
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+
+  <!--Facebook Metadata /-->
+  <meta property="og:image" content="http://gumbyframework.com/facebook.jpg" />
+  <meta property="og:description" content="Create rapid and logical page layout and app prototypes with Gumby Framework, a flexible, responsive CSS framework, powered by Sass"/>
+
+  <meta property="og:title" content="Gumby - A Flexible, Responsive CSS Framework - Powered by Sass"/>
+
+  <!--Google+ Metadata /-->
+  <meta itemprop="name" content="Gumby - A Flexible, Responsive CSS Framework - Powered by Sass">
+  <meta itemprop="description" content="Create rapid and logical page layout and app prototypes with Gumby Framework, a flexible, responsive CSS framework, powered by Sass">
+  <meta itemprop="image" content="http://gumbyframework.com/facebook.jpg">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <!-- CSS: implied media=all -->
+  <!-- CSS concatenated and minified via ant build script-->
+  <!-- <link rel="stylesheet" href="css/minified.css"> -->
+
+  <!-- CSS imports non-minified for staging, minify before moving to production-->
+  <link rel="stylesheet" href="css/demo.css">
+  <link rel="stylesheet" href="css/pretify.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <!-- end CSS-->
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+  <script src="js/jquery-easing-1.3.pack.js"></script>
+  <script src="js/jquery-easing-compatibility.1.2.pack.js"></script>
+  <script src="js/libs/modernizr-2.6.2.min.js"></script>
+  <script src="js/coda-slider.1.1.1.pack.js"></script>
+  <script src="js/init.js"></script>
+
+
+<!-- for rooler -->
+<script>
+		var theInt = null;
+		var $crosslink, $navthumb;
+		var curclicked = 0;
+		
+		theInterval = function(cur){
+			clearInterval(theInt);
+			
+			if( typeof cur != 'undefined' )
+				curclicked = cur;
+			
+			$crosslink.removeClass("active-thumb");
+			$navthumb.eq(curclicked).parent().addClass("active-thumb");
+				$(".stripNav ul li a").eq(curclicked).trigger('click');
+			
+			theInt = setInterval(function() {
+				$crosslink.removeClass("active-thumb");
+				$navthumb.eq(curclicked).parent().addClass("active-thumb");
+				$(".stripNav ul li a").eq(curclicked).trigger('click');
+				curclicked++;
+				if( 6 == curclicked )
+					curclicked = 0;
+				
+			}, 3000);
+		};
+		
+		// DOM Ready
+		$(function() {
+			
+			$("#main-photo-slider").codaSlider();
+			
+			$navthumb = $(".nav-thumb");
+			$crosslink = $(".cross-link");
+			
+			$navthumb
+				.click(function() {
+					var $this = $(this);
+					theInterval($this.parent().attr('href').slice(1) - 1);
+					return false;
+				});
+			
+			theInterval();
+		});
+	</script>
+</head>
+
+</head>
+
+<style>
+  .btn,.drawer {margin-bottom:10px;}
+  .drawer { text-align: center; }
+  h1.lead { border-bottom: 1px dotted #ccc; margin-bottom: 30px; }
+  h4.lead {margin-bottom:10px;}
+  #icon_map ul li { font-size: 16px; }
+  .smallify { font-size: 13px; }
+  #icon_map ul {m argin-bottom: 25px; }
+  .modal h2, .modal .btn { margin: 5% 0 20px; }
+  .parallax { height: 300px; width: 100%; background: url(img/img_parallax_demo.jpg); }
+</style>
+
+<body>
+    <div class="row navbar pretty" id="nav1">
+    <!-- Toggle for mobile navigation, targeting the <ul> -->
+    <a class="toggle" gumby-trigger="#nav1 > .row > ul" href="#"><i class="icon-menu"></i></a>
+    <h1 class="four columns logo">
+    <a href="#">
+    <img src="img/rbu-regression.png" gumby-retina />
+    </a>
+    </h1>
+    <h1 class="two columns logo">
+    <a href="#">
+    <img src="img/heartbeat.png" gumby-retina />
+    </a>
+    </h1>
+    <ul class="eight columns">
+    <li><a href="#">Features</a></li>
+    <li>
+    <a href="#">Documentation</a>
+    <div class="dropdown">
+    <ul>
+    <li><a href="#">Regression Manager</a></li>
+    <li><a href="#">Regression Debug</a></li>
+    <li><a href="#">Test Profile Manager</a></li>
+    <li><a href="#">Regression Heat Map</a></li>
+    <li><a href="#">Regression Report</a></li>
+    <li><a href="#">Regression PRs</a></li>
+    <li><a href="#">Software Behaviour</a></li>
+    <li><a href="#">Testbed Usage</a></li>
+    </ul>
+    </div>
+	<li><a href="#">Help</a></li>
+    </li>
+    </ul>
+    </div>
+<div class="row">
+<div class="twelve columns" >
+<center><a href='#' id='showheader'><img src='/Regression/report/new/images/pulldown_arrow.png'</img></a></center>
+</div>
+</div>
+<div id='headerbox' class="example-grid grid";>
+	<div class="row">
+	<div class="twelve columns">
+	<div id="main-photo-slider" class="twelve columns panel gradientBoxesWithOuterShadowsslider">
+    <div class="panelContainer">
+    <div class="panel" title="Panel 1">
+
+                    <div class="wrapper">
+                        <blockquote>13.3IBFRS Regression run in progress</blockquote>
+                    </div>
+                </div>
+        <div class="panel" title="Panel 2">
+                    <div class="wrapper">
+                        <blockquote>12.3R5 Regression Debug is progress</blockquote>
+                    </div>
+                </div>
+		<div class="panel" title="Panel 3">
+                    <div class="wrapper">
+                        <blockquote>12.3R4 Run is bocked due to toxic build</blockquote>
+                    </div>
+                </div>
+		<div class="panel" title="Panel 4">
+                    <div class="wrapper">
+                        <blockquote>12.3R4 is blocked due to Blocker PRs</blockquote>
+                    </div>
+                </div>
+		<div class="panel" title="Panel 5">
+                    <div class="wrapper">
+                        <blockquote>Check links faile for altas-irtb</blockquote>
+                    </div>
+                </div>
+		<div class="panel" title="Panel 6">
+                    <div class="wrapper">
+                        <blockquote>12.3R6 Regression planned for the week of </blockquote>
+                    </div>
+                </div>
+        </div>
+    </div>
+	</div>
+	</div>
+<br>
+	
+  <div class="row" >
+    <div class="four columns">
+		<div class='gradientBoxesWithOuterShadows'><b><label class='indexboxheader'>Regression Manager</label></b><br><label class='indexboxcontent'>The Regression Running Engine That Satisfies All Your Regression Runs Needse</label><br><div class="pretty small primary btn"><a href="#">Launch</a></div><div class="pretty small secondary btn"><a href="#">Documentation</a></div></div>
+	</div>
+    <div class="four columns">
+		<div class='gradientBoxesWithOuterShadows'><label class='indexboxheader'>Regression Debug </label><br><label class='indexboxcontent'>When Regression Debuggin Comes This Is The Final Name</label><br><div class="pretty small primary btn"><a href="#">Launch</a></div><div class="pretty small secondary btn"><a href="#">Documentation</a></div></div>
+	</div>
+    <div class="four columns">
+		<div class='gradientBoxesWithOuterShadows'><label class='indexboxheader'>Test Profile Manager</label><br><div class="pretty small primary btn"><a href="#">Launch</a></div><div class="pretty small secondary btn"><a href="#">Documentation</a></div></div>
+    </div>
+	</div>
+<br>
+  <div class="row">
+    <div class="four columns">
+		<div class='gradientBoxesWithOuterShadows'><label class='indexboxheader'>Regression Heat Map</label><br><div class="pretty small primary btn"><a href="#">Launch</a></div><div class="pretty small secondary btn"><a href="#">Documentation</a></div></div>
+	</div>
+    <div class="four columns">
+		<div class='gradientBoxesWithOuterShadows'><label class='indexboxheader'>Regression Report</label><br><label class='indexboxcontent'>When Regression Debuggin Comes This Is The Final Name</label><br><div class="pretty small primary btn"><a href="#">Launch</a></div><div class="pretty small secondary btn"><a href="#">Documentation</a></div></div>
+	</div>
+    <div class="four columns">
+		<div class='gradientBoxesWithOuterShadows'><label class='indexboxheader'>Regression PRs</label><br><div class="pretty small primary btn"><a href="#">Launch</a></div><div class="pretty small secondary btn"><a href="#">Documentation</a></div></div>
+	</div>
+    </div>
+<br>
+	<div class="row">
+		<div class="four columns">
+        <div class='gradientBoxesWithOuterShadows'><label class='indexboxheader'>Software Behaviour</label><br><div class="pretty small primary btn"><a href="#">Launch</a></div><div class="pretty small secondary btn"><a href="#">Documentation</a></div></div>
+	</div>
+    <div class="four columns">
+		<div class='gradientBoxesWithOuterShadows'><label class='indexboxheader'>TestBed Usage</label><br><div class="pretty small primary btn"><a href="#">Launch</a></div><div class="pretty small secondary btn"><a href="#">Documentation</a></div></div>
+	</div>
+    </div>
+  </div>
+
+</body>
+</html>

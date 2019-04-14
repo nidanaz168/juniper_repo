@@ -1,0 +1,116 @@
+/*** Document ready function  executed at first *****/
+var respcontent;
+$(document).ready(function() {
+    $("#tabs").tabs();
+    $("#tabs1").tabs();
+		/*$("#ff").css("background-color","#F79F81");
+            $("#etrans").css("background-color","#F7D358");
+            $("#cfd").css("background-color","#58D3F7");
+            $("#cp").css("background-color","#F7819F");
+            $("#cs").css("background-color","#86B404");	*/
+			getpage("ff");
+	$("table").tablesorter({
+	sortList: [[0,1]]  
+	});
+    $('#tabs').bind('tabsselect', function(event, ui) {
+     // Objects available in the function context:
+    var str = String(ui.tab);
+    if(str.search(/ff/i) >=0)
+    {
+			$("#tabs1").show();
+            $("#ff").addClass("selected-tab");
+			//$("#selection").css("background-color","#F79F81");
+            $("#etrans").removeClass("selected-tab");
+            $("#cfd").removeClass("selected-tab");
+            $("#cp").removeClass("selected-tab");
+            $("#cs").removeClass("selected-tab");
+			getpage("ff");
+    }
+    if(str.search(/etrans/i) >=0)
+    {
+            $("#ff").removeClass("selected-tab");
+            $("#etrans").addClass("selected-tab");
+			//$("#selection").css("background-color","#F7D358");
+            $("#cfd").removeClass("selected-tab");
+            $("#cp").removeClass("selected-tab");
+            $("#cs").removeClass("selected-tab");
+			getpage("etrans");
+    }
+    if(str.search(/cfd/i) >=0)
+    {
+            $("#ff").removeClass("selected-tab");
+            $("#etrans").removeClass("selected-tab");
+            $("#cfd").addClass("selected-tab");
+			//$("#selection").css("background-color","#58D3F7");
+            $("#cp").removeClass("selected-tab");
+            $("#cs").removeClass("selected-tab");
+			getpage("cfd");
+    }
+    if(str.search(/cp/i) >=0)
+    {
+            $("#ff").removeClass("selected-tab");
+            $("#etrans").removeClass("selected-tab");
+            $("#cfd").removeClass("selected-tab");
+            $("#cp").addClass("selected-tab");
+			//$("#selection").css("background-color","#F7819F");
+            $("#cs").removeClass("selected-tab");
+    }
+    if(str.search(/cs/i) >=0)
+    {
+            $("#ff").removeClass("selected-tab");
+            $("#etrans").removeClass("selected-tab");
+            $("#cfd").removeClass("selected-tab");
+            $("#cp").removeClass("selected-tab");
+            $("#cs").addClass("selected-tab");
+			//$("#selection").css("background-color","#86B404");
+    }
+
+    });
+  });          
+function getpage(tab)
+{
+	var div;
+	if(tab.search(/ff/i) >=0)
+	{
+		updateObjectIframe("http://eabu-systest-db.juniper.net/EABU-MMX-TEST-GOALS1/data/index.mhtml","ff-disp");
+		
+	}
+	if(tab.search(/etrans/i) >=0)
+	{
+		
+		updateObjectIframe("http://eabu-systest-db.juniper.net/EABU-MMX-TEST-GOALS1/data/etrans.mhtml","etrans-disp");
+	}
+	if(tab.search(/cfd/i) >=0)
+	{
+		
+		updateObjectIframe("http://eabu-systest-db.juniper.net/EABU-MMX-TEST-GOALS1/data/cfddetails.html","cfd-disp");
+	}
+		
+}
+function ajaxrequest(url)
+{
+	ajaxObj = $.ajax({
+        url : url,
+        async:false,
+         });              
+		ajaxObj.complete(
+         function(content) {
+           respcontent = content.responseText;
+			return respcontent;
+                    }
+
+                );       
+}
+function insertrow()
+{
+	alert("insert");
+	$("#summary").prepend("<tr><td>sooraj</td></tr>");
+}
+			
+	
+	
+
+function updateObjectIframe(which,div){
+    ele = document.getElementById(div);
+    document.getElementById(div).innerHTML = '<'+'object id="main" style="overflow:hidden;height:200000px;width:6000px" name="main" type="text/html" data="'+which+'"><\/object>';
+}      

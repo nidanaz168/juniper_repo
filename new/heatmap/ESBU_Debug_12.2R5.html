@@ -1,0 +1,64 @@
+<div id='infradet' style='width:100%;position:absolute;top:50px;left=10px;display:none;'>
+<head><table style='width:100%;' class='select table-bordered table-big' border=1><thead><th>Regression Results Reporting for INFRA</th></tr></thead></table><table class='mission table-bordered table-big' border=1><tr><thead><th>
+Area</th><th>Sub Area</th><th>Target Script Count</th><th>Actual Execution</th><th>Pass Rate % </th><th>PRs</th></thead></tr><head>
+<tr><td rowspan=4>CYPHER</td>
+<cat><INFRA:CYPHER:BASIC
+><cat><td>BASIC
+</td><td>0</td><td>1  <a href=javascript:showdetails('http://eabu-systest-db.juniper.net/Regression/get_script_details.php?ids=32719:,')>Details</a></td><td>100</td><td class='green'><a href='https://gnats.juniper.net/web/default/do-query?adv=0&prs=' target='_blank'></a></td></tr><tr
+>
+<cat><INFRA:CYPHER:ACL
+><cat><td>ACL
+</td><td>0</td><td>1  <a href=javascript:showdetails('http://eabu-systest-db.juniper.net/Regression/get_script_details.php?ids=32718:,')>Details</a></td><td>100</td><td class='green'><a href='https://gnats.juniper.net/web/default/do-query?adv=0&prs=' target='_blank'></a></td></tr><tr
+>
+<cat><INFRA:CYPHER:SANITY
+><cat><td>SANITY
+</td><td>0</td><td>1  <a href=javascript:showdetails('http://eabu-systest-db.juniper.net/Regression/get_script_details.php?ids=32716:,')>Details</a></td><td>100</td><td class='green'><a href='https://gnats.juniper.net/web/default/do-query?adv=0&prs=' target='_blank'></a></td></tr><tr
+>
+<cat><INFRA:CYPHER:IDP
+><cat><td>IDP
+</td><td>0</td><td>1  <a href=javascript:showdetails('http://eabu-systest-db.juniper.net/Regression/get_script_details.php?ids=32717:,')>Details</a></td><td>100</td><td class='green'><a href='https://gnats.juniper.net/web/default/do-query?adv=0&prs=' target='_blank'></a></td></tr><tr
+>
+<tr><td rowspan=2>FIREWALL</td>
+<cat><INFRA:FIREWALL:SAMPLING
+><cat><td>SAMPLING
+</td><td>0</td><td>2  <a href=javascript:showdetails('http://eabu-systest-db.juniper.net/Regression/get_script_details.php?ids=32542:,32539:,')>Details</a></td><td>100</td><td class='green'><a href='https://gnats.juniper.net/web/default/do-query?adv=0&prs=' target='_blank'></a></td></tr><tr
+>
+<cat><INFRA:FIREWALL:FWNAT
+><cat><td>FWNAT
+</td><td>0</td><td>2  <a href=javascript:showdetails('http://eabu-systest-db.juniper.net/Regression/get_script_details.php?ids=24578:,24572:,')>Details</a></td><td>100</td><td class='green'><a href='https://gnats.juniper.net/web/default/do-query?adv=0&prs=' target='_blank'></a></td></tr><tr
+>
+<tr><td rowspan=2>COS</td>
+<cat><INFRA:COS:INTEROP
+><cat><td>INTEROP
+</td><td>0</td><td>3  <a href=javascript:showdetails('http://eabu-systest-db.juniper.net/Regression/get_script_details.php?ids=26169:,26231:,27031:,')>Details</a></td><td>100</td><td class='green'><a href='https://gnats.juniper.net/web/default/do-query?adv=0&prs=' target='_blank'></a></td></tr><tr
+>
+<cat><INFRA:COS:LSQ
+><cat><td>LSQ
+</td><td>0</td><td>1  <a href=javascript:showdetails('http://eabu-systest-db.juniper.net/Regression/get_script_details.php?ids=17408:,')>Details</a></td><td>100</td><td class='green'><a href='https://gnats.juniper.net/web/default/do-query?adv=0&prs=' target='_blank'></a></td></tr><tr
+>
+<tr><td rowspan=2>SNMP</td>
+<cat><INFRA:SNMP:MIB
+><cat><td>MIB
+</td><td>0</td><td>2  <a href=javascript:showdetails('http://eabu-systest-db.juniper.net/Regression/get_script_details.php?ids=28100:,28741:,')>Details</a></td><td>100</td><td class='green'><a href='https://gnats.juniper.net/web/default/do-query?adv=0&prs=' target='_blank'></a></td></tr><tr
+>
+<cat><INFRA:SNMP:PINOT
+><cat><td>PINOT
+</td><td>0</td><td>1  <a href=javascript:showdetails('http://eabu-systest-db.juniper.net/Regression/get_script_details.php?ids=3539:,')>Details</a></td><td>100</td><td class='green'><a href='https://gnats.juniper.net/web/default/do-query?adv=0&prs=' target='_blank'></a></td></tr><tr
+>
+<tr><td rowspan=1>CHASSIS</td>
+<cat><INFRA:CHASSIS:SNMP
+><cat><td>SNMP
+</td><td>0</td><td>2  <a href=javascript:showdetails('http://eabu-systest-db.juniper.net/Regression/get_script_details.php?ids=19806:,19807:,')>Details</a></td><td>100</td><td class='green'><a href='https://gnats.juniper.net/web/default/do-query?adv=0&prs=' target='_blank'></a></td></tr><tr
+>
+</table></div><div id='summarydet' style='width:100%;'>
+<table class='mission table-bordered table-big' border=1><tr><thead><th colspan=5>Brief Summary of functional areas in regression testing</th></tr>
+<tr><th>Module</th><th>Scripts Executed</th><th>Scripts Passed</th><th>% Pass rate</th><th>To Be Debugged</th></thead></tr>
+<tr><td>INFRA</td><td>19</td><td>17</td>
+<td class='red'>89</td>
+<td>2</td></tr>
+<tr><td><b>Total</td><td><b>19</td><td><b>17</td>
+<td class='red'><b>89</td><td>2</td></tr>
+</table>
+<table class='mission table-bordered table-big' border=1><thead><tr><th></th><th>Areas in Yellow</th><th>Areas in Red</th></thead></tr>
+</table>
+</div>

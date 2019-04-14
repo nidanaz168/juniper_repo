@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Domain-wise Raw Pass Rate Details</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel='stylesheet' type='text/css' href='mission.css' />
+<script type='text/javascript' src='/NGDashboard/js/jquery.js'></script>
+<script type="text/javascript" src="/Regression/catalogue/cat/js/jquery.js"></script>
+<script type="text/javascript" src="/Regression/catalogue/cat/js/jquery.tablesorter.js"></script>
+    <script type="text/javascript" src="/Regression/catalogue/cat/js/picnet.table.filter.min.js"></script>
+    <script type="text/javascript" src="/Regression/catalogue/cat/js/filter.js"></script>
+
+<script>
+$(document).ready(function() 
+{
+	$(document).keypress(function(e) {
+    if(e.which == 13) {
+		getdetails();
+	}
+	});
+	
+});
+function getdetails()
+{
+	var prs = $("#pr").val();
+					$("#table_div").html("");
+	ajaxObj = $.ajax({
+                url : "getdetails.php?testid="+prs,
+				proccessData: false,
+				async:false,
+				type: "POST",
+                    });
+
+                ajaxObj.complete(  
+				function(content) {
+					$("#table_div").append(content.responseText);
+				});
+					makefiltertable("myTable");
+					makesortabletable("myTable");
+	}
+        function showscripts(domain)
+            {
+                    $("#"+domain).show();
+                      $(".domainSelected").each(function()
+                        {
+                                $(this).hide();
+                                    $(this).removeClass("domainSelected");
+                                        }
+                                            );
+                    $("#"+domain).addClass("domainSelected");
+					makefiltertable("myTable-"+domain);
+					makesortabletable("myTable-"+domain);
+                                
+                    }
+</script>
+</head>
+<center><div id="header"><h1>Domain-wise Raw Pass Rate Details</h1></div>
+ <div id="searchcontainer"'>
+        <form>
+            <div>
+                <table><tr>
+						<td>Enter DR Page ID</td>
+						<td><input type="text" size="30" value="" id="pr"/></td>
+						<td><a id='submit' href='javascript:getdetails();'>Submit</a></td>
+        </tr></table>
+            </div>
+
+            <center>
+            <div id="table_div">
+                </div>
+                </center>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

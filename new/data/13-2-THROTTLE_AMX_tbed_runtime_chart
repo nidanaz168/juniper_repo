@@ -1,0 +1,2 @@
+<chart caption='Testbed Usage' xAxisName='Test Beds' yAxisName='Hours' showValues='1' numberPrefix='' useRoundEdges='1' legendBorderAlpha='100' showBorder='0' bgColor='FFFFFF,FFFFFF' ><categories><category label='(d)-eabu-reg-amx-dt1' /></categories><dataset seriesName='Usgae Hours'><set label='(d)-eabu-reg-amx-dt1' value=''  />
+</dataset></chart>

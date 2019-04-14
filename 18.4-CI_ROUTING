@@ -1,0 +1,16 @@
+BD=2019-04-19
+select result_id from er_regression_result where (name= 'JDI_CI_184_20190329.0' and parent_result_id='0')
+213358 
+213358 
+wget -o log -O out.17903 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=5:7:0&result_id=213358" 
+fullfile
+
+hit = wget -o log -O prs.17903 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=0:1:0&result_id=213358" 
+wget -o log -O out.17903 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" http://www-systest.juniper.net/ti/webapp/dr/debug_dr/view/gen_tl9000_report.mhtml?result_id=213358&trans=remove
+delete from script_pr where release='18.4-CI' and function='ROUTING VIRTUAL'prstr is 1383844 1394535 1399564 1399713 1401677 1406022 1406384 1413737 1418152 1418192 1420895 1422446 1424495 1424504 1425117 1425703 1426583 1426873 1428105 1428701 1428764  
+insert into reg_openblocker_details(release,function,prnumber,arrival_date,synopsis,reported_in,class,state,pl,category,blocker,dev_owner,resp,originator,hit) values('18.4-CI','ROUTING VIRTUAL','1399713-2','2018-11-08','                               PR to check bfd sessions for l2vpn, rsvp. ldp etc','18.4DCB','bug','assigned','4-IL2','sw-mpls-oam','MR','sudharsana','srajagopal','rkandula','8  ');
+insert into reg_openblocker_details(release,function,prnumber,arrival_date,synopsis,reported_in,class,state,pl,category,blocker,dev_owner,resp,originator,hit) values('18.4-CI','ROUTING VIRTUAL','1420895-3','2019-03-01','              AUTO-CORE-PR : JDI CI ROUTING : vgldfpc core found @ write_message','18.4R2','bug','need-info','4-IL2','sw-platform-vptx','PendingBlocker','manishre','manishre','manishre','1  ');
+insert into reg_openblocker_details(release,function,prnumber,arrival_date,synopsis,reported_in,class,state,pl,category,blocker,dev_owner,resp,originator,hit) values('18.4-CI','ROUTING VIRTUAL','1428105-1','2019-04-03','         JDI-VPTX-REGRESSIONS:  Expected BFD session count not seen with LDP-OAM','18.4R2','bug','assigned','4-IL2','sw-mpls-oam','MR','sunilk','sunilk','manishre','4  ');
+insert into reg_openblocker_details(release,function,prnumber,arrival_date,synopsis,reported_in,class,state,pl,category,blocker,dev_owner,resp,originator,hit) values('18.4-CI','ROUTING VIRTUAL','1428701-3','2019-04-04','CI-PR: LDP : Additional next hop entries observed on inet.3 table which are not ','18.4R2','bug','need-setup','4-IL2','sw-mpls-oam','Test','sunilk','ankushts','ankushts','2  ');
+/var/www/html/CI_Report/data/18-4-CI_table
+Done

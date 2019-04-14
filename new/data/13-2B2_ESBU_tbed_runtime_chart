@@ -1,0 +1,12 @@
+<chart caption='Testbed Usage' xAxisName='Test Beds' yAxisName='Hours' showValues='1' numberPrefix='' useRoundEdges='1' legendBorderAlpha='100' showBorder='0' bgColor='FFFFFF,FFFFFF' ><categories><category label='atlas8-irtb' /><category label='optimization1-rtb' /><category label='cypher-rtb' /><category label='esbu-sparks1' /><category label='atlas5-irtb' /><category label='hcl-atlas2-irtb' /><category label='rsbu-sparks-svl' /><category label='optimization2-rtb' /><category label='atlas5-ixia-irtb' /><category label='services-taz-irtb' /><category label='esbu-sparks' /></categories><dataset seriesName='Usgae Hours'><set label='atlas8-irtb' value='42.36'  />
+<set label='optimization1-rtb' value='30.84'  />
+<set label='cypher-rtb' value='29.62'  />
+<set label='esbu-sparks1' value='28.91'  />
+<set label='atlas5-irtb' value='26.75'  />
+<set label='hcl-atlas2-irtb' value='26.11'  />
+<set label='rsbu-sparks-svl' value='19.42'  />
+<set label='optimization2-rtb' value='17.25'  />
+<set label='atlas5-ixia-irtb' value='13.85'  />
+<set label='services-taz-irtb' value='10.41'  />
+<set label='esbu-sparks' value='0.21'  />
+</dataset></chart>

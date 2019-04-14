@@ -1,0 +1,18 @@
+<chart caption='Testbed Usage' xAxisName='Test Beds' yAxisName='Hours' showValues='1' numberPrefix='' useRoundEdges='1' legendBorderAlpha='100' showBorder='0' bgColor='FFFFFF,FFFFFF' ><categories><category label='hcl-mcast3' /><category label='hcl-proto1' /><category label='hcl-mx' /><category label='hcl-proto4' /><category label='hcl-vpn' /><category label='hcl-issu1' /><category label='vpls1-irtb' /><category label='mpls2-irtb' /><category label='hcl-mpls' /><category label='issu1-irtb' /><category label='hcl-proto3' /><category label='hcl-atari' /><category label='scale-irtb' /><category label='tahi-irtb' /><category label='csi-irtb1' /><category label='csi-irtb2' /><category label='rod-irtb3' /></categories><dataset seriesName='Usgae Hours'><set label='hcl-mcast3' value='44.37'  />
+<set label='hcl-proto1' value='39.45'  />
+<set label='hcl-mx' value='38.21'  />
+<set label='hcl-proto4' value='37.41'  />
+<set label='hcl-vpn' value='33.87'  />
+<set label='hcl-issu1' value='30.94'  />
+<set label='vpls1-irtb' value='27.8'  />
+<set label='mpls2-irtb' value='27.3'  />
+<set label='hcl-mpls' value='27.06'  />
+<set label='issu1-irtb' value='26.57'  />
+<set label='hcl-proto3' value='20.61'  />
+<set label='hcl-atari' value='19'  />
+<set label='scale-irtb' value='5.04'  />
+<set label='tahi-irtb' value='1.54'  />
+<set label='csi-irtb1' value='0.89'  />
+<set label='csi-irtb2' value='0.84'  />
+<set label='rod-irtb3' value='0.29'  />
+</dataset></chart>

@@ -1,0 +1,133 @@
+./heatmap.pl 12.3R3 'CE' 12.3R3_RBU_CE 
+query-pr: no PRs matched
+./heatmap.pl 12.3R3 'T/TX/PTX' 12.3R3_RBU_TPTX 
+./heatmap.pl 12.3R3 'ACX' 12.3R3_RBU_ACX 
+query-pr: no PRs matched
+./heatmap.pl 12.3R3 'RPD' 12.3R3_RBU_RPD 
+./heatmap.pl 12.3R3 'JUNOS SW' 12.3R3_JE 
+DBD::Pg::st execute failed: ERROR:  syntax error at or near "vplsMpls"
+LINE 1: ...1695,25121,25009,24888,3097,18119,41375,21059,6988vplsMpls.V...
+                                                             ^ at ./heatmap.pl line 119.
+DBD::Pg::st fetchall_arrayref failed: no statement executing at ./heatmap.pl line 120.
+./heatmap.pl 12.3R3 'ESBU' 12.3R3-ESBU 
+./heatmap.pl 12.3R3 'MMX' 12.3R3_MMX_RBU 
+DBD::Pg::st execute failed: ERROR:  syntax error at or near ")"
+LINE 1: ...y,area,subarea,test_id from script_owner where test_id in ()
+                                                                      ^ at ./heatmap.pl line 119.
+DBD::Pg::st fetchall_arrayref failed: no statement executing at ./heatmap.pl line 120.
+./heatmap.pl 13.2-THROTTLE 'AMX' 13.2_TOT_RBU_AMX_B2 
+DBD::Pg::st execute failed: ERROR:  syntax error at or near ")"
+LINE 1: ...y,area,subarea,test_id from script_owner where test_id in ()
+                                                                      ^ at ./heatmap.pl line 119.
+DBD::Pg::st fetchall_arrayref failed: no statement executing at ./heatmap.pl line 120.
+./heatmap.pl 13.2-THROTTLE 'ESBU' 13.2_TOT_ESBU 
+DBD::Pg::st execute failed: ERROR:  syntax error at or near ")"
+LINE 1: ...y,area,subarea,test_id from script_owner where test_id in ()
+                                                                      ^ at ./heatmap.pl line 119.
+DBD::Pg::st fetchall_arrayref failed: no statement executing at ./heatmap.pl line 120.
+./heatmap.pl 13.2-THROTTLE 'CE' 13.2_TOT_dhcp_partial 
+./heatmap.pl 13.2-THROTTLE 'MMX' 13.2_THROTTLE_RBU_MMX 
+DBD::Pg::st execute failed: ERROR:  syntax error at or near ")"
+LINE 1: ...y,area,subarea,test_id from script_owner where test_id in ()
+                                                                      ^ at ./heatmap.pl line 119.
+DBD::Pg::st fetchall_arrayref failed: no statement executing at ./heatmap.pl line 120.
+./heatmap.pl 13.2-THROTTLE 'JUNOS SW' 13.2_Throttle_JC 
+DBD::Pg::st execute failed: ERROR:  syntax error at or near ")"
+LINE 1: ...y,area,subarea,test_id from script_owner where test_id in ()
+                                                                      ^ at ./heatmap.pl line 119.
+DBD::Pg::st fetchall_arrayref failed: no statement executing at ./heatmap.pl line 120.
+./heatmap.pl 13.2-THROTTLE 'RPD' 13.2_Throttle_RBU_RPD 
+DBD::Pg::st execute failed: ERROR:  syntax error at or near ")"
+LINE 1: ...y,area,subarea,test_id from script_owner where test_id in ()
+                                                                      ^ at ./heatmap.pl line 119.
+DBD::Pg::st fetchall_arrayref failed: no statement executing at ./heatmap.pl line 120.
+./heatmap.pl 13.2-THROTTLE 'ACX' 13.2_TOT_RBU_ACX_B2 
+DBD::Pg::st execute failed: ERROR:  syntax error at or near ")"
+LINE 1: ...y,area,subarea,test_id from script_owner where test_id in ()
+                                                                      ^ at ./heatmap.pl line 119.
+DBD::Pg::st fetchall_arrayref failed: no statement executing at ./heatmap.pl line 120.
+./heatmap.pl 13.2-THROTTLE 'T/TX/PTX' 13.2_Throttle_RBU_TPTX 
+DBD::Pg::st execute failed: ERROR:  syntax error at or near ")"
+LINE 1: ...y,area,subarea,test_id from script_owner where test_id in ()
+                                                                      ^ at ./heatmap.pl line 119.
+DBD::Pg::st fetchall_arrayref failed: no statement executing at ./heatmap.pl line 120.
+./heatmap.pl 13.2B2 'JUNOS SW' 13.2B2_JC 
+DBD::Pg::st execute failed: ERROR:  syntax error at or near ")"
+LINE 1: ...y,area,subarea,test_id from script_owner where test_id in ()
+                                                                      ^ at ./heatmap.pl line 119.
+DBD::Pg::st fetchall_arrayref failed: no statement executing at ./heatmap.pl line 120.
+./heatmap.pl 13.2B2 'ACX' 13.2B2_RBU_ACX 
+DBD::Pg::st execute failed: ERROR:  syntax error at or near ")"
+LINE 1: ...y,area,subarea,test_id from script_owner where test_id in ()
+                                                                      ^ at ./heatmap.pl line 119.
+DBD::Pg::st fetchall_arrayref failed: no statement executing at ./heatmap.pl line 120.
+./heatmap.pl 13.2B2 'CE' 13.2B2_partial_RBU_CE 
+DBD::Pg::st execute failed: ERROR:  syntax error at or near ")"
+LINE 1: ...y,area,subarea,test_id from script_owner where test_id in ()
+                                                                      ^ at ./heatmap.pl line 119.
+DBD::Pg::st fetchall_arrayref failed: no statement executing at ./heatmap.pl line 120.
+./heatmap.pl 13.2B2 'ESBU' 13.2B2_ESBU 
+DBD::Pg::st execute failed: ERROR:  syntax error at or near ")"
+LINE 1: ...y,area,subarea,test_id from script_owner where test_id in ()
+                                                                      ^ at ./heatmap.pl line 119.
+DBD::Pg::st fetchall_arrayref failed: no statement executing at ./heatmap.pl line 120.
+./heatmap.pl 13.2B2 'AMX' 13.2B2_RBU_AMX 
+DBD::Pg::st execute failed: ERROR:  syntax error at or near ")"
+LINE 1: ...y,area,subarea,test_id from script_owner where test_id in ()
+                                                                      ^ at ./heatmap.pl line 119.
+DBD::Pg::st fetchall_arrayref failed: no statement executing at ./heatmap.pl line 120.
+./heatmap.pl 13.2B2 'RPD'  13.2B2_RBU_RPD 
+DBD::Pg::st execute failed: ERROR:  syntax error at or near ")"
+LINE 1: ...y,area,subarea,test_id from script_owner where test_id in ()
+                                                                      ^ at ./heatmap.pl line 119.
+DBD::Pg::st fetchall_arrayref failed: no statement executing at ./heatmap.pl line 120.
+./heatmap.pl 13.2B2 'T/TX/PTX' 13.2B2_RBU_TPTX 
+DBD::Pg::st execute failed: ERROR:  syntax error at or near ")"
+LINE 1: ...y,area,subarea,test_id from script_owner where test_id in ()
+                                                                      ^ at ./heatmap.pl line 119.
+DBD::Pg::st fetchall_arrayref failed: no statement executing at ./heatmap.pl line 120.
+./heatmap.pl 13.2B2 'MMX' 13.2B2_Partial_MMX_RBU 
+DBD::Pg::st execute failed: ERROR:  syntax error at or near ")"
+LINE 1: ...y,area,subarea,test_id from script_owner where test_id in ()
+                                                                      ^ at ./heatmap.pl line 119.
+DBD::Pg::st fetchall_arrayref failed: no statement executing at ./heatmap.pl line 120.
+./heatmap.pl 12.1R7 'T/TX/PTX' 12.1R7_RBU_TPTX 
+DBD::Pg::st execute failed: ERROR:  syntax error at or near ")"
+LINE 1: ...y,area,subarea,test_id from script_owner where test_id in ()
+                                                                      ^ at ./heatmap.pl line 119.
+DBD::Pg::st fetchall_arrayref failed: no statement executing at ./heatmap.pl line 120.
+./heatmap.pl 12.1R7 'JUNOS SW' 12.1R7_JE 
+DBD::Pg::st execute failed: ERROR:  syntax error at or near ")"
+LINE 1: ...y,area,subarea,test_id from script_owner where test_id in ()
+                                                                      ^ at ./heatmap.pl line 119.
+DBD::Pg::st fetchall_arrayref failed: no statement executing at ./heatmap.pl line 120.
+./heatmap.pl 12.1R7 'MMX' 12.1R7_MAIN_MMX_RBU 
+DBD::Pg::st execute failed: ERROR:  syntax error at or near ")"
+LINE 1: ...y,area,subarea,test_id from script_owner where test_id in ()
+                                                                      ^ at ./heatmap.pl line 119.
+DBD::Pg::st fetchall_arrayref failed: no statement executing at ./heatmap.pl line 120.
+./heatmap.pl 12.1R7 'RPD' 12.1R7.1_RBU_RPD 
+DBD::Pg::st execute failed: ERROR:  syntax error at or near ")"
+LINE 1: ...y,area,subarea,test_id from script_owner where test_id in ()
+                                                                      ^ at ./heatmap.pl line 119.
+DBD::Pg::st fetchall_arrayref failed: no statement executing at ./heatmap.pl line 120.
+./heatmap.pl 12.1R7 'CE' 12.1R7_Partial_RBU_CE 
+./heatmap.pl 13.3-IBFRS1-1 'RPD' 13.3_IBFRS_1_RBU_RPD 
+./heatmap.pl 13.3-IBFRS1-1 'CE' 13.3_IBFRS1_RBU_CE 
+./heatmap.pl 13.3-IBFRS1-1 'JUNOS SW' 13.3_CP3_FULL_REGRESSION 
+./heatmap.pl 13.3-IBFRS1-1 'ACX' 13.3_IBFRS1_RBU_ACX,13.3_IBFRS1_RBU_AMX 
+./heatmap.pl 13.3-IBFRS1-1 'MMX' 13.3_IBFRS1_MMX_RBU 
+./heatmap.pl 13.1X49 'CE'  13.1X49-D20.1_Full_RBU_CE 
+./heatmap.pl 13.1X49 'RPD' 13.1X49-D20.1_RBU_RPD 
+./heatmap.pl 13.1X49 'MMX'  13.1X49_DT_MMX_RBU 
+./heatmap.pl 12.2R5 'ACX'  12.2R5_RBU_ACX 
+./heatmap.pl 12.2R5 'CE' 12.2R5_dhcp_partial 
+./heatmap.pl 12.2R5 'ESBU' 12.2R5_ESBU 
+DBD::Pg::st execute failed: ERROR:  syntax error at or near ")"
+LINE 1: ...y,area,subarea,test_id from script_owner where test_id in ()
+                                                                      ^ at ./heatmap.pl line 119.
+DBD::Pg::st fetchall_arrayref failed: no statement executing at ./heatmap.pl line 120.
+./heatmap.pl 12.2R5 'T/TX/PTX' 12.2R5_RBU_TPTX 
+./heatmap.pl 12.2R5 'JUNOS SW' 12.2R5_JE 
+./heatmap.pl 12.2R5 'RPD' 12.2R5_RBU_RPD 
+./heatmap.pl 12.2R5 'MMX' 12.2R5_RBU_MMX 

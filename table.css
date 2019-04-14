@@ -1,0 +1,217 @@
+table {
+		border-collapse:collapse;
+		background:#EFF4FB url(images/tabback.gif) repeat-x;
+		border-left:1px solid #686868;
+		border-right:1px solid #686868;
+		border-bottom:1px solid #686868;
+		text-align:center;
+		color: #111;
+		font-size: small;
+		font-weight: bold;
+}
+.firstpass {
+		border-collapse:collapse;
+		background:#EFF4FB url(images/tabback.gif) repeat-x;
+		border-left:1px solid #686868;
+		border-right:1px solid #686868;
+		border-bottom:1px solid #686868;
+		font:1.1em/145% 'Trebuchet MS',helvetica,arial,verdana;
+		text-align:center;
+		color: #111;
+}
+
+
+.phases {
+		background:#333;
+		color: #fff;
+		font:1.0em/145% 'Trebuchet MS',helvetica,arial,verdana;
+        text-align:center;
+		}
+.summary {
+        text-align:left;
+		}
+
+td, th {
+		padding:2px;
+		border-right:1px solid #686868;
+		border-bottom:1px solid #686868;
+		text-align:center;
+		vertical-align: middle;
+		
+}
+.synopsis {
+		text-align: left;
+		overflow:hidden;
+		width:10px;
+	}
+.plrelease {
+		width:10px; 
+height:50px;
+max-width:10px;
+min-width:5px; 
+max-height:50px; 
+min-height:50px;
+overflow:hidden;
+white-space:nowrap;
+	}
+		
+
+caption {
+		padding: 0 0 .5em 0;
+		text-align: left;
+		font-size: 1.4em;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #333;
+		background: transparent;
+}
+
+/* =links
+----------------------------------------------- */
+
+table a {
+		color:#000000;
+		text-decoration:underline;
+}
+table th a {
+		color:#EFF4FB;
+		text-decoration:underline;
+}
+
+table a:link {}
+
+table a:visited {
+		font-weight:normal;
+		color:#000;
+		text-decoration: line-through;
+}
+
+table a:hover {
+		border-bottom: 1px dashed #bbb;
+}
+
+/* =head =foot
+----------------------------------------------- */
+
+thead th, tfoot th, tfoot td {
+		background:#333 url(images/llsh.gif) repeat-x;
+		color:#fff
+}
+
+tfoot td {
+		text-align:right
+}
+
+/* =body
+----------------------------------------------- */
+
+tbody th, tbody td {
+		border-bottom:1px solid #686868;
+		text-align:center;
+}
+
+tbody th {
+		white-space: nowrap;
+}
+
+tbody th a {
+		color:#333;
+}
+
+.odd {}
+
+tbody tr:hover {
+		background:#fafafa
+}
+.styled-select select {
+   background: transparent;
+   width: 268px;
+   padding: 5px;
+   font-size: 16px;
+   border: 1px solid #ccc;
+   height: 34px;
+}
+.mgrbutton {
+	background:#EFF4FB url(images/tabback.gif) repeat-x;
+  cursor:pointer;
+  }
+.mgrbuttonsel {
+	background:#EFF4FB ;
+	font-size: 16px;
+	font-weight: bold;
+  cursor:pointer;
+}
+.asathreya {
+	background:#93CDDD;
+}
+.mkumarm {
+	background:#FAC090;
+}
+.akovummal {
+	background:#B2A1C7;
+}
+.harishd {
+	background:#C2D69A;
+}
+.vdeokar {
+	background:#D99795;
+}
+.mrepakula {
+	background:#538ED5;
+}
+.vtalati {
+	background:#ECCEF5;
+}
+.plima {
+	background:#93CDDD;
+}
+.arunvn {
+	background:#F4FA58;
+}
+.vijay {
+	background:#11FA58;
+}
+.yellow {
+    background:yellow;
+}
+.green {
+    background:#3ADF00;
+}
+.red {
+    background:red;
+}
+.eventtable
+{
+	font-size: 0.8em;
+     font-weight: bold;
+}
+.selectedcol
+{
+	background:#58ACFA;
+}
+.container {
+  float&#58; left;
+  width&#58; 20%;
+  text-align&#58; center;
+}
+.box {
+  width&#58; 50px;
+  height&#58; 50px;
+  margin&#58; auto;
+}
+.wrapper {
+	position: relative;
+	width: 1400px;
+	text-align: left;
+	margin: 0 auto;
+}
+.common {
+	width: 439px;
+	height: 339px;
+	border: 1px red solid;
+	float: left;
+	margin-bottom: 7px;
+	margin-top: 7px;
+	color: white;
+	margin-right: 7px;
+}

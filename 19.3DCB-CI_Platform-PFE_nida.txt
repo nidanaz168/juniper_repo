@@ -1,0 +1,12 @@
+BD=2019-07-11
+select result_id from er_regression_result where (name= '19_3_DCB' and parent_result_id='0')
+212504 
+212504 
+wget -o log -O out.24803 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=5:7:0&result_id=212504" 
+fullfile
+
+hit = wget -o log -O prs.24803 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=0:1:0&result_id=212504" 
+wget -o log -O out.24803 --http-user=_rptjamuser --no-check-certificate --http-password="%j2B(Epfp46;Yge-GEp}=QUB:?,A%w" http://www-systest.juniper.net/ti/webapp/dr/debug_dr/view/gen_tl9000_report.mhtml?result_id=212504&trans=remove
+delete from script_pr where release='19.3DCB-CI' and function='Platform-PFE'prstr is 1394597 1407205 1408307 1409165 1416217 1417247 1418282 1422952 1424062 1424391 1424804 1427221 1427495 1427825 1428233 1428463 1428470 1429273 1429955  
+/var/www/html/CI_Report/data/19-3DCB-CI_table
+Done

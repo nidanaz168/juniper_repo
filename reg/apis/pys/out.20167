@@ -1,0 +1,547 @@
+<html>
+<head>
+ <title>TL9K Summary Report</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <meta name="Pragma" CONTENT="no-cache">
+ <meta name="robots" content="noindex, follow">
+ <link href="/ti/webapp/dr/shared/mainstyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<!-- START STYLESHEET INCLUDE -->
+<script language="javascript">
+ if (navigator.platform.indexOf ("Win32") !=-1) {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ie.css" type="text/css">');
+ } else {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ns.css" type="text/css">');
+ }
+</script>
+
+<body class="td-white-background"  topmargin="5" leftmargin="6" marginwidth="6" marginheight="5" >
+
+</script>
+<!-- END STYLESHEET INCLUDE -->
+
+
+<script type="text/javascript">                                                                                                                                                  
+function displaySpan(theSpan) {
+    if (theSpan.style.display == "none") {
+        theSpan.style.display = "";
+    }
+    else if (theSpan.style.display == "") {
+        theSpan.style.display = "none";
+    } else {
+        theSpan.style.display = "none";
+    }
+}
+</script>
+
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+     <tr  class="bluefield">
+      <td rowspan="2"  height="70">&nbsp; &nbsp;
+       <a href="http://www-int.juniper.net/">
+       <img src="/images/juniperLogo.gif" height="33" width="90" border="0"></a></td>
+      <td id=td15> Summarized Regression Test Report </td> </tr>
+
+ <tr> <td> Result Id's: 200123  </td> </tr></table><hr><a href=/ti/webapp/dr/debug_dr/view/gen_tl9k_report_summary.mhtml?result_id=200123&trans=remove >Click here to Exclude Transition Scripts</a><!-- 
+/*
+ * Function to get reg report info
+ *
+ */
+-->
+
+no_tei :  <br><br>
+        
+
+<!-- 
+/*
+ * Function to get all the manual info.
+ *
+ */
+
+-->
+
+<br>
+
+<!-- 
+/*
+ * Function to get the pr info
+ */
+
+-->
+
+<br>
+
+Result Summary for <font color=red></font> ( Result_id: 200123 ) <br>-Project Lead        : <font color=blue></font> <br>-Regression Tracking : PR<br>
+<p id=td16_1><pre>
+<font color=blue>1</font> Automated Tests:
+Total Number of Automated Scripts = 2136
+Total Number of Pass (Regression+Debug) = 2087
+Total Number of Debug Failures = 44
+PASS % = 98 %
+
+Unique Script count = 2133
+Unique (latest respin) Pass count = 2086
+Unique (latest respin) Failure count (including pending) = 47
+ACTUAL PASS% = 98 %
+
+
+Total Number of Testcases count = 9276
+Total Number of Testcases Pass (Regression+Debug) = 9125 
+Total Number of Testcases Fail (PR Attached) = 144
+Total Number of Testcases Pending Analysis = 7
+PASS % = 98 %
+
+
+<font color=blue>2</font> Manual Tests:
+Total Number of Manual Tests = 0
+Total Number of Pass = 0
+Total Number of Failures = 0
+PASS % = 0 %
+
+</pre></p>
+
+<!--7.0 END OF SUMMARY TABLE -->
+
+
+
+
+
+<li><a href="javascript:displaySpan(span_200123)"><b>Click here to see list of Failed/Undebugged Scripts</b></a>
+<span id="span_200123" style="display:none;">
+<br><br><table border=1> <tr><td><font size=2>Engineer</td><td><font size=2>Script Name</td><td><font size=2>Result</td><td><font size=2>PRs</td></tr>
+<tr><td rowspan=14><font size=2> (14)</td><td><font size=2>172R1_PORTER_RLI-31811_IPsec_dep_1.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1399572 target=DISPLAY_PR>1399572 </a>[need-info]</br></td></tr><td><font size=2>172R1_PORTER_RLI-31811_IPsec_int_2.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1399572 target=DISPLAY_PR>1399572 </a>[need-info]</br></td></tr><td><font size=2>172R1_PORTER_RLI-31811_IPsec_nh_2.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1399572 target=DISPLAY_PR>1399572 </a>[need-info]</br></td></tr><td><font size=2>173R1_PORTER_RLI-34512_JVision_Inline_JFlow_2.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FF66><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1344755 target=DISPLAY_PR>1344755 </a>[closed]</br></td></tr><td><font size=2>173R1_PORTER_RLI-34512_JVision_Inline_JFlow_3.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FF66><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1344755 target=DISPLAY_PR>1344755 </a>[closed]</br></td></tr><td><font size=2>181_DVAITA_RLI32339_URL_FILTERING_001.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FF66><font size=2> N <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1410246 target=DISPLAY_PR>1410246 </a>[closed]</br></td></tr><td><font size=2>182R1_RLI_31489_VALE8EDGE_RPM_MX_5.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> N <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1409704 target=DISPLAY_PR>1409704 </a>[assigned]</br></td></tr><td><font size=2>182R1_RLI_31661_VALE8EDGE_inline_mpls_ipv4_ipfix_frag.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> O <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1394875 target=DISPLAY_PR>1394875 </a>[need-info]</br></td></tr><td><font size=2>gvpn_ams_support.robot</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>inline_jflow_bridge_2.robot</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1411370 target=DISPLAY_PR>1411370 </a>[assigned]</br></td></tr><td><font size=2>inline_jflow_bridge_multihoming_2.robot</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> O <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1407334 target=DISPLAY_PR>1407334 </a>[verify-resolution]</br></td></tr><td><font size=2>tcp_tls_syslog_multihost.robot</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>tcp_tls_syslog_singlehost.robot</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><td><font size=2>twamp_auto_restart_with_rpm.robot</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr><tr><td rowspan=1><font size=2>amitrl (1)</td><td><font size=2>133_RPM_MX_MIC_17338_2_mx80.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> n <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1409704 target=DISPLAY_PR>1409704 </a>[assigned]</br></td></tr><tr><td rowspan=3><font size=2>dmanju (3)</td><td><font size=2>173R1_summit_RLI32393_twamp_client_inline_1.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> N <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1409704 target=DISPLAY_PR>1409704 </a>[assigned]</br></td></tr><td><font size=2>173R1_summit_RLI32393_twamp_client_inline_10.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> N <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1409704 target=DISPLAY_PR>1409704 </a>[assigned]</br></td></tr><td><font size=2>173R1_summit_RLI32393_twamp_client_inline_7.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> N <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1409704 target=DISPLAY_PR>1409704 </a>[assigned]</br></td></tr><tr><td rowspan=1><font size=2>gvishnu (1)</td><td><font size=2>133_RLI_14587_rpmpdt_wo_l3vpn_1.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> N <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1409704 target=DISPLAY_PR>1409704 </a>[assigned]</br></td></tr><tr><td rowspan=2><font size=2>jhansi (2)</td><td><font size=2>172_RLI_28057_URL_FILTERING_001.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FF66><font size=2> N <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1410246 target=DISPLAY_PR>1410246 </a>[closed]</br></td></tr><td><font size=2>172_RLI_28057_URL_FILTERING_004.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FF66><font size=2> N <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1410246 target=DISPLAY_PR>1410246 </a>[closed]</br></td></tr><tr><td rowspan=1><font size=2>kfaisal (1)</td><td><font size=2>133_RPM_MX_18013_12.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> n <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1409704 target=DISPLAY_PR>1409704 </a>[assigned]</br></td></tr><tr><td rowspan=5><font size=2>manonmani (5)</td><td><font size=2>141_RLI_30_tlb_dual_sanity.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1359246 target=DISPLAY_PR>1359246 </a>[assigned]</br></td></tr><td><font size=2>141_RLI_35_CustomHC_AMS.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1359246 target=DISPLAY_PR>1359246 </a>[assigned]</br></td></tr><td><font size=2>151F4_Stout_RLI25949_Sparks_RPM_MX_MIC_17338_7.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> N <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1409704 target=DISPLAY_PR>1409704 </a>[assigned]</br></td></tr><td><font size=2>151F4_Stout_RLI25949_Sparks_RPM_MX_MPC_14587_2.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> N <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1409704 target=DISPLAY_PR>1409704 </a>[assigned]</br></td></tr><td><font size=2>161_20072_HA_GRES_Additional_SA.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1388290 target=DISPLAY_PR>1388290 </a>[assigned]</br></td></tr><tr><td rowspan=6><font size=2>mpandey (6)</td><td><font size=2>171_RLI_31236_NAT44_Functional_MPC_2_vmsmpc.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1387429 target=DISPLAY_PR>1387429 </a>[verify-resolution]</br></td></tr><td><font size=2>171_RLI_31236_secure_eif_1_vmsmpc.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1387429 target=DISPLAY_PR>1387429 </a>[verify-resolution]</br></td></tr><td><font size=2>171_RLI_31236_secure_eif_2_vmsmpc.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1387429 target=DISPLAY_PR>1387429 </a>[verify-resolution]</br></td></tr><td><font size=2>171_rli_31236_nat64_func_MPC_vmsmpc.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1387429 target=DISPLAY_PR>1387429 </a>[verify-resolution]</br></td></tr><td><font size=2>181_RLI_20627_SFLOW_VMX.robot</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1387429 target=DISPLAY_PR>1387429 </a>[verify-resolution]</br></td></tr><td><font size=2>181_RLI_30224_PARITY_VMX_PART1.robot</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1387429 target=DISPLAY_PR>1387429 </a>[verify-resolution]</br></td></tr><tr><td rowspan=8><font size=2>neelesht (8)</td><td><font size=2>173_RLI_34188_ALG_Sanity_MPC_Ixload_vMSMPC.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1387429 target=DISPLAY_PR>1387429 </a>[verify-resolution]</br></td></tr><td><font size=2>173_RLI_34188_ALG_Sanity_MPC_Linux_vmsmpc.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1387429 target=DISPLAY_PR>1387429 </a>[verify-resolution]</br></td></tr><td><font size=2>173_RLI_34188_DNS_ALG_1_vmsmpc.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1387429 target=DISPLAY_PR>1387429 </a>[verify-resolution]</br></td></tr><td><font size=2>173_RLI_34188_FTP_vmsmpc.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1387429 target=DISPLAY_PR>1387429 </a>[verify-resolution]</br></td></tr><td><font size=2>173_RLI_34188_RSH_2_vmsmpc.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1387429 target=DISPLAY_PR>1387429 </a>[verify-resolution]</br></td></tr><td><font size=2>173_RLI_34188_TFTP_1_vmsmpc.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1387429 target=DISPLAY_PR>1387429 </a>[verify-resolution]</br></td></tr><td><font size=2>173_RLI_34188_jflow_logging_vmsmpc.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1387429 target=DISPLAY_PR>1387429 </a>[verify-resolution]</br></td></tr><td><font size=2>173_RLI_34188_secure_eif_2_vmsmpc.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1387429 target=DISPLAY_PR>1387429 </a>[verify-resolution]</br></td></tr><tr><td rowspan=2><font size=2>prasansri (2)</td><td><font size=2>133_SPARKS_ALG_FRAG_CORE_PR_1075454.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> n <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1411935 target=DISPLAY_PR>1411935 </a>[assigned]</br></td></tr><td><font size=2>141_RLI_30_tlb_ssl_sanity.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> o <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1359246 target=DISPLAY_PR>1359246 </a>[assigned]</br></td></tr><tr><td rowspan=2><font size=2>services_gvishnu (2)</td><td><font size=2>133_RLI_14587_rpmpdt_wo_l3vpn_2.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> N <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1409704 target=DISPLAY_PR>1409704 </a>[assigned]</br></td></tr><td><font size=2>133_RLI_14587_rpmpdt_wo_l3vpn_5.pl</td><td><font size=2>FAIL</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = #66FFFF><font size=2> N <a href=http://gnats.juniper.net/cgi-bin/gnats?cmd=view+audit-trail&database=default&pr=1409704 target=DISPLAY_PR>1409704 </a>[assigned]</br></td></tr><tr><td rowspan=1><font size=2>skshah (1)</td><td><font size=2>174_RLI_34302_JVISION_UDP_LC_NPU_MEMORY_PR1214553.pl</td><td><font size=2>-</td><!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = ><font size=2>-</td></tr></table>
+<br><br>
+<table>
+<tr><td>
+<b>Scripts failed Due to PRs - </b>42
+</td></tr>
+<tr><td>
+<b>Scripts pending debugging - </b>5
+</td></tr>
+<tr><td>
+<b>PRs Existing till now - </b></td></tr>
+</table><table border=1>
+<tr><td><font size=2 style="font-weight:bold">PR</td>
+               <td><font size=2 style="font-weight:bold"># Scripts Hit</td>
+               <td><font size=2 style="font-weight:bold">Planned_Release</td>
+               <td><font size=2 style="font-weight:bold">State</td>
+               <td><font size=2 style="font-weight:bold">Category</td>
+               <td><font size=2 style="font-weight:bold">Customer_Risk</td>
+               <td><font size=2 style="font-weight:bold">Problem_level</td>
+               <td><font size=2 style="font-weight:bold">Synopsis</td>
+               <td><font size=2 style="font-weight:bold">Found</td>
+               <td><font size=2 style="font-weight:bold">Reg</td>
+               <td><font size=2 style="font-weight:bold">Blocker</td> 
+            </tr><tr>
+<td><font size=2>1359246</td>
+               <td><font size=2>3</td>
+               <td><font size=2>19.1R1</td><td bgcolor = #66FFFF ><font size=2>assigned</td>
+<td><font size=2>sw-services-lb</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>After Rebooting Both REs, Traffic statistics are not seen untill traffic-dird is restarted.</td>
+               <td><font size=2>OLD</td>
+               <td><font size=2></td>
+               <td><font size=2>PendingBlocker</td></tr>
+<tr>
+<td><font size=2>1399572</td>
+               <td><font size=2>3</td>
+               <td><font size=2>19.1R1</td><td bgcolor = #66FFFF ><font size=2>need-info</td>
+<td><font size=2>sw-trinity-pfe-dfw</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>RPT Services Regressions:Porter: Encryption and Decryption packets are not with in tolerance limit while testing  IPSEC DEP functionality with too big and too small size packets.</td>
+               <td><font size=2>OLD</td>
+               <td><font size=2></td>
+               <td><font size=2>FRS</td></tr>
+<tr>
+<td><font size=2>1409704</td>
+               <td><font size=2>11</td>
+               <td><font size=2>19.1R1</td><td bgcolor = #66FFFF ><font size=2>assigned</td>
+<td><font size=2>sw-rpm</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>RPT Services Regressions : RPM probe results with probe type icmp-ping FAILed on PIC when testing RPM probes configuring manual MTU with 800 for probe type icmp-ping/icmp-ping-timestamp/udp-ping/udp-ping-timestamp</td>
+               <td><font size=2>NEW</td>
+               <td><font size=2></td>
+               <td><font size=2>NONE</td></tr>
+<tr>
+<td><font size=2>1388290</td>
+               <td><font size=2>1</td>
+               <td><font size=2>19.1R1</td><td bgcolor = #66FFFF ><font size=2>assigned</td>
+<td><font size=2>sw-service-ipsec-mmx</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-CL3</td>
+               <td><font size=2>RBU_Services_Regressions: IPsec IKE keys are not cleared when delete/clear notification is received from peer on GRES enabled DUT</td>
+               <td><font size=2>OLD</td>
+               <td><font size=2></td>
+               <td><font size=2>FRS</td></tr>
+<tr>
+<td><font size=2>1344755</td>
+               <td><font size=2>2</td>
+               <td><font size=2>19.1R1</td><td bgcolor = #66FF66 ><font size=2>closed</td>
+<td><font size=2>sw-jvision-pfe-infra</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>RPT_REG_SERVICES:PORTER-R(MX-150): Incorrect telemetry_header.sequence_number is getting populated as First Packet while checking the exported stats of Inline jflow/jvsion after FPC restart in PORTER-R.</td>
+               <td><font size=2>OLD</td>
+               <td><font size=2></td>
+               <td><font size=2>FRS</td></tr>
+<tr>
+<td><font size=2>1394875</td>
+               <td><font size=2>1</td>
+               <td><font size=2>19.1R1</td><td bgcolor = #66FFFF ><font size=2>need-info</td>
+<td><font size=2>vale16-mx-platform</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>Vale16-Edge-VI:100% traffic drop observed on pfe as normal discard. while testing RPM prob feature.</td>
+               <td><font size=2>OLD</td>
+               <td><font size=2></td>
+               <td><font size=2>FRS</td></tr>
+<tr>
+<td><font size=2>1411370</td>
+               <td><font size=2>1</td>
+               <td><font size=2>19.1R1</td><td bgcolor = #66FFFF ><font size=2>assigned</td>
+<td><font size=2>sw-inline-jflow-mx</td> 
+               <td><font size=2>minor</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>[MX-SERVICES-JFLOW-19.1R1]: While Verifying Optional and template refresh packets are sent at proper interval, Active flows are not as expected.</td>
+               <td><font size=2>OLD</td>
+               <td><font size=2></td>
+               <td><font size=2>NONE</td></tr>
+<tr>
+<td><font size=2>1411935</td>
+               <td><font size=2>1</td>
+               <td><font size=2>19.1R1</td><td bgcolor = #66FFFF ><font size=2>assigned</td>
+<td><font size=2>sw-sparks</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>[MX-SERVICES-MSPMAND-19.1R1]: mspmand core - 0x000000012175be9c in tcplib_bufferq_process_and_enq (jbuf_ptr=<optimized out>, tracker=<optimized out>, thr_tcb=<optimized out>) at ../../../../../../../../src/junos/jsf/lib/tcplib/jsf_tcplib_stack.c:701</td>
+               <td><font size=2>NEW</td>
+               <td><font size=2></td>
+               <td><font size=2>FRS</td></tr>
+<tr>
+<td><font size=2>1407334</td>
+               <td><font size=2>2</td>
+               <td><font size=2>19.1R1</td><td bgcolor = #66FFFF ><font size=2>verify-resolution</td>
+<td><font size=2>sw-bgp</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>AUTO-CORE-PR : JDI CI ROUTING : RPD core found @ bgp_evpn_get_nlri_len_from_rt bgp_evpn_nlrilen bgp_find_nlri_len</td>
+               <td><font size=2>OLD</td>
+               <td><font size=2></td>
+               <td><font size=2>FRS</td></tr>
+<tr>
+<td><font size=2>1410246</td>
+               <td><font size=2>3</td>
+               <td><font size=2>19.1R1</td><td bgcolor = #66FF66 ><font size=2>closed</td>
+<td><font size=2>mx-url-filtering</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>RBU_Services_Regressions:URL_FILTERING: Specific Custom Page Verification failed</td>
+               <td><font size=2>NEW</td>
+               <td><font size=2></td>
+               <td><font size=2>NONE</td></tr>
+<tr>
+<td><font size=2>1387429</td>
+               <td><font size=2>14</td>
+               <td><font size=2>19.1R1</td><td bgcolor = #66FFFF ><font size=2>verify-resolution</td>
+<td><font size=2>sw-vmsmpc</td> 
+               <td><font size=2>major</td>
+               <td><font size=2>4-IL2</td>
+               <td><font size=2>[vMX-SERVICES-vMSMPC-18.4DCB]: Observed MSPMAND core at 0x0000003e12e3302f in ?? ()</td>
+               <td><font size=2>OLD</td>
+               <td><font size=2></td>
+               <td><font size=2>FRS</td></tr>
+</table>
+</span></li>
+</br><hr> <b>Combined pass rate (actual) for Automated scripts: 97.80 % </b>
+<br />
+<hr noshade size="1" width="100%" />
+ 
+</body>
+</html>
+
+
+
+

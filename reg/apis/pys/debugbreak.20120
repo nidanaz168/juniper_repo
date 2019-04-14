@@ -1,0 +1,1869 @@
+<link rel="stylesheet" type="text/css" href="../shared/resources/css/jquery.dataTables.css">
+<link rel="stylesheet" type="text/css" href="../shared/resources/css/TableTools.css">
+
+<script type="text/javascript" src="../shared/resources/js/jquery.js"></script>
+<script type="text/javascript" src="../shared/resources/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="../shared/resources/js/TableTools.min.js"></script>
+<script type="text/javascript" src="../shared/resources/js/dataTableSelect.js"></script>
+
+
+
+
+<html>
+<head>
+ <title>DEBUG PAGE</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <meta name="Pragma" CONTENT="no-cache">
+ <meta name="robots" content="noindex, follow">
+ <link href="/ti/webapp/dr/shared/mainstyle.css" rel="stylesheet" type="text/css">
+ <script >
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                                            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68983099-2', 'auto');
+  //    ga('set', '&uid', 'ckevin'); // Set the user ID using signed-in user_id.
+  ga('send', 'pageview');
+           console.log("Updated");
+ </script>
+ </head>
+
+<!-- START STYLESHEET INCLUDE -->
+<script language="javascript">
+ if (navigator.platform.indexOf ("Win32") !=-1) {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/mainstyle.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ie.css" type="text/css">');
+ } else {
+  //document.write('<LINK rel="stylesheet" href="http://www-int.juniper.net/includes/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/unixormac.css" type="text/css">');
+  document.write('<LINK rel="stylesheet" href="/ti/webapp/dr/shared/fonts-ns.css" type="text/css">');
+ }
+</script>
+
+<body class="td-white-background"  topmargin="5" leftmargin="6" marginwidth="6" marginheight="5">
+
+</script>
+<!-- END STYLESHEET INCLUDE -->
+
+
+<!-- 1st ROW START-->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left" width="65%">
+      <table  width="100% border="0 cellspacing="0" cellpadding="0">
+        <tr>
+          <td><a href="http://www-int.juniper.net/"><img src="/images/juniperLogo.gif" alt="Juniper Networks Logo" width="154" height="40" border="0" /></a></td>
+          <td><img src="/image/pixel.gif"  alt="" height="10" /></td>
+          <td> <font color=blue size=4>Regression the Heartbeat Of Testing</font></td>
+          <td>  <font size=2>  Hi nidanaz  </font> </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<div id="banner" style="    width: 90%;
+    width: 90%;
+        font-size: 16px;
+            background-color: greenyellow;
+                margin-left: 40px;
+                    padding: 5px 0 5px 0;
+                        height: 35px;
+                         "
+                          align="center">
+                            DR has been moved to <b>QUINCY</b> from <b>Sunnyvale</b> servers. Please upload your <b>DEBUG</b> logs to
+                            Quincy shells for debugging purposes. <br> Please use any one of the 16 Quincy Shells for
+                            this purpose. <span style="color:red;">ttqc-shell01 .... ttqc-shell16</span> 
+                            </div>
+
+
+
+<!-- 1st ROW END-->
+
+
+
+<!-- 2nd ROW END-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr class="tr-table-header-dark">
+    <td width="47%" colspan="2">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+        <tr>
+         <td width="50%" class="tr-table-header-dark"><img src="/image/pixel.gif"  alt="" width="438" height="1" /></td>
+         <td rowspan="2"  valign="bottom" class="tr-table-header-dark"><img src="/ti/webapp/dr/image/hdr_global_slantline_l.gif" width="25" height="49" alt="divider" /></td>
+        </tr>
+        <tr>
+         <td width="438" height="49" class="darkest-bgcolor"> &nbsp;&nbsp;&nbsp;&nbsp;<span class="header-label">Regression Debugging</span> </td>
+         <td><div align="center"><font size=4>19.2DCB_Porter2</font></div> </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- 2nd ROW END-->
+
+
+
+
+
+
+<table width="100%" cellspacing="0" cellpadding="0"><tr><td></td></tr></table>
+
+
+<!-- 3rd ROW START-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+
+
+
+
+
+    <td width="5" valign="top" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant5b.GIF"></td>
+    <td>
+      <div align="center">
+        <a href="index.mhtml?mode=0:2:0&result_id=203092" class="gnavsm">Reg Debug</a>
+      </div>
+    </td>
+    <td width="11" valign="top" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant5a.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=1:1:0&result_id=203092" class="gnavsm">Manual</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=2:0:0&result_id=203092" class="gnavsm">Status</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=3:1:0&result_id=203092" class="gnavsm">Reg Pass</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=4:1:0&result_id=203092" class="gnavsm">Edit</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=5:0:0&result_id=203092" class="gnavsm">Views</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=6:0:0&result_id=203092" class="gnavsm">Cores</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=7:0:0&result_id=203092" class="gnavsm">PR Verifications</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+  </tr>
+</table>
+<!-- 3rd ROW END-->
+
+
+<!-- 4rd ROW STARTS-->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+
+<!-- LEFT WINDOW STARTS -->
+
+    <td width="160 pixels" valign="top" rowspan="8"> 
+<!-- $VAR1 = 0;
+ -->
+
+      <!--
+ Debug page left frame. 
+Page: /httpd/htdocs/ti/webapp/dr/debug_dr/reg_debug/leftframe.mhtml
+-->
+
+<!--
+ Function to get all the dr owners
+-->
+
+
+
+
+<table width="120" border="0" cellspacing="0" cellpadding="0">
+	  
+  <tr align="left" valign="top"> 
+
+    <td width="1" bgcolor="#999999"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td width="5">&nbsp;</td>
+    <td background="/ti/webapp/dr/image/gra_home_verdot_sm.jpg" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td colspan="3"> 
+
+    <table width="120" border="0" cellspacing="0" cellpadding="0">
+
+      <tr align="left"> 
+        <td colspan="3" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Loop through the titles in Left Frame -->
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md_1.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:0:2&result_id=203092" class="nav"> All Debug </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:1:2&result_id=203092" class="nav"> All PR </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:2:2&result_id=203092" class="nav"> My Pending </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:3:2&result_id=203092" class="nav"> My Completed </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top" class="home-left-nav-dark">
+          <img src="/ti/webapp/dr/image/gra_home_arrowblk_md.gif" width="21" height="18" alt="black arrow" />
+        </td>
+        <td valign="middle" width="160" class="home-left-nav-dark">&nbsp;&nbsp;
+          <a href="index.mhtml?mode=0:4:2&result_id=203092" class="nav"> My PR </a> 
+        </td>
+        <td class="home-left-nav-dark" valign="middle" width="160">&nbsp;&nbsp;</td>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+<!-- Display the debug owners for the dr page -->
+
+      <tr align="left"> 
+        <td width="1" valign="top" class="home-left-nav-dark"></td>
+
+         <form name="new_owner_debug_page" type=post action="/ti/webapp/dr/debug_dr/index.mhtml">
+        
+          <td valign="center" class="home-left-nav-dark">
+           <select name=owner size="1" >
+               <option value="ALL">debug-owner</option>
+                   <option value=ALL selected>ALL</option>
+                   <option value=NONE>NONE</option>
+                   <option value=kkiruthika>kkiruthika</option>
+                   <option value=tnandhini>tnandhini</option>
+          </select>
+        </td>
+
+
+        <td valign="center" class="home-left-nav-dark">
+          <input type=hidden name=mode value="0:5:2">
+          <input type=hidden name=result_id value="203092">
+          <input type=image border="0" name="submit" 
+            src="/ti/webapp/dr/image/btn_global_goarrow_sm1.GIF" width="18" height="26"/>
+        </td>
+</form>
+      </tr>
+
+
+      <tr align="left"> 
+        <td width="1" valign="top" class="home-left-nav-dark"></td>
+
+         <form name="new_owner_debug_page" type=post action="/ti/webapp/dr/debug_dr/index.mhtml">
+          <td valign="center" class="home-left-nav-dark">
+           <input type="text" name=alias maxlength="40" value="" placeholder="ldap alias" style="width:100%;border-radius:3px;padding:2px 5px;" />
+          </td>
+
+          <td valign="center" class="home-left-nav-dark">
+           <input type=hidden name=mode value="0:5:2">
+           <input type=hidden name=result_id value="203092">
+           <input type=image border="0" name="submit" src="/ti/webapp/dr/image/btn_global_goarrow_sm1.GIF" width="18" height="26"/>
+          </td>
+         </form>
+      </tr>
+
+
+
+      <tr align="left"> 
+        <td width="21" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+        <td width="160" valign="top"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+      <tr align="left"> 
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+        <td width="21" height="7" valign="top" class="home-left-nav-dark"></td>
+      </tr>
+
+      <tr align="left"> 
+        <td colspan="3" valign="top" class="td-white-background" ><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+      <tr align="left"> 
+        <td colspan="3" valign="top" class="td-white-background" ><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+      </tr>
+
+    </table>
+
+    </td>
+
+    <td background="/ti/webapp/dr/image/gra_home_verdot_sm.jpg" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td width="13">&nbsp;</td>
+    <td bgcolor="#999999" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+  </tr>
+
+
+  <tr align="left" valign="top"> 
+    <td width="1" bgcolor="#999999"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td colspan="7" bgcolor="#999999"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+    <td bgcolor="#999999" width="1"><img src="/image/pixel.gif" alt="" width="1" height="1" /></td>
+  </tr>
+
+</table>
+
+
+
+
+
+   
+
+
+<p id=p1 align=center><a href="/ti/webapp/dr/main_dr/index.mhtml">DR Main Page </a></p>
+<p id=p1 align=center><a href="http://systest.juniper.net/twiki/bin/view/Main/WebHome" target="_blank">Systest Home </a></p>
+<p id=p1 align=center><a href="http://systest.juniper.net/twiki/bin/view/Main/TI" target="_blank">TI Home </a> </p>
+
+    </td>
+<!-- LEFT WINDOW ENDS-->
+
+
+<!-- RIGHT WINDOW STARTS-->
+    <td valign="top">
+        
+
+<table width="120" border="0" cellspacing="0" cellpadding="0">
+
+    
+
+<!-- 3rd ROW START-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td></td></tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=0:0:0&owner=nidanaz&result_id=203092" class="gnavsm">Script</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=0:0:1&owner=nidanaz&result_id=203092" class="gnavsm">TestBed/Domain</a>
+      </div>
+    </td>
+
+
+
+
+
+
+
+    <td width="5" valign="top" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant5b.GIF"></td>
+    <td>
+      <div align="center">
+        <a href="index.mhtml?mode=0:0:2&owner=nidanaz&result_id=203092" class="gnavsm">Reg Exit</a>
+      </div>
+    </td>
+    <td width="11" valign="top" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant5a.gif"></td>
+
+
+
+
+
+
+    <td class="rnavhead" height=15>
+      <div align="center">
+        <a href="index.mhtml?mode=0:0:3&owner=nidanaz&result_id=203092" class="gnavsm">DR Suggest</a>
+      </div>
+    </td>
+
+    <td width="13" class="rnavhead" ><img src="/ti/webapp/dr/image/btn_global_slant-grey-test.gif"></td>
+
+
+
+  </tr>
+</table>
+
+
+<!-- 3rd ROW END-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:20px">
+<tr>
+<td><a href='#' onclick='rpr_call();' style="margin-top:10px;margin-left:12px">RPR</a></td>
+</tr>
+</table>
+<script type='text/javascript'>
+  function rpr_call(){
+window.open("https://systest.juniper.net/ti/webapp/dr/debug_dr/reg_debug/rpr_info.mhtml?result_id=203092","_blank","toolbar=yes, scrollbars=yes,resizable=yes,width=400,height=350");
+}
+</script>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!-- 
+/*
+ * Function to sync DR to FusionV2 
+ */
+
+-->
+
+
+
+<br>Total time taken for DR Sync : 13 secs <br><!--
+/*
+ * /dr/debug_dr/reg_debug/reg_debug.mhtml 
+ */
+-->
+
+<!-- 
+/*
+ * Function to get all the debug info for a debug owner.
+ * Return of this function is some stats info and debug info.
+ *
+ *
+ */
+-->
+
+
+<!-- 
+/*
+ * Function to get the manual test count
+ */
+
+-->
+
+
+
+          <script language="javascript" type="text/javascript"> 
+              function confirmHighlighting(){
+                var confirmResult = confirm("This Operation contacts GNATS for realtime data and may take a little"+
+                    "longer to highlight the pending scripts associated with the Open PRs. Are you sure you would like"+
+                    "to continue?");
+                if(confirmResult == true){
+                    var current_url = location.href;
+                    current_url = current_url+"&highlightOpenPrs=true";
+                    location.replace(current_url);
+                }else{
+                  return false;
+                }
+              }
+          </script>
+
+  <div style="width:1100px;" id="debug_script_lists_div">
+      <input type="button" id="debugOpenPrButton" style="float:right;display:none;" value="Debug Open PRs"
+      onclick="debugOpenPrs();">
+      <button id="highlightButton" style="float:right;" type="button" onclick="confirmHighlighting();">Highlight Open PRs</button>
+  </div>
+
+    <!-- DISPLAY STATUS -->
+    <script type="text/javascript">
+
+function rm(id,harness_type) {
+    console.log(harness_type);
+    var all_reg_id = new Array();
+    all_reg_id = id.split(/\s+/);
+    var len = all_reg_id.length;
+
+    for (var i=0; i < len; i++) {
+      var link = "http://systest.juniper.net/rmv2/edp/"+all_reg_id[i];
+      if(harness_type.indexOf("fusion") != -1){
+        link = "https://inception.juniper.net/fusion/v2#submission_id="+all_reg_id[i];
+      }
+      window.open(link);
+    }
+
+    return true;
+}
+
+
+</script>
+
+
+<!-- 
+/*
+ * Function to get the pr count
+ */
+
+-->
+
+
+
+
+
+<p id=p3>Debug view: <font color=blue>ALL</font></p>
+
+<!-- START DISPLAY THE STATUS TABLE -->
+
+<table id=table1 border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>REG EXIT</td>
+  <td id=td5>REG FAIL</td>
+  <td id=td5>DEBUG PASS</td>
+  <td id=td5>SW-FAIL</td>
+  <td id=td5>HW-ENV</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>OTHER</td>
+  <td id=td5>TOOLS</td>
+  <td id=td5>PENDING</td>
+ </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>CORE_PASS</td>
+  <td id=td1>1</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td3>1</td> 
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>FAIL</td>
+  <td id=td1>12</td>
+  <td id=td1>3</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>3</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td3>9</td> 
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>INIT_FAIL</td>
+  <td id=td1>8</td>
+  <td id=td1>2</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>2</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td3>6</td> 
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>LINK_FAIL</td>
+  <td id=td1>4</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td1>0</td>
+  <td id=td3>4</td> 
+ </tr>
+
+
+ <tr lmargin=10 align="left" valign="top">
+  <td id=td2>TOTAL</td>
+  <td id=td4>25</td>
+  <td id=td4>5</td>
+  <td id=td4>0</td>
+  <td id=td4>0</td>
+  <td id=td4>5</td>
+  <td id=td4>0</td>
+  <td id=td4>0</td>
+  <td id=td3>20</td>
+ </tr>
+</table>
+
+
+<p id=p1>
+ Script Failures (Total / Pending):
+    <font color=black>25 / 20</font>,
+ PR Count:
+    <font color=black>0</font>,
+ Manual Test (Total / Pending):
+    <font color=black>0 / 0</font>
+
+</p><br>
+
+
+<!-- END   DISPLAY THE STATUS TABLE -->
+
+
+
+
+
+
+
+
+
+        <!-- DISPLAY PENDING -->
+        
+<script>
+  function changeURL(){
+    var url=location.href;
+    if(url.search("highlight") != -1){
+      var mod_url = url.replace("&highlightOpenPrs=true",'');
+      window.history.pushState("","",mod_url);
+    }
+  }
+</script>
+
+<body onLoad="changeURL()">
+<script type="text/javascript" src="/ti/webapp/dr/shared/wz_tooltip.js"></script>
+<script type="text/javascript" language="javascript">
+if (!document.location.origin) //IE hack
+   document.location.origin = document.location.protocol+"//"+document.location.host;
+
+function copy(text2copy) {
+  if (window.clipboardData) {
+    window.clipboardData.setData("Text",text2copy);
+  } else {
+    var flashcopier = 'flashcopier';
+    if(!document.getElementById(flashcopier)) {
+      var divholder = document.createElement('div');
+      divholder.id = flashcopier;
+      document.body.appendChild(divholder);
+    }
+    document.getElementById(flashcopier).innerHTML = '';
+    var divinfo = '<embed src="/ti/webapp/dr/debug_dr/reg_debug/_clipboard.swf" FlashVars="clipboard='+escape(text2copy)+'" width="0" height="0" type="application/x-shockwave-flash"></embed>';
+    document.getElementById(flashcopier).innerHTML = divinfo;
+  }
+}
+   var request = null;
+
+   function createRequest() {
+     try {
+       request = new XMLHttpRequest();
+     } catch (trymicrosoft) {
+       try {
+         request = new ActiveXObject("Msxml2.XMLHTTP");
+       } catch (othermicrosoft) {
+         try {
+           request = new ActiveXObject("Microsoft.XMLHTTP");
+         } catch (failed) {
+           request = null;
+         }
+       }
+     }
+
+     if (request == null)
+       Tip("Error creating request object!");
+   }
+
+function GetFailInfo(test_exec_id,exitcode) {
+    if ( exitcode == "FAIL" ||  exitcode == "LINK_FAIL" ) {
+    createRequest();
+    //var url = document.location.origin + '/cgi-bin/dr/GetFailInfo.cgi?test_exec_id=' + test_exec_id ;
+    var url = document.location.origin + '/ti/webapp/dr/debug_dr/infolink/GetFailInfo.mhtml?test_exec_id='+test_exec_id;
+    Tip("wait for it");
+    request.open("GET", url, true);
+    request.onreadystatechange = updatePage;
+    request.send(null);
+} else {
+    Tip("This shows info only for FAIL or LINK_FAIL");
+}
+}
+function GetTbInfo(test_id) {
+     createRequest();
+    //var url = document.location.origin + '/cgi-bin/dr/GetTbInfo.cgi?test_id=' + test_id;
+    var url = document.location.origin + '/ti/webapp/dr/debug_dr/infolink/GetTbInfo.mhtml?test_id=' + test_id;
+    Tip("wait for it");
+     request.open("GET", url, true);
+     request.onreadystatechange = updatePage;
+     request.send(null);
+}
+function GetTimeInfo(test_id) {
+    createRequest();
+    //var url = document.location.origin + '/cgi-bin/dr/GetTimeInfo.cgi?test_id=' + test_id;
+    var url = document.location.origin + '/cgi-bin/dr/GetTimeInfo.cgi?test_id=' + test_id;
+    Tip("wait for it");
+    request.open("GET", url, true);
+    request.onreadystatechange = updatePage;
+    request.send(null);
+}
+  function updatePage() {
+    if (request.readyState == 4) {
+        var resp = request.responseText;
+        Tip(resp);
+    }
+  }
+
+</script>
+
+<!-- START DISPLAY PENDING -->
+
+
+
+
+
+
+
+
+<br>
+<p id=p2>
+ Debug script listss: <font color=black>19.2DCB_Porter2</font>
+</p>
+
+
+
+
+
+
+
+
+
+<p id=p1>
+
+
+
+
+
+
+<!-- Frame the href for edit -->
+
+
+
+ Reg Exit: <font color=black><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6912258&result_id=203092&owner=ALL&task=EDIT>CORE_PASS</a></font>
+
+
+ &nbsp;&nbsp;
+  <a href=/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml?debug_id=6912258&result_id=203092&owner=ALL&reschedule_type=JBATCH target=DISPLAY_JB>JB</a>
+
+</p>
+
+
+
+
+
+<table id=table2 onmouseout="UnTip()" width=85% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>JBATCH</td>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>
+  <td id=td5>TESTCASES (P:F:O:N)</td>
+  <td id=td5>TPM info</td>
+  <td id=td5 onmouseover="Tip('click here to enable history summary')" onmouseout="UnTip()"><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&result_id=203092&owner=ALL&comm_exp=NO&history_exp=YES>H</a></td>
+ </tr>
+
+
+   	<tr>
+
+  <td>53483402</td>
+  <td>151XD47_NFX250_RLI35008_Sticky_MAC.pl_sw_ex</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6912258&result_id=203092&owner=ALL&task=EDIT>151XD47_NFX250_RLI35008_Sticky_MAC.pl</a></td>
+  <td bgcolor=#EB9A9A> 
+      <img src="/ti/webapp/dr/shared/images/core_hit.png" width="20px" height="20px" style="vertical-align:middle;"/>
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483402/attempt_1/script-exec/&result_id=203092  onmouseover=GetFailInfo("53483402","CORE_PASS") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483402/attempt_1/script-exec/" target=LOG> CORE_PASS</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483402/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483402/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>6</span>:<span class=red>0</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=70944" onmouseover=GetTimeInfo("70944") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6912258  onmouseover=GetTbInfo("70944") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+
+<p id=p1>
+
+
+
+
+
+
+<!-- Frame the href for edit -->
+
+
+
+ Reg Exit: <font color=black><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6916156&debug_id=6912260&debug_id=6914665&debug_id=6912256&debug_id=6912257&debug_id=6912259&debug_id=6914666&debug_id=6912261&debug_id=6912262&result_id=203092&owner=ALL&task=EDIT>FAIL</a></font>
+
+
+ &nbsp;&nbsp;
+  <a href=/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml?debug_id=6916156&debug_id=6912260&debug_id=6914665&debug_id=6912256&debug_id=6912257&debug_id=6912259&debug_id=6914666&debug_id=6912261&debug_id=6912262&result_id=203092&owner=ALL&reschedule_type=JBATCH target=DISPLAY_JB>JB</a>
+
+</p>
+
+
+
+
+
+<table id=table2 onmouseout="UnTip()" width=85% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>JBATCH</td>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>
+  <td id=td5>TESTCASES (P:F:O:N)</td>
+  <td id=td5>TPM info</td>
+  <td id=td5 onmouseover="Tip('click here to enable history summary')" onmouseout="UnTip()"><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&result_id=203092&owner=ALL&comm_exp=NO&history_exp=YES>H</a></td>
+ </tr>
+
+
+   	<tr>
+
+  <td>53489313</td>
+  <td>151X53-D47_NFX250_PR1269916_PLATFORM_SYSLOG.robot_70845_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6916156&result_id=203092&owner=ALL&task=EDIT>151X53-D47_NFX250_PR1269916_PLATFORM_SYSLOG.robot</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489313/attempt_1/script-exec/&result_id=203092  onmouseover=GetFailInfo("53489313","FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489313/attempt_1/script-exec/" target=LOG> FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489313/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489313/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>0</span>:<span class=red>1</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=70845" onmouseover=GetTimeInfo("70845") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6916156  onmouseover=GetTbInfo("70845") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>53483387</td>
+  <td>151XD47_NFX250_RLI35008_LC.pl_89853_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6912260&result_id=203092&owner=ALL&task=EDIT>151XD47_NFX250_RLI35008_LC.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483387/attempt_1/script-exec/&result_id=203092  onmouseover=GetFailInfo("53483387","FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483387/attempt_1/script-exec/" target=LOG> FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483387/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483387/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>0</span>:<span class=red>6</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=89853" onmouseover=GetTimeInfo("89853") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6912260  onmouseover=GetTbInfo("89853") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>53483398</td>
+  <td>151XD47_NFX250_RLI35008_Redundant_Trunk.pl_89858_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6914665&result_id=203092&owner=ALL&task=EDIT>151XD47_NFX250_RLI35008_Redundant_Trunk.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483398/attempt_1/script-exec/&result_id=203092  onmouseover=GetFailInfo("53483398","FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483398/attempt_1/script-exec/" target=LOG> FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483398/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483398/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>5</span>:<span class=red>1</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=89858" onmouseover=GetTimeInfo("89858") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6914665  onmouseover=GetTbInfo("89858") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>53483404</td>
+  <td>151XD47_NFX250_RLI35008_elacp.pl_71566_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6912256&result_id=203092&owner=ALL&task=EDIT>151XD47_NFX250_RLI35008_elacp.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483404/attempt_1/script-exec/&result_id=203092  onmouseover=GetFailInfo("53483404","FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483404/attempt_1/script-exec/" target=LOG> FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483404/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483404/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>5</span>:<span class=red>1</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=71566" onmouseover=GetTimeInfo("71566") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6912256  onmouseover=GetTbInfo("71566") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>53483418</td>
+  <td>151XD47_NFX250_RLI35008_mapping_swap_ingress_lag_lacp.pl_70929_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6912257&result_id=203092&owner=ALL&task=EDIT>151XD47_NFX250_RLI35008_mapping_swap_ingress_lag_lacp.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483418/attempt_2/script-exec/&result_id=203092  onmouseover=GetFailInfo("53483418","FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483418/attempt_2/script-exec/" target=LOG> FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483418/attempt_2/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483418/attempt_2/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>0</span>:<span class=red>6</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=70929" onmouseover=GetTimeInfo("70929") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6912257  onmouseover=GetTbInfo("70929") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>53483429</td>
+  <td>151XD47_NFX250_RLI35008_ospf_sanity_vlan.pl_89709_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6912259&result_id=203092&owner=ALL&task=EDIT>151XD47_NFX250_RLI35008_ospf_sanity_vlan.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483429/attempt_1/script-exec/&result_id=203092  onmouseover=GetFailInfo("53483429","FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483429/attempt_1/script-exec/" target=LOG> FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483429/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483429/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>5</span>:<span class=red>1</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=89709" onmouseover=GetTimeInfo("89709") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6912259  onmouseover=GetTbInfo("89709") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>53483430</td>
+  <td>151XD47_NFX250_RLI35008_policer.pl_71166_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6914666&result_id=203092&owner=ALL&task=EDIT>151XD47_NFX250_RLI35008_policer.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483430/attempt_1/script-exec/&result_id=203092  onmouseover=GetFailInfo("53483430","FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483430/attempt_1/script-exec/" target=LOG> FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483430/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483430/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>5</span>:<span class=red>1</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=71166" onmouseover=GetTimeInfo("71166") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6914666  onmouseover=GetTbInfo("71166") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>53483438</td>
+  <td>151XD47_NFX250_RLI35008_proxy_arp_2.pl_sw_ex</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6912261&result_id=203092&owner=ALL&task=EDIT>151XD47_NFX250_RLI35008_proxy_arp_2.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483438/attempt_1/script-exec/&result_id=203092  onmouseover=GetFailInfo("53483438","FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483438/attempt_1/script-exec/" target=LOG> FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483438/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483438/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>5</span>:<span class=red>1</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=89718" onmouseover=GetTimeInfo("89718") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6912261  onmouseover=GetTbInfo("89718") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>53483444</td>
+  <td>151XD47_NFX250_RLI35008_rip_basic_vlan_1.pl_sw_ex</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6912262&result_id=203092&owner=ALL&task=EDIT>151XD47_NFX250_RLI35008_rip_basic_vlan_1.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483444/attempt_1/script-exec/&result_id=203092  onmouseover=GetFailInfo("53483444","FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483444/attempt_1/script-exec/" target=LOG> FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483444/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483444/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>5</span>:<span class=red>3</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=89694" onmouseover=GetTimeInfo("89694") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6912262  onmouseover=GetTbInfo("89694") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+
+<p id=p1>
+
+
+
+
+
+
+<!-- Frame the href for edit -->
+
+
+
+ Reg Exit: <font color=black><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6915821&debug_id=6916155&debug_id=6915823&debug_id=6912534&debug_id=6912535&debug_id=6915824&result_id=203092&owner=ALL&task=EDIT>INIT_FAIL</a></font>
+
+
+ &nbsp;&nbsp;
+  <a href=/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml?debug_id=6915821&debug_id=6916155&debug_id=6915823&debug_id=6912534&debug_id=6912535&debug_id=6915824&result_id=203092&owner=ALL&reschedule_type=JBATCH target=DISPLAY_JB>JB</a>
+
+</p>
+
+
+
+
+
+<table id=table2 onmouseout="UnTip()" width=85% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>JBATCH</td>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>
+  <td id=td5>TESTCASES (P:F:O:N)</td>
+  <td id=td5>TPM info</td>
+  <td id=td5 onmouseover="Tip('click here to enable history summary')" onmouseout="UnTip()"><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&result_id=203092&owner=ALL&comm_exp=NO&history_exp=YES>H</a></td>
+ </tr>
+
+
+   	<tr>
+
+  <td>53489315</td>
+  <td>172_TPI37269_Porter_Ntp.robot_71214_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6915821&result_id=203092&owner=ALL&task=EDIT>172_TPI37269_Porter_Ntp.robot</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489315/attempt_1/script-exec/&result_id=203092  onmouseover=GetFailInfo("53489315","INIT_FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489315/attempt_1/script-exec/" target=LOG> INIT_FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489315/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489315/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>0</span>:<span class=red>2</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=71214" onmouseover=GetTimeInfo("71214") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6915821  onmouseover=GetTbInfo("71214") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>53489316</td>
+  <td>174_RCCA_Porter_PR_1352561.robot_114592_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6916155&result_id=203092&owner=ALL&task=EDIT>174_RCCA_Porter_PR_1352561.robot</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489316/attempt_1/script-exec/&result_id=203092  onmouseover=GetFailInfo("53489316","INIT_FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489316/attempt_1/script-exec/" target=LOG> INIT_FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489316/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489316/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>0</span>:<span class=red>2</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=114592" onmouseover=GetTimeInfo("114592") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6916155  onmouseover=GetTbInfo("114592") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>53489318</td>
+  <td>174_RLI29386_porter_ovs_ipv6_1.robot_72019_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6915823&result_id=203092&owner=ALL&task=EDIT>174_RLI29386_porter_ovs_ipv6_1.robot</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489318/attempt_1/script-exec/&result_id=203092  onmouseover=GetFailInfo("53489318","INIT_FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489318/attempt_1/script-exec/" target=LOG> INIT_FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489318/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489318/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>0</span>:<span class=red>7</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=72019" onmouseover=GetTimeInfo("72019") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6915823  onmouseover=GetTbInfo("72019") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>53489319</td>
+  <td>174_RLI31800_Porter_OVS_CrossConnect_1.robot_87961_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6912534&result_id=203092&owner=ALL&task=EDIT>174_RLI31800_Porter_OVS_CrossConnect_1.robot</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489319/attempt_1/script-exec/&result_id=203092  onmouseover=GetFailInfo("53489319","INIT_FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489319/attempt_1/script-exec/" target=LOG> INIT_FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489319/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489319/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>0</span>:<span class=red>6</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=87961" onmouseover=GetTimeInfo("87961") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6912534  onmouseover=GetTbInfo("87961") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>53489321</td>
+  <td>174_RLI35009_Porter_OVS_Mtu_1.robot_71674_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6912535&result_id=203092&owner=ALL&task=EDIT>174_RLI35009_Porter_OVS_Mtu_1.robot</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489321/attempt_1/script-exec/&result_id=203092  onmouseover=GetFailInfo("53489321","INIT_FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489321/attempt_1/script-exec/" target=LOG> INIT_FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489321/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489321/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>0</span>:<span class=red>7</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=71674" onmouseover=GetTimeInfo("71674") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6912535  onmouseover=GetTbInfo("71674") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>53489324</td>
+  <td>virtual_port_peer_vnf_001.robot_116136_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6915824&result_id=203092&owner=ALL&task=EDIT>virtual_port_peer_vnf_001.robot</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489324/attempt_1/script-exec/&result_id=203092  onmouseover=GetFailInfo("53489324","INIT_FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489324/attempt_1/script-exec/" target=LOG> INIT_FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489324/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489324/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>0</span>:<span class=red>5</span>:<span class=gray>0</span>:<span class=black>0</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=116136" onmouseover=GetTimeInfo("116136") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6915824  onmouseover=GetTbInfo("116136") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+
+<p id=p1>
+
+
+
+
+
+
+<!-- Frame the href for edit -->
+
+
+
+ Reg Exit: <font color=black><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6915760&debug_id=6912263&debug_id=6912264&debug_id=6912265&result_id=203092&owner=ALL&task=EDIT>LINK_FAIL</a></font>
+
+
+ &nbsp;&nbsp;
+  <a href=/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml?debug_id=6915760&debug_id=6912263&debug_id=6912264&debug_id=6912265&result_id=203092&owner=ALL&reschedule_type=JBATCH target=DISPLAY_JB>JB</a>
+
+</p>
+
+
+
+
+
+<table id=table2 onmouseout="UnTip()" width=85% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>JBATCH</td>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>
+  <td id=td5>TESTCASES (P:F:O:N)</td>
+  <td id=td5>TPM info</td>
+  <td id=td5 onmouseover="Tip('click here to enable history summary')" onmouseout="UnTip()"><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&result_id=203092&owner=ALL&comm_exp=NO&history_exp=YES>H</a></td>
+ </tr>
+
+
+   	<tr>
+
+  <td>53483363</td>
+  <td>151XD47_NFX250_RLI35008_J132_IPv6_UF.pl_sw_ex</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6915760&result_id=203092&owner=ALL&task=EDIT>151XD47_NFX250_RLI35008_J132_IPv6_UF.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483363/attempt_1/script-exec/&result_id=203092  onmouseover=GetFailInfo("53483363","LINK_FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483363/attempt_1/script-exec/" target=LOG> LINK_FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483363/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483363/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>0</span>:<span class=red>0</span>:<span class=gray>0</span>:<span class=black>6</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=89830" onmouseover=GetTimeInfo("89830") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6915760  onmouseover=GetTbInfo("89830") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>53483405</td>
+  <td>151XD47_NFX250_RLI35008_elacp_2.pl_sw_ex</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6912263&result_id=203092&owner=ALL&task=EDIT>151XD47_NFX250_RLI35008_elacp_2.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483405/attempt_1/script-exec/&result_id=203092  onmouseover=GetFailInfo("53483405","LINK_FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483405/attempt_1/script-exec/" target=LOG> LINK_FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483405/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483405/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>0</span>:<span class=red>0</span>:<span class=gray>0</span>:<span class=black>6</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=71568" onmouseover=GetTimeInfo("71568") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6912263  onmouseover=GetTbInfo("71568") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>53483435</td>
+  <td>151XD47_NFX250_RLI35008_port_mode_change_normal_port_1.pl_sw_ex</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6912264&result_id=203092&owner=ALL&task=EDIT>151XD47_NFX250_RLI35008_port_mode_change_normal_port_1.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483435/attempt_1/script-exec/&result_id=203092  onmouseover=GetFailInfo("53483435","LINK_FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483435/attempt_1/script-exec/" target=LOG> LINK_FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483435/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483435/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>0</span>:<span class=red>0</span>:<span class=gray>0</span>:<span class=black>2</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=89649" onmouseover=GetTimeInfo("89649") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6912264  onmouseover=GetTbInfo("89649") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+   	<tr>
+
+  <td>53483449</td>
+  <td>151XD47_NFX250_RLI35008_rip_metric_policy.pl_89699_Default</td>
+  <td><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&debug_id=6912265&result_id=203092&owner=ALL&task=EDIT>151XD47_NFX250_RLI35008_rip_metric_policy.pl</a></td>
+  <td bgcolor=> 
+    <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483449/attempt_1/script-exec/&result_id=203092  onmouseover=GetFailInfo("53483449","LINK_FAIL") onmouseout="UnTip()" title="/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483449/attempt_1/script-exec/" target=LOG> LINK_FAIL</a> &nbsp;
+    <a href=javascript:copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483449/attempt_1/script-exec/"); onclick=copy("/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2693777/53483449/attempt_1/script-exec/") style="text-decoration:none">
+    <font color=gray ><sup>Copy</sup></font></a>
+  </td>
+  <td class=color><span class=green>0</span>:<span class=red>0</span>:<span class=gray>0</span>:<span class=black>4</span></td>
+  <td> 
+     <a href="http://inception.juniper.net/fusion/v2#script_id=89699" onmouseover=GetTimeInfo("89699") onmouseout="UnTip()" target=get runtime info>Script Registry</a>
+  </td>
+
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6912265  onmouseover=GetTbInfo("89699") onmouseout="UnTip()" target=HISTORY >H</a> </td>
+
+ </tr>
+
+
+</table>
+
+
+
+
+
+<script>
+   function debugOpenPrs(){
+      var editUrl =
+        "https://systest.juniper.net/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&debug_id=0&result_id=203092&owner=ALL&task=EDIT&debug_id_pr=";    
+      window.open(editUrl,'_blank');
+   }
+ </script>
+
+
+  
+
+<br>
+<hr>
+<br>
+<table border=0>
+   <tr> 
+    <td bgcolor=#FFFF00>&nbsp;</td> <td> Transition scripts </td> 
+	  <td></td>
+    <td bgcolor=#EB9A9A>&nbsp;</td> <td> This log hit a core </td> 
+ 	  <td></td>
+
+
+
+    <td></td>
+   </tr>
+</table>
+
+</body>
+<!-- END   DISPLAY PENDING -->
+
+
+
+
+
+
+
+
+
+    <!-- DISPLAY COMPLETED -->
+    <link rel="stylesheet" type="text/css" href="/ti/webapp/dr/shared/activerenderer.css">
+<script type="text/javascript" src="/ti/webapp/dr/shared/activerenderer.js"></script>
+
+
+
+
+<!-- START DISPLAY COMPLETED -->
+ <p id=p4>--------------------------------------------------------------------------------------------------------------------------------------------- </p>
+
+
+
+ 
+
+
+<br> <p id=p2> Debug completed script list: <font color=black>19.2DCB_Porter2</font> </p>
+
+
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Reg Exit: <font color=black>FAIL</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&result_id=203092&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>151X53-D45_NFX250_PR1313156_PLATFORM.robot_87945_Default</td>
+  <td>151X53-D45_NFX250_PR1313156_PLATFORM.robot</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489312/attempt_1/script-exec/&result_id=203092 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2694001/53489312&result_id=203092 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>hnarla</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6912533 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6912533_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6912533_2')" onmouseout="nodeLow ('p6912533_2')">C</span>
+    </div>
+    <div id=p6912533_2 class=collapsed>
+        <span class=text><b></b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>174_TPI37269_Porter_Ipsecnm.robot_72258_Default</td>
+  <td>174_TPI37269_Porter_Ipsecnm.robot</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489322/attempt_1/script-exec/&result_id=203092 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2694001/53489322&result_id=203092 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>hnarla</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6915822 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6915822_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6915822_2')" onmouseout="nodeLow ('p6915822_2')">C</span>
+    </div>
+    <div id=p6915822_2 class=collapsed>
+        <span class=text><b></b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>D470_RLI36629_Porter_eth0_eth1_OVS_cli_1.robot_82806_Default</td>
+  <td>D470_RLI36629_Porter_eth0_eth1_OVS_cli_1.robot</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489323/attempt_1/script-exec/&result_id=203092 target=LOG>FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2694001/53489323&result_id=203092 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>hnarla</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6912537 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6912537_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6912537_2')" onmouseout="nodeLow ('p6912537_2')">C</span>
+    </div>
+    <div id=p6912537_2 class=collapsed>
+        <span class=text><b></b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+
+<form name=reschedule_pr type=post action="/ti/webapp/dr/debug_dr/reg_debug/reschudle.mhtml" target=D_RESCHEDULE>
+<p id=p1> 
+
+
+ Reg Exit: <font color=black>INIT_FAIL</font> 
+
+
+</p>
+</form>
+
+
+
+
+
+<table id=table2 width=75% border=1 cellpadding=1 cellspacing=0 >
+ <tr>
+  <td id=td5>SCENARIO</td>
+  <td id=td5>SCRIPT</td>
+  <td id=td5>REG EXIT/LOG</td>
+  <td id=td5>DEBUG EXIT/LOG</td>
+  <td id=td5>TAG</td>
+  <td id=td5>OWNER</td>
+  <td id=td5>PRS</td>
+  <td id=td5>TESTBED</td>
+  <td id=td5>H</td>
+  <td id=td5><a href=/ti/webapp/dr/debug_dr/index.mhtml?mode=0:0:2&result_id=203092&owner=ALL&history_exp=NO&comm_exp=YES>C</a></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>174_RLI29386_porter_ovs_ipv4_1.robot_71225_Default</td>
+  <td>174_RLI29386_porter_ovs_ipv4_1.robot</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489317/attempt_1/script-exec/&result_id=203092 target=LOG>INIT_FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2694001/53489317&result_id=203092 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>hnarla</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6912536 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6912536_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6912536_2')" onmouseout="nodeLow ('p6912536_2')">C</span>
+    </div>
+    <div id=p6912536_2 class=collapsed>
+        <span class=text><b></b></span>
+    </div></td>
+ </tr>
+
+
+    <tr>
+  
+  <td>174_RLI31801_Porter_OVS_Analyzer_1.robot_72474_Default</td>
+  <td>174_RLI31801_Porter_OVS_Analyzer_1.robot</td>
+  <td bgcolor=> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/testtech/fusion-regression/results/fusion/prod/2019/Jan/SUB_2694001/53489320/attempt_1/script-exec/&result_id=203092 target=LOG>INIT_FAIL</a> </td>
+  <td> <a href=/ti/webapp/dr/shared/log.mhtml?log=/volume/regressions/results/JUNOS/HEAD/Rerun/SUB_2694001/53489320&result_id=203092 target=LOG>PASS</a> </td>
+  <td>SCRIPT-OTHER</td>
+  <td>hnarla</td>
+<!--
+ Function to get all the dr owner
+-->
+
+
+
+<td bgcolor = "">-</td>
+  <td>dlog_testbed</td>
+  <td> <a href=/ti/webapp/dr/shared/history.mhtml?debug_id=6912538 target=HISTORY>H</a>  </td>
+  <td id=td14>
+    <div id=p6912538_1 class=expanded>
+        <span class=childlessWedge onmouseover="nodeHigh ('p6912538_2')" onmouseout="nodeLow ('p6912538_2')">C</span>
+    </div>
+    <div id=p6912538_2 class=collapsed>
+        <span class=text><b></b></span>
+    </div></td>
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+    
+</br>
+<table border=0>
+
+
+</table>
+
+
+<!-- END   DISPLAY COMPLETED -->
+
+
+
+
+
+
+
+
+</table> 
+<br><br><br><br><br><br><br><br>
+
+
+
+ 
+
+
+</table>
+
+
+
+    </td>
+<!-- RIGHT WINDOW ENDS-->
+
+
+
+  </tr>
+</table>
+
+<!-- 4rd ROW ENDS-->
+
+
+
+
+
+
+
+
+
+
+
+<br />
+<hr noshade size="1" width="100%" />
+ 
+</body>
+</html>
+
+
+
+
+
+
+

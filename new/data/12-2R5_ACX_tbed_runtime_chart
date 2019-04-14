@@ -1,0 +1,4 @@
+<chart caption='Testbed Usage' xAxisName='Test Beds' yAxisName='Hours' showValues='1' numberPrefix='' useRoundEdges='1' legendBorderAlpha='100' showBorder='0' bgColor='FFFFFF,FFFFFF' ><categories><category label='eabu-scale1-irtb' /><category label='(d)-eabu-reg-acx-dt1' /><category label='(d)-eabu-reg-acx-dt2' /></categories><dataset seriesName='Usgae Hours'><set label='eabu-scale1-irtb' value='5.21'  />
+<set label='(d)-eabu-reg-acx-dt1' value=''  />
+<set label='(d)-eabu-reg-acx-dt2' value=''  />
+</dataset></chart>

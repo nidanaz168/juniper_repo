@@ -1,0 +1,37 @@
+#!/usr/bin/perl
+use HTML::TableExtract;
+use Data::Dumper;
+use DBI;
+use POSIX;
+### Db connection 
+my $hostname = 'eabu-systest-db.juniper.net';
+my $user = "postgres";
+my $pass = "postgres";
+my $port = "5432";
+my $dsn = "dbi:Pg:database=eabu_rod;host=$hostname;port=$port";
+my $dbh = DBI->connect($dsn,$user,$pass)
+                or die "Couldn't connect to database ".DBI->errstr;
+my $db_rm = DBI->connect("dbi:Pg:database=systest_live;host=ttpgdb.juniper.net;port=$port", "ext_ft_dr_gui_rw", 'ext_ft_dr_gui_rw') or die "Could not connect to DB".DBI->errstr;
+$csvfile = $ARGV[0];
+@lines = `cat $csvfile`;
+$id=1;
+foreach $l(@lines)
+{
+	@tmp = split(",",$l);
+	$query = "select test_id from test where cvspath like '%$tmp[0]%'";
+	print "$query \n";
+	my @res =db_get_all_rows($query);	
+	$query1 = "insert into script_owner values(nextval('script_owner_number_seq'),$res[0]->{test_id},'$tmp[0]','$tmp[2]','$tmp[3]','','','','',0,'$tmp[1]','RPD')";
+	my $sth=$dbh->prepare($query1);
+        $sth->execute or print "Error $tmp[0] \n";
+	
+	
+}
+sub db_get_all_rows {
+    my $query = shift;
+    my $dbrm = $db_rm->prepare($query);
+    $dbrm->execute();
+    my $q_out = $dbrm->fetchall_arrayref({});
+    $dbrm->finish();
+    return @{$q_out};
+}

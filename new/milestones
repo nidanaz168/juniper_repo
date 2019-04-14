@@ -1,0 +1,131 @@
+#! /volume/perl/bin/perl -w 
+use lib qw(/homes/ravikanth/bin /volume/labtools/eabu/lib/Dashboard /volume/labtools/lib);
+use utilities;
+use Data::Dumper;
+use XML::Twig;
+use DBI;
+
+my %hash =();
+use RLI::api;
+my $table = 'Milestones';
+my $host = 'deepthought.juniper.net';
+my $r = new RLI::api($table, $host);
+$username = utilities::getdeepuser();
+$password = utilities::getdeeppass();
+$r->username($username);
+$r->password($password);
+@releases = ("10.4","11.1","11.2","11.3","11.4","12.1","12.2","12.3","12.4","13.1","13.2","13.3","14.1");
+
+### DB Connection
+my $hostname = 'eabu-systest-db.juniper.net';
+my $user = "postgres";
+my $pass = "postgres";
+my $port = "5432";
+my $dsn = "dbi:Pg:database=regression;host=$hostname;port=$port";
+my $dbh = DBI->connect($dsn,$user,$pass);
+foreach $rel(@releases)
+{
+my @results;
+my @params = ();
+my @fields = (
+"build_planned",				#3
+"build_revised",		#4
+"deploy_planned",		#5
+"deploy_revised",		#6
+"last_modified",		#7
+"release_type",
+);
+	@params = ();
+	%hash =();
+	push @params, ('release' , $rel);
+	@results = $r->query_array(\@params, \@fields) or die('err: '.$r->errstr);
+	$msg = $r->errstr;
+	push @{$hash{""}},@results;
+
+	my %hash123 = ();
+	foreach my $user (keys %hash) { 
+		my @temp = @{$hash{$user}};
+		foreach my $j (0..$#temp) {
+			next if ($j==0); 
+			my @tempo = @{$temp[$j]};
+			foreach my $i (0..$#tempo){ 
+				if ($i+1 <=$#tempo) {
+					next if ($hash{$user}[$j][0] =~ /A-z/);
+					$hash123{$hash{$user}[$j][0]}{$hash{$user}[0][$i+1]}= $hash{$user}[$j][$i+1];
+				}
+			}
+		}
+	}
+	%mile_hash = ();
+	foreach $n(keys %hash123)
+	{
+		if(defined($mile_hash{$hash123{$n}{"release_type"}}))
+        {
+                my ($existing) = $mile_hash{$hash123{$n}{release_type}}{last_modified} =~ /(.*?) /;
+                my ($current) = $hash123{$n}{last_modified}  =~ /(.*?) /;
+                $current =~ s/-//g;
+                $existing =~ s/-//g;
+                if($current < $existing) { next;}
+        }
+
+		$mile_hash{$hash123{$n}{"release_type"}}{"build_planned"} = $hash123{$n}{"build_planned"};
+		$mile_hash{$hash123{$n}{"release_type"}}{"build_revised"} = $hash123{$n}{"build_revised"};
+		$mile_hash{$hash123{$n}{"release_type"}}{"deploy_planned"} = $hash123{$n}{"deploy_planned"};
+		$mile_hash{$hash123{$n}{"release_type"}}{"deploy_revised"} = $hash123{$n}{"deploy_revised"};
+		$mile_hash{$hash123{$n}{"release_type"}}{"last_modified"} = $hash123{$n}{"last_modified"};
+	}
+print "############################## Release $rel ######################################\n";
+	$str = "";
+	foreach $type(sort keys %mile_hash)
+	{
+		$dfound=1;
+		$bfound=1;
+		if($type =~ /^$/) { next;}
+		$start = "";
+		$end = "";
+
+		$subrelease = "$rel$type";
+		if(defined($mile_hash{$type}{"build_revised"}) && ($mile_hash{$type}{"build_revised"} !~ /^$/))
+		{
+				@t = split(" ", $mile_hash{$type}{"build_revised"});
+				($start) = $t[0];
+			}
+			elsif(defined($mile_hash{$type}{"build_planned"}) && ($mile_hash{$type}{"build_planned"} !~ /^$/))
+			{
+				@t = split(" ", $mile_hash{$type}{"build_planned"});
+				($start) = $t[0];
+				$start =~ s/-/\//g;
+		 }
+		 else
+		 {
+			 $bfound = 0;
+		 }
+		if((defined($mile_hash{$type}{"deploy_revised"})) && ($mile_hash{$type}{"deploy_revised"} !~ /^$/))
+		{
+				@t = split(" ", $mile_hash{$type}{"deploy_revised"});
+				($end) = $t[0];
+			}
+			elsif((defined($mile_hash{$type}{"deploy_planned"})) && ($mile_hash{$type}{"deploy_planned"} !~ /^$/))
+			{
+				@t = split(" ", $mile_hash{$type}{"deploy_planned"});
+				($end) = $t[0];
+			 }
+			 else
+			 {
+				 $dfound = 0;
+			 }
+			 chop($str1);
+			 $str1 .=":";
+			 if(($bfound == 1) && ($dfound == 1))
+			 {
+				$query = "delete from milestones where release='$rel' and minor='$subrelease'";
+				my $sth=$dbh->prepare($query);
+				$sth->execute;
+				$query = "insert into milestones values('$rel','$subrelease','$start','$end')";	
+				my $sth=$dbh->prepare($query);
+				$sth->execute;
+			 }
+	 }
+}
+				
+

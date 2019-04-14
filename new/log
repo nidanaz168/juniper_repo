@@ -1,0 +1,19 @@
+--2013-07-26 03:06:13--  http://systest.juniper.net/ti/webapp/dr/debug_dr/view/gen_tl9000_report.mhtml?result_id=30909
+Resolving systest.juniper.net... 172.17.38.116
+Connecting to systest.juniper.net|172.17.38.116|:80... connected.
+HTTP request sent, awaiting response... 401 Authorization Required
+Reusing existing connection to systest.juniper.net:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `out'
+
+     0K .......... .......... .......... .......... .......... 1.09M
+    50K .......... .......... .......... .......... .......... 11.3M
+   100K .......... .......... .......... .......... .......... 11.0M
+   150K .......... .......... .......... .......... .......... 11.3M
+   200K .......... .......... .......... .......... .......... 11.3M
+   250K .......... .......... .......... .......... .......... 11.0M
+   300K ......                                                 13.2M=0.07s
+
+2013-07-26 03:06:15 (4.45 MB/s) - `out' saved [313894]
+
